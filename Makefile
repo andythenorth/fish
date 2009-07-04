@@ -96,7 +96,7 @@ $(NFO_FILENAME): $(PCX_FILES) $(PNFO_FILES) $(REV_FILENAME)
 	$(V) $(CC) $(CC_FLAGS) $(CPNFO_FILENAME) | sed -e "s/$(GRF_ID_DUMMY)/$(GRF_ID)/" -e "s/$(GRF_TITLE_DUMMY)/$(GRF_TITLE)/" | grep -v '#' > $@ 
 	$(V) echo	
 	$(V) echo "NFORENUM processing:"
-	$(V)-$(NFORENUM) ${NFORENUM_FLAGS} $$(V) 
+	$(V)-$(NFORENUM) ${NFORENUM_FLAGS} $@ 
 	$(V) echo
 	
 # Rules for making the appropriate files: no rule. Just check for them
