@@ -7,8 +7,9 @@ Contents:
 
 1 About
 2 Installation
-3 License
-4 Credits
+3 Usage
+4 License
+5 Credits
 
 
 
@@ -49,8 +50,51 @@ If you use for OpenTTD data folder a non-default path or Windows with a non-Engl
 	INSTALLDIR =
 accordingly so that it shows the full path to your OpenTTD / TTDP data directory.
 
+
+
+-------
+3 Usage
+-------
+
+The Makefile offers different targets. A brief overview is given here:
+
+all: 
+This is the default target, if also no parameter is given to make. It will
+simply build the grf file, if it needs building
+
+bundle:
+This target will create a directory called "<name>-nightly" and copy the grf
+file there and the documentation files, readme.txt, changelog.txt and
+license.txt
+
+bundle_zip
+This will zip the bundle directory into one zip for distribution
+
+bundle_tar
+This will tar the bundle directory into a tar archive for distribution or upload
+to bananas
+
+install:
+This will create a tar archive (like bundle_tar) and copy it into the INSTALLDIR
+as specified in Makefile.local (or the default dir, if that isn't defined).
+Don't rely on a good detection of the default installation directory. It's
+especially bound to fail on windows machines.
+
+release*:
+This target will basically do the same as the bundle* targets with one
+difference: They are packed in a uniquely named directory, so that all different
+release versions of this can be used in parallel in OpenTTD.
+
+clean:
+This phony target will delete all files which this Makefile will create
+
+remake:
+It's a shortcut for first cleaning the dir and then making the grf anew.
+
+
+
 ---------
-3 License
+4 License
 ---------
 
 This generic NewGRF Makefile was written by Ingo von Borstel (aka planetmaker) and is free to use for anyone under the terms of the GNU Pulic License v2 or higher. See license.txt. 
@@ -61,7 +105,7 @@ hg clone http://dev.openttdcoop.org/projects/newgrf-makefile
 
 
 ---------
-4 Credits
+5 Credits
 ---------
 
 Author: Ingo von Borstel (aka planetmaker)
