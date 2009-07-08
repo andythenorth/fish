@@ -118,7 +118,7 @@ $(REV_FILENAME):
 clean:
 	$(V) echo "Cleaning source tree:"
 	$(V) echo "Remove backups:"
-	-rm -rf *.orig *.pre *.bak *~ $(FILENAME)* $(SPRITEDIR)/$(FILENAME).* *.$(REV_SUFFIX)
+	-rm -rf *.orig *.pre *.bak *~ $(FILENAME)* $(SPRITEDIR)/$(FILENAME).* *.$(REV_SUFFIX) $(BANANAS_FILENAME)
 	
 $(DIR_NIGHTLY) $(DIR_RELEASE) : $(BUNDLE_FILES)
 	$(V) echo "Creating dir $@."
@@ -168,5 +168,12 @@ release_zip: $(DIR_RELEASE)
 	
 $(INSTALLDIR):
 	$(V) echo "$(error Installation dir does not exist. Check your makefile.local)"
+	
+bananas: $(BANANAS_FILENAME) 
+$(BANANAS_FILENAME): $(GRF_FILENAME) $(READMEFILE)
+	$(V) echo "Making bananas bundle"
+	@echo "$(READMEFILE) und $(notdir $(READMEFILE))"
+	$(V) if [ -f $(BANANAS_FILENAME) ]; then rm $(BANANAS_FILENAME) ; fi
+	$(TAR) $(TAR_FLAGS) $(BANANAS_FILENAME) $(GRF_FILENAME) -C $(DOCDIR) $(notdir $(READMEFILE) $(LICENSEFILE))
 	
 remake: clean all
