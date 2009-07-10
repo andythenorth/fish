@@ -25,3 +25,6 @@
 # ZIP      = gzip
 # BZIP     = bzip2
 # CC       = gcc
+
+# _V       := @
+# _E       := @echo
