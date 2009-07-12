@@ -1,4 +1,4 @@
-# Makefile for the FIRS industry set
+# Makefile for the newgrf sample makefile
 
 # Name of the Makefile which contains all the settings which describe
 # how to make this newgrf. It defines all the paths, the grf name,
