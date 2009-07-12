@@ -84,7 +84,7 @@ grf : $(GRF_FILENAME)
 
 %.grf: $(SPRITEDIR)/%.nfo
 # pipe all nfo files through grfcodec and produce the grf(s)
-	$(_E) [GRFCODEC] $@"
+	$(_E) "[GRFCODEC] $@"
 	$(_V) $(GRFCODEC) ${GRFCODEC_FLAGS} $(notdir $@)
 	$(_E)
 	
