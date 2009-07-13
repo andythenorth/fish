@@ -10,6 +10,9 @@ MAKEFILECONFIG=Makefile.config
 MAKEFILELOCAL=Makefile.local
 
 shell = /bin/sh
+ 	
+# We want to disable the default rules. It's not c/c++ anyway
+.SUFFIXES:
 
 # Add some OS detection and guess an install path (use the system's default)
 OSTYPE=$(shell uname -s)
