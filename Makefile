@@ -99,7 +99,7 @@ grf : $(GRF_FILENAME)
 	$(_E) "[Generating] $(@:.$(NFO_SUFFIX)=.$(CPNFO_SUFFIX))"
 	$(_V) if [ -f $(@:.$(NFO_SUFFIX)=.$(CPNFO_SUFFIX)) ]; then rm $(@:.$(NFO_SUFFIX)=.$(CPNFO_SUFFIX)) ; fi
 	$(_V) for i in $(PNFO_FILES); do echo "#include \"$$i\"" >> $(@:.$(NFO_SUFFIX)=.$(CPNFO_SUFFIX)); done
-	$(_V) "[Generating] $@"
+	$(_E) "[Generating] $@"
 	$(_V) $(CC) $(CC_FLAGS) $(@:.$(NFO_SUFFIX)=.$(CPNFO_SUFFIX)) | sed -e "s/$(GRF_ID_DUMMY)/$(GRF_ID)/" -e "s/$(GRF_TITLE_DUMMY)/$(GRF_TITLE)/" | grep -v '#' > $@ 
 	$(_E) 
 	$(_E) "[NFORENUM] $@"
