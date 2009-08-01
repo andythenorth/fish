@@ -1,10 +1,4 @@
 Changelog
 
 pre 0.1:
-Bug fixes:
-- Fix: Don't tell when using 'make install' that there's an error, if there's no one after all
-Features:
-- Feature: add target 'bananas' which contains readme, license and grf in a single tar without paths
-- Doc: explain the different makefile targets and fix a small left-over replacement error in Makefile (r8)
-- Feature: depend on the pcx files automatically (r5)
-- Feature: make the verbosity a configurable thing (r1)
+- Feature: import newgrf-makefile r19
