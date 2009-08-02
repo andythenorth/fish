@@ -1,4 +1,4 @@
--1 * 1	 00 02 0C 01 AB     // Action 0
+-1 * 1	 00 02 0D 01 AB     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
