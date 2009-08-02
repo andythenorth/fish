@@ -1,0 +1,98 @@
+-1 * 1	 00 02 0C 01 B1     // Action 0
+    00 \w01-01-1970 // date of introduction
+    03 \b40         // vehicle life in years
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    08 FF           // use new graphics
+    09 01           // refittable (0 = no, 1 = yes)
+    0B \b119        // speed in mph * 3.2      
+    0C 01           // cargo type 
+    0D \w240         // capacity 
+    11 00 00 00 00  // cargo types available for refitting
+    18 FF 03        // refittable cargo classes
+    19 00 00        // non-refittable cargo classes
+    1A 84 25 0B 00  // long format introduction date
+-1 * 1   04 02 7F 01 B1 "Towboat (Single Barge)" 00  
+-1 * 4	 01 02 01 08 
+// Test ships
+-1 sprites/ships/FISH_test.pcx 31  10 01 67 18 -9  -33
+-1 sprites/ships/FISH_test.pcx 63  10 01 51 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 159 10 01 30 93 -46 -15
+-1 sprites/ships/FISH_test.pcx 271 10 01 49 84 -42 -24
+-1 sprites/ships/FISH_test.pcx 367 10 01 62 18 -9  -31
+-1 sprites/ships/FISH_test.pcx 399 10 01 49 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 495 10 01 30 93 -46 -15
+-1 sprites/ships/FISH_test.pcx 607 10 01 51 84 -42 -25
+-1 * 1	 02 02 B1 // action 2  
+      01 // number loading states
+      01 // number loaded states
+      00 00 // loading sprites
+      00 00 // loaded sprites
+-1 * 1	 03 02 01 B1 // Action 3 
+   00 // number of cargo types to support
+   B1 00 // default sprites
+
+-1 * 1	 00 02 0C 01 A2     // Action 0
+    00 \w01-01-1970 // date of introduction
+    03 \b40         // vehicle life in years
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    08 FF           // use new graphics
+    09 01           // refittable (0 = no, 1 = yes)
+    0B \b119        // speed in mph * 3.2      
+    0C 01           // cargo type 
+    0D \w480         // capacity 
+    11 00 00 00 00  // cargo types available for refitting
+    18 FF 03        // refittable cargo classes
+    19 00 00        // non-refittable cargo classes
+    1A 84 25 0B 00  // long format introduction date
+-1 * 1   04 02 7F 01 A2 "Tow Boat (Two Barges)" 00  
+-1 * 4	 01 02 01 08 
+// Test ships
+-1 sprites/ships/FISH_test.pcx 31  10 01 67 18 -9  -33
+-1 sprites/ships/FISH_test.pcx 63  10 01 51 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 159 10 01 30 93 -46 -15
+-1 sprites/ships/FISH_test.pcx 271 10 01 49 84 -42 -24
+-1 sprites/ships/FISH_test.pcx 367 10 01 62 18 -9  -31
+-1 sprites/ships/FISH_test.pcx 399 10 01 49 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 495 10 01 30 93 -46 -15
+-1 sprites/ships/FISH_test.pcx 607 10 01 51 84 -42 -25
+-1 * 1	 02 02 B1 // action 2  
+      01 // number loading states
+      01 // number loaded states
+      00 00 // loading sprites
+      00 00 // loaded sprites
+-1 * 1	 03 02 01 A2 // Action 3 
+   00 // number of cargo types to support
+   B1 00 // default sprites
+   
+-1 * 1	 00 02 0C 01 B4     // Action 0
+    00 \w01-01-1970 // date of introduction
+    03 \b40         // vehicle life in years
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    08 FF           // use new graphics
+    09 01           // refittable (0 = no, 1 = yes)
+    0B \b119        // speed in mph * 3.2      
+    0C 01           // cargo type 
+    0D \w960         // capacity 
+    11 00 00 00 00  // cargo types available for refitting
+    18 FF 03        // refittable cargo classes
+    19 00 00        // non-refittable cargo classes
+    1A 84 25 0B 00  // long format introduction date
+-1 * 1   04 02 7F 01 B4 "Tow Boat (Four Barges)" 00  
+-1 * 4	 01 02 01 08 
+// Test ships
+-1 sprites/ships/FISH_test.pcx 31  10 01 67 18 -9  -33
+-1 sprites/ships/FISH_test.pcx 63  10 01 51 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 159 10 01 30 93 -46 -15
+-1 sprites/ships/FISH_test.pcx 271 10 01 49 84 -42 -24
+-1 sprites/ships/FISH_test.pcx 367 10 01 62 18 -9  -31
+-1 sprites/ships/FISH_test.pcx 399 10 01 49 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 495 10 01 30 93 -46 -15
+-1 sprites/ships/FISH_test.pcx 607 10 01 51 84 -42 -25
+-1 * 1	 02 02 B1 // action 2  
+      01 // number loading states
+      01 // number loaded states
+      00 00 // loading sprites
+      00 00 // loaded sprites
+-1 * 1	 03 02 01 B4 // Action 3 
+   00 // number of cargo types to support
+   B1 00 // default sprites
