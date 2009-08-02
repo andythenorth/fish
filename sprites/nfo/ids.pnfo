@@ -4,5 +4,5 @@
 //
 // Only thing these defines may not contain are quotation marks.
 // As an example: 
-// #define IND_COALMINE              00
+// #define EMPTY_ITEM              00
 

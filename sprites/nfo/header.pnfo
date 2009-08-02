@@ -4,7 +4,14 @@
 
 -1 * 4 00 00 00 00
 
--1 * 0 08 07 {{GRF_ID}} "{{GRF_TITLE}}" 00 "This is a dummy NewGRF from the \nGeneric Makefile project\nhttp://dev.openttdcoop.org/ \nBy planetmaker" 00
+-1 * 0 08 07 {{GRF_ID}} "{{GRF_TITLE}}" 00 "FISH" 00
 
--1 sprites/pcx/test1.pcx 0 0 0 0 0 
--1 sprites/pcx/project1/test2.pcx 0 0 0 0 0 
+-1 * 134	 00 08 01 20 00 09
+      "PASS" "COAL" "MAIL" "OIL_"
+      "LVST" "GOOD" "GRAI" "WOOD"
+      "IORE" "STEL" "VALU" "PAPR"
+      "FOOD" "FRUT" "CORE" "WATR"
+      "RUBR" "___A" "___B" "___C"
+      "___D" "___E" "___F" "___G"
+      "___H" "SAND" "___J" "WHEA"
+      "GOLD" "MAIZ" "TWOD" "DIAM"
