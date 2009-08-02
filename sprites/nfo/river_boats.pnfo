@@ -4,13 +4,13 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w360        // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A 84 25 0B 00  // long format introduction date
+    1A A1 CB 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 E1 "River Boat (Small)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
@@ -37,13 +37,13 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w720        // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A 84 25 0B 00  // long format introduction date
+    1A A1 CB 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 E3 "River Boat (Large)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
@@ -70,13 +70,13 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w70        // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A 84 25 0B 00  // long format introduction date
+    1A A1 CB 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 DA "Canal Boat (Large)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
@@ -103,13 +103,13 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w140        // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A 84 25 0B 00  // long format introduction date
+    1A A1 CB 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 DB "Canal Boat (Large) DOUBLE" 00  
 -1 * 4	 01 02 01 08 
 // Test ships

@@ -4,7 +4,7 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w15        // capacity 
     11 00 00 00 00  // cargo types available for refitting
@@ -37,7 +37,7 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w35        // capacity 
     11 00 00 00 00  // cargo types available for refitting

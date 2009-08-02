@@ -4,13 +4,13 @@
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b119        // speed in mph * 3.2      
+    0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w200        // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A 84 25 0B 00  // long format introduction date
+    1A A1 CB 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 A1 "Canalboat small" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
