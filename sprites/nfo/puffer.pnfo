@@ -15,14 +15,14 @@
 -1 * 1   04 02 7F 01 A1 "'Puffer'" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/ships/FISH_test.pcx 31  10 01 67 18 -9  -33
--1 sprites/ships/FISH_test.pcx 63  10 01 51 84 -42 -25
--1 sprites/ships/FISH_test.pcx 159 10 01 30 93 -46 -15
--1 sprites/ships/FISH_test.pcx 271 10 01 49 84 -42 -24
--1 sprites/ships/FISH_test.pcx 367 10 01 62 18 -9  -31
--1 sprites/ships/FISH_test.pcx 399 10 01 49 84 -42 -25
--1 sprites/ships/FISH_test.pcx 495 10 01 30 93 -46 -15
--1 sprites/ships/FISH_test.pcx 607 10 01 51 84 -42 -25
+-1 sprites/ships/FISH_test.pcx 31  10 01 89 18  -9  -45
+-1 sprites/ships/FISH_test.pcx 63  10 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 189 10 01 30 130 -65 -15
+-1 sprites/ships/FISH_test.pcx 331 10 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 457 10 01 89 18  -9  -45
+-1 sprites/ships/FISH_test.pcx 489 10 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 615 10 01 30 130 -65 -15
+-1 sprites/ships/FISH_test.pcx 757 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
