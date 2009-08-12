@@ -11,18 +11,18 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A A1 CB 0A 00  // long format introduction date
+    1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 AB "Supply Tender" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/ships/FISH_test.pcx 31  10 01 89 18  -9  -45
--1 sprites/ships/FISH_test.pcx 63  10 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 189 10 01 30 130 -65 -15
--1 sprites/ships/FISH_test.pcx 331 10 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 457 10 01 89 18  -9  -45
--1 sprites/ships/FISH_test.pcx 489 10 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 615 10 01 30 130 -65 -15
--1 sprites/ships/FISH_test.pcx 757 10 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 20  110 01 89 28  -9  -45
+-1 sprites/ships/FISH_test.pcx 60  110 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 186 110 01 48 130 -65 -15
+-1 sprites/ships/FISH_test.pcx 328 110 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 454 110 01 89 28  -9  -45
+-1 sprites/ships/FISH_test.pcx 494 110 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 620 110 01 48 130 -65 -15
+-1 sprites/ships/FISH_test.pcx 762 110 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
