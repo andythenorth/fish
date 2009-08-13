@@ -7,7 +7,7 @@
     09 01           // refittable (0 = no, 1 = yes)
     0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w360        // capacity 
+    0D \w180        // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
@@ -31,6 +31,40 @@
 -1 * 1	 03 02 01 E1 // Action 3 
    00 // number of cargo types to support
    B1 00 // default sprites
+   
+-1 * 1	 00 02 0D 01 E2     // Action 0
+    00 \w01-01-1970 // date of introduction
+    03 \b40         // vehicle life in years
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    07 \b15         // loading speed
+    08 FF           // use new graphics
+    09 01           // refittable (0 = no, 1 = yes)
+    0B \b68        // speed in mph * 3.2      
+    0C 01           // cargo type 
+    0D \w360        // capacity 
+    11 00 00 00 00  // cargo types available for refitting
+    18 FF 03        // refittable cargo classes
+    19 00 00        // non-refittable cargo classes
+    1A F0 96 0A 00  // long format introduction date
+-1 * 1   04 02 7F 01 E2 "River Boat (Medium)" 00  
+-1 * 4	 01 02 01 08 
+// Test ships
+-1 sprites/ships/FISH_test.pcx 20  110 01 89 28  -9  -45
+-1 sprites/ships/FISH_test.pcx 60  110 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 186 110 01 48 130 -65 -15
+-1 sprites/ships/FISH_test.pcx 328 110 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 454 110 01 89 28  -9  -45
+-1 sprites/ships/FISH_test.pcx 494 110 01 66 113 -56 -33
+-1 sprites/ships/FISH_test.pcx 620 110 01 48 130 -65 -15
+-1 sprites/ships/FISH_test.pcx 762 110 01 66 113 -56 -33
+-1 * 1	 02 02 B1 // action 2  
+      01 // number loading states
+      01 // number loaded states
+      00 00 // loading sprites
+      00 00 // loaded sprites
+-1 * 1	 03 02 01 E2 // Action 3 
+   00 // number of cargo types to support
+   B1 00 // default sprites   
 
 -1 * 1	 00 02 0D 01 E3     // Action 0
     00 \w01-01-1970 // date of introduction
