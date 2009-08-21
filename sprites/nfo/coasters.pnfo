@@ -15,14 +15,14 @@
 -1 * 1   04 02 7F 01 D1 "Coaster (Small)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/ships/FISH_test.pcx 20  210 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 60  210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 186 210 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 328 210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 454 210 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 494 210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 620 210 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 762 210 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 20  10 01 89 28  -9  -45
+-1 sprites/ships/large_coaster.pcx 60  10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 186 10 01 48 138 -65 -15
+-1 sprites/ships/large_coaster.pcx 328 10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 454 10 01 89 28  -9  -45
+-1 sprites/ships/large_coaster.pcx 494 10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 620 10 01 48 138 -65 -15
+-1 sprites/ships/large_coaster.pcx 762 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
@@ -49,14 +49,14 @@
 -1 * 1   04 02 7F 01 D2 "Coaster (Medium)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/ships/FISH_test.pcx 20  210 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 60  210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 186 210 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 328 210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 454 210 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 494 210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 620 210 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 762 210 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 20  10 01 89 28  -9  -45
+-1 sprites/ships/large_coaster.pcx 60  10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 186 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 328 10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 454 10 01 89 28  -9  -45
+-1 sprites/ships/large_coaster.pcx 494 10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 620 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 762 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
@@ -83,14 +83,14 @@
 -1 * 1   04 02 7F 01 D3 "Coaster (Large)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/ships/FISH_test.pcx 20  210 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 60  210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 186 210 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 328 210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 454 210 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 494 210 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 620 210 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 762 210 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 20  10 01 89 28  -9  -45
+-1 sprites/ships/large_coaster.pcx 60  10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 186 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 328 10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 454 10 01 89 28  -9  -45
+-1 sprites/ships/large_coaster.pcx 494 10 01 66 113 -56 -33
+-1 sprites/ships/large_coaster.pcx 620 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 762 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
