@@ -51,11 +51,11 @@
 // Test ships
 -1 sprites/ships/large_coaster.pcx 20  10 01 89 28  -9  -45
 -1 sprites/ships/large_coaster.pcx 60  10 01 66 113 -56 -33
--1 sprites/ships/large_coaster.pcx 186 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 186 10 01 48 138 -65 -15
 -1 sprites/ships/large_coaster.pcx 328 10 01 66 113 -56 -33
 -1 sprites/ships/large_coaster.pcx 454 10 01 89 28  -9  -45
 -1 sprites/ships/large_coaster.pcx 494 10 01 66 113 -56 -33
--1 sprites/ships/large_coaster.pcx 620 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 620 10 01 48 138 -65 -15
 -1 sprites/ships/large_coaster.pcx 762 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
@@ -85,11 +85,11 @@
 // Test ships
 -1 sprites/ships/large_coaster.pcx 20  10 01 89 28  -9  -45
 -1 sprites/ships/large_coaster.pcx 60  10 01 66 113 -56 -33
--1 sprites/ships/large_coaster.pcx 186 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 186 10 01 48 138 -65 -15
 -1 sprites/ships/large_coaster.pcx 328 10 01 66 113 -56 -33
 -1 sprites/ships/large_coaster.pcx 454 10 01 89 28  -9  -45
 -1 sprites/ships/large_coaster.pcx 494 10 01 66 113 -56 -33
--1 sprites/ships/large_coaster.pcx 620 10 01 48 130 -65 -15
+-1 sprites/ships/large_coaster.pcx 620 10 01 48 138 -65 -15
 -1 sprites/ships/large_coaster.pcx 762 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
