@@ -1,4 +1,4 @@
--1 * 1	 00 02 0D 01 D1     // Action 0
+-1 * 1	 00 02 0E 01 D1     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -9,6 +9,7 @@
     0C 01           // cargo type 
     0D \w540        // capacity 
     11 00 00 00 00  // cargo types available for refitting
+    17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
@@ -32,7 +33,7 @@
    00 // number of cargo types to support
    B1 00 // default sprites
 
--1 * 1	 00 02 0D 01 D2     // Action 0
+-1 * 1	 00 02 0E 01 D2     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -43,6 +44,7 @@
     0C 01           // cargo type 
     0D \w870        // capacity 
     11 00 00 00 00  // cargo types available for refitting
+    17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
@@ -66,7 +68,7 @@
    00 // number of cargo types to support
    B1 00 // default sprites
    
--1 * 1	 00 02 0D 01 D3     // Action 0
+-1 * 1	 00 02 0E 01 D3     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -77,6 +79,7 @@
     0C 01           // cargo type 
     0D \w1200        // capacity 
     11 00 00 00 00  // cargo types available for refitting
+    17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
