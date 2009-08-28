@@ -13,7 +13,9 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
--1 * 1   04 02 7F 01 D1 "Coaster (Small)" 00  
+-1 * 1   04 02 7F 01 D1
+    01 2B // X offset
+    "Coaster (Small)" 00  
 -1 * 4	 01 02 01 08 
 // 
 -1 sprites/ships/coaster_small.pcx 20  10 01 89 28  -9  -45
@@ -29,8 +31,15 @@
       01 // number loaded states
       00 00 // loading sprites
       00 00 // loaded sprites
+-1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/coaster_small.pcx 619 29 01 22 117 -36 -10
+-1 * 1	 00
+-1 * 9	 02 01 AF 01 01  00 00  00 00
 -1 * 1	 03 02 01 D1 // Action 3 
-   00 // number of cargo types to support
+   01 // number of cargo types to support
+    FF AF 00 // buy menu sprites 
    B1 00 // default sprites
 
 -1 * 1	 00 02 0E 01 D2     // Action 0
@@ -48,24 +57,33 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
--1 * 1   04 02 7F 01 D2 "Coaster (Medium)" 00  
+-1 * 1   04 02 7F 01 D2 
+    01 2B // X offset
+    "Coaster (Medium)" 00  
 -1 * 4	 01 02 01 08 
 // 
--1 sprites/ships/coaster_medium.pcx 20  10 01 89 28  -9  -45
--1 sprites/ships/coaster_medium.pcx 60  10 01 66 113 -56 -33
--1 sprites/ships/coaster_medium.pcx 186 10 01 48 138 -65 -15
--1 sprites/ships/coaster_medium.pcx 328 10 01 66 113 -56 -33
--1 sprites/ships/coaster_medium.pcx 454 10 01 89 28  -9  -45
--1 sprites/ships/coaster_medium.pcx 494 10 01 66 113 -56 -33
--1 sprites/ships/coaster_medium.pcx 620 10 01 48 138 -65 -15
--1 sprites/ships/coaster_medium.pcx 762 10 01 66 113 -56 -33
+-1 sprites/ships/coaster_medium.pcx 20  10 01 89 28  -14 -45
+-1 sprites/ships/coaster_medium.pcx 60  10 01 66 83  -67 -25
+-1 sprites/ships/coaster_medium.pcx 186 10 01 48 117 -59 -29
+-1 sprites/ships/coaster_medium.pcx 328 10 01 66 83  -15 -26
+-1 sprites/ships/coaster_medium.pcx 454 10 01 89 28  -14 -45
+-1 sprites/ships/coaster_medium.pcx 494 10 01 66 83  -67 -26
+-1 sprites/ships/coaster_medium.pcx 620 10 01 48 117 -59 -29
+-1 sprites/ships/coaster_medium.pcx 762 10 01 66 83  -15 -25
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
       00 00 // loading sprites
       00 00 // loaded sprites
+-1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/coaster_medium.pcx 619 29 01 22 117 -36 -10
+-1 * 1	 00
+-1 * 9	 02 01 AF 01 01  00 00  00 00
 -1 * 1	 03 02 01 D2 // Action 3 
-   00 // number of cargo types to support
+   01 // number of cargo types to support
+    FF AF 00 // buy menu sprites 
    B1 00 // default sprites
    
 -1 * 1	 00 02 0E 01 D3     // Action 0
@@ -83,22 +101,31 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
--1 * 1   04 02 7F 01 D3 "Coaster (Large)" 00  
+-1 * 1   04 02 7F 01 D3 
+    01 2B // X offset
+    "Coaster (Large)" 00  
 -1 * 4	 01 02 01 08 
 // 
--1 sprites/ships/coaster_large.pcx 20  10 01 89 28  -9  -45
--1 sprites/ships/coaster_large.pcx 60  10 01 66 113 -56 -33
--1 sprites/ships/coaster_large.pcx 186 10 01 48 138 -65 -15
--1 sprites/ships/coaster_large.pcx 328 10 01 66 113 -56 -33
--1 sprites/ships/coaster_large.pcx 454 10 01 89 28  -9  -45
--1 sprites/ships/coaster_large.pcx 494 10 01 66 113 -56 -33
--1 sprites/ships/coaster_large.pcx 620 10 01 48 138 -65 -15
--1 sprites/ships/coaster_large.pcx 762 10 01 66 113 -56 -33
+-1 sprites/ships/coaster_large.pcx 20  10 01 89 28  -14 -45
+-1 sprites/ships/coaster_large.pcx 60  10 01 66 95  -74 -22
+-1 sprites/ships/coaster_large.pcx 186 10 01 48 138 -65 -29
+-1 sprites/ships/coaster_large.pcx 328 10 01 66 97  -21 -22
+-1 sprites/ships/coaster_large.pcx 454 10 01 89 28  -14 -45
+-1 sprites/ships/coaster_large.pcx 494 10 01 66 97  -75 -22
+-1 sprites/ships/coaster_large.pcx 620 10 01 48 138 -65 -29
+-1 sprites/ships/coaster_large.pcx 762 10 01 66 95  -20 -22
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
       00 00 // loading sprites
       00 00 // loaded sprites
+-1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/coaster_large.pcx 619 29 01 22 117 -36 -10
+-1 * 1	 00
+-1 * 9	 02 01 AF 01 01  00 00  00 00
 -1 * 1	 03 02 01 D3 // Action 3 
-   00 // number of cargo types to support
+   01 // number of cargo types to support
+    FF AF 00 // buy menu sprites 
    B1 00 // default sprites

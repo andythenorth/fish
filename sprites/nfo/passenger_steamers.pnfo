@@ -12,7 +12,9 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
--1 * 1   04 02 7F 01 61 "Passenger Steamer (Small)" 00  
+-1 * 1   04 02 7F 01 61 
+    01 2B // X offset
+    "Passenger Steamer (Small)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
 -1 sprites/ships/FISH_test.pcx 20  110 01 89 28  -9  -45
@@ -28,8 +30,15 @@
       01 // number loaded states
       00 00 // loading sprites
       00 00 // loaded sprites
+-1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/FISH_test.pcx 619 29 01 22 117 -36 -10
+-1 * 1	 00
+-1 * 9	 02 01 AF 01 01  00 00  00 00
 -1 * 1	 03 02 01 61 // Action 3 
-   00 // number of cargo types to support
+   01 // number of cargo types to support
+    FF AF 00 // buy menu sprites 
    B1 00 // default sprites
 
 -1 * 1	 00 02 0D 01 62     // Action 0
@@ -46,7 +55,9 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
--1 * 1   04 02 7F 01 62 "Passenger Steamer (Medium)" 00  
+-1 * 1   04 02 7F 01 62 
+    01 2B // X offset
+    "Passenger Steamer (Medium)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
 -1 sprites/ships/FISH_test.pcx 20  110 01 89 28  -9  -45
@@ -62,8 +73,15 @@
       01 // number loaded states
       00 00 // loading sprites
       00 00 // loaded sprites
+-1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/FISH_test.pcx 619 29 01 22 117 -36 -10
+-1 * 1	 00
+-1 * 9	 02 01 AF 01 01  00 00  00 00
 -1 * 1	 03 02 01 62 // Action 3 
-   00 // number of cargo types to support
+   01 // number of cargo types to support
+    FF AF 00 // buy menu sprites 
    B1 00 // default sprites
    
 -1 * 1	 00 02 0D 01 63     // Action 0
@@ -80,7 +98,9 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
--1 * 1   04 02 7F 01 63 "Passenger Steamer (Large)" 00  
+-1 * 1   04 02 7F 01 63 
+    01 2B // X offset
+    "Passenger Steamer (Large)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
 -1 sprites/ships/FISH_test.pcx 20  210 01 89 28  -9  -45
@@ -96,6 +116,13 @@
       01 // number loaded states
       00 00 // loading sprites
       00 00 // loaded sprites
+-1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/FISH_test.pcx 619 29 01 22 117 -36 -10
+-1 * 1	 00
+-1 * 9	 02 01 AF 01 01  00 00  00 00
 -1 * 1	 03 02 01 63 // Action 3 
-   00 // number of cargo types to support
+   01 // number of cargo types to support
+    FF AF 00 // buy menu sprites 
    B1 00 // default sprites
