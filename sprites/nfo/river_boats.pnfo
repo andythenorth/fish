@@ -106,14 +106,14 @@
     "River Boat (Large)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/ships/river_boat_large.pcx 20  10 01 89 28  -9  -45
--1 sprites/ships/river_boat_large.pcx 60  10 01 66 81 -56 -33
--1 sprites/ships/river_boat_large.pcx 186 10 01 48 109 -65 -15
--1 sprites/ships/river_boat_large.pcx 328 10 01 66 81 -56 -33
--1 sprites/ships/river_boat_large.pcx 454 10 01 89 28  -9  -45
--1 sprites/ships/river_boat_large.pcx 494 10 01 66 81 -56 -33
--1 sprites/ships/river_boat_large.pcx 620 10 01 48 109 -65 -15
--1 sprites/ships/river_boat_large.pcx 762 10 01 66 81 -56 -33
+-1 sprites/ships/river_boat_large.pcx 20  10 01 89 28  -14 -54
+-1 sprites/ships/river_boat_large.pcx 60  10 01 66 81  -66 -27
+-1 sprites/ships/river_boat_large.pcx 186 10 01 48 109 -55 -21
+-1 sprites/ships/river_boat_large.pcx 328 10 01 66 81  -14 -28
+-1 sprites/ships/river_boat_large.pcx 454 10 01 89 28  -14 -54
+-1 sprites/ships/river_boat_large.pcx 494 10 01 66 81  -66 -28
+-1 sprites/ships/river_boat_large.pcx 620 10 01 48 109 -55 -21
+-1 sprites/ships/river_boat_large.pcx 762 10 01 66 81  -14 -27
 -1 * 1	 02 02 B1 // action 2  
       01 // number loading states
       01 // number loaded states
