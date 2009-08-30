@@ -7,7 +7,7 @@
     09 01           // refittable (0 = no, 1 = yes)
     0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w240         // capacity 
+    0D \w270         // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
@@ -50,7 +50,7 @@
     09 01           // refittable (0 = no, 1 = yes)
     0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w480         // capacity 
+    0D \w540         // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
@@ -93,7 +93,7 @@
     09 01           // refittable (0 = no, 1 = yes)
     0B \b68        // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w960         // capacity 
+    0D \w1080         // capacity 
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
