@@ -16,4 +16,14 @@
       "___H" "SAND" "___J" "WHEA"
       "GOLD" "MAIZ" "TWOD" "DIAM"
 
+// param 0 is used for capacity multiplier
+// set param 0 to default value of 2 
 -1 * -1 0D 00 80 FF 00 \d2
+
+// set purchase cost base for ships - may affect other ship grfs
+-1 * 1    00 08 01 01 13 08
+  0A // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
+  
+// set running cost base for ships - may affect other ship grfs
+-1 * 1    00 08 01 01 2F 08
+  09 // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
