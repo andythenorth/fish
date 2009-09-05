@@ -5,7 +5,7 @@
     07 \b15         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b68        // speed in mph * 3.2      
+    0B \b62        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w540        // capacity 
     11 00 00 00 00  // cargo types available for refitting
@@ -49,7 +49,7 @@
     07 \b15         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b68        // speed in mph * 3.2      
+    0B \b62        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w810        // capacity 
     11 00 00 00 00  // cargo types available for refitting
@@ -93,7 +93,7 @@
     07 \b15         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b68        // speed in mph * 3.2      
+    0B \b62        // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w1080        // capacity 
     11 00 00 00 00  // cargo types available for refitting
