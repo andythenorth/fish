@@ -13,7 +13,7 @@
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 D1
     01 2B // X offset
@@ -59,7 +59,7 @@
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 D2 
     01 2B // X offset
@@ -105,7 +105,7 @@
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 D3 
     01 2B // X offset
