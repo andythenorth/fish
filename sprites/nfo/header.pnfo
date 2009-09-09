@@ -4,7 +4,13 @@
 
 -1 * 4 00 00 00 00
 
--1 * 0 08 07 {{GRF_ID}} "{{GRF_TITLE}}" 00 "FISH" 00
+-1 * 0 08 07 {{GRF_ID}} "{{GRF_TITLE}}" 00 
+"\8EFISH is ships\n"
+"\98By \89andythenorth\98."
+"\n\n"   
+"Website: \89www.tt-foundry.com/sets/FISH\98. "
+"License: \89GPL v2\98. "
+"Special thanks to \89Lead@Inbox\98, \89PikkaBird\98, \89Ammler\98, \89planetmaker\98. "
 
 -1 * 134	 00 08 01 20 00 09
       "PASS" "COAL" "MAIL" "OIL_"
