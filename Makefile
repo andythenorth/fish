@@ -1,4 +1,4 @@
-# Makefile for the newgrf sample makefile
+# Makefile for the FISH ship set
 
 # Name of the Makefile which contains all the settings which describe
 # how to make this newgrf. It defines all the paths, the grf name,
@@ -119,9 +119,12 @@ $(REV_FILENAME):
 # Clean the source tree
 clean:
 	$(_E) "[CLEANING]"
-	$(_V)-rm -rf *.orig *.pre *.bak *~ $(FILENAME)* $(SPRITEDIR)/$(FILENAME).* *.$(REV_SUFFIX) $(BANANAS_FILENAME)
+	$(_V)-rm -rf *.orig *.new *.pre *.bak *~ $(FILENAME)* $(SPRITEDIR)/$(FILENAME).* *.$(REV_SUFFIX) $(BANANAS_FILENAME)
+mrproper: clean
+	$(_V)-rm -rf $(DIR_NIGHTLY)* $(DIR_RELEASE)* $(DIR_RELEASE_SRC)
 	
 $(DIR_NIGHTLY) $(DIR_RELEASE) : $(BUNDLE_FILES)
+	$(_E) "[BUNDLE]"
 	$(_E) "[Generating] $@."
 	$(_V) if [ -e $@ ]; then rm -rf $@; fi
 	$(_V) mkdir $@
@@ -165,14 +168,21 @@ release-install: release
 release_zip: $(DIR_RELEASE)
 	$(_E) "[Generating] $(ZIP_FILENAME)"
 	$(_V) $(ZIP) $(ZIP_FLAGS) $(ZIP_FILENAME) $<
+release_source:
+	$(_V) rm -rf $(DIR_RELEASE_SRC)
+	$(_V) mkdir -p $(DIR_RELEASE_SRC)
+	$(_V) cp -R $(SPRITEDIR) $(DOCDIR) Makefile Makefile.config $(DIR_RELEASE_SRC)
+	$(_V) cp Makefile.local.sample $(DIR_RELEASE_SRC)/Makefile.local
+	$(_V) echo 'GRF_REVISION = $(GRF_REVISION)' >> $(DIR_RELEASE_SRC)/Makefile.local
+	$(_V) echo 'GRF_MODIFIED = $(GRF_MODIFIED)' >> $(DIR_RELEASE_SRC)/Makefile.local
+	$(_V) echo 'REPO_TAGS    = $(REPO_TAGS)'    >> $(DIR_RELEASE_SRC)/Makefile.local
+	$(_V) $(MAKE) -C $(DIR_RELEASE_SRC) mrproper
+	$(_V) $(TAR) --gzip -cf $(DIR_RELEASE_SRC).tar.gz $(DIR_RELEASE_SRC)
+	$(_V) rm -rf $(DIR_RELEASE_SRC)
 	
 $(INSTALLDIR):
 	$(_E) "$(error Installation dir does not exist. Check your makefile.local)"
 	
-bananas: $(BANANAS_FILENAME) 
-$(BANANAS_FILENAME): $(GRF_FILENAME) $(READMEFILE)
-	$(_E) "[Bananas] to $@"
-	$(_V) if [ -f $(BANANAS_FILENAME) ]; then rm $(BANANAS_FILENAME) ; fi
-	$(_V)$(TAR) $(TAR_FLAGS) $(BANANAS_FILENAME) $(GRF_FILENAME) -C $(DOCDIR) $(notdir $(READMEFILE) $(LICENSEFILE))
+bananas: $(TAR_FILENAME)
 	
 remake: clean all
