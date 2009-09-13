@@ -26,10 +26,11 @@
 -1 sprites/ships/FISH_test.pcx 620 110 01 48 130 -65 -15
 -1 sprites/ships/FISH_test.pcx 762 110 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
-      01 // number loading states
       01 // number loaded states
-      00 00 // loading sprites
+      01 // number loading states
       00 00 // loaded sprites
+      00 00 // loading sprites
+
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
@@ -69,10 +70,11 @@
 -1 sprites/ships/FISH_test.pcx 620 110 01 48 130 -65 -15
 -1 sprites/ships/FISH_test.pcx 762 110 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
-      01 // number loading states
       01 // number loaded states
-      00 00 // loading sprites
+      01 // number loading states
       00 00 // loaded sprites
+      00 00 // loading sprites
+
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
@@ -112,10 +114,11 @@
 -1 sprites/ships/FISH_test.pcx 620 210 01 48 130 -65 -15
 -1 sprites/ships/FISH_test.pcx 762 210 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
-      01 // number loading states
       01 // number loaded states
-      00 00 // loading sprites
+      01 // number loading states
       00 00 // loaded sprites
+      00 00 // loading sprites
+
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
