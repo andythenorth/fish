@@ -110,8 +110,8 @@
 -1 * 1   04 02 7F 01 D3 
     01 2B // X offset
     "Coaster (Large)" 00  
--1 * 4	 01 02 01 08 
-// 
+-1 * 4	 01 02 02 08 
+// unloaded
 -1 sprites/ships/coaster_large.pcx 20  10 01 89 28  -14 -45
 -1 sprites/ships/coaster_large.pcx 60  10 01 66 95  -74 -22
 -1 sprites/ships/coaster_large.pcx 186 10 01 48 138 -65 -29
@@ -120,11 +120,20 @@
 -1 sprites/ships/coaster_large.pcx 494 10 01 66 97  -75 -22
 -1 sprites/ships/coaster_large.pcx 620 10 01 48 138 -65 -29
 -1 sprites/ships/coaster_large.pcx 762 10 01 66 95  -20 -22
+// loaded
+-1 sprites/ships/coaster_large.pcx 20  110 01 89 28  -14 -45
+-1 sprites/ships/coaster_large.pcx 60  110 01 66 95  -74 -22
+-1 sprites/ships/coaster_large.pcx 186 110 01 48 138 -65 -29
+-1 sprites/ships/coaster_large.pcx 328 110 01 66 97  -21 -22
+-1 sprites/ships/coaster_large.pcx 454 110 01 89 28  -14 -45
+-1 sprites/ships/coaster_large.pcx 494 110 01 66 97  -75 -22
+-1 sprites/ships/coaster_large.pcx 620 110 01 48 138 -65 -29
+-1 sprites/ships/coaster_large.pcx 762 110 01 66 95  -20 -22
 -1 * 1	 02 02 B1 // action 2  
-      01 // number loading states
-      01 // number loaded states
-      00 00 // loading sprites
-      00 00 // loaded sprites
+      02 // number loaded states
+      02 // number loading states
+      00 00   01 00 // loading sprites
+      00 00   01 00 // loaded sprites
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
