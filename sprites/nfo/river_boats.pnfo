@@ -56,10 +56,10 @@
 -1 * 1	 00
 -1 sprites/ships/river_boat_small.pcx 620 27 01 15 116 -36 -6
 -1 * 1	 00
--1 * 9	 02 01 AF 01 01  00 00  00 00
+-1 * 9	 02 01 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 E1 // Action 3 
    01 // number of cargo types to support
-    FF AF 00 // buy menu sprites 
+    FF B0 00 // buy menu sprites 
    B1 00 // default sprites
   
   
@@ -121,8 +121,8 @@
 -1 * 1	 00
 -1 sprites/ships/river_boat_large.pcx 620 27 01 15 116 -36 -6
 -1 * 1	 00
--1 * 9	 02 01 AF 01 01  00 00  00 00
+-1 * 9	 02 01 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 E2 // Action 3 
    01 // number of cargo types to support
-    FF AF 00 // buy menu sprites 
+    FF B0 00 // buy menu sprites 
    B1 00 // default sprites

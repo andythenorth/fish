@@ -72,27 +72,10 @@
 -1 * 1	 00
 -1 sprites/ships/coaster_small.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 1	 02 01 AF 01 01  00 00  00 00
-// EXPERIMENTAL container-refit code not in use
--1 * 1	 02 01 CA  // set refit text strings
-                 81 F2 00 FF //
-                 02 // range
-                  02 80 00 00 
-                  03 80 01 01 
-                 FF 80 // end callback chain
--1 * 1	 02 01 CB  // choose sprites according to refit
-                 81 F2 00 FF //
-                 01 // range
-                  B2 00 01 01 // containers
-                 B1 00 // default 
--1 * 1	 02 01 C0  // handle callbacks
-                 81 0C 00 FF //
-                 01 // range
-                  CA 00 19 19 // text suffix (refits)  
-                 CB 00 // graphics
+-1 * 1	 02 01 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 D1 // Action 3 
    01 // number of cargo types to support
-    FF AF 00 // buy menu sprites 
+    FF B0 00 // buy menu sprites 
    B1 00 // default sprites
 
 -1 * 1	 00 02 10 01 D2     // Action 0
@@ -153,10 +136,10 @@
 -1 * 1	 00
 -1 sprites/ships/coaster_medium.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 AF 01 01  00 00  00 00
+-1 * 9	 02 01 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 D2 // Action 3 
    01 // number of cargo types to support
-    FF AF 00 // buy menu sprites 
+    FF B0 00 // buy menu sprites 
    B1 00 // default sprites
    
 -1 * 1	 00 02 10 01 D3     // Action 0
@@ -207,18 +190,31 @@
 -1 sprites/ships/coaster_large.pcx 494 610 01 66 97  -75 -22
 -1 sprites/ships/coaster_large.pcx 620 610 01 48 138 -65 -29
 -1 sprites/ships/coaster_large.pcx 762 610 01 66 95  -20 -22
--1 * 1	 02 02 B1 // action 2  
+-1 * 1	 02 02 B1 // not moving
       02 // number loaded states
       01 // number loading states
-      01 00   02 00 // loaded sprites
+      00 00  00 00 // loaded sprites
+      00 00 // loading sprites
+-1 * 1	 02 02 B2 // moving  
+      02 // number loaded states
+      01 // number loading states
+      01 00  02 00 // loaded sprites
       00 00 // loading sprites
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/coaster_large.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 AF 01 01  00 00  00 00
+-1 * 9	 02 01 B0 01 01  00 00  00 00
+                
+// EXPERIMENTAL shared action 2 / varaction 2 chain for providing moving / not moving graphics
+-1 * 1	 02 02 A0  // choose sprites according to vehicle speed
+                 81 B4 00 FF //
+                 01 // range
+                  B1 00 00 00 // not moving (speed == 0)
+                 B2 00 // moving (speed != 0) 
+
 -1 * 1	 03 02 01 D3 // Action 3 
    01 // number of cargo types to support
-    FF AF 00 // buy menu sprites 
-   B1 00 // default sprites
+    FF B0 00 // buy menu sprites 
+   A0 00 // default sprites
