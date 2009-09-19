@@ -18,8 +18,8 @@
 -1 * 1   04 02 7F 01 E1 
     01 2B // X offset
     "River Boat (Small)" 00  
--1 * 4	 01 02 01 08 
-// 
+-1 * 4	 01 02 03 08 
+// unloaded - not moving (no wash)
 -1 sprites/ships/river_boat_small.pcx 20  10 01  89 28  -14 -54
 -1 sprites/ships/river_boat_small.pcx 60  10 01  66 77  -63 -26
 -1 sprites/ships/river_boat_small.pcx 186 10 01  48 96  -48 -21
@@ -28,12 +28,29 @@
 -1 sprites/ships/river_boat_small.pcx 494 10 01  66 77  -65 -27
 -1 sprites/ships/river_boat_small.pcx 620 10 01  48 96  -48 -21
 -1 sprites/ships/river_boat_small.pcx 762 10 01  66 77  -12 -26
+// unloaded - moving (wash)
+-1 sprites/ships/river_boat_small.pcx 20  110 01  89 28  -14 -54
+-1 sprites/ships/river_boat_small.pcx 60  110 01  66 77  -63 -26
+-1 sprites/ships/river_boat_small.pcx 186 110 01  48 96  -48 -21
+-1 sprites/ships/river_boat_small.pcx 328 110 01  66 77  -11 -27
+-1 sprites/ships/river_boat_small.pcx 454 110 01  89 28  -14 -54
+-1 sprites/ships/river_boat_small.pcx 494 110 01  66 77  -65 -27
+-1 sprites/ships/river_boat_small.pcx 620 110 01  48 96  -48 -21
+-1 sprites/ships/river_boat_small.pcx 762 110 01  66 77  -12 -26
+// loaded - moving (wash) 
+-1 sprites/ships/river_boat_small.pcx 20  610 01  89 28  -14 -54
+-1 sprites/ships/river_boat_small.pcx 60  610 01  66 77  -63 -26
+-1 sprites/ships/river_boat_small.pcx 186 610 01  48 96  -48 -21
+-1 sprites/ships/river_boat_small.pcx 328 610 01  66 77  -11 -27
+-1 sprites/ships/river_boat_small.pcx 454 610 01  89 28  -14 -54
+-1 sprites/ships/river_boat_small.pcx 494 610 01  66 77  -65 -27
+-1 sprites/ships/river_boat_small.pcx 620 610 01  48 96  -48 -21
+-1 sprites/ships/river_boat_small.pcx 762 610 01  66 77  -12 -26
 -1 * 1	 02 02 B1 // action 2  
-      01 // number loaded states
+      02 // number loaded states
       01 // number loading states
-      00 00 // loaded sprites
+      01 00   02 00 // loaded sprites
       00 00 // loading sprites
-
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
