@@ -1,4 +1,4 @@
--1 * 1	 00 02 10 01 D1     // Action 0
+-1 * 1	 00 02 11 01 D1     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -11,6 +11,7 @@
     0D \w540        // capacity 
     0F \b87         // running cost factor
     11 00 00 00 00  // cargo types available for refitting
+    12 20           // callback flags
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 03 00        // non-refittable cargo classes
@@ -51,12 +52,44 @@
       01 // number loading states
       01 00   02 00 // loaded sprites
       00 00 // loading sprites
+-1 * 4	 01 02 01 08 
+// loaded containers - moving (wash) EXPERIMENTAL
+-1 sprites/ships/coaster_small.pcx 20  1210 01 89 28  -14 -42
+-1 sprites/ships/coaster_small.pcx 60  1210 01 66 71  -61 -28
+-1 sprites/ships/coaster_small.pcx 186 1210 01 48 96  -48 -29
+-1 sprites/ships/coaster_small.pcx 328 1210 01 66 71  -10 -28
+-1 sprites/ships/coaster_small.pcx 454 1210 01 89 28  -14  -54
+-1 sprites/ships/coaster_small.pcx 494 1210 01 66 71  -61 -28
+-1 sprites/ships/coaster_small.pcx 620 1210 01 48 96  -48 -29
+-1 sprites/ships/coaster_small.pcx 762 1210 01 66 71  -9  -28
+-1 * 1	 02 02 B2 // action 2  
+      01 // number loaded states
+      01 // number loading states
+      00 00 // loaded sprites
+      00 00 // loading sprites
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/coaster_small.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 AF 01 01  00 00  00 00
+-1 * 1	 02 01 AF 01 01  00 00  00 00
+// EXPERIMENTAL container-refit code not in use
+-1 * 1	 02 01 CA  // set refit text strings
+                 81 F2 00 FF //
+                 02 // range
+                  02 80 00 00 
+                  03 80 01 01 
+                 FF 80 // end callback chain
+-1 * 1	 02 01 CB  // choose sprites according to refit
+                 81 F2 00 FF //
+                 01 // range
+                  B2 00 01 01 // containers
+                 B1 00 // default 
+-1 * 1	 02 01 C0  // handle callbacks
+                 81 0C 00 FF //
+                 01 // range
+                  CA 00 19 19 // text suffix (refits)  
+                 CB 00 // graphics
 -1 * 1	 03 02 01 D1 // Action 3 
    01 // number of cargo types to support
     FF AF 00 // buy menu sprites 
