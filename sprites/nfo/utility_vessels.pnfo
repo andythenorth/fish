@@ -60,15 +60,15 @@
     01 2B // X offset
     "Utility Vessel (Medium)" 00  
 -1 * 4	 01 02 01 08 
-// Test ships
--1 sprites/ships/FISH_test.pcx 20  10 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 60  10 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 186 10 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 328 10 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 454 10 01 89 28  -9  -45
--1 sprites/ships/FISH_test.pcx 494 10 01 66 113 -56 -33
--1 sprites/ships/FISH_test.pcx 620 10 01 48 130 -65 -15
--1 sprites/ships/FISH_test.pcx 762 10 01 66 113 -56 -33
+// Fishing Boat sprite created by DanMacK
+-1 sprites/ships/arcticfishboat.pcx 82 8 09 34 16 -7 -16
+-1 sprites/ships/arcticfishboat.pcx 114 8 09 30 44 -48 1
+-1 sprites/ships/arcticfishboat.pcx 178 8 09 19 49 -22 -5
+-1 sprites/ships/arcticfishboat.pcx 242 8 09 26 46 3 4
+-1 sprites/ships/arcticfishboat.pcx 306 8 09 32 16 -7 -13
+-1 sprites/ships/arcticfishboat.pcx 338 8 09 26 46 -47 3
+-1 sprites/ships/arcticfishboat.pcx 402 8 01 19 49 -25 -9
+-1 sprites/ships/arcticfishboat.pcx 466 8 09 30 44 5 -1
 -1 * 1	 02 02 B1 // action 2  
       01 // number loaded states
       01 // number loading states
@@ -78,7 +78,7 @@
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/ships/FISH_test.pcx 620 29 01 22 116 -36 -10
+-1 sprites/ships/arcticfishboat.pcx 402 8 01 19 49 -40 -10
 -1 * 1	 00
 -1 * 9	 02 01 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 9B // Action 3 
