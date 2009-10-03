@@ -207,7 +207,6 @@
 -1 * 1	 00
 -1 * 9	 02 01 B0 01 01  00 00  00 00
                 
-// EXPERIMENTAL shared action 2 / varaction 2 chain for providing moving / not moving graphics
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range
