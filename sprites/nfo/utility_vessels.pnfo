@@ -1,14 +1,18 @@
--1 * 1	 00 02 0D 01 9A     // Action 0
+-1 * 1	 00 02 11 01 9A     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b15         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b68        // speed in mph * 3.2      
+    0A \b00         // cost factor (purchase cost)
+    0B \b68         // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w15        // capacity 
+    0D \w15         // capacity 
+    0F \b00         // running cost factor
     11 00 00 00 00  // cargo types available for refitting
+    12 20           // callback flags
+    17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
@@ -42,17 +46,21 @@
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
    
--1 * 1	 00 02 0D 01 9B     // Action 0
+-1 * 1	 00 02 11 01 9B     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b15         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0B \b68        // speed in mph * 3.2      
+    0A \b06         // cost factor (purchase cost)
+    0B \b58         // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w35        // capacity 
+    0D \w35         // capacity 
+    0F \b18         // running cost factor
     11 00 00 00 00  // cargo types available for refitting
+    12 20           // callback flags
+    17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
