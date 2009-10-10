@@ -161,7 +161,7 @@
 -1 * 1   04 02 7F 01 A4 
     01 2B // X offset
     "Island Trader" 00  
--1 * 4	 01 02 03 08 
+-1 * 4	 01 02 04 08 
 // unloaded - not moving (no wash)
 -1 sprites/ships/island_trader.pcx 20  10 01 89 28  -14 -46
 -1 sprites/ships/island_trader.pcx 60  10 01 66 71  -61 -28
@@ -180,6 +180,15 @@
 -1 sprites/ships/island_trader.pcx 494 110 01 66 71  -61 -28
 -1 sprites/ships/island_trader.pcx 620 110 01 48 96  -48 -29
 -1 sprites/ships/island_trader.pcx 762 110 01 66 71  -9  -28
+// loaded - not moving (no wash)
+-1 sprites/ships/island_trader.pcx 20  510 01 89 28  -14 -46
+-1 sprites/ships/island_trader.pcx 60  510 01 66 71  -61 -28
+-1 sprites/ships/island_trader.pcx 186 510 01 48 96  -48 -29
+-1 sprites/ships/island_trader.pcx 328 510 01 66 71  -10 -28
+-1 sprites/ships/island_trader.pcx 454 510 01 89 28  -14  -54
+-1 sprites/ships/island_trader.pcx 494 510 01 66 71  -61 -28
+-1 sprites/ships/island_trader.pcx 620 510 01 48 96  -48 -29
+-1 sprites/ships/island_trader.pcx 762 510 01 66 71  -9  -28
 // loaded - moving (wash)
 -1 sprites/ships/island_trader.pcx 20  610 01 89 28  -14 -46
 -1 sprites/ships/island_trader.pcx 60  610 01 66 71  -61 -28
@@ -189,10 +198,15 @@
 -1 sprites/ships/island_trader.pcx 494 610 01 66 71  -61 -28
 -1 sprites/ships/island_trader.pcx 620 610 01 48 96  -48 -29
 -1 sprites/ships/island_trader.pcx 762 610 01 66 71  -9  -28
--1 * 1	 02 02 B1 // action 2  
+-1 * 1	 02 02 B1 // not moving
       02 // number loaded states
       01 // number loading states
-      01 00   02 00 // loaded sprites
+      00 00  02 00 // loaded sprites
+      00 00 // loading sprites
+-1 * 1	 02 02 B2 // moving  
+      02 // number loaded states
+      01 // number loading states
+      01 00  03 00 // loaded sprites
       00 00 // loading sprites
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
@@ -200,7 +214,12 @@
 -1 sprites/ships/island_trader.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 1	 02 02 A0  // choose sprites according to vehicle speed
+                 81 B4 00 FF //
+                 01 // range
+                  B1 00 00 00 // not moving (speed == 0)
+                 B2 00 // moving (speed != 0) 
 -1 * 1	 03 02 01 A4 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   B1 00 // default sprites
+   A0 00 // default sprites
