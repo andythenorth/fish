@@ -18,7 +18,7 @@
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 73
     01 2B // X offset
-    "Vehicle Ferry (Medium 2 )" 00  
+    "Vehicle Ferry (Medium)" 00  
 -1 * 4	 01 02 03 08 
 // unloaded - not moving (no wash) 
 -1 sprites/ships/vehicle_ferry_medium.pcx 20  10 01 89 28  -14 -42
@@ -30,14 +30,14 @@
 -1 sprites/ships/vehicle_ferry_medium.pcx 620 10 01 48 96  -48 -29
 -1 sprites/ships/vehicle_ferry_medium.pcx 762 10 01 66 71  -9  -28
 // unloaded - moving (wash)
--1 sprites/ships/vehicle_ferry_medium.pcx 20  10 01 89 28  -14 -42
--1 sprites/ships/vehicle_ferry_medium.pcx 60  10 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_medium.pcx 186 10 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_medium.pcx 328 10 01 66 71  -10 -28
--1 sprites/ships/vehicle_ferry_medium.pcx 454 10 01 89 28  -14 -54
--1 sprites/ships/vehicle_ferry_medium.pcx 494 10 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_medium.pcx 620 10 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_medium.pcx 762 10 01 66 71  -9  -28
+-1 sprites/ships/vehicle_ferry_medium.pcx 20  110 01 89 28  -14 -42
+-1 sprites/ships/vehicle_ferry_medium.pcx 60  110 01 66 71  -61 -28
+-1 sprites/ships/vehicle_ferry_medium.pcx 186 110 01 48 96  -48 -29
+-1 sprites/ships/vehicle_ferry_medium.pcx 328 110 01 66 71  -10 -28
+-1 sprites/ships/vehicle_ferry_medium.pcx 454 110 01 89 28  -14 -54
+-1 sprites/ships/vehicle_ferry_medium.pcx 494 110 01 66 71  -61 -28
+-1 sprites/ships/vehicle_ferry_medium.pcx 620 110 01 48 96  -48 -29
+-1 sprites/ships/vehicle_ferry_medium.pcx 762 110 01 66 71  -9  -28
 // loaded - moving (wash)
 -1 sprites/ships/vehicle_ferry_medium.pcx 20  610 01 89 28  -14 -42
 -1 sprites/ships/vehicle_ferry_medium.pcx 60  610 01 66 71  -61 -28
@@ -47,10 +47,15 @@
 -1 sprites/ships/vehicle_ferry_medium.pcx 494 610 01 66 71  -61 -28
 -1 sprites/ships/vehicle_ferry_medium.pcx 620 610 01 48 96  -48 -29
 -1 sprites/ships/vehicle_ferry_medium.pcx 762 610 01 66 71  -9  -28
--1 * 1	 02 02 B1 // action 2  
-      01 // number loaded states
+-1 * 1	 02 02 B1 // not moving
+      02 // number loaded states
       01 // number loading states
-      00 00 // loaded sprites
+      00 00  00 00 // loaded sprites
+      00 00 // loading sprites
+-1 * 1	 02 02 B2 // moving  
+      02 // number loaded states
+      01 // number loading states
+      01 00  02 00 // loaded sprites
       00 00 // loading sprites
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
@@ -58,10 +63,15 @@
 -1 sprites/ships/vehicle_ferry_medium.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 1	 02 01 B0 01 01  00 00  00 00
+-1 * 1	 02 02 A0  // choose sprites according to vehicle speed
+                 81 B4 00 FF //
+                 01 // range
+                  B1 00 00 00 // not moving (speed == 0)
+                 B2 00 // moving (speed != 0) 
 -1 * 1	 03 02 01 73 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   B1 00 // default sprites
+   A0 00 // default sprites
 
 -1 * 1	 00 02 10 01 74     // Action 0
     00 \w01-01-1970 // date of introduction
@@ -94,14 +104,14 @@
 -1 sprites/ships/vehicle_ferry_large.pcx 620 10 01 48 116 -59 -29
 -1 sprites/ships/vehicle_ferry_large.pcx 762 10 01 66 83  -15 -25
 // unloaded - moving (wash)
--1 sprites/ships/vehicle_ferry_large.pcx 20  10 01 89 28  -14 -41
--1 sprites/ships/vehicle_ferry_large.pcx 60  10 01 66 83  -67 -25
--1 sprites/ships/vehicle_ferry_large.pcx 186 10 01 48 116 -59 -29
--1 sprites/ships/vehicle_ferry_large.pcx 328 10 01 66 83  -15 -26
--1 sprites/ships/vehicle_ferry_large.pcx 454 10 01 89 28  -14 -45
--1 sprites/ships/vehicle_ferry_large.pcx 494 10 01 66 83  -67 -26
--1 sprites/ships/vehicle_ferry_large.pcx 620 10 01 48 116 -59 -29
--1 sprites/ships/vehicle_ferry_large.pcx 762 10 01 66 83  -15 -25
+-1 sprites/ships/vehicle_ferry_large.pcx 20  110 01 89 28  -14 -41
+-1 sprites/ships/vehicle_ferry_large.pcx 60  110 01 66 83  -67 -25
+-1 sprites/ships/vehicle_ferry_large.pcx 186 110 01 48 116 -59 -29
+-1 sprites/ships/vehicle_ferry_large.pcx 328 110 01 66 83  -15 -26
+-1 sprites/ships/vehicle_ferry_large.pcx 454 110 01 89 28  -14 -45
+-1 sprites/ships/vehicle_ferry_large.pcx 494 110 01 66 83  -67 -26
+-1 sprites/ships/vehicle_ferry_large.pcx 620 110 01 48 116 -59 -29
+-1 sprites/ships/vehicle_ferry_large.pcx 762 110 01 66 83  -15 -25
 // loaded - moving (wash)
 -1 sprites/ships/vehicle_ferry_large.pcx 20  610 01 89 28  -14 -41
 -1 sprites/ships/vehicle_ferry_large.pcx 60  610 01 66 83  -67 -25
@@ -111,10 +121,15 @@
 -1 sprites/ships/vehicle_ferry_large.pcx 494 610 01 66 83  -67 -26
 -1 sprites/ships/vehicle_ferry_large.pcx 620 610 01 48 116 -59 -29
 -1 sprites/ships/vehicle_ferry_large.pcx 762 610 01 66 83  -15 -25
--1 * 1	 02 02 B1 // action 2  
-      01 // number loaded states
+-1 * 1	 02 02 B1 // not moving
+      02 // number loaded states
       01 // number loading states
-      00 00 // loaded sprites
+      00 00  00 00 // loaded sprites
+      00 00 // loading sprites
+-1 * 1	 02 02 B2 // moving  
+      02 // number loaded states
+      01 // number loading states
+      01 00  02 00 // loaded sprites
       00 00 // loading sprites
 -1 * 4	 01 01 01 04 // buy menu sprites
 -1 * 1	 00
@@ -122,7 +137,12 @@
 -1 sprites/ships/vehicle_ferry_large.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 1	 02 02 A0  // choose sprites according to vehicle speed
+                 81 B4 00 FF //
+                 01 // range
+                  B1 00 00 00 // not moving (speed == 0)
+                 B2 00 // moving (speed != 0) 
 -1 * 1	 03 02 01 74 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   B1 00 // default sprites
+   A0 00 // default sprites
