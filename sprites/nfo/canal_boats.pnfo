@@ -31,12 +31,12 @@
       00 00 // loaded sprites
       00 00 // loading sprites
 
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 C1 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
@@ -76,12 +76,12 @@
       00 00 // loaded sprites
       00 00 // loading sprites
 
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 CA // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
@@ -121,12 +121,12 @@
       00 00 // loaded sprites
       00 00 // loading sprites
 
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 CB // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
@@ -166,12 +166,12 @@
       00 00 // loaded sprites
       00 00 // loading sprites
 
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 CC // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 

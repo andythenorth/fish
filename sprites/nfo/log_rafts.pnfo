@@ -65,12 +65,12 @@
       01 // number loading states
       00 00  00 00 // loaded sprites
       00 00 // loading sprites
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/log_raft_large.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range

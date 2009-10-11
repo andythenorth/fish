@@ -1,4 +1,4 @@
--1 * 1	 00 02 1A 01 E1     // Action 0
+-1 * 1	 00 02 \b16 01 E1     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b60         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -65,12 +65,12 @@
       01 // number loading states
       01 00  03 00 // loaded sprites
       00 00 // loading sprites
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/river_boat_small.pcx 620 27 01 15 116 -36 -6
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range
@@ -82,7 +82,7 @@
    A0 00 // default sprites
   
   
--1 * 1	 00 02 1A 01 E2     // Action 0
+-1 * 1	 00 02 \b16 01 E2     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b60         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -149,12 +149,12 @@
       01 // number loading states
       01 00  03 00 // loaded sprites
       00 00 // loading sprites
--1 * 4	 01 01 01 04 // buy menu sprites
+-1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
 -1 sprites/ships/river_boat_large.pcx 620 27 01 15 116 -36 -6
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00
+-1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range

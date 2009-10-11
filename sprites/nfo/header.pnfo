@@ -29,27 +29,3 @@
 // set running cost base for ships - may affect other ship grfs
 -1 * 1    00 08 01 01 2F 08
   09 // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
-  
-
-// EXPERIMENTAL container-refit code not in use
--1 * 1	 04 00 81 02 02 D0
-            		" (General Cargo)" 00	// D000 = "1st class"
-               	" (Containers)" 00	// D001 = "2nd class"
-
-// EXPERIMENTAL shared action 2 / varaction 2 chain for larger cargo ships 
--1 * 1	 02 02 CA  // set refit text strings
-                 81 F2 00 FF //
-                 02 // range
-                  02 80 00 00 
-                  03 80 01 01 
-                 FF 80 // end callback chain
--1 * 1	 02 02 CB  // choose sprites according to refit
-                 81 F2 00 FF //
-                 01 // range
-                  B2 00 01 01 // containers
-                 B1 00 // default 
--1 * 1	 02 02 C0  // handle callbacks
-                 81 0C 00 FF //
-                 01 // range
-                  CA 00 19 19 // text suffix (refits)  
-                 CB 00 // graphics
