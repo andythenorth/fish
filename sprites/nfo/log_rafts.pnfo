@@ -70,13 +70,29 @@
 -1 * 1	 00
 -1 sprites/ships/log_raft_large.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
--1 * 9	 02 01 B0 01 01  00 00  00 00               
+-1 * 9	 02 01 B0 01 01  00 00  00 00
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
+-1 * 0  02 02 C2 //  
+              85 AC 00 FF FF // return value for speed depending on current cargo amount
+              02 // range
+                 96 80 00 00 00 00 // 
+                 27 80 01 00 FF FF // 
+              27 80 // default
+-1 * 0  02 02 C1 // 
+              81 10 00 FF
+              01 // range
+                 C2 00 0B 0B // new speed
+               A0 00 // default (end cb36 checks using ID for applying graphics)
+-1 * 1   02 02 C0  //
+               81 0C 00 FF // handle callbacks
+               01 // range
+                 C1 00 36 36 // 
+               A0 00 // default 
 -1 * 1	 03 02 01 F2 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   A0 00 // default sprites
+   C0 00 // default sprites
