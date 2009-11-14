@@ -9,7 +9,7 @@
     0B \b39         // speed in mph * 3.2      
     0C 07           // cargo type 
     0D \w400        // capacity 
-    0F \b47         // running cost factor
+    0F \b52         // running cost factor
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 00 00        // refittable cargo classes
