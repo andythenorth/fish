@@ -85,7 +85,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/ships/FISH_test.pcx 620 29 01 22 116 -36 -10
+-1 sprites/ships/trader_medium.pcx 620 10 01  48 96  -41 -21
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 A2 // Action 3 
