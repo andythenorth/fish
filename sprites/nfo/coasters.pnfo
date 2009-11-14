@@ -172,7 +172,7 @@
     07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0A \b164        // cost factor (purchase cost)
+    0A \b220        // cost factor (purchase cost)
     0B \b62         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w1080       // capacity 
