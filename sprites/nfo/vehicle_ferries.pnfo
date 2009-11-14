@@ -89,11 +89,11 @@
     07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0A \b122        // cost factor (purchase cost)
+    0A \b178        // cost factor (purchase cost)
     0B \b68         // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w800        // capacity 
-    0F \b184        // running cost factor
+    0F \b255        // running cost factor
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
