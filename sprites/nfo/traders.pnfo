@@ -28,7 +28,7 @@
 -1 sprites/ships/trader_small.pcx 494 10 01  66 77  -48 -35
 -1 sprites/ships/trader_small.pcx 620 10 01  48 96  -32 -21
 -1 sprites/ships/trader_small.pcx 762 10 01  66 77   02 -20
-// unloaded - not moving (no wash)
+// unloaded - moving (wash)
 -1 sprites/ships/trader_small.pcx 20  110 01  89 28  -14 -62
 -1 sprites/ships/trader_small.pcx 60  110 01  66 77  -50 -32
 -1 sprites/ships/trader_small.pcx 186 110 01  48 96  -32 -21
@@ -37,7 +37,7 @@
 -1 sprites/ships/trader_small.pcx 494 110 01  66 77  -48 -35
 -1 sprites/ships/trader_small.pcx 620 110 01  48 96  -32 -21
 -1 sprites/ships/trader_small.pcx 762 110 01  66 77   02 -20
-// unloaded - not moving (no wash)
+// loaded - not moving (no wash)
 -1 sprites/ships/trader_small.pcx 20  510 01  89 28  -14 -62
 -1 sprites/ships/trader_small.pcx 60  510 01  66 77  -50 -32
 -1 sprites/ships/trader_small.pcx 186 510 01  48 96  -32 -21
@@ -46,7 +46,7 @@
 -1 sprites/ships/trader_small.pcx 494 510 01  66 77  -48 -35
 -1 sprites/ships/trader_small.pcx 620 510 01  48 96  -32 -21
 -1 sprites/ships/trader_small.pcx 762 510 01  66 77   02 -20
-// unloaded - not moving (no wash)
+// loaded - moving (wash)
 -1 sprites/ships/trader_small.pcx 20  610 01  89 28  -14 -62
 -1 sprites/ships/trader_small.pcx 60  610 01  66 77  -50 -32
 -1 sprites/ships/trader_small.pcx 186 610 01  48 96  -32 -21
