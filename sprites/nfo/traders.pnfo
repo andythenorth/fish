@@ -1,19 +1,19 @@
 -1 * 1	 00 02 \b16 01 A1     // Action 0
     00 \w01-01-1970 // date of introduction
-    03 \b40         // vehicle life in years
+    03 \b50         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0A \b00         // cost factor (purchase cost)
-    0B \b68         // speed in mph * 3.2      
+    0A \b21         // cost factor (purchase cost)
+    0B \b62         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w95         // capacity 
-    0F \b00         // running cost factor
+    0F \b34         // running cost factor
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 A1 
     01 2B // X offset
@@ -97,7 +97,7 @@
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 A2 
     01 2B // X offset
@@ -180,7 +180,7 @@
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A F0 96 0A 00  // long format introduction date
 -1 * 1   04 02 7F 01 A3 
     01 2B // X offset
