@@ -2,7 +2,7 @@
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
-    07 \b15         // loading speed
+    07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b00         // cost factor (purchase cost)
@@ -86,7 +86,7 @@
     00 \w01-01-1970 // date of introduction
     03 \b50         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
-    07 \b15         // loading speed
+    07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b43         // cost factor (purchase cost)
@@ -169,7 +169,7 @@
     00 \w01-01-1970 // date of introduction
     03 \b50         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
-    07 \b15         // loading speed
+    07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b61         // cost factor (purchase cost)
@@ -252,7 +252,7 @@
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
-    07 \b15         // loading speed
+    07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b81         // cost factor (purchase cost)
