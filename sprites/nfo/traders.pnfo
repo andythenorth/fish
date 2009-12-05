@@ -18,7 +18,7 @@
 -1 * 1   04 02 7F 01 A1 
     01 2B // X offset
     "Trader (Small)" 00  
--1 * 4	 01 02 01 08 
+-1 * 4	 01 02 04 08 
 // unloaded - not moving (no wash)
 -1 sprites/ships/trader_small.pcx 20  10 01  89 28  -14 -62
 -1 sprites/ships/trader_small.pcx 60  10 01  66 77  -50 -32
@@ -28,22 +28,58 @@
 -1 sprites/ships/trader_small.pcx 494 10 01  66 77  -48 -35
 -1 sprites/ships/trader_small.pcx 620 10 01  48 96  -32 -21
 -1 sprites/ships/trader_small.pcx 762 10 01  66 77   02 -20
--1 * 1	 02 02 B1 // action 2  
-      01 // number loaded states
+// unloaded - not moving (no wash)
+-1 sprites/ships/trader_small.pcx 20  110 01  89 28  -14 -62
+-1 sprites/ships/trader_small.pcx 60  110 01  66 77  -50 -32
+-1 sprites/ships/trader_small.pcx 186 110 01  48 96  -32 -21
+-1 sprites/ships/trader_small.pcx 328 110 01  66 77   02 -22
+-1 sprites/ships/trader_small.pcx 454 110 01  89 28  -14 -62
+-1 sprites/ships/trader_small.pcx 494 110 01  66 77  -48 -35
+-1 sprites/ships/trader_small.pcx 620 110 01  48 96  -32 -21
+-1 sprites/ships/trader_small.pcx 762 110 01  66 77   02 -20
+// unloaded - not moving (no wash)
+-1 sprites/ships/trader_small.pcx 20  510 01  89 28  -14 -62
+-1 sprites/ships/trader_small.pcx 60  510 01  66 77  -50 -32
+-1 sprites/ships/trader_small.pcx 186 510 01  48 96  -32 -21
+-1 sprites/ships/trader_small.pcx 328 510 01  66 77   02 -22
+-1 sprites/ships/trader_small.pcx 454 510 01  89 28  -14 -62
+-1 sprites/ships/trader_small.pcx 494 510 01  66 77  -48 -35
+-1 sprites/ships/trader_small.pcx 620 510 01  48 96  -32 -21
+-1 sprites/ships/trader_small.pcx 762 510 01  66 77   02 -20
+// unloaded - not moving (no wash)
+-1 sprites/ships/trader_small.pcx 20  610 01  89 28  -14 -62
+-1 sprites/ships/trader_small.pcx 60  610 01  66 77  -50 -32
+-1 sprites/ships/trader_small.pcx 186 610 01  48 96  -32 -21
+-1 sprites/ships/trader_small.pcx 328 610 01  66 77   02 -22
+-1 sprites/ships/trader_small.pcx 454 610 01  89 28  -14 -62
+-1 sprites/ships/trader_small.pcx 494 610 01  66 77  -48 -35
+-1 sprites/ships/trader_small.pcx 620 610 01  48 96  -32 -21
+-1 sprites/ships/trader_small.pcx 762 610 01  66 77   02 -20
+-1 * 1	 02 02 B1 // not moving
+      02 // number loaded states
       01 // number loading states
-      00 00 // loaded sprites
+      00 00  02 00 // loaded sprites
       00 00 // loading sprites
-
+-1 * 1	 02 02 B2 // moving  
+      02 // number loaded states
+      01 // number loading states
+      01 00  03 00 // loaded sprites
+      00 00 // loading sprites
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/ships/trader_small.pcx 620 29 01 22 116 -36 -10
+-1 sprites/ships/trader_small.pcx 620 10 01  48 96  -41 -22
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
+-1 * 1	 02 02 A0  // choose sprites according to vehicle speed
+                 81 B4 00 FF //
+                 01 // range
+                  B1 00 00 00 // not moving (speed == 0)
+                 B2 00 // moving (speed != 0) 
 -1 * 1	 03 02 01 A1 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   B1 00 // default sprites
+   A0 00 // default sprites
 
    
 -1 * 1	 00 02 \b16 01 A2     // Action 0
@@ -76,7 +112,7 @@
 -1 sprites/ships/trader_medium.pcx 494 10 01  66 77  -53 -33
 -1 sprites/ships/trader_medium.pcx 620 10 01  48 96  -36 -21
 -1 sprites/ships/trader_medium.pcx 762 10 01  66 77  -1  -22
-// unloaded - not moving (no wash)
+// unloaded - moving (wash)
 -1 sprites/ships/trader_medium.pcx 20  110 01  89 28  -14 -61
 -1 sprites/ships/trader_medium.pcx 60  110 01  66 77  -54 -31
 -1 sprites/ships/trader_medium.pcx 186 110 01  48 96  -39 -21
@@ -85,7 +121,7 @@
 -1 sprites/ships/trader_medium.pcx 494 110 01  66 77  -53 -33
 -1 sprites/ships/trader_medium.pcx 620 110 01  48 96  -36 -21
 -1 sprites/ships/trader_medium.pcx 762 110 01  66 77  -1  -22
-// unloaded - not moving (no wash)
+// loaded - not moving (no wash)
 -1 sprites/ships/trader_medium.pcx 20  510 01  89 28  -14 -61
 -1 sprites/ships/trader_medium.pcx 60  510 01  66 77  -54 -31
 -1 sprites/ships/trader_medium.pcx 186 510 01  48 96  -39 -21
@@ -94,7 +130,7 @@
 -1 sprites/ships/trader_medium.pcx 494 510 01  66 77  -53 -33
 -1 sprites/ships/trader_medium.pcx 620 510 01  48 96  -36 -21
 -1 sprites/ships/trader_medium.pcx 762 510 01  66 77  -1  -22
-// unloaded - not moving (no wash)
+// unloaded - moving (wash)
 -1 sprites/ships/trader_medium.pcx 20  610 01  89 28  -14 -61
 -1 sprites/ships/trader_medium.pcx 60  610 01  66 77  -54 -31
 -1 sprites/ships/trader_medium.pcx 186 610 01  48 96  -39 -21
