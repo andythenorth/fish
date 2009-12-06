@@ -106,7 +106,7 @@
 -1 * 0  02 02 C2 //  
               85 BC 00 FF FF // return value for speed depending on current cargo amount
               02 // range
-                 46 80 00 00 00 00 // 
+                 40 80 00 00 00 00 // 
                  27 80 01 00 FF FF // 
               27 80 // default
 -1 * 0  02 02 C1 // 

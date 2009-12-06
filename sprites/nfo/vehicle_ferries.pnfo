@@ -6,7 +6,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b131        // cost factor (purchase cost)
-    0B \b68         // speed in mph * 3.2      
+    0B \b64         // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w585        // capacity 
     0F \b200        // running cost factor
@@ -90,7 +90,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b178        // cost factor (purchase cost)
-    0B \b68         // speed in mph * 3.2      
+    0B \b64         // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w800        // capacity 
     0F \b255        // running cost factor

@@ -6,7 +6,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b21         // cost factor (purchase cost)
-    0B \b62         // speed in mph * 3.2      
+    0B \b56         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w95         // capacity 
     0F \b34         // running cost factor
@@ -90,7 +90,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b43         // cost factor (purchase cost)
-    0B \b62         // speed in mph * 3.2      
+    0B \b56         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w190        // capacity 
     0F \b45         // running cost factor
@@ -173,7 +173,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b61         // cost factor (purchase cost)
-    0B \b62         // speed in mph * 3.2      
+    0B \b56         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w270        // capacity 
     0F \b71         // running cost factor
@@ -256,7 +256,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b81         // cost factor (purchase cost)
-    0B \b66         // speed in mph * 3.2      
+    0B \b62         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w360        // capacity 
     0F \b99         // running cost factor

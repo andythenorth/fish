@@ -54,7 +54,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b08         // cost factor (purchase cost)
-    0B \b58         // speed in mph * 3.2      
+    0B \b52         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w35         // capacity 
     0F \b27         // running cost factor
