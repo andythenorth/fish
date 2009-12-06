@@ -21,41 +21,41 @@
     "Vehicle Ferry (Small)" 00  
 -1 * 4	 01 02 04 08 
 // unloaded - not moving (no wash) 
--1 sprites/ships/vehicle_ferry_small.pcx 20  10 01 89 28  -14 -42
+-1 sprites/ships/vehicle_ferry_small.pcx 20  10 01 89 28  -14 -54
 -1 sprites/ships/vehicle_ferry_small.pcx 60  10 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 186 10 01 48 96  -48 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 186 10 01 48 96  -36 -29
 -1 sprites/ships/vehicle_ferry_small.pcx 328 10 01 66 71  -10 -28
 -1 sprites/ships/vehicle_ferry_small.pcx 454 10 01 89 28  -14 -54
--1 sprites/ships/vehicle_ferry_small.pcx 494 10 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 620 10 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_small.pcx 762 10 01 66 71  -9  -28
+-1 sprites/ships/vehicle_ferry_small.pcx 494 10 01 66 71  -55 -26
+-1 sprites/ships/vehicle_ferry_small.pcx 620 10 01 48 96  -36 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 762 10 01 66 71   0  -24
 // unloaded - moving (wash)
--1 sprites/ships/vehicle_ferry_small.pcx 20  110 01 89 28  -14 -42
--1 sprites/ships/vehicle_ferry_small.pcx 60  110 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 186 110 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_small.pcx 328 110 01 66 71  -10 -28
+-1 sprites/ships/vehicle_ferry_small.pcx 20  110 01 89 28  -14 -54
+-1 sprites/ships/vehicle_ferry_small.pcx 60  110 01 66 71  -56 -33
+-1 sprites/ships/vehicle_ferry_small.pcx 186 110 01 48 96  -36 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 328 110 01 66 71  -18 -33
 -1 sprites/ships/vehicle_ferry_small.pcx 454 110 01 89 28  -14 -54
--1 sprites/ships/vehicle_ferry_small.pcx 494 110 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 620 110 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_small.pcx 762 110 01 66 71  -9  -28
+-1 sprites/ships/vehicle_ferry_small.pcx 494 110 01 66 71  -55 -26
+-1 sprites/ships/vehicle_ferry_small.pcx 620 110 01 48 96  -36 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 762 110 01 66 71   0  -24
 // loaded - not moving (no wash)
--1 sprites/ships/vehicle_ferry_small.pcx 20  510 01 89 28  -14 -42
+-1 sprites/ships/vehicle_ferry_small.pcx 20  510 01 89 28  -14 -54
 -1 sprites/ships/vehicle_ferry_small.pcx 60  510 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 186 510 01 48 96  -48 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 186 510 01 48 96  -36 -29
 -1 sprites/ships/vehicle_ferry_small.pcx 328 510 01 66 71  -10 -28
 -1 sprites/ships/vehicle_ferry_small.pcx 454 510 01 89 28  -14 -54
--1 sprites/ships/vehicle_ferry_small.pcx 494 510 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 620 510 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_small.pcx 762 510 01 66 71  -9  -28
+-1 sprites/ships/vehicle_ferry_small.pcx 494 510 01 66 71  -55 -26
+-1 sprites/ships/vehicle_ferry_small.pcx 620 510 01 48 96  -36 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 762 510 01 66 71   0  -24
 // loaded - moving (wash)
--1 sprites/ships/vehicle_ferry_small.pcx 20  610 01 89 28  -14 -42
+-1 sprites/ships/vehicle_ferry_small.pcx 20  610 01 89 28  -14 -54
 -1 sprites/ships/vehicle_ferry_small.pcx 60  610 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 186 610 01 48 96  -48 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 186 610 01 48 96  -36 -29
 -1 sprites/ships/vehicle_ferry_small.pcx 328 610 01 66 71  -10 -28
 -1 sprites/ships/vehicle_ferry_small.pcx 454 610 01 89 28  -14 -54
--1 sprites/ships/vehicle_ferry_small.pcx 494 610 01 66 71  -61 -28
--1 sprites/ships/vehicle_ferry_small.pcx 620 610 01 48 96  -48 -29
--1 sprites/ships/vehicle_ferry_small.pcx 762 610 01 66 71  -9  -28
+-1 sprites/ships/vehicle_ferry_small.pcx 494 610 01 66 71  -55 -26
+-1 sprites/ships/vehicle_ferry_small.pcx 620 610 01 48 96  -36 -29
+-1 sprites/ships/vehicle_ferry_small.pcx 762 610 01 66 71   0  -24
 -1 * 1	 02 02 B1 // not moving
       02 // number loaded states
       01 // number loading states
