@@ -22,10 +22,23 @@
 // set param 0 to default value of 2 
 -1 * -1 0D 00 80 FF 00 \d2
 
-// set purchase cost base for ships - may affect other ship grfs
--1 * 1    00 08 01 01 13 08
+// Check for required (OpenTTD) version, disable otherwise
+// Terminate, if TTDP:
+-1 * 0    07 9D 04 \7= \d01 01
+-1 * 0    0B 03 7F 02 "OpenTTD 0.7.0 (or better)" 00
+// Check for OpenTTD versions:
+-1 * 0    07 A1 04 \7= FF FF FF FF 02
+-1 * 0    07 A1 04 \7> \w16374 00 07 01
+-1 * 0    0B 03 7F 06 "0.7.0 (r16374)" 00
+
+// Notify user by means of an error, if engine pool is disabled
+-1 * 0    07 85 01 \71 78 01
+-1 * 0    0B 01 7F 02 "adv. setting '" 94 "vehicle->Enable multiple NewGRF vehicle sets'" 89 " = " 8E "ON"
+
+// set purchase cost base for ships - may affect other ship grfs for 0.7er branch of OpenTTD
+-1 * 0    00 08 01 01 13 08
   0A // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
   
-// set running cost base for ships - may affect other ship grfs
--1 * 1    00 08 01 01 2F 08
+// set running cost base for ships - may affect other ship grfs for 0.7er branch of OpenTTD
+-1 * 0    00 08 01 01 2F 08
   09 // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
