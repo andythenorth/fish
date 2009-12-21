@@ -1,23 +1,35 @@
-FISH - The First Ship Set
+FISH is Ships!
+
+River boats, lake ships and coasters in a range of attractive sizes from 15t to 1080t. Features lickable pixels in two company colours.
 -----------------------------------
 
 This version: {{GRF_TITLE}}
 
 Contents:
 
-1 About
-2 Installation
-3 Usage
-4 License
-5 Credits
-
+* About
+* Credits
+* License
+* Installation
+* Usage
 
 
 -------
-1 About
+About
 -------
 
-This NewGRF is a Ship Set. For integritiy check:
+FISH requires OpenTTD v0.7 or above.  It will not work with TTDPatch, or OpenTTD prior to v0.7.
+
+FISH should work well with most cargo / industry newgrfs, including default industries, FIRS and PBI.
+
+For latest information / releases, visit TT-Forums.
+Release thread: 
+	http://www.tt-forums.net/viewtopic.php?f=67&t=45435
+Development thread:
+	http://www.tt-forums.net/viewtopic.php?f=26&t=44613
+
+
+For integrity check:
 
 Name of this Repo: {{GRF_TITLE}}
 GRF_ID:            {{GRF_ID}}
@@ -26,10 +38,36 @@ MD5 sum:           {{GRF_MD5}}
 Repository version: {{GRF_REVISION}}
 
 
+---------
+Credits
+---------
 
---------------
-2 Installation
---------------
+Author: andythenorth
+Additional graphics: lead@inbox, Dan MacK
+Makefile/build system: Ingo von Borstel (aka planetmaker)
+
+Special thanks to #openttdcoop and especially Ammler who provides and works a lot on maintaining the Development Zone where this project is hosted and who also frequently gives much valuable input.
+
+Thanks to frosch for help with newgrf code and features.
+
+---------
+License
+---------
+
+This NewGRF is authored by andythenorth, the makefile by Ingo von Borstel (aka planetmaker) and released under the GNU General Pulic license v2 or later. See license.txt. 
+
+The source code can be obtained from the #openttdcoop DevZone at 
+	http://dev.openttdcoop.org/projects/fish 
+or via mercurial checkout
+	hg clone http://dev.openttdcoop.org/projects/fish
+
+
+
+------------------------------
+Makefile System - Installation
+------------------------------
+
+The Makefile system is intended for newgrf developers, and players who wish to compile the grf themselves.
 
 This Makefile system is easiest to setup if you employ a certain directory structure for your NewGRF project. Clone this project and fill in your NewGRF content. Make sure to adopt Makefile.config to your needs.
 
@@ -52,9 +90,9 @@ accordingly so that it shows the full path to your OpenTTD / TTDP data directory
 
 
 
--------
-3 Usage
--------
+-----------------------
+Makefile System - Usage
+-----------------------
 
 The Makefile offers different targets. A brief overview is given here:
 
@@ -90,25 +128,3 @@ This phony target will delete all files which this Makefile will create
 
 remake:
 It's a shortcut for first cleaning the dir and then making the grf anew.
-
-
-
----------
-4 License
----------
-
-This NewGRF is written by Andythenorth, the makefile by Ingo von Borstel (aka planetmaker) and released under the GNU General Pulic license v2 or later. See license.txt. 
-
-The source code can be obtained from the #openttdcoop DevZone at http://dev.openttdcoop.org/projects/fish or via mercurial checkout
-hg clone http://dev.openttdcoop.org/projects/fish
-
-
-
----------
-5 Credits
----------
-
-Author: Andythenorth
-Makefile/build system: Ingo von Borstel (aka planetmaker)
-
-Special thanks to #openttdcoop and especially Ammler who provides and works a lot on maintaining the Development Zone where this repository is hosted and who also frequently gives much valuable input. Thanks also to all the NewGRF authors whose NewGRFs can be my playground for this project.
