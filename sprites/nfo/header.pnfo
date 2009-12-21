@@ -17,6 +17,15 @@
       "___D" "___E" "___F" "___G"
       "___H" "SAND" "___J" "WHEA"
       "GOLD" "MAIZ" "TWOD" "DIAM"
+      
+
+// disable the warning:for newgrfs
+// warning about high IDs
+//@@WARNING DISABLE 141
+
+// warning about colour codes in strings
+//@@WARNING DISABLE 144
+
 
 // param 0 is used for capacity multiplier
 // set param 0 to default value of 2 
@@ -33,7 +42,7 @@
 
 // Notify user by means of an error, if engine pool is disabled
 -1 * 0    07 85 01 \71 78 01
--1 * 0    0B 01 7F 02 "adv. setting '" 94 "vehicle->Enable multiple NewGRF vehicle sets'" 89 " = " 8E "ON"
+-1 * 0    0B 01 7F 02 "adv. setting '" 94 "vehicle->Enable multiple NewGRF vehicle sets'" 89 " = " 8E "ON" 00
 
 // set purchase cost base for ships - may affect other ship grfs for 0.7er branch of OpenTTD
 -1 * 0    00 08 01 01 13 08
@@ -43,6 +52,3 @@
 -1 * 0    00 08 01 01 2F 08
   09 // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
 
-// disable the warning:for newgrfs
-// warning about high IDs
-//@@WARNING DISABLE 141
