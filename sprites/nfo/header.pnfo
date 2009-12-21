@@ -42,3 +42,7 @@
 // set running cost base for ships - may affect other ship grfs for 0.7er branch of OpenTTD
 -1 * 0    00 08 01 01 2F 08
   09 // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
+
+// disable the warning:for newgrfs
+// warning about high IDs
+//@@WARNING DISABLE 141
