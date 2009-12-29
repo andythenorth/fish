@@ -15,7 +15,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 9A 
     01 2B // X offset
     "Utility Vessel (Small)" 00  
@@ -63,7 +63,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 9B 
     01 2B // X offset
     "Utility Vessel (Medium)" 00  

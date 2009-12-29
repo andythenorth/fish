@@ -15,7 +15,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 72
     01 2B // X offset
     "Vehicle Ferry (Small)" 00  
@@ -99,7 +99,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 73
     01 2B // X offset
     "Vehicle Ferry (Medium)" 00  
@@ -182,7 +182,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 74 
     01 2B // X offset
     "Vehicle Ferry (Large)" 00  

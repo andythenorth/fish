@@ -11,7 +11,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 61 
     01 2B // X offset
     "Passenger Steamer (Small)" 00  
@@ -55,7 +55,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 62 
     01 2B // X offset
     "Passenger Steamer (Medium)" 00  
@@ -99,7 +99,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A F0 96 0A 00  // long format introduction date
+    1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 63 
     01 2B // X offset
     "Passenger Steamer (Large)" 00  
