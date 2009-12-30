@@ -1,4 +1,7 @@
 Changelog
 
+* 0.1.1 *
+Changed intro dates to 1870 for all ships.
+
 pre 0.1:
 - Feature: import newgrf-makefile r19
