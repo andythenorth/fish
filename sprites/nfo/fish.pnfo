@@ -1,6 +1,7 @@
 sprites/nfo/nfo_header.pnfo
 sprites/nfo/ids.pnfo
 sprites/nfo/header.pnfo
+sprites/nfo/modify_default_ships.pnfo
 sprites/nfo/coasters.pnfo
 sprites/nfo/river_boats.pnfo
 sprites/nfo/utility_vessels.pnfo
