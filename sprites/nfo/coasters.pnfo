@@ -5,11 +5,11 @@
     07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
-    0A \b121         // cost factor (purchase cost)
+    0A \b121        // cost factor (purchase cost)
     0B \b56         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w540        // capacity 
-    0F \b130        // running cost factor
+    10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     12 20           // callback flags
     17 02           // miscellaneous flags (inc. use 2CC)
@@ -82,7 +82,7 @@
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites
 
--1 * 1	 00 02 10 01 D2     // Action 0
+-1 * 1	 00 02 11 01 D2     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -94,6 +94,7 @@
     0C 01           // cargo type 
     0D \w810        // capacity 
     0F \b169        // running cost factor
+    10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
@@ -165,7 +166,7 @@
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites
    
--1 * 1	 00 02 10 01 D3     // Action 0
+-1 * 1	 00 02 11 01 D3     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -177,6 +178,7 @@
     0C 01           // cargo type 
     0D \w1080       // capacity 
     0F \b200        // running cost factor
+    10 04          // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
