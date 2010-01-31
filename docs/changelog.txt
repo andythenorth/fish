@@ -1,9 +1,5 @@
 Changelog
 
-* 0.2 *
-Enabled sound effects for ships.
-FISH will now disable all default ships except hovercraft.
-
 * 0.1.1 *
 Changed intro dates to 1870 for all ships.
 
