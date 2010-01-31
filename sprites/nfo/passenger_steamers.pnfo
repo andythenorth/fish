@@ -1,4 +1,4 @@
--1 * 1	 00 02 0D 01 61     // Action 0
+-1 * 1	 00 02 0E 01 61     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -8,6 +8,7 @@
     0B \b68        // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w270        // capacity 
+    10 05          // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
@@ -42,7 +43,7 @@
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
 
--1 * 1	 00 02 0D 01 62     // Action 0
+-1 * 1	 00 02 0E 01 62     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -52,6 +53,7 @@
     0B \b68        // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w585        // capacity 
+    10 05          // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
@@ -86,7 +88,7 @@
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
    
--1 * 1	 00 02 0D 01 63     // Action 0
+-1 * 1	 00 02 0E 01 63     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -96,6 +98,7 @@
     0B \b68        // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w800        // capacity 
+    10 05          // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
