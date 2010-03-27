@@ -1,4 +1,4 @@
--1 * 1	 00 02 11 01 D1     // Action 0
+-1 * 1	 00 02 \b18 01 D1     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -9,6 +9,7 @@
     0B \b56         // speed in mph * 3.2      
     0C 01           // cargo type 
     0D \w540        // capacity 
+    0F \b132        // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
     12 20           // callback flags
