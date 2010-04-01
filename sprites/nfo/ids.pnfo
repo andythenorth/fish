@@ -2,3 +2,4 @@
 #define VEH_TRADER_SMALL              A1
 #define VEH_TRADER_MEDIUM             A2
 #define VEH_TRADER_LARGE              A3
+#define VEH_ISLAND_TRADER             A4
