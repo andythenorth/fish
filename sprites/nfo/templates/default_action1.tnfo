@@ -1,0 +1,48 @@
+-1 * 4	 01 02 \b05 08 
+// buy menu sprites
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 10 01  48 96  -41 -22
+-1 * 1	 00
+// unloaded - not moving (no wash)
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  10 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  10 01  66 77  -50 -32
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 10 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 10 01  66 77   02 -22
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 10 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 10 01  66 77  -48 -35
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 10 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 10 01  66 77   02 -20
+// unloaded - moving (wash)
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  110 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  110 01  66 77  -50 -32
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 110 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 110 01  66 77   02 -22
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 110 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 110 01  66 77  -48 -35
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 110 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 110 01  66 77   02 -20
+// loaded - not moving (no wash)
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  510 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  510 01  66 77  -50 -32
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 510 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 510 01  66 77   02 -22
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 510 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 510 01  66 77  -48 -35
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 510 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 510 01  66 77   02 -20
+// loaded - moving (wash)
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  610 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  610 01  66 77  -50 -32
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 610 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 610 01  66 77   02 -22
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 610 01  89 28  -14 -62
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 610 01  66 77  -48 -35
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 610 01  48 96  -32 -21
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 610 01  66 77   02 -20
+
+#undef THIS_PCX_FILE
