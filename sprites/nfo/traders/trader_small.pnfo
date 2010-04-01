@@ -1,5 +1,5 @@
 #define THIS_PCX_FILE       trader_small     // used in action 1 template
-#define THIS_ID             VEH_TRADER_SMALL // used in action 2/3 template
+#define THIS_VEH_ID         VEH_TRADER_SMALL // used in action 2/3 template
 
 -1 * 1	 00 02 \b17 01 VEH_TRADER_SMALL     // Action 0
     00 \w01-01-1970 // date of introduction

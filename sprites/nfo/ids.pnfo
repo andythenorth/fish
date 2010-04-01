@@ -1,2 +1,3 @@
 // IDs for FISH 
 #define VEH_TRADER_SMALL              A1
+#define VEH_TRADER_MEDIUM             A2
