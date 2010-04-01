@@ -24,3 +24,5 @@
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites
+   
+#undef THIS_VEH_ID
