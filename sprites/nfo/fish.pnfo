@@ -2,12 +2,13 @@
 #include "sprites/nfo/ids.pnfo"
 #include "sprites/nfo/header.pnfo"
 #include "sprites/nfo/modify_default_ships.pnfo"
-#include "sprites/nfo/utility_vessels.pnfo"
 #include "sprites/nfo/log_rafts.pnfo"
 
 #include "sprites/nfo/river_boats/river_boat_small.pnfo"
 #include "sprites/nfo/river_boats/river_boat_large.pnfo"
 
+#include "sprites/nfo/utility_vessels/utility_vessel_small.pnfo"
+#include "sprites/nfo/utility_vessels/utility_vessel_medium.pnfo"
 
 #include "sprites/nfo/traders/trader_small.pnfo"
 #include "sprites/nfo/traders/trader_medium.pnfo"
