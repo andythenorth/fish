@@ -13,12 +13,14 @@
       01 // number loading states
       02 00  04 00 // loaded sprites
       01 00 // loading sprites
+      
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
--1 * 1	 03 02 01 A1 // Action 3 
+                 
+-1 * 1	 03 02 01 VEH_TRADER_SMALL // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites
