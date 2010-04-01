@@ -6,7 +6,7 @@
 -1 * 1	 00
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/ships/THIS_PCX_FILE.pcx 620 10 01  48 96  -41 -22
+-1 sprites/ships/THIS_PCX_FILE.pcx THIS_OFFS_MENU
 -1 * 1	 00
 // unloaded - not moving (no wash)
 -1 sprites/ships/THIS_PCX_FILE.pcx 20  10 01  89 28  THIS_X_OFFS_1 THIS_Y_OFFS_1
@@ -47,6 +47,7 @@
 
 #undef THIS_PCX_FILE
 
+#undef THIS_OFFS_MENU
 #undef THIS_X_OFFS_1
 #undef THIS_Y_OFFS_1
 #undef THIS_X_OFFS_2

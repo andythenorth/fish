@@ -1,6 +1,8 @@
 #define THIS_PCX_FILE       trader_small     // used in action 1 template
 #define THIS_VEH_ID         VEH_TRADER_SMALL // used in action 2/3 template
 
+#define THIS_OFFS_MENU  620 10 01  48 96  -41 -21
+
 #define THIS_X_OFFS_1  -14
 #define THIS_Y_OFFS_1  -62
 
