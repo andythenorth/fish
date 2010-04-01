@@ -3,7 +3,6 @@
 #include "sprites/nfo/header.pnfo"
 #include "sprites/nfo/modify_default_ships.pnfo"
 #include "sprites/nfo/utility_vessels.pnfo"
-#include "sprites/nfo/vehicle_ferries.pnfo"
 #include "sprites/nfo/traders.pnfo"
 #include "sprites/nfo/log_rafts.pnfo"
 
@@ -13,3 +12,7 @@
 #include "sprites/nfo/coasters/coaster_small.pnfo"
 #include "sprites/nfo/coasters/coaster_medium.pnfo"
 #include "sprites/nfo/coasters/coaster_large.pnfo"
+
+#include "sprites/nfo/vehicle_ferries/vehicle_ferry_small.pnfo"
+#include "sprites/nfo/vehicle_ferries/vehicle_ferry_medium.pnfo"
+#include "sprites/nfo/vehicle_ferries/vehicle_ferry_large.pnfo"
