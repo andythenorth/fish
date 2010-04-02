@@ -3,29 +3,21 @@
 
 #define THIS_OFFS_MENU  620 10 01  48 96  -41 -21
 
-#define THIS_X_OFFS_1  -14
-#define THIS_Y_OFFS_1  -61
+#define THIS_OFFS_X_Y_1  -14 -61
 
-#define THIS_X_OFFS_2  -59
-#define THIS_Y_OFFS_2  -29
+#define THIS_OFFS_X_Y_2  -59 -29
 
-#define THIS_X_OFFS_3  -45
-#define THIS_Y_OFFS_3  -21
+#define THIS_OFFS_X_Y_3  -45 -21
 
-#define THIS_X_OFFS_4  -07
-#define THIS_Y_OFFS_4  -26
+#define THIS_OFFS_X_Y_4  -07 -26
 
-#define THIS_X_OFFS_5  -14
-#define THIS_Y_OFFS_5  -60
+#define THIS_OFFS_X_Y_5  -14 -60
 
-#define THIS_X_OFFS_6  -57
-#define THIS_Y_OFFS_6  -31
+#define THIS_OFFS_X_Y_6  -57 -31
 
-#define THIS_X_OFFS_7  -42
-#define THIS_Y_OFFS_7  -21
+#define THIS_OFFS_X_Y_7  -42 -21
 
-#define THIS_X_OFFS_8  -05
-#define THIS_Y_OFFS_8  -24
+#define THIS_OFFS_X_Y_8  -05 -24
 
 
 -1 * 1	 00 02 \b17 01 VEH_TRADER_LARGE     // Action 0
