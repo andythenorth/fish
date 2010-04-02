@@ -3,20 +3,13 @@
 
 #define THIS_OFFS_MENU  662 10 01  48 90  -37 -21
 
-#define THIS_OFFS_X_Y_1  -14 -62
-
+#define THIS_OFFS_X_Y_1  -14 -40
 #define THIS_OFFS_X_Y_2  -50 -32
-
-#define THIS_OFFS_X_Y_3  -32 -21
-
+#define THIS_OFFS_X_Y_3  -68 -21
 #define THIS_OFFS_X_Y_4   02 -22
-
-#define THIS_OFFS_X_Y_5  -14 -62
-
+#define THIS_OFFS_X_Y_5  -14 -40
 #define THIS_OFFS_X_Y_6  -48 -35
-
 #define THIS_OFFS_X_Y_7  -32 -21
-
 #define THIS_OFFS_X_Y_8   02 -20
 
 
