@@ -8,59 +8,70 @@
 -1 * 1	 00
 -1 sprites/ships/THIS_PCX_FILE.pcx THIS_OFFS_MENU
 -1 * 1	 00
+
+#define THIS_Y_X_CROP_1  89  28
+#define THIS_Y_X_CROP_2  66 113
+#define THIS_Y_X_CROP_3  50 138
+#define THIS_Y_X_CROP_4  66 113
+#define THIS_Y_X_CROP_5  89  28
+#define THIS_Y_X_CROP_6  66 113
+#define THIS_Y_X_CROP_7  50 138
+#define THIS_Y_X_CROP_8  66 113
 // unloaded - not moving (no wash)
--1 sprites/ships/THIS_PCX_FILE.pcx 20  10 01  89 28  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE.pcx 60  10 01  66 77  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE.pcx 186 10 01  48 96  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE.pcx 328 10 01  66 77  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE.pcx 454 10 01  89 28  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE.pcx 494 10 01  66 77  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE.pcx 620 10 01  48 96  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE.pcx 762 10 01  66 77  THIS_OFFS_X_Y_8
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  10 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  10 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 10 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 10 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 10 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 10 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 10 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 10 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
 // unloaded - moving (wash)
--1 sprites/ships/THIS_PCX_FILE.pcx 20  110 01  89 28  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE.pcx 60  110 01  66 77  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE.pcx 186 110 01  48 96  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE.pcx 328 110 01  66 77  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE.pcx 454 110 01  89 28  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE.pcx 494 110 01  66 77  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE.pcx 620 110 01  48 96  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE.pcx 762 110 01  66 77  THIS_OFFS_X_Y_8
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  110 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  110 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 110 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 110 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 110 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 110 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 110 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 110 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
 // loaded - not moving (no wash)
--1 sprites/ships/THIS_PCX_FILE.pcx 20  510 01  89 28  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE.pcx 60  510 01  66 77  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE.pcx 186 510 01  48 96  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE.pcx 328 510 01  66 77  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE.pcx 454 510 01  89 28  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE.pcx 494 510 01  66 77  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE.pcx 620 510 01  48 96  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE.pcx 762 510 01  66 77  THIS_OFFS_X_Y_8
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  510 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  510 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 510 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 510 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 510 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 510 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 510 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 510 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
 // loaded - moving (wash)
--1 sprites/ships/THIS_PCX_FILE.pcx 20  610 01  89 28  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE.pcx 60  610 01  66 77  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE.pcx 186 610 01  48 96  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE.pcx 328 610 01  66 77  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE.pcx 454 610 01  89 28  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE.pcx 494 610 01  66 77  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE.pcx 620 610 01  48 96  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE.pcx 762 610 01  66 77  THIS_OFFS_X_Y_8
+-1 sprites/ships/THIS_PCX_FILE.pcx 20  610 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE.pcx 60  610 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE.pcx 186 610 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE.pcx 328 610 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE.pcx 454 610 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE.pcx 494 610 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE.pcx 620 610 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE.pcx 762 610 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+
+#undef THIS_Y_X_CROP_1
+#undef THIS_Y_X_CROP_2
+#undef THIS_Y_X_CROP_3
+#undef THIS_Y_X_CROP_4
+#undef THIS_Y_X_CROP_5
+#undef THIS_Y_X_CROP_6
+#undef THIS_Y_X_CROP_7
+#undef THIS_Y_X_CROP_8
 
 #undef THIS_PCX_FILE
 
 #undef THIS_OFFS_MENU
-#undef THIS_X_OFFS_1
-#undef THIS_Y_OFFS_1
-#undef THIS_X_OFFS_2
-#undef THIS_Y_OFFS_2
-#undef THIS_X_OFFS_3
-#undef THIS_Y_OFFS_3
-#undef THIS_X_OFFS_4
-#undef THIS_Y_OFFS_4
-#undef THIS_X_OFFS_5
-#undef THIS_Y_OFFS_5
-#undef THIS_X_OFFS_6
-#undef THIS_Y_OFFS_6
-#undef THIS_X_OFFS_7
-#undef THIS_Y_OFFS_7
-#undef THIS_X_OFFS_8
-#undef THIS_Y_OFFS_8
+
+#undef THIS_OFFS_X_Y_1
+#undef THIS_OFFS_X_Y_2
+#undef THIS_OFFS_X_Y_3
+#undef THIS_OFFS_X_Y_4
+#undef THIS_OFFS_X_Y_5
+#undef THIS_OFFS_X_Y_6
+#undef THIS_OFFS_X_Y_7
+#undef THIS_OFFS_X_Y_8

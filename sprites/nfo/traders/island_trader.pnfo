@@ -1,22 +1,15 @@
 #define THIS_PCX_FILE       island_trader     // used in action 1 template
 #define THIS_VEH_ID         VEH_ISLAND_TRADER // used in action 2/3 template
 
-#define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
+#define THIS_OFFS_MENU  640 29 01  22 100  -36 -10
 
 #define THIS_OFFS_X_Y_1  -14 -46
-
 #define THIS_OFFS_X_Y_2  -61 -28
-
 #define THIS_OFFS_X_Y_3  -48 -29
-
 #define THIS_OFFS_X_Y_4  -10 -28
-
 #define THIS_OFFS_X_Y_5  -14 -54
-
 #define THIS_OFFS_X_Y_6  -61 -28
-
 #define THIS_OFFS_X_Y_7  -48 -29
-
 #define THIS_OFFS_X_Y_8  -09 -28
 
 
