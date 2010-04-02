@@ -11,11 +11,11 @@
 
 #define THIS_Y_X_CROP_1  89  28
 #define THIS_Y_X_CROP_2  66 113
-#define THIS_Y_X_CROP_3  50 138
+#define THIS_Y_X_CROP_3  48 138
 #define THIS_Y_X_CROP_4  66 113
 #define THIS_Y_X_CROP_5  89  28
 #define THIS_Y_X_CROP_6  66 113
-#define THIS_Y_X_CROP_7  50 138
+#define THIS_Y_X_CROP_7  48 138
 #define THIS_Y_X_CROP_8  66 113
 // unloaded - not moving (no wash)
 -1 sprites/ships/THIS_PCX_FILE.pcx 20  10 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
