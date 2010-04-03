@@ -35,5 +35,5 @@
     01 2B // X offset
     "Trader (Large)" 00
     
-#include "../templates/default_action1.tnfo"
-#include "../templates/default_action23.tnfo"
+#include "../templates/enhanced_cargo_support_action1_2.tnfo"
+#include "../templates/enhanced_cargo_support_action2_3.tnfo"
