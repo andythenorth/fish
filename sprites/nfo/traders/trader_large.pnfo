@@ -4,13 +4,13 @@
 #define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
 
 #define THIS_OFFS_X_Y_1  -14 -40
-#define THIS_OFFS_X_Y_2  -66 -29
+#define THIS_OFFS_X_Y_2  -80 -24
 #define THIS_OFFS_X_Y_3  -66 -21
-#define THIS_OFFS_X_Y_4  -07 -26
-#define THIS_OFFS_X_Y_5  -14 -60
-#define THIS_OFFS_X_Y_6  -57 -31
+#define THIS_OFFS_X_Y_4  -33 -25
+#define THIS_OFFS_X_Y_5  -14 -40
+#define THIS_OFFS_X_Y_6  -78 -26
 #define THIS_OFFS_X_Y_7  -66 -21
-#define THIS_OFFS_X_Y_8  -05 -24
+#define THIS_OFFS_X_Y_8  -32 -23
 
 
 -1 * 1	 00 02 \b17 01 VEH_TRADER_LARGE     // Action 0
