@@ -4,11 +4,11 @@
 #define THIS_OFFS_MENU  655 10 01  48 90  -36 -21
 
 #define THIS_OFFS_X_Y_1  -14 -40
-#define THIS_OFFS_X_Y_2  -54 -31
+#define THIS_OFFS_X_Y_2  -82 -23
 #define THIS_OFFS_X_Y_3  -66 -21
-#define THIS_OFFS_X_Y_4  -01 -24
-#define THIS_OFFS_X_Y_5  -14 -60
-#define THIS_OFFS_X_Y_6  -53 -33
+#define THIS_OFFS_X_Y_4  -33 -24
+#define THIS_OFFS_X_Y_5  -14 -40
+#define THIS_OFFS_X_Y_6  -80 -25
 #define THIS_OFFS_X_Y_7  -66 -21
 #define THIS_OFFS_X_Y_8  -30 -20
 
