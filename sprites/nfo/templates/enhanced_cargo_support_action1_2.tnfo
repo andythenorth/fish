@@ -24,8 +24,8 @@
       00 00 // loaded sprites
       00 00 // loading sprites
 
--1 * 4	 01 02 \b08 08 
-// 00 default unloaded - not moving (no wash)
+-1 * 4	 01 02 \b12 08 
+// \w00 default unloaded - not moving (no wash)
 -1 sprites/ships/THIS_PCX_FILE  20  10 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
 -1 sprites/ships/THIS_PCX_FILE  60  10 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
 -1 sprites/ships/THIS_PCX_FILE  186 10 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
@@ -34,7 +34,7 @@
 -1 sprites/ships/THIS_PCX_FILE  494 10 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
 -1 sprites/ships/THIS_PCX_FILE  620 10 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
 -1 sprites/ships/THIS_PCX_FILE  762 10 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 01 default unloaded - moving (wash)
+// \w01 default unloaded - moving (wash)
 -1 sprites/ships/THIS_PCX_FILE  20  110 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
 -1 sprites/ships/THIS_PCX_FILE  60  110 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
 -1 sprites/ships/THIS_PCX_FILE  186 110 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
@@ -43,7 +43,7 @@
 -1 sprites/ships/THIS_PCX_FILE  494 110 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
 -1 sprites/ships/THIS_PCX_FILE  620 110 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
 -1 sprites/ships/THIS_PCX_FILE  762 110 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 02 default loading 1
+// \w02 default loading 1
 -1 sprites/ships/THIS_PCX_FILE  20  210 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
 -1 sprites/ships/THIS_PCX_FILE  60  210 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
 -1 sprites/ships/THIS_PCX_FILE  186 210 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
@@ -52,7 +52,7 @@
 -1 sprites/ships/THIS_PCX_FILE  494 210 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
 -1 sprites/ships/THIS_PCX_FILE  620 210 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
 -1 sprites/ships/THIS_PCX_FILE  762 210 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 03 default loading 2
+// \w03 default loading 2
 -1 sprites/ships/THIS_PCX_FILE  20  310 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
 -1 sprites/ships/THIS_PCX_FILE  60  310 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
 -1 sprites/ships/THIS_PCX_FILE  186 310 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
@@ -61,53 +61,98 @@
 -1 sprites/ships/THIS_PCX_FILE  494 310 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
 -1 sprites/ships/THIS_PCX_FILE  620 310 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
 -1 sprites/ships/THIS_PCX_FILE  762 310 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 04 default loading 3
--1 sprites/ships/THIS_PCX_FILE  20  410 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE  60  410 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE  186 410 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE  328 410 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE  454 410 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE  494 410 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE  620 410 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE  762 410 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 05 default loading 4
--1 sprites/ships/THIS_PCX_FILE  20  510 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE  60  510 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE  186 510 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE  328 510 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE  454 510 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE  494 510 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE  620 510 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE  762 510 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 06 default loaded - not moving (no wash)
--1 sprites/ships/THIS_PCX_FILE  20  610 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE  60  610 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE  186 610 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE  328 610 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE  454 610 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE  494 610 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE  620 610 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE  762 610 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-// 07 default loaded - moving (wash)
--1 sprites/ships/THIS_PCX_FILE  20  710 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
--1 sprites/ships/THIS_PCX_FILE  60  710 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
--1 sprites/ships/THIS_PCX_FILE  186 710 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
--1 sprites/ships/THIS_PCX_FILE  328 710 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
--1 sprites/ships/THIS_PCX_FILE  454 710 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
--1 sprites/ships/THIS_PCX_FILE  494 710 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
--1 sprites/ships/THIS_PCX_FILE  620 710 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
--1 sprites/ships/THIS_PCX_FILE  762 710 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
-
--1 * 1	 02 02 B1 // not moving
+// \w04 default loading 3
+-1 sprites/ships/THIS_PCX_FILE  20  810 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  810 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 810 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 810 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 810 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 810 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 810 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 810 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w05 default loading 4
+-1 sprites/ships/THIS_PCX_FILE  20  910 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  910 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 910 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 910 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 910 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 910 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 910 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 910 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w06 default loaded - not moving (no wash)
+-1 sprites/ships/THIS_PCX_FILE  20  1010 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  1010 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 1010 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 1010 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 1010 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 1010 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 1010 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 1010 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w07 default loaded - moving (wash)
+-1 sprites/ships/THIS_PCX_FILE  20  1110 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  1110 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 1110 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 1110 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 1110 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 1110 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 1110 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 1110 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w08 tanker unloaded - not moving (no wash)
+-1 sprites/ships/THIS_PCX_FILE  20  810 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  810 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 810 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 810 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 810 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 810 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 810 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 810 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w09 tanker unloaded - moving (wash)
+-1 sprites/ships/THIS_PCX_FILE  20  910 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  910 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 910 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 910 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 910 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 910 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 910 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 910 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w10 tanker loaded - not moving (no wash)
+-1 sprites/ships/THIS_PCX_FILE  20  1010 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  1010 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 1010 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 1010 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 1010 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 1010 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 1010 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 1010 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+// \w11 tanker loaded - moving (wash)
+-1 sprites/ships/THIS_PCX_FILE  20  1110 01  THIS_Y_X_CROP_1  THIS_OFFS_X_Y_1
+-1 sprites/ships/THIS_PCX_FILE  60  1110 01  THIS_Y_X_CROP_2  THIS_OFFS_X_Y_2
+-1 sprites/ships/THIS_PCX_FILE  186 1110 01  THIS_Y_X_CROP_3  THIS_OFFS_X_Y_3
+-1 sprites/ships/THIS_PCX_FILE  328 1110 01  THIS_Y_X_CROP_4  THIS_OFFS_X_Y_4
+-1 sprites/ships/THIS_PCX_FILE  454 1110 01  THIS_Y_X_CROP_5  THIS_OFFS_X_Y_5
+-1 sprites/ships/THIS_PCX_FILE  494 1110 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
+-1 sprites/ships/THIS_PCX_FILE  620 1110 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
+-1 sprites/ships/THIS_PCX_FILE  762 1110 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
+-1 * 1	 02 02 B1 // default cargos - not moving
       02 // number loaded states
       04 // number loading states
-      00 00  06 00 // loaded sprites
-      02 00  03 00  04 00  05 00 // loading sprites
--1 * 1	 02 02 B2 // moving  
+      \w00  \w06 // loaded sprites
+      \w02  \w03  \w04  \w05 // loading sprites
+-1 * 1	 02 02 B2 // default cargos - moving  
       02 // number loaded states
       01 // number loading states
-      01 00  07 00 // loaded sprites
-      01 00 // loading sprites (n/a if moving)
+      \w01  \w07 // loaded sprites
+      \w01 // loading sprites (n/a if moving)
+-1 * 1	 02 02 B3 // tanker - not moving
+      02 // number loaded states
+      02 // number loading states
+      \w08  \w10 // loaded sprites
+      \w08  \w10 // loading sprites
+-1 * 1	 02 02 B4 // tanker - moving  
+      02 // number loaded states
+      01 // number loading states
+      \w9  \w11 // loaded sprites
+      \w9 // loading sprites (n/a if moving)      
 
 #undef THIS_Y_X_CROP_1
 #undef THIS_Y_X_CROP_2
