@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE       island_trader     // used in action 1 template
+#define THIS_PCX_FILE       island_trader.pcx     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID         VEH_ISLAND_TRADER // used in action 2/3 template
 
 #define THIS_OFFS_MENU  640 29 01  22 100  -36 -10
