@@ -5,3 +5,5 @@
 #define VEH_TRADER_MEDIUM             A2
 #define VEH_TRADER_LARGE              A3
 #define VEH_ISLAND_TRADER             A4
+
+#define VEH_RIVER_BOAT_SMALL          E1
