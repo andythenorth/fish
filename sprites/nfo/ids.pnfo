@@ -7,3 +7,4 @@
 #define VEH_ISLAND_TRADER             A4
 
 #define VEH_RIVER_BOAT_SMALL          E1
+#define VEH_RIVER_BOAT_LARGE          E2
