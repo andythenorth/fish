@@ -1,11 +1,17 @@
 Changelog
 
+* 0.3 *
+
+- Tanker graphics used when following ships are refitted to liquid cargos: Small Trader, Medium Trader, Large Trader, Small River Boat, Large River Boat.
+- running cost fixed for Small Coaster.
+- Utility Vessel (Medium) now has passengers as default cargo.
+
 * 0.2 *
-Enabled sound effects for all ships.
-FISH now disables default ships except for hovercraft.
+- Enabled sound effects for all ships.
+- FISH now disables default ships except for hovercraft.
 
 * 0.1.1 *
-Changed intro dates to 1870 for all ships.
+- Changed intro dates to 1870 for all ships.
 
 pre 0.1:
 - Feature: import newgrf-makefile r19
