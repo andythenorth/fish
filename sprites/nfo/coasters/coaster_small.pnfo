@@ -1,16 +1,17 @@
 #define THIS_PCX_FILE       coaster_small.pcx     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID         VEH_COASTER_SMALL // used in action 2/3 template
 
-#define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
+//#define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
+#define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
-#define THIS_OFFS_X_Y_1  -14 -40
-#define THIS_OFFS_X_Y_2  -80 -24
-#define THIS_OFFS_X_Y_3  -66 -21
-#define THIS_OFFS_X_Y_4  -33 -25
-#define THIS_OFFS_X_Y_5  -14 -40
-#define THIS_OFFS_X_Y_6  -78 -26
-#define THIS_OFFS_X_Y_7  -66 -21
-#define THIS_OFFS_X_Y_8  -32 -23
+#define THIS_OFFS_X_Y_1  -14 -42
+#define THIS_OFFS_X_Y_2  -61 -28
+#define THIS_OFFS_X_Y_3  -48 -29
+#define THIS_OFFS_X_Y_4  -10 -28
+#define THIS_OFFS_X_Y_5  -14 -54
+#define THIS_OFFS_X_Y_6  -61 -28
+#define THIS_OFFS_X_Y_7  -48 -29
+#define THIS_OFFS_X_Y_8   -9 -28
 
 
 -1 * 1	 00 02 \b18 01 VEH_COASTER_SMALL     // Action 0
@@ -35,65 +36,6 @@
 -1 * 1   04 02 7F 01 VEH_COASTER_SMALL
     01 2B // X offset
     "Coaster (Small)" 00  
--1 * 4	 01 02 04 08 
-// unloaded - not moving (no wash) 
--1 sprites/ships/coaster_small.pcx 20  10 01 89 28  -14 -42
--1 sprites/ships/coaster_small.pcx 60  10 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 186 10 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 328 10 01 66 71  -10 -28
--1 sprites/ships/coaster_small.pcx 454 10 01 89 28  -14  -54
--1 sprites/ships/coaster_small.pcx 494 10 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 620 10 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 762 10 01 66 71  -9  -28
-// unloaded - moving (wash)
--1 sprites/ships/coaster_small.pcx 20  110 01 89 28  -14 -42
--1 sprites/ships/coaster_small.pcx 60  110 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 186 110 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 328 110 01 66 71  -10 -28
--1 sprites/ships/coaster_small.pcx 454 110 01 89 28  -14  -54
--1 sprites/ships/coaster_small.pcx 494 110 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 620 110 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 762 110 01 66 71  -9  -28
-// loaded - not moving (no wash)
--1 sprites/ships/coaster_small.pcx 20  510 01 89 28  -14 -42
--1 sprites/ships/coaster_small.pcx 60  510 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 186 510 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 328 510 01 66 71  -10 -28
--1 sprites/ships/coaster_small.pcx 454 510 01 89 28  -14  -54
--1 sprites/ships/coaster_small.pcx 494 510 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 620 510 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 762 510 01 66 71  -9  -28
-// loaded - moving (wash)
--1 sprites/ships/coaster_small.pcx 20  610 01 89 28  -14 -42
--1 sprites/ships/coaster_small.pcx 60  610 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 186 610 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 328 610 01 66 71  -10 -28
--1 sprites/ships/coaster_small.pcx 454 610 01 89 28  -14  -54
--1 sprites/ships/coaster_small.pcx 494 610 01 66 71  -61 -28
--1 sprites/ships/coaster_small.pcx 620 610 01 48 96  -48 -29
--1 sprites/ships/coaster_small.pcx 762 610 01 66 71  -9  -28
--1 * 1	 02 02 B1 // not moving
-      02 // number loaded states
-      01 // number loading states
-      00 00  02 00 // loaded sprites
-      00 00 // loading sprites
--1 * 1	 02 02 B2 // moving  
-      02 // number loaded states
-      01 // number loading states
-      01 00  03 00 // loaded sprites
-      00 00 // loading sprites
--1 * 4	 01 02 01 04 // buy menu sprites
--1 * 1	 00
--1 * 1	 00
--1 sprites/ships/coaster_small.pcx 620 29 01 22 116 -36 -10
--1 * 1	 00
--1 * 1	 02 02 B0 01 01  00 00  00 00
--1 * 1	 02 02 A0  // choose sprites according to vehicle speed
-                 81 B4 00 FF //
-                 01 // range
-                  B1 00 00 00 // not moving (speed == 0)
-                 B2 00 // moving (speed != 0) 
--1 * 1	 03 02 01 D1 // Action 3 
-   01 // number of cargo types to support
-    FF B0 00 // buy menu sprites 
-   A0 00 // default sprites
+    
+#include "../templates/enhanced_cargo_support_action1_2.tnfo"
+#include "../templates/enhanced_cargo_support_action2_3.tnfo"
