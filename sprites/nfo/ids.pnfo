@@ -1,6 +1,10 @@
 // IDs for FISH 
 
 // Ship IDs
+#define VEH_COASTER_SMALL             D1
+#define VEH_COASTER_MEDIUM            D2
+#define VEH_COASTER_LARGE             D3
+
 #define VEH_TRADER_SMALL              A1
 #define VEH_TRADER_MEDIUM             A2
 #define VEH_TRADER_LARGE              A3
