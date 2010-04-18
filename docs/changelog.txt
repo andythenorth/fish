@@ -1,7 +1,10 @@
 Changelog
 
-* 0.3 *
+* 0.4 *
+- Tanker graphics used when following ships are refitted to liquid cargos: Small Coaster, Medium Coaster, Large Coaster.
+- Large River Boat was missing wake graphics in some cases; now fixed.
 
+* 0.3 *
 - Tanker graphics used when following ships are refitted to liquid cargos: Small Trader, Medium Trader, Large Trader, Small River Boat, Large River Boat.
 - running cost fixed for Small Coaster.
 - Utility Vessel (Medium) now has passengers as default cargo.
