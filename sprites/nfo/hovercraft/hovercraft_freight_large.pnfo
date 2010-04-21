@@ -1,7 +1,7 @@
-#define THIS_PCX_FILE       hovercraft_freight_medium.pcx     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID         VEH_HOVERCRAFT_FREIGHT_MEDIUM // used in action 2/3 template
+#define THIS_PCX_FILE       hovercraft_freight_large.pcx     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID         VEH_HOVERCRAFT_FREIGHT_LARGE // used in action 2/3 template
 
-#define THIS_OFFS_MENU  670 24 01  22 50  -36 -10
+#define THIS_OFFS_MENU  650 22 01  26 80  -44 -10
 
 #define THIS_OFFS_X_Y_1  -14 -40
 #define THIS_OFFS_X_Y_2  -82 -23
@@ -13,7 +13,7 @@
 #define THIS_OFFS_X_Y_8  -30 -20
 
 
--1 * 1	 00 02 \b18 01 VEH_HOVERCRAFT_FREIGHT_MEDIUM     // Action 0
+-1 * 1	 00 02 \b18 01 VEH_HOVERCRAFT_FREIGHT_LARGE     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -21,9 +21,9 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b121        // cost factor (purchase cost)
-    0B \b148        // speed in mph * 3.2      
+    0B \b128        // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w30         // capacity 
+    0D \w65         // capacity 
     0F \b132        // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
@@ -32,9 +32,9 @@
     18 FF 03        // refittable cargo classes
     19 03 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 VEH_HOVERCRAFT_FREIGHT_MEDIUM
+-1 * 1   04 02 7F 01 VEH_HOVERCRAFT_FREIGHT_LARGE
     01 2B // X offset
-    "Hovercraft (Freight Medium)" 00  
+    "Hovercraft (Freight Large)" 00  
     
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"
 #include "../templates/enhanced_cargo_support_action2_3.tnfo"

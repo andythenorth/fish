@@ -24,3 +24,4 @@
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_large.pnfo"
 
 #include "sprites/nfo/hovercraft/hovercraft_freight_medium.pnfo"
+#include "sprites/nfo/hovercraft/hovercraft_freight_large.pnfo"
