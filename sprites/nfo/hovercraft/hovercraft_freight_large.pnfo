@@ -22,7 +22,7 @@
     09 01           // refittable (0 = no, 1 = yes)
     0A \b121        // cost factor (purchase cost)
     0B \b128        // speed in mph * 3.2      
-    0C 01           // cargo type 
+    0C 05           // cargo type 
     0D \w65         // capacity 
     0F \b132        // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
