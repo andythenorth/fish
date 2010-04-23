@@ -3,14 +3,14 @@
 
 #define THIS_OFFS_MENU  650 22 01  26 80  -44 -10
 
-#define THIS_OFFS_X_Y_1  -14 -40
+#define THIS_OFFS_X_Y_1  -14 -38
 #define THIS_OFFS_X_Y_2  -82 -23
 #define THIS_OFFS_X_Y_3  -66 -21
-#define THIS_OFFS_X_Y_4  -33 -24
+#define THIS_OFFS_X_Y_4  -31 -25
 #define THIS_OFFS_X_Y_5  -14 -40
-#define THIS_OFFS_X_Y_6  -80 -25
-#define THIS_OFFS_X_Y_7  -66 -21
-#define THIS_OFFS_X_Y_8  -30 -20
+#define THIS_OFFS_X_Y_6  -81 -25
+#define THIS_OFFS_X_Y_7  -70 -21
+#define THIS_OFFS_X_Y_8  -29 -23
 
 
 -1 * 1	 00 02 \b18 01 VEH_HOVERCRAFT_FREIGHT_LARGE     // Action 0
