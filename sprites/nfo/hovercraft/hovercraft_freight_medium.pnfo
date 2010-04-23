@@ -4,13 +4,13 @@
 #define THIS_OFFS_MENU  670 24 01  22 50  -36 -10
 
 #define THIS_OFFS_X_Y_1  -14 -40
-#define THIS_OFFS_X_Y_2  -82 -23
-#define THIS_OFFS_X_Y_3  -66 -21
-#define THIS_OFFS_X_Y_4  -33 -24
-#define THIS_OFFS_X_Y_5  -14 -40
-#define THIS_OFFS_X_Y_6  -80 -25
-#define THIS_OFFS_X_Y_7  -66 -21
-#define THIS_OFFS_X_Y_8  -30 -20
+#define THIS_OFFS_X_Y_2  -82 -24
+#define THIS_OFFS_X_Y_3  -69 -21
+#define THIS_OFFS_X_Y_4  -29 -24
+#define THIS_OFFS_X_Y_5  -14 -42
+#define THIS_OFFS_X_Y_6  -80 -26
+#define THIS_OFFS_X_Y_7  -68 -21
+#define THIS_OFFS_X_Y_8  -29 -24
 
 
 -1 * 1	 00 02 \b18 01 VEH_HOVERCRAFT_FREIGHT_MEDIUM     // Action 0
