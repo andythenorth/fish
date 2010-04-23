@@ -30,7 +30,7 @@
     12 20           // callback flags
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
-    19 03 00        // non-refittable cargo classes
+    19 01 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_HOVERCRAFT_FREIGHT_LARGE
     01 2B // X offset
