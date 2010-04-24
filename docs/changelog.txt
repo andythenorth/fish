@@ -1,5 +1,9 @@
 Changelog
 
+* 0.5 *
+- Added "Porcupine 30 Freight Hovercraft".  Available 1972.  Top speed loaded: 46mph.  Top speed unloaded: 60mph.
+- Improved cargo hold graphics for Traders.
+
 * 0.4 *
 - Tanker graphics used when following ships are refitted to liquid cargos: Small Coaster, Medium Coaster, Large Coaster.
 - Large River Boat was missing wake graphics in some cases; now fixed.
