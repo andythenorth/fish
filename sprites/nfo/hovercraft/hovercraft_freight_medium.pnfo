@@ -1,5 +1,7 @@
-#define THIS_PCX_FILE       hovercraft_freight_medium.pcx     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID         VEH_HOVERCRAFT_FREIGHT_MEDIUM // used in action 2/3 template
+#define THIS_PCX_FILE         hovercraft_freight_medium.pcx     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID           VEH_HOVERCRAFT_FREIGHT_MEDIUM // used in action 2/3 template
+#define THIS_LOADED_SPEED     94 // speed in mph *3.2 expressed in HEX (no escapes)
+#define THIS_UNLOADED_SPEED   C0 // 
 
 #define THIS_OFFS_MENU  670 24 01  22 50  -36 -10
 
@@ -34,7 +36,7 @@
     1A \d720180  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_HOVERCRAFT_FREIGHT_MEDIUM
     01 2B // X offset
-    "Hovercraft (Freight Medium)" 00  
+    "Porcupine 30 Hovercraft" 00  
     
 #include "../templates/freight_hovercraft_action1_2.tnfo"
 #include "../templates/freight_hovercraft_action2_3.tnfo"
