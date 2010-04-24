@@ -36,5 +36,5 @@
     01 2B // X offset
     "Hovercraft (Freight Large)" 00  
     
-#include "../templates/enhanced_cargo_support_action1_2.tnfo"
-#include "../templates/enhanced_cargo_support_action2_3.tnfo"
+#include "../templates/freight_hovercraft_action1_2.tnfo"
+#include "../templates/freight_hovercraft_action2_3.tnfo"
