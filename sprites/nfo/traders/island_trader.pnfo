@@ -35,5 +35,5 @@
     01 2B // X offset
     "Island Trader" 00  
     
-#include "../templates/default_action1_2.tnfo"
-#include "../templates/default_action2_3.tnfo"
+#include "../templates/enhanced_cargo_support_action1_2.tnfo"
+#include "../templates/enhanced_cargo_support_action2_3.tnfo"
