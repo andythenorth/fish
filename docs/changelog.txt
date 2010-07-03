@@ -1,5 +1,8 @@
 Changelog
 
+* 0.6 *
+- Cargo hold graphics for Coasters when loading / unloading.
+
 * 0.5 *
 - Added "Porcupine 30 Freight Hovercraft".  Available 1972.  Top speed loaded: 46mph.  Top speed unloaded: 60mph.
 - Improved cargo hold graphics for Traders.
