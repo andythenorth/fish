@@ -2,8 +2,10 @@
 REV
 Makefile.dep
 Makefile.local
+readme\.txt
 
 fish.grf
 sprites/fish.nfo
 
+fish-
 fish-nightly
