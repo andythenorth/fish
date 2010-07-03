@@ -3,7 +3,7 @@ $(DIR_NAME): depend $(BUNDLE_FILES)
 	$(_E) "[Generating] $@"
 	$(_V) if [ -e $@ ]; then rm -rf $@; fi
 	$(_V) mkdir $@
-	$(_V) -for i in $(BUNDLE_FILES); do cp $$i $@; done
+	$(_V) -for i in $(BUNDLE_FILES); do cp -X $$i $@; done
 
 %.tar: $(DIR_NAME)
 # Create the release bundle with all files in one tar
