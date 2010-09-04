@@ -1,5 +1,8 @@
 Changelog
 
+* 0.6.2 *
+- fixed flashing red pixels in Medium & Large Traders.
+
 * 0.6.1 *
 - Cargo hold graphics for Island Trader when loading / unloading.
 - Tanker graphics when Island Trader is refitted to liquid cargos.
