@@ -48,6 +48,7 @@ test::
 	$(_E) "                       zip:   $(ZIP_FILENAME)"
 	$(_E) "                       bzip:  $(BZIP_FILENAME)"
 	$(_E) "Dirs (build/src/base):        $(DIR_NAME) / $(DIR_NAME_SRC) / $(DIR_BASE)"
+	$(_E) "Dependency check type:        $(DEP_CHECK_TYPE)"
 	$(_E) "Source dirs:                  $(MAIN_DIRS)"
 	$(_E) "Source file extensions (RE):  $(FILE_SRC_RE)"
 	$(_E) "Source include ext. (RE):     $(FILE_INC_RE)"
@@ -57,6 +58,7 @@ test::
 #	$(_E) "Bundled files:                $(BUNDLE_FILES)"
 #	$(_E) "Repository files:             $(REPO_FILES)"
 #	$(_E) "Bundle source files:          `for i in $(REPO_FILES); do for j in $(MAIN_DIRS); do echo "$$i" | grep "$$j"; done; done;`"
+	$(_E) "NML: $(shell [ -n $(USE_NFO) ] && echo "$(USE_NFO)")"
 
 .PRECIOUS: %.nfo %.nml %.cnfo
 .SECONDARY: %.nfo %.nml %.cnfo

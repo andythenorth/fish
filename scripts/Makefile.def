@@ -159,20 +159,16 @@ GRF_FILES          := $(filter %.grf,$(TARGET_FILES))
 # Directories which to remember when creating a source release
 MAIN_DIRS           = $(SRC_DIR) $(DOC_DIR) $(SCRIPT_DIR) $(TEMPLATE_DIR) $(LANG_DIR) $(EXTRA_DIRS)
 
-FILE_SRC_RE        := $(shell echo $(FILE_SRC_EXTENSIONS) | sed -e "s/[[:space:]]/|/")
-FILE_INC_RE        := $(shell echo $(FILE_INC_EXTENSIONS) | sed -e "s/[[:space:]]/|/")
+FILE_SRC_RE        := $(shell echo $(FILE_SRC_EXTENSIONS) | sed -e "s/[[:space:]]/|/g")
+FILE_INC_RE        := $(shell echo $(FILE_INC_EXTENSIONS) | sed -e "s/[[:space:]]/|/g")
 FILES_NOT_PACK_RE  := "(\.hgignore|\.hgtags|\.hgeol|backup\.push|\.devzone)"
 
 # Make a bit of a guess on which dependency check we should use as default, if not defined otherwise
 # We can savely assume that python is available, if HG is available. Also mdep only makes sense for
 # NFO - style projects
-ifeq ($(HG),hg)
-ifdef USE_NFO
-DEP_CHECK_TYPE     ?=mdep
-endif
-endif
 
-DEP_CHECK_TYPE     ?=normal
+DEP_CHECK_TYPE     ?=$(shell [ `which python 2>/dev/null` ] && [ -z $(USE_NML) ] && echo "mdep" || echo "normal")
+# DEP_CHECK_TYPE ?= normal
 
 # Remove the @ when you want a more verbose output.
 _V ?= @
