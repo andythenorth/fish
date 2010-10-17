@@ -1,4 +1,4 @@
--1 * 1	 00 02 12 01 9B     // Action 0
+-1 * 1	 00 02 12 01 VEH_UTILITY_VESSEL_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -17,7 +17,7 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 9B 
+-1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_MEDIUM 
     01 2B // X offset
     "Utility Vessel (Medium)" 00  
 -1 * 4	 01 02 02 08 
@@ -63,7 +63,7 @@
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
 
--1 * 1	 03 02 01 9B // Action 3 
+-1 * 1	 03 02 01 VEH_UTILITY_VESSEL_MEDIUM // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites

@@ -15,6 +15,9 @@
 #define VEH_HOVERCRAFT_FREIGHT_LARGE    94
 #define VEH_HOVERCRAFT_MIXED_MEDIUM     95
 
+#define VEH_UTILITY_VESSEL_SMALL        9A
+#define VEH_UTILITY_VESSEL_MEDIUM       9B
+
 #define VEH_TRADER_SMALL                A1
 #define VEH_TRADER_MEDIUM               A2
 #define VEH_TRADER_LARGE                A3
