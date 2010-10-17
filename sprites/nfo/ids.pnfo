@@ -1,44 +1,144 @@
 // IDs for FISH 
 
 // Ship IDs
-// organise by ID - this will also define the order of the buy menu
 
+// 00h-0Ah are reserved for default ships
+// FISH does explicitly remove some default ships however
+// I've started IDs at 10h
+// changing IDs of existing vehicles *will* break savegames...
+// ...so don't change IDs just for refactoring / prettifying code 
+
+// >10h (FISH vehicles) - organised by desired order of buy menu
+// gaps left for easy addition of future vehicles
+// 10h-60h not currently used
+//#define VACANT                          60
 #define VEH_PASSENGER_STEAMER_SMALL     61
 #define VEH_PASSENGER_STEAMER_MEDIUM    62
 #define VEH_PASSENGER_STEAMER_LARGE     63
-
+//#define VACANT                          64
+//#define VACANT                          65
+//#define VACANT                          66
+//#define VACANT                          67
+//#define VACANT                          68
+//#define VACANT                          69
+//#define VACANT                          6A
+//#define VACANT                          6B
+//#define VACANT                          6C
+//#define VACANT                          6D
+//#define VACANT                          6E
+//#define VACANT                          6F
+//#define VACANT                          70
+//#define VACANT                          71
 #define VEH_VEHICLE_FERRY_SMALL         72
 #define VEH_VEHICLE_FERRY_MEDIUM        73
 #define VEH_VEHICLE_FERRY_LARGE         74
-
-
+//#define VACANT                          75
+//#define VACANT                          76
+//#define VACANT                          77
+//#define VACANT                          78
+//#define VACANT                          79
+//#define VACANT                          7A
+//#define VACANT                          7B
+//#define VACANT                          7C
+//#define VACANT                          7D
+//#define VACANT                          7E
+//#define VACANT                          7F
+// 80h-8Fh currently free
 #define VEH_HOVERCRAFT_UTILITY_SMALL    90
 #define VEH_HOVERCRAFT_PAX_MEDIUM       91
 #define VEH_HOVERCRAFT_PAX_LARGE        92
 #define VEH_HOVERCRAFT_FREIGHT_MEDIUM   93
 #define VEH_HOVERCRAFT_FREIGHT_LARGE    94
 #define VEH_HOVERCRAFT_MIXED_MEDIUM     95
-
+//#define VACANT                          96
+//#define VACANT                          97
+//#define VACANT                          98
+//#define VACANT                          99
 #define VEH_UTILITY_VESSEL_SMALL        9A
 #define VEH_UTILITY_VESSEL_MEDIUM       9B
-
+//#define VACANT                          9C
+//#define VACANT                          9D
+//#define VACANT                          9E
+//#define VACANT                          9F
+//#define VACANT                          A0
 #define VEH_TRADER_SMALL                A1
 #define VEH_TRADER_MEDIUM               A2
 #define VEH_TRADER_LARGE                A3
 #define VEH_ISLAND_TRADER               A4
-
+//#define VACANT                          A5
+//#define VACANT                          A6
+//#define VACANT                          A7
+//#define VACANT                          A8
+//#define VACANT                          A9
+//#define VACANT                          AA
+//#define VACANT                          AB
+//#define VACANT                          AC
+//#define VACANT                          AD
+//#define VACANT                          AE
+//#define VACANT                          AF
+// B0h-BFh currently free
+//#define VACANT                          C0
 #define VEH_NARROW_BOAT                 C1
+//#define VACANT                          C2
+//#define VACANT                          C3
+//#define VACANT                          C4
+//#define VACANT                          C5
+//#define VACANT                          C6
+//#define VACANT                          C7
+//#define VACANT                          C8
+//#define VACANT                          C9
 #define VEH_CANAL_BOAT_SMALL            CA
 #define VEH_CANAL_BOAT_MEDIUM           CB
 #define VEH_CANAL_BOAT_LARGE            CC
-
-
+//#define VACANT                          CD
+//#define VACANT                          CE
+//#define VACANT                          CF
+//#define VACANT                          D0
 #define VEH_COASTER_SMALL               D1
 #define VEH_COASTER_MEDIUM              D2
 #define VEH_COASTER_LARGE               D3
-
+//#define VACANT                          D4
+//#define VACANT                          D5
+//#define VACANT                          D6
+//#define VACANT                          D7
+//#define VACANT                          D8
+//#define VACANT                          D9
+//#define VACANT                          DA
+//#define VACANT                          DB
+//#define VACANT                          DC
+//#define VACANT                          DD
+//#define VACANT                          DE
+//#define VACANT                          DF
+//#define VACANT                          E0
 #define VEH_RIVER_BOAT_SMALL            E1
 #define VEH_RIVER_BOAT_LARGE            E2
-
+//#define VACANT                          E3
+//#define VACANT                          E4
+//#define VACANT                          E5
+//#define VACANT                          E6
+//#define VACANT                          E7
+//#define VACANT                          E8
+//#define VACANT                          E9
+//#define VACANT                          EA
+//#define VACANT                          EB
+//#define VACANT                          EC
+//#define VACANT                          ED
+//#define VACANT                          EE
+//#define VACANT                          EF
+//#define VACANT                          F0
+//#define VACANT                          F1
 #define VEH_LOG_RAFT                    F2
-
+//#define VACANT                          F3
+//#define VACANT                          F4
+//#define VACANT                          F5
+//#define VACANT                          F6
+//#define VACANT                          F7
+//#define VACANT                          F8
+//#define VACANT                          F9
+//#define VACANT                          FA
+//#define VACANT                          FB
+//#define VACANT                          FC
+//#define VACANT                          FD
+//#define VACANT                          FE
+//#define VACANT                          F0
+//#define VACANT                          FF
