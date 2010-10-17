@@ -28,3 +28,5 @@
 #define VEH_RIVER_BOAT_SMALL            E1
 #define VEH_RIVER_BOAT_LARGE            E2
 
+#define VEH_LOG_RAFT                    F2
+

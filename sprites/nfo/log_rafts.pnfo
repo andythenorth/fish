@@ -1,4 +1,4 @@
--1 * 1	 00 02 11 01 F2     // Action 0
+-1 * 1	 00 02 11 01 VEH_LOG_RAFT     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b35         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -16,7 +16,7 @@
     18 00 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 F2 
+-1 * 1   04 02 7F 01 VEH_LOG_RAFT 
     01 2B // X offset
     "Log Raft (Large)" 00  
 -1 * 4	 01 02 07 08 
@@ -120,7 +120,7 @@
                01 // range
                  C1 00 36 36 // 
                A0 00 // default 
--1 * 1	 03 02 01 F2 // Action 3 
+-1 * 1	 03 02 01 VEH_LOG_RAFT // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    C0 00 // default sprites
