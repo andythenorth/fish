@@ -1,17 +1,7 @@
 // IDs for FISH 
 
 // Ship IDs
-#define VEH_COASTER_SMALL               D1
-#define VEH_COASTER_MEDIUM              D2
-#define VEH_COASTER_LARGE               D3
-
-#define VEH_TRADER_SMALL                A1
-#define VEH_TRADER_MEDIUM               A2
-#define VEH_TRADER_LARGE                A3
-#define VEH_ISLAND_TRADER               A4
-
-#define VEH_RIVER_BOAT_SMALL            E1
-#define VEH_RIVER_BOAT_LARGE            E2
+// organise by ID - this will also define the order of the buy menu
 
 #define VEH_HOVERCRAFT_UTILITY_SMALL    90
 #define VEH_HOVERCRAFT_PAX_MEDIUM       91
@@ -19,3 +9,22 @@
 #define VEH_HOVERCRAFT_FREIGHT_MEDIUM   93
 #define VEH_HOVERCRAFT_FREIGHT_LARGE    94
 #define VEH_HOVERCRAFT_MIXED_MEDIUM     95
+
+#define VEH_TRADER_SMALL                A1
+#define VEH_TRADER_MEDIUM               A2
+#define VEH_TRADER_LARGE                A3
+#define VEH_ISLAND_TRADER               A4
+
+#define VEH_NARROW_BOAT                 C1
+#define VEH_CANAL_BOAT_SMALL            CA
+#define VEH_CANAL_BOAT_MEDIUM           CB
+#define VEH_CANAL_BOAT_LARGE            CC
+
+
+#define VEH_COASTER_SMALL               D1
+#define VEH_COASTER_MEDIUM              D2
+#define VEH_COASTER_LARGE               D3
+
+#define VEH_RIVER_BOAT_SMALL            E1
+#define VEH_RIVER_BOAT_LARGE            E2
+

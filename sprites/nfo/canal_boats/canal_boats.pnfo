@@ -1,4 +1,4 @@
--1 * 1	 00 02 0E 01 C1     // Action 0
+-1 * 1	 00 02 0E 01 VEH_NARROW_BOAT     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -13,7 +13,7 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 C1 
+-1 * 1   04 02 7F 01 VEH_NARROW_BOAT 
     01 2B // X offset
     "Narrow Boat" 00  
 -1 * 4	 01 02 01 08 
@@ -38,13 +38,13 @@
 -1 sprites/pcx/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
--1 * 1	 03 02 01 C1 // Action 3 
+-1 * 1	 03 02 01 VEH_NARROW_BOAT // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
 
    
--1 * 1	 00 02 0D 01 CA     // Action 0
+-1 * 1	 00 02 0D 01 VEH_CANAL_BOAT_SMALL     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -58,7 +58,7 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 CA 
+-1 * 1   04 02 7F 01 VEH_CANAL_BOAT_SMALL 
     01 2B // X offset
     "Canal Boat (Small)" 00  
 -1 * 4	 01 02 01 08 
@@ -83,13 +83,13 @@
 -1 sprites/pcx/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
--1 * 1	 03 02 01 CA // Action 3 
+-1 * 1	 03 02 01 VEH_CANAL_BOAT_SMALL // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
    
    
--1 * 1	 00 02 0D 01 CB     // Action 0
+-1 * 1	 00 02 0D 01 VEH_CANAL_BOAT_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -103,7 +103,7 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 CB 
+-1 * 1   04 02 7F 01 VEH_CANAL_BOAT_MEDIUM 
     01 2B // X offset
     "Canal Boat (Medium)" 00  
 -1 * 4	 01 02 01 08 
@@ -128,13 +128,13 @@
 -1 sprites/pcx/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
--1 * 1	 03 02 01 CB // Action 3 
+-1 * 1	 03 02 01 VEH_CANAL_BOAT_MEDIUM // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
    
    
--1 * 1	 00 02 0D 01 CC     // Action 0
+-1 * 1	 00 02 0D 01 VEH_CANAL_BOAT_LARGE     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -148,7 +148,7 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 CC 
+-1 * 1   04 02 7F 01 VEH_CANAL_BOAT_LARGE 
     01 2B // X offset
     "Canal Boat (Large)" 00  
 -1 * 4	 01 02 01 08 
@@ -173,7 +173,7 @@
 -1 sprites/pcx/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
--1 * 1	 03 02 01 CC // Action 3 
+-1 * 1	 03 02 01 VEH_CANAL_BOAT_LARGE // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
