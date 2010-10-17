@@ -1,4 +1,4 @@
-   -1 * 1	 00 02 12 01 73     // Action 0
+   -1 * 1	 00 02 12 01 VEH_VEHICLE_FERRY_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -17,7 +17,7 @@
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
     1A \d683190  // long format introduction date
--1 * 1   04 02 7F 01 73
+-1 * 1   04 02 7F 01 VEH_VEHICLE_FERRY_MEDIUM
     01 2B // X offset
     "Vehicle Ferry (Medium)" 00  
 -1 * 4	 01 02 04 08 
@@ -78,7 +78,7 @@
                  01 // range
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
--1 * 1	 03 02 01 73 // Action 3 
+-1 * 1	 03 02 01 VEH_VEHICLE_FERRY_MEDIUM // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites
