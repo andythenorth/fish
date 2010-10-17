@@ -9,3 +9,7 @@ sprites/fish.nfo
 
 fish-
 fish-nightly
+
+# Files created by Mac image preview and file browser:
+.DS_Store
+Thumbs.db
