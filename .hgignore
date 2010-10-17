@@ -1,14 +1,34 @@
-# Generated intermediate files:
-REV
-Makefile.dep
+# Use glob syntax:
+syntax: glob
+
+# The local makefile should be ignored:
 Makefile.local
-readme\.txt
 
-fish.grf
-sprites/fish.nfo
+# And the description file and the grfs which are generated automatically
+fish*.grf
 
-fish-
-fish-nightly
+# Ignore intermediate files created by the Makefile:
+*.nfo
+docs/license.txt
+docs/changelog.txt
+docs/readme.txt
+# Dependency files:
+Makefile.dep
+REV
+
+# Ignore directories from bundle creation / install:
+fish-*
+
+#The .renum dir
+.renum
+
+# Ignore frequent development left-overs like
+# editor backups, patches, rejects etc. pp
+*.orig
+*.bak
+*.log
+*.rej
+*.diff
 
 # Files created by Mac image preview and file browser:
 .DS_Store
