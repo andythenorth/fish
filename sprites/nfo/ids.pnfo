@@ -3,6 +3,11 @@
 // Ship IDs
 // organise by ID - this will also define the order of the buy menu
 
+#define VEH_PASSENGER_STEAMER_SMALL     61
+#define VEH_PASSENGER_STEAMER_MEDIUM    62
+#define VEH_PASSENGER_STEAMER_LARGE     63
+
+
 #define VEH_HOVERCRAFT_UTILITY_SMALL    90
 #define VEH_HOVERCRAFT_PAX_MEDIUM       91
 #define VEH_HOVERCRAFT_PAX_LARGE        92
