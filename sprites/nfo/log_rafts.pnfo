@@ -21,68 +21,68 @@
     "Log Raft (Large)" 00  
 -1 * 4	 01 02 07 08 
 // unloaded - not moving (no wash)
--1 sprites/pcx/log_raft_large.pcx 20  10 01 89 28  -13 -24
--1 sprites/pcx/log_raft_large.pcx 60  10 01 66 95  -48 -12
--1 sprites/pcx/log_raft_large.pcx 186 10 01 48 138 -23 -28
--1 sprites/pcx/log_raft_large.pcx 328 10 01 66 97  -0 -12
--1 sprites/pcx/log_raft_large.pcx 454 10 01 89 28  -14 -24
--1 sprites/pcx/log_raft_large.pcx 494 10 01 66 97  -44 -12
--1 sprites/pcx/log_raft_large.pcx 620 10 01 48 138 -23 -28
--1 sprites/pcx/log_raft_large.pcx 762 10 01 66 95  -0 -12
+-1 sprites/graphics/log_raft_large.pcx 20  10 01 89 28  -13 -24
+-1 sprites/graphics/log_raft_large.pcx 60  10 01 66 95  -48 -12
+-1 sprites/graphics/log_raft_large.pcx 186 10 01 48 138 -23 -28
+-1 sprites/graphics/log_raft_large.pcx 328 10 01 66 97  -0 -12
+-1 sprites/graphics/log_raft_large.pcx 454 10 01 89 28  -14 -24
+-1 sprites/graphics/log_raft_large.pcx 494 10 01 66 97  -44 -12
+-1 sprites/graphics/log_raft_large.pcx 620 10 01 48 138 -23 -28
+-1 sprites/graphics/log_raft_large.pcx 762 10 01 66 95  -0 -12
 // unloaded - moving (wash)
--1 sprites/pcx/log_raft_large.pcx 20  110 01 89 28  -14 -41
--1 sprites/pcx/log_raft_large.pcx 60  110 01 66 95  -74 -22
--1 sprites/pcx/log_raft_large.pcx 186 110 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 328 110 01 66 97  -21 -22
--1 sprites/pcx/log_raft_large.pcx 454 110 01 89 28  -14 -45
--1 sprites/pcx/log_raft_large.pcx 494 110 01 66 97  -75 -22
--1 sprites/pcx/log_raft_large.pcx 620 110 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 762 110 01 66 95  -20 -22
+-1 sprites/graphics/log_raft_large.pcx 20  110 01 89 28  -14 -41
+-1 sprites/graphics/log_raft_large.pcx 60  110 01 66 95  -74 -22
+-1 sprites/graphics/log_raft_large.pcx 186 110 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 328 110 01 66 97  -21 -22
+-1 sprites/graphics/log_raft_large.pcx 454 110 01 89 28  -14 -45
+-1 sprites/graphics/log_raft_large.pcx 494 110 01 66 97  -75 -22
+-1 sprites/graphics/log_raft_large.pcx 620 110 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 762 110 01 66 95  -20 -22
 // loading - not moving (no wash)
--1 sprites/pcx/log_raft_large.pcx 20  210 01 89 28  -14 -41
--1 sprites/pcx/log_raft_large.pcx 60  210 01 66 95  -74 -22
--1 sprites/pcx/log_raft_large.pcx 186 210 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 328 210 01 66 97  -21 -22
--1 sprites/pcx/log_raft_large.pcx 454 210 01 89 28  -14 -45
--1 sprites/pcx/log_raft_large.pcx 494 210 01 66 97  -75 -22
--1 sprites/pcx/log_raft_large.pcx 620 210 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 762 210 01 66 95  -20 -22
+-1 sprites/graphics/log_raft_large.pcx 20  210 01 89 28  -14 -41
+-1 sprites/graphics/log_raft_large.pcx 60  210 01 66 95  -74 -22
+-1 sprites/graphics/log_raft_large.pcx 186 210 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 328 210 01 66 97  -21 -22
+-1 sprites/graphics/log_raft_large.pcx 454 210 01 89 28  -14 -45
+-1 sprites/graphics/log_raft_large.pcx 494 210 01 66 97  -75 -22
+-1 sprites/graphics/log_raft_large.pcx 620 210 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 762 210 01 66 95  -20 -22
 // loading - not moving (no wash)
--1 sprites/pcx/log_raft_large.pcx 20  310 01 89 28  -14 -41
--1 sprites/pcx/log_raft_large.pcx 60  310 01 66 95  -74 -22
--1 sprites/pcx/log_raft_large.pcx 186 310 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 328 310 01 66 97  -21 -22
--1 sprites/pcx/log_raft_large.pcx 454 310 01 89 28  -14 -45
--1 sprites/pcx/log_raft_large.pcx 494 310 01 66 97  -75 -22
--1 sprites/pcx/log_raft_large.pcx 620 310 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 762 310 01 66 95  -20 -22
+-1 sprites/graphics/log_raft_large.pcx 20  310 01 89 28  -14 -41
+-1 sprites/graphics/log_raft_large.pcx 60  310 01 66 95  -74 -22
+-1 sprites/graphics/log_raft_large.pcx 186 310 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 328 310 01 66 97  -21 -22
+-1 sprites/graphics/log_raft_large.pcx 454 310 01 89 28  -14 -45
+-1 sprites/graphics/log_raft_large.pcx 494 310 01 66 97  -75 -22
+-1 sprites/graphics/log_raft_large.pcx 620 310 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 762 310 01 66 95  -20 -22
 // loading - not moving (no wash)
--1 sprites/pcx/log_raft_large.pcx 20  410 01 89 28  -14 -41
--1 sprites/pcx/log_raft_large.pcx 60  410 01 66 95  -74 -22
--1 sprites/pcx/log_raft_large.pcx 186 410 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 328 410 01 66 97  -21 -22
--1 sprites/pcx/log_raft_large.pcx 454 410 01 89 28  -14 -45
--1 sprites/pcx/log_raft_large.pcx 494 410 01 66 97  -75 -22
--1 sprites/pcx/log_raft_large.pcx 620 410 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 762 410 01 66 95  -20 -22
+-1 sprites/graphics/log_raft_large.pcx 20  410 01 89 28  -14 -41
+-1 sprites/graphics/log_raft_large.pcx 60  410 01 66 95  -74 -22
+-1 sprites/graphics/log_raft_large.pcx 186 410 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 328 410 01 66 97  -21 -22
+-1 sprites/graphics/log_raft_large.pcx 454 410 01 89 28  -14 -45
+-1 sprites/graphics/log_raft_large.pcx 494 410 01 66 97  -75 -22
+-1 sprites/graphics/log_raft_large.pcx 620 410 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 762 410 01 66 95  -20 -22
 // loaded - not moving (no wash)
--1 sprites/pcx/log_raft_large.pcx 20  510 01 89 28  -14 -41
--1 sprites/pcx/log_raft_large.pcx 60  510 01 66 95  -74 -22
--1 sprites/pcx/log_raft_large.pcx 186 510 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 328 510 01 66 97  -21 -22
--1 sprites/pcx/log_raft_large.pcx 454 510 01 89 28  -14 -45
--1 sprites/pcx/log_raft_large.pcx 494 510 01 66 97  -75 -22
--1 sprites/pcx/log_raft_large.pcx 620 510 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 762 510 01 66 95  -20 -22
+-1 sprites/graphics/log_raft_large.pcx 20  510 01 89 28  -14 -41
+-1 sprites/graphics/log_raft_large.pcx 60  510 01 66 95  -74 -22
+-1 sprites/graphics/log_raft_large.pcx 186 510 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 328 510 01 66 97  -21 -22
+-1 sprites/graphics/log_raft_large.pcx 454 510 01 89 28  -14 -45
+-1 sprites/graphics/log_raft_large.pcx 494 510 01 66 97  -75 -22
+-1 sprites/graphics/log_raft_large.pcx 620 510 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 762 510 01 66 95  -20 -22
 // loaded - moving (wash)
--1 sprites/pcx/log_raft_large.pcx 20  610 01 89 28  -14 -41
--1 sprites/pcx/log_raft_large.pcx 60  610 01 66 95  -74 -22
--1 sprites/pcx/log_raft_large.pcx 186 610 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 328 610 01 66 97  -21 -22
--1 sprites/pcx/log_raft_large.pcx 454 610 01 89 28  -14 -45
--1 sprites/pcx/log_raft_large.pcx 494 610 01 66 97  -75 -22
--1 sprites/pcx/log_raft_large.pcx 620 610 01 48 138 -65 -29
--1 sprites/pcx/log_raft_large.pcx 762 610 01 66 95  -20 -22
+-1 sprites/graphics/log_raft_large.pcx 20  610 01 89 28  -14 -41
+-1 sprites/graphics/log_raft_large.pcx 60  610 01 66 95  -74 -22
+-1 sprites/graphics/log_raft_large.pcx 186 610 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 328 610 01 66 97  -21 -22
+-1 sprites/graphics/log_raft_large.pcx 454 610 01 89 28  -14 -45
+-1 sprites/graphics/log_raft_large.pcx 494 610 01 66 97  -75 -22
+-1 sprites/graphics/log_raft_large.pcx 620 610 01 48 138 -65 -29
+-1 sprites/graphics/log_raft_large.pcx 762 610 01 66 95  -20 -22
 -1 * 1	 02 02 B1 // not moving
       02 // number loaded states
       05 // number loading states
@@ -96,7 +96,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/pcx/log_raft_large.pcx 620 29 01 22 116 -36 -10
+-1 sprites/graphics/log_raft_large.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed

@@ -23,23 +23,23 @@
 -1 * 4	 01 02 02 08 
 // Fishing Boat sprite created by DanMacK
 // Not moving (no wash)
--1 sprites/pcx/utility_fishboat_medium.pcx 82  8 09 34 16 -7  -16
--1 sprites/pcx/utility_fishboat_medium.pcx 114 8 09 30 44 -48  1
--1 sprites/pcx/utility_fishboat_medium.pcx 178 8 09 19 49 -22 -5
--1 sprites/pcx/utility_fishboat_medium.pcx 242 8 09 26 46  3   4
--1 sprites/pcx/utility_fishboat_medium.pcx 306 8 09 32 16 -7  -13
--1 sprites/pcx/utility_fishboat_medium.pcx 338 8 09 26 46 -47  3
--1 sprites/pcx/utility_fishboat_medium.pcx 402 8 01 19 49 -25 -9
--1 sprites/pcx/utility_fishboat_medium.pcx 466 8 09 30 44  5  -1
+-1 sprites/graphics/utility_fishboat_medium.pcx 82  8 09 34 16 -7  -16
+-1 sprites/graphics/utility_fishboat_medium.pcx 114 8 09 30 44 -48  1
+-1 sprites/graphics/utility_fishboat_medium.pcx 178 8 09 19 49 -22 -5
+-1 sprites/graphics/utility_fishboat_medium.pcx 242 8 09 26 46  3   4
+-1 sprites/graphics/utility_fishboat_medium.pcx 306 8 09 32 16 -7  -13
+-1 sprites/graphics/utility_fishboat_medium.pcx 338 8 09 26 46 -47  3
+-1 sprites/graphics/utility_fishboat_medium.pcx 402 8 01 19 49 -25 -9
+-1 sprites/graphics/utility_fishboat_medium.pcx 466 8 09 30 44  5  -1
 // Moving (wash)
--1 sprites/pcx/utility_fishboat_medium.pcx 82  58 09 34 16 -7  -16
--1 sprites/pcx/utility_fishboat_medium.pcx 114 58 09 30 44 -48  1
--1 sprites/pcx/utility_fishboat_medium.pcx 178 58 09 19 49 -22 -5
--1 sprites/pcx/utility_fishboat_medium.pcx 242 58 09 26 46  3   4
--1 sprites/pcx/utility_fishboat_medium.pcx 306 58 09 32 16 -7  -13
--1 sprites/pcx/utility_fishboat_medium.pcx 338 58 09 26 46 -47  3
--1 sprites/pcx/utility_fishboat_medium.pcx 402 58 01 19 49 -25 -9
--1 sprites/pcx/utility_fishboat_medium.pcx 466 58 09 30 44  5  -1
+-1 sprites/graphics/utility_fishboat_medium.pcx 82  58 09 34 16 -7  -16
+-1 sprites/graphics/utility_fishboat_medium.pcx 114 58 09 30 44 -48  1
+-1 sprites/graphics/utility_fishboat_medium.pcx 178 58 09 19 49 -22 -5
+-1 sprites/graphics/utility_fishboat_medium.pcx 242 58 09 26 46  3   4
+-1 sprites/graphics/utility_fishboat_medium.pcx 306 58 09 32 16 -7  -13
+-1 sprites/graphics/utility_fishboat_medium.pcx 338 58 09 26 46 -47  3
+-1 sprites/graphics/utility_fishboat_medium.pcx 402 58 01 19 49 -25 -9
+-1 sprites/graphics/utility_fishboat_medium.pcx 466 58 09 30 44  5  -1
 -1 * 1	 02 02 B1 // not moving   
       01 // number loaded states
       01 // number loading states
@@ -53,7 +53,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/pcx/utility_fishboat_medium.pcx 402 8 01 19 49 -40 -10
+-1 sprites/graphics/utility_fishboat_medium.pcx 402 8 01 19 49 -40 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 

@@ -22,14 +22,14 @@
     "Utility Vessel (Small)" 00  
 -1 * 4	 01 02 01 08 
 // Test ships
--1 sprites/pcx/FISH_test.pcx 20  10 01 89 28  -9  -45
--1 sprites/pcx/FISH_test.pcx 60  10 01 66 113 -56 -33
--1 sprites/pcx/FISH_test.pcx 186 10 01 48 130 -65 -15
--1 sprites/pcx/FISH_test.pcx 328 10 01 66 113 -56 -33
--1 sprites/pcx/FISH_test.pcx 454 10 01 89 28  -9  -45
--1 sprites/pcx/FISH_test.pcx 494 10 01 66 113 -56 -33
--1 sprites/pcx/FISH_test.pcx 620 10 01 48 130 -65 -15
--1 sprites/pcx/FISH_test.pcx 762 10 01 66 113 -56 -33
+-1 sprites/graphics/FISH_test.pcx 20  10 01 89 28  -9  -45
+-1 sprites/graphics/FISH_test.pcx 60  10 01 66 113 -56 -33
+-1 sprites/graphics/FISH_test.pcx 186 10 01 48 130 -65 -15
+-1 sprites/graphics/FISH_test.pcx 328 10 01 66 113 -56 -33
+-1 sprites/graphics/FISH_test.pcx 454 10 01 89 28  -9  -45
+-1 sprites/graphics/FISH_test.pcx 494 10 01 66 113 -56 -33
+-1 sprites/graphics/FISH_test.pcx 620 10 01 48 130 -65 -15
+-1 sprites/graphics/FISH_test.pcx 762 10 01 66 113 -56 -33
 -1 * 1	 02 02 B1 // action 2  
       01 // number loaded states
       01 // number loading states
@@ -39,7 +39,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/pcx/FISH_test.pcx 620 29 01 22 116 -36 -10
+-1 sprites/graphics/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 -1 * 1	 03 02 01 VEH_UTILITY_VESSEL_SMALL // Action 3 
