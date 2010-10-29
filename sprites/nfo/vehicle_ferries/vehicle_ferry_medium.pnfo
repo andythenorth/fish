@@ -3,17 +3,16 @@
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
-#define THIS_OFFS_X_Y_1  -14 -41
-#define THIS_OFFS_X_Y_2  -67 -25
-#define THIS_OFFS_X_Y_3  -59 -29
-#define THIS_OFFS_X_Y_4  -15 -26
-#define THIS_OFFS_X_Y_5  -14 -45
-#define THIS_OFFS_X_Y_6  -67 -26
-#define THIS_OFFS_X_Y_7  -59 -29
-#define THIS_OFFS_X_Y_8  -15 -25
+#define THIS_OFFS_X_Y_1  -14 -42
+#define THIS_OFFS_X_Y_2  -61 -28
+#define THIS_OFFS_X_Y_3  -48 -29
+#define THIS_OFFS_X_Y_4  -10 -28
+#define THIS_OFFS_X_Y_5  -14 -54
+#define THIS_OFFS_X_Y_6  -61 -28
+#define THIS_OFFS_X_Y_7  -48 -29
+#define THIS_OFFS_X_Y_8   -9 -28
 
-
-   -1 * 1	 00 02 12 01 VEH_VEHICLE_FERRY_MEDIUM     // Action 0
+ -1 * 1	 00 02 12 01 VEH_VEHICLE_FERRY_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
