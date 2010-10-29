@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE       river_boat_small.pcx     // used in action 1 template (must include file extension)
+#define THIS_PCX_FILE       river_boat_small.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID         VEH_RIVER_BOAT_SMALL     // used in action 2/3 template
 
 #define THIS_OFFS_MENU  620 27 01  15 116  -36 -6 //648 10 01  48 90  -37 -21
