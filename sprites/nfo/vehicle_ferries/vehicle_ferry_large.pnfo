@@ -13,7 +13,7 @@
 #define THIS_OFFS_X_Y_8  -15 -25
 
 
--1 * 1	 00 02 11 01 VEH_VEHICLE_FERRY_LARGE     // Action 0
+-1 * 1	 00 02 \b18 01 VEH_VEHICLE_FERRY_LARGE     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -31,6 +31,7 @@
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
     1A \d683190  // long format introduction date
+    1C 2E           // visual effect
 -1 * 1   04 02 7F 01 VEH_VEHICLE_FERRY_LARGE 
     01 2B // X offset
     "Vehicle Ferry (Large)" 00  
