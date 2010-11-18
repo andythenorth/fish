@@ -1,4 +1,25 @@
+// ***********************
+// Describe the parameters  
+// ***********************
 
+ -1 * -1   14
+  "C" "INFO"
+        "B" "VRSN" \w4 \d{{REPO_REVISION}}
+        "B" "MINV" \w4 \d0
+        "B" "PALS" \w1 "W" //palette
+      00
+  00
+
+// set number of parameters
+-1 * -1   14
+  "C" "INFO"
+      "B" "NPAR" \w1 \b0 // no parameters so far
+      00
+  00
+
+// *************************
+// Action8 NewGRF definition
+// *************************
 
 -1 * 0 08 07 {{GRF_ID}} "{{GRF_TITLE}}" 00 
 "\8EFISH is ships\n"
