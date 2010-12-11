@@ -1,34 +1,41 @@
 Changelog
 
+* 0.7.0 *
+Cargo hold graphics for River Boats when loading / unloading.
+Utility Vessel (Medium) uses ferry graphics when refitted to PAX (Dan MacK).
+Smoke for some ships (needs OpenTTD r21240 or newer).
+Updated minimum OpenTTD version requirements (Planetmaker).
+Many internal changes to make the set easier to develop and maintain. 
+
 * 0.6.2 *
-- fixed flashing red pixels in Medium & Large Traders.
+Fixed flashing red pixels in Medium & Large Traders.
 
 * 0.6.1 *
-- Cargo hold graphics for Island Trader when loading / unloading.
-- Tanker graphics when Island Trader is refitted to liquid cargos.
+Cargo hold graphics for Island Trader when loading / unloading.
+Tanker graphics when Island Trader is refitted to liquid cargos.
 
 * 0.6.0 *
-- Cargo hold graphics for Coasters when loading / unloading.
+Cargo hold graphics for Coasters when loading / unloading.
 
 * 0.5 *
-- Added "Porcupine 30 Freight Hovercraft".  Available 1972.  Top speed loaded: 46mph.  Top speed unloaded: 60mph.
-- Improved cargo hold graphics for Traders.
+Added "Porcupine 30 Freight Hovercraft".  Available 1972.  Top speed loaded: 46mph.  Top speed unloaded: 60mph.
+Improved cargo hold graphics for Traders.
 
 * 0.4 *
-- Tanker graphics used when following ships are refitted to liquid cargos: Small Coaster, Medium Coaster, Large Coaster.
-- Large River Boat was missing wake graphics in some cases; now fixed.
+Tanker graphics used when following ships are refitted to liquid cargos: Small Coaster, Medium Coaster, Large Coaster.
+Large River Boat was missing wake graphics in some cases; now fixed.
 
 * 0.3 *
-- Tanker graphics used when following ships are refitted to liquid cargos: Small Trader, Medium Trader, Large Trader, Small River Boat, Large River Boat.
-- running cost fixed for Small Coaster.
-- Utility Vessel (Medium) now has passengers as default cargo.
+Tanker graphics used when following ships are refitted to liquid cargos: Small Trader, Medium Trader, Large Trader, Small River Boat, Large River Boat.
+Running cost fixed for Small Coaster.
+Utility Vessel (Medium) now has passengers as default cargo.
 
 * 0.2 *
-- Enabled sound effects for all ships.
-- FISH now disables default ships except for hovercraft.
+Enabled sound effects for all ships.
+FISH now disables default ships except for hovercraft.
 
 * 0.1.1 *
-- Changed intro dates to 1870 for all ships.
+Changed intro dates to 1870 for all ships.
 
 pre 0.1:
-- Feature: import newgrf-makefile r19
+Feature: import newgrf-makefile r19
