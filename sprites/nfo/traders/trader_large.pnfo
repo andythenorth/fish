@@ -23,7 +23,7 @@
     0A \b61         // cost factor (purchase cost)
     0B \b56         // speed in mph * 3.2      
     0C 01           // cargo type 
-    0D \w270        // capacity 
+    0D \w170        // capacity 
     0F \b71         // running cost factor
     10 04          // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
