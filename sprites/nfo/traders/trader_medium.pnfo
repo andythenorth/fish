@@ -16,7 +16,7 @@
 -1 * 1	 00 02 \b17 01 VEH_TRADER_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b50         // vehicle life in years
-    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b20         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
