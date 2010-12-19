@@ -1,4 +1,8 @@
--1 * 1	 00 02 \b18 01 VEH_LOG_RAFT     // Action 0
+#define THIS_VEH_ID VEH_LOG_RAFT
+#define THIS_SMOKE_TYPE 40 //No smoke
+#include "../templates/template_smoke.tnfo"
+
+-1 * 1	 00 02 \b17 01 THIS_VEH_ID     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b35         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -16,7 +20,6 @@
     18 00 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
-    1C 29           // visual effect
 -1 * 1   04 02 7F 01 VEH_LOG_RAFT 
     01 2B // X offset
     "Log Raft (Large)" 00  
@@ -125,3 +128,4 @@
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    C0 00 // default sprites
+#undef THIS_VEH_ID
