@@ -1,4 +1,8 @@
--1 * 1	 00 02 0E 01 B1     // Action 0
+#define THIS_VEH_ID VEH_TOWBOAT
+#define THIS_SMOKE_TYPE 40 //No smoke
+#include "../templates/template_smoke.tnfo"
+
+-1 * 1	 00 02 0E 01 THIS_VEH_ID     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -131,3 +135,4 @@
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
+#undef THIS_VEH_ID

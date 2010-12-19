@@ -13,6 +13,8 @@
 #define THIS_OFFS_X_Y_7  -65 -29
 #define THIS_OFFS_X_Y_8  -20 -22
 
+#define THIS_SMOKE_TYPE 40 //No smoke
+#include "../templates/template_smoke.tnfo"
 
 -1 * 1	 00 02 11 01 VEH_COASTER_LARGE     // Action 0
     00 \w01-01-1970 // date of introduction

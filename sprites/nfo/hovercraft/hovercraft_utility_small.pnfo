@@ -12,6 +12,8 @@
 #define THIS_OFFS_X_Y_7  -48 -29
 #define THIS_OFFS_X_Y_8   -9 -28
 
+#define THIS_SMOKE_TYPE 40 //No smoke
+#include "../templates/template_smoke.tnfo"
 
 -1 * 1	 00 02 \b18 01 VEH_HOVERCRAFT_UTILITY_SMALL     // Action 0
     00 \w01-01-1970 // date of introduction

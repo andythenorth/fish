@@ -14,6 +14,8 @@
 #define THIS_OFFS_X_Y_7  -70 -21
 #define THIS_OFFS_X_Y_8  -29 -23
 
+#define THIS_SMOKE_TYPE 40 //No smoke
+#include "../templates/template_smoke.tnfo"
 
 -1 * 1	 00 02 \b18 01 VEH_HOVERCRAFT_FREIGHT_LARGE     // Action 0
     00 \w01-01-1970 // date of introduction

@@ -76,6 +76,7 @@
 //#define VACANT                          AD
 //#define VACANT                          AE
 //#define VACANT                          AF
+#define VEH_TOWBOAT                     B1
 // B0h-BFh currently free
 //#define VACANT                          C0
 #define VEH_NARROW_BOAT                 C1
