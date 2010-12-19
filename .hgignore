@@ -16,6 +16,7 @@ docs/changelog.txt
 docs/readme.txt
 # Dependency files:
 Makefile.dep
+*.dep
 REV
 
 
