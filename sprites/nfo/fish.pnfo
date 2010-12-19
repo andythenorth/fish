@@ -11,8 +11,9 @@
 #include "sprites/nfo/utility_vessels/utility_vessel_medium.pnfo"
 
 #include "sprites/nfo/traders/trader_small.pnfo"
+// 'medium' trader files should be refactored to 'large' - shuffled which was which
 #include "sprites/nfo/traders/trader_medium.pnfo"
-#include "sprites/nfo/traders/trader_large.pnfo"
+#include "sprites/nfo/traders/trader_large_deprecated.pnfo"
 #include "sprites/nfo/traders/island_trader.pnfo"
 
 #include "sprites/nfo/coasters/coaster_small.pnfo"
