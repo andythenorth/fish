@@ -110,10 +110,9 @@
                  B2 00 // moving (speed != 0) 
 -1 * 0  02 02 C2 //  
               85 BC 00 FF FF // return value for speed depending on current cargo amount
-              02 // range
-                 40 80 00 00 00 00 // 
-                 27 80 01 00 FF FF // 
-              27 80 // default
+              01 // range
+                 40 80 00 00 00 00 // no cargo
+              27 80 // default (some cargo)
 -1 * 0  02 02 C1 // 
               81 10 00 FF
               01 // range
