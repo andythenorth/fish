@@ -1,3 +1,7 @@
+#define THIS_VEH_ID VEH_UTILITY_VESSEL_SMALL
+#define THIS_SMOKE_TYPE 40 //No smoke
+#include "../templates/template_smoke.tnfo"
+
 -1 * 1	 00 02 12 01 VEH_UTILITY_VESSEL_SMALL     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
@@ -46,3 +50,4 @@
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    B1 00 // default sprites
+#undef THIS_VEH_ID

@@ -1,4 +1,8 @@
--1 * 1	 00 02 \b19 01 VEH_UTILITY_VESSEL_MEDIUM     // Action 0
+#define THIS_VEH_ID VEH_UTILITY_VESSEL_MEDIUM
+#define THIS_SMOKE_TYPE 29 //Diesel smoke
+#include "../templates/template_smoke.tnfo"
+
+-1 * 1	 00 02 \b18 01 VEH_UTILITY_VESSEL_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -17,7 +21,6 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
-    1C 29           // visual effect
 -1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_MEDIUM 
     01 2B // X offset
     "Utility Vessel (Medium)" 00  
@@ -111,3 +114,4 @@
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
    A0 00 // default sprites
+#undef THIS_VEH_ID
