@@ -1,5 +1,14 @@
 Changelog
 
+* 0.8.0 *
+Restored compatibility with OpenTTD 0.7.x and 1.0.x (was incompatible due to use smoke, now resolved).
+Improved graphical style of many ships, including complete rework of River Boats.
+Several changes to improve gameplay balance of set:
+- removed Medium Coaster, increased capacity of Small Coaster.
+- removed Large Trader, renamed Medium Trader to Large Trader. 
+- changed capacity of several other freight ships (some bigger, some smaller).
+Changes shouldn't break savegames, but there may be a few odd effects.
+
 * 0.7.0 *
 Cargo hold graphics for River Boats when loading / unloading.
 Utility Vessel (Medium) uses ferry graphics when refitted to PAX (Dan MacK).
