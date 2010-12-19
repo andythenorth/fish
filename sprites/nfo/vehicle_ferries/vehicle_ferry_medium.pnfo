@@ -12,7 +12,10 @@
 #define THIS_OFFS_X_Y_7  -48 -29
 #define THIS_OFFS_X_Y_8   -9 -28
 
- -1 * 1	 00 02 \b19 01 VEH_VEHICLE_FERRY_MEDIUM     // Action 0
+#define THIS_SMOKE_TYPE 40 // visual effect (40 == disabled)
+#include "../templates/template_smoke.tnfo"
+
+ -1 * 1	 00 02 \b18 01 VEH_VEHICLE_FERRY_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -31,7 +34,6 @@
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
     1A \d683190  // long format introduction date
-    1C 40           // visual effect (40 == disabled)
 -1 * 1   04 02 7F 01 VEH_VEHICLE_FERRY_MEDIUM
     01 2B // X offset
     "Vehicle Ferry (Medium)" 00  
