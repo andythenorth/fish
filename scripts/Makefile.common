@@ -58,7 +58,6 @@ test::
 #	$(_E) "Bundled files:                $(BUNDLE_FILES)"
 #	$(_E) "Repository files:             $(REPO_FILES)"
 #	$(_E) "Bundle source files:          `for i in $(REPO_FILES); do for j in $(MAIN_DIRS); do echo "$$i" | grep "$$j"; done; done;`"
-	$(_E) "NML: $(shell [ -n $(USE_NFO) ] && echo "$(USE_NFO)")"
 
 .PRECIOUS: %.nfo %.nml %.cnfo
 .SECONDARY: %.nfo %.nml %.cnfo
@@ -103,6 +102,7 @@ endif
 
 # Create the dependencies. Allow project types to define their own
 $(REV_FILENAME):
+	$(_V) for i in `ls *.$(REV_EXTENSION) 2> /dev/null`; do [ "$$i" != "" ] && rm $$i; done
 	$(_V) touch $@
 
 addcheck:
