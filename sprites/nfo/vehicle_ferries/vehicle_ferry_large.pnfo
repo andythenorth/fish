@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE       vehicle_ferry_large.pcx     // used in action 1 template (must include file extension)
+#define THIS_PCX_FILE       vehicle_ferry_large.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID         VEH_VEHICLE_FERRY_LARGE // used in action 2/3 template
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
