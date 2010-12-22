@@ -143,3 +143,8 @@
 //#define VACANT                          FE
 //#define VACANT                          F0
 //#define VACANT                          FF
+
+//D0 texts
+#define STR_REFIT_VEH_TOWBOAT_1_A         00 //D0 text
+#define STR_REFIT_VEH_TOWBOAT_1_B         01 //D0 text
+#define STR_REFIT_VEH_TOWBOAT_1_C         02 //D0 text
