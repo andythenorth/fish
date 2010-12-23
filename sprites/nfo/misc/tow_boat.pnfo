@@ -16,7 +16,7 @@
     11 00 00 00 00  // cargo types available for refitting
     12 28           // callbacks
     18 FF 03        // refittable cargo classes
-    19 00 00        // non-refittable cargo classes
+    19 03 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 B1 
     01 2B // X offset
