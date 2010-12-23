@@ -2,7 +2,7 @@
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 0E 01 THIS_VEH_ID     // Action 0
+-1 * 1	 00 02 \b15 01 THIS_VEH_ID     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -14,12 +14,20 @@
     0D \w240        // capacity 
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
+    12 28           // callbacks
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 B1 
     01 2B // X offset
     "Towboat" 00  
+-1 * 33	 04 00 FF 01 STR_REFIT_VEH_TOWBOAT_1_A D0
+              " (216t in 1 barge)" 00
+-1 * 33	 04 00 FF 01 STR_REFIT_VEH_TOWBOAT_1_B D0
+              " (432t in 2 barges)" 00	
+-1 * 33	 04 00 FF 01 STR_REFIT_VEH_TOWBOAT_1_C D0
+              " (864t in 4 barges)" 00
+
 -1 * 4	 01 02 01 08 
 // Test ships
 -1 sprites/graphics/tow_boats.pcx 20  10 01 89 28  -9  -45
@@ -42,9 +50,36 @@
 -1 sprites/graphics/FISH_test.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
+
+
+-1 * 18	 02 02 E0  // handle capacity change on refit - check current subtype
+                 85 F2 00 FF FF //
+                 03 // range
+                   D8 80  \w00 \w00 
+                   B0 81  \w01 \w01 
+                   60 83  \w02 \w02 
+                 FF 80 // default - end cb chain
+
+// text strings
+-1 * 18	 02 02 D0  // set refit text strings
+                 81 F2 00 FF //
+                 03 // range
+                   STR_REFIT_VEH_TOWBOAT_1_A 80  \b00 \b00 
+                   STR_REFIT_VEH_TOWBOAT_1_B 80  \b01 \b01 
+                   STR_REFIT_VEH_TOWBOAT_1_C 80  \b02 \b02 
+                 FF 80 // end callback chain
+
+// handle callbacks etc
+-1 * 18	 02 02 C0  // handle callbacks
+                 81 0C 00 FF //
+                 02 // range
+                   E0 00  15 15 // change vehicle properties
+                   D0 00  19 19 // text suffix CB 
+                 B1 00 // graphics  
+
 -1 * 1	 03 02 01 B1 // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   B1 00 // default sprites
+   C0 00 // default sprites
 
 #undef THIS_VEH_ID
