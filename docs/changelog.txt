@@ -1,5 +1,11 @@
 Changelog
 
+* 0.8.1 *
+Improved graphical style of Small and Large Coasters.
+Add cranes / masts to some other ships.
+Log Rafts can be refitted to multiple capacities (95t, 210t, 400t).
+Internal changes (convert more pcx files to png, tidy up a few things).
+
 * 0.8.0 *
 Restored compatibility with OpenTTD 0.7.x and 1.0.x (was incompatible due to use smoke, now resolved).
 Improved graphical style of many ships, including complete rework of River Boats.
