@@ -148,3 +148,6 @@
 #define STR_REFIT_VEH_TOWBOAT_1_A         00 //D0 text
 #define STR_REFIT_VEH_TOWBOAT_1_B         01 //D0 text
 #define STR_REFIT_VEH_TOWBOAT_1_C         02 //D0 text
+#define STR_REFIT_VEH_LOGRAFT_1_A         03 //D0 text
+#define STR_REFIT_VEH_LOGRAFT_1_B         04 //D0 text
+#define STR_REFIT_VEH_LOGRAFT_1_C         05 //D0 text
