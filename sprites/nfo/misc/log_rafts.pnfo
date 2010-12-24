@@ -12,7 +12,7 @@
     0A \b08         // cost factor (purchase cost)
     0B \b39         // speed in mph * 3.2      
     0C FF           // cargo type 
-    0D \w400        // capacity 
+    0D \w95        // capacity 
     0F \b69         // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 80 00 00 00  // cargo types available for refitting
@@ -25,9 +25,9 @@
     01 2B // X offset
     "Log Raft (Large)" 00 
   -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_A D0
-              " (216t)" 00
+              " (95t)" 00
 -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_B D0
-              " (432t)" 00	
+              " (210t)" 00	
 -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_C D0
               " (400t)" 00
 
@@ -132,9 +132,9 @@
 -1 * 18	 02 02 E0  // handle capacity change on refit - check current subtype
                  85 F2 00 FF FF //
                  03 // range
-                   D8 80  \w00 \w00 
-                   B0 81  \w01 \w01 
-                   60 83  \w02 \w02 
+                   5F 80  \w00 \w00 
+                   D2 80  \w01 \w01 
+                   90 81  \w02 \w02 
                  FF 80 // default - end cb chain
                
 // text strings
