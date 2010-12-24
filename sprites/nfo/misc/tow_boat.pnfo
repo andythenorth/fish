@@ -69,11 +69,11 @@
                    STR_REFIT_VEH_TOWBOAT_1_C 80  \b02 \b02 
                  FF 80 // end callback chain
 
-// handle callbacks etc
--1 * 18	 02 02 C0  // handle callbacks
+// handle callbacks
+-1 * 18	 02 02 C0
                  81 0C 00 FF //
                  02 // range
-                   E0 00  15 15 // change vehicle properties
+                   E0 00  15 15 // change vehicle properties on refit
                    D0 00  19 19 // text suffix CB 
                  B1 00 // graphics  
 
