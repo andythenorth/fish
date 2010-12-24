@@ -2,13 +2,13 @@
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 \b17 01 THIS_VEH_ID     // Action 0
+-1 * 1	 00 02 \b18 01 THIS_VEH_ID     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b35         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b20         // loading speed
     08 FF           // use new graphics
-    09 00           // refittable (0 = no, 1 = yes)
+    09 01           // refittable (0 = no, 1 = yes)
     0A \b08         // cost factor (purchase cost)
     0B \b39         // speed in mph * 3.2      
     0C 07           // cargo type 
@@ -16,13 +16,21 @@
     0F \b69         // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
+    12 28           // callbacks
     17 02           // miscellaneous flags (inc. use 2CC)
     18 00 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_LOG_RAFT 
     01 2B // X offset
-    "Log Raft (Large)" 00  
+    "Log Raft (Large)" 00 
+  -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_A D0
+              " (216t)" 00
+-1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_B D0
+              " (432t)" 00	
+-1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_C D0
+              " (400t)" 00
+
 -1 * 4	 01 02 07 08 
 // unloaded - not moving (no wash)
 -1 sprites/graphics/log_raft_large.pcx 20  10 01 89 28  -13 -24
@@ -103,26 +111,50 @@
 -1 sprites/graphics/log_raft_large.pcx 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
+
 -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
                  81 B4 00 FF //
                  01 // range
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
--1 * 0  02 02 C2 //  
+
+-1 * 0  02 02 C2
               85 BC 00 FF FF // return value for speed depending on current cargo amount
               01 // range
                  40 80 00 00 00 00 // no cargo
               27 80 // default (some cargo)
--1 * 0  02 02 C1 // 
+-1 * 0  02 02 C1 
               81 10 00 FF
               01 // range
                  C2 00 0B 0B // new speed
                A0 00 // default (end cb36 checks using ID for applying graphics)
--1 * 1   02 02 C0  //
-               81 0C 00 FF // handle callbacks
-               01 // range
-                 C1 00 36 36 // 
+
+-1 * 18	 02 02 E0  // handle capacity change on refit - check current subtype
+                 85 F2 00 FF FF //
+                 03 // range
+                   D8 80  \w00 \w00 
+                   B0 81  \w01 \w01 
+                   60 83  \w02 \w02 
+                 FF 80 // default - end cb chain
+               
+// text strings
+-1 * 18	 02 02 D0  // set refit text strings
+                 81 F2 00 FF //
+                 03 // range
+                   STR_REFIT_VEH_LOGRAFT_1_A 80  \b00 \b00 
+                   STR_REFIT_VEH_LOGRAFT_1_B 80  \b01 \b01 
+                   STR_REFIT_VEH_LOGRAFT_1_C 80  \b02 \b02 
+                 FF 80 // end callback chain
+               
+// handle callbacks
+-1 * 1   02 02 C0
+               81 0C 00 FF
+               03 // range
+                 E0 00  15 15 // change vehicle properties on refit
+                 D0 00  19 19 // text suffix CB 
+                 C1 00  36 36 // change vehicle properties  
                A0 00 // default 
+               
 -1 * 1	 03 02 01 VEH_LOG_RAFT // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
