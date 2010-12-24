@@ -137,7 +137,7 @@
       02 // number loaded states
       04 // number loading states
       \w00  \w06 // loaded sprites
-      \w02  \w03  \w04  \w05 // loading sprites
+      \w02  \w03  \w04  \w05// loading sprites
 -1 * 1	 02 02 B2 // default cargos - moving  
       02 // number loaded states
       01 // number loading states
