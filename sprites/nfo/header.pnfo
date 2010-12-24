@@ -30,16 +30,16 @@
 "Special thanks to \89Lead@Inbox\98, \89DanMacK\98, \89PikkaBird\98, \89Ammler\98, \89planetmaker\98. " 00
 
 -1 * 134	 00 08 01 20 00 09
-      "PASS" "COAL" "MAIL" "OIL_"
-      "LVST" "GOOD" "GRAI" "WOOD"
-      "IORE" "STEL" "VALU" "PAPR"
-      "FOOD" "FRUT" "CORE" "WATR"
-      "RUBR" "___A" "___B" "___C"
-      "___D" "___E" "___F" "___G"
-      "___H" "SAND" "___J" "WHEA"
-      "GOLD" "MAIZ" "TWOD" "DIAM"
-      
+      "PASS" "COAL" "MAIL" "OIL_"     // 00 - 03, 01 - 08
+      "LVST" "GOOD" "GRAI" "WOOD"     // 04 - 07, 10 - 80
+      "IORE" "STEL" "VALU" "PAPR"     // 08 - 0B, 01^ - 08^
+      "FOOD" "FRUT" "CORE" "WATR"     // 0C - 0F, 10^ - 80^
+      "RUBR" "MILK" "PETR" "RFPR"     // 10 - 13, 01^^ - 08^^
+      "ALUM" "SCRP" "CLAY" "___G"     // 14 - 17, 10^^ - 80^^
+      "AORE" "SAND" "GRVL" "WHEA"     // 18 - 1B, 01^^^ - 08^^^
+      "GOLD" "MAIZ" "TWOD" "DIAM"     // 1C - 1F, 10^^^ - 80^^^
 
+      
 // disable the warning:for newgrfs
 // warning about high IDs
 //@@WARNING DISABLE 141
