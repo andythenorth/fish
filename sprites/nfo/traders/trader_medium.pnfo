@@ -1,5 +1,7 @@
-#define THIS_PCX_FILE       trader_medium.png     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID         VEH_TRADER_MEDIUM // used in action 2/3 template
+#define THIS_PCX_FILE           trader_medium.png     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID             VEH_TRADER_MEDIUM // used in action 2/3 template
+#define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   BE 80 // define without escapes and setting 80 to make it a cb result
 
 #define THIS_OFFS_MENU  655 10 01  48 90  -36 -21
 

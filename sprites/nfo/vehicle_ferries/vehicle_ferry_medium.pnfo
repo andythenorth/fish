@@ -1,5 +1,7 @@
-#define THIS_PCX_FILE       vehicle_ferry_medium.png     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID         VEH_VEHICLE_FERRY_MEDIUM // used in action 2/3 template
+#define THIS_PCX_FILE           vehicle_ferry_medium.png     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID             VEH_VEHICLE_FERRY_MEDIUM // used in action 2/3 template
+#define THIS_PAX_CAPACITY       49 82 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   55 81 // define without escapes and setting 80 to make it a cb result
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
@@ -29,7 +31,7 @@
     0F \b200        // running cost factor
     10 05           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
-    12 20           // callback flags
+    12 00           // callbacks
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes

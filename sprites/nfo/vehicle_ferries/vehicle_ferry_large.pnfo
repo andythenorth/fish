@@ -1,5 +1,7 @@
-#define THIS_PCX_FILE       vehicle_ferry_large.png     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID         VEH_VEHICLE_FERRY_LARGE // used in action 2/3 template
+#define THIS_PCX_FILE           vehicle_ferry_large.png     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID             VEH_VEHICLE_FERRY_LARGE // used in action 2/3 template
+#define THIS_PAX_CAPACITY       20 83 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   D3 81 // define without escapes and setting 80 to make it a cb result
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
@@ -15,7 +17,7 @@
 #define THIS_SMOKE_TYPE 40 // visual effect (40 = disabled)
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 \b17 01 VEH_VEHICLE_FERRY_LARGE     // Action 0
+-1 * 1	 00 02 \b18 01 VEH_VEHICLE_FERRY_LARGE     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -29,6 +31,7 @@
     0F \b255        // running cost factor
     10 05           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
+    12 00           // callbacks
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes

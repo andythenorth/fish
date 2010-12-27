@@ -1,4 +1,7 @@
-#define THIS_VEH_ID VEH_UTILITY_VESSEL_MEDIUM
+#define THIS_VEH_ID             VEH_UTILITY_VESSEL_MEDIUM
+#define THIS_PAX_CAPACITY       3C 80 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   23 80 // define without escapes and setting 80 to make it a cb result
+
 #define THIS_SMOKE_TYPE 29 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
 
@@ -16,7 +19,7 @@
     0F \b27         // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
-    12 20           // callback flags
+    12 00           // callback flags
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
@@ -90,7 +93,7 @@
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 
 // This ship doesn't use any templating at the moment - it's currently unique wrt refit / graphics 
-// The code uses classes not explicit cargo type.  That's because I copied and pasted and couldn't be bothered to change it.
+// The code uses classes not explicit cargo type (allows for tourists etc).
 
 -1 * 70	 02 02 A2  // moving - choose sprites according to ****cargo class*****
                  85 47 10 FFFF // var 47 in format ccccwwtt where I want cccc 
@@ -99,7 +102,7 @@
                  B2 00 // default 
                  
 -1 * 70	 02 02 A1  // not moving - choose sprites according to ****cargo class****
-                 85 47 10 FFFF // var 47 in format ccccwwtt where I want cccc 
+                 85 47 10 \w1 // var 47 in format ccccwwtt where I want cccc; mask for just bit 0 (PAX class)
                  \b1 // range
                    B3 00  \wx01  \wx01 // PAX
                  B1 00 // default                  
@@ -110,8 +113,17 @@
                   A1 00 00 00 // not moving (speed == 0)
                  A2 00 // moving (speed != 0) 
 
+#include "../templates/template_refitted_capacity.tnfo"
+
+// handle callbacks
+-1 * 1   02 02 C0
+               81 0C 00 FF
+               01 // range
+                 E0 00  36 36 // change vehicle properties on refit
+               A0 00 // default 
+
 -1 * 1	 03 02 01 VEH_UTILITY_VESSEL_MEDIUM // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   A0 00 // default sprites
+   C0 00 // default sprites
 #undef THIS_VEH_ID
