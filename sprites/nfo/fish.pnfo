@@ -21,6 +21,7 @@
 #include "sprites/nfo/coasters/coaster_large.pnfo"
 
 //#include "sprites/nfo/misc/tow_boat.pnfo"
+#include "sprites/nfo/passenger_steamers/paddle_steamer.pnfo"
 
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_small.pnfo"
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_medium.pnfo"

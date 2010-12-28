@@ -21,7 +21,7 @@
 //#define VACANT                          67
 //#define VACANT                          68
 //#define VACANT                          69
-//#define VACANT                          6A
+#define VEH_PADDLE_STEAMER              6A
 //#define VACANT                          6B
 //#define VACANT                          6C
 //#define VACANT                          6D

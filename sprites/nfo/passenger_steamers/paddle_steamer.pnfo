@@ -1,0 +1,44 @@
+#define THIS_PCX_FILE           paddle_steamer.png     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID             VEH_PADDLE_STEAMER // used in action 2/3 template
+#define THIS_PAX_CAPACITY       DA 80 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   7F 80 // define without escapes and setting 80 to make it a cb result
+
+#define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
+
+#define THIS_OFFS_X_Y_1  -14 -54
+#define THIS_OFFS_X_Y_2  -61 -28
+#define THIS_OFFS_X_Y_3  -36 -29
+#define THIS_OFFS_X_Y_4  -10 -28
+#define THIS_OFFS_X_Y_5  -14 -54
+#define THIS_OFFS_X_Y_6  -55 -26
+#define THIS_OFFS_X_Y_7  -36 -29
+#define THIS_OFFS_X_Y_8    0 -24
+
+#define THIS_SMOKE_TYPE 40  // visual effect (40 = disabled)
+#include "../templates/template_smoke.tnfo"
+
+-1 * 1	 00 02 \b18 01 VEH_PADDLE_STEAMER     // Action 0
+    00 \w01-01-1970 // date of introduction
+    03 \b35         // vehicle life in years
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    07 \b30         // loading speed
+    08 FF           // use new graphics
+    09 01           // refittable (0 = no, 1 = yes)
+    0A \b50         // cost factor (purchase cost)
+    0B \b48         // speed in mph * 3.2      
+    0C 00           // cargo type 
+    0D \w218        // capacity 
+    0F \b83         // running cost factor
+    10 05           // sound effect (4=cargo ship, 5=passenger ship)
+    11 00 00 00 00  // cargo types available for refitting
+    12 00           // callbacks
+    17 02           // miscellaneous flags (inc. use 2CC)
+    18 FF 00        // refittable cargo classes
+    19 00 01        // non-refittable cargo classes
+    1A \d683190  // long format introduction date
+-1 * 1   04 02 7F 01 VEH_PADDLE_STEAMER
+    01 2B // X offset
+    "Paddle Steamer" 00  
+
+#include "../templates/default_action1_2.tnfo"
+#include "../templates/default_action2_3.tnfo"
