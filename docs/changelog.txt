@@ -1,5 +1,12 @@
 Changelog
 
+* 0.8.2 *
+Many ships now have a smaller capacity for freight than for passengers.
+Utility Vessel passenger capacity increased to 60.
+FISH no longer disables default ferries - this is a temporary feature
+until more small-sized ferries are finished.
+Various minor graphical fixes.
+
 * 0.8.1 *
 Improved graphical style of Small and Large Coasters.
 Add cranes / masts to some other ships.
