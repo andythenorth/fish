@@ -15,7 +15,7 @@
     0A \b08         // cost factor (purchase cost)
     0B \b52         // speed in mph * 3.2      
     0C 00           // cargo type 
-    0D \w35         // capacity 
+    0D \w60         // capacity 
     0F \b27         // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
@@ -88,7 +88,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/graphics/utility_fishboat_medium.png 402 8 01 19 49 -40 -10
+-1 sprites/graphics/utility_fishboat_medium.png 402 108 01 19 49 -40 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 
