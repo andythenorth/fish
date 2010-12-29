@@ -4,11 +4,14 @@
   #define THIS_PAX_CAPACITY   00 80 // // define without escapes and setting 80 to make it a cb result
 #endif
 
+// warning about default result being same as earlier - can be valid when freight capacity == PAX capacity
+//@@WARNING DISABLE 100
 -1 * 70	 02 02 E1  // set refitted capacity according to cargo class
                  85 47 10 \w1 // var 47 in format ccccwwtt where I want cccc; mask for just bit 0 (PAX class)
                  \b1 // range
                    THIS_PAX_CAPACITY  \wx01  \wx01 // PAX class
                  THIS_FREIGHT_CAPACITY // default                  
+//@@WARNING ENABLE 100
 
 -1 * 0  02 02 E0 // 
               81 10 00 FF
