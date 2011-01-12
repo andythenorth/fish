@@ -1,18 +1,19 @@
-#define THIS_PCX_FILE           trader_medium.png     // used in action 1 template (must include file extension)
+// Large trader was redefined from Medium Trader, leaving old one in place, but climate masked (for savegame compatibility)
+#define THIS_PCX_FILE           trader_large.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_TRADER_MEDIUM // used in action 2/3 template
 #define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   BE 80 // define without escapes and setting 80 to make it a cb result
 
-#define THIS_OFFS_MENU  655 10 01  48 90  -36 -21
+#define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
 
 #define THIS_OFFS_X_Y_1  -14 -40
-#define THIS_OFFS_X_Y_2  -82 -23
+#define THIS_OFFS_X_Y_2  -80 -24
 #define THIS_OFFS_X_Y_3  -66 -21
-#define THIS_OFFS_X_Y_4  -33 -24
+#define THIS_OFFS_X_Y_4  -33 -25
 #define THIS_OFFS_X_Y_5  -14 -40
-#define THIS_OFFS_X_Y_6  -80 -25
+#define THIS_OFFS_X_Y_6  -78 -26
 #define THIS_OFFS_X_Y_7  -66 -21
-#define THIS_OFFS_X_Y_8  -30 -20
+#define THIS_OFFS_X_Y_8  -32 -23
 
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
