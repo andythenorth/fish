@@ -6,13 +6,13 @@
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
 #define THIS_OFFS_X_Y_1  -14 -54
-#define THIS_OFFS_X_Y_2  -61 -28
-#define THIS_OFFS_X_Y_3  -36 -29
+#define THIS_OFFS_X_Y_2  -63 -24
+#define THIS_OFFS_X_Y_3  -50 -29
 #define THIS_OFFS_X_Y_4  -10 -28
-#define THIS_OFFS_X_Y_5  -14 -54
-#define THIS_OFFS_X_Y_6  -55 -26
-#define THIS_OFFS_X_Y_7  -36 -29
-#define THIS_OFFS_X_Y_8    0 -24
+#define THIS_OFFS_X_Y_5  -14 -55
+#define THIS_OFFS_X_Y_6  -58 -27
+#define THIS_OFFS_X_Y_7  -50 -29
+#define THIS_OFFS_X_Y_8   -8 -24
 
 #define THIS_SMOKE_TYPE 40  // visual effect (40 = disabled)
 #include "../templates/template_smoke.tnfo"
