@@ -1,6 +1,4 @@
 #define THIS_VEH_ID             VEH_TOWBOAT
-#define THIS_PAX_CAPACITY       F0 80 // define without escapes and setting 80 to make it a cb result
-#define THIS_FREIGHT_CAPACITY   F0 80 // define without escapes and setting 80 to make it a cb result
 
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
