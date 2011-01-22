@@ -40,5 +40,5 @@
     01 2B // X offset
     "Hydrofoil (Kometa)" 00  
 
-#include "../templates/default_action1_2.tnfo"
-#include "../templates/default_action2_3.tnfo"
+#include "../templates/hydrofoil_action1_2.tnfo"
+#include "../templates/hydrofoil_action2_3.tnfo"
