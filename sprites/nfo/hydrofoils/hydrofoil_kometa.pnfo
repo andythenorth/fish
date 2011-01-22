@@ -1,6 +1,9 @@
 #define THIS_PCX_FILE           hydrofoil_kometa.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_HYDROFOIL_KOMETA     // used in action 2/3 template
 
+#define THIS_SPEED_STATE_1            \w50    // first speed threshold - used for choosing graphics depending on speed
+#define THIS_SPEED_STATE_2            \w120    // second speed threshold
+
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
 #define THIS_OFFS_X_Y_1  -14 -54
@@ -23,7 +26,7 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b50         // cost factor (purchase cost)
-    0B \b116         // speed in mph * 3.2      
+    0B \b128         // speed in mph * 3.2      
     0C 00           // cargo type 
     0D \w106        // capacity 
     0F \b83         // running cost factor
