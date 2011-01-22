@@ -3,19 +3,10 @@
                  01 // range
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
-
-#include "template_refitted_capacity.tnfo"
-
-// handle callbacks
--1 * 1   02 02 C0
-               81 0C 00 FF
-               01 // range
-                 E0 00  36 36 // change vehicle properties
-               A0 00 // default 
                  
 -1 * 1	 03 02 01 THIS_VEH_ID // Action 3 
    01 // number of cargo types to support
     FF B0 00 // buy menu sprites 
-   C0 00 // default sprites
+   A0 00 // default sprites
    
 #undef THIS_VEH_ID
