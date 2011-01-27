@@ -2,6 +2,7 @@
 #define THIS_VEH_ID             VEH_COASTER_SMALL // used in action 2/3 template
 #define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   D0 82 // define without escapes and setting 80 to make it a cb result
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_DEFAULT
 
 //#define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
@@ -39,7 +40,7 @@
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_COASTER_SMALL
     01 2B // X offset
-    "Coaster (Small)" 00  
+    "Oran Freighter" 00  
     
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"
 #include "../templates/enhanced_cargo_support_action2_3.tnfo"

@@ -1,6 +1,7 @@
 #include "sprites/nfo/nfo_header.pnfo"
 #include "sprites/nfo/ids.pnfo"
 #include "sprites/nfo/header.pnfo"
+#include "sprites/nfo/strings.pnfo"
 #include "sprites/nfo/modify_default_ships.pnfo"
 #include "sprites/nfo/misc/log_rafts.pnfo"
 
@@ -20,14 +21,15 @@
 #include "sprites/nfo/coasters/coaster_medium.pnfo"
 #include "sprites/nfo/coasters/coaster_large.pnfo"
 
-#include "sprites/nfo/misc/tow_boat.pnfo"
+//#include "sprites/nfo/misc/tow_boat.pnfo"
 
-#include "sprites/nfo/passenger_steamers/paddle_steamer.pnfo"
+//#include "sprites/nfo/passenger_steamers/paddle_steamer.pnfo"
 
-#include "sprites/nfo/hydrofoils/hydrofoil_kometa.pnfo"
+//#include "sprites/nfo/hydrofoils/hydrofoil_kometa.pnfo"
 
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_small.pnfo"
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_medium.pnfo"
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_large.pnfo"
 
 #include "sprites/nfo/hovercraft/hovercraft_freight_medium.pnfo"
+//#include "sprites/nfo/hovercraft/hovercraft_mixed_medium.pnfo"

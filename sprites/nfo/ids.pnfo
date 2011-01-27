@@ -151,3 +151,5 @@
 #define STR_REFIT_VEH_LOGRAFT_1_A         03 //D0 text
 #define STR_REFIT_VEH_LOGRAFT_1_B         04 //D0 text
 #define STR_REFIT_VEH_LOGRAFT_1_C         05 //D0 text
+
+#define STR_VEH_WINDOW_DEFAULT            06 //D0 text
