@@ -1,5 +1,6 @@
 #define THIS_PCX_FILE           hydrofoil_kometa.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_HYDROFOIL_KOMETA     // used in action 2/3 template
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_DEFAULT
 
 #define THIS_SPEED_STATE_1            \w50    // first speed threshold - used for choosing graphics depending on speed
 #define THIS_SPEED_STATE_2            \w120    // second speed threshold
