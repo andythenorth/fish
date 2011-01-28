@@ -1,4 +1,6 @@
-#define THIS_VEH_ID VEH_LOG_RAFT
+#define THIS_VEH_ID           VEH_LOG_RAFT
+#define THIS_VEH_WINDOW_TEXT  STR_VEH_WINDOW_DEFAULT
+
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
 
@@ -149,14 +151,21 @@
 // handle callbacks
 -1 * 1   02 02 C0
                81 0C 00 FF
-               03 // range
+               \b3 // range
                  E0 00  15 15 // change vehicle properties on refit
                  D0 00  19 19 // text suffix CB 
                  C1 00  36 36 // change vehicle properties  
                A0 00 // default 
+-1 * 14	 02 02 C1 // buy menu 
+               81 0C 00 FF //handle callbacks for buy menu
+               \b1 // range
+                 THIS_VEH_WINDOW_TEXT 80   23 23  // text for vehicle window (unless using varact 2 chain, simply return ID of D0 text) 
+               B0 00 //otherwise go to next action 2 ID 
                
 -1 * 1	 03 02 01 VEH_LOG_RAFT // Action 3 
    01 // number of cargo types to support
-    FF B0 00 // buy menu sprites 
+    FF C1 00 // buy menu sprites 
    C0 00 // default sprites
+
 #undef THIS_VEH_ID
+#undef THIS_VEH_WINDOW_TEXT
