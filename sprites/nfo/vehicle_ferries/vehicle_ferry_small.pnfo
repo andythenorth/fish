@@ -38,7 +38,7 @@
     19 00 01        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_VEHICLE_FERRY_SMALL
-    01 2B // X offset
+    BUY_MENU_X_OFFSET
     "Tiree Ferry" 00  
 
 #include "../templates/default_action1_2.tnfo"

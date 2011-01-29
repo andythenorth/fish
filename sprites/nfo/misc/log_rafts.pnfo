@@ -24,7 +24,7 @@
     19 00 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_LOG_RAFT 
-    01 2B // X offset
+    BUY_MENU_X_OFFSET
     "Olympic Log Tug" 00 
 -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_A D0
               " (95t)" 00

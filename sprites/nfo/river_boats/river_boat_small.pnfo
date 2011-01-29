@@ -37,7 +37,7 @@
     19 03 00        // non-refittable cargo classes
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_RIVER_BOAT_SMALL 
-    01 2B // X offset
+    BUY_MENU_X_OFFSET
     "Lutschine Freight Barge" 00  
     
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"

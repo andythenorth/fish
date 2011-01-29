@@ -38,7 +38,7 @@
     19 01 00        // non-refittable cargo classes
     1A \d726020  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_HOVERCRAFT_FREIGHT_LARGE
-    01 2B // X offset
+    BUY_MENU_X_OFFSET
     "Hovercraft (Freight Large)" 00  
     
 #include "../templates/freight_hovercraft_action1_2.tnfo"

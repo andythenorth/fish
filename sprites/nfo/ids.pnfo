@@ -1,3 +1,5 @@
+#define BUY_MENU_X_OFFSET   01 2F // X offset
+
 // IDs for FISH 
 
 // Ship IDs
