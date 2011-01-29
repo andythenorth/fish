@@ -25,8 +25,8 @@
 
 #include "sprites/nfo/passenger_steamers/paddle_steamer.pnfo"
 
-#include "sprites/nfo/hydrofoils/hydrofoil_kometa.pnfo"
-#include "sprites/nfo/hydrofoils/hydrofoil_818.pnfo"
+#include "sprites/nfo/hydrofoils/hydrofoil_klyazma.pnfo"
+//#include "sprites/nfo/hydrofoils/hydrofoil_818.pnfo"
 
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_small.pnfo"
 #include "sprites/nfo/vehicle_ferries/vehicle_ferry_medium.pnfo"

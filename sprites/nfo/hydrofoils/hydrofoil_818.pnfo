@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE           hydrofoil_kometa.png     // used in action 1 template (must include file extension)
+#define THIS_PCX_FILE           hydrofoil_klyazma.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_HYDROFOIL_818     // used in action 2/3 template
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL_KLYAZMA
 
