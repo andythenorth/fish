@@ -7,11 +7,11 @@
                  B4 00 // moving, speed 2
 
 // handle callbacks etc - use separate varaction 2s for 'real' vehicles and buy menu - shared cb chain, different graphics IDs 
--1 * 1   02 02 C0  // !!! not currently used by action 3 - will be needed though
-               81 0C 00 FF
-               \b1 // range
-                 E0 00  36 36 // change vehicle properties on refit
-               A0 00 // default 
+//-1 * 1   02 02 C0  // !!! not currently used by action 3 - will be needed though
+//               81 0C 00 FF
+//               \b1 // range
+//                 E0 00  36 36 // change vehicle properties on refit
+//               A0 00 // default 
 -1 * 14	 02 02 C1 // buy menu 
                81 0C 00 FF //handle callbacks for buy menu
                \b1 // range
