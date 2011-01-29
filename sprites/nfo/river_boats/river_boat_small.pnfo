@@ -38,7 +38,7 @@
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_RIVER_BOAT_SMALL 
     01 2B // X offset
-    "Lutschine River Boat" 00  
+    "Lutschine Freight Barge" 00  
     
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"
 #include "../templates/enhanced_cargo_support_action2_3.tnfo"

@@ -2,7 +2,7 @@
 #define THIS_VEH_ID             VEH_VEHICLE_FERRY_LARGE // used in action 2/3 template
 #define THIS_PAX_CAPACITY       20 83 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   D3 81 // define without escapes and setting 80 to make it a cb result
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_DEFAULT
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_CAR_FERRY_LARGE_DIESEL
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 

@@ -2,7 +2,7 @@
 #define THIS_VEH_ID             VEH_COASTER_LARGE // used in action 2/3 template
 #define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   38 84 // define without escapes and setting 80 to make it a cb result
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_DEFAULT
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_COASTER_DIESEL
 
 //#define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
