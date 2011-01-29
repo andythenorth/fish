@@ -16,7 +16,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A \d683190  // long format introduction date
+    1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_NARROW_BOAT 
     BUY_MENU_X_OFFSET
     "Narrow Boat" 00  
@@ -61,7 +61,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A \d683190  // long format introduction date
+    1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_CANAL_BOAT_SMALL 
     BUY_MENU_X_OFFSET
     "Canal Boat (Small)" 00  
@@ -106,7 +106,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A \d683190  // long format introduction date
+    1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_CANAL_BOAT_MEDIUM 
     BUY_MENU_X_OFFSET
     "Canal Boat (Medium)" 00  
@@ -151,7 +151,7 @@
     11 00 00 00 00  // cargo types available for refitting
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A \d683190  // long format introduction date
+    1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_CANAL_BOAT_LARGE 
     BUY_MENU_X_OFFSET
     "Canal Boat (Large)" 00  

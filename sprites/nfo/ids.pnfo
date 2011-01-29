@@ -38,7 +38,7 @@
 //#define VACANT                          76
 //#define VACANT                          77
 #define VEH_HYDROFOIL_KOMETA            78
-//#define VACANT                          79
+#define VEH_HYDROFOIL_818               79
 //#define VACANT                          7A
 //#define VACANT                          7B
 //#define VACANT                          7C

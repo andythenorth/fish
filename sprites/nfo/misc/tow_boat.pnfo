@@ -19,7 +19,7 @@
     12 28           // callbacks
     18 FF 03        // refittable cargo classes
     19 03 00        // non-refittable cargo classes
-    1A \d683190  // long format introduction date
+    1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 B1 
     BUY_MENU_X_OFFSET
     "Cahaba Towboat" 00  
