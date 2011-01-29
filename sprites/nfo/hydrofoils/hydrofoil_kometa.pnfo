@@ -1,6 +1,6 @@
 #define THIS_PCX_FILE           hydrofoil_kometa.png     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID             VEH_HYDROFOIL_KOMETA     // used in action 2/3 template
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL
+#define THIS_VEH_ID             VEH_HYDROFOIL_KLYAZMA     // used in action 2/3 template
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL_KLYAZMA
 
 #define THIS_SPEED_STATE_1            \w50    // first speed threshold - used for choosing graphics depending on speed
 #define THIS_SPEED_STATE_2            \w120    // second speed threshold
@@ -19,7 +19,7 @@
 #define THIS_SMOKE_TYPE 28 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 \b18 01 VEH_HYDROFOIL_KOMETA     // Action 0
+-1 * 1	 00 02 \b18 01 VEH_HYDROFOIL_KLYAZMA     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b35         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -38,7 +38,7 @@
     18 03 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d01-06-1961  // long format introduction date
--1 * 1   04 02 7F 01 VEH_HYDROFOIL_KOMETA
+-1 * 1   04 02 7F 01 VEH_HYDROFOIL_KLYAZMA
     BUY_MENU_X_OFFSET
     "Klyazma Hydrofoil" 00  
 
