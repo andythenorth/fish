@@ -1,5 +1,5 @@
 #define THIS_VEH_ID           VEH_LOG_RAFT
-#define THIS_VEH_WINDOW_TEXT  STR_VEH_WINDOW_DEFAULT
+#define THIS_VEH_WINDOW_TEXT  STR_VEH_WINDOW_LOGRAFT_DIESEL
 
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
@@ -25,7 +25,7 @@
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_LOG_RAFT 
     01 2B // X offset
-    "Log Raft (Large)" 00 
+    "Olympic Log Tug" 00 
 -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_A D0
               " (95t)" 00
 -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_B D0

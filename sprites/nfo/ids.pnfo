@@ -152,9 +152,38 @@
 #define STR_REFIT_VEH_LOGRAFT_1_B         04 //D0 text
 #define STR_REFIT_VEH_LOGRAFT_1_C         05 //D0 text
 
-#define STR_VEH_WINDOW_DEFAULT            06 //D0 text
-#define STR_VEH_WINDOW_TRADER_DIESEL      07 //D0 text
-#define STR_VEH_WINDOW_COASTER_DIESEL     08 //D0 text
-#define STR_VEH_WINDOW_CAR_FERRY_SMALL_DIESEL     09 //D0 text
-#define STR_VEH_WINDOW_CAR_FERRY_LARGE_DIESEL     0A //D0 text
+#define STR_VEH_WINDOW_DEFAULT                    A0 //D0 text
+#define STR_VEH_WINDOW_TRADER_DIESEL              A1 //D0 text
+#define STR_VEH_WINDOW_ISLAND_TRADER_DIESEL       A2 //D0 text
+#define STR_VEH_WINDOW_CAR_FERRY_DIESEL_CYCLOID   A3 //D0 text
+#define STR_VEH_WINDOW_CAR_FERRY_DIESEL           A4 //D0 text
+#define STR_VEH_WINDOW_CAR_FERRY_LARGE_DIESEL     A5 //D0 text
+#define STR_VEH_WINDOW_RIVERBOAT_DIESEL           A6 //D0 text
+#define STR_VEH_WINDOW_HOVERCRAFT_PORCUPINE       A7 //D0 text
+#define STR_VEH_WINDOW_COASTER_DIESEL             A8 //D0 text
+#define STR_VEH_WINDOW_COASTER_LARGE_DIESEL       A9 //D0 text
+#define STR_VEH_WINDOW_LOGRAFT_DIESEL             AA //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    AB //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    AC //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    AD //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    AE //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    AF //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B0 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B1 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B2 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B3 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B4 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B5 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B6 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B7 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B8 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    B9 //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    BA //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    BB //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    BC //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    BD //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    BE //D0 text
+//#define STR_VEH_WINDOW_UNUSED                    BF //D0 text
+
+
 
