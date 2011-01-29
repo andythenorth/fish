@@ -1,10 +1,10 @@
 -1 * 1	 02 02 A0  // choose sprites according to speed.  Method used could be seen as a hack to avoid some boring maths with -1/+1 for speeds...
                  85 B4 00 \wxFFFF //
                  \b3 // range
-                  B0 00  \w0  \w0 // moving (speed == 0)
-                  B1 00  \w1  THIS_SPEED_STATE_1 // moving, speed 1
+                  B1 00  \w0  \w0 // moving (speed == 0)
+                  B2 00  \w1  THIS_SPEED_STATE_1 // moving, speed 1
                   B3 00  THIS_SPEED_STATE_2  \wxFFFF // moving, speed 3
-                 B2 00 // moving, speed 2
+                 B4 00 // moving, speed 2
 
 // handle callbacks etc - use separate varaction 2s for 'real' vehicles and buy menu - shared cb chain, different graphics IDs 
 -1 * 1   02 02 C0  // !!! not currently used by action 3 - will be needed though

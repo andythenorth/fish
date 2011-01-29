@@ -61,22 +61,22 @@
 -1 sprites/graphics/THIS_PCX_FILE  494 310 01  THIS_Y_X_CROP_6  THIS_OFFS_X_Y_6
 -1 sprites/graphics/THIS_PCX_FILE  620 310 01  THIS_Y_X_CROP_7  THIS_OFFS_X_Y_7
 -1 sprites/graphics/THIS_PCX_FILE  762 310 01  THIS_Y_X_CROP_8  THIS_OFFS_X_Y_8
--1 * 1	 02 02 B0 // not moving
+-1 * 1	 02 02 B1 // not moving
       01 // number loaded states
       01 // number loading states
       \w00 // loaded sprites
       \w00 // loading sprites
--1 * 1	 02 02 B1 // moving speed 1  
+-1 * 1	 02 02 B2 // moving speed 1  
       01 // number loaded states
       01 // number loading states
       \w01 // loaded sprites
       \w01 // loading sprites (n/a if moving)
--1 * 1	 02 02 B2 // moving speed 2  
+-1 * 1	 02 02 B3 // moving speed 2  
       01 // number loaded states
       01 // number loading states
       \w02 // loaded sprites
       \w02 // loading sprites (n/a if moving)
--1 * 1	 02 02 B3 // moving speed 3  
+-1 * 1	 02 02 B4 // moving speed 3  
       01 // number loaded states
       01 // number loading states
       \w03 // loaded sprites
