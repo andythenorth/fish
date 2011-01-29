@@ -2,7 +2,7 @@
 #define THIS_VEH_ID             VEH_PADDLE_STEAMER // used in action 2/3 template
 #define THIS_PAX_CAPACITY       DA 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   7F 80 // define without escapes and setting 80 to make it a cb result
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_DEFAULT
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_PADDLE_STEAMER
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
@@ -39,7 +39,7 @@
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_PADDLE_STEAMER
     BUY_MENU_X_OFFSET
-    "Paddle Steamer" 00  
+    "Fiumelatte Paddle Steamer" 00  
 
 #include "../templates/default_action1_2.tnfo"
 #include "../templates/default_action2_3.tnfo"
