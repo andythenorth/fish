@@ -169,7 +169,7 @@
 #define STR_VEH_WINDOW_HYDROFOIL_KLYAZMA          AC //D0 text
 #define STR_VEH_WINDOW_TOWBOAT                    AD //D0 text
 #define STR_VEH_PADDLE_STEAMER                    AE //D0 text
-//#define STR_VEH_WINDOW_UNUSED                    AF //D0 text
+#define STR_VEH_WINDOW_HYDROFOIL_818              AF //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B0 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B1 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B2 //D0 text

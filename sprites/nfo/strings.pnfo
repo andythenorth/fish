@@ -52,6 +52,10 @@
                                0d 98 "Propulsion: " 8A "2 x diesel" //
                                00
 
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_HYDROFOIL_818 D0 "Type: " 8A "Hydrofoil fast ferry"
+                               0d 98 "Propulsion: " 8A "2 x gas turbine, with water jets " //
+                               00
+
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_TOWBOAT D0 "Type: " 8A "Towboat"
                                0d 98 "Propulsion: " 8A "Diesel" //
                                0d 98 "Refittable capacities: " 8A "999999999999999t" //

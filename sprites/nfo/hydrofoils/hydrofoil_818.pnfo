@@ -1,6 +1,6 @@
 #define THIS_PCX_FILE           hydrofoil_klyazma.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_HYDROFOIL_818     // used in action 2/3 template
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL_KLYAZMA
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL_818
 
 #define THIS_SPEED_STATE_1            \w50    // first speed threshold - used for choosing graphics depending on speed
 #define THIS_SPEED_STATE_2            \w120    // second speed threshold
@@ -29,7 +29,7 @@
     0A \b50         // cost factor (purchase cost)
     0B \b182         // speed in mph * 3.2      
     0C 00           // cargo type 
-    0D \w190        // capacity 
+    0D \w225        // capacity 
     0F \b83         // running cost factor
     10 05           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
