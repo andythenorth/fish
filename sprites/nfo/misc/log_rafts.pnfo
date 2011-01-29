@@ -148,7 +148,7 @@
                    STR_REFIT_VEH_LOGRAFT_1_C 80  \b02 \b02 
                  FF 80 // end callback chain
                
-// handle callbacks
+// handle callbacks etc - use separate varaction 2s for 'real' vehicles and buy menu - shared cb chain, different graphics IDs 
 -1 * 1   02 02 C0
                81 0C 00 FF
                \b3 // range
