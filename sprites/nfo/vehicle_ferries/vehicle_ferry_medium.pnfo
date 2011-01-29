@@ -39,7 +39,7 @@
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_VEHICLE_FERRY_MEDIUM
     01 2B // X offset
-    "Vehicle Ferry (Medium)" 00  
+    "Stornoway Ferry" 00  
 
 #include "../templates/default_action1_2.tnfo"
 #include "../templates/default_action2_3.tnfo"
