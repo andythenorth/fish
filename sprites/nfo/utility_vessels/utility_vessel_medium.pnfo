@@ -27,7 +27,7 @@
     1A \d683190  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_MEDIUM 
     BUY_MENU_X_OFFSET
-    "Utility Vessel (Medium)" 00  
+    "Banquereau Utility Vessel" 00  
 -1 * 4	 01 02 04 08 
 // Fishing Boat sprite created by DanMacK
 // Not moving (no wash)
