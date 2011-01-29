@@ -22,7 +22,7 @@
 -1 * 1	 00 02 \b18 01 VEH_HYDROFOIL_KOMETA     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b35         // vehicle life in years
-    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b30         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
@@ -37,7 +37,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 03 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A \d683190  // long format introduction date
+    1A \d01-06-1961  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_HYDROFOIL_KOMETA
     BUY_MENU_X_OFFSET
     "Klyazma Hydrofoil" 00  
