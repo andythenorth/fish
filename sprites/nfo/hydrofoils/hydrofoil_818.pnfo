@@ -5,7 +5,7 @@
 #define THIS_SPEED_STATE_1            \w90    // first speed threshold - used for choosing graphics depending on speed
 #define THIS_SPEED_STATE_2            \w140    // second speed threshold
 
-#define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
+#define THIS_OFFS_MENU  620 29 01  22 116  -40 -10
 
 #define THIS_SPEED_0_OFFS_X_Y_1  -14 -54
 #define THIS_SPEED_0_OFFS_X_Y_2  -61 -28
