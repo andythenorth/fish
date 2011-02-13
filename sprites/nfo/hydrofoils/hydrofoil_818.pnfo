@@ -2,19 +2,46 @@
 #define THIS_VEH_ID             VEH_HYDROFOIL_818     // used in action 2/3 template
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL_818
 
-#define THIS_SPEED_STATE_1            \w50    // first speed threshold - used for choosing graphics depending on speed
-#define THIS_SPEED_STATE_2            \w120    // second speed threshold
+#define THIS_SPEED_STATE_1            \w70    // first speed threshold - used for choosing graphics depending on speed
+#define THIS_SPEED_STATE_2            \w140    // second speed threshold
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
 
-#define THIS_OFFS_X_Y_1  -14 -54
-#define THIS_OFFS_X_Y_2  -61 -28
-#define THIS_OFFS_X_Y_3  -36 -29
-#define THIS_OFFS_X_Y_4  -10 -28
-#define THIS_OFFS_X_Y_5  -14 -54
-#define THIS_OFFS_X_Y_6  -55 -26
-#define THIS_OFFS_X_Y_7  -36 -29
-#define THIS_OFFS_X_Y_8    0 -24
+#define THIS_SPEED_0_OFFS_X_Y_1  -14 -54
+#define THIS_SPEED_0_OFFS_X_Y_2  -61 -28
+#define THIS_SPEED_0_OFFS_X_Y_3  -36 -29
+#define THIS_SPEED_0_OFFS_X_Y_4  -10 -28
+#define THIS_SPEED_0_OFFS_X_Y_5  -14 -54
+#define THIS_SPEED_0_OFFS_X_Y_6  -55 -26
+#define THIS_SPEED_0_OFFS_X_Y_7  -36 -29
+#define THIS_SPEED_0_OFFS_X_Y_8    0 -24
+
+#define THIS_SPEED_1_OFFS_X_Y_1  -14 -54
+#define THIS_SPEED_1_OFFS_X_Y_2  -61 -28
+#define THIS_SPEED_1_OFFS_X_Y_3  -36 -29
+#define THIS_SPEED_1_OFFS_X_Y_4  -10 -28
+#define THIS_SPEED_1_OFFS_X_Y_5  -14 -54
+#define THIS_SPEED_1_OFFS_X_Y_6  -55 -26
+#define THIS_SPEED_1_OFFS_X_Y_7  -36 -29
+#define THIS_SPEED_1_OFFS_X_Y_8    0 -24
+
+#define THIS_SPEED_2_OFFS_X_Y_1  -14 -56
+#define THIS_SPEED_2_OFFS_X_Y_2  -61 -30
+#define THIS_SPEED_2_OFFS_X_Y_3  -36 -31
+#define THIS_SPEED_2_OFFS_X_Y_4  -10 -30
+#define THIS_SPEED_2_OFFS_X_Y_5  -14 -56
+#define THIS_SPEED_2_OFFS_X_Y_6  -55 -28
+#define THIS_SPEED_2_OFFS_X_Y_7  -36 -31
+#define THIS_SPEED_2_OFFS_X_Y_8    0 -26
+
+#define THIS_SPEED_3_OFFS_X_Y_1  -14 -58
+#define THIS_SPEED_3_OFFS_X_Y_2  -61 -32
+#define THIS_SPEED_3_OFFS_X_Y_3  -36 -33
+#define THIS_SPEED_3_OFFS_X_Y_4  -10 -32
+#define THIS_SPEED_3_OFFS_X_Y_5  -14 -58
+#define THIS_SPEED_3_OFFS_X_Y_6  -55 -30
+#define THIS_SPEED_3_OFFS_X_Y_7  -36 -33
+#define THIS_SPEED_3_OFFS_X_Y_8    0 -28
 
 #define THIS_SMOKE_TYPE 28 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
