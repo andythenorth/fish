@@ -45,7 +45,7 @@
 
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_LOGRAFT_DIESEL D0 "Type: " 8A "Tugboat for towing floating logs"
                                0d 98 "Propulsion: " 8A "Diesel" //
-                               0d 98 "Refittable capacities: " 8A "95t, 210t, 400t" //
+                               0d 98 "Refittable capacities: " 8A "80t, 240t, 400t" //
                                00
 
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_HYDROFOIL_KLYAZMA D0 "Type: " 8A "Hydrofoil fast ferry"
