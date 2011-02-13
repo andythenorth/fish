@@ -1,5 +1,16 @@
 Changelog
 
+* 0.9.0 *
+Named all ships.  Names drawn from two sources, cookies awarded to the first person to correctly guess both. 
+Added Fiumelatte Paddle Steamer.  Available 1870, 23mph top speed.  (graphics: Lead@inbox, DanMacK)
+Added Klyazma Hydrofoil.  Available 1961, 40mph top speed.  (graphics: Lead@inbox, DanMacK)
+Added Xacuabs 818 Hydrofoil.  Available 1975, 56mph top speed.  (graphics: Lead@inbox, DanMacK)
+Added Cahaba Towboat.  Available 1870, 15mph, refits to various capacities.  (graphics: DanMacK)	
+Increased size of Small Coaster (Oran Freighter) graphics to better match capacity.
+Additional cranes for Large Coaster (Patraikos Freighter).
+Improved appearance of Large Trader (Tyskebukta Freighter).
+Improved appearance of Small Trader (Rockall Freighter).
+
 * 0.8.2 *
 Many ships now have a smaller capacity for freight than for passengers.
 Utility Vessel passenger capacity increased to 60.
