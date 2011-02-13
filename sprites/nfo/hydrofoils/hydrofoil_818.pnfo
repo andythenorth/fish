@@ -2,7 +2,7 @@
 #define THIS_VEH_ID             VEH_HYDROFOIL_818     // used in action 2/3 template
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_HYDROFOIL_818
 
-#define THIS_SPEED_STATE_1            \w70    // first speed threshold - used for choosing graphics depending on speed
+#define THIS_SPEED_STATE_1            \w90    // first speed threshold - used for choosing graphics depending on speed
 #define THIS_SPEED_STATE_2            \w140    // second speed threshold
 
 #define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
@@ -43,7 +43,7 @@
 #define THIS_SPEED_3_OFFS_X_Y_7  -36 -33
 #define THIS_SPEED_3_OFFS_X_Y_8    0 -28
 
-#define THIS_SMOKE_TYPE 28 //Diesel smoke
+#define THIS_SMOKE_TYPE 40 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
 
 -1 * 1	 00 02 \b18 01 VEH_HYDROFOIL_818     // Action 0

@@ -25,3 +25,6 @@
    
 #undef THIS_VEH_ID
 #undef THIS_VEH_WINDOW_TEXT
+
+#undef THIS_SPEED_STATE_1
+#undef THIS_SPEED_STATE_2
