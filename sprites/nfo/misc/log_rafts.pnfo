@@ -43,7 +43,24 @@
 -1 * 33	 04 00 FF 01 STR_REFIT_VEH_LOGRAFT_1_C D0
               " (400t)" 00
 
--1 * 4	 01 02 07 08 
+// buy menu sprites
+-1 * 4	 01 02 \b01 08 
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 * 1	 00
+-1 sprites/graphics/THIS_PCX_FILE 620 29 01 22 116 -36 -10
+-1 * 1	 00
+
+-1 * 1	 02 02 B0 // buy menu  
+      01 // number loaded states
+      01 // loading states
+      00 00 // loaded sprites
+      00 00 // loading sprites
+
+-1 * 4	 01 02 \b12 08 
 // unloaded - not moving (no wash)
 -1 sprites/graphics/THIS_PCX_FILE 20  10  01 THIS_Y_X_CROP_1  -13 -24
 -1 sprites/graphics/THIS_PCX_FILE 60  10  01 THIS_Y_X_CROP_2  -48 -12
@@ -53,7 +70,7 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 10  01 THIS_Y_X_CROP_6  -44 -12
 -1 sprites/graphics/THIS_PCX_FILE 620 10  01 THIS_Y_X_CROP_7  -23 -28
 -1 sprites/graphics/THIS_PCX_FILE 762 10  01 THIS_Y_X_CROP_8   -0 -12
-// unloaded - moving (wash)
+// 1 log set - not moving
 -1 sprites/graphics/THIS_PCX_FILE 20  110 01 THIS_Y_X_CROP_1  -14 -41
 -1 sprites/graphics/THIS_PCX_FILE 60  110 01 THIS_Y_X_CROP_2  -74 -22
 -1 sprites/graphics/THIS_PCX_FILE 186 110 01 THIS_Y_X_CROP_3 -65 -29
@@ -62,7 +79,7 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 110 01 THIS_Y_X_CROP_6  -75 -22
 -1 sprites/graphics/THIS_PCX_FILE 620 110 01 THIS_Y_X_CROP_7 -65 -29
 -1 sprites/graphics/THIS_PCX_FILE 762 110 01 THIS_Y_X_CROP_8  -20 -22
-// loading - not moving (no wash)
+// 2 log sets - not moving
 -1 sprites/graphics/THIS_PCX_FILE 20  210 01 THIS_Y_X_CROP_1  -14 -41
 -1 sprites/graphics/THIS_PCX_FILE 60  210 01 THIS_Y_X_CROP_2  -74 -22
 -1 sprites/graphics/THIS_PCX_FILE 186 210 01 THIS_Y_X_CROP_3 -65 -29
@@ -71,7 +88,7 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 210 01 THIS_Y_X_CROP_6  -75 -22
 -1 sprites/graphics/THIS_PCX_FILE 620 210 01 THIS_Y_X_CROP_7 -65 -29
 -1 sprites/graphics/THIS_PCX_FILE 762 210 01 THIS_Y_X_CROP_8  -20 -22
-// loading - not moving (no wash)
+// 3 log sets - not moving
 -1 sprites/graphics/THIS_PCX_FILE 20  310 01 THIS_Y_X_CROP_1  -14 -41
 -1 sprites/graphics/THIS_PCX_FILE 60  310 01 THIS_Y_X_CROP_2  -74 -22
 -1 sprites/graphics/THIS_PCX_FILE 186 310 01 THIS_Y_X_CROP_3 -65 -29
@@ -80,7 +97,7 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 310 01 THIS_Y_X_CROP_6  -75 -22
 -1 sprites/graphics/THIS_PCX_FILE 620 310 01 THIS_Y_X_CROP_7 -65 -29
 -1 sprites/graphics/THIS_PCX_FILE 762 310 01 THIS_Y_X_CROP_8  -20 -22
-// loading - not moving (no wash)
+// 4 log sets - not moving
 -1 sprites/graphics/THIS_PCX_FILE 20  410 01 THIS_Y_X_CROP_1  -14 -41
 -1 sprites/graphics/THIS_PCX_FILE 60  410 01 THIS_Y_X_CROP_2  -74 -22
 -1 sprites/graphics/THIS_PCX_FILE 186 410 01 THIS_Y_X_CROP_3 -65 -29
@@ -89,7 +106,7 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 410 01 THIS_Y_X_CROP_6  -75 -22
 -1 sprites/graphics/THIS_PCX_FILE 620 410 01 THIS_Y_X_CROP_7 -65 -29
 -1 sprites/graphics/THIS_PCX_FILE 762 410 01 THIS_Y_X_CROP_8  -20 -22
-// loaded - not moving (no wash)
+// 5 log sets - not moving
 -1 sprites/graphics/THIS_PCX_FILE 20  510 01 THIS_Y_X_CROP_1  -14 -41
 -1 sprites/graphics/THIS_PCX_FILE 60  510 01 THIS_Y_X_CROP_2  -74 -22
 -1 sprites/graphics/THIS_PCX_FILE 186 510 01 THIS_Y_X_CROP_3 -65 -29
@@ -98,7 +115,7 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 510 01 THIS_Y_X_CROP_6  -75 -22
 -1 sprites/graphics/THIS_PCX_FILE 620 510 01 THIS_Y_X_CROP_7 -65 -29
 -1 sprites/graphics/THIS_PCX_FILE 762 510 01 THIS_Y_X_CROP_8  -20 -22
-// loaded - moving (wash)
+// unloaded - moving
 -1 sprites/graphics/THIS_PCX_FILE 20  610 01 THIS_Y_X_CROP_1  -14 -41
 -1 sprites/graphics/THIS_PCX_FILE 60  610 01 THIS_Y_X_CROP_2  -74 -22
 -1 sprites/graphics/THIS_PCX_FILE 186 610 01 THIS_Y_X_CROP_3 -65 -29
@@ -107,28 +124,105 @@
 -1 sprites/graphics/THIS_PCX_FILE 494 610 01 THIS_Y_X_CROP_6  -75 -22
 -1 sprites/graphics/THIS_PCX_FILE 620 610 01 THIS_Y_X_CROP_7 -65 -29
 -1 sprites/graphics/THIS_PCX_FILE 762 610 01 THIS_Y_X_CROP_8  -20 -22
--1 * 1	 02 02 B1 // not moving
+// 1 log set - moving
+-1 sprites/graphics/THIS_PCX_FILE 20  710 01 THIS_Y_X_CROP_1  -14 -41
+-1 sprites/graphics/THIS_PCX_FILE 60  710 01 THIS_Y_X_CROP_2  -74 -22
+-1 sprites/graphics/THIS_PCX_FILE 186 710 01 THIS_Y_X_CROP_3 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 328 710 01 THIS_Y_X_CROP_4  -21 -22
+-1 sprites/graphics/THIS_PCX_FILE 454 710 01 THIS_Y_X_CROP_5  -14 -45
+-1 sprites/graphics/THIS_PCX_FILE 494 710 01 THIS_Y_X_CROP_6  -75 -22
+-1 sprites/graphics/THIS_PCX_FILE 620 710 01 THIS_Y_X_CROP_7 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 762 710 01 THIS_Y_X_CROP_8  -20 -22
+// 2 log sets - moving
+-1 sprites/graphics/THIS_PCX_FILE 20  810 01 THIS_Y_X_CROP_1  -14 -41
+-1 sprites/graphics/THIS_PCX_FILE 60  810 01 THIS_Y_X_CROP_2  -74 -22
+-1 sprites/graphics/THIS_PCX_FILE 186 810 01 THIS_Y_X_CROP_3 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 328 810 01 THIS_Y_X_CROP_4  -21 -22
+-1 sprites/graphics/THIS_PCX_FILE 454 810 01 THIS_Y_X_CROP_5  -14 -45
+-1 sprites/graphics/THIS_PCX_FILE 494 810 01 THIS_Y_X_CROP_6  -75 -22
+-1 sprites/graphics/THIS_PCX_FILE 620 810 01 THIS_Y_X_CROP_7 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 762 810 01 THIS_Y_X_CROP_8  -20 -22
+// 3 log sets - moving
+-1 sprites/graphics/THIS_PCX_FILE 20  910 01 THIS_Y_X_CROP_1  -14 -41
+-1 sprites/graphics/THIS_PCX_FILE 60  910 01 THIS_Y_X_CROP_2  -74 -22
+-1 sprites/graphics/THIS_PCX_FILE 186 910 01 THIS_Y_X_CROP_3 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 328 910 01 THIS_Y_X_CROP_4  -21 -22
+-1 sprites/graphics/THIS_PCX_FILE 454 910 01 THIS_Y_X_CROP_5  -14 -45
+-1 sprites/graphics/THIS_PCX_FILE 494 910 01 THIS_Y_X_CROP_6  -75 -22
+-1 sprites/graphics/THIS_PCX_FILE 620 910 01 THIS_Y_X_CROP_7 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 762 910 01 THIS_Y_X_CROP_8  -20 -22
+// 4 log sets - moving
+-1 sprites/graphics/THIS_PCX_FILE 20  1010 01 THIS_Y_X_CROP_1  -14 -41
+-1 sprites/graphics/THIS_PCX_FILE 60  1010 01 THIS_Y_X_CROP_2  -74 -22
+-1 sprites/graphics/THIS_PCX_FILE 186 1010 01 THIS_Y_X_CROP_3 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 328 1010 01 THIS_Y_X_CROP_4  -21 -22
+-1 sprites/graphics/THIS_PCX_FILE 454 1010 01 THIS_Y_X_CROP_5  -14 -45
+-1 sprites/graphics/THIS_PCX_FILE 494 1010 01 THIS_Y_X_CROP_6  -75 -22
+-1 sprites/graphics/THIS_PCX_FILE 620 1010 01 THIS_Y_X_CROP_7 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 762 1010 01 THIS_Y_X_CROP_8  -20 -22
+// 5 log sets - moving
+-1 sprites/graphics/THIS_PCX_FILE 20  1110 01 THIS_Y_X_CROP_1  -14 -41
+-1 sprites/graphics/THIS_PCX_FILE 60  1110 01 THIS_Y_X_CROP_2  -74 -22
+-1 sprites/graphics/THIS_PCX_FILE 186 1110 01 THIS_Y_X_CROP_3 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 328 1110 01 THIS_Y_X_CROP_4  -21 -22
+-1 sprites/graphics/THIS_PCX_FILE 454 1110 01 THIS_Y_X_CROP_5  -14 -45
+-1 sprites/graphics/THIS_PCX_FILE 494 1110 01 THIS_Y_X_CROP_6  -75 -22
+-1 sprites/graphics/THIS_PCX_FILE 620 1110 01 THIS_Y_X_CROP_7 -65 -29
+-1 sprites/graphics/THIS_PCX_FILE 762 1110 01 THIS_Y_X_CROP_8  -20 -22
+
+-1 * 1	 02 02 B1 // 1 log set - not moving
       02 // number loaded states
-      05 // number loading states
-      00 00  05 00 // loaded sprites
-      00 00  02 00  03 00  04 00  05 00 // loading sprites
--1 * 1	 02 02 B2 // moving  
+      02 // number loading states
+      00 00  01 00 // loaded sprites
+      00 00  01 00 // loading sprites
+-1 * 1	 02 02 B2 // 1 log set - moving  
       02 // number loaded states
       01 // number loading states
-      00 00  06 00 // loaded sprites
+      06 00  07 00 // loaded sprites
       00 00 // loading sprites
--1 * 4	 01 02 01 04 // buy menu sprites
--1 * 1	 00
--1 * 1	 00
--1 sprites/graphics/THIS_PCX_FILE 620 29 01 22 116 -36 -10
--1 * 1	 00
--1 * 9	 02 02 B0 01 01  00 00  00 00
-
--1 * 1	 02 02 A0  // choose sprites according to vehicle speed
+-1 * 1	 02 02 B3 // 3 log sets - not moving
+      02 // number loaded states
+      04 // number loading states
+      00 00  03 00 // loaded sprites
+      00 00  01 00  02 00  03 00 // loading sprites
+-1 * 1	 02 02 B4 // 3 log sets - moving  
+      02 // number loaded states
+      01 // number loading states
+      06 00  09 00 // loaded sprites
+      00 00 // loading sprites
+-1 * 1	 02 02 B5 // 5 log sets - not moving
+      02 // number loaded states
+      06 // number loading states
+      00 00  0B 00 // loaded sprites
+      00 00  01 00  02 00  03 00  04 00  05 00 // loading sprites
+-1 * 1	 02 02 B6 // 5 log sets - moving  
+      02 // number loaded states
+      01 // number loading states
+      06 00  0B 00 // loaded sprites
+      00 00 // loading sprites
+      
+-1 * 1	 02 02 A1  // choose sprites according to vehicle speed (refit 1)
                  81 B4 00 FF //
                  01 // range
                   B1 00 00 00 // not moving (speed == 0)
                  B2 00 // moving (speed != 0) 
+-1 * 1	 02 02 A2  // choose sprites according to vehicle speed (refit 2)
+                 81 B4 00 FF //
+                 01 // range
+                  B3 00 00 00 // not moving (speed == 0)
+                 B4 00 // moving (speed != 0) 
+-1 * 1	 02 02 A3  // choose sprites according to vehicle speed (refit 3)
+                 81 B4 00 FF //
+                 01 // range
+                  B5 00 00 00 // not moving (speed == 0)
+                 B6 00 // moving (speed != 0) 
+-1 * 18	 02 02 A0  // choose sprites according to refitted subtype
+                 81 F2 00 FF //
+                 \b03 // range
+                   A1 00  \b00 \b00 // subtype 1 
+                   A2 00  \b01 \b01 // subtype 2
+                   A3 00  \b02 \b02 // subtype 2
+                 A1 00 // default 
 
 -1 * 0  02 02 C2
               85 BC 00 FF FF // return value for speed depending on current cargo amount
