@@ -41,11 +41,16 @@
 
       
 // disable the warning:for newgrfs
+
+// warning about unused IDs, the chances of this being useful are low
+//@@WARNING DISABLE 97
+
 // warning about high IDs
 //@@WARNING DISABLE 141
 
 // warning about colour codes in strings
 //@@WARNING DISABLE 144
+
 
 
 // param 0 is used for capacity multiplier

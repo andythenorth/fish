@@ -218,11 +218,10 @@
                  B6 00 // moving (speed != 0) 
 -1 * 18	 02 02 A0  // choose sprites according to refitted subtype
                  81 F2 00 FF //
-                 \b03 // range
-                   A1 00  \b00 \b00 // subtype 1 
+                 \b02 // range
                    A2 00  \b01 \b01 // subtype 2
-                   A3 00  \b02 \b02 // subtype 2
-                 A1 00 // default 
+                   A3 00  \b02 \b02 // subtype 3
+                 A1 00 // default - subtype 1
 
 -1 * 0  02 02 C2
               85 BC 00 FF FF // return value for speed depending on current cargo amount
