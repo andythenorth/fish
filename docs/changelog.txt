@@ -10,6 +10,8 @@ Increased size of Small Coaster (Oran Freighter) graphics to better match capaci
 Additional cranes for Large Coaster (Patraikos Freighter).
 Improved appearance of Large Trader (Tyskebukta Freighter).
 Improved appearance of Small Trader (Rockall Freighter).
+Match size of Log Raft graphics to refitted capacity.
+Fixed all offsets for log rafts, closing one bug and generally making them better.  
 
 * 0.8.2 *
 Many ships now have a smaller capacity for freight than for passengers.
