@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE           vehicle_ferry_small.pcx     // used in action 1 template (must include file extension)
+#define THIS_PCX_FILE           vehicle_ferry_small.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_VEHICLE_FERRY_SMALL // used in action 2/3 template
 #define THIS_PAX_CAPACITY       DA 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   7F 80 // define without escapes and setting 80 to make it a cb result
