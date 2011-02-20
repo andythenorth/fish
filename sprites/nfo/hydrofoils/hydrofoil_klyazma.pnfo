@@ -7,43 +7,43 @@
 
 #define THIS_OFFS_MENU  624 29 01  22 116  -46 -13
 
-#define THIS_SPEED_0_OFFS_X_Y_1  -14 -54
-#define THIS_SPEED_0_OFFS_X_Y_2  -61 -28
-#define THIS_SPEED_0_OFFS_X_Y_3  -36 -29
-#define THIS_SPEED_0_OFFS_X_Y_4  -10 -28
-#define THIS_SPEED_0_OFFS_X_Y_5  -14 -54
+#define THIS_SPEED_0_OFFS_X_Y_1  -14 -59
+#define THIS_SPEED_0_OFFS_X_Y_2  -58 -32
+#define THIS_SPEED_0_OFFS_X_Y_3  -36 -31
+#define THIS_SPEED_0_OFFS_X_Y_4  -17 -32
+#define THIS_SPEED_0_OFFS_X_Y_5  -14 -58
 #define THIS_SPEED_0_OFFS_X_Y_6  -55 -26
-#define THIS_SPEED_0_OFFS_X_Y_7  -36 -29
+#define THIS_SPEED_0_OFFS_X_Y_7  -39 -29
 #define THIS_SPEED_0_OFFS_X_Y_8    0 -24
 
-#define THIS_SPEED_1_OFFS_X_Y_1  -14 -54
-#define THIS_SPEED_1_OFFS_X_Y_2  -61 -28
-#define THIS_SPEED_1_OFFS_X_Y_3  -36 -29
-#define THIS_SPEED_1_OFFS_X_Y_4  -10 -28
-#define THIS_SPEED_1_OFFS_X_Y_5  -14 -54
+#define THIS_SPEED_1_OFFS_X_Y_1  -14 -59
+#define THIS_SPEED_1_OFFS_X_Y_2  -58 -32
+#define THIS_SPEED_1_OFFS_X_Y_3  -36 -31
+#define THIS_SPEED_1_OFFS_X_Y_4  -17 -32
+#define THIS_SPEED_1_OFFS_X_Y_5  -14 -58
 #define THIS_SPEED_1_OFFS_X_Y_6  -55 -26
-#define THIS_SPEED_1_OFFS_X_Y_7  -36 -29
+#define THIS_SPEED_1_OFFS_X_Y_7  -39 -29
 #define THIS_SPEED_1_OFFS_X_Y_8    0 -24
 
-#define THIS_SPEED_2_OFFS_X_Y_1  -14 -56
-#define THIS_SPEED_2_OFFS_X_Y_2  -61 -30
-#define THIS_SPEED_2_OFFS_X_Y_3  -36 -31
-#define THIS_SPEED_2_OFFS_X_Y_4  -10 -30
-#define THIS_SPEED_2_OFFS_X_Y_5  -14 -56
+#define THIS_SPEED_2_OFFS_X_Y_1  -14 -61
+#define THIS_SPEED_2_OFFS_X_Y_2  -58 -34
+#define THIS_SPEED_2_OFFS_X_Y_3  -36 -33
+#define THIS_SPEED_2_OFFS_X_Y_4  -17 -34
+#define THIS_SPEED_2_OFFS_X_Y_5  -14 -60
 #define THIS_SPEED_2_OFFS_X_Y_6  -55 -28
-#define THIS_SPEED_2_OFFS_X_Y_7  -36 -31
+#define THIS_SPEED_2_OFFS_X_Y_7  -39 -31
 #define THIS_SPEED_2_OFFS_X_Y_8    0 -26
 
-#define THIS_SPEED_3_OFFS_X_Y_1  -14 -58
-#define THIS_SPEED_3_OFFS_X_Y_2  -61 -32
+#define THIS_SPEED_3_OFFS_X_Y_1  -14 -63
+#define THIS_SPEED_3_OFFS_X_Y_2  -58 -34
 #define THIS_SPEED_3_OFFS_X_Y_3  -36 -33
-#define THIS_SPEED_3_OFFS_X_Y_4  -10 -32
-#define THIS_SPEED_3_OFFS_X_Y_5  -14 -58
-#define THIS_SPEED_3_OFFS_X_Y_6  -55 -30
-#define THIS_SPEED_3_OFFS_X_Y_7  -36 -33
-#define THIS_SPEED_3_OFFS_X_Y_8    0 -28
+#define THIS_SPEED_3_OFFS_X_Y_4  -17 -34
+#define THIS_SPEED_3_OFFS_X_Y_5  -14 -60
+#define THIS_SPEED_3_OFFS_X_Y_6  -55 -28
+#define THIS_SPEED_3_OFFS_X_Y_7  -39 -31
+#define THIS_SPEED_3_OFFS_X_Y_8    0 -26
 
-#define THIS_SMOKE_TYPE 28 //Diesel smoke
+#define THIS_SMOKE_TYPE 28 //
 #include "../templates/template_smoke.tnfo"
 
 -1 * 1	 00 02 \b18 01 VEH_HYDROFOIL_KLYAZMA     // Action 0
