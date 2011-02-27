@@ -1,6 +1,6 @@
 #define THIS_PCX_FILE           paddle_steamer.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_PADDLE_STEAMER // used in action 2/3 template
-#define THIS_PAX_CAPACITY       DA 80 // define without escapes and setting 80 to make it a cb result
+#define THIS_PAX_CAPACITY       1C 82 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   70 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_PADDLE_STEAMER
 
@@ -28,7 +28,7 @@
     0A \b127         // cost factor (purchase cost)
     0B \b74         // speed in mph * 3.2      
     0C 00           // cargo type 
-    0D \w560        // capacity 
+    0D \w540        // capacity 
     0F \b243         // running cost factor
     10 05           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
