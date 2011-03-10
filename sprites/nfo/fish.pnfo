@@ -8,8 +8,9 @@
 #include "sprites/nfo/river_boats/river_boat_small.pnfo"
 #include "sprites/nfo/river_boats/river_boat_large.pnfo"
 
-#include "sprites/nfo/utility_vessels/utility_vessel_small.pnfo"
+//#include "sprites/nfo/utility_vessels/utility_vessel_small.pnfo"
 #include "sprites/nfo/utility_vessels/utility_vessel_medium.pnfo"
+#include "sprites/nfo/utility_vessels/utility_tug_small.pnfo"
 
 #include "sprites/nfo/traders/trader_small.pnfo"
 // 'medium' trader files should be refactored to 'large' - shuffled which was which

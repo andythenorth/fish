@@ -1,7 +1,7 @@
 #define THIS_VEH_ID             VEH_UTILITY_VESSEL_MEDIUM
 #define THIS_PAX_CAPACITY       3C 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   23 80 // define without escapes and setting 80 to make it a cb result
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_UTILITY_SMALL_DIESEL
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_UTILITY_FISHBOAT_SMALL_DIESEL
 
 #define THIS_SMOKE_TYPE 29 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
