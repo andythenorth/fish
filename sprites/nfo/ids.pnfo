@@ -57,9 +57,9 @@
 //#define VACANT                          98
 //#define VACANT                          99
 //#define VEH_UTILITY_VESSEL_SMALL        9A
-#define VEH_UTILITY_VESSEL_MEDIUM       9B
+#define VEH_UTILITY_VESSEL_MEDIUM_1     9B
 #define VEH_UTILITY_TUG_SMALL           9C
-//#define VACANT                          9D
+#define VEH_UTILITY_VESSEL_MEDIUM_2     9D
 //#define VACANT                          9E
 //#define VACANT                          9F
 //#define VACANT                          A0

@@ -1,4 +1,4 @@
-#define THIS_VEH_ID             VEH_UTILITY_VESSEL_MEDIUM
+#define THIS_VEH_ID             VEH_UTILITY_VESSEL_MEDIUM_1
 #define THIS_PAX_CAPACITY       3C 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   23 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_UTILITY_FISHBOAT_SMALL_DIESEL
@@ -6,7 +6,7 @@
 #define THIS_SMOKE_TYPE 29 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 \b18 01 VEH_UTILITY_VESSEL_MEDIUM     // Action 0
+-1 * 1	 00 02 \b18 01 VEH_UTILITY_VESSEL_MEDIUM_1     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -25,7 +25,7 @@
     18 FF 03        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d01-01-1870  // long format introduction date
--1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_MEDIUM 
+-1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_MEDIUM_1 
     BUY_MENU_X_OFFSET
     "Banquereau Utility Vessel" 00  
 -1 * 4	 01 02 04 08 
@@ -128,7 +128,7 @@
                  THIS_VEH_WINDOW_TEXT 80   23 23  // text for vehicle window (unless using varact 2 chain, simply return ID of D0 text) 
                B0 00 //otherwise go to next action 2 ID 
 
--1 * 1	 03 02 01 VEH_UTILITY_VESSEL_MEDIUM // Action 3 
+-1 * 1	 03 02 01 VEH_UTILITY_VESSEL_MEDIUM_1 // Action 3 
    01 // number of cargo types to support
     FF C1 00 // buy menu sprites 
    C0 00 // default sprites
