@@ -30,8 +30,8 @@
 //#define VACANT                          6E
 //#define VACANT                          6F
 //#define VACANT                          70
-//#define VACANT                          71
-#define VEH_VEHICLE_FERRY_SMALL         72
+#define VEH_VEHICLE_FERRY_SMALL_1       71
+#define VEH_VEHICLE_FERRY_SMALL_2       72
 #define VEH_VEHICLE_FERRY_MEDIUM        73
 #define VEH_VEHICLE_FERRY_LARGE         74
 //#define VACANT                          75
