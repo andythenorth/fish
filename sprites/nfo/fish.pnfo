@@ -8,7 +8,7 @@
 #include "sprites/nfo/river_boats/river_boat_small.pnfo"
 #include "sprites/nfo/river_boats/river_boat_large.pnfo"
 
-//#include "sprites/nfo/utility_vessels/utility_vessel_small.pnfo"
+#include "sprites/nfo/utility_vessels/utility_vessel_small_1.pnfo"
 #include "sprites/nfo/utility_vessels/utility_vessel_medium_1.pnfo"
 #include "sprites/nfo/utility_vessels/utility_vessel_medium_2.pnfo"
 #include "sprites/nfo/utility_vessels/utility_tug_small.pnfo"

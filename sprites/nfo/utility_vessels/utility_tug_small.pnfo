@@ -1,6 +1,6 @@
 #define THIS_PCX_FILE           utility_tug_small.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_UTILITY_TUG_SMALL // used in action 2/3 template
-#define THIS_PAX_CAPACITY       0C 80 // define without escapes and setting 80 to make it a cb result
+#define THIS_PAX_CAPACITY       12 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   04 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_UTILITY_TUG_SMALL_DIESEL
 
@@ -29,7 +29,7 @@
     0A \b3        // cost factor (purchase cost)
     0B \b50         // speed in mph * 3.2      
     0C 00           // cargo type 
-    0D \w12        // capacity 
+    0D \w18        // capacity 
     0F \b11        // running cost factor
     10 04           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
