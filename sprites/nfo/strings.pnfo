@@ -30,12 +30,22 @@
                                0d 98 "Propulsion: " 8A "Diesel" //
                                00
 
--1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_FISHBOAT_SMALL_DIESEL D0 "Type: " 8A "Small general purpose vessel"
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_MEDIUM_DIESEL_1 D0 "Type: " 8A "Small general purpose vessel"
                                0d "(60 passengers or 35t of cargo)" //
                                0d 98 "Propulsion: " 8A "Diesel" //
                                00
 
--1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_TUG_SMALL_DIESEL D0 "Type: " 8A "Small general purpose vessel"
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_MEDIUM_DIESEL_2 D0 "Type: " 8A "General purpose vessel"
+                               0d "(89 passengers or 52t of cargo)" //
+                               0d 98 "Propulsion: " 8A "Diesel" //
+                               00
+
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_VESSEL_SMALL_DIESEL_1 D0 "Type: " 8A "Small general purpose vessel"
+                               0d "(30 passengers or 12t of cargo)" //
+                               0d 98 "Propulsion: " 8A "Diesel" //
+                               00
+
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_TUG_SMALL_DIESEL_1 D0 "Type: " 8A "Small general purpose vessel"
                                0d "(18 passengers or 4t of cargo)" //
                                0d 98 "Propulsion: " 8A "Diesel" //
                                00
