@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE         hovercraft_freight_medium.pcx     // used in action 1 template (must include file extension)
+#define THIS_PCX_FILE         hovercraft_freight_medium.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID           VEH_HOVERCRAFT_FREIGHT_MEDIUM // used in action 2/3 template
 #define THIS_LOADED_SPEED     94 // speed in mph *3.2 expressed in HEX (no escapes)
 #define THIS_UNLOADED_SPEED   C0 // 
