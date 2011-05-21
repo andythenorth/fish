@@ -1,5 +1,17 @@
 Changelog
 
+* 0.9.1 *
+Added Fitzroy Utility Tug (small).
+Improved appearance of medium utility fishboat.
+Improved appearance of Tyskebukta Freighter and Rockall Freighter (lighting was wrong).
+Fixed Porcupine Hovercraft costs - was too expensive to buy, too cheap to run.
+Fixed Log Raft running costs.
+Fixed Paddle Steamer costs (were too high) and PAX capacity (was too low).
+Fixed offsets and running costs for Hydrofoils.
+Fixed buy menu offsets for multiple ships.
+Adjusted costs for Ferries to be fairer.
+Internal changes to move from pcx to png files; refactored CPP defines for strings.
+
 * 0.9.0 *
 Named all ships.  Names drawn from two sources, cookies awarded to the first person to correctly guess both. 
 Added Fiumelatte Paddle Steamer.  Available 1870, 23mph top speed.  (graphics: Lead@inbox, DanMacK)
