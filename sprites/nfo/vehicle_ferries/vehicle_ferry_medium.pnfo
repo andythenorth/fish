@@ -4,7 +4,7 @@
 #define THIS_FREIGHT_CAPACITY   55 81 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_CAR_FERRY_DIESEL
 
-#define THIS_OFFS_MENU  620 29 01  22 116  -36 -10
+#define THIS_OFFS_MENU  620 29 01  22 116  -23 -10
 
 #define THIS_OFFS_X_Y_1  -14 -42
 #define THIS_OFFS_X_Y_2  -61 -28

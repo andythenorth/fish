@@ -89,7 +89,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/graphics/utility_fishboat_medium.png 404 108 01 19 47 -40 -10
+-1 sprites/graphics/utility_fishboat_medium.png 404 108 01 19 47  3 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 
