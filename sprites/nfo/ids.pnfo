@@ -90,7 +90,7 @@
 //#define VACANT                          C7
 //#define VACANT                          C8
 //#define VACANT                          C9
-#define VEH_CANAL_BOAT_SMALL            CA
+#define CANAL_BOAT_1                    CA
 #define VEH_CANAL_BOAT_MEDIUM           CB
 #define VEH_CANAL_BOAT_LARGE            CC
 //#define VACANT                          CD
