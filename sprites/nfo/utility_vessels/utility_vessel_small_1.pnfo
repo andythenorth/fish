@@ -1,7 +1,20 @@
+#define THIS_PCX_FILE           utility_vessel_small_1.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_UTILITY_VESSEL_SMALL_1
 #define THIS_PAX_CAPACITY       1E 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   0C 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_UTILITY_VESSEL_SMALL_DIESEL_1
+
+#define THIS_OFFS_MENU  662 21 01  22 90  -2 -10
+
+#define THIS_OFFS_X_Y_1  -14 -40
+#define THIS_OFFS_X_Y_2  -78 -21
+#define THIS_OFFS_X_Y_3  -68 -21
+#define THIS_OFFS_X_Y_4  -30 -21
+#define THIS_OFFS_X_Y_5  -14 -40
+#define THIS_OFFS_X_Y_6  -78 -24
+#define THIS_OFFS_X_Y_7  -68 -21
+#define THIS_OFFS_X_Y_8  -32 -21
+
 
 #define THIS_SMOKE_TYPE 29 //Diesel smoke
 #include "../templates/template_smoke.tnfo"
@@ -28,110 +41,9 @@
 -1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_SMALL_1 
     BUY_MENU_X_OFFSET
     "Small Utility Vessel 1" 00  
--1 * 4	 01 02 04 08 
-// Fishing Boat sprite created by DanMacK
-// Not moving (no wash)
--1 sprites/graphics/utility_fishboat_medium.png 82  8 09 34 16 -7  -16
--1 sprites/graphics/utility_fishboat_medium.png 114 8 09 30 44 -48  1
--1 sprites/graphics/utility_fishboat_medium.png 178 8 09 19 49 -22 -5
--1 sprites/graphics/utility_fishboat_medium.png 242 8 09 26 46  3   4
--1 sprites/graphics/utility_fishboat_medium.png 306 8 09 32 16 -7  -13
--1 sprites/graphics/utility_fishboat_medium.png 338 8 09 26 46 -47  3
--1 sprites/graphics/utility_fishboat_medium.png 402 8 01 19 49 -25 -9
--1 sprites/graphics/utility_fishboat_medium.png 466 8 09 30 44  5  -1
-// Moving (wash)
--1 sprites/graphics/utility_fishboat_medium.png 82  58 09 34 16 -7  -16
--1 sprites/graphics/utility_fishboat_medium.png 114 58 09 30 44 -48  1
--1 sprites/graphics/utility_fishboat_medium.png 178 58 09 19 49 -22 -5
--1 sprites/graphics/utility_fishboat_medium.png 242 58 09 26 46  3   4
--1 sprites/graphics/utility_fishboat_medium.png 306 58 09 32 16 -7  -13
--1 sprites/graphics/utility_fishboat_medium.png 338 58 09 26 46 -47  3
--1 sprites/graphics/utility_fishboat_medium.png 402 58 01 19 49 -25 -9
--1 sprites/graphics/utility_fishboat_medium.png 466 58 09 30 44  5  -1
-// Not moving (no wash) PAX version
--1 sprites/graphics/utility_fishboat_medium.png 82  108 09 34 16 -7  -16
--1 sprites/graphics/utility_fishboat_medium.png 114 108 09 30 44 -48  1
--1 sprites/graphics/utility_fishboat_medium.png 178 108 09 19 49 -22 -5
--1 sprites/graphics/utility_fishboat_medium.png 242 108 09 26 46  3   4
--1 sprites/graphics/utility_fishboat_medium.png 306 108 09 32 16 -7  -13
--1 sprites/graphics/utility_fishboat_medium.png 338 108 09 26 46 -47  3
--1 sprites/graphics/utility_fishboat_medium.png 402 108 01 19 49 -25 -9
--1 sprites/graphics/utility_fishboat_medium.png 466 108 09 30 44  5  -1
-// Moving (wash) PAX version
--1 sprites/graphics/utility_fishboat_medium.png 82  158 09 34 16 -7  -16
--1 sprites/graphics/utility_fishboat_medium.png 114 158 09 30 44 -48  1
--1 sprites/graphics/utility_fishboat_medium.png 178 158 09 19 49 -22 -5
--1 sprites/graphics/utility_fishboat_medium.png 242 158 09 26 46  3   4
--1 sprites/graphics/utility_fishboat_medium.png 306 158 09 32 16 -7  -13
--1 sprites/graphics/utility_fishboat_medium.png 338 158 09 26 46 -47  3
--1 sprites/graphics/utility_fishboat_medium.png 402 158 01 19 49 -25 -9
--1 sprites/graphics/utility_fishboat_medium.png 466 158 09 30 44  5  -1
--1 * 1	 02 02 B1 // not moving   
-      01 // number loaded states
-      01 // number loading states
-      00 00 // loaded sprites
-      00 00 // loading sprites
--1 * 1	 02 02 B2 // moving
-      01 // number loaded states
-      01 // number loading states
-      01 00 // loaded sprites
-      00 00 // loading sprites
--1 * 1	 02 02 B3 // not moving   
-      01 // number loaded states
-      01 // number loading states
-      02 00 // loaded sprites
-      02 00 // loading sprites
--1 * 1	 02 02 B4 // moving
-      01 // number loaded states
-      01 // number loading states
-      03 00 // loaded sprites
-      02 00 // loading sprites
--1 * 4	 01 02 01 04 // buy menu sprites
--1 * 1	 00
--1 * 1	 00
--1 sprites/graphics/utility_fishboat_medium.png 404 108 01 19 47 -40 -10
--1 * 1	 00
--1 * 9	 02 02 B0 01 01  00 00  00 00
 
-// This ship doesn't use any templating at the moment - it's currently unique wrt refit / graphics 
-// The code uses classes not explicit cargo type (allows for tourists etc).
-
--1 * 70	 02 02 A2  // moving - choose sprites according to ****cargo class*****
-                 85 47 10 FFFF // var 47 in format ccccwwtt where I want cccc 
-                 \b1 // range
-                   B4 00  \wx01  \wx01 // PAX
-                 B2 00 // default 
-                 
--1 * 70	 02 02 A1  // not moving - choose sprites according to ****cargo class****
-                 85 47 10 \w1 // var 47 in format ccccwwtt where I want cccc; mask for just bit 0 (PAX class)
-                 \b1 // range
-                   B3 00  \wx01  \wx01 // PAX
-                 B1 00 // default                  
-
- -1 * 1	 02 02 A0  // choose sprites according to vehicle speed
-                 81 B4 00 FF //
-                 \b1 // range
-                  A1 00 00 00 // not moving (speed == 0)
-                 A2 00 // moving (speed != 0) 
-
-#include "../templates/template_refitted_capacity.tnfo"
-
-// handle callbacks etc - use separate varaction 2s for 'real' vehicles and buy menu - shared cb chain, different graphics IDs 
--1 * 1   02 02 C0
-               81 0C 00 FF
-               01 // range
-                 E0 00  36 36 // change vehicle properties on refit
-               A0 00 // default 
--1 * 14	 02 02 C1 // buy menu 
-               81 0C 00 FF //handle callbacks for buy menu
-               \b1 // range
-                 THIS_VEH_WINDOW_TEXT 80   23 23  // text for vehicle window (unless using varact 2 chain, simply return ID of D0 text) 
-               B0 00 //otherwise go to next action 2 ID 
-
--1 * 1	 03 02 01 VEH_UTILITY_VESSEL_SMALL_1 // Action 3 
-   01 // number of cargo types to support
-    FF C1 00 // buy menu sprites 
-   C0 00 // default sprites
+#include "../templates/default_action1_2.tnfo"
+#include "../templates/default_action2_3.tnfo"
 
 #undef THIS_VEH_ID
 #undef THIS_VEH_WINDOW_TEXT
