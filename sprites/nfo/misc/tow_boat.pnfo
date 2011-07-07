@@ -7,7 +7,7 @@
 -1 * 1	 00 02 \b15 01 THIS_VEH_ID     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b40         // vehicle life in years
-    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b15         // loading speed
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
@@ -31,15 +31,15 @@
               " (864t in 4 barges)" 00
 
 -1 * 4	 01 02 01 08 
-// Test ships
--1 sprites/graphics/tow_boats.png 20  10 01 89 28  -9  -45
--1 sprites/graphics/tow_boats.png 60  10 01 66 113 -56 -33
--1 sprites/graphics/tow_boats.png 186 10 01 48 130 -65 -15
--1 sprites/graphics/tow_boats.png 328 10 01 66 113 -56 -33
--1 sprites/graphics/tow_boats.png 454 10 01 89 28  -9  -45
--1 sprites/graphics/tow_boats.png 494 10 01 66 113 -56 -33
--1 sprites/graphics/tow_boats.png 620 10 01 48 130 -65 -15
--1 sprites/graphics/tow_boats.png 762 10 01 66 113 -56 -33
+// Tow boat
+-1 sprites/graphics/tow_boat_1_barge.png  20 10  01  89  28  -14 -36
+-1 sprites/graphics/tow_boat_1_barge.png  60 10  01  66 113  -75 -19
+-1 sprites/graphics/tow_boat_1_barge.png 186 10  01  48 138  -69 -29
+-1 sprites/graphics/tow_boat_1_barge.png 328 10  01  66 113  -32 -20
+-1 sprites/graphics/tow_boat_1_barge.png 454 10  01  89  28  -14 -39
+-1 sprites/graphics/tow_boat_1_barge.png 494 10  01  66 113  -79 -21
+-1 sprites/graphics/tow_boat_1_barge.png 620 10  01  48 138  -68 -29
+-1 sprites/graphics/tow_boat_1_barge.png 762 10  01  66 113  -37 -19
 -1 * 1	 02 02 B1 // action 2  
       01 // number loaded states
       01 // number loading states
@@ -49,7 +49,7 @@
 -1 * 4	 01 02 01 04 // buy menu sprites
 -1 * 1	 00
 -1 * 1	 00
--1 sprites/graphics/tow_boats.png 620 29 01 22 116 -36 -10
+-1 sprites/graphics/tow_boat_1_barge.png 620 29 01 22 116 -36 -10
 -1 * 1	 00
 -1 * 9	 02 02 B0 01 01  00 00  00 00
 
