@@ -168,7 +168,7 @@
 #define STR_VEH_WINDOW_UTILITY_MEDIUM_DIESEL_1          AB //D0 text
 #define STR_VEH_WINDOW_HYDROFOIL_KLYAZMA                AC //D0 text
 #define STR_VEH_WINDOW_TOWBOAT                          AD //D0 text
-#define STR_VEH_PADDLE_STEAMER                          AE //D0 text
+#define STR_VEH_WINDOW_PADDLE_STEAMER                          AE //D0 text
 #define STR_VEH_WINDOW_HYDROFOIL_818                    AF //D0 text
 #define STR_VEH_WINDOW_UTILITY_TUG_SMALL_DIESEL_1       B0 //D0 text
 #define STR_VEH_WINDOW_UTILITY_VESSEL_SMALL_DIESEL_1    B1 //D0 text

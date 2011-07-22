@@ -80,7 +80,7 @@
                                0d 98 "Refittable capacities: " 8A "999999999999999t" //
                                00
 
--1 * 87	 04 02 FF 01 STR_VEH_PADDLE_STEAMER D0 "Type: " 8A "Paddle steamer"
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_PADDLE_STEAMER D0 "Type: " 8A "Paddle steamer"
                                0d 98 "Propulsion: " 8A "Compound steam engine" //
                                00
 
