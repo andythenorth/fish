@@ -71,6 +71,10 @@
                                0d 98 "Propulsion: " 8A "2 x gas turbine, with water jets " //
                                00
 
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_CATAMARAN_LARGE D0 "Type: " 8A "Catamaran fast ferry"
+                               0d 98 "Propulsion: " 8A "ENGINE DETAILS" //
+                               00
+
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_TOWBOAT D0 "Type: " 8A "Towboat"
                                0d 98 "Propulsion: " 8A "Diesel" //
                                0d 98 "Refittable capacities: " 8A "999999999999999t" //

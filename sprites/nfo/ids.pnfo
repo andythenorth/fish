@@ -41,7 +41,7 @@
 #define VEH_HYDROFOIL_818               79
 //#define VACANT                          7A
 //#define VACANT                          7B
-//#define VACANT                          7C
+#define VEH_CATAMARAN_LARGE               7C
 //#define VACANT                          7D
 //#define VACANT                          7E
 //#define VACANT                          7F
@@ -173,7 +173,7 @@
 #define STR_VEH_WINDOW_UTILITY_TUG_SMALL_DIESEL_1       B0 //D0 text
 #define STR_VEH_WINDOW_UTILITY_VESSEL_SMALL_DIESEL_1    B1 //D0 text
 #define STR_VEH_WINDOW_UTILITY_MEDIUM_DIESEL_2          B2 //D0 text
-//#define STR_VEH_WINDOW_UNUSED                    B3 //D0 text
+#define STR_VEH_WINDOW_CATAMARAN_LARGE                  B3 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B4 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B5 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B6 //D0 text
