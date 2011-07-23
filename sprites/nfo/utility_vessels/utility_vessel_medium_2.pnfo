@@ -4,7 +4,7 @@
 #define THIS_FREIGHT_CAPACITY   34 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_UTILITY_MEDIUM_DIESEL_2
 
-#define THIS_OFFS_MENU  662 21 01  22 90  -37 -10
+#define THIS_OFFS_MENU  662 21 01  22 90  -2 -10
 
 #define THIS_OFFS_X_Y_1  -14 -40
 #define THIS_OFFS_X_Y_2  -78 -21
@@ -39,7 +39,7 @@
     1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_MEDIUM_2 
     BUY_MENU_X_OFFSET
-    "Utility Vessel 2" 00  
+    "Josephine Utility Vessel" 00  
     
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"
 #include "../templates/enhanced_cargo_support_action2_3.tnfo"

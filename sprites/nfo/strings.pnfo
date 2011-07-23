@@ -37,7 +37,7 @@
 
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_MEDIUM_DIESEL_2 D0 "Type: " 8A "General purpose vessel"
                                0d "(89 passengers or 52t of cargo)" //
-                               0d 98 "Propulsion: " 8A "Diesel" //
+                               0d 98 "Propulsion: " 8A "Oil-fired steam engine" //
                                00
 
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_UTILITY_VESSEL_SMALL_DIESEL_1 D0 "Type: " 8A "Small general purpose vessel"
