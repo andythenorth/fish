@@ -27,9 +27,9 @@
     08 FF           // use new graphics
     09 01           // refittable (0 = no, 1 = yes)
     0A \b150        // cost factor (purchase cost)
-    0B \b182        // speed in mph * 3.2      
+    0B \b148        // speed in mph * 3.2      
     0C 00           // cargo type 
-    0D \w240        // capacity 
+    0D \w250        // capacity 
     0F \b176        // running cost factor
     10 05           // sound effect (4=cargo ship, 5=passenger ship)
     11 00 00 00 00  // cargo types available for refitting
@@ -37,7 +37,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 03 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
-    1A \d01-01-1975   // long format introduction date
+    1A \d01-01-1997   // long format introduction date
 -1 * 1   04 02 7F 01 VEH_CATAMARAN_LARGE
     BUY_MENU_X_OFFSET
     "Large Catamaran" 00  
