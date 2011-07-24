@@ -29,7 +29,7 @@
 
 #include "sprites/nfo/passenger_steamers/paddle_steamer.pnfo"
 
-#include "sprites/nfo/catamarans/catamaran_large.pnfo"
+#include "sprites/nfo/catamarans/sungei_catamaran.pnfo"
 
 #include "sprites/nfo/hydrofoils/hydrofoil_klyazma.pnfo"
 #include "sprites/nfo/hydrofoils/hydrofoil_818.pnfo"

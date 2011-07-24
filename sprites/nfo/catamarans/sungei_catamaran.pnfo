@@ -1,8 +1,8 @@
-#define THIS_PCX_FILE           catamaran_large.png     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID             VEH_CATAMARAN_LARGE     // used in action 2/3 template
-#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_CATAMARAN_LARGE
-#define THIS_PAX_CAPACITY       20 83 // define without escapes and setting 80 to make it a cb result
-#define THIS_FREIGHT_CAPACITY   D3 81 // define without escapes and setting 80 to make it a cb result
+#define THIS_PCX_FILE           sungei_catamaran.png     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID             VEH_CATAMARAN_MEDIUM     // used in action 2/3 template
+#define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_CATAMARAN_MEDIUM
+#define THIS_PAX_CAPACITY       FA 80 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   40 80 // define without escapes and setting 80 to make it a cb result
 
 #define THIS_OFFS_MENU  623 29 01  22 116  -10 -10
 
@@ -19,7 +19,7 @@
 #define THIS_SMOKE_TYPE 40 //
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 \b18 01 VEH_CATAMARAN_LARGE     // Action 0
+-1 * 1	 00 02 \b18 01 VEH_CATAMARAN_MEDIUM     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -38,9 +38,9 @@
     18 03 00        // refittable cargo classes
     19 00 00        // non-refittable cargo classes
     1A \d01-01-1997   // long format introduction date
--1 * 1   04 02 7F 01 VEH_CATAMARAN_LARGE
+-1 * 1   04 02 7F 01 VEH_CATAMARAN_MEDIUM
     BUY_MENU_X_OFFSET
-    "Large Catamaran" 00  
+    "Sungei Catamaran" 00  
 
 #include "../templates/default_action1_2.tnfo"
 #include "../templates/default_action2_3.tnfo"
