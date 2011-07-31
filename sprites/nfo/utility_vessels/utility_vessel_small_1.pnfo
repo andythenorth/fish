@@ -44,6 +44,3 @@
 
 #include "../templates/default_action1_2.tnfo"
 #include "../templates/default_action2_3.tnfo"
-
-#undef THIS_VEH_ID
-#undef THIS_VEH_WINDOW_TEXT

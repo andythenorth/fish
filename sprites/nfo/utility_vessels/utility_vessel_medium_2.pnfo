@@ -41,5 +41,5 @@
     BUY_MENU_X_OFFSET
     "Josephine Utility Vessel" 00  
     
-#include "../templates/enhanced_cargo_support_action1_2.tnfo"
-#include "../templates/enhanced_cargo_support_action2_3.tnfo"
+#include "../templates/default_action1_2.tnfo"
+#include "../templates/default_action2_3.tnfo"
