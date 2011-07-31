@@ -40,7 +40,7 @@
     1A \d01-01-1870  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_UTILITY_VESSEL_SMALL_1 
     BUY_MENU_X_OFFSET
-    "Small Utility Vessel 1" 00  
+    "Labrador Utility Vessel" 00  
 
 #include "../templates/default_action1_2.tnfo"
 #include "../templates/default_action2_3.tnfo"
