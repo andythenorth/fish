@@ -1,5 +1,15 @@
 Changelog
 
+* 0.9.2 *
+Added Freshney Freight Barge (for inland waterways).  12mph, 45t of cargo.
+Added Labrador Utility Vessel.  18mph, 30 passengers or 12t of cargo.
+Added Josephine Utility Vessel.  16mph, 89 passengers or 52t of cargo.
+Added Sungei Catamaran.  Available 1997, 46mph, 250 passengers or 64 bags of mail. (graphics: Emperor Jake, based on DanMacK sprite)
+Improved appearance of buy menu: ships are center-aligned.
+Fixed freight / mail capacities for hydrofoils.
+Fixed lighting for several ships.
+Internal changes to move from pcx to png files.
+
 * 0.9.1 *
 Added Fitzroy Utility Tug (small).
 Improved appearance of medium utility fishboat.
