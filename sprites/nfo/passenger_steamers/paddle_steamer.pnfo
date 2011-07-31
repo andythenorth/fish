@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE           paddle_steamer.png     // used in action 1 template (must include file extension)
+#define THIS_GRAPHICS_FILE           paddle_steamer.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_PADDLE_STEAMER // used in action 2/3 template
 #define THIS_PAX_CAPACITY       1C 82 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   70 80 // define without escapes and setting 80 to make it a cb result

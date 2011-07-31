@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE           sungei_catamaran.png     // used in action 1 template (must include file extension)
+#define THIS_GRAPHICS_FILE           sungei_catamaran.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_CATAMARAN_MEDIUM     // used in action 2/3 template
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_CATAMARAN_MEDIUM
 #define THIS_PAX_CAPACITY       FA 80 // define without escapes and setting 80 to make it a cb result

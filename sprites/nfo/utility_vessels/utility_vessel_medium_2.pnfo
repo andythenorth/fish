@@ -1,4 +1,4 @@
-#define THIS_PCX_FILE           utility_vessel_medium_2.png     // used in action 1 template (must include file extension)
+#define THIS_GRAPHICS_FILE           utility_vessel_medium_2.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_UTILITY_VESSEL_MEDIUM_2
 #define THIS_PAX_CAPACITY       59 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   34 80 // define without escapes and setting 80 to make it a cb result
