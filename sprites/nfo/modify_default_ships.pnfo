@@ -4,15 +4,15 @@
     06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
 -1 * 1	 00 02 01 01 01     // Action 0
     06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
-// ferries (currently enabled)
+// ferries
 -1 * 1	 00 02 01 01 02     // Action 0
-    06 07           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
 -1 * 1	 00 02 01 01 03     // Action 0
-    06 07           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
 -1 * 1	 00 02 01 01 05     // Action 0
-    06 08           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
 -1 * 1	 00 02 01 01 06     // Action 0
-    06 08           // climate availability - use 0F for all, 00 none (to hide vehicle)  
+    06 00           // climate availability - use 0F for all, 00 none (to hide vehicle)  
 // hovercraft (currently enabled)
 -1 * 1	 00 02 01 01 04     // Action 0
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
