@@ -6,6 +6,10 @@
                                0d 98 "Propulsion: " 8A "Diesel" //
                                00
 
+-1 * 87	 04 02 FF 01 STR_VEH_WINDOW_COASTER_STEAM D0 "Type: " 8A "Coaster"
+                               0d 98 "Propulsion: " 8A "Steam" //
+                               00
+
 -1 * 87	 04 02 FF 01 STR_VEH_WINDOW_COASTER_DIESEL D0 "Type: " 8A "Coaster"
                                0d 98 "Propulsion: " 8A "Diesel" //
                                00

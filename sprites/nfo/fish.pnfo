@@ -21,7 +21,10 @@
 #include "sprites/nfo/traders/trader_large_deprecated.pnfo"
 #include "sprites/nfo/traders/island_trader.pnfo"
 
-#include "sprites/nfo/coasters/coaster_small.pnfo"
+#include "sprites/nfo/coasters/coaster_small_gen1.pnfo"
+#include "sprites/nfo/coasters/coaster_small_gen2.pnfo"
+#include "sprites/nfo/coasters/coaster_small_gen3.pnfo"
+#include "sprites/nfo/coasters/coaster_small_gen4.pnfo"
 #include "sprites/nfo/coasters/coaster_medium.pnfo"
 
 #include "sprites/nfo/coasters/coaster_large_gen1.pnfo"

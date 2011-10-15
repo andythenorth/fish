@@ -97,13 +97,13 @@
 //#define VACANT                          CE
 //#define VACANT                          CF
 //#define VACANT                          D0
-#define VEH_COASTER_SMALL               D1
+#define VEH_COASTER_SMALL_GEN3          D1  // Gen3 Small coaster out of sequence for hysterical raisins
 #define VEH_COASTER_MEDIUM              D2
 #define VEH_COASTER_LARGE_GEN4          D3  // Gen4 Large coaster out of sequence for hysterical raisins
 //#define VACANT                          D4
-//#define VACANT                          D5
-//#define VACANT                          D6
-//#define VACANT                          D7
+#define VEH_COASTER_SMALL_GEN1          D5
+#define VEH_COASTER_SMALL_GEN2          D6
+#define VEH_COASTER_SMALL_GEN4          D7
 //#define VACANT                          D8
 //#define VACANT                          D9
 //#define VACANT                          DA
@@ -177,7 +177,7 @@
 #define STR_VEH_WINDOW_COASTER_LARGE_STEAM              B4 //D0 text
 #define STR_VEH_WINDOW_COASTER_LARGE_STEAM_TURBINE      B5 //D0 text
 #define STR_VEH_WINDOW_COASTER_LARGE_OIL_TURBINE        B6 //D0 text
-//#define STR_VEH_WINDOW_UNUSED                    B7 //D0 text
+#define STR_VEH_WINDOW_COASTER_STEAM                    B7 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B8 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    B9 //D0 text
 //#define STR_VEH_WINDOW_UNUSED                    BA //D0 text
