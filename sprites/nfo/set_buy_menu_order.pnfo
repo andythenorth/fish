@@ -1,0 +1,11 @@
+// the buy menu order is sorted as necessary
+// this is applied after all vehicles have been defined
+
+-1 * 1	 00 02 \b1 01 VEH_COASTER_LARGE_GEN3     // Action 0
+    1B VEH_COASTER_LARGE_GEN4  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_COASTER_LARGE_GEN2     // Action 0
+    1B VEH_COASTER_LARGE_GEN3  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_COASTER_LARGE_GEN1     // Action 0
+    1B VEH_COASTER_LARGE_GEN2  // sort vehicle list

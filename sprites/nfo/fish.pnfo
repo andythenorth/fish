@@ -46,3 +46,6 @@
 
 #include "sprites/nfo/hovercraft/hovercraft_freight_medium.pnfo"
 //#include "sprites/nfo/hovercraft/hovercraft_mixed_medium.pnfo"
+
+// set buy menu order - include this after all vehicles are defined
+#include "sprites/nfo/set_buy_menu_order.pnfo"
