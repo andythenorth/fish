@@ -22,7 +22,7 @@
 -1 * 1	 00 02 12 01 VEH_COASTER_LARGE_GEN4     // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b45         // vehicle life in years
-    04 \b45         // model life in years
+    04 \b60         // model life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
     07 \b20         // loading speed
     08 FF           // use new graphics
