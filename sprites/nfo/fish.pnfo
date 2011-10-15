@@ -23,7 +23,12 @@
 
 #include "sprites/nfo/coasters/coaster_small.pnfo"
 #include "sprites/nfo/coasters/coaster_medium.pnfo"
-#include "sprites/nfo/coasters/coaster_large.pnfo"
+
+#include "sprites/nfo/coasters/coaster_large_gen1.pnfo"
+#include "sprites/nfo/coasters/coaster_large_gen2.pnfo"
+#include "sprites/nfo/coasters/coaster_large_gen3.pnfo"
+#include "sprites/nfo/coasters/coaster_large_gen4.pnfo"
+#include "sprites/nfo/coasters/coaster_large_gen5.pnfo"
 
 #include "sprites/nfo/misc/tow_boat.pnfo"
 
