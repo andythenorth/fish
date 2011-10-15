@@ -40,7 +40,7 @@
     1A \d01-01-1904  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_COASTER_LARGE_GEN2 
     BUY_MENU_X_OFFSET
-    "Ijsselmeer Freighter" 00  
+    "Altair Freighter" 00  
     
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"
 #include "../templates/enhanced_cargo_support_action2_3.tnfo"
