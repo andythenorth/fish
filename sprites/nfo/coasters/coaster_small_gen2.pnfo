@@ -1,7 +1,7 @@
 #define THIS_GRAPHICS_FILE           coaster_small.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_COASTER_SMALL_GEN2 // used in action 2/3 template
 #define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
-#define THIS_FREIGHT_CAPACITY   D0 82 // define without escapes and setting 80 to make it a cb result
+#define THIS_FREIGHT_CAPACITY   B2 82 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_COASTER_STEAM
 
 //#define THIS_OFFS_MENU  648 10 01  48 90  -37 -21
@@ -38,7 +38,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 03        // refittable cargo classes
     19 03 00        // non-refittable cargo classes
-    1A \d01-01-1909  // long format introduction date
+    1A \d01-01-1909   // long format introduction date
 -1 * 1   04 02 7F 01 VEH_COASTER_SMALL_GEN2
     BUY_MENU_X_OFFSET
     "Colorado Freighter" 00  

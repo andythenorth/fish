@@ -25,6 +25,7 @@
 #include "sprites/nfo/coasters/coaster_small_gen2.pnfo"
 #include "sprites/nfo/coasters/coaster_small_gen3.pnfo"
 #include "sprites/nfo/coasters/coaster_small_gen4.pnfo"
+
 #include "sprites/nfo/coasters/coaster_medium.pnfo"
 
 #include "sprites/nfo/coasters/coaster_large_gen1.pnfo"
