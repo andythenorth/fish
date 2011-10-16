@@ -36,7 +36,7 @@
     17 02           // miscellaneous flags (inc. use 2CC)
     18 FF 00        // refittable cargo classes
     19 00 01        // non-refittable cargo classes
-    1A \d01-01-1870  // long format introduction date
+    1A \d01-01-1957  // long format introduction date
 -1 * 1   04 02 7F 01 VEH_VEHICLE_FERRY_MEDIUM
     BUY_MENU_X_OFFSET
     "Stornoway Ferry" 00  
