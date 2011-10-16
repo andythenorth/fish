@@ -1,4 +1,4 @@
-#define THIS_GRAPHICS_FILE           coaster_large.png     // used in action 1 template (must include file extension)
+#define THIS_GRAPHICS_FILE      coaster_large_gen4.png     // used in action 1 template (must include file extension)
 #define THIS_VEH_ID             VEH_COASTER_LARGE_GEN4 // used in action 2/3 template
 #define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   38 84 // define without escapes and setting 80 to make it a cb result
