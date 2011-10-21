@@ -1,5 +1,6 @@
 // the buy menu order is sorted as necessary
 // this is applied after all vehicles have been defined
+// [¿ seems to need action 0s defined in reverse order to vehicle list ?]
 
 -1 * 1	 00 02 \b1 01 VEH_COASTER_LARGE_GEN3     // Action 0
     1B VEH_COASTER_LARGE_GEN4  // sort vehicle list
@@ -23,3 +24,49 @@
 -1 * 1	 00 02 \b1 01 VEH_COASTER_SMALL_GEN1     // Action 0
     1B VEH_COASTER_SMALL_GEN2  // sort vehicle list
 
+
+-1 * 1	 00 02 \b1 01 VEH_LOG_RAFT    // Action 0
+    1B VEH_HOVERCRAFT_FREIGHT_MEDIUM  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_HOVERCRAFT_FREIGHT_MEDIUM    // Action 0
+    1B VEH_TRADER_SMALL  // sort vehicle list
+
+
+-1 * 1	 00 02 \b1 01 VEH_RIVER_BOAT_LARGE     // Action 0
+    1B VEH_LOG_RAFT  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_RIVER_BOAT_SMALL     // Action 0
+    1B VEH_RIVER_BOAT_LARGE  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 CANAL_BOAT_1     // Action 0
+    1B VEH_RIVER_BOAT_SMALL  // sort vehicle list
+
+
+-1 * 1	 00 02 \b1 01 VEH_PADDLE_STEAMER     // Action 0
+    1B VEH_VEHICLE_FERRY_MEDIUM  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_ISLAND_TRADER     // Action 0
+    1B VEH_PADDLE_STEAMER  // sort vehicle list
+
+
+-1 * 1	 00 02 \b1 01 VEH_UTILITY_VESSEL_MEDIUM_2     // Action 0
+    1B VEH_VEHICLE_FERRY_SMALL_2 // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_UTILITY_VESSEL_MEDIUM_1     // Action 0
+    1B VEH_UTILITY_VESSEL_MEDIUM_2 // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_UTILITY_VESSEL_SMALL_1     // Action 0
+    1B VEH_UTILITY_VESSEL_MEDIUM_1 // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_UTILITY_TUG_SMALL     // Action 0
+    1B VEH_UTILITY_VESSEL_SMALL_1  // sort vehicle list
+
+
+-1 * 1	 00 02 \b1 01 VEH_CATAMARAN_MEDIUM     // Action 0
+    1B VEH_UTILITY_TUG_SMALL  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_HYDROFOIL_818     // Action 0
+    1B VEH_CATAMARAN_MEDIUM  // sort vehicle list
+    
+-1 * 1	 00 02 \b1 01 VEH_HYDROFOIL_KLYAZMA     // Action 0
+    1B VEH_HYDROFOIL_818  // sort vehicle list
