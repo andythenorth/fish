@@ -25,11 +25,14 @@
     1B VEH_COASTER_SMALL_GEN2  // sort vehicle list
 
 
--1 * 1	 00 02 \b1 01 VEH_LOG_RAFT    // Action 0
-    1B VEH_HOVERCRAFT_FREIGHT_MEDIUM  // sort vehicle list
+-1 * 1	 00 02 \b1 01 VEH_TRADER_SMALL_GEN1    // Action 0
+    1B VEH_TRADER_SMALL_GEN2  // sort vehicle list
 
 -1 * 1	 00 02 \b1 01 VEH_HOVERCRAFT_FREIGHT_MEDIUM    // Action 0
-    1B VEH_TRADER_SMALL  // sort vehicle list
+    1B VEH_TRADER_SMALL_GEN1  // sort vehicle list
+
+-1 * 1	 00 02 \b1 01 VEH_LOG_RAFT    // Action 0
+    1B VEH_HOVERCRAFT_FREIGHT_MEDIUM  // sort vehicle list
 
 
 -1 * 1	 00 02 \b1 01 VEH_RIVER_BOAT_LARGE     // Action 0

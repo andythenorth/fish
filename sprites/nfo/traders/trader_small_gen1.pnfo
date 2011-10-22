@@ -1,5 +1,5 @@
-#define THIS_GRAPHICS_FILE           trader_small.png     // used in action 1 template (must include file extension)
-#define THIS_VEH_ID             VEH_TRADER_SMALL // used in action 2/3 template
+#define THIS_GRAPHICS_FILE      trader_small_gen1.png     // used in action 1 template (must include file extension)
+#define THIS_VEH_ID             VEH_TRADER_SMALL_GEN1 // used in action 2/3 template
 #define THIS_PAX_CAPACITY       00 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_FREIGHT_CAPACITY   55 80 // define without escapes and setting 80 to make it a cb result
 #define THIS_VEH_WINDOW_TEXT    STR_VEH_WINDOW_TRADER_DIESEL
@@ -18,7 +18,7 @@
 #define THIS_SMOKE_TYPE 40 //No smoke
 #include "../templates/template_smoke.tnfo"
 
--1 * 1	 00 02 \b17 01 VEH_TRADER_SMALL    // Action 0
+-1 * 1	 00 02 \b17 01 VEH_TRADER_SMALL_GEN1    // Action 0
     00 \w01-01-1970 // date of introduction
     03 \b50         // vehicle life in years
     06 0F           // climate availability - use 0F for all, 00 none (to hide vehicle)  
@@ -36,9 +36,9 @@
     18 FF 03        // refittable cargo classes
     19 03 00        // non-refittable cargo classes
     1A \d01-01-1870  // long format introduction date
--1 * 1   04 02 7F 01 VEH_TRADER_SMALL 
+-1 * 1   04 02 7F 01 VEH_TRADER_SMALL_GEN1 
     BUY_MENU_X_OFFSET
-    "Rockall Freighter" 00  
+    "PUFFER Freighter" 00  
 
 #include "../templates/enhanced_cargo_support_action1_2.tnfo"
 #include "../templates/enhanced_cargo_support_action2_3.tnfo"

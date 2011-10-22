@@ -63,11 +63,11 @@
 //#define VACANT                          9E
 //#define VACANT                          9F
 //#define VACANT                          A0
-#define VEH_TRADER_SMALL                A1
+#define VEH_TRADER_SMALL_GEN2           A1
 #define VEH_TRADER_MEDIUM               A2
 #define VEH_TRADER_LARGE                A3
 #define VEH_ISLAND_TRADER               A4
-//#define VACANT                          A5
+#define VEH_TRADER_SMALL_GEN1           A5  // generations out of sequence for hysterical raisins
 //#define VACANT                          A6
 //#define VACANT                          A7
 //#define VACANT                          A8
