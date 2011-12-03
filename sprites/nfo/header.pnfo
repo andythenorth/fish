@@ -13,9 +13,24 @@
 // set number of parameters
 -1 * -1   14
   "C" "INFO"
-      "B" "NPAR" \w1 \b0 // no parameters so far
+      "B" "NPAR" \w1 \b1
       00
   00
+  
+// parameter for base costs for constructing water features
+ -1 * -1   14
+  "C" "INFO"
+      "C" "PARA"
+          "C" \d0
+              "T" "NAME" 7F "Use improved construction costs for canals, aqueducts and locks" 00 
+              "T" "DESC" 7F "Reduces construction (and removal) costs for canals, aqueducts and locks.  Provides a better balance between water transport and other transport types." 00 
+              "B" "TYPE" \w1 \b1
+              "B" "DFLT" \w4 \d0
+              00
+          00
+      00
+  00
+
 
 // *************************
 // Action8 NewGRF definition
@@ -53,10 +68,6 @@
 
 
 
-// param 0 is used for capacity multiplier
-// set param 0 to default value of 2 
--1 * -1 0D 00 80 FF 00 \d2
-
 // Check for required (OpenTTD) version, disable otherwise
 // Terminate, if TTDP:
 -1 * 0    07 9D 04 \7= \d01 01
@@ -73,10 +84,26 @@
 -1 * 0    0B 01 7F 02 "adv. setting '" 94 "vehicle->Enable multiple NewGRF vehicle sets'" 89 " = " 8E "ON" 00
 
 // set purchase cost base for ships - may affect other ship grfs for 0.7er branch of OpenTTD
--1 * 0    00 08 01 01 13 08
-  0A // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 13 08 // ship purchase cost
+  0A // (default is 08, adding 1 doubles, subtract 1 halves)
   
 // set running cost base for ships - may affect other ship grfs for 0.7er branch of OpenTTD
--1 * 0    00 08 01 01 2F 08
-  09 // ship purchase cost (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 2F 08 //ship run cost 
+  09 // (default is 08, adding 1 doubles, subtract 1 halves)
+
+#define PARAM_CONSTRUCTION_COSTS  0 
+// set base cost for various water feature - will affect other grfs.
+ -1 * 0	 07  PARAM_CONSTRUCTION_COSTS  \b1 \7= \b0 \b6 // skip setting construction costs unless parameter is enabled
+-1 * 0    00 08 01 01 3C 08 // build canal 
+  05 // (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 3D 08 // remove canal 
+  04 // (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 3E 08 // build aqueduct 
+  06 // (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 3F 08 // remove aqueduct 
+  04 // (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 40 08 // build lock 
+  07 // (default is 08, adding 1 doubles, subtract 1 halves)
+-1 * 0    00 08 01 01 41 08 // remove lock 
+  06 // (default is 08, adding 1 doubles, subtract 1 halves)
 
