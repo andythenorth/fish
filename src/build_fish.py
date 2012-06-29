@@ -64,6 +64,7 @@ class Ship(object):
         self.smoke_offset = config.getint(id, 'smoke_offset')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
+        self.capacity = 10 # !temp value
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override
@@ -78,7 +79,7 @@ class Ship(object):
         # if buy cost is 0 (i.e. not defined), derive the buy cost, otherwise use the defined cost
         if self.run_cost_override == 0:
             # calculate a running cost based on power and a multiplier value
-            return int(0.5 * self.power)
+            return 10 # !temp value
         else:
             return self.run_cost_override
 
@@ -138,7 +139,7 @@ for i in config.sections():
 #compile a single final nml file for the grf
 master_template = templates['fish.pynml']
 
-bandit_nml = codecs.open(os.path.join('bandit.nml'),'w','utf8')
+bandit_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
 bandit_nml.write(master_template(vehicles=vehicles, repo_vars=repo_vars))
 bandit_nml.close()
 

@@ -1,0 +1,43 @@
+##grflangid 0x01
+##plural 0
+STR_GRF_NAME                                                    :BANDIT FISH - compiled without makefile
+STR_GRF_DESCRIPTION                                             :License: {SILVER}GPL v2{}{BLACK}
+
+STR_EMPTY                                                       :
+
+STR_CARGO_REFIT_0_TRAILER                                       :(No trailer)
+STR_CARGO_REFIT_0_TRAILERS                                      :(No trailers)
+STR_CARGO_REFIT_1_TRAILER                                       :(1 trailer)
+STR_CARGO_REFIT_2_TRAILERS                                      :(2 trailers)
+STR_CARGO_REFIT_3_TRAILERS                                      :(3 trailers)
+
+STR_local                                                       :Truck type: {GOLD}Local{}
+STR_line_haul                                                   :Truck type: {GOLD}Line-haul{}
+STR_special_duty                                                :Truck type: {GOLD}Special Duty{}
+
+STR_BUY_MENU_TEXT                                               :{STRING}{STRING}
+STR_BUY_MENU_CONSIST_INFO                                       :{BLACK}Can be refitted to haul:{}{GOLD}{STRING}{STRING}
+STR_ONE_MORE_LINE                                               :{STRING}{}{STRING}
+STR_BUY_MENU_CAP_DRAWBAR_TRUCK                                  :    {COMMA}t with no trailer{}
+STR_BUY_MENU_TRAILER                                            :    {COMMA}t with {COMMA} trailer{P 1 "" s}
+STR_BUY_MENU_TRAILER_NO_REFIT                                   :{BLACK}Hauls: {GOLD}1 trailer
+
+
+
+STR_NAME_hackler_CJ                                          :Hackler CJ
+
+
+STR_NAME_dragon_run_turnpike_special                                          :Dragon Run Turnpike Special
+
+
+STR_NAME_red_lake_grizzly                                          :Red Lake Grizzly
+
+
+STR_NAME_hackler_R                                          :Hackler R
+
+
+STR_NAME_reifsnider_352                                          :Reifsnider 352
+
+
+STR_NAME_reifsnider_379                                          :Reifsnider 379
+
