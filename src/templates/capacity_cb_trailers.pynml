@@ -1,0 +1,59 @@
+<tal:trailer_capacity define="this_capacity trailer.trailer_capacity">
+
+// switches specific to drawbar trucks
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_drawbar_pos_1, cargo_subtype) {
+    0: return 0;
+    1..255: return ${this_capacity};
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_drawbar_pos_2, cargo_subtype) {
+    0..1: return 0;
+    2..255: return ${this_capacity};
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_drawbar_pos_3, cargo_subtype) {
+    0..2: return 0;
+    3..255: return ${this_capacity};
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_position_drawbar_truck, position_in_consist) {
+    1: ${trailer.id}_cap_drawbar_pos_1;
+    2: ${trailer.id}_cap_drawbar_pos_2;
+    3: ${trailer.id}_cap_drawbar_pos_3;
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+
+// switches specific to fifth wheel trucks
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_fifth_wheel_pos_2, cargo_subtype) {
+    0: return 0;
+    1..255: return ${this_capacity};
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_fifth_wheel_pos_3, cargo_subtype) {
+    0..1: return 0;
+    2..255: return ${this_capacity};
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_fifth_wheel_switch, position_in_consist) {
+    1: return ${this_capacity};
+    2: ${trailer.id}_cap_fifth_wheel_pos_2;
+    3: ${trailer.id}_cap_fifth_wheel_pos_3;
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+
+
+//switch between truck types
+switch (FEAT_ROADVEHS, SELF, ${trailer.id}_cap_cb_switch, ${truck.truck_type_as_num}) {
+    ${global_constants.drawbar_truck_type_num}: return ${trailer.id}_cap_position_drawbar_truck;
+    ${global_constants.fifth_wheel_truck_type_num}: return ${trailer.id}_cap_fifth_wheel_switch;
+    return 0; // we should never reach this result, setting 0 for capacity should make this error noticeable 
+}
+
+</tal:trailer_capacity>

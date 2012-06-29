@@ -1,0 +1,84 @@
+<tal:call_global_template define="global_template load: global_template.pt" metal:use-macro="global_template" />
+
+// -- begin ${vehicle.title} -- <!--! this adds a comment to aid reading the final nml -->
+
+// the cargo subtype switches are shared globally, no unique identifiers per truck
+// they're called from here, appropriate to the truck type
+// these need to be called before trailers, as trailers reference them
+switch (FEAT_ROADVEHS, SELF, ${vehicle.id}_switch_cargo_subtype, ${vehicle.truck_type_as_num}) {
+    ${global_constants.drawbar_truck_type_num}: return switch_cb_cargo_subtypes_drawbar_truck;
+    ${global_constants.fifth_wheel_truck_type_num}: return switch_cb_cargo_subtypes_fifth_wheel_truck;
+    return CB_RESULT_NO_TEXT;
+}
+
+
+// include the trailer vehicles if needed
+// if truck has no trailers (e.g. solo truck), trailers list will be empty so no trailers will be included
+<tal:render_trailer_vehicles repeat="trailer vehicle.trailers">
+    //-- begin ${trailer.id} -- // <!--! this adds a comment to aid reading the final nml -->
+    ${trailer.render(truck=vehicle)}
+    //-- end ${trailer.id} -- // <!--! another comment to aid reading the final nml  -->
+</tal:render_trailer_vehicles>
+
+// add the trailer vehicles to articulated consist (if needed)
+// if truck has no trailers (e.g. solo truck), switch will be called anyway but no trailers added
+switch (FEAT_ROADVEHS, SELF, ${vehicle.id}_articulated_cb_switch, extra_callback_info1) {
+    <tal:build_trailers repeat="n range(len(vehicle.trailers))">
+    ${n+1}: return ${vehicle.id + '_trailer_' + str(n+1)};
+    </tal:build_trailers>
+  return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+
+<tal:include define="graphics_trucks load: graphics_trucks.pynml" metal:use-macro="graphics_trucks" />
+
+<tal:include define="consist_weight load: consist_weight.pynml" metal:use-macro="consist_weight" />
+
+<tal:include define="te_coefficient load: te_coefficient.pynml" metal:use-macro="te_coefficient" />
+
+
+
+// -- print some of the vehicle non-nml properties to aid debugging -- //
+// truck_type    ${vehicle.truck_type}
+// num_trailers  ${vehicle.num_trailers}
+
+item(FEAT_ROADVEHS, ${vehicle.id}, ${vehicle.numeric_id}) {
+    property {
+        name:                           string(STR_NAME_${vehicle.id});
+        climates_available:             ALL_CLIMATES; // nml constant
+        sound_effect:                   SOUND_TRUCK_START_2; //nml constant - likely this will be replaced by python global vars
+        visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL
+        introduction_date:              date(${vehicle.intro_date},01,01); // config just supplies intro year - openttd randomises intro dates a bit anyway
+        cargo_capacity:                 ${vehicle.truck_capacity};
+        sprite_id:                      SPRITE_ID_NEW_ROADVEH; //enable new graphics - nml constant
+        speed:                          ${vehicle.speed}mph;
+        power:                          ${vehicle.power}hp;
+        weight:                         0; // set by cb
+        tractive_effort_coefficient:    0; // set by cb
+        cost_factor:                    ${vehicle.buy_cost};
+        running_cost_base:              RUNNING_COST_ROADVEH;
+        running_cost_factor:            ${vehicle.get_running_cost()};
+        refittable_cargo_classes:       bitmask(${vehicle.refittable_classes});
+        non_refittable_cargo_classes:   bitmask(${vehicle.non_refittable_classes});
+        cargo_allow_refit:              [${vehicle.allowed_cargos}];
+        cargo_disallow_refit:           [${vehicle.disallowed_cargos}];
+        default_cargo_type:             GOOD;
+        loading_speed:                  5;
+        misc_flags:                     bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_AUTOREFIT); // nml constants
+        model_life:                     ${vehicle.model_life};
+        vehicle_life:                   ${vehicle.vehicle_life};
+    }
+    graphics {
+        length:                         ${vehicle.get_length()};
+        weight:                         ${vehicle.id}_switch_consist_weight;
+        tractive_effort_coefficient:    ${vehicle.id}_switch_te_coefficient;
+        purchase_cargo_capacity:        ${vehicle.get_total_consist_capacity()};
+        cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype;
+        articulated_part:               ${vehicle.id}_articulated_cb_switch; // always call articulated switch, trailers will only be built if needed
+        additional_text:                ${vehicle.get_buy_menu_string()};
+        default:                        ${vehicle.id}_cargo_switch;
+    }
+}
+
+
+// -- end ${vehicle.title} -- <!--! another comment to aid reading the final nml  -->

@@ -1,0 +1,22 @@
+// switch specific to drawbar trucks
+switch (FEAT_ROADVEHS, SELF, ${vehicle.id}_te_coefficient_drawbar_truck, cargo_subtype) {
+    <tal:drawbar_weights repeat="n range(vehicle.num_trailers+1)">
+    ${n}: return ${vehicle.get_te_coefficient(num_trailers=n)};
+    </tal:drawbar_weights>
+    return 0; // we should never reach this result, setting 0 for TE should make this error noticeable
+}
+
+// switch specific to fifth wheel trucks
+switch (FEAT_ROADVEHS, SELF, ${vehicle.id}_te_coefficient_fifth_wheel_truck, cargo_subtype) {
+    <tal:fifth_wheel_weights repeat="n range(vehicle.num_trailers)">
+    ${n}: return ${vehicle.get_te_coefficient(num_trailers=n+1)};
+    </tal:fifth_wheel_weights>
+    return 0; // we should never reach this result, setting 0 for TE should make this error noticeable
+}
+
+// switch between truck types
+switch (FEAT_ROADVEHS, SELF, ${vehicle.id}_switch_te_coefficient, ${vehicle.truck_type_as_num}) {
+    ${global_constants.drawbar_truck_type_num}: return ${vehicle.id}_te_coefficient_drawbar_truck;
+    ${global_constants.fifth_wheel_truck_type_num}: return ${vehicle.id}_te_coefficient_fifth_wheel_truck;
+    return ${vehicle.get_te_coefficient(num_trailers=0)}; // default = truck with no trailers
+}

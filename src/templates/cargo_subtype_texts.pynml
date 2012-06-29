@@ -1,0 +1,52 @@
+// one set of common switches used for all cargo subtypes
+
+// drawbar trucks have 0-n trailers
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtype_text_1_trailer_drawbar_truck, cargo_subtype) {
+    0: return string(STR_CARGO_REFIT_0_TRAILER);
+    1: return string(STR_CARGO_REFIT_1_TRAILER);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtype_text_2_trailer_drawbar_truck, cargo_subtype) {
+    0: return string(STR_CARGO_REFIT_0_TRAILERS);
+    1: return string(STR_CARGO_REFIT_1_TRAILER);
+    2: return string(STR_CARGO_REFIT_2_TRAILERS);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtype_text_3_trailer_drawbar_truck, cargo_subtype) {
+    0: return string(STR_CARGO_REFIT_0_TRAILERS);
+    1: return string(STR_CARGO_REFIT_1_TRAILER);
+    2: return string(STR_CARGO_REFIT_2_TRAILERS);
+    3: return string(STR_CARGO_REFIT_3_TRAILERS);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtypes_drawbar_truck, num_vehs_in_consist) {
+    2: return switch_cb_cargo_subtype_text_1_trailer_drawbar_truck;
+    3: return switch_cb_cargo_subtype_text_2_trailer_drawbar_truck;
+    4: return switch_cb_cargo_subtype_text_3_trailer_drawbar_truck;
+    return CB_RESULT_NO_TEXT;
+}
+
+
+// fifth-wheel trucks have 1-n trailers
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtype_text_2_trailer_fifth_wheel_truck, cargo_subtype) {
+    0: return string(STR_CARGO_REFIT_1_TRAILER);
+    1: return string(STR_CARGO_REFIT_2_TRAILERS);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtype_text_3_trailer_fifth_wheel_truck, cargo_subtype) {
+    0: return string(STR_CARGO_REFIT_1_TRAILER);
+    1: return string(STR_CARGO_REFIT_2_TRAILERS);
+    2: return string(STR_CARGO_REFIT_3_TRAILERS);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_cb_cargo_subtypes_fifth_wheel_truck, num_vehs_in_consist) {
+    2: return CB_RESULT_NO_TEXT; // if just one trailer, fifth wheel trucks don't need subtype refit
+    3: return switch_cb_cargo_subtype_text_2_trailer_fifth_wheel_truck;
+    4: return switch_cb_cargo_subtype_text_3_trailer_fifth_wheel_truck;
+    return CB_RESULT_NO_TEXT;
+}

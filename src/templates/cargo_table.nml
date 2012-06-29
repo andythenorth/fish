@@ -1,0 +1,12 @@
+<tal:call_global_template define="global_template load: global_template.pt" metal:use-macro="global_template" />
+/*
+ * ********************************************
+ * Define cargo translation table and refits
+ * ********************************************
+ */
+
+cargotable {
+    <tal:build_cargo_table repeat="cargo global_constants.cargo_body_type_mappings">
+    ${cargo},
+    </tal:build_cargo_table>
+}

@@ -1,0 +1,102 @@
+// template for vehicle of length n is 'spriteset_template_truck_n'
+
+template spriteset_template_truck_8(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,         -11]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -18,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -11]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,          -18,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_7(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,         -11]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -20,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -13]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,          -16,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_6(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,         -11]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -22,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -15]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,          -14,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_5(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,         -10]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -24,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -16]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,          -12,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_4(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,         -19]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -14,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -17]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,          -23,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_3(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,          -8]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -28,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -18]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,           -8,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_2(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,          -7]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -30,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -19]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,           -6,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template spriteset_template_truck_1(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          10,        28,           -4,          -6]
+    [x+ 20,     y,          26,        28,          -17,         -14]
+    [x+ 50,     y,          36,        28,          -32,         -20]
+    [x+ 90,     y,          26,        28,           -9,         -15]
+    [x+120,     y,          10,        28,           -4,         -20]
+    [x+140,     y,          26,        28,          -16,         -16]
+    [x+170,     y,          36,        28,           -4,         -20]
+    [x+210,     y,          26,        28,           -8,         -16]
+}
+
+template template_purchase(x, y) {
+    //[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+    [x,         y,          50,        12,          -25,          -6]
+}
