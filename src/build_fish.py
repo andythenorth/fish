@@ -64,24 +64,15 @@ class Ship(object):
         self.smoke_offset = config.getint(id, 'smoke_offset')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
-        self.graphic_elements, self.cargo_graphics_mapping = get_graphics_stuff(self)
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override
         buy_cost_override = config.getint(self.id, 'buy_cost_override')
         if buy_cost_override == 0:
-            max_power = 900 # a plausible upper limit for hp in this set
-            # costs matched approximately to HEQS; 12 seems to be an appropriate min value, rest of cost is from calculated from hp
-            return 12 + int((float(self.power) / float(max_power)) * 243)
+            # !provide a calculation of cost
+            return 10
         else:
             return buy_cost_override
-
-    def modify_capacities_fifth_wheel_trucks(self):
-        # fifth wheel trucks split part of the capacity of first trailer onto the truck, for TE reasons
-        # the ratio is controlled by a decimal fraction defined as a property of the truck
-        trailer_capacity = self.trailer_capacities[0]
-        self.truck_capacity = truck_capacity = int(trailer_capacity * global_constants.fifth_wheel_truck_quota)
-        self.trailer_capacities[0] = trailer_capacity - truck_capacity
 
     def get_running_cost(self):
         # if buy cost is 0 (i.e. not defined), derive the buy cost, otherwise use the defined cost
@@ -123,7 +114,6 @@ class Ship(object):
             else:
                 optional_truck_cap_info = 'string(STR_EMPTY)'
 
-            trailer_info = self.make_buy_menu_trailer_tree(trailer_details)
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${extra_type_info}), string(STR_BUY_MENU_CONSIST_INFO,${optional_truck_cap_info},${trailer_info}))"
             )
@@ -135,7 +125,7 @@ class Ship(object):
 
 
     def render(self):
-        template = templates['truck_template.pynml']
+        template = templates['ship_template.pynml']
         return template(vehicle = self)
 
 
@@ -146,7 +136,7 @@ for i in config.sections():
         vehicles.append(Ship(id=i))
 
 #compile a single final nml file for the grf
-master_template = templates['bandit.pynml']
+master_template = templates['fish.pynml']
 
 bandit_nml = codecs.open(os.path.join('bandit.nml'),'w','utf8')
 bandit_nml.write(master_template(vehicles=vehicles, repo_vars=repo_vars))

@@ -3,10 +3,9 @@
 <tal:include define="header load: header.pynml" metal:use-macro="header" />
 
 <tal:include define="cargo_table load: cargo_table.nml" metal:use-macro="cargo_table" />
-<tal:include define="disable_default_trucks load: disable_default_trucks.nml" metal:use-macro="disable_default_trucks" />
+<tal:include define="disable_default_ships load: disable_default_ships.nml" metal:use-macro="disable_default_ships" />
 
 <tal:include define="vehicle_offsets load: vehicle_offsets.nml" metal:use-macro="vehicle_offsets" />
-<tal:include define="cargo_subtype_texts load: cargo_subtype_texts.pynml" metal:use-macro="cargo_subtype_texts" />
 
 <tal:build_vehicles repeat="vehicle vehicles">
   <tal:render replace="python:vehicle.render()" />
