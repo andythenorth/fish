@@ -58,10 +58,9 @@ class Ship(object):
         self.non_refittable_classes = global_constants.standard_class_refits['default']['disallow']
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
-        self.model_life = global_constants.model_lives[config.get(id, 'model_life')]
-        self.vehicle_life = global_constants.vehicle_lives[config.get(id, 'vehicle_life')]
+        self.model_life = 999 #global_constants.model_lives[config.get(id, 'model_life')] # ! unfinished
+        self.vehicle_life = 999 #global_constants.vehicle_lives[config.get(id, 'vehicle_life')] # ! unfinished
         self.speed = config.getint(id, 'speed')
-        self.smoke_offset = config.getint(id, 'smoke_offset')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
         self.capacity = 10 # !temp value
