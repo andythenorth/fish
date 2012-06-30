@@ -1,0 +1,14 @@
+// handle graphics
+
+spriteset(${vehicle.id}_ss, "src/graphics/${vehicle.id}.png") {
+  spriteset_template(0, 10)
+}
+
+spritegroup ${vehicle.id}_sg {
+    loaded:  [
+        ${vehicle.id}_ss,
+    ];
+    loading: [
+        ${vehicle.id}_ss,
+    ];
+}

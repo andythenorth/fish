@@ -2,8 +2,7 @@
 
 // -- begin ${vehicle.title} -- <!--! this adds a comment to aid reading the final nml -->
 
-<!--! commented out to make it compile -->
-<!--! <tal:include define="graphics_trucks load: graphics_trucks.pynml" metal:use-macro="graphics_trucks" /> -->
+<tal:include define="graphics_vehicles load: graphics_vehicles.pynml" metal:use-macro="graphics_vehicles" />
 
 
 // -- print some of the vehicle non-nml properties to aid debugging -- //
@@ -20,7 +19,6 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         sprite_id:                      SPRITE_ID_NEW_ROADVEH; //enable new graphics - nml constant
         speed:                          ${vehicle.speed}mph;
         cost_factor:                    ${vehicle.buy_cost};
-        running_cost_base:              RUNNING_COST_ROADVEH;
         running_cost_factor:            ${vehicle.get_running_cost()};
         refittable_cargo_classes:       bitmask(${vehicle.refittable_classes});
         non_refittable_cargo_classes:   bitmask(${vehicle.non_refittable_classes});
@@ -33,9 +31,8 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         vehicle_life:                   ${vehicle.vehicle_life};
     }
     graphics {
-        cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype;
         <!--!additional_text:                ${vehicle.get_buy_menu_string()};-->
-        default:                        ${vehicle.id}_cargo_switch;
+        default:                        ${vehicle.id}_sg;
     }
 }
 
