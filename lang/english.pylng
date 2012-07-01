@@ -6,12 +6,8 @@ STR_GRF_DESCRIPTION                                             :License: {SILVE
 STR_EMPTY                                                       :
 STR_BUY_MENU_X_OFFSET                                           :{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}
 
-STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{BLACK}Propulsion: {GOLD}{STRING}
-STR_BUY_MENU_CONSIST_INFO                                       :{BLACK}Can be refitted to haul:{}{GOLD}{STRING}{STRING}
-STR_ONE_MORE_LINE                                               :{STRING}{}{STRING}
-STR_BUY_MENU_CAP_DRAWBAR_TRUCK                                  :    {COMMA}t with no trailer{}
-STR_BUY_MENU_TRAILER                                            :    {COMMA}t with {COMMA} trailer{P 1 "" s}
-STR_BUY_MENU_TRAILER_NO_REFIT                                   :{BLACK}Hauls: {GOLD}1 trailer
+STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES                                   :{COMMA}{}
 
 <!--! extra buy menu info -->
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel

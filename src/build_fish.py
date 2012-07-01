@@ -94,9 +94,15 @@ class Ship(object):
     def get_buy_menu_string(self):
         # this is an intricate function to set buy menu texts according to various truck properties :P
         from string import Template
-        buy_menu_template = Template(
-            "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_${str_propulsion}))"
-        )
+        if self.capacity_pax > 0 and self.capacity_freight > 0:
+            buy_menu_template = Template(
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES,52), string(STR_${str_propulsion}))"
+            )
+        else:
+            buy_menu_template = Template(
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY), string(STR_${str_propulsion}))"
+            )
+
         return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion)
 
     def render(self):
