@@ -68,6 +68,8 @@ class Ship(object):
         self.offsets = []
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])
+        self.str_type_info = config.get(id, 'str_type_info').upper()
+        self.str_propulsion = config.get(id, 'str_propulsion').upper()
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override
@@ -89,44 +91,10 @@ class Ship(object):
     def get_buy_menu_string(self):
         # this is an intricate function to set buy menu texts according to various truck properties :P
         from string import Template
-        extra_type_info = 'STR_' + self.extra_type_info
-
-        if self.truck_type == 'solo_truck':
-            # for solo trucks, no need to calculate trailer capacites
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${extra_type_info}), string(STR_EMPTY))"
-            )
-            return buy_menu_template.substitute(extra_type_info=extra_type_info)
-        elif self.truck_type == 'fifth_wheel_truck' and self.num_trailers == 1:
-            #fifth wheel trucks with just one trailer are not refittable
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${extra_type_info}), string(STR_BUY_MENU_TRAILER_NO_REFIT))"
-            )
-            return buy_menu_template.substitute(extra_type_info=extra_type_info)
-        else:
-            # for articulated trucks, we'll want the capacities
-            trailer_details = []
-            cumulative_capacity = (0, self.truck_capacity)[self.truck_type=='drawbar_truck']
-            # we get the capacities out of the config, not from the vehicle props (because fifth wheel trucks split capacity prop on first trailer with truck TE reasons)
-            for i, x in enumerate (config_option_to_list_of_ints(config.get(self.id, 'trailer_capacities'))):
-                cumulative_capacity = cumulative_capacity + x
-                trailer_details.append((cumulative_capacity, i+1))
-
-            # for drawbar trucks we also show truck capacity with no trailers
-            if self.truck_type == 'drawbar_truck':
-                optional_truck_cap_info = 'string(STR_BUY_MENU_CAP_DRAWBAR_TRUCK,' + str(self.truck_capacity) + ')'
-            else:
-                optional_truck_cap_info = 'string(STR_EMPTY)'
-
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${extra_type_info}), string(STR_BUY_MENU_CONSIST_INFO,${optional_truck_cap_info},${trailer_info}))"
-            )
-            return buy_menu_template.substitute(
-                extra_type_info=extra_type_info,
-                optional_truck_cap_info = optional_truck_cap_info,
-                trailer_info=trailer_info
-            )
-
+        buy_menu_template = Template(
+            "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_${str_propulsion}))"
+        )
+        return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion)
 
     def render(self):
         template = templates['ship_template.pynml']

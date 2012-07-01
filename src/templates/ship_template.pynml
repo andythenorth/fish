@@ -31,7 +31,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         vehicle_life:                   ${vehicle.vehicle_life};
     }
     graphics {
-        <!--!additional_text:                ${vehicle.get_buy_menu_string()};-->
+        additional_text:                ${vehicle.get_buy_menu_string()};
         default:                        ${vehicle.id}_sg;
         purchase:                       ${vehicle.id}_sg_purchase;
     }
