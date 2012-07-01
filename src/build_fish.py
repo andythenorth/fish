@@ -64,6 +64,10 @@ class Ship(object):
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
         self.capacity = 10 # !temp value
+        self.offsets = []
+        for i in config.get(id, 'offsets').split('|'):
+            self.offsets.append([int(j) for j in i.split(' ')])
+        print self.offsets
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override

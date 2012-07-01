@@ -5,8 +5,6 @@
 <tal:include define="cargo_table load: cargo_table.nml" metal:use-macro="cargo_table" />
 <tal:include define="disable_default_ships load: disable_default_ships.nml" metal:use-macro="disable_default_ships" />
 
-<tal:include define="vehicle_offsets load: vehicle_offsets.nml" metal:use-macro="vehicle_offsets" />
-
 <tal:build_vehicles repeat="vehicle vehicles">
   <tal:render replace="python:vehicle.render()" />
 </tal:build_vehicles>
