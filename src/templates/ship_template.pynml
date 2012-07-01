@@ -29,7 +29,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         sound_effect:                   SOUND_TRUCK_START_2; //nml constant - likely this will be replaced by python global vars
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->
         introduction_date:              date(${vehicle.intro_date},01,01); // config just supplies intro year - openttd randomises intro dates a bit anyway
-        cargo_capacity:                 ${vehicle.capacity_pax}; // ! temp, needs to be specific to ship refittability
+        cargo_capacity:                 ${vehicle.get_default_cargo_capacity()};
         sprite_id:                      SPRITE_ID_NEW_ROADVEH; //enable new graphics - nml constant
         speed:                          ${vehicle.speed}mph;
         ocean_speed_fraction:           ${vehicle.get_ocean_speed()};
@@ -52,6 +52,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
         purchase_speed:                 ${vehicle.get_speeds_adjusted_for_load_amount()[4]};
         cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
+        purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         additional_text:                ${vehicle.get_buy_menu_string()};
         default:                        ${vehicle.id}_sg;
         purchase:                       ${vehicle.id}_sg_purchase;

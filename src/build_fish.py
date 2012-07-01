@@ -113,6 +113,15 @@ class Ship(object):
         else:
             return self.run_cost_override
 
+    def get_default_cargo_capacity(self):
+        # the default capacity should be determined with respect to the default cargo
+        if self.default_cargo == 'PASS':
+            return self.capacity_pax
+        elif self.default_cargo == 'MAIL':
+            return self.capacity_mail
+        else:
+            return self.capacity_freight
+
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ships capacities for various types of cargo
         # assumes (1) freight ships refittable to most classes (2) that certain combinations of capacity don't need to be handled
