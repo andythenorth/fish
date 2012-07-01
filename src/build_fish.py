@@ -52,7 +52,7 @@ class Ship(object):
 
         #setup properties for this vehicle
         self.title = config.get(id, 'title')
-        self.numeric_id = config.getint(id, 'numeric_id')
+        self.numeric_id = config.get(id, 'numeric_id')
         self.intro_date = config.getint(id, 'intro_date')
         self.model_life = config.getint(id, 'vehicle_life')
         if self.model_life == 255:
