@@ -38,8 +38,8 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         running_cost_factor:            ${vehicle.get_running_cost()};
         refit_cost:                     0;
         is_refittable:                  1;
-        refittable_cargo_classes:       bitmask(${vehicle.refittable_classes});
-        non_refittable_cargo_classes:   bitmask(${vehicle.non_refittable_classes});
+        refittable_cargo_classes:       bitmask(${vehicle.get_refittable_classes()['allow']});
+        non_refittable_cargo_classes:   bitmask(${vehicle.get_refittable_classes()['disallow']});
         cargo_allow_refit:              [${vehicle.allowed_cargos}];
         cargo_disallow_refit:           [${vehicle.disallowed_cargos}];
         default_cargo_type:             ${vehicle.default_cargo};

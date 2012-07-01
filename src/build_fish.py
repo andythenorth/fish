@@ -67,8 +67,6 @@ class Ship(object):
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
         self.default_cargo = config.get(id, 'default_cargo')
-        self.refittable_classes = global_constants.standard_class_refits['default']['allow']
-        self.non_refittable_classes = global_constants.standard_class_refits['default']['disallow']
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
         self.buy_menu_offsets = [int(i) for i in config.get(id, 'buy_menu_offsets').split(' ')]
@@ -114,6 +112,20 @@ class Ship(object):
             return 10 # !temp value
         else:
             return self.run_cost_override
+
+    def get_refittable_classes(self):
+        # work out which classes are refittable based on the ships capacities for various types of cargo
+        # assumes (1) freight ships refittable to most classes (2) that certain combinations of capacity don't need to be handled
+        if self.capacity_pax > 0 and self.capacity_mail > 0 and self.capacity_freight > 0:
+            return global_constants.standard_class_refits['all_but_pax_mail']
+        elif self.capacity_pax == 0 and self.capacity_mail == 0:
+            return global_constants.standard_class_refits['all_but_pax_mail']
+        elif self.capacity_pax == 0 and self.capacity_mail > 0:
+            return global_constants.standard_class_refits['all_but_pax']
+        elif self.capacity_pax > 0 and self.capacity_mail > 0 and self.capacity_freight == 0 :
+            return global_constants.standard_class_refits['pax_mail_only']
+        else:
+            raise # must be a combination I haven't thought of, or user error in the config
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
