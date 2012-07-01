@@ -63,6 +63,9 @@ class Ship(object):
         self.speed = config.getint(id, 'speed')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
+        self.capacity_pax = config.getint(id, 'capacity_pax')
+        self.capacity_mail = config.getint(id, 'capacity_mail')
+        self.capacity_freight = config.getint(id, 'capacity_freight')
         self.capacity = 10 # !temp value
         self.buy_menu_offsets = [int(i) for i in config.get(id, 'buy_menu_offsets').split(' ')]
         self.offsets = []
