@@ -64,10 +64,10 @@ class Ship(object):
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
         self.capacity = 10 # !temp value
+        self.buy_menu_offsets = [int(i) for i in config.get(id, 'buy_menu_offsets').split(' ')]
         self.offsets = []
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])
-        print self.offsets
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override
@@ -142,9 +142,9 @@ for i in config.sections():
 #compile a single final nml file for the grf
 master_template = templates['fish.pynml']
 
-bandit_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
-bandit_nml.write(master_template(vehicles=vehicles, repo_vars=repo_vars))
-bandit_nml.close()
+grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
+grf_nml.write(master_template(vehicles=vehicles, repo_vars=repo_vars))
+grf_nml.close()
 
 
 #compile strings to single lang file (english only at the moment, but i18n translation is possible)

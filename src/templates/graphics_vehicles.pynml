@@ -24,3 +24,30 @@ spritegroup ${vehicle.id}_sg {
         ${vehicle.id}_ss,
     ];
 }
+
+// buy menu graphics
+
+template spriteset_template_purchase() {
+    //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
+    [0,0,1,1,0,0]
+    [0,0,1,1,0,0]
+    [0,0,1,1,0,0]
+    [0,0,1,1,0,0]
+    [0,0,1,1,0,0]
+    [0,0,1,1,0,0]
+    [${vehicle.buy_menu_offsets[0]}, ${vehicle.buy_menu_offsets[1]}, ${vehicle.buy_menu_offsets[2]}, ${vehicle.buy_menu_offsets[3]}, ${vehicle.buy_menu_offsets[4]}, ${vehicle.buy_menu_offsets[5]}]
+    [0,0,1,1,0,0]
+}
+
+spriteset(${vehicle.id}_ss_purchase, "src/graphics/${vehicle.id}.png") {
+  spriteset_template_purchase()
+}
+
+spritegroup ${vehicle.id}_sg_purchase {
+    loaded:  [
+        ${vehicle.id}_ss_purchase,
+    ];
+    loading: [
+        ${vehicle.id}_ss_purchase,
+    ];
+}

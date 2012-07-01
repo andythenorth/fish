@@ -4,16 +4,7 @@ STR_GRF_NAME                                                    :FISH FISH - com
 STR_GRF_DESCRIPTION                                             :License: {SILVER}GPL v2{}{BLACK}
 
 STR_EMPTY                                                       :
-
-STR_CARGO_REFIT_0_TRAILER                                       :(No trailer)
-STR_CARGO_REFIT_0_TRAILERS                                      :(No trailers)
-STR_CARGO_REFIT_1_TRAILER                                       :(1 trailer)
-STR_CARGO_REFIT_2_TRAILERS                                      :(2 trailers)
-STR_CARGO_REFIT_3_TRAILERS                                      :(3 trailers)
-
-STR_local                                                       :Truck type: {GOLD}Local{}
-STR_line_haul                                                   :Truck type: {GOLD}Line-haul{}
-STR_special_duty                                                :Truck type: {GOLD}Special Duty{}
+STR_BUY_MENU_X_OFFSET                                           :{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}
 
 STR_BUY_MENU_TEXT                                               :{STRING}{STRING}
 STR_BUY_MENU_CONSIST_INFO                                       :{BLACK}Can be refitted to haul:{}{GOLD}{STRING}{STRING}
@@ -24,5 +15,5 @@ STR_BUY_MENU_TRAILER_NO_REFIT                                   :{BLACK}Hauls: {
 
 
 
-STR_NAME_josephine_utility_vessel                                          :Josephine Utility Vessel
+STR_NAME_josephine_utility_vessel                                          :{STRING}Josephine Utility Vessel
 

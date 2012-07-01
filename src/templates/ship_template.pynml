@@ -10,7 +10,7 @@
 
 item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
     property {
-        name:                           string(STR_NAME_${vehicle.id});
+        name:                           string(STR_NAME_${vehicle.id},string(STR_BUY_MENU_X_OFFSET));
         climates_available:             ALL_CLIMATES; // nml constant
         sound_effect:                   SOUND_TRUCK_START_2; //nml constant - likely this will be replaced by python global vars
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->
@@ -33,6 +33,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
     graphics {
         <!--!additional_text:                ${vehicle.get_buy_menu_string()};-->
         default:                        ${vehicle.id}_sg;
+        purchase:                       ${vehicle.id}_sg_purchase;
     }
 }
 
