@@ -1,8 +1,8 @@
 # trucks refit to quite standard sets of cargos.  The main reason for variation is to provide gameplay difference between truck models
 standard_class_refits = {
   'default' : {
-        'allow'    : 'CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
-        'disallow' : 'CC_PASSENGERS',
+        'allow'    : 'CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
+        'disallow' : '',
   }
 }
 
