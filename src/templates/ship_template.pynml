@@ -42,7 +42,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         non_refittable_cargo_classes:   bitmask(${vehicle.non_refittable_classes});
         cargo_allow_refit:              [${vehicle.allowed_cargos}];
         cargo_disallow_refit:           [${vehicle.disallowed_cargos}];
-        default_cargo_type:             GOOD;
+        default_cargo_type:             ${vehicle.default_cargo};
         loading_speed:                  5;
         misc_flags:                     bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_AUTOREFIT); // nml constants
         model_life:                     ${vehicle.model_life};

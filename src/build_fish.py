@@ -66,6 +66,7 @@ class Ship(object):
         self.capacity_pax = config.getint(id, 'capacity_pax')
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
+        self.default_cargo = config.get(id, 'default_cargo')
         self.refittable_classes = global_constants.standard_class_refits['default']['allow']
         self.non_refittable_classes = global_constants.standard_class_refits['default']['disallow']
         self.allowed_cargos = '' # ! unfinished
@@ -115,7 +116,7 @@ class Ship(object):
             return self.run_cost_override
 
     def get_buy_menu_string(self):
-        # this is an intricate function to set buy menu texts according to various truck properties :P
+        # set buy menu text, with various variations
         from string import Template
         if self.capacity_pax > 0 and self.capacity_freight > 0:
             buy_menu_template = Template(

@@ -37,6 +37,7 @@ cargo_body_type_mappings = dict(
     MILK = [],
     MNSP = [],
     OIL_ = [],
+    PASS = [],
     PAPR = [],
     PETR = [],
     PLAS = [],
