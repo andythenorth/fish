@@ -59,7 +59,7 @@ class Ship(object):
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
         self.model_life = 254 #global_constants.model_lives[config.get(id, 'model_life')] # ! unfinished
-        self.vehicle_life = 254 #global_constants.vehicle_lives[config.get(id, 'vehicle_life')] # ! unfinished
+        self.vehicle_life = config.getint(id, 'vehicle_life')
         self.speed = config.getint(id, 'speed')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
