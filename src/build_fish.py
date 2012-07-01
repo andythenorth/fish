@@ -130,7 +130,6 @@ class Ship(object):
         return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion, capacity_pax=self.capacity_pax, capacity_freight=self.capacity_freight)
 
     def render(self):
-        print self.get_speeds_adjusted_for_load_amount()
         template = templates['ship_template.pynml']
         return template(vehicle = self)
 
