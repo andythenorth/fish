@@ -58,7 +58,9 @@ class Ship(object):
         self.non_refittable_classes = global_constants.standard_class_refits['default']['disallow']
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
-        self.model_life = 254 #global_constants.model_lives[config.get(id, 'model_life')] # ! unfinished
+        self.model_life = config.getint(id, 'vehicle_life')
+        if self.model_life == 255:
+            self.model_life = 'VEHICLE_NEVER_EXPIRES'
         self.vehicle_life = config.getint(id, 'vehicle_life')
         self.speed = config.getint(id, 'speed')
         self.buy_cost = self.get_buy_cost()
