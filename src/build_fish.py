@@ -74,6 +74,14 @@ class Ship(object):
             self.offsets.append([int(j) for j in i.split(' ')])
         self.str_type_info = config.get(id, 'str_type_info').upper()
         self.str_propulsion = config.get(id, 'str_propulsion').upper()
+        self.inland_capable = config.getboolean(id, 'inland_capable')
+        self.sea_capable = config.getboolean(id, 'sea_capable')
+
+    def get_ocean_speed(self):
+        return (0.9, 1)[self.sea_capable]
+
+    def get_canal_speed(self):
+        return (0.9, 1)[self.inland_capable]
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override

@@ -23,6 +23,8 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         cargo_capacity:                 ${vehicle.capacity_pax}; // ! temp, needs to be specific to ship refittability
         sprite_id:                      SPRITE_ID_NEW_ROADVEH; //enable new graphics - nml constant
         speed:                          ${vehicle.speed}mph;
+        ocean_speed_fraction:           ${vehicle.get_ocean_speed()};
+        canal_speed_fraction:           ${vehicle.get_canal_speed()};
         cost_factor:                    ${vehicle.buy_cost};
         running_cost_factor:            ${vehicle.get_running_cost()};
         refit_cost:                     0;
