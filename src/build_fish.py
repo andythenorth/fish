@@ -117,7 +117,7 @@ class Ship(object):
         # work out which classes are refittable based on the ships capacities for various types of cargo
         # assumes (1) freight ships refittable to most classes (2) that certain combinations of capacity don't need to be handled
         if self.capacity_pax > 0 and self.capacity_mail > 0 and self.capacity_freight > 0:
-            return global_constants.standard_class_refits['all_but_pax_mail']
+            return global_constants.standard_class_refits['all']
         elif self.capacity_pax == 0 and self.capacity_mail == 0:
             return global_constants.standard_class_refits['all_but_pax_mail']
         elif self.capacity_pax == 0 and self.capacity_mail > 0:
