@@ -54,10 +54,6 @@ class Ship(object):
         self.title = config.get(id, 'title')
         self.numeric_id = config.getint(id, 'numeric_id')
         self.intro_date = config.getint(id, 'intro_date')
-        self.refittable_classes = global_constants.standard_class_refits['default']['allow']
-        self.non_refittable_classes = global_constants.standard_class_refits['default']['disallow']
-        self.allowed_cargos = '' # ! unfinished
-        self.disallowed_cargos = '' # ! unfinished
         self.model_life = config.getint(id, 'vehicle_life')
         if self.model_life == 255:
             self.model_life = 'VEHICLE_NEVER_EXPIRES'
@@ -68,7 +64,10 @@ class Ship(object):
         self.capacity_pax = config.getint(id, 'capacity_pax')
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
-        self.capacity = 10 # !temp value
+        self.refittable_classes = global_constants.standard_class_refits['default']['allow']
+        self.non_refittable_classes = global_constants.standard_class_refits['default']['disallow']
+        self.allowed_cargos = '' # ! unfinished
+        self.disallowed_cargos = '' # ! unfinished
         self.buy_menu_offsets = [int(i) for i in config.get(id, 'buy_menu_offsets').split(' ')]
         self.offsets = []
         for i in config.get(id, 'offsets').split('|'):
