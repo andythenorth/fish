@@ -9,6 +9,7 @@ import sys
 sys.path.append(os.path.join('src')) # add to the module search path
 
 import codecs #used for writing files - more unicode friendly than standard open() module
+import math
 
 from chameleon import PageTemplateLoader
 # setup the places we look for templates
@@ -58,7 +59,8 @@ class Ship(object):
         if self.model_life == 255:
             self.model_life = 'VEHICLE_NEVER_EXPIRES'
         self.vehicle_life = config.getint(id, 'vehicle_life')
-        self.speed = config.getint(id, 'speed')
+        self.speed = config.getfloat(id, 'speed')
+        self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
         self.capacity_pax = config.getint(id, 'capacity_pax')
@@ -82,6 +84,18 @@ class Ship(object):
 
     def get_canal_speed(self):
         return (0.9, 1)[self.inland_capable]
+
+    def get_speeds_adjusted_for_load_amount(self):
+        # ships may travel faster or slower than 'speed' depending on cargo amount
+        speeds_adjusted = (
+            ((self.speed_unladen * 100 + self.speed * 0) * 32 + 9) / 1000,
+            ((self.speed_unladen * 75 + self.speed * 25) * 32 + 9) / 1000,
+            ((self.speed_unladen * 50 + self.speed * 50) * 32 + 9) / 1000,
+            ((self.speed_unladen * 25 + self.speed * 75) * 32 + 9) / 1000,
+            ((self.speed_unladen * 0 + self.speed * 100) * 32 + 9) / 1000,
+        )
+        speeds_adjusted_rounded = [int(math.ceil(i)) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
+        return speeds_adjusted_rounded
 
     def get_buy_cost(self):
         # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override
@@ -115,6 +129,7 @@ class Ship(object):
         return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion, capacity_pax=self.capacity_pax, capacity_freight=self.capacity_freight)
 
     def render(self):
+        print self.get_speeds_adjusted_for_load_amount()
         template = templates['ship_template.pynml']
         return template(vehicle = self)
 
