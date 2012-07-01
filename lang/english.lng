@@ -7,7 +7,7 @@ STR_EMPTY                                                       :
 STR_BUY_MENU_X_OFFSET                                           :{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}
 
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES                                   :{COMMA}{}
+STR_BUY_MENU_REFIT_CAPACITIES                                   :({COMMA} passengers or {COMMA}t of cargo){}
 
 
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
