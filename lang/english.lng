@@ -4,7 +4,7 @@ STR_GRF_NAME                                                    :FISH FISH - com
 STR_GRF_DESCRIPTION                                             :License: {SILVER}GPL v2{}{BLACK}
 
 STR_EMPTY                                                       :
-STR_BUY_MENU_X_OFFSET                                           :{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}{NBSP}
+STR_BUY_MENU_X_OFFSET                                           :
 
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES                                   :({COMMA} passengers or {COMMA}t of cargo){}

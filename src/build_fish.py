@@ -69,7 +69,7 @@ class Ship(object):
         self.default_cargo = config.get(id, 'default_cargo')
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
-        self.buy_menu_offsets = [int(i) for i in config.get(id, 'buy_menu_offsets').split(' ')]
+        self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
         self.offsets = []
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])

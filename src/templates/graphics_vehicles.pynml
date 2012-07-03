@@ -29,7 +29,7 @@ spritegroup ${vehicle.id}_sg {
 
 template spriteset_template_purchase() {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
-    [${vehicle.buy_menu_offsets[0]}, ${vehicle.buy_menu_offsets[1]}, ${vehicle.buy_menu_offsets[2]}, ${vehicle.buy_menu_offsets[3]}, ${vehicle.buy_menu_offsets[4]}, ${vehicle.buy_menu_offsets[5]}]
+    [${vehicle.buy_menu_bb_xy[0]}, ${vehicle.buy_menu_bb_xy[1]}, 70, 22, -35, -10]
 }
 
 spriteset(${vehicle.id}_ss_purchase, "src/graphics/${vehicle.id}.png") {
