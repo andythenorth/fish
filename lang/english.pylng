@@ -4,7 +4,6 @@ STR_GRF_NAME                                                    :FISH ${repo_var
 STR_GRF_DESCRIPTION                                             :License: {SILVER}GPL v2{}{BLACK}
 
 STR_EMPTY                                                       :
-STR_BUY_MENU_X_OFFSET                                           :
 
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES                                   :({COMMA} passengers or {COMMA}t of cargo){}
@@ -15,5 +14,5 @@ STR_OIL_FIRED_STEAM_ENGINE                                      :Oil-fired steam
 
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
-STR_NAME_${vehicle.id}                                          :{STRING}${vehicle.title}
+STR_NAME_${vehicle.id}                                          :${vehicle.title}
 </tal:build_vehicle_names>
