@@ -10,7 +10,10 @@ STR_BUY_MENU_REFIT_CAPACITIES                                   :({COMMA} passen
 
 <!--! extra buy menu info -->
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
+STR_CARGO_HOVERCRAFT                                            :Cargo Hovercraft
+
 STR_OIL_FIRED_STEAM_ENGINE                                      :Oil-fired steam engine
+STR_2_DIESEL                                                    :2x Diesel Engines
 
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">

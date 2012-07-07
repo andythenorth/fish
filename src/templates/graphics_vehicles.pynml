@@ -1,6 +1,6 @@
 // handle graphics
 
-template spriteset_template(y) {
+template spriteset_template_${vehicle.id}(y) {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
     [20,        y,          28,         89,          ${vehicle.offsets[0][0]}, ${vehicle.offsets[0][1]}]
     [60,        y,          113,        66,          ${vehicle.offsets[1][0]}, ${vehicle.offsets[1][1]}]
@@ -13,7 +13,7 @@ template spriteset_template(y) {
 }
 
 spriteset(${vehicle.id}_ss, "src/graphics/${vehicle.id}.png") {
-  spriteset_template(10)
+  spriteset_template_${vehicle.id}(10)
 }
 
 spritegroup ${vehicle.id}_sg {
@@ -27,13 +27,13 @@ spritegroup ${vehicle.id}_sg {
 
 // buy menu graphics
 
-template spriteset_template_purchase() {
+template spriteset_template_purchase_${vehicle.id}() {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
     [${vehicle.buy_menu_bb_xy[0]}, ${vehicle.buy_menu_bb_xy[1]}, 70, 22, -35, -10]
 }
 
 spriteset(${vehicle.id}_ss_purchase, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_purchase()
+  spriteset_template_purchase_${vehicle.id}()
 }
 
 spritegroup ${vehicle.id}_sg_purchase {
