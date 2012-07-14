@@ -99,16 +99,18 @@ spritegroup ${vehicle.id}_sg_tanker_not_moving {
     ];
 }
 
-
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_tanker_graphics, current_speed) {
     0: return ${vehicle.id}_sg_tanker_not_moving;
     return ${vehicle.id}_sg_tanker_moving;
 }
 
+// choose graphics based on cargo class refitted to
+
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, cargo_classes_in_consist) {
     bitmask(CC_LIQUID): return ${vehicle.id}_switch_tanker_graphics;
     return ${vehicle.id}_switch_gcv_graphics;
 }
+
 
 // buy menu graphics
 
