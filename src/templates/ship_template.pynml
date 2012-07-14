@@ -4,6 +4,7 @@
 
 <tal:include condition="vehicle.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
 <tal:include condition="vehicle.graphics_template=='hydrofoil'" define="graphics_hydrofoil load: graphics_hydrofoil.pynml" metal:use-macro="graphics_hydrofoil" />
+<tal:include condition="vehicle.graphics_template=='2_visible_cargo_states'" define="graphics_2_visible_cargo_states load: graphics_2_visible_cargo_states.pynml" metal:use-macro="graphics_2_visible_cargo_states" />
 
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes_in_consist) {
     bitmask(CC_PASSENGERS): return ${vehicle.capacity_pax};

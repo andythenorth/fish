@@ -73,6 +73,5 @@ BUY_MENU_X_OFFSET = 'NBSP'
 
 # provide a private method for turning vehicles off during development without modifying the config file. Bound to go wrong. :P
 vehicles_turned_off = (
-    'porcupine_thirty_hovercraft',
 )
 
