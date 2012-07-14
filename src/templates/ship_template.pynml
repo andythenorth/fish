@@ -29,7 +29,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
     property {
         name:                           string(STR_NAME_${vehicle.id});
         climates_available:             ALL_CLIMATES; // nml constant
-        sound_effect:                   SOUND_TRUCK_START_2; //nml constant - likely this will be replaced by python global vars
+        sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[vehicle.default_cargo=='PASS']};
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->
         introduction_date:              date(${vehicle.intro_date},01,01); // config just supplies intro year - openttd randomises intro dates a bit anyway
         cargo_capacity:                 ${vehicle.get_default_cargo_capacity()};
