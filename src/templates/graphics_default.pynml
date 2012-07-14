@@ -25,15 +25,31 @@ spriteset(${vehicle.id}_ss_loaded_moving, "src/graphics/${vehicle.id}.png") {
   spriteset_template_${vehicle.id}(610)
 }
 
-spritegroup ${vehicle.id}_sg {
+spritegroup ${vehicle.id}_sg_moving {
     loaded:  [
         ${vehicle.id}_ss_not_loaded_moving,
         ${vehicle.id}_ss_loaded_moving,
+    ];
+    loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
+        ${vehicle.id}_ss_not_loaded_moving,
+        ${vehicle.id}_ss_loaded_moving,
+    ];
+}
+
+spritegroup ${vehicle.id}_sg_not_moving {
+    loaded:  [
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_loaded_not_moving,
     ];
     loading: [
         ${vehicle.id}_ss_not_loaded_not_moving,
         ${vehicle.id}_ss_loaded_not_moving,
     ];
+}
+
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, current_speed) {
+    0: return ${vehicle.id}_sg_not_moving;
+    return ${vehicle.id}_sg_moving;
 }
 
 // buy menu graphics

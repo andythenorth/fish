@@ -54,7 +54,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
         purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         additional_text:                ${vehicle.get_buy_menu_string()};
-        default:                        ${vehicle.id}_sg;
+        default:                        ${vehicle.id}_switch_graphics;
         purchase:                       ${vehicle.id}_sg_purchase;
     }
 }
