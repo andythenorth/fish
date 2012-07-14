@@ -62,6 +62,8 @@ class Ship(object):
         self.vehicle_life = config.getint(id, 'vehicle_life')
         self.speed = config.getfloat(id, 'speed')
         self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
+        self.fixed_run_cost_factor = config.getfloat(id, 'fixed_run_cost')
+        self.fuel_run_cost_factor = config.getfloat(id, 'fuel_run_cost')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
         self.capacity_pax = config.getint(id, 'capacity_pax')
