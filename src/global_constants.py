@@ -69,7 +69,6 @@ cargo_body_type_mappings = dict(
 )
 
 graphics_path = 'src/graphics/' # this is for nml, don't need to use python path module here
-BUY_MENU_X_OFFSET = 'NBSP'
 FIXED_RUN_COST = 500.0
 FUEL_RUN_COST = 10.0
 
