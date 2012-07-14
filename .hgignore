@@ -43,3 +43,7 @@ Thumbs.db
 # Don't add python .pyc and .pyo files
 *.pyc
 *.pyo
+
+# Things I am hacking with that are not of use to other people
+misc/tasks
+misc/pyramid_buildout
