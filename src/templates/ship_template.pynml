@@ -2,7 +2,8 @@
 
 // -- begin ${vehicle.title} -- <!--! this adds a comment to aid reading the final nml -->
 
-<tal:include define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
+<tal:include condition="vehicle.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
+<tal:include condition="vehicle.graphics_template=='hydrofoil'" define="graphics_hydrofoil load: graphics_hydrofoil.pynml" metal:use-macro="graphics_hydrofoil" />
 
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes_in_consist) {
     bitmask(CC_PASSENGERS): return ${vehicle.capacity_pax};
