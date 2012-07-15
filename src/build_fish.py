@@ -62,11 +62,11 @@ class Ship(object):
         self.vehicle_life = config.getint(id, 'vehicle_life')
         self.speed = config.getfloat(id, 'speed')
         self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
+        self.buy_cost = config.getint(id, 'buy_cost')
         self.fixed_run_cost_factor = config.getfloat(id, 'fixed_run_cost')
         self.fuel_run_cost_factor = config.getfloat(id, 'fuel_run_cost')
         self.gross_tonnage = config.getint(id, 'gross_tonnage')
-        self.buy_cost = self.get_buy_cost()
-        self.run_cost_override = config.getfloat(id, 'run_cost_override')
+        self.run_cost_override = config.getint(id, 'run_cost_override')
         self.capacity_pax = config.getint(id, 'capacity_pax')
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
@@ -100,15 +100,6 @@ class Ship(object):
         )
         speeds_adjusted_rounded = [int(math.ceil(i)) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
         return speeds_adjusted_rounded
-
-    def get_buy_cost(self):
-        # if buy cost override is 0 (i.e. not defined), calculate the buy cost, otherwise use the value of cost override
-        buy_cost_override = config.getint(self.id, 'buy_cost_override')
-        if buy_cost_override == 0:
-            # !provide a calculation of cost
-            return 10 # !temp value
-        else:
-            return buy_cost_override
 
     def get_running_cost(self):
         # if buy cost is 0 (i.e. not defined), derive the buy cost, otherwise use the defined cost
