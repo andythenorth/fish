@@ -105,7 +105,9 @@ class Ship(object):
         buy_cost_override = config.getint(self.id, 'buy_cost_override')
         if buy_cost_override == 0:
             # !provide a calculation of cost
-            return (self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST) + (self.fuel_run_cost_factor * global_constants.FUEL_RUN_COST)
+            fixed_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
+            fuel_cost =  self.fuel_run_cost_factor * self.gross_tonnage * global_constants.FUEL_RUN_COST
+            return (fixed_cost + fuel_cost) / 80 # divide by magic constant to get costs as factor in 0-255 range
         else:
             return buy_cost_override
 
