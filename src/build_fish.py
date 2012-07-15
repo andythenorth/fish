@@ -64,6 +64,7 @@ class Ship(object):
         self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
         self.fixed_run_cost_factor = config.getfloat(id, 'fixed_run_cost')
         self.fuel_run_cost_factor = config.getfloat(id, 'fuel_run_cost')
+        self.gross_tonnage = config.getint(id, 'gross_tonnage')
         self.buy_cost = self.get_buy_cost()
         self.run_cost_override = config.getfloat(id, 'run_cost_override')
         self.capacity_pax = config.getint(id, 'capacity_pax')
@@ -104,7 +105,7 @@ class Ship(object):
         buy_cost_override = config.getint(self.id, 'buy_cost_override')
         if buy_cost_override == 0:
             # !provide a calculation of cost
-            return 10
+            return (self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST) + (self.fuel_run_cost_factor * global_constants.FUEL_RUN_COST)
         else:
             return buy_cost_override
 
