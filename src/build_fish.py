@@ -66,7 +66,6 @@ class Ship(object):
         self.fixed_run_cost_factor = config.getfloat(id, 'fixed_run_cost')
         self.fuel_run_cost_factor = config.getfloat(id, 'fuel_run_cost')
         self.gross_tonnage = config.getint(id, 'gross_tonnage')
-        self.run_cost_override = config.getint(id, 'run_cost_override')
         self.capacity_pax = config.getint(id, 'capacity_pax')
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
@@ -102,15 +101,11 @@ class Ship(object):
         return speeds_adjusted_rounded
 
     def get_running_cost(self):
-        # if buy cost is 0 (i.e. not defined), derive the buy cost, otherwise use the defined cost
-        if self.run_cost_override == 0:
-            # calculate a running cost
-            fixed_run_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
-            fuel_run_cost =  self.fuel_run_cost_factor * self.gross_tonnage * global_constants.FUEL_RUN_COST
-            calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 49) # divide by magic constant to get costs as factor in 0-255 range
-            return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
-        else:
-            return self.run_cost_override
+        # calculate a running cost
+        fixed_run_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
+        fuel_run_cost =  self.fuel_run_cost_factor * self.gross_tonnage * global_constants.FUEL_RUN_COST
+        calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 49) # divide by magic constant to get costs as factor in 0-255 range
+        return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
 
     def get_default_cargo_capacity(self):
         # the default capacity should be determined with respect to the default cargo
