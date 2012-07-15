@@ -6,3 +6,7 @@ grf {
 	version: ${repo_vars.repo_version};
 	min_compatible_version: 1;
 }
+
+basecost {
+ 	PR_RUNNING_SHIP: 1;
+}

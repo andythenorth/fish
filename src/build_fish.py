@@ -106,17 +106,18 @@ class Ship(object):
         buy_cost_override = config.getint(self.id, 'buy_cost_override')
         if buy_cost_override == 0:
             # !provide a calculation of cost
-            fixed_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
-            fuel_cost =  self.fuel_run_cost_factor * self.gross_tonnage * global_constants.FUEL_RUN_COST
-            return (fixed_cost + fuel_cost) / 80 # divide by magic constant to get costs as factor in 0-255 range
+            return 10 # !temp value
         else:
             return buy_cost_override
 
     def get_running_cost(self):
         # if buy cost is 0 (i.e. not defined), derive the buy cost, otherwise use the defined cost
         if self.run_cost_override == 0:
-            # calculate a running cost based on power and a multiplier value
-            return 10 # !temp value
+            # calculate a running cost
+            fixed_run_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
+            fuel_run_cost =  self.fuel_run_cost_factor * self.gross_tonnage * global_constants.FUEL_RUN_COST
+            calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 49) # divide by magic constant to get costs as factor in 0-255 range
+            return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
         else:
             return self.run_cost_override
 
