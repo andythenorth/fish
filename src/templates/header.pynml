@@ -9,4 +9,5 @@ grf {
 
 basecost {
  	PR_RUNNING_SHIP: 1;
+ 	PR_BUILD_VEHICLE_SHIP: 2;
 }
