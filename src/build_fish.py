@@ -71,6 +71,7 @@ class Ship(object):
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
         self.default_cargo = config.get(id, 'default_cargo')
+        self.loading_speed = config.get(id, 'loading_speed')
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
