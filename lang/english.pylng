@@ -5,10 +5,10 @@ STR_GRF_DESCRIPTION                                             :License: {SILVE
 
 STR_EMPTY                                                       :
 
+<!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES                                   :({COMMA} passengers or {COMMA}t of cargo){}
 
-<!--! extra buy menu info -->
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
 STR_CARGO_HOVERCRAFT                                            :Cargo hovercraft
 STR_COASTER                                                     :Coaster
@@ -25,6 +25,11 @@ STR_2_MARINE_GAS_TURBINE                                        :2 marine gas tu
 STR_4_DIESEL                                                    :4 diesel engines
 STR_COMPOUND_STEAM                                              :Compound steam engine
 STR_DIESEL                                                      :Diesel engine
+
+<!--! subtypes for refit menu -->
+STR_TANKER                                                      : - in tanks
+STR_CABINS                                                      : - in cabins
+STR_CARGO_HOLDS                                                 : - in cargo holds
 
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
