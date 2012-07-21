@@ -132,9 +132,5 @@ spritegroup ${vehicle.id}_sg_purchase {
     ];
 }
 
-// -- handle subtype strings, used to aid players understand auto-refitting -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes_in_consist) {
-    bitmask(CC_LIQUID): return string(STR_TANKER);
-    bitmask(CC_PASSENGERS): return string(STR_CABINS);
-    return string(STR_CARGO_HOLDS);
-}
+// handle autorefit (and associated subtype strings)
+<tal:include define="autorefit_some_similar_classes load: autorefit_some_similar_classes.pynml" metal:use-macro="autorefit_some_similar_classes" />

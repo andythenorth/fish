@@ -1,0 +1,11 @@
+// autorefits by class (strict match, must be only class set for a cargo)
+// liquid <-> liquid
+// pax <-> pax
+// any other <-> any other
+
+// -- handle subtype strings, used to aid players understand auto-refitting -- //
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes_in_consist) {
+    bitmask(CC_LIQUID): return string(STR_TANKER);
+    bitmask(CC_PASSENGERS): return string(STR_CABINS);
+    return string(STR_CARGO_HOLDS);
+}
