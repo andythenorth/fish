@@ -27,9 +27,9 @@ STR_COMPOUND_STEAM                                              :Compound steam 
 STR_DIESEL                                                      :Diesel engine
 
 <!--! subtypes for refit menu -->
-STR_TANKER                                                      : - in tanks
-STR_CABINS                                                      : - in cabins
-STR_CARGO_HOLDS                                                 : - in cargo holds
+STR_TANKER                                                      :{LTBLUE} (in tanks)
+STR_CABINS                                                      :{LTBLUE} (in cabins)
+STR_CARGO_HOLDS                                                 :{LTBLUE} (in cargo holds)
 
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
