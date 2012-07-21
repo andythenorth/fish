@@ -9,3 +9,9 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes
     bitmask(CC_PASSENGERS): return string(STR_CABINS);
     return string(STR_CARGO_HOLDS);
 }
+
+// -- handle autorefitting -- //
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, cargo_classes_in_consist) {
+    return CB_RESULT_AUTOREFIT;
+}
+

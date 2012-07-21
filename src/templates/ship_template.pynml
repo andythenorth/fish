@@ -50,7 +50,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         cargo_disallow_refit:           [${vehicle.disallowed_cargos}];
         default_cargo_type:             ${vehicle.default_cargo};
         loading_speed:                  ${vehicle.loading_speed};
-        misc_flags:                     bitmask(ROADVEH_FLAG_2CC, ROADVEH_FLAG_AUTOREFIT); // nml constants
+        misc_flags:                     bitmask(SHIP_FLAG_2CC); // nml constants
         model_life:                     ${vehicle.model_life};
         vehicle_life:                   ${vehicle.vehicle_life};
     }
@@ -58,9 +58,10 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
         purchase_speed:                 ${vehicle.get_speeds_adjusted_for_load_amount()[4]};
         cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
-        cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
         purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         additional_text:                ${vehicle.get_buy_menu_string()};
+        cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
+        refit_cost:                     ${vehicle.id}_switch_refit_cost;
         default:                        ${vehicle.id}_switch_graphics;
         purchase:                       ${vehicle.id}_sg_purchase;
     }
