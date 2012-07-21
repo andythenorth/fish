@@ -15,14 +15,6 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes_in_
 }
 
 
-// -- handle subtype strings, used to aid players understand auto-refitting -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes_in_consist) {
-    bitmask(CC_LIQUID): return string(STR_TANKER);
-    bitmask(CC_PASSENGERS): return string(STR_CABINS);
-    return string(STR_CARGO_HOLDS);
-}
-
-
 // -- set speed a little higher than rated speed when unladen -- //
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_speed_varies_with_load_amount, cargo_count*100/cargo_capacity) {
     0 : ${vehicle.get_speeds_adjusted_for_load_amount()[0]};
