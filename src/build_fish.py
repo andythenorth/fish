@@ -160,7 +160,10 @@ master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
 # an ugly hack here because chameleon html escapes the & characters needed by nml
-grf_nml.write('&'.join(master_template(vehicles=vehicles, repo_vars=repo_vars).split('$AMPERSAND')))
+templated_nml = master_template(vehicles=vehicles, repo_vars=repo_vars)
+templated_nml = '>'.join(templated_nml.split('$ANGLEBRACKETRIGHT'))
+templated_nml = '&'.join(templated_nml.split('$AMPERSAND'))
+grf_nml.write(templated_nml)
 grf_nml.close()
 
 

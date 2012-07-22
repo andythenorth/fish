@@ -1,4 +1,4 @@
-// autorefits by class (strict match, must be only class set for a cargo)
+// autorefits, some classes limited (strict match, must be only class set for a cargo)
 // liquid <-> liquid
 // pax <-> pax
 // any other <-> any other
@@ -11,7 +11,24 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes
 }
 
 // -- handle autorefitting -- //
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_liquid, extra_callback_info1 $ANGLEBRACKETRIGHT$ANGLEBRACKETRIGHT  16) {
+    bitmask(CC_LIQUID): return 0 + CB_RESULT_AUTOREFIT;
+    return 0;
+}
+
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_pax, extra_callback_info1 $ANGLEBRACKETRIGHT$ANGLEBRACKETRIGHT 16) {
+    return 0 + CB_RESULT_AUTOREFIT;
+}
+
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_other, extra_callback_info1 $ANGLEBRACKETRIGHT$ANGLEBRACKETRIGHT 16) {
+    bitmask(CC_LIQUID): return 0;
+    bitmask(CC_PASSENGERS): return 0;
+    return 0 + CB_RESULT_AUTOREFIT;
+}
+
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, cargo_classes_in_consist) {
-    return CB_RESULT_AUTOREFIT;
+    bitmask(CC_LIQUID): ${vehicle.id}_switch_refit_cost_liquid;
+    bitmask(CC_PASSENGERS): ${vehicle.id}_switch_refit_cost_pax;
+    return ${vehicle.id}_switch_refit_cost_other;
 }
 

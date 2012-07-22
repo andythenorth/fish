@@ -4,7 +4,6 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes
 }
 
 // -- handle autorefitting -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, cargo_classes_in_consist) {
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, 0) {
     return 0 + CB_RESULT_AUTOREFIT;
 }
-
