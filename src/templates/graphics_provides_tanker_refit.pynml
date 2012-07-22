@@ -106,7 +106,7 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_tanker_graphics, current_speed) {
 
 // choose graphics based on cargo class refitted to
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, cargo_classes_in_consist) {
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, cargo_classes) {
     bitmask(CC_LIQUID): return ${vehicle.id}_switch_tanker_graphics;
     return ${vehicle.id}_switch_gcv_graphics;
 }

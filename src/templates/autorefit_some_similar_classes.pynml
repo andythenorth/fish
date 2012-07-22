@@ -11,17 +11,20 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes
 }
 
 // -- handle autorefitting -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_liquid, (extra_callback_info1 >> 16) & bitmask(CC_LIQUID)) {
-    bitmask(CC_LIQUID): return 4 + CB_RESULT_AUTOREFIT;
-    return 2;
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_liquid, extra_callback_info1 >> 16) {
+    bitmask(CC_LIQUID): return 0 + CB_RESULT_AUTOREFIT;
+    return 0;
 }
 
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_pax, extra_callback_info1 >> 16) {
-    return 3;
+    bitmask(CC_PASSENGERS): return 0 + CB_RESULT_AUTOREFIT;
+    return 0;
 }
 
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost_other, extra_callback_info1 >> 16) {
-    return 1;
+    bitmask(CC_LIQUID): return 0;
+    bitmask(CC_PASSENGERS): return 0;
+    return 0 + CB_RESULT_AUTOREFIT;
 }
 
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, cargo_classes) {

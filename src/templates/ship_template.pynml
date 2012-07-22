@@ -8,7 +8,7 @@
 <tal:include condition="vehicle.graphics_template=='provides_tanker_refit'" define="graphics_provides_tanker_refit load: graphics_provides_tanker_refit.pynml" metal:use-macro="graphics_provides_tanker_refit" />
 
 // -- capacity varies according to cargo class -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes_in_consist) {
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes) {
     bitmask(CC_PASSENGERS): return ${vehicle.capacity_pax};
     bitmask(CC_MAIL): return ${vehicle.capacity_mail};
     return ${vehicle.capacity_freight};

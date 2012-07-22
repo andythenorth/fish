@@ -1,5 +1,5 @@
 // -- handle subtype strings, used to aid players understand auto-refitting -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes_in_consist) {
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes) {
     return string(STR_EMPTY);
 }
 
