@@ -32,4 +32,3 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, cargo_classes) {
     bitmask(CC_PASSENGERS): ${vehicle.id}_switch_refit_cost_pax;
     return ${vehicle.id}_switch_refit_cost_other;
 }
-
