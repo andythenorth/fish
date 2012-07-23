@@ -1,21 +1,9 @@
 # vehicles refit to quite standard sets of cargos.  The main reason for variation is to provide gameplay difference between vehicle models
 standard_class_refits = {
-  'pax_mail_liquid_freight' : {
-        'allow'    : 'CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
-        'disallow' : '',
-  },
-  'liquid_freight' : {
-        'allow'    : 'CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
-        'disallow' : 'CC_PASSENGERS, CC_MAIL',
-  },
-  'mail_liquid_freight' : {
-        'allow'    : 'CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
-        'disallow' : 'CC_PASSENGERS',
-  },
-  'pax_mail' : {
-        'allow'    : 'CC_PASSENGERS, CC_MAIL',
-        'disallow' : 'CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
-  }
+  'freight' : ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
+  'liquid' : ['CC_LIQUID'],
+  'pax' : ['CC_PASSENGERS'],
+  'mail' : ['CC_MAIL'],
 }
 
 # ! hangover code from BANDIT; can be used in future to match cargos to specific graphic variations
