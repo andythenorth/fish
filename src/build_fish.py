@@ -70,6 +70,7 @@ class Ship(object):
         self.capacity_pax = config.getint(id, 'capacity_pax')
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_freight = config.getint(id, 'capacity_freight')
+        self.capacity_liquid = 0 #config.getint(id, 'capacity_liquid')
         self.default_cargo = config.get(id, 'default_cargo')
         self.loading_speed = config.get(id, 'loading_speed')
         self.allowed_cargos = '' # ! unfinished
@@ -114,22 +115,26 @@ class Ship(object):
             return self.capacity_pax
         elif self.default_cargo == 'MAIL':
             return self.capacity_mail
+        elif self.default_cargo == 'OIL':
+            return self.capacity_liquid
         else:
             return self.capacity_freight
 
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ships capacities for various types of cargo
-        # assumes (1) freight ships refittable to most classes (2) that certain combinations of capacity don't need to be handled
-        if self.capacity_pax > 0 and self.capacity_mail > 0 and self.capacity_freight > 0:
-            return global_constants.standard_class_refits['all']
-        elif self.capacity_pax == 0 and self.capacity_mail == 0:
-            return global_constants.standard_class_refits['all_but_pax_mail']
-        elif self.capacity_pax == 0 and self.capacity_mail > 0:
-            return global_constants.standard_class_refits['all_but_pax']
-        elif self.capacity_pax > 0 and self.capacity_mail > 0 and self.capacity_freight == 0 :
-            return global_constants.standard_class_refits['pax_mail_only']
-        else:
-            raise # must be a combination I haven't thought of, or user error in the config
+        # this is fragile and will explode if it gets out of order etc. There's probably a better way.  Alberth showed me one.
+        # it would be better to not construct a dict key here, but instead merge groups of allowed / disallowed cargos
+        classes = []
+        if self.capacity_pax > 0:
+            classes.append('pax')
+        if self.capacity_mail > 0:
+            classes.append('mail')
+        if self.capacity_freight > 0:
+            classes.append('freight')
+            classes.append('liquid') # assume freight ships also carry liquid cargos in barrels and such; deduping handled later
+        if self.capacity_liquid > 0:
+            classes.append('liquid')
+        return global_constants.standard_class_refits['_'.join(set(classes))] # use set() here to dedupe
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations

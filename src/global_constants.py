@@ -1,18 +1,18 @@
-# trucks refit to quite standard sets of cargos.  The main reason for variation is to provide gameplay difference between truck models
+# vehicles refit to quite standard sets of cargos.  The main reason for variation is to provide gameplay difference between vehicle models
 standard_class_refits = {
-  'all' : {
+  'pax_mail_liquid_freight' : {
         'allow'    : 'CC_PASSENGERS, CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
         'disallow' : '',
   },
-  'all_but_pax_mail' : {
+  'liquid_freight' : {
         'allow'    : 'CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
         'disallow' : 'CC_PASSENGERS, CC_MAIL',
   },
-  'all_but_pax' : {
+  'mail_liquid_freight' : {
         'allow'    : 'CC_MAIL, CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
         'disallow' : 'CC_PASSENGERS',
   },
-  'pax_mail_only' : {
+  'pax_mail' : {
         'allow'    : 'CC_PASSENGERS, CC_MAIL',
         'disallow' : 'CC_EXPRESS, CC_ARMOURED, CC_BULK, CC_PIECE_GOODS, CC_LIQUID, CC_REFRIGERATED, CC_COVERED, CC_NON_POURABLE',
   }
