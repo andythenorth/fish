@@ -12,6 +12,7 @@ STR_BUY_MENU_REFIT_CAPACITIES                                   :({COMMA} passen
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :General purpose sea-going vessel
 STR_COASTER                                                     :Coaster
+STR_LARGE_COASTAL_TANKER                                        :Large Coastal Tanker
 STR_CARGO_VESSEL_INLAND                                         :Cargo vessel for inland waterways (rivers, canals and lakes)
 STR_PADDLE_STEAMER                                              :Paddle steamer
 STR_CARGO_HOVERCRAFT                                            :Cargo hovercraft
