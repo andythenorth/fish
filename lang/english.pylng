@@ -31,12 +31,6 @@ STR_2_GAS_TURBINE_JETS                                          :2 gas turbines,
 STR_2_MARINE_GAS_TURBINE                                        :2 marine gas turbines
 STR_4_DIESEL                                                    :4 diesel engines
 
-
-<!--! subtypes for refit menu -->
-STR_TANKER                                                      :{LTBLUE} (in tanks)
-STR_CABINS                                                      :{LTBLUE} (in cabins)
-STR_CARGO_HOLDS                                                 :{LTBLUE} (in cargo holds)
-
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
 STR_NAME_${vehicle.id}                                          :${vehicle.title}
