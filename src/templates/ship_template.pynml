@@ -5,7 +5,7 @@
 <tal:include condition="vehicle.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
 <tal:include condition="vehicle.graphics_template=='hydrofoil'" define="graphics_hydrofoil load: graphics_hydrofoil.pynml" metal:use-macro="graphics_hydrofoil" />
 <tal:include condition="vehicle.graphics_template=='2_visible_cargo_states'" define="graphics_2_visible_cargo_states load: graphics_2_visible_cargo_states.pynml" metal:use-macro="graphics_2_visible_cargo_states" />
-<tal:include condition="vehicle.graphics_template=='provides_tanker_refit'" define="graphics_provides_tanker_refit load: graphics_provides_tanker_refit.pynml" metal:use-macro="graphics_provides_tanker_refit" />
+<tal:include condition="vehicle.graphics_template=='standard_gcv'" define="graphics_standard_gcv load: graphics_standard_gcv.pynml" metal:use-macro="graphics_standard_gcv" />
 <tal:include condition="vehicle.graphics_template=='tanker'" define="graphics_tanker load: graphics_tanker.pynml" metal:use-macro="graphics_tanker" />
 
 // -- capacity varies according to cargo class -- //
