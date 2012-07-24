@@ -103,6 +103,10 @@ class Ship(object):
         speeds_adjusted_rounded = [int(math.ceil(i)) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
         return speeds_adjusted_rounded
 
+    def get_adjusted_model_life(self):
+        # handles keeping the buy menu tidy, relies on magic from Eddi
+        return self.model_life + self.vehicle_life
+
     def get_running_cost(self):
         # calculate a running cost
         fixed_run_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
