@@ -133,7 +133,6 @@ class Ship(object):
             [classes.append(i) for i in global_constants.standard_class_refits['cargo_holds']]
         if self.capacity_tanks > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['tanks']]
-        print ','.join(set(classes))
         return ','.join(set(classes)) # use set() here to dedupe
 
     def get_buy_menu_string(self):
