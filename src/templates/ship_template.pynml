@@ -12,7 +12,7 @@
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes) {
     bitmask(CC_PASSENGERS): return ${vehicle.capacity_pax};
     bitmask(CC_MAIL): return ${vehicle.capacity_mail};
-    return ${vehicle.capacity_cargo_holds};
+    return ${vehicle.capacity_freight};
 }
 
 

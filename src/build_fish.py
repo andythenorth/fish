@@ -71,6 +71,7 @@ class Ship(object):
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_cargo_holds = config.getint(id, 'capacity_cargo_holds')
         self.capacity_tanks = config.getint(id, 'capacity_tanks')
+        self.capacity_freight = self.get_capacity_freight()
         self.default_cargo = config.get(id, 'default_cargo')
         self.loading_speed = config.get(id, 'loading_speed')
         self.allowed_cargos = '' # ! unfinished
@@ -109,16 +110,27 @@ class Ship(object):
         calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 49) # divide by magic constant to get costs as factor in 0-255 range
         return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
 
+    def get_capacity_freight(self):
+        # cargo holds and tanks are mutually exclusive
+        if self.capacity_cargo_holds > 0 and self.capacity_tanks == 0:
+            return self.capacity_cargo_holds
+        elif self.capacity_tanks > 0 and self.capacity_cargo_holds == 0:
+            return self.capacity_tanks
+        elif self.capacity_tanks == 0 and self.capacity_cargo_holds == 0:
+            return 0
+        elif self.capacity_tanks > 0 and self.capacity_cargo_holds > 0:
+            raise Exception('capacity_cargo_holds and capacity_tanks cannot both be > 0. Vehicle id: ' + self.id)
+        else:
+            raise # shouldn't get here, so something must be quite wrong if we do (possibly a -ve capacity value set)
+
     def get_default_cargo_capacity(self):
         # the default capacity should be determined with respect to the default cargo
         if self.default_cargo == 'PASS':
             return self.capacity_pax
         elif self.default_cargo == 'MAIL':
             return self.capacity_mail
-        elif self.default_cargo == 'OIL_':
-            return self.capacity_tanks
         else:
-            return self.capacity_cargo_holds
+            return self.capacity_freight
 
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ships capacities for various types of cargo
@@ -127,13 +139,10 @@ class Ship(object):
             [classes.append(i) for i in global_constants.standard_class_refits['pax']]
         if self.capacity_mail > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['mail']]
-        # cargo holds and tanks are mutually exclusive
-        if self.capacity_cargo_holds > 0 and self.capacity_tanks == 0:
+        if self.capacity_cargo_holds > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['cargo_holds']]
-        elif self.capacity_tanks > 0 and self.capacity_cargo_holds == 0:
+        if self.capacity_tanks > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['tanks']]
-        elif self.capacity_tanks > 0 and self.capacity_cargo_holds > 0:
-            raise Exception('capacity_cargo_holds and capacity_tanks cannot both be > 0. Vehicle id: ' + self.id)
         return ','.join(set(classes)) # use set() here to dedupe
 
     def get_buy_menu_string(self):
