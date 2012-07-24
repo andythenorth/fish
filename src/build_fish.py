@@ -122,17 +122,18 @@ class Ship(object):
 
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ships capacities for various types of cargo
-        # this is fragile and will explode if it gets out of order etc. There's probably a better way.  Alberth showed me one.
-        # it would be better to not construct a dict key here, but instead merge groups of allowed / disallowed cargos
         classes = []
         if self.capacity_pax > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['pax']]
         if self.capacity_mail > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['mail']]
-        if self.capacity_cargo_holds > 0:
+        # cargo holds and tanks are mutually exclusive
+        if self.capacity_cargo_holds > 0 and self.capacity_tanks == 0:
             [classes.append(i) for i in global_constants.standard_class_refits['cargo_holds']]
-        if self.capacity_tanks > 0:
+        elif self.capacity_tanks > 0 and self.capacity_cargo_holds == 0:
             [classes.append(i) for i in global_constants.standard_class_refits['tanks']]
+        elif self.capacity_tanks > 0 and self.capacity_cargo_holds > 0:
+            raise Exception('capacity_cargo_holds and capacity_tanks cannot both be > 0. Vehicle id: ' + self.id)
         return ','.join(set(classes)) # use set() here to dedupe
 
     def get_buy_menu_string(self):
