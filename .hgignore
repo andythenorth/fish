@@ -20,6 +20,7 @@ docs/readme.txt
 Makefile.dep
 *.dep
 *.REV
+parsetab.py
 
 
 # Ignore directories from bundle creation / install:
