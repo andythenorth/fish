@@ -57,7 +57,7 @@ class Ship(object):
         self.numeric_id = config.get(id, 'numeric_id')
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
-        self.model_life = config.getint(id, 'vehicle_life')
+        self.model_life = config.getint(id, 'model_life')
         if self.model_life == 255:
             self.model_life = 'VEHICLE_NEVER_EXPIRES'
         self.vehicle_life = config.getint(id, 'vehicle_life')
