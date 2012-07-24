@@ -69,11 +69,8 @@ class Ship(object):
         self.gross_tonnage = config.getint(id, 'gross_tonnage')
         self.capacity_pax = config.getint(id, 'capacity_pax')
         self.capacity_mail = config.getint(id, 'capacity_mail')
-        self.capacity_freight = config.getint(id, 'capacity_freight')
-        if self.capacity_freight > 0:
-            self.capacity_liquid = self.capacity_freight
-        else:
-            self.capacity_liquid = config.getint(id, 'capacity_liquid')
+        self.capacity_cargo_holds = config.getint(id, 'capacity_cargo_holds')
+        self.capacity_tanks = config.getint(id, 'capacity_tanks')
         self.default_cargo = config.get(id, 'default_cargo')
         self.loading_speed = config.get(id, 'loading_speed')
         self.allowed_cargos = '' # ! unfinished
@@ -118,10 +115,10 @@ class Ship(object):
             return self.capacity_pax
         elif self.default_cargo == 'MAIL':
             return self.capacity_mail
-        elif self.default_cargo == 'OIL':
-            return self.capacity_liquid
+        elif self.default_cargo == 'OIL_':
+            return self.capacity_tanks
         else:
-            return self.capacity_freight
+            return self.capacity_cargo_holds
 
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ships capacities for various types of cargo
@@ -132,25 +129,25 @@ class Ship(object):
             [classes.append(i) for i in global_constants.standard_class_refits['pax']]
         if self.capacity_mail > 0:
             [classes.append(i) for i in global_constants.standard_class_refits['mail']]
-        if self.capacity_freight > 0:
-            [classes.append(i) for i in global_constants.standard_class_refits['freight']]
-        if self.capacity_liquid > 0:
-            [classes.append(i) for i in global_constants.standard_class_refits['liquid']]
+        if self.capacity_cargo_holds > 0:
+            [classes.append(i) for i in global_constants.standard_class_refits['cargo_holds']]
+        if self.capacity_tanks > 0:
+            [classes.append(i) for i in global_constants.standard_class_refits['tanks']]
         print ','.join(set(classes))
         return ','.join(set(classes)) # use set() here to dedupe
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
-        if self.capacity_pax > 0 and self.capacity_freight > 0:
+        if self.capacity_pax > 0 and self.capacity_cargo_holds > 0:
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES,${capacity_pax},${capacity_freight}), string(STR_${str_propulsion}))"
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES,${capacity_pax},${capacity_cargo_holds}), string(STR_${str_propulsion}))"
             )
         else:
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY), string(STR_${str_propulsion}))"
             )
 
-        return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion, capacity_pax=self.capacity_pax, capacity_freight=self.capacity_freight)
+        return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion, capacity_pax=self.capacity_pax, capacity_cargo_holds=self.capacity_cargo_holds)
 
     def render(self):
         template = templates['ship_template.pynml']

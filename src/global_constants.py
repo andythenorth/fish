@@ -1,7 +1,7 @@
 # vehicles refit to quite standard sets of cargos.  The main reason for variation is to provide gameplay difference between vehicle models
 standard_class_refits = {
-  'freight' : ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
-  'liquid' : ['CC_LIQUID'],
+  'cargo_holds' : ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
+  'tanks' : ['CC_LIQUID'],
   'pax' : ['CC_PASSENGERS'],
   'mail' : ['CC_MAIL'],
 }
