@@ -149,7 +149,7 @@ class Ship(object):
         # set buy menu text, with various variations
         if self.capacity_pax > 0 and self.capacity_cargo_holds > 0:
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES,${capacity_pax},${capacity_cargo_holds}), string(STR_${str_propulsion}))"
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO,${capacity_pax},${capacity_cargo_holds}), string(STR_${str_propulsion}))"
             )
         else:
             buy_menu_template = Template(
