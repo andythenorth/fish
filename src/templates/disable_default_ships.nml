@@ -1,2 +1,2 @@
 // disable default trucks (but not buses)
-disable_item(FEAT_ROADVEHS, 07, 87);
+//disable_item(FEAT_ROADVEHS, 07, 87);
