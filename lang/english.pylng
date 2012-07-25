@@ -13,6 +13,7 @@ STR_GENERAL_PURPOSE_VESSEL                                      :General purpose
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :General purpose sea-going vessel
 STR_COASTER                                                     :Coaster
 STR_LARGE_COASTER                                               :Large coaster
+STR_COASTAL_TANKER                                              :Coastal tanker
 STR_LARGE_COASTAL_TANKER                                        :Large coastal tanker
 STR_CARGO_VESSEL_INLAND                                         :Cargo vessel for inland waterways (rivers, canals and lakes)
 STR_PADDLE_STEAMER                                              :Paddle steamer
