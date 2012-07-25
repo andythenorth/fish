@@ -16,6 +16,7 @@ STR_LARGE_COASTER                                               :Large coaster
 STR_COASTAL_TANKER                                              :Coastal tanker
 STR_LARGE_COASTAL_TANKER                                        :Large coastal tanker
 STR_CARGO_VESSEL_INLAND                                         :Cargo vessel for inland waterways (rivers, canals and lakes)
+STR_TANKER_INLAND                                               :Tanker for inland waterways (rivers, canals and lakes)
 STR_PADDLE_STEAMER                                              :Paddle steamer
 STR_CARGO_HOVERCRAFT                                            :Cargo hovercraft
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil fast ferry
