@@ -58,8 +58,6 @@ class Ship(object):
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
         self.model_life = config.getint(id, 'model_life')
-        if self.model_life == 255:
-            self.model_life = 'VEHICLE_NEVER_EXPIRES'
         self.vehicle_life = config.getint(id, 'vehicle_life')
         self.speed = config.getfloat(id, 'speed')
         self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
@@ -105,7 +103,10 @@ class Ship(object):
 
     def get_adjusted_model_life(self):
         # handles keeping the buy menu tidy, relies on magic from Eddi
-        return self.model_life + self.vehicle_life
+        if self.model_life + self.vehicle_life >= 255:
+            return 'VEHICLE_NEVER_EXPIRES'
+        else:
+            return self.model_life + self.vehicle_life
 
     def get_running_cost(self):
         # calculate a running cost
