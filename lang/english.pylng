@@ -11,6 +11,7 @@ STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passen
 
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :General purpose sea-going vessel
+STR_SMALL_COASTER                                               :Small coaster
 STR_COASTER                                                     :Coaster
 STR_LARGE_COASTER                                               :Large coaster
 STR_COASTAL_TANKER                                              :Coastal tanker
