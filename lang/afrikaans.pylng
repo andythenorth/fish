@@ -1,0 +1,39 @@
+##grflangid 0x1B
+##plural 0
+STR_GRF_NAME                                                    :FISH ${repo_vars.repo_title}
+STR_GRF_DESCRIPTION                                             :Lisensie: {SILVER}GPL v2{}{BLACK}
+
+STR_EMPTY                                                       :
+
+<!--! extra buy menu info -->
+STR_BUY_MENU_TEXT                                               :Tipe: {GOLD}{STRING}{}{STRING}{BLACK}Aandrywing: {GOLD}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passasiers of {COMMA}t vrag){}
+
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
+STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige see gaande vaartuig
+STR_SMALL_COASTER                                               :Klein kusvaarder
+STR_COASTER                                                     :Kusvaarder
+STR_LARGE_COASTER                                               :Groot Kusvaarder
+STR_SMALL_COASTAL_TANKER                                        :Klein kus tenkskip
+STR_COASTAL_TANKER                                              :Kus tenkskip
+STR_LARGE_COASTAL_TANKER                                        :Groot Kus tenkskip
+STR_CARGO_VESSEL_INLAND                                         :Vragskip vir binnelansdse waterweë (riviere, kanale en mere)
+STR_TANKER_INLAND                                               :Tenkskip vir binnelansdse waterweë (riviere, kanale en mere)
+STR_PADDLE_STEAMER                                              :Spaanstoomboot
+STR_CARGO_HOVERCRAFT                                            :Vrag skeertuig
+STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil vinnige veerboot
+STR_CATAMARAN_FAST_FERRY                                        :Catamaran vinnige veerboot
+STR_VEHICLE_FERRY                                               :Voertuig veerboot
+
+STR_STEAM                                                       :Stoom enjin
+STR_COMPOUND_STEAM                                              :Kombinasie stoom enjin
+STR_STEAM_TURBINE                                               :Stoom turbine
+STR_OIL_FIRED_STEAM_ENGINE                                      :Olie aangedrewe stoom enjin
+STR_OIL_FIRED_STEAM_TURBINE                                     :Olie aangedrewe stoom turbine
+STR_DIESEL                                                      :Diesel enjin
+STR_2_DIESEL                                                    :2 diesel enjins
+STR_2_GAS_TURBINE_JETS                                          :2 gas turbines, met water straal
+STR_2_MARINE_GAS_TURBINE                                        :2 mariene gas turbines
+STR_4_DIESEL                                                    :4 diesel enjins
+STR_2_DIESEL_CYCLOIDAL                                          :2 diesel enjins, met cycloidal skroewe

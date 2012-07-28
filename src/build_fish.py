@@ -186,10 +186,17 @@ grf_nml.write(templated_nml)
 grf_nml.close()
 
 
-#compile strings to single lang file (english only at the moment, but i18n translation is possible)
+#compile strings to single lang file - english
 lang_template = lang_templates['english.pylng']
 
 lang = codecs.open(os.path.join('lang','english.lng'), 'w','utf8')
+lang.write(lang_template(vehicles=vehicles, repo_vars=repo_vars))
+lang.close()
+
+#compile strings to single lang file - afrikaans !! this is a kludge and should be turned into a lang framework
+lang_template = lang_templates['afrikaans.pylng']
+
+lang = codecs.open(os.path.join('lang','afrikaans.lng'), 'w','utf8')
 lang.write(lang_template(vehicles=vehicles, repo_vars=repo_vars))
 lang.close()
 
