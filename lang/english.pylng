@@ -24,6 +24,7 @@ STR_PADDLE_STEAMER                                              :Paddle steamer
 STR_CARGO_HOVERCRAFT                                            :Cargo hovercraft
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil fast ferry
 STR_CATAMARAN_FAST_FERRY                                        :Catamaran fast ferry
+STR_VEHICLE_FERRY                                               :Vehicle ferry
 
 STR_STEAM                                                       :Steam engine
 STR_COMPOUND_STEAM                                              :Compound steam engine
@@ -35,6 +36,7 @@ STR_2_DIESEL                                                    :2 diesel engine
 STR_2_GAS_TURBINE_JETS                                          :2 gas turbines, with water jets
 STR_2_MARINE_GAS_TURBINE                                        :2 marine gas turbines
 STR_4_DIESEL                                                    :4 diesel engines
+STR_2_DIESEL_CYCLOIDAL                                          :2 diesel engines, with cycloidal propellors
 
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
