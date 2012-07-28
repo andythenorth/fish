@@ -9,6 +9,7 @@ STR_EMPTY                                                       :
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passengers or {COMMA}t of cargo){}
 
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general purpose vessel
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :General purpose sea-going vessel
 STR_SMALL_COASTER                                               :Small coaster
