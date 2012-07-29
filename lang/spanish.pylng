@@ -1,0 +1,51 @@
+##grflangid 0x04
+##plural 0
+STR_GRF_NAME                                                    :FISH ${repo_vars.repo_title}
+STR_GRF_DESCRIPTION                                             :Licencia: {SILVER}GPL v2{}{BLACK}
+
+<!--! don't translate empty string :) -->
+STR_EMPTY                                                       :
+
+<!--! parameters / action 14 stuff -->
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de construcción mejorados para canales, acueductos y dársenas
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos y el resto de tipos de transporte
+
+<!--! extra buy menu info -->
+STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{STRING}{}{STRING}{BLACK}Propulsión: {GOLD}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} pasajeros o {COMMA}t de carga){}
+
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
+STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
+STR_SMALL_COASTER                                               :Pequeño barco costero
+STR_COASTER                                                     :Barco costero
+STR_LARGE_COASTER                                               :Barco costero grande
+STR_SMALL_COASTAL_TANKER                                        :Barco cisterna costero pequeño
+STR_COASTAL_TANKER                                              :Barco cisterna costero
+STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
+STR_CARGO_VESSEL_INLAND                                         :Barco de carga para vías fluviales (ríos, canales y lagos)
+STR_TANKER_INLAND                                               :Barco cisterna para vías fluviales (ríos, canales y lagos)
+STR_PADDLE_STEAMER                                              :Vapor de ruedas
+STR_CARGO_HOVERCRAFT                                            :Hovercraft de carga
+STR_HYDROFOIL_FAST_FERRY                                        :Ferry rápido hydrofoil
+STR_CATAMARAN_FAST_FERRY                                        :Catamarán rápido
+STR_VEHICLE_FERRY                                               :Ferry de vehículos
+STR_LOG_TUG                                                     :Remolcador de troncos de madera
+
+STR_STEAM                                                       :Motor de vapor
+STR_COMPOUND_STEAM                                              :Motor de vapor compuesto
+STR_STEAM_TURBINE                                               :Turbina de vapor
+STR_OIL_FIRED_STEAM_ENGINE                                      :Motor de vapor alimentada con fuel
+STR_OIL_FIRED_STEAM_TURBINE                                     :Turbina de vapor alimentada con fuel
+STR_DIESEL                                                      :Motor diésel
+STR_2_DIESEL                                                    :Dos motores diésel
+STR_2_GAS_TURBINE_JETS                                          :Turbina de gas con chorros de agua
+STR_2_MARINE_GAS_TURBINE                                        :Turbina de gas marítima
+STR_4_DIESEL                                                    :Cuatro motores diésel
+STR_2_DIESEL_CYCLOIDAL                                          :Dos motores diésel con motores cicloidales
+
+<!--! specific strings for certain ships -->
+STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
+STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
+STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
+STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Capacidades de reforma: {GOLD}80t, 240t, 400t
