@@ -70,7 +70,65 @@
     </tal:build_state>
 </tal:build_graphics>
 
+spritegroup ${vehicle.id}_sg_refit_0_moving {
+    loaded:  [
+        ${vehicle.id}_ss_not_loaded_moving,
+        ${vehicle.id}_ss_load_1_moving,
+    ];
+    loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
+        ${vehicle.id}_ss_not_loaded_moving,
+    ];
+}
+
+spritegroup ${vehicle.id}_sg_refit_0_not_moving {
+    loaded:  [
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_load_1_not_moving,
+    ];
+    loading: [
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_load_1_not_moving,
+    ];
+}
+
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_0, current_speed) {
+    0: return ${vehicle.id}_sg_refit_0_not_moving;
+    return ${vehicle.id}_sg_refit_0_moving;
+}
+
 spritegroup ${vehicle.id}_sg_refit_1_moving {
+    loaded:  [
+        ${vehicle.id}_ss_not_loaded_moving,
+        ${vehicle.id}_ss_load_1_moving,
+        ${vehicle.id}_ss_load_2_moving,
+        ${vehicle.id}_ss_load_3_moving,
+    ];
+    loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
+        ${vehicle.id}_ss_not_loaded_moving,
+    ];
+}
+
+spritegroup ${vehicle.id}_sg_refit_1_not_moving {
+    loaded:  [
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_load_1_not_moving,
+        ${vehicle.id}_ss_load_2_not_moving,
+        ${vehicle.id}_ss_load_3_not_moving,
+    ];
+    loading: [
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_load_1_not_moving,
+        ${vehicle.id}_ss_load_2_not_moving,
+        ${vehicle.id}_ss_load_3_not_moving,
+    ];
+}
+
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_1, current_speed) {
+    0: return ${vehicle.id}_sg_refit_1_not_moving;
+    return ${vehicle.id}_sg_refit_1_moving;
+}
+
+spritegroup ${vehicle.id}_sg_refit_2_moving {
     loaded:  [
         ${vehicle.id}_ss_not_loaded_moving,
         ${vehicle.id}_ss_load_1_moving,
@@ -84,7 +142,7 @@ spritegroup ${vehicle.id}_sg_refit_1_moving {
     ];
 }
 
-spritegroup ${vehicle.id}_sg_refit_1_not_moving {
+spritegroup ${vehicle.id}_sg_refit_2_not_moving {
     loaded:  [
         ${vehicle.id}_ss_not_loaded_not_moving,
         ${vehicle.id}_ss_load_1_not_moving,
@@ -103,14 +161,16 @@ spritegroup ${vehicle.id}_sg_refit_1_not_moving {
     ];
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_1, current_speed) {
-    0: return ${vehicle.id}_sg_refit_1_not_moving;
-    return ${vehicle.id}_sg_refit_1_moving;
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_2, current_speed) {
+    0: return ${vehicle.id}_sg_refit_2_not_moving;
+    return ${vehicle.id}_sg_refit_2_moving;
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, 0) {
-    0: return ${vehicle.id}_switch_graphics_refit_1;
-    return ${vehicle.id}_switch_graphics_refit_1;
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, cargo_subtype) {
+    0: return ${vehicle.id}_switch_graphics_refit_0;
+    1: return ${vehicle.id}_switch_graphics_refit_1;
+    2: return ${vehicle.id}_switch_graphics_refit_2;
+    return ${vehicle.id}_switch_graphics_refit_0;
 }
 
 
