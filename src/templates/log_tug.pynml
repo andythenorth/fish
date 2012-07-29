@@ -173,8 +173,8 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         vehicle_life:                   ${vehicle.vehicle_life};
     }
     graphics {
-        //speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
-        //purchase_speed:                 ${vehicle.get_speeds_adjusted_for_load_amount()[4]};
+        speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
+        purchase_speed:                 ${vehicle.get_speeds_adjusted_for_load_amount()[4]};
         //cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
         purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         additional_text:                string(STR_LOG_TUG_BUY_MENU, ${vehicle.get_buy_menu_string()});
