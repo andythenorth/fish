@@ -153,7 +153,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->
         introduction_date:              date(${vehicle.intro_date},01,01); // config just supplies intro year - openttd randomises intro dates a bit anyway
         cargo_capacity:                 ${vehicle.get_default_cargo_capacity()};
-        sprite_id:                      SPRITE_ID_NEW_ROADVEH; //enable new graphics - nml constant
+        sprite_id:                      SPRITE_ID_NEW_SHIP; //enable new graphics - nml constant
         speed:                          ${vehicle.speed}mph;
         ocean_speed_fraction:           ${vehicle.get_ocean_speed()};
         canal_speed_fraction:           ${vehicle.get_canal_speed()};
