@@ -10,6 +10,23 @@ STR_EMPTY                                                       :
 STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Use improved construction costs for canals, aqueducts and locks
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduces construction (and removal) costs for canals, aqueducts and locks.  Provides a better balance between water transport and other transport types.
 
+<!--! type suffixes for vehicle names  -->
+STR_NAME_SUFFIX_FREIGHTER                                       :Freighter
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Freight Barge
+STR_NAME_SUFFIX_TANKER                                          :Tanker
+STR_NAME_SUFFIX_TANKER_BARGE                                    :Tanker Barge
+STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Utility Vessel
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Utility Tug
+STR_NAME_SUFFIX_LOG_TUG                                         :Log Tug
+STR_NAME_SUFFIX_FERRY                                           :Ferry
+STR_NAME_SUFFIX_HYDROFOIL                                       :Hydrofoil
+STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
+STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Paddle Steamer
+STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
+STR_NAME_SUFFIX_ISLAND_TRADER                                   :Island Trader
+
+
+
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passengers or {COMMA}t of cargo){}
@@ -54,5 +71,5 @@ STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLAC
 <!--! don't include any code below here in translated lang files (these are generated code blocks) -->
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
-STR_NAME_${vehicle.id}                                          :${vehicle.title}
+STR_NAME_${vehicle.id}                                          :${vehicle.get_name_substr()} {STRING}
 </tal:build_vehicle_names>

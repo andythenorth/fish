@@ -31,7 +31,7 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_speed_varies_with_load_amount, ca
 
 item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
     property {
-        name:                           string(STR_NAME_${vehicle.id});
+        name:                           ${vehicle.get_name()};
         climates_available:             ALL_CLIMATES; // nml constant
         sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[vehicle.default_cargo=='PASS']};
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->

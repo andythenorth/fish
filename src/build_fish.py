@@ -154,6 +154,17 @@ class Ship(object):
             [classes.append(i) for i in global_constants.standard_class_refits['tanks']]
         return ','.join(set(classes)) # use set() here to dedupe
 
+    def get_name_substr(self):
+        # relies on name being in format "Foo [Bar]" for Name [Type Suffix]
+        return self.title.split('[')[0]
+
+    def get_name(self):
+        type_suffix = self.title.split('[')[1].split(']')[0]
+        type_suffix = type_suffix.upper()
+        type_suffix = '_'.join(type_suffix.split(' '))
+        return "string(STR_NAME_" + self.id +", string(STR_NAME_SUFFIX_" + type_suffix + "))"
+
+
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
         if self.capacity_pax > 0 and self.capacity_cargo_holds > 0:
