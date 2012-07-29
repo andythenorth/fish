@@ -55,6 +55,10 @@ class Ship(object):
         #setup properties for this vehicle
         self.title = config.get(id, 'title')
         self.numeric_id = config.get(id, 'numeric_id')
+        if config.get(id, 'custom_template').strip() != '':
+            self.custom_template = config.get(id, 'custom_template')
+        else:
+            self.custom_template = None
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
         self.model_life = config.getint(id, 'model_life')
