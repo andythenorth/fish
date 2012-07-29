@@ -5,6 +5,10 @@ STR_GRF_DESCRIPTION                                             :License: {SILVE
 
 STR_EMPTY                                                       :
 
+<!--! parameters / action 14 stuff -->
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Reset construction costs
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reset construction costs
+
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passengers or {COMMA}t of cargo){}
