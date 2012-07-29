@@ -133,6 +133,15 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_speed_varies_with_load_amount, ca
     return 0; // should never reach this result, make it show up as a problem
 }
 
+// -- handle refit subtype strings, used by this vehicle to vary capacity -- //
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_LOG_TUG_REFIT_SUBTYPE_0);
+    1: return string(STR_LOG_TUG_REFIT_SUBTYPE_1);
+    2: return string(STR_LOG_TUG_REFIT_SUBTYPE_2);
+    return CB_RESULT_NO_TEXT;
+}
+
+
 // -- print some of the vehicle non-nml properties to aid debugging -- //
 // [no properties printed]
 
@@ -154,7 +163,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         is_refittable:                  1;
         refittable_cargo_classes:       bitmask();
         non_refittable_cargo_classes:   bitmask();
-        cargo_allow_refit:              [];
+        cargo_allow_refit:              [WOOD];
         cargo_disallow_refit:           [];
         default_cargo_type:             ${vehicle.default_cargo};
         loading_speed:                  ${vehicle.loading_speed};
@@ -169,7 +178,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         //cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
         //purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         //additional_text:                ${vehicle.get_buy_menu_string()};
-        //cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
+        cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
         //refit_cost:                     ${vehicle.id}_switch_refit_cost;
         default:                        ${vehicle.id}_switch_graphics;
         //purchase:                       ${vehicle.id}_sg_purchase;
