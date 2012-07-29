@@ -122,7 +122,6 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_subtype) {
     return 0; // should never reach this result, make it show up as a problem
 }
 
-
 // -- set speed a little higher than rated speed when unladen -- //
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_speed_varies_with_load_amount, cargo_count*100/cargo_capacity) {
     0 : ${vehicle.get_speeds_adjusted_for_load_amount()[0]};
@@ -137,7 +136,6 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_subtype
     2: return string(STR_LOG_TUG_REFIT_SUBTYPE_2);
     return CB_RESULT_NO_TEXT;
 }
-
 
 // -- print some of the vehicle non-nml properties to aid debugging -- //
 // [no properties printed]
@@ -164,7 +162,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         cargo_disallow_refit:           [];
         default_cargo_type:             ${vehicle.default_cargo};
         loading_speed:                  ${vehicle.loading_speed};
-        misc_flags:                     bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT); // nml constants
+        misc_flags:                     bitmask(SHIP_FLAG_2CC); // nml constants
         model_life:                     ${vehicle.get_adjusted_model_life()};
         retire_early:                   ${vehicle.vehicle_life - 4}; // magic from Eddi
         vehicle_life:                   ${vehicle.vehicle_life};
@@ -176,7 +174,6 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         additional_text:                string(STR_LOG_TUG_BUY_MENU, ${vehicle.get_buy_menu_string()});
         cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
-        //refit_cost:                     ${vehicle.id}_switch_refit_cost;
         default:                        ${vehicle.id}_switch_graphics;
         //purchase:                       ${vehicle.id}_sg_purchase; // buy menu uses standard _ view for this ship
     }
