@@ -202,7 +202,7 @@ grf_nml.close()
 
 # this is a brutally simple way of specifying which languages are available
 # could also read the lang dir and work it out from .pylng extensions, but meh, tmwftlb
-translated_languages = ('english', 'afrikaans', 'dutch')
+translated_languages = ('english', 'afrikaans', 'dutch', 'spanish')
 for i in translated_languages:
     #compile strings to single lang file - english
     lang_template = lang_templates[i + '.pylng']
