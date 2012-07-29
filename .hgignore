@@ -21,6 +21,9 @@ Makefile.dep
 *.dep
 *.REV
 parsetab.py
+fish.grf.cache
+fish.grf.cacheindex
+
 
 
 # Ignore directories from bundle creation / install:
