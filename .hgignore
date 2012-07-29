@@ -13,9 +13,13 @@ fish*.grf
 *.nfo
 *.cnfo
 *.cpnfo
+*.md5
 docs/license.txt
 docs/changelog.txt
 docs/readme.txt
+fish/*
+custom_tags.txt
+
 # Dependency files:
 Makefile.dep
 *.dep
