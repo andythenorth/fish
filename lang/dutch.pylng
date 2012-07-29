@@ -1,0 +1,58 @@
+##grflangid nl_NL
+##plural 0
+STR_GRF_NAME                                                    :FISH ${repo_vars.repo_title}
+STR_GRF_DESCRIPTION                                             :Licentie: {SILVER}GPL v2{}{BLACK}
+
+<!--! don't translate empty string :) -->
+STR_EMPTY                                                       :
+
+<!--! parameters / action 14 stuff -->
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde bouwkosten voor kanalen, aquaducten en sluizen.
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Vermindert bouw- (en sloop-) kosten voor kanalen, aquaducten en sluizen. Dit zorgt voor een betere balans tussen transport over water en andere soorten transport.
+
+<!--! extra buy menu info -->
+STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Aandrijving: {GOLD}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passagiers of {COMMA}t goederen){}
+
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein schip voor algemeen gebruik
+STR_GENERAL_PURPOSE_VESSEL                                      :Schip voor algemeen gebruik
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Zeewaardig schip voor algemeen gebruik
+STR_SMALL_COASTER                                               :Kleine kustvaarder
+STR_COASTER                                                     :Kustvaarder
+STR_LARGE_COASTER                                               :Grote kustvaarder
+STR_SMALL_COASTAL_TANKER                                        :Kleine kusttanker
+STR_COASTAL_TANKER                                              :Kusttanker
+STR_LARGE_COASTAL_TANKER                                        :Grote kusttanker
+STR_CARGO_VESSEL_INLAND                                         :Binnenvaartschip (voor rivieren, kanalen en meren)
+STR_TANKER_INLAND                                               :Binnenvaarttanker (voor rivieren, kanalen en meren)
+STR_PADDLE_STEAMER                                              :Raderboot
+STR_CARGO_HOVERCRAFT                                            :Goederen-hovercraft
+STR_HYDROFOIL_FAST_FERRY                                        :Draagvleugelboot (snelle veerboot)
+STR_CATAMARAN_FAST_FERRY                                        :Catamaran (snelle veerboot)
+STR_VEHICLE_FERRY                                               :Auto-veerboot
+STR_LOG_TUG                                                     :Sleepboot om drijvende boomstammen te slepen
+
+STR_STEAM                                                       :Stoommachine
+STR_COMPOUND_STEAM                                              :Compound-stoommachine
+STR_STEAM_TURBINE                                               :Stoomturbine
+STR_OIL_FIRED_STEAM_ENGINE                                      :Oliegestookte stoommachine
+STR_OIL_FIRED_STEAM_TURBINE                                     :Oliegestookte stoomturbine
+STR_DIESEL                                                      :Dieselmotor
+STR_2_DIESEL                                                    :2 dieselmotoren
+STR_2_GAS_TURBINE_JETS                                          :2 gasturbines, met waterstralen
+STR_2_MARINE_GAS_TURBINE                                        :2 Scheeps-gasturbines
+STR_4_DIESEL                                                    :4 dieselmotoren
+STR_2_DIESEL_CYCLOIDAL                                          :2 dieselmotoren, met cycloïdeschroeven
+
+<!--! specific strings for certain ships -->
+STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
+STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
+STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
+STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Ombouwbaar tot capaciteit: {GOLD}80t, 240t, 400t
+
+
+<!--! don't include any code below here in translated lang files (these are generated code blocks) -->
+<!--! vehicle names -->
+<tal:build_vehicle_names repeat="vehicle vehicles">
+STR_NAME_${vehicle.id}                                          :${vehicle.title}
+</tal:build_vehicle_names>
