@@ -6,8 +6,8 @@ STR_GRF_DESCRIPTION                                             :License: {SILVE
 STR_EMPTY                                                       :
 
 <!--! parameters / action 14 stuff -->
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Reset construction costs
-STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reset construction costs
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Use improved construction costs for canals, aqueducts and locks
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduces construction (and removal) costs for canals, aqueducts and locks.  Provides a better balance between water transport and other transport types.
 
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
