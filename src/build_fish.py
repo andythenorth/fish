@@ -178,7 +178,7 @@ for i in config.sections():
     if i not in global_constants.vehicles_turned_off:
         vehicles.append(Ship(id=i))
 
-#compile a single final nml file for the grf
+# compile a single final nml file for the grf
 master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
@@ -189,23 +189,19 @@ templated_nml = '&'.join(templated_nml.split('&amp;'))
 grf_nml.write(templated_nml)
 grf_nml.close()
 
+# this is a brutally simple way of specifying which languages are available
+# could also read the lang dir and work it out from .pylng extensions, but meh, tmwftlb
+translated_languages = ('english', 'afrikaans', 'dutch')
+for i in translated_languages:
+    #compile strings to single lang file - english
+    lang_template = lang_templates[i + '.pylng']
 
-#compile strings to single lang file - english
-lang_template = lang_templates['english.pylng']
-
-lang = codecs.open(os.path.join('lang','english.lng'), 'w','utf8')
-lang.write(lang_template(vehicles=vehicles, repo_vars=repo_vars))
-lang.close()
-
-#compile strings to single lang file - afrikaans !! this is a kludge and should be turned into a lang framework
-lang_template = lang_templates['afrikaans.pylng']
-
-lang = codecs.open(os.path.join('lang','afrikaans.lng'), 'w','utf8')
-lang.write(lang_template(vehicles=vehicles, repo_vars=repo_vars))
-lang.close()
+    lang = codecs.open(os.path.join('lang', i + '.lng'), 'w','utf8')
+    lang.write(lang_template(vehicles=vehicles, repo_vars=repo_vars))
+    lang.close()
 
 
-#compile docs (english only at the moment, but i18n translation is possible)
+# compile docs (english only at the moment, but i18n translation is possible)
 docs_template = docs_templates['readme.pytxt']
 
 docs = codecs.open(os.path.join('docs','readme.txt'), 'w','utf8')
