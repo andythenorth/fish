@@ -3,6 +3,7 @@
 STR_GRF_NAME                                                    :FISH ${repo_vars.repo_title}
 STR_GRF_DESCRIPTION                                             :License: {SILVER}GPL v2{}{BLACK}
 
+<!--! don't translate empty string :) -->
 STR_EMPTY                                                       :
 
 <!--! parameters / action 14 stuff -->
@@ -48,6 +49,9 @@ STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
 STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
 STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
 STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Refittable capacities: {GOLD}80t, 240t, 400t
+
+
+<!--! don't include any code below here in translated lang files (these are generated code blocks) -->
 <!--! vehicle names -->
 <tal:build_vehicle_names repeat="vehicle vehicles">
 STR_NAME_${vehicle.id}                                          :${vehicle.title}
