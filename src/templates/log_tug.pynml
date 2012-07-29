@@ -177,13 +177,12 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         //purchase_speed:                 ${vehicle.get_speeds_adjusted_for_load_amount()[4]};
         //cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
         //purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
-        //additional_text:                ${vehicle.get_buy_menu_string()};
+        additional_text:                string(STR_LOG_TUG_BUY_MENU, ${vehicle.get_buy_menu_string()});
         cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
         //refit_cost:                     ${vehicle.id}_switch_refit_cost;
         default:                        ${vehicle.id}_switch_graphics;
         //purchase:                       ${vehicle.id}_sg_purchase;
     }
 }
-
 
 // -- end ${vehicle.title} -- <!--! another comment to aid reading the final nml  -->
