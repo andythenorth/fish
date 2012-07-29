@@ -1,10 +1,10 @@
 # Here also go all build targets specific to this very newgrf
 
-fish.src.dep: fish.nml
+bandit.src.dep: fish.nml
 
 GENERATE=src/build_fish.py
 
-fish.nml: src/FISH.cfg $(GENERATE)
+bandit.nml: src/FISH.cfg $(GENERATE)
 	$(_E) [GENERATE] from FISH.cfg
 	$(_V) python src/build_fish.py '${REPO_TITLE}' '${REPO_REVISION}'
 
