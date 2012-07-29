@@ -2,72 +2,115 @@
 
 // -- begin ${vehicle.title} -- <!--! this adds a comment to aid reading the final nml -->
 
-
 // handle graphics
+<tal:build_graphics define="states python:{'not_moving': 0 ,'moving': 600};
+                            x_y_crops python:('28, 89', '113, 66', '138, 48', '113, 66')"
+                    repeat="state states">
+    <tal:build_state define="y_start python:states[state]">
+        spriteset(${vehicle.id}_ss_not_loaded_${state}, "src/graphics/${vehicle.id}.png") {
+            [20,  ${y_start + 10}, ${x_y_crops[0]},  -13,  -6]
+            [60,  ${y_start + 10}, ${x_y_crops[1]}, -124,   5]
+            [186, ${y_start + 10}, ${x_y_crops[2]}, -124, -28]
+            [328, ${y_start + 10}, ${x_y_crops[3]},  -76, -37]
+            [454, ${y_start + 10}, ${x_y_crops[0]},  -14, -76]
+            [494, ${y_start + 10}, ${x_y_crops[1]},  -34, -38]
+            [620, ${y_start + 10}, ${x_y_crops[2]},  -15, -28]
+            [762, ${y_start + 10}, ${x_y_crops[3]},   15,   6]
+        }
+        spriteset(${vehicle.id}_ss_load_1_${state}, "src/graphics/${vehicle.id}.png") {
+            [20,  ${y_start + 110}, ${x_y_crops[0]},  -13, -14]
+            [60,  ${y_start + 110}, ${x_y_crops[1]}, -118,   1]
+            [186, ${y_start + 110}, ${x_y_crops[2]}, -112, -28]
+            [328, ${y_start + 110}, ${x_y_crops[3]},  -64, -32]
+            [454, ${y_start + 110}, ${x_y_crops[0]},  -14, -65]
+            [494, ${y_start + 110}, ${x_y_crops[1]},  -45, -32]
+            [620, ${y_start + 110}, ${x_y_crops[2]},  -26, -28]
+            [762, ${y_start + 110}, ${x_y_crops[3]},    2,   0]
+        }
+        spriteset(${vehicle.id}_ss_load_2_${state}, "src/graphics/${vehicle.id}.png") {
+            [20,  ${y_start + 210}, ${x_y_crops[0]},  -13, -21]
+            [60,  ${y_start + 210}, ${x_y_crops[1]}, -107,  -4]
+            [186, ${y_start + 210}, ${x_y_crops[2]}, -100, -28]
+            [328, ${y_start + 210}, ${x_y_crops[3]},  -59, -30]
+            [454, ${y_start + 210}, ${x_y_crops[0]},  -14, -57]
+            [494, ${y_start + 210}, ${x_y_crops[1]},  -53, -30]
+            [620, ${y_start + 210}, ${x_y_crops[2]},  -49, -28]
+            [762, ${y_start + 210}, ${x_y_crops[3]},   -4,  -4]
+        }
+        spriteset(${vehicle.id}_ss_load_3_${state}, "src/graphics/${vehicle.id}.png") {
+            [20,  ${y_start + 310}, ${x_y_crops[0]},  -13, -29]
+            [60,  ${y_start + 310}, ${x_y_crops[1]}, -102,  -8]
+            [186, ${y_start + 310}, ${x_y_crops[2]},  -84, -28]
+            [328, ${y_start + 310}, ${x_y_crops[3]},  -48, -26]
+            [454, ${y_start + 310}, ${x_y_crops[0]},  -14, -47]
+            [494, ${y_start + 310}, ${x_y_crops[1]},  -60, -25]
+            [620, ${y_start + 310}, ${x_y_crops[2]},  -50, -28]
+            [762, ${y_start + 310}, ${x_y_crops[3]},   -7,  -6]
+        }
+        spriteset(${vehicle.id}_ss_load_4_${state}, "src/graphics/${vehicle.id}.png") {
+            [20,  ${y_start + 410}, ${x_y_crops[0]},  -13, -35]
+            [60,  ${y_start + 410}, ${x_y_crops[1]},  -97, -10]
+            [186, ${y_start + 410}, ${x_y_crops[2]},  -69, -28]
+            [328, ${y_start + 410}, ${x_y_crops[3]},  -45, -22]
+            [454, ${y_start + 410}, ${x_y_crops[0]},  -14, -45]
+            [494, ${y_start + 410}, ${x_y_crops[1]},  -66, -22]
+            [620, ${y_start + 410}, ${x_y_crops[2]},  -61, -28]
+            [762, ${y_start + 410}, ${x_y_crops[3]},  -15, -10]
+        }
+        spriteset(${vehicle.id}_ss_load_5_${state}, "src/graphics/${vehicle.id}.png") {
+            [20,  ${y_start + 510}, ${x_y_crops[0]},  -13, -41]
+            [60,  ${y_start + 510}, ${x_y_crops[1]},  -90, -13]
+            [186, ${y_start + 510}, ${x_y_crops[2]},  -65, -28]
+            [328, ${y_start + 510}, ${x_y_crops[3]},  -40, -19]
+            [454, ${y_start + 510}, ${x_y_crops[0]},  -14, -42]
+            [494, ${y_start + 510}, ${x_y_crops[1]},  -75, -17]
+            [620, ${y_start + 510}, ${x_y_crops[2]},  -68, -28]
+            [762, ${y_start + 510}, ${x_y_crops[3]},  -22, -13]
+        }
+    </tal:build_state>
+</tal:build_graphics>
 
-template spriteset_template_${vehicle.id}(y) {
-    //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
-    [20,        y,          28,         89,          ${vehicle.offsets[0][0]}, ${vehicle.offsets[0][1]}]
-    [60,        y,          113,        66,          ${vehicle.offsets[1][0]}, ${vehicle.offsets[1][1]}]
-    [186,       y,          138,        48,          ${vehicle.offsets[2][0]}, ${vehicle.offsets[2][1]}]
-    [328,       y,          113,        66,          ${vehicle.offsets[3][0]}, ${vehicle.offsets[3][1]}]
-    [454,       y,          28,         89,          ${vehicle.offsets[4][0]}, ${vehicle.offsets[4][1]}]
-    [494,       y,          113,        66,          ${vehicle.offsets[5][0]}, ${vehicle.offsets[5][1]}]
-    [620,       y,          138,        48,          ${vehicle.offsets[6][0]}, ${vehicle.offsets[6][1]}]
-    [762,       y,          113,        66,          ${vehicle.offsets[7][0]}, ${vehicle.offsets[7][1]}]
-}
-
-spriteset(${vehicle.id}_sg_not_loaded_not_moving, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(10)
-}
-spriteset(${vehicle.id}_sg_not_loaded_moving, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(110)
-}
-spriteset(${vehicle.id}_sg_loading_0, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(210)
-}
-spriteset(${vehicle.id}_sg_loading_1, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(310)
-}
-spriteset(${vehicle.id}_sg_loading_2, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(410)
-}
-spriteset(${vehicle.id}_sg_loading_3, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(510)
-}
-spriteset(${vehicle.id}_sg_loaded_not_moving, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(610)
-}
-spriteset(${vehicle.id}_sg_loaded_moving, "src/graphics/${vehicle.id}.png") {
-  spriteset_template_${vehicle.id}(710)
-}
-
-spritegroup ${vehicle.id}_sg_moving {
+spritegroup ${vehicle.id}_sg_refit_1_moving {
     loaded:  [
-        ${vehicle.id}_sg_not_loaded_moving,
-        ${vehicle.id}_sg_loaded_moving,
+        ${vehicle.id}_ss_not_loaded_moving,
+        ${vehicle.id}_ss_load_1_moving,
+        ${vehicle.id}_ss_load_2_moving,
+        ${vehicle.id}_ss_load_3_moving,
+        ${vehicle.id}_ss_load_4_moving,
+        ${vehicle.id}_ss_load_5_moving,
     ];
     loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
-        ${vehicle.id}_sg_loaded_moving,
+        ${vehicle.id}_ss_not_loaded_moving,
     ];
 }
 
-spritegroup ${vehicle.id}_sg_not_moving {
+spritegroup ${vehicle.id}_sg_refit_1_not_moving {
     loaded:  [
-        ${vehicle.id}_sg_not_loaded_not_moving,
-        ${vehicle.id}_sg_loaded_not_moving,
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_load_1_not_moving,
+        ${vehicle.id}_ss_load_2_not_moving,
+        ${vehicle.id}_ss_load_3_not_moving,
+        ${vehicle.id}_ss_load_4_not_moving,
+        ${vehicle.id}_ss_load_5_not_moving,
     ];
     loading: [
-        ${vehicle.id}_sg_loading_0,
-        ${vehicle.id}_sg_loading_1,
-        ${vehicle.id}_sg_loading_2,
-        ${vehicle.id}_sg_loading_3,
+        ${vehicle.id}_ss_not_loaded_not_moving,
+        ${vehicle.id}_ss_load_1_not_moving,
+        ${vehicle.id}_ss_load_2_not_moving,
+        ${vehicle.id}_ss_load_3_not_moving,
+        ${vehicle.id}_ss_load_4_not_moving,
+        ${vehicle.id}_ss_load_5_not_moving,
     ];
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, current_speed) {
-    0: return ${vehicle.id}_sg_not_moving;
-    return ${vehicle.id}_sg_moving;
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_1, current_speed) {
+    0: return ${vehicle.id}_sg_refit_1_not_moving;
+    return ${vehicle.id}_sg_refit_1_moving;
+}
+
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, 0) {
+    0: return ${vehicle.id}_switch_graphics_refit_1;
+    return ${vehicle.id}_switch_graphics_refit_1;
 }
 
 

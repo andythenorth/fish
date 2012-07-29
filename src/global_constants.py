@@ -62,6 +62,5 @@ FUEL_RUN_COST = 10.0
 
 # provide a private method for turning vehicles off during development without modifying the config file. Bound to go wrong. :P
 vehicles_turned_off = (
-    'olympic_log_tug'
 )
 
