@@ -19,6 +19,7 @@ docs/changelog.txt
 docs/readme.txt
 fish/*
 custom_tags.txt
+.version
 
 # Dependency files:
 Makefile.dep
