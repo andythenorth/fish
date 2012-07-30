@@ -62,6 +62,8 @@ class Ship(object):
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
         self.model_life = config.getint(id, 'model_life')
+        self.replacement_id = config.get(id, 'replacement_id')
+        #print self.replacement_id
         self.vehicle_life = config.getint(id, 'vehicle_life')
         self.speed = config.getfloat(id, 'speed')
         self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
@@ -107,10 +109,13 @@ class Ship(object):
 
     def get_adjusted_model_life(self):
         # handles keeping the buy menu tidy, relies on magic from Eddi
-        if self.model_life + self.vehicle_life >= 255:
-            return 'VEHICLE_NEVER_EXPIRES'
+        if self.replacement_id != None and self.replacement_id != '-none' and self.replacement_id != '':
+            for i in vehicles:
+                if i.id == self.replacement_id:
+                    model_life = i.intro_date - self.intro_date
+                    return model_life + self.vehicle_life
         else:
-            return self.model_life + self.vehicle_life
+            return 'VEHICLE_NEVER_EXPIRES'
 
     def get_running_cost(self):
         # calculate a running cost
@@ -193,8 +198,8 @@ for i in config.sections():
 master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
-# an ugly hack here because chameleon html escapes some characters
 templated_nml = master_template(vehicles=vehicles, repo_vars=repo_vars)
+# an ugly hack here because chameleon html escapes some characters
 templated_nml = '>'.join(templated_nml.split('&gt;'))
 templated_nml = '&'.join(templated_nml.split('&amp;'))
 grf_nml.write(templated_nml)
