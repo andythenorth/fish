@@ -64,10 +64,3 @@ STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
 STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
 STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
 STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Ombouwbaar tot capaciteit: {GOLD}80t, 240t, 400t
-
-
-<!--! don't include any code below here in translated lang files (these are generated code blocks) -->
-<!--! vehicle names -->
-<tal:build_vehicle_names repeat="vehicle vehicles">
-STR_NAME_${vehicle.id}                                          :${vehicle.title}
-</tal:build_vehicle_names>
