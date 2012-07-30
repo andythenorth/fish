@@ -61,7 +61,6 @@ class Ship(object):
             self.custom_template = None
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
-        self.model_life = config.getint(id, 'model_life')
         self.replacement_id = config.get(id, 'replacement_id')
         #print self.replacement_id
         self.vehicle_life = config.getint(id, 'vehicle_life')
