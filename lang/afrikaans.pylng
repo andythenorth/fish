@@ -3,7 +3,29 @@
 STR_GRF_NAME                                                    :FISH ${repo_vars.repo_title}
 STR_GRF_DESCRIPTION                                             :Lisensie: {SILVER}GPL v2{}{BLACK}
 
+<!--! don't translate empty string :) -->
 STR_EMPTY                                                       :
+
+<!--! parameters / action 14 stuff -->
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde boukoste vir kanale, waterleidings en "locks".
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Verminder konstruksie (en verwydering) koste vir kanale, waterleidings en "locks". Verskaf 'n beter balans tussen water vervoer en ander vervoer tipes.
+
+<!--! type suffixes for vehicle names  -->
+STR_NAME_SUFFIX_FREIGHTER                                       :Verskeper
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Vragsloep
+STR_NAME_SUFFIX_TANKER                                          :Tenkskip
+STR_NAME_SUFFIX_TANKER_BARGE                                    :Sloep Tenkskip
+STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Veeldoelige Boot
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Veeldoelige Sleepboot
+STR_NAME_SUFFIX_LOG_TUG                                         :Stomp Sleepboot
+STR_NAME_SUFFIX_FERRY                                           :Veerboot
+STR_NAME_SUFFIX_HYDROFOIL                                       :Hydrofoil
+STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
+STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Spaanstoomboot
+STR_NAME_SUFFIX_HOVERCRAFT                                      :Skeertuig
+STR_NAME_SUFFIX_ISLAND_TRADER                                   :Eiland Handelaar
+
+
 
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Tipe: {GOLD}{STRING}{}{STRING}{BLACK}Aandrywing: {GOLD}{STRING}
@@ -11,7 +33,7 @@ STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passas
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
 STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige see gaande vaartuig
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige seegaande vaartuig
 STR_SMALL_COASTER                                               :Klein kusvaarder
 STR_COASTER                                                     :Kusvaarder
 STR_LARGE_COASTER                                               :Groot Kusvaarder
@@ -23,7 +45,7 @@ STR_TANKER_INLAND                                               :Tenkskip vir bi
 STR_PADDLE_STEAMER                                              :Spaanstoomboot
 STR_CARGO_HOVERCRAFT                                            :Vrag skeertuig
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil vinnige veerboot
-STR_CATAMARAN_FAST_FERRY                                        :Catamaran vinnige veerboot
+STR_CATAMARAN_FAST_FERRY                                        :Katamaran vinnige veerboot
 STR_VEHICLE_FERRY                                               :Voertuig veerboot
 
 STR_STEAM                                                       :Stoom enjin
@@ -37,3 +59,9 @@ STR_2_GAS_TURBINE_JETS                                          :2 gas turbines,
 STR_2_MARINE_GAS_TURBINE                                        :2 mariene gas turbines
 STR_4_DIESEL                                                    :4 diesel enjins
 STR_2_DIESEL_CYCLOIDAL                                          :2 diesel enjins, met cycloidal skroewe
+
+<!--! specific strings for certain ships -->
+STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
+STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
+STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
+STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}herboubare hoeveelheid: {GOLD}80t, 240t, 400t
