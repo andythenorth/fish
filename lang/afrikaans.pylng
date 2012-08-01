@@ -19,7 +19,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Veeldoelige Boo
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Veeldoelige Sleepboot
 STR_NAME_SUFFIX_LOG_TUG                                         :Stomp Sleepboot
 STR_NAME_SUFFIX_FERRY                                           :Veerboot
-STR_NAME_SUFFIX_HYDROFOIL                                       :Hydrofoil
+STR_NAME_SUFFIX_HYDROFOIL                                       :Skeerboot
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Spaanstoomboot
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Skeertuig
@@ -44,8 +44,8 @@ STR_CARGO_VESSEL_INLAND                                         :Vragskip vir bi
 STR_TANKER_INLAND                                               :Tenkskip vir binnelansdse waterweë (riviere, kanale en mere)
 STR_PADDLE_STEAMER                                              :Spaanstoomboot
 STR_CARGO_HOVERCRAFT                                            :Vrag skeertuig
-STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil vinnige veerboot
-STR_CATAMARAN_FAST_FERRY                                        :Katamaran vinnige veerboot
+STR_HYDROFOIL_FAST_FERRY                                        :Vinnige Skeerveerboot
+STR_CATAMARAN_FAST_FERRY                                        :Vinnige Katamaran veerboot
 STR_VEHICLE_FERRY                                               :Voertuig veerboot
 
 STR_STEAM                                                       :Stoom enjin
