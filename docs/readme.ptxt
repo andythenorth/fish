@@ -46,6 +46,8 @@ The source code can be obtained from the #openttdcoop DevZone at
 or via mercurial checkout
 	hg clone http://dev.openttdcoop.org/projects/fish
 
+Building FISH requires NML and the Chameleon template library http://chameleon.repoze.org/docs/latest/
+
 For integrity check:
 Name of this Repo: {{GRF_TITLE}}
 GRF_ID:            {{GRF_ID}}
