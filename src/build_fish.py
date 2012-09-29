@@ -89,10 +89,10 @@ class Ship(object):
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
     def get_ocean_speed(self):
-        return (0.9, 1)[self.sea_capable]
+        return (0.8, 1)[self.sea_capable]
 
     def get_canal_speed(self):
-        return (0.9, 1)[self.inland_capable]
+        return (0.8, 1)[self.inland_capable]
 
     def get_speeds_adjusted_for_load_amount(self):
         # ships may travel faster or slower than 'speed' depending on cargo amount
