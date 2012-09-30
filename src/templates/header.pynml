@@ -31,3 +31,6 @@ if (reset_construction_costs) {
         PR_CLEAR_LOCK: -2;
     }
 }
+
+// sort order
+sort(FEAT_SHIPS, ${config_globals.get('purchase_list_sort_order')});

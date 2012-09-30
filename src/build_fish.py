@@ -188,16 +188,20 @@ class Ship(object):
 
 
 #compose vehicle objects into a list; order is not significant as numeric identifiers are used to build vehicles
+config_globals = {}
+for name, value in config.items('config_globals'):
+    config_globals[name] = value
+
 vehicles = []
 for i in config.sections():
-    if i not in global_constants.vehicles_turned_off:
+    if i not in global_constants.vehicles_turned_off and i != 'config_globals':
         vehicles.append(Ship(id=i))
 
 # compile a single final nml file for the grf
 master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
-templated_nml = master_template(vehicles=vehicles, repo_vars=repo_vars)
+templated_nml = master_template(vehicles=vehicles, repo_vars=repo_vars, config_globals = config_globals)
 # an ugly hack here because chameleon html escapes some characters
 templated_nml = '>'.join(templated_nml.split('&gt;'))
 templated_nml = '&'.join(templated_nml.split('&amp;'))
