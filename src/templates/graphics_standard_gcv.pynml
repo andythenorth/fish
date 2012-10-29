@@ -5,9 +5,9 @@ template spriteset_template_${vehicle.id}(y) {
     [20,        y,          28,         89,          ${vehicle.offsets[0][0]}, ${vehicle.offsets[0][1]}]
     [60,        y,          113,        66,          ${vehicle.offsets[1][0]}, ${vehicle.offsets[1][1]}]
     [186,       y,          138,        48,          ${vehicle.offsets[2][0]}, ${vehicle.offsets[2][1]}]
-    [328,       y,          113,        66,          ${vehicle.offsets[3][0]}, ${vehicle.offsets[3][1]}]
+    [328,       y,          113,        70,          ${vehicle.offsets[3][0]}, ${vehicle.offsets[3][1]}]
     [454,       y,          28,         89,          ${vehicle.offsets[4][0]}, ${vehicle.offsets[4][1]}]
-    [494,       y,          113,        66,          ${vehicle.offsets[5][0]}, ${vehicle.offsets[5][1]}]
+    [494,       y,          113,        70,          ${vehicle.offsets[5][0]}, ${vehicle.offsets[5][1]}]
     [620,       y,          138,        48,          ${vehicle.offsets[6][0]}, ${vehicle.offsets[6][1]}]
     [762,       y,          113,        66,          ${vehicle.offsets[7][0]}, ${vehicle.offsets[7][1]}]
 }
