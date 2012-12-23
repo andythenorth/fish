@@ -80,6 +80,7 @@ class Ship(object):
         self.allowed_cargos = '' # ! unfinished
         self.disallowed_cargos = '' # ! unfinished
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
+        self.buy_menu_width = config.getint(id, 'buy_menu_width')
         self.offsets = []
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])
