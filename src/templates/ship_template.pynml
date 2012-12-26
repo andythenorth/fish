@@ -54,6 +54,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         misc_flags:                     bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT); // nml constants
         model_life:                     ${vehicle.get_adjusted_model_life()};
         retire_early:                   ${vehicle.vehicle_life - 4}; // magic from Eddi
+        reliability_decay:              20; // default value
         vehicle_life:                   ${vehicle.vehicle_life};
     }
     graphics {
