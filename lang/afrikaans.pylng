@@ -23,8 +23,6 @@ STR_NAME_SUFFIX_HYDROFOIL                                       :Skeerboot
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Spaanstoomboot
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Skeertuig
-STR_NAME_SUFFIX_ISLAND_TRADER                                   :Eiland Handelaar
-
 
 
 <!--! extra buy menu info -->

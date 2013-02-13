@@ -23,7 +23,6 @@ STR_NAME_SUFFIX_HYDROFOIL                                       :Draagvleugelboo
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Raderboot
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
-STR_NAME_SUFFIX_ISLAND_TRADER                                   :Kustvaarder
 
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Aandrijving: {GOLD}{STRING}
