@@ -35,8 +35,8 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Utility Vessel
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Utility Tug
 
 <!--! extra buy menu info -->
-STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Propulsion: {GOLD}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passengers or {COMMA}t of cargo){}
+STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passengers or {COMMA}t of cargo)
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general purpose vessel
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
@@ -62,18 +62,6 @@ STR_LIVESTOCK_SHIP                                              :Livestock ship
 STR_TRAWLER                                                     :Trawler
 STR_BARGE_TUG                                                   :Barge tug
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Fast catamaran for supplying islands and offshore industries
-
-STR_STEAM                                                       :Steam engine
-STR_COMPOUND_STEAM                                              :Compound steam engine
-STR_STEAM_TURBINE                                               :Steam turbine
-STR_OIL_FIRED_STEAM_ENGINE                                      :Oil-fired steam engine
-STR_OIL_FIRED_STEAM_TURBINE                                     :Oil-fired steam turbine
-STR_DIESEL                                                      :Diesel engine
-STR_2_DIESEL                                                    :2 diesel engines
-STR_2_GAS_TURBINE_JETS                                          :2 gas turbines, with water jets
-STR_2_MARINE_GAS_TURBINE                                        :2 marine gas turbines
-STR_4_DIESEL                                                    :4 diesel engines
-STR_2_DIESEL_CYCLOIDAL                                          :2 diesel engines, with cycloidal propellors
 
 <!--! specific strings for certain ships -->
 STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)

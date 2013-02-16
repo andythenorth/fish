@@ -46,18 +46,6 @@ STR_CATAMARAN_FAST_FERRY                                        :Catamaran (snel
 STR_VEHICLE_FERRY                                               :Auto-veerboot
 STR_LOG_TUG                                                     :Sleepboot om drijvende boomstammen te slepen
 
-STR_STEAM                                                       :Stoommachine
-STR_COMPOUND_STEAM                                              :Compound-stoommachine
-STR_STEAM_TURBINE                                               :Stoomturbine
-STR_OIL_FIRED_STEAM_ENGINE                                      :Oliegestookte stoommachine
-STR_OIL_FIRED_STEAM_TURBINE                                     :Oliegestookte stoomturbine
-STR_DIESEL                                                      :Dieselmotor
-STR_2_DIESEL                                                    :2 dieselmotoren
-STR_2_GAS_TURBINE_JETS                                          :2 gasturbines, met waterstralen
-STR_2_MARINE_GAS_TURBINE                                        :2 Scheeps-gasturbines
-STR_4_DIESEL                                                    :4 dieselmotoren
-STR_2_DIESEL_CYCLOIDAL                                          :2 dieselmotoren, met cycloïdeschroeven
-
 <!--! specific strings for certain ships -->
 STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
 STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)

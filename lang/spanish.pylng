@@ -32,18 +32,6 @@ STR_CATAMARAN_FAST_FERRY                                        :Catamarán ráp
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
 
-STR_STEAM                                                       :Motor de vapor
-STR_COMPOUND_STEAM                                              :Motor de vapor compuesto
-STR_STEAM_TURBINE                                               :Turbina de vapor
-STR_OIL_FIRED_STEAM_ENGINE                                      :Motor de vapor alimentada con fuel
-STR_OIL_FIRED_STEAM_TURBINE                                     :Turbina de vapor alimentada con fuel
-STR_DIESEL                                                      :Motor diésel
-STR_2_DIESEL                                                    :Dos motores diésel
-STR_2_GAS_TURBINE_JETS                                          :Turbina de gas con chorros de agua
-STR_2_MARINE_GAS_TURBINE                                        :Turbina de gas marítima
-STR_4_DIESEL                                                    :Cuatro motores diésel
-STR_2_DIESEL_CYCLOIDAL                                          :Dos motores diésel con motores cicloidales
-
 <!--! specific strings for certain ships -->
 STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
 STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
