@@ -15,7 +15,7 @@ from string import Template # python builtin templater might be used in some uti
 from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
-lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang'))
+lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang_src'))
 docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs'))
 
 
