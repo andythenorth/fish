@@ -23,7 +23,7 @@ base_refits_by_class = {'empty': [],
                         'all_freight': ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
                         'pax_mail': ['CC_PASSENGERS','CC_MAIL'],
                         'liquids': ['CC_LIQUID'],
-                        'countable_freight': ['CC_PIECE_GOODS','CC_ARMOURED','CC_EXPRESS'],
+                        'packaged_freight': ['CC_PIECE_GOODS','CC_ARMOURED','CC_EXPRESS','CC_LIQUID'],
                         'express_freight': ['CC_EXPRESS','CC_ARMOURED']}
 
 # mapping to lists of allowed classes.  No equivalent for disallowed classes, it's overly restrictive and damages the viability of class-based refitting
@@ -32,7 +32,7 @@ class_refit_groups_by_supertype = {'gcv': ['all_freight'],
                                    'pax_mail': ['pax_mail'],
                                    'trawler': ['pax_mail','express_freight'],
                                    'packet': ['pax_mail','express_freight'],
-                                   'fast_freighter': ['express_freight','countable_freight'],
+                                   'fast_freighter': ['express_freight','packaged_freight'],
                                    'livestock_ship': ['empty'],
                                    'log_tug': ['empty']}
 
@@ -40,9 +40,9 @@ class_refit_groups_by_supertype = {'gcv': ['all_freight'],
 label_refits_allowed_by_supertype = {'gcv': [],
                                      'tanker': [],
                                      'pax_mail': [],
-                                     'trawler': [],
-                                     'packet': ['BDMT','LVST'],
-                                     'fast_freighter': [],
+                                     'trawler': ['WATR'],
+                                     'packet': ['BDMT','FRUT','LVST','WATR'],
+                                     'fast_freighter': ['FRUT','WATR'],
                                      'livestock_ship': [], # set to livestock by default, don't need to make it refit
                                      'log_tug': []} # set to wood by default, don't need to make it refit
 
@@ -52,7 +52,7 @@ label_refits_disallowed_by_supertype = {'gcv': [],
                                         'pax_mail': [],
                                         'trawler': [],
                                         'packet': ['FISH'],
-                                        'fast_freighter': [],
+                                        'fast_freighter': ['FISH','OIL_'],
                                         'livestock_ship': [],
                                         'log_tug': []}
 
