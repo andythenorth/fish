@@ -85,7 +85,6 @@ class Ship(object):
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])
         self.str_type_info = config.get(id, 'str_type_info').upper()
-        self.str_propulsion = config.get(id, 'str_propulsion').upper()
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
@@ -182,7 +181,7 @@ class Ship(object):
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY))"
             )
 
-        return buy_menu_template.substitute(str_type_info=self.str_type_info, str_propulsion=self.str_propulsion, capacity_pax=self.capacity_pax, capacity_cargo_holds=self.capacity_cargo_holds)
+        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_cargo_holds=self.capacity_cargo_holds)
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
