@@ -11,8 +11,8 @@ STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de 
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos y el resto de tipos de transporte
 
 <!--! extra buy menu info -->
-STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{STRING}{}{STRING}{BLACK}Propulsión: {GOLD}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} pasajeros o {COMMA}t de carga){}
+STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} pasajeros o {COMMA}t de carga)
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general

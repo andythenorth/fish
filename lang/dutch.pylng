@@ -25,8 +25,8 @@ STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Raderboot
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 
 <!--! extra buy menu info -->
-STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}{BLACK}Aandrijving: {GOLD}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passagiers of {COMMA}t goederen){}
+STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passagiers of {COMMA}t goederen)
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein schip voor algemeen gebruik
 STR_GENERAL_PURPOSE_VESSEL                                      :Schip voor algemeen gebruik
