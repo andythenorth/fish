@@ -9,6 +9,8 @@ STR_EMPTY                                                       :
 <!--! parameters / action 14 stuff -->
 STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Use improved construction costs for canals, aqueducts and locks
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduces construction (and removal) costs for canals, aqueducts and locks.  Provides a better balance between water transport and other transport types.
+STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Adjust speed
+STR_PARAM_ADJUST_SHIP_SPEEDS_DESC                               :Adjust speeds
 
 <!--! type suffixes for vehicle names  -->
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barge Tug

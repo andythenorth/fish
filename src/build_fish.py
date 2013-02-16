@@ -95,7 +95,7 @@ class Ship(object):
     def get_canal_speed(self):
         return (0.8, 1)[self.inland_capable]
 
-    def get_speeds_adjusted_for_load_amount(self):
+    def get_speeds_adjusted_for_load_amount(self, speed_index):
         # ships may travel faster or slower than 'speed' depending on cargo amount
         speeds_adjusted = (
             ((self.speed_unladen * 100 + self.speed * 0) * 32 + 9) / 1000,
@@ -104,7 +104,8 @@ class Ship(object):
             ((self.speed_unladen * 25 + self.speed * 75) * 32 + 9) / 1000,
             ((self.speed_unladen * 0 + self.speed * 100) * 32 + 9) / 1000,
         )
-        speeds_adjusted_rounded = [int(math.ceil(i)) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
+        speed_factors = [0.67, 1, 1.33] # there is a speed adjustment parameter, use that to look up a speed factor
+        speeds_adjusted_rounded = [int(math.ceil(i * speed_factors[speed_index])) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
         return speeds_adjusted_rounded
 
     def get_adjusted_model_life(self):

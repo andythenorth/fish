@@ -14,6 +14,16 @@ grf {
             def_value: 1;
         }
     }
+	param 1 {
+        param_adjust_ship_speed {
+            type:    int;
+            name:    string(STR_PARAM_ADJUST_SHIP_SPEEDS);
+            desc:    string(STR_PARAM_ADJUST_SHIP_SPEEDS_DESC);
+            min_value: 0;
+            max_value: 2;
+            def_value: 1;
+        }
+    }
 }
 
 basecost {
