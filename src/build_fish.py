@@ -58,6 +58,27 @@ class Ship(object):
             self.custom_template = config.get(id, 'custom_template')
         else:
             self.custom_template = None
+        self.str_type_info = config.get(id, 'str_type_info').upper()
+        # supertype controls refits etc, so figure it out from the type
+        self.supertype = {'hydrofoil_fast_ferry':'pax_mail',
+                          'catamaran_fast_ferry':'packet',
+                          'small_general_purpose_vessel':'packet',
+                          'vehicle_ferry':'packet',
+                          'paddle_steamer':'packet',
+                          'cargo_vessel_inland':'gcv',
+                          'log_tug':'log_tug',
+                          'cargo_hovercraft':'gcv',
+                          'small_coaster':'gcv',
+                          'coaster':'gcv',
+                          'large_coaster':'gcv',
+                          'small_coastal_tanker':'tanker',
+                          'coastal_tanker':'tanker',
+                          'large_coastal_tanker':'tanker',
+                          'trawler':'trawler',
+                          'livestock_ship':'livestock_ship',
+                          'rig_supply_fast_catamaran':'packet',
+                          'barge_tug':'gcv',
+                          'container_feeder':'container_feeder'}[self.str_type_info.lower()]
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
         self.replacement_id = config.get(id, 'replacement_id')
@@ -83,26 +104,6 @@ class Ship(object):
         self.offsets = []
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])
-        self.str_type_info = config.get(id, 'str_type_info').upper()
-        self.supertype = {'hydrofoil_fast_ferry':'packet',
-                          'catamaran_fast_ferry':'packet',
-                          'small_general_purpose_vessel':'packet',
-                          'vehicle_ferry':'packet',
-                          'paddle_steamer':'packet',
-                          'cargo_vessel_inland':'gcv',
-                          'log_tug':'log_tug',
-                          'cargo_hovercraft':'gcv',
-                          'small_coaster':'gcv',
-                          'coaster':'gcv',
-                          'large_coaster':'gcv',
-                          'small_coastal_tanker':'tanker',
-                          'coastal_tanker':'tanker',
-                          'large_coastal_tanker':'tanker',
-                          'trawler':'trawler',
-                          'livestock_ship':'livestock_ship',
-                          'rig_supply_fast_catamaran':'packet',
-                          'barge_tug':'gcv',
-                          'container_feeder':'container_feeder'}[self.str_type_info.lower()]
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
@@ -143,17 +144,13 @@ class Ship(object):
         return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
 
     def get_capacity_freight(self):
-        # cargo holds and tanks are mutually exclusive
-        if self.capacity_cargo_holds > 0 and self.capacity_tanks == 0:
-            return self.capacity_cargo_holds
-        elif self.capacity_tanks > 0 and self.capacity_cargo_holds == 0:
+        # freight capacity is usually determined by holds, except for special cases
+        if self.supertype == 'tanker':
             return self.capacity_tanks
-        elif self.capacity_tanks == 0 and self.capacity_cargo_holds == 0:
+        elif self.supertype == 'pax_mail':
             return 0
-        elif self.capacity_tanks > 0 and self.capacity_cargo_holds > 0:
-            raise Exception('capacity_cargo_holds and capacity_tanks cannot both be > 0. Vehicle id: ' + self.id)
         else:
-            raise # shouldn't get here, so something must be quite wrong if we do (possibly a -ve capacity value set)
+            return self.capacity_cargo_holds
 
     def get_default_cargo_capacity(self):
         # the default capacity should be determined with respect to the default cargo
