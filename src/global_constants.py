@@ -41,22 +41,23 @@ label_refits_allowed_by_supertype = {'gcv': [],
                                      'tanker': [],
                                      'pax_mail': [],
                                      'trawler': ['WATR'],
-                                     'packet': ['BDMT','FRUT','LVST','WATR'],
+                                     'packet': ['BDMT','FRUT','LVST','VEHI','WATR'],
                                      'fast_freighter': ['FRUT','WATR'],
                                      'livestock_ship': [], # set to livestock by default, don't need to make it refit
                                      'log_tug': []} # set to wood by default, don't need to make it refit
 
 # allowed labels, for fine-grained control, knocking out cargos that are allowed by classes, but don't fit for gameplay reasons
-label_refits_disallowed_by_supertype = {'gcv': [],
+label_refits_disallowed_by_supertype = {'gcv': ['TOUR'],
                                         'tanker': ['MILK'],
                                         'pax_mail': [],
                                         'trawler': [],
                                         'packet': ['FISH'],
-                                        'fast_freighter': ['FISH','OIL_','WOOD'],
+                                        'fast_freighter': ['FISH','OIL_','TOUR','WOOD'],
                                         'livestock_ship': [],
                                         'log_tug': []}
 
 # ! hangover code from BANDIT; can be used in future to match cargos to specific graphic variations
+# also used to construct the cargo table automatically
 # use the dict constructor here, normally I don't, but it makes adding cargos faster (no string quotes needed).
 # design note: small variations probably better than large ones, e.g. ['flat_large_crates','flat_small_crates'] rather than ['flat','tanker'].
 cargo_body_type_mappings = dict(
@@ -98,6 +99,7 @@ cargo_body_type_mappings = dict(
     SGBT = [],
     SGCN = [],
     STEL = [],
+    TOUR = [],
     VEHI = [],
     WATR = [],
     WDPR = [],
