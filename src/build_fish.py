@@ -60,25 +60,7 @@ class Ship(object):
             self.custom_template = None
         self.str_type_info = config.get(id, 'str_type_info').upper()
         # supertype controls refits etc, so figure it out from the type
-        self.supertype = {'hydrofoil_fast_ferry':'pax_mail',
-                          'catamaran_fast_ferry':'packet',
-                          'small_general_purpose_vessel':'packet',
-                          'vehicle_ferry':'packet',
-                          'paddle_steamer':'packet',
-                          'cargo_vessel_inland':'gcv',
-                          'log_tug':'log_tug',
-                          'cargo_hovercraft':'gcv',
-                          'small_coaster':'gcv',
-                          'coaster':'gcv',
-                          'large_coaster':'gcv',
-                          'small_coastal_tanker':'tanker',
-                          'coastal_tanker':'tanker',
-                          'large_coastal_tanker':'tanker',
-                          'trawler':'trawler',
-                          'livestock_ship':'livestock_ship',
-                          'rig_supply_fast_catamaran':'packet',
-                          'barge_tug':'gcv',
-                          'container_feeder':'container_feeder'}[self.str_type_info.lower()]
+        self.supertype = global_constants.type_supertype_mapping[self.str_type_info.lower()]
         self.graphics_template = config.get(id, 'graphics_template')
         self.intro_date = config.getint(id, 'intro_date')
         self.replacement_id = config.get(id, 'replacement_id')
