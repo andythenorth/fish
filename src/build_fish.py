@@ -49,7 +49,6 @@ else: # provide some defaults so templates don't explode when testing python scr
 class Ship(object):
     """Base class for all types of ships"""
     def __init__(self, id):
-        self.vehicle_type = 'ship'
         self.id = id
 
         #setup properties for this vehicle
@@ -85,6 +84,25 @@ class Ship(object):
         for i in config.get(id, 'offsets').split('|'):
             self.offsets.append([int(j) for j in i.split(' ')])
         self.str_type_info = config.get(id, 'str_type_info').upper()
+        self.supertype = {'hydrofoil_fast_ferry':'packet',
+                          'catamaran_fast_ferry':'packet',
+                          'small_general_purpose_vessel':'packet',
+                          'vehicle_ferry':'packet',
+                          'paddle_steamer':'packet',
+                          'cargo_vessel_inland':'gcv',
+                          'log_tug':'log_tug',
+                          'cargo_hovercraft':'gcv',
+                          'small_coaster':'gcv',
+                          'coaster':'gcv',
+                          'large_coaster':'gcv',
+                          'small_coastal_tanker':'tanker',
+                          'coastal_tanker':'tanker',
+                          'large_coastal_tanker':'tanker',
+                          'trawler':'trawler',
+                          'livestock_ship':'livestock_ship',
+                          'rig_supply_fast_catamaran':'packet',
+                          'barge_tug':'gcv',
+                          'container_feeder':'container_feeder'}[self.str_type_info.lower()]
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
