@@ -97,8 +97,6 @@ class Ship(object):
         self.capacity_freight = self.get_capacity_freight()
         self.default_cargo = config.get(id, 'default_cargo')
         self.loading_speed = config.get(id, 'loading_speed')
-        self.allowed_cargos = '' # ! unfinished
-        self.disallowed_cargos = '' # ! unfinished
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
         self.buy_menu_width = config.getint(id, 'buy_menu_width')
         self.offsets = []
@@ -164,9 +162,15 @@ class Ship(object):
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ship supertype
         cargo_classes = []
-        for i in global_constants.refits_by_supertype[self.supertype]:
+        for i in global_constants.class_refit_groups_by_supertype[self.supertype]:
             [cargo_classes.append(cargo_class) for cargo_class in global_constants.base_refits_by_class[i]]
         return ','.join(set(cargo_classes)) # use set() here to dedupe
+
+    def get_label_refits_allowed(self):
+        return ','.join(global_constants.label_refits_allowed_by_supertype[self.supertype])
+
+    def get_label_refits_disallowed(self):
+        return ','.join(global_constants.label_refits_disallowed_by_supertype[self.supertype])
 
     def get_name_substr(self):
         # relies on name being in format "Foo [Bar]" for Name [Type Suffix]

@@ -60,8 +60,8 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         is_refittable:                  1;
         refittable_cargo_classes:       bitmask(${vehicle.get_refittable_classes()});
         non_refittable_cargo_classes:   bitmask();
-        cargo_allow_refit:              [${vehicle.allowed_cargos}];
-        cargo_disallow_refit:           [${vehicle.disallowed_cargos}];
+        cargo_allow_refit:              [${vehicle.get_label_refits_allowed()}];
+        cargo_disallow_refit:           [${vehicle.get_label_refits_disallowed()}];
         default_cargo_type:             ${vehicle.default_cargo};
         loading_speed:                  ${vehicle.loading_speed};
         misc_flags:                     bitmask(SHIP_FLAG_2CC, SHIP_FLAG_AUTOREFIT); // nml constants
