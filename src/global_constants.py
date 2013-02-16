@@ -52,7 +52,7 @@ label_refits_disallowed_by_supertype = {'gcv': [],
                                         'pax_mail': [],
                                         'trawler': [],
                                         'packet': ['FISH'],
-                                        'fast_freighter': ['FISH','OIL_'],
+                                        'fast_freighter': ['FISH','OIL_','WOOD'],
                                         'livestock_ship': [],
                                         'log_tug': []}
 
