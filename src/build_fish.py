@@ -187,16 +187,16 @@ class Ship(object):
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
-        if self.capacity_pax > 0 and self.capacity_cargo_holds > 0:
+        if self.supertype == 'packet':
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO,${capacity_pax},${capacity_cargo_holds}))"
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
             )
         else:
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY))"
             )
 
-        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_cargo_holds=self.capacity_cargo_holds)
+        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail, capacity_cargo_holds=self.capacity_cargo_holds)
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
