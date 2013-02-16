@@ -27,7 +27,6 @@ STR_NAME_SUFFIX_HOVERCRAFT                                      :Skeertuig
 
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Tipe: {GOLD}{STRING}{}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PAX_CARGO                         :({COMMA} passasiers of {COMMA}t vrag)
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
 STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
