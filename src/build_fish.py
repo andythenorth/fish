@@ -162,17 +162,11 @@ class Ship(object):
             return self.capacity_freight
 
     def get_refittable_classes(self):
-        # work out which classes are refittable based on the ships capacities for various types of cargo
-        classes = []
-        if self.capacity_pax > 0:
-            [classes.append(i) for i in global_constants.standard_class_refits['pax']]
-        if self.capacity_mail > 0:
-            [classes.append(i) for i in global_constants.standard_class_refits['mail']]
-        if self.capacity_cargo_holds > 0:
-            [classes.append(i) for i in global_constants.standard_class_refits['cargo_holds']]
-        if self.capacity_tanks > 0:
-            [classes.append(i) for i in global_constants.standard_class_refits['tanks']]
-        return ','.join(set(classes)) # use set() here to dedupe
+        # work out which classes are refittable based on the ship supertype
+        cargo_classes = []
+        for i in global_constants.refits_by_supertype[self.supertype]:
+            [cargo_classes.append(cargo_class) for cargo_class in global_constants.base_refits_by_class[i]]
+        return ','.join(set(cargo_classes)) # use set() here to dedupe
 
     def get_name_substr(self):
         # relies on name being in format "Foo [Bar]" for Name [Type Suffix]

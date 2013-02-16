@@ -1,9 +1,21 @@
 # vehicles refit to quite standard sets of cargos.  The main reason for variation is to provide gameplay difference between vehicle models
-standard_class_refits = {
-  'cargo_holds' : ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
-  'tanks' : ['CC_LIQUID'],
-  'pax' : ['CC_PASSENGERS'],
-  'mail' : ['CC_MAIL'],
+base_refits_by_class = {
+    'empty': [],
+    'all_freight': ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
+    'pax_mail': ['CC_PASSENGERS','CC_MAIL'],
+    'tanker': ['CC_LIQUID'],
+    'express_freight': ['CC_EXPRESS']
+}
+
+refits_by_supertype = {
+  'gcv': ['all_freight'],
+  'tanker': ['tanker'],
+  'pax_mail': ['pax_mail'],
+  'trawler': ['pax_mail','express_freight'],
+  'packet': ['pax_mail','express_freight'],
+  'container_feeder': ['express_freight'],
+  'livestock_ship': ['empty'],
+  'log_tug': ['empty'],
 }
 
 # ! hangover code from BANDIT; can be used in future to match cargos to specific graphic variations
