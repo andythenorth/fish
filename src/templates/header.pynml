@@ -18,10 +18,14 @@ grf {
         param_adjust_ship_speed {
             type:    int;
             name:    string(STR_PARAM_ADJUST_SHIP_SPEEDS);
-            desc:    string(STR_PARAM_ADJUST_SHIP_SPEEDS_DESC);
             min_value: 0;
             max_value: 2;
             def_value: 1;
+            names: {
+                0: string(STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0);
+                1: string(STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1);
+                2: string(STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2);
+            };
         }
     }
 }
