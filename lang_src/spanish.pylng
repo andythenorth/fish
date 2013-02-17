@@ -32,7 +32,4 @@ STR_VEHICLE_FERRY                                               :Ferry de vehíc
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
 
 <!--! specific strings for certain ships -->
-STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
-STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
-STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
-STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Capacidades de reforma: {GOLD}80t, 240t, 400t
+STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Capacidades de reforma: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t

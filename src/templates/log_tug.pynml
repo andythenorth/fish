@@ -176,9 +176,9 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, cargo_subtype) {
 
 // -- capacity varies according to subtype refit -- //
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_subtype) {
-    0: return 80;
-    1: return 240;
-    2: return 400;
+    0: return ${vehicle.capacity_special[0]};
+    1: return ${vehicle.capacity_special[1]};
+    2: return ${vehicle.capacity_special[2]};
     return 0; // should never reach this result, make it show up as a problem
 }
 
@@ -203,9 +203,9 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_purchase_speed, param_adjust_ship
 
 // -- handle refit subtype strings, used by this vehicle to vary capacity -- //
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_LOG_TUG_REFIT_SUBTYPE_0);
-    1: return string(STR_LOG_TUG_REFIT_SUBTYPE_1);
-    2: return string(STR_LOG_TUG_REFIT_SUBTYPE_2);
+    0: return string(STR_LOG_TUG_REFIT_SUBTYPE, ${vehicle.capacity_special[0]});
+    1: return string(STR_LOG_TUG_REFIT_SUBTYPE, ${vehicle.capacity_special[1]});
+    2: return string(STR_LOG_TUG_REFIT_SUBTYPE, ${vehicle.capacity_special[2]});
     return CB_RESULT_NO_TEXT;
 }
 
@@ -219,7 +219,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[vehicle.default_cargo=='PASS']};
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->
         introduction_date:              date(${vehicle.intro_date},01,01); // config just supplies intro year - openttd randomises intro dates a bit anyway
-        cargo_capacity:                 ${vehicle.get_default_cargo_capacity()};
+        cargo_capacity:                 ${vehicle.capacity_special[0]};
         sprite_id:                      SPRITE_ID_NEW_SHIP; //enable new graphics - nml constant
         speed:                          ${vehicle.speed}mph;
         ocean_speed_fraction:           ${vehicle.get_ocean_speed()};
@@ -243,8 +243,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
         purchase_speed:                 ${vehicle.id}_switch_purchase_speed;
         cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
-        purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
-        additional_text:                string(STR_LOG_TUG_BUY_MENU, ${vehicle.get_buy_menu_string()});
+        additional_text:                string(STR_LOG_TUG_BUY_MENU, ${vehicle.get_buy_menu_string()}, ${vehicle.capacity_special[0]}, ${vehicle.capacity_special[1]}, ${vehicle.capacity_special[2]});
         cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
         default:                        ${vehicle.id}_switch_graphics;
         //purchase:                       ${vehicle.id}_sg_purchase; // buy menu uses standard _ view for this ship

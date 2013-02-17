@@ -192,7 +192,8 @@ class Ship(object):
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY))"
             )
 
-        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail, capacity_cargo_holds=self.capacity_cargo_holds)
+        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
+                                            capacity_cargo_holds=self.capacity_cargo_holds, capacity_special=self.capacity_special)
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
