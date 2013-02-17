@@ -8,11 +8,15 @@
 <tal:include condition="vehicle.graphics_template=='standard_gcv'" define="graphics_standard_gcv load: graphics_standard_gcv.pynml" metal:use-macro="graphics_standard_gcv" />
 <tal:include condition="vehicle.graphics_template=='tanker'" define="graphics_tanker load: graphics_tanker.pynml" metal:use-macro="graphics_tanker" />
 
-// -- capacity varies according to cargo class -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_classes) {
+// -- capacity varies according to specific labels, and then cargo class -- //
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity_classes, cargo_classes) {
     bitmask(CC_PASSENGERS): return ${vehicle.capacity_pax};
     bitmask(CC_MAIL): return ${vehicle.capacity_mail};
     return ${vehicle.capacity_freight};
+}
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity_labels, cargo_type_in_veh) {
+    <tal:trawlers condition="vehicle.str_type_info.lower()=='trawler'">FISH: return ${vehicle.capacity_special[0]};</tal:trawlers>
+    ${vehicle.id}_switch_cargo_capacity_classes;
 }
 
 
@@ -74,7 +78,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
     graphics {
         speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
         purchase_speed:                 ${vehicle.id}_switch_purchase_speed;
-        cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
+        cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity_labels;
         purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
         additional_text:                ${vehicle.get_buy_menu_string()};
         cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;

@@ -76,16 +76,30 @@ class Ship(object):
         self.capacity_mail = config.getint(id, 'capacity_mail')
         self.capacity_cargo_holds = config.getint(id, 'capacity_cargo_holds')
         self.capacity_tanks = config.getint(id, 'capacity_tanks')
+        # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
+        self.capacity_special = self.unpack_pipe_separated_config_item_as_list('capacity_special')
         self.capacity_freight = self.get_capacity_freight()
         self.default_cargo = config.get(id, 'default_cargo')
         self.loading_speed = config.get(id, 'loading_speed')
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
         self.buy_menu_width = config.getint(id, 'buy_menu_width')
-        self.offsets = []
-        for i in config.get(id, 'offsets').split('|'):
-            self.offsets.append([int(j) for j in i.split(' ')])
+        self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
+
+    def unpack_pipe_separated_config_item_as_list(self, config_item_id):
+        # a squirrely function to unpack some nasty representations of lists of lists from config item, '|' and ' ' separated
+        result = []
+        config_item = config.get(self.id, config_item_id)
+        if len(config_item) == 0:
+            return result
+
+        for i in config_item.split('|'):
+            if ' ' in i: # it's another list, separated on ' '
+                result.append([int(j) for j in i.split(' ')])
+            else:
+                result.append(int(i))
+        return result
 
     def get_ocean_speed(self):
         return (0.8, 1)[self.sea_capable]
@@ -138,6 +152,8 @@ class Ship(object):
             return self.capacity_pax
         elif self.default_cargo == 'MAIL':
             return self.capacity_mail
+        elif self.default_cargo == 'FISH':
+            return self.capacity_special[0]
         else:
             return self.capacity_freight
 
