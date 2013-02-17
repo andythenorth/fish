@@ -187,6 +187,10 @@ class Ship(object):
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
             )
+        elif self.supertype == 'trawler':
+            buy_menu_template = Template(
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
+            )
         else:
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY))"

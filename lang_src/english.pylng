@@ -37,6 +37,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Utility Tug
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{BLACK}Refits: {GOLD}{COMMA} bags of mail or {COMMA}t of express freight
+STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{BLACK}Refits: {GOLD}{COMMA} passengers, {COMMA} bags of mail or {COMMA}t of express freight as deck cargo
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general purpose vessel
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
@@ -59,7 +60,7 @@ STR_JUMBO_VEHICLE_FERRY                                         :Jumbo vehicle f
 STR_LOG_TUG                                                     :Tugboat for towing floating logs
 STR_CONTAINER_FEEDER                                            :Container feeder
 STR_LIVESTOCK_SHIP                                              :Livestock ship
-STR_TRAWLER                                                     :Trawler
+STR_TRAWLER                                                     :Trawler (dedicated hold for fish)
 STR_BARGE_TUG                                                   :Barge tug
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Fast catamaran for supplying islands and offshore industries
 
