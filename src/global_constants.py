@@ -1,6 +1,6 @@
 type_supertype_mapping = {'hydrofoil_fast_ferry':'pax_mail',
                           'catamaran_fast_ferry':'packet',
-                          'small_general_purpose_vessel':'packet',
+                          'small_general_purpose_vessel':'trawler', # because it's similar to a packet, but needs to go fishing
                           'vehicle_ferry':'packet',
                           'paddle_steamer':'packet',
                           'cargo_vessel_inland':'gcv',
@@ -40,7 +40,7 @@ class_refit_groups_by_supertype = {'gcv': ['all_freight'],
 label_refits_allowed_by_supertype = {'gcv': [],
                                      'tanker': [],
                                      'pax_mail': [],
-                                     'trawler': ['WATR'],
+                                     'trawler': ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR'], # trawler and packet are broadly similar
                                      'packet': ['BDMT','FRUT','LVST','VEHI','WATR'],
                                      'fast_freighter': ['FRUT','WATR'],
                                      'livestock_ship': [], # set to livestock by default, don't need to make it refit
