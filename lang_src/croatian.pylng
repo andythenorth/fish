@@ -328,7 +328,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L10">10</a>
     </th>
     <td class="line-code">
-      <pre>STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Koristi unaprijeðene troškove gradnje kanala, akvedukata and ustava
+      <pre>STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Koristi unaprijeï¿½ene troï¿½kove gradnje kanala, akvedukata and ustava
 </pre>
     </td>
   </tr>
@@ -339,7 +339,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L11">11</a>
     </th>
     <td class="line-code">
-      <pre>STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Smanjuje troškove gradnje (i micanja) kanala, akvedukata i ustava. Daje bolju izbalansiranost izmeðu vodenog transporta i ostalih vrsta transporta.
+      <pre>STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Smanjuje troï¿½kove gradnje (i micanja) kanala, akvedukata i ustava. Daje bolju izbalansiranost izmeï¿½u vodenog transporta i ostalih vrsta transporta.
 </pre>
     </td>
   </tr>
@@ -383,7 +383,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L15">15</a>
     </th>
     <td class="line-code">
-      <pre>STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Teretna barža
+      <pre>STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Teretna barï¿½a
 </pre>
     </td>
   </tr>
@@ -405,7 +405,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L17">17</a>
     </th>
     <td class="line-code">
-      <pre>STR_NAME_SUFFIX_TANKER_BARGE                                    :Tanker barža
+      <pre>STR_NAME_SUFFIX_TANKER_BARGE                                    :Tanker barï¿½a
 </pre>
     </td>
   </tr>
@@ -416,7 +416,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L18">18</a>
     </th>
     <td class="line-code">
-      <pre>STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Uslužna brodica
+      <pre>STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Usluï¿½na brodica
 </pre>
     </td>
   </tr>
@@ -427,7 +427,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L19">19</a>
     </th>
     <td class="line-code">
-      <pre>STR_NAME_SUFFIX_UTILITY_TUG                                     :Uslužna teglenica
+      <pre>STR_NAME_SUFFIX_UTILITY_TUG                                     :Usluï¿½na teglenica
 </pre>
     </td>
   </tr>
@@ -504,7 +504,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L26">26</a>
     </th>
     <td class="line-code">
-      <pre>STR_NAME_SUFFIX_ISLAND_TRADER                                   :Trgovaèki brod za kratke linije
+      <pre>STR_NAME_SUFFIX_ISLAND_TRADER                                   :Trgovaï¿½ki brod za kratke linije
 </pre>
     </td>
   </tr>
@@ -592,7 +592,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L34">34</a>
     </th>
     <td class="line-code">
-      <pre>STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Brodica za opæe namjene
+      <pre>STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Brodica za opï¿½e namjene
 </pre>
     </td>
   </tr>
@@ -603,7 +603,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L35">35</a>
     </th>
     <td class="line-code">
-      <pre>STR_GENERAL_PURPOSE_VESSEL                                      :Brod za opæe namjene
+      <pre>STR_GENERAL_PURPOSE_VESSEL                                      :Brod za opï¿½e namjene
 </pre>
     </td>
   </tr>
@@ -614,7 +614,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L36">36</a>
     </th>
     <td class="line-code">
-      <pre>STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Morski brod za opæe namjene
+      <pre>STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Morski brod za opï¿½e namjene
 </pre>
     </td>
   </tr>
@@ -768,7 +768,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L50">50</a>
     </th>
     <td class="line-code">
-      <pre>STR_LOG_TUG                                                     :Remorker za vuèu plutajuæi trupaca
+      <pre>STR_LOG_TUG                                                     :Remorker za vuï¿½u plutajuï¿½i trupaca
 </pre>
     </td>
   </tr>
@@ -933,7 +933,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L65">65</a>
     </th>
     <td class="line-code">
-      <pre>STR_LOG_TUG_REFIT_SUBTYPE_0                                     :(80t)
+      <pre>STR_GENERIC_REFIT_SUBTYPE_0                                     :(80t)
 </pre>
     </td>
   </tr>
@@ -944,7 +944,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L66">66</a>
     </th>
     <td class="line-code">
-      <pre>STR_LOG_TUG_REFIT_SUBTYPE_1                                     :(240t)
+      <pre>STR_GENERIC_REFIT_SUBTYPE_1                                     :(240t)
 </pre>
     </td>
   </tr>
@@ -955,7 +955,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L67">67</a>
     </th>
     <td class="line-code">
-      <pre>STR_LOG_TUG_REFIT_SUBTYPE_2                                     :(400t)
+      <pre>STR_GENERIC_REFIT_SUBTYPE_2                                     :(400t)
 </pre>
     </td>
   </tr>
@@ -966,7 +966,7 @@ ZeroClipboard.setMoviePath( '/plugin_assets/redmine_checkout/images/ZeroClipboar
       <a href="#L68">68</a>
     </th>
     <td class="line-code">
-      <pre>STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Kapaciteti remonta: {GOLD}80t, 240t, 400t
+      <pre>STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{STRING}{}{BLACK}Kapaciteti remonta: {GOLD}80t, 240t, 400t
 </pre>
     </td>
   </tr>

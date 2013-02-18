@@ -38,9 +38,9 @@
 
     // -- handle subtype strings, used to aid players understand auto-refitting -- //
     switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_subtype) {
-        0: return string(STR_LOG_TUG_REFIT_SUBTYPE, ${vehicle.capacity_special[0]});
-        1: return string(STR_LOG_TUG_REFIT_SUBTYPE, ${vehicle.capacity_special[1]});
-        2: return string(STR_LOG_TUG_REFIT_SUBTYPE, ${vehicle.capacity_special[2]});
+        0: return string(STR_GENERIC_REFIT_SUBTYPE, ${vehicle.capacity_special[0]});
+        1: return string(STR_GENERIC_REFIT_SUBTYPE, ${vehicle.capacity_special[1]});
+        2: return string(STR_GENERIC_REFIT_SUBTYPE, ${vehicle.capacity_special[2]});
         return CB_RESULT_NO_TEXT;
     }
 </tal:capacity_subtype_refits>

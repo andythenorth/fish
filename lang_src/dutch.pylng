@@ -46,4 +46,4 @@ STR_VEHICLE_FERRY                                               :Auto-veerboot
 STR_LOG_TUG                                                     :Sleepboot om drijvende boomstammen te slepen
 
 <!--! specific strings for certain ships -->
-STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Ombouwbaar tot capaciteit: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t
+STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{STRING}{}{BLACK}Ombouwbaar tot capaciteit: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t

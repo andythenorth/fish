@@ -36,8 +36,8 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Utility Tug
 
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{BLACK}Refits: {GOLD}{COMMA} bags of mail or {COMMA}t of express freight
-STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{BLACK}Refits: {GOLD}{COMMA} passengers, {COMMA} bags of mail or {COMMA}t of express freight as deck cargo
+STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacity when refitted: {GOLD}{COMMA} bags of mail or {COMMA}t of express freight
+STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacity when refitted: {GOLD}{COMMA} passengers, {COMMA} bags of mail or {COMMA}t of express freight as deck cargo
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general purpose vessel
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
@@ -65,8 +65,8 @@ STR_BARGE_TUG                                                   :Barge tug
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Fast catamaran for supplying islands and offshore industries
 
 <!--! specific strings for certain ships -->
-STR_LOG_TUG_REFIT_SUBTYPE                                       : ({COMMA}t)
-STR_LOG_TUG_BUY_MENU                                            :{STRING}{}{BLACK}Refittable capacities: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t
+STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}t)
+STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Refittable capacities: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t
 
 
 <!--! don't include any code below here in translated lang files (these are generated code blocks) -->

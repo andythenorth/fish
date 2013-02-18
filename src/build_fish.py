@@ -194,13 +194,22 @@ class Ship(object):
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
             )
+        elif self.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity:
+            buy_menu_template = Template(
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2}))"
+            )
         else:
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY))"
             )
+        # dirty nasty code to handle case where capacity_special is an empty list
+        capacity_special_0 = self.capacity_special[0] if len(self.capacity_special) > 0 else ''
+        capacity_special_1 = self.capacity_special[1] if len(self.capacity_special) > 1 else ''
+        capacity_special_2 = self.capacity_special[2] if len(self.capacity_special) > 2 else ''
 
         return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
-                                            capacity_cargo_holds=self.capacity_cargo_holds, capacity_special=self.capacity_special)
+                                            capacity_cargo_holds=self.capacity_cargo_holds, capacity_special_0=capacity_special_0,
+                                            capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2)
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
