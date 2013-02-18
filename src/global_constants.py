@@ -54,7 +54,7 @@ label_refits_disallowed_by_supertype = {'gcv': ['TOUR'],
                                         'pax_mail': [],
                                         'trawler': [],
                                         'packet': ['FISH'],
-                                        'fast_freighter': ['FISH','OIL_','TOUR','WOOD'],
+                                        'fast_freighter': ['FISH','LVST','OIL_','TOUR','WOOD'],
                                         'livestock_ship': [],
                                         'log_tug': []}
 
