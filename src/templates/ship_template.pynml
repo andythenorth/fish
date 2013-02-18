@@ -19,6 +19,15 @@ switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity_labels, cargo_type
     ${vehicle.id}_switch_cargo_capacity_classes;
 }
 
+// -- dibble about with purchase menu capacity to handle various cargo-specific capacity issues (cargo might be missing etc) -- //
+switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_purchase_cargo_capacity, cargo_type_in_veh) {
+    <tal:trawlers condition="vehicle.str_type_info.lower()=='trawler'">
+        FISH: return ${vehicle.capacity_special[0]};
+        PASS: return ${vehicle.capacity_pax};
+    </tal:trawlers>
+    return ${vehicle.get_default_cargo_capacity()};
+}
+
 
 // -- set speed a little higher than rated speed when unladen -- //
 // -- also apply the param_adjust_ship_speed parameter -- //
@@ -79,7 +88,7 @@ item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
         speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
         purchase_speed:                 ${vehicle.id}_switch_purchase_speed;
         cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity_labels;
-        purchase_cargo_capacity:        ${vehicle.get_default_cargo_capacity()};
+        purchase_cargo_capacity:        ${vehicle.id}_switch_purchase_cargo_capacity;
         additional_text:                ${vehicle.get_buy_menu_string()};
         cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
         refit_cost:                     ${vehicle.id}_switch_refit_cost;
