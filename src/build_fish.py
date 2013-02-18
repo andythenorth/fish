@@ -147,7 +147,10 @@ class Ship(object):
             return self.capacity_cargo_holds
 
     def get_default_cargo_capacity(self):
-        # the default capacity should be determined with respect to the default cargo
+        # for ships with subtype refits for capacity, only capacity_special should be used, irrespective of cargo
+        if self.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity:
+            return self.capacity_special[0]
+        # otherwise the default capacity should be determined with respect to the default cargo
         if self.default_cargo == 'PASS':
             return self.capacity_pax
         elif self.default_cargo == 'MAIL':

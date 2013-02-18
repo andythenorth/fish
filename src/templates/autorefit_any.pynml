@@ -1,8 +1,3 @@
-// -- handle subtype strings, used to aid players understand auto-refitting -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_classes) {
-    return string(STR_EMPTY);
-}
-
 // -- handle autorefitting -- //
 switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_refit_cost, 0) {
     return 0 + CB_RESULT_AUTOREFIT;

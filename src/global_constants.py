@@ -1,3 +1,5 @@
+types_with_subtype_refits_for_capacity = ['livestock_ship', 'container_feeder']
+
 type_supertype_mapping = {'hydrofoil_fast_ferry':'pax_mail',
                           'catamaran_fast_ferry':'packet',
                           'small_general_purpose_vessel':'trawler', # because it's similar to a packet, but needs to go fishing
@@ -43,7 +45,7 @@ label_refits_allowed_by_supertype = {'gcv': [],
                                      'trawler': ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR'], # trawler and packet are broadly similar
                                      'packet': ['BDMT','FRUT','LVST','VEHI','WATR'],
                                      'fast_freighter': ['FRUT','WATR'],
-                                     'livestock_ship': [], # set to livestock by default, don't need to make it refit
+                                     'livestock_ship': ['LVST'], # set to livestock by default, don't need to make it refit
                                      'log_tug': []} # set to wood by default, don't need to make it refit
 
 # allowed labels, for fine-grained control, knocking out cargos that are allowed by classes, but don't fit for gameplay reasons
