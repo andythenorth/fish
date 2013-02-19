@@ -58,7 +58,7 @@ STR_CATAMARAN_FAST_FERRY                                        :Catamaran fast 
 STR_VEHICLE_FERRY                                               :Vehicle ferry
 STR_JUMBO_VEHICLE_FERRY                                         :Jumbo vehicle ferry
 STR_LOG_TUG                                                     :Tugboat for towing floating logs
-STR_CONTAINER_FEEDER                                            :Container feeder
+STR_CONTAINER_FEEDER                                            :Small container ship
 STR_LIVESTOCK_SHIP                                              :Livestock ship
 STR_TRAWLER                                                     :Trawler (dedicated hold for fish)
 STR_BARGE_TUG                                                   :Barge tug

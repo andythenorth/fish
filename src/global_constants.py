@@ -1,4 +1,4 @@
-types_with_subtype_refits_for_capacity = ['log_tug','livestock_ship','container_feeder']
+types_with_subtype_refits_for_capacity = ['log_tug','livestock_ship']
 
 type_supertype_mapping = {'hydrofoil_fast_ferry':'pax_mail',
                           'catamaran_fast_ferry':'packet',
