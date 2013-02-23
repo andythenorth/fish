@@ -12,16 +12,16 @@ template spriteset_template_${vehicle.id}(y) {
     [762,       y,          113,        66,          ${vehicle.offsets[7][0]}, ${vehicle.offsets[7][1]}]
 }
 
-spriteset(${vehicle.id}_ss_not_loaded_not_moving, "src/graphics/${vehicle.id}.png") {
+spriteset(${vehicle.id}_ss_not_loaded_not_moving, "src/graphics/${vehicle.id}_0.png") {
   spriteset_template_${vehicle.id}(10)
 }
-spriteset(${vehicle.id}_ss_not_loaded_moving, "src/graphics/${vehicle.id}.png") {
+spriteset(${vehicle.id}_ss_not_loaded_moving, "src/graphics/${vehicle.id}_0.png") {
   spriteset_template_${vehicle.id}(110)
 }
-spriteset(${vehicle.id}_ss_loaded_not_moving, "src/graphics/${vehicle.id}.png") {
+spriteset(${vehicle.id}_ss_loaded_not_moving, "src/graphics/${vehicle.id}_0.png") {
   spriteset_template_${vehicle.id}(510)
 }
-spriteset(${vehicle.id}_ss_loaded_moving, "src/graphics/${vehicle.id}.png") {
+spriteset(${vehicle.id}_ss_loaded_moving, "src/graphics/${vehicle.id}_0.png") {
   spriteset_template_${vehicle.id}(610)
 }
 
@@ -59,7 +59,7 @@ template spriteset_template_purchase_${vehicle.id}() {
     [${vehicle.buy_menu_bb_xy[0]}, ${vehicle.buy_menu_bb_xy[1]}, ${vehicle.buy_menu_width}, 22, -${vehicle.buy_menu_width / 2}, -10]
 }
 
-spriteset(${vehicle.id}_ss_purchase, "src/graphics/${vehicle.id}.png") {
+spriteset(${vehicle.id}_ss_purchase, "src/graphics/${vehicle.id}_0.png") {
   spriteset_template_purchase_${vehicle.id}()
 }
 
