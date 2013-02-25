@@ -84,6 +84,7 @@ class Ship(object):
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
         self.buy_menu_width = config.getint(id, 'buy_menu_width')
         self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
+        self.sprite_variation_dates = self.unpack_pipe_separated_config_item_as_list('sprite_variation_dates')
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
