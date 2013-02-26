@@ -12,64 +12,65 @@ template spriteset_template_${vehicle.id}(y) {
     [762,       y,          113,        66,          ${vehicle.offsets[7][0]}, ${vehicle.offsets[7][1]}]
 }
 
-<tal:sprites_random_variations repeat="variation python:range(2)">
-    spriteset(${vehicle.id}_ss_not_loaded_not_moving_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+<tal:sprites_random_variations repeat="variation_num python:range(len(vehicle.graphic_variations_by_date))">
+    spriteset(${vehicle.id}_ss_not_loaded_not_moving_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(10)
     }
-    spriteset(${vehicle.id}_ss_not_loaded_moving_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_not_loaded_moving_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(110)
     }
-    spriteset(${vehicle.id}_ss_loading_0_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_loading_0_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(210)
     }
-    spriteset(${vehicle.id}_ss_loading_1_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_loading_1_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(310)
     }
-    spriteset(${vehicle.id}_ss_loading_2_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_loading_2_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(410)
     }
-    spriteset(${vehicle.id}_ss_loading_3_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_loading_3_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(510)
     }
-    spriteset(${vehicle.id}_ss_loaded_not_moving_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_loaded_not_moving_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(610)
     }
-    spriteset(${vehicle.id}_ss_loaded_moving_${variation}, "src/graphics/${vehicle.id}_${variation}.png") {
+    spriteset(${vehicle.id}_ss_loaded_moving_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(710)
     }
 
-    spritegroup ${vehicle.id}_sg_moving_${variation} {
+    spritegroup ${vehicle.id}_sg_moving_${variation_num} {
         loaded:  [
-            ${vehicle.id}_ss_not_loaded_moving_${variation},
-            ${vehicle.id}_ss_loaded_moving_${variation},
+            ${vehicle.id}_ss_not_loaded_moving_${variation_num},
+            ${vehicle.id}_ss_loaded_moving_${variation_num},
         ];
         loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
-            ${vehicle.id}_ss_loaded_moving_${variation},
+            ${vehicle.id}_ss_loaded_moving_${variation_num},
         ];
     }
 
-    spritegroup ${vehicle.id}_sg_not_moving_${variation} {
+    spritegroup ${vehicle.id}_sg_not_moving_${variation_num} {
         loaded:  [
-            ${vehicle.id}_ss_not_loaded_not_moving_${variation},
-            ${vehicle.id}_ss_loaded_not_moving_${variation},
+            ${vehicle.id}_ss_not_loaded_not_moving_${variation_num},
+            ${vehicle.id}_ss_loaded_not_moving_${variation_num},
         ];
         loading: [
-            ${vehicle.id}_ss_loading_0_${variation},
-            ${vehicle.id}_ss_loading_1_${variation},
-            ${vehicle.id}_ss_loading_2_${variation},
-            ${vehicle.id}_ss_loading_3_${variation},
+            ${vehicle.id}_ss_loading_0_${variation_num},
+            ${vehicle.id}_ss_loading_1_${variation_num},
+            ${vehicle.id}_ss_loading_2_${variation_num},
+            ${vehicle.id}_ss_loading_3_${variation_num},
         ];
     }
 
-    switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_${variation}, current_speed) {
-        0: return ${vehicle.id}_sg_not_moving_${variation};
-        return ${vehicle.id}_sg_moving_${variation};
+    switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_${variation_num}, current_speed) {
+        0: return ${vehicle.id}_sg_not_moving_${variation_num};
+        return ${vehicle.id}_sg_moving_${variation_num};
     }
 </tal:sprites_random_variations>
 
 random_switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics) {
-        1: return ${vehicle.id}_switch_graphics_0;
-        1: return ${vehicle.id}_switch_graphics_1;
+    <tal:switch_random_graphics repeat="variation_num python:range(len(vehicle.graphic_variations_by_date))">
+        1: return ${vehicle.id}_switch_graphics_${variation_num};
+    </tal:switch_random_graphics>
 }
 
 

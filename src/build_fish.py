@@ -84,7 +84,8 @@ class Ship(object):
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
         self.buy_menu_width = config.getint(id, 'buy_menu_width')
         self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
-        self.sprite_variation_dates = self.unpack_pipe_separated_config_item_as_list('sprite_variation_dates')
+        self.graphic_variations_by_date = self.get_graphic_variations_by_date()
+        print self.graphic_variations_by_date
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
@@ -101,6 +102,13 @@ class Ship(object):
             else:
                 result.append(int(i))
         return result
+
+    def get_graphic_variations_by_date(self):
+        sprite_variation_dates = self.unpack_pipe_separated_config_item_as_list('sprite_variation_dates')
+        if len(sprite_variation_dates) == 0:
+            return [[0, 9999]] # default  one variation with min / max dates if none provided by config
+        else:
+            return sprite_variation_dates
 
     def get_ocean_speed(self):
         return (0.8, 1)[self.sea_capable]
