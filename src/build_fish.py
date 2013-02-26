@@ -114,9 +114,16 @@ class Ship(object):
         # put the data in a format that's easy to render as switches
         sprite_variation_trigger_dates = {}
         for date in triggers:
-            sprite_variation_trigger_dates[date] = [counter for counter, (start, end) in enumerate(dates_per_variation) if date in range(start, end)]
-
+            if date != 9999: # shonky magic special casing for case of no end date - not used in nml, just for convenience in the config file
+                sprite_variation_trigger_dates[date] = [counter for counter, (start, end) in enumerate(dates_per_variation) if date in range(start, end)]
+        print sprite_variation_trigger_dates
         return [dates_per_variation, sprite_variation_trigger_dates]
+
+    def get_date_ranges_for_random_variation(self, index):
+        years = sorted(self.graphic_variations_by_date[1].keys())
+        intro = years[index]
+        expiry = years[index + 1] - 1
+        return str(intro) + '..' + str(expiry) + ':' + self.id + '_switch_graphics_random_' + str(intro)
 
     def get_ocean_speed(self):
         return (0.8, 1)[self.sea_capable]
