@@ -12,7 +12,7 @@ template spriteset_template_${vehicle.id}(y) {
     [762,       y,          113,        66,          ${vehicle.offsets[7][0]}, ${vehicle.offsets[7][1]}]
 }
 
-<tal:sprites_random_variations repeat="variation_num python:range(len(vehicle.graphic_variations_by_date))">
+<tal:sprites_random_variations repeat="variation_num python:range(len(vehicle.graphic_variations_by_date[0]))">
     spriteset(${vehicle.id}_ss_not_loaded_not_moving_${variation_num}, "src/graphics/${vehicle.id}_${variation_num}.png") {
       spriteset_template_${vehicle.id}(10)
     }
@@ -68,7 +68,7 @@ template spriteset_template_${vehicle.id}(y) {
 </tal:sprites_random_variations>
 
 random_switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics) {
-    <tal:switch_random_graphics repeat="variation_num python:range(len(vehicle.graphic_variations_by_date))">
+    <tal:switch_random_graphics repeat="variation_num python:range(len(vehicle.graphic_variations_by_date[0]))">
         1: return ${vehicle.id}_switch_graphics_${variation_num};
     </tal:switch_random_graphics>
 }

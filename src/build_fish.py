@@ -85,7 +85,6 @@ class Ship(object):
         self.buy_menu_width = config.getint(id, 'buy_menu_width')
         self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
         self.graphic_variations_by_date = self.get_graphic_variations_by_date()
-        print self.graphic_variations_by_date
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
@@ -104,11 +103,20 @@ class Ship(object):
         return result
 
     def get_graphic_variations_by_date(self):
-        sprite_variation_dates = self.unpack_pipe_separated_config_item_as_list('sprite_variation_dates')
-        if len(sprite_variation_dates) == 0:
-            return [[0, 9999]] # default  one variation with min / max dates if none provided by config
-        else:
-            return sprite_variation_dates
+        # ships have option to show random graphic variations, each variation can be date-limited
+        dates_per_variation = self.unpack_pipe_separated_config_item_as_list('sprite_variation_dates')
+        if len(dates_per_variation) == 0:
+            dates_per_variation = [[0, 9999]] # default  one variation with min / max dates if none provided by config
+
+        # find all the unique dates that will need a switch constructing
+        triggers = reduce(set.union, dates_per_variation, set())
+
+        # put the data in a format that's easy to render as switches
+        sprite_variation_trigger_dates = {}
+        for date in triggers:
+            sprite_variation_trigger_dates[date] = [counter for counter, (start, end) in enumerate(dates_per_variation) if date in range(start, end)]
+
+        return [dates_per_variation, sprite_variation_trigger_dates]
 
     def get_ocean_speed(self):
         return (0.8, 1)[self.sea_capable]
