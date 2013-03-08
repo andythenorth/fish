@@ -28,6 +28,7 @@ STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Livestock Ship
 STR_NAME_SUFFIX_LOG_TUG                                         :Log Tug
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Paddle Steamer
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Fast Supply Vessel
+STR_NAME_SUFFIX_STEAMER                                         :Steamer
 STR_NAME_SUFFIX_TANKER                                          :Tanker
 STR_NAME_SUFFIX_TANKER_BARGE                                    :Tanker Barge
 STR_NAME_SUFFIX_TRAWLER                                         :Trawler
@@ -52,6 +53,7 @@ STR_LARGE_COASTAL_TANKER                                        :Large coastal t
 STR_CARGO_VESSEL_INLAND                                         :Cargo vessel for inland waterways (rivers, canals and lakes)
 STR_TANKER_INLAND                                               :Tanker for inland waterways (rivers, canals and lakes)
 STR_PADDLE_STEAMER                                              :Paddle steamer
+STR_FAST_PACKET_STEAMER                                         :Fast Packet steamer
 STR_CARGO_HOVERCRAFT                                            :Cargo hovercraft
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil fast ferry
 STR_CATAMARAN_FAST_FERRY                                        :Catamaran fast ferry

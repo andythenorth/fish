@@ -5,6 +5,7 @@ type_supertype_mapping = {'hydrofoil_fast_ferry':'pax_mail',
                           'small_general_purpose_vessel':'trawler', # because it's similar to a packet, but needs to go fishing
                           'vehicle_ferry':'packet',
                           'paddle_steamer':'packet',
+                          'fast_packet_steamer':'packet',
                           'cargo_vessel_inland':'gcv',
                           'log_tug':'log_tug',
                           'cargo_hovercraft':'fast_freighter',
