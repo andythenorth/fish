@@ -44,17 +44,16 @@ STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general p
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Fast general purpose vessel
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :General purpose sea-going vessel
-STR_SMALL_COASTER                                               :Small coaster
-STR_COASTER                                                     :Coaster
-STR_LARGE_COASTER                                               :Large coaster
-STR_SMALL_COASTAL_TANKER                                        :Small coastal tanker
+STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Small freighter for coastal and inland waterways
+STR_COASTER                                                     :Coastal freighter
+STR_LARGE_COASTER                                               :Large coastal freighter
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Small tanker for coastal and inland waterways
 STR_COASTAL_TANKER                                              :Coastal tanker
 STR_LARGE_COASTAL_TANKER                                        :Large coastal tanker
-STR_CARGO_VESSEL_INLAND                                         :Cargo vessel for inland waterways (rivers, canals and lakes)
-STR_TANKER_INLAND                                               :Tanker for inland waterways (rivers, canals and lakes)
+STR_CARGO_VESSEL_INLAND                                         :Freighter for inland waterways
 STR_PADDLE_STEAMER                                              :Paddle steamer
 STR_FAST_PACKET_STEAMER                                         :Fast Packet steamer
-STR_CARGO_HOVERCRAFT                                            :Cargo hovercraft
+STR_CARGO_HOVERCRAFT                                            :Freight hovercraft
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil fast ferry
 STR_CATAMARAN_FAST_FERRY                                        :Catamaran fast ferry
 STR_VEHICLE_FERRY                                               :Vehicle ferry

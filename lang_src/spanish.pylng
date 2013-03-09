@@ -16,14 +16,11 @@ STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{ST
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
-STR_SMALL_COASTER                                               :Pequeño barco costero
 STR_COASTER                                                     :Barco costero
 STR_LARGE_COASTER                                               :Barco costero grande
-STR_SMALL_COASTAL_TANKER                                        :Barco cisterna costero pequeño
 STR_COASTAL_TANKER                                              :Barco cisterna costero
 STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
 STR_CARGO_VESSEL_INLAND                                         :Barco de carga para vías fluviales (ríos, canales y lagos)
-STR_TANKER_INLAND                                               :Barco cisterna para vías fluviales (ríos, canales y lagos)
 STR_PADDLE_STEAMER                                              :Vapor de ruedas
 STR_CARGO_HOVERCRAFT                                            :Hovercraft de carga
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry rápido hydrofoil

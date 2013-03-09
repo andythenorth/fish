@@ -31,14 +31,11 @@ STR_BUY_MENU_TEXT                                               :Tipe: {GOLD}{ST
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
 STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige seegaande vaartuig
-STR_SMALL_COASTER                                               :Klein kusvaarder
 STR_COASTER                                                     :Kusvaarder
 STR_LARGE_COASTER                                               :Groot Kusvaarder
-STR_SMALL_COASTAL_TANKER                                        :Klein kus tenkskip
 STR_COASTAL_TANKER                                              :Kus tenkskip
 STR_LARGE_COASTAL_TANKER                                        :Groot Kus tenkskip
 STR_CARGO_VESSEL_INLAND                                         :Vragskip vir binnelansdse waterweë (riviere, kanale en mere)
-STR_TANKER_INLAND                                               :Tenkskip vir binnelansdse waterweë (riviere, kanale en mere)
 STR_PADDLE_STEAMER                                              :Spaanstoomboot
 STR_CARGO_HOVERCRAFT                                            :Vrag skeertuig
 STR_HYDROFOIL_FAST_FERRY                                        :Vinnige Skeerveerboot
