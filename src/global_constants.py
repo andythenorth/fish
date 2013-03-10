@@ -1,5 +1,8 @@
-types_with_subtype_refits_for_capacity = ['log_tug','livestock_ship']
+# some types have refittable capacity, they have to be known here, the config doesn't know about them
+types_with_subtype_refits_for_capacity = ['log_tug', 'livestock_ship']
+refittable_types_cargo_strings_buy_menu = {'log_tug':'STR_QUANTITY_WOOD', 'livestock_ship':'STR_QUANTITY_LIVESTOCK'}
 
+# types control strings and such, supertypes control refittability etc
 type_supertype_mapping = {'hydrofoil_fast_ferry':'pax_mail',
                           'catamaran_fast_ferry':'packet',
                           'small_general_purpose_vessel':'trawler', # because it's similar to a packet, but needs to go fishing

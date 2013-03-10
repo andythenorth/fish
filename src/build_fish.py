@@ -210,6 +210,7 @@ class Ship(object):
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
+        cargo_units = None # only used when needed
         if self.supertype == 'packet':
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
@@ -219,8 +220,9 @@ class Ship(object):
                 "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
             )
         elif self.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity:
+            cargo_units = global_constants.refittable_types_cargo_strings_buy_menu[self.str_type_info.lower()]
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2}))"
+                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
             )
         else:
             buy_menu_template = Template(
@@ -231,9 +233,11 @@ class Ship(object):
         capacity_special_1 = self.capacity_special[1] if len(self.capacity_special) > 1 else ''
         capacity_special_2 = self.capacity_special[2] if len(self.capacity_special) > 2 else ''
 
-        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
+        foo = buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
                                             capacity_cargo_holds=self.capacity_cargo_holds, capacity_special_0=capacity_special_0,
-                                            capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2)
+                                            capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2, cargo_units=cargo_units)
+        print foo
+        return foo
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
