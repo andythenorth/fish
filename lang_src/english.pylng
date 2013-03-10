@@ -66,10 +66,12 @@ STR_BARGE_TUG                                                   :Barge tug
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Fast catamaran for supplying islands and offshore industries
 
 <!--! strings for handling refittable subtypes  -->
-STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}t)
+STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}{STRING})
 STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Refittable capacities: {GOLD}{COMMA}, {COMMA} or {COMMA}{STRING}
 STR_QUANTITY_WOOD                                               : tonnes of wood
 STR_QUANTITY_LIVESTOCK                                          : items of livestock
+STR_UNIT_TONNES                                                 : tonnes
+STR_UNIT_ITEMS                                                  : items
 
 <!--! don't include any code below here in translated lang files (these are generated code blocks) -->
 <!--! vehicle names -->

@@ -207,7 +207,6 @@ class Ship(object):
         type_suffix = '_'.join(type_suffix.split(' '))
         return "string(STR_NAME_" + self.id +", string(STR_NAME_SUFFIX_" + type_suffix + "))"
 
-
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
         cargo_units = None # only used when needed
@@ -233,11 +232,12 @@ class Ship(object):
         capacity_special_1 = self.capacity_special[1] if len(self.capacity_special) > 1 else ''
         capacity_special_2 = self.capacity_special[2] if len(self.capacity_special) > 2 else ''
 
-        foo = buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
+        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
                                             capacity_cargo_holds=self.capacity_cargo_holds, capacity_special_0=capacity_special_0,
                                             capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2, cargo_units=cargo_units)
-        print foo
-        return foo
+
+    def get_cargo_suffix(self):
+        return 'string(' + global_constants.refittable_types_cargo_strings_refit_menu[self.str_type_info.lower()] + ')'
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
