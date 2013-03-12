@@ -16,7 +16,7 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang_src'))
-docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs'))
+docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
 
 # the parser handles config file formats; provides a custom utility function for parsing to a list
@@ -278,8 +278,12 @@ for i in translated_languages:
 
 
 # compile docs (english only at the moment, but i18n translation is possible)
-docs_template = docs_templates['readme.pytxt']
+readme_template = docs_templates['readme.pytxt']
+readme = codecs.open(os.path.join('docs','readme.txt'), 'w','utf8')
+readme.write(readme_template(vehicles=vehicles, repo_vars=repo_vars))
+readme.close()
 
-docs = codecs.open(os.path.join('docs','readme.txt'), 'w','utf8')
-docs.write(docs_template(vehicles=vehicles, repo_vars=repo_vars))
-docs.close()
+set_overview_template = docs_templates['set_overview.pt']
+set_overview = codecs.open(os.path.join('docs','set_overview.html'), 'w','utf8')
+set_overview.write(set_overview_template(vehicles=vehicles, repo_vars=repo_vars))
+set_overview.close()
