@@ -10,7 +10,7 @@ L;%{BUILD}/*.nfo
 L;%{BUILD}/rpmlist
 # publish the whole translation report folder
 %{BUILD}/translations
-# publish all files from docs
+# publish the whole docs folder
 %{BUILD}/docs
 
 #
