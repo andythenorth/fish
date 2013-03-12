@@ -11,7 +11,7 @@ L;%{BUILD}/rpmlist
 # publish the whole translation report folder
 %{BUILD}/translations
 # publish all txt-files from docs
-%{BUILD}/docs/*.txt
+%{BUILD}/docs/*
 
 #
 # Prefixes: 
