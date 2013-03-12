@@ -18,6 +18,9 @@ lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang_src'))
 docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
 vehicles = FISH.get_vehicles()
+# default sort for docs is by vehicle intro date
+vehicles = sorted(vehicles, key=lambda vehicle: vehicle.intro_date)
+
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
