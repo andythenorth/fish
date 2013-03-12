@@ -1,7 +1,38 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
 
 <body>
-    <tal:build_vehicles_list repeat="vehicle vehicles">${vehicle.title} ${' ' * (28-len(vehicle.title))} Introduced: ${vehicle.intro_date}; Capacity: ${vehicle.capacity_pax} passengers / ${vehicle.capacity_mail} bags mail / ${vehicle.capacity_cargo_holds}t in cargo holds / ${vehicle.capacity_tanks * 1000}l in tanks; Speed: ${vehicle.speed}mph</tal:build_vehicles_list>
+    <div class="container">
+        <h1>Squid Ate FISH</h1>
+        <hr />
+        <p>Ship speed in game may vary from this doc by +/- 1mph, because...go have fun with integer maths.</p>
+        <br />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="number">Intro Date</th>
+                    <th>Capacity</th>
+                    <th class="number">Nominal Speed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tal:build_vehicles_list repeat="vehicle vehicles">
+                    <tr>
+                        <td>${vehicle.title}</td>
+                        <td class="number">${vehicle.intro_date}</td>
+                        <td>${vehicle.capacity_pax} passengers / ${vehicle.capacity_mail} bags mail / ${vehicle.capacity_cargo_holds}t in cargo holds / ${vehicle.capacity_tanks * 1000}l in tanks</td>
+                        <td class="number">${int(vehicle.speed)} mph</td>
+                    </tr>
+                </tal:build_vehicles_list>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
