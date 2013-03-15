@@ -6,7 +6,6 @@ R;%{BUILD}/*.zip
 E;%{BUILD}/*build.err.log
 # move some files for debugging to the subdir log
 L;%{BUILD}/*.nml
-L;%{BUILD}/*.nfo
 L;%{BUILD}/rpmlist
 # publish the whole translation report folder
 %{BUILD}/translations
