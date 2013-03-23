@@ -25,6 +25,9 @@ repo_vars = utils.get_repo_vars(sys)
 # get the strings from base lang file so they can be used in docs
 base_lang_strings = utils.parse_base_lang()
 
+for i in vehicles:
+    print i.get_buy_menu_string()
+
 # compile docs (english only at the moment, but i18n translation is possible)
 readme_template = docs_templates['readme.pytxt']
 readme = codecs.open(os.path.join('docs','readme.txt'), 'w','utf8')

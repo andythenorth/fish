@@ -10,15 +10,12 @@
     <div class="container">
         <h1>Squid Ate FISH</h1>
         <hr />
-        <p>Ship speed in game may vary from this doc by +/- 1mph, because...go have fun with integer maths.</p>
-        <br />
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Name</th>
                     <th class="number">Intro Date</th>
-                    <th>Capacity</th>
-                    <th class="number">Nominal Speed</th>
+                    <th>Info</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,8 +23,7 @@
                     <tr>
                         <td>${vehicle.get_name_substr()} ${base_lang_strings[vehicle.get_str_name_suffix()]}</td>
                         <td class="number">${vehicle.intro_date}</td>
-                        <td>${vehicle.capacity_pax} passengers / ${vehicle.capacity_mail} bags mail / ${vehicle.capacity_cargo_holds}t in cargo holds / ${vehicle.capacity_tanks * 1000}l in tanks</td>
-                        <td class="number">${int(vehicle.speed)} mph</td>
+                        <td>${base_lang_strings[vehicle.get_str_type_info()]}</td>
                     </tr>
                 </tal:build_vehicles_list>
             </tbody>
