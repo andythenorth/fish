@@ -204,6 +204,10 @@ class Ship(object):
         type_suffix = '_'.join(type_suffix.split(' '))
         return 'STR_NAME_SUFFIX_' + type_suffix
 
+    def get_str_type_info(self):
+        # makes a string id for nml
+        return 'STR_' + self.str_type_info
+
     def get_name(self):
         return "string(STR_NAME_" + self.id +", string(" + self.get_str_name_suffix() + "))"
 
@@ -212,27 +216,27 @@ class Ship(object):
         cargo_units = None # only used when needed
         if self.supertype == 'packet':
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
+                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
             )
         elif self.supertype == 'trawler':
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
+                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
             )
         elif self.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity:
             cargo_units = global_constants.refittable_types_cargo_strings_buy_menu[self.str_type_info.lower()]
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
+                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
             )
         else:
             buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(STR_${str_type_info}), string(STR_EMPTY))"
+                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_EMPTY))"
             )
         # dirty nasty code to handle case where capacity_special is an empty list
         capacity_special_0 = self.capacity_special[0] if len(self.capacity_special) > 0 else ''
         capacity_special_1 = self.capacity_special[1] if len(self.capacity_special) > 1 else ''
         capacity_special_2 = self.capacity_special[2] if len(self.capacity_special) > 2 else ''
 
-        return buy_menu_template.substitute(str_type_info=self.str_type_info, capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
                                             capacity_cargo_holds=self.capacity_cargo_holds, capacity_special_0=capacity_special_0,
                                             capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2, cargo_units=cargo_units)
 
