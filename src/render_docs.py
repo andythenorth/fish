@@ -22,11 +22,8 @@ vehicles = sorted(vehicles, key=lambda vehicle: vehicle.intro_date)
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
-#
+# get the strings from base lang file so they can be used in docs
 base_lang_strings = utils.parse_base_lang()
-
-for i in vehicles:
-    print base_lang_strings[i.get_str_name_suffix()]
 
 # compile docs (english only at the moment, but i18n translation is possible)
 readme_template = docs_templates['readme.pytxt']
