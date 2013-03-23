@@ -20,8 +20,19 @@
         <img src="img/masthead.png" class="pull-right" style="padding-top:12px;"/>
         <h1>Squid Ate FISH</h1>
         <hr />
-        <h3>${len(vehicles)} ships, with intro dates ${metadata['dates'][0]}-${metadata['dates'][1]}</h3>
-        <p>For OpenTTD. Compatible with default industries and all known industry newgrfs.</p>
+        <h3>${len(vehicles)} ships for OpenTTD</h3>
+        <ul class="inline">
+            <li><i class="icon-ok-circle"></i> Intro dates ${metadata['dates'][0]}-${metadata['dates'][1]}</li>
+            <li><i class="icon-ok-circle"></i> Wide range of ship types and capacities</li>
+            <li><i class="icon-ok-circle"></i> Compatible with all known cargos</li>
+            <li><i class="icon-ok-circle"></i> Supports 2 company colours</li>
+            <li><i class="icon-ok-circle"></i> Autorefit support</li>
+            <li><i class="icon-ok-circle"></i> Parameter for ship speed</li>
+            <li><i class="icon-ok-circle"></i> Parameter for canal construction costs</li>
+            <li><i class="icon-ok-circle"></i> GPL v2 license</li>
+        </ul>
+        <p class="alert alert-info">Just one little problem: it's not finished yet ;)</p>
+        <hr />
         <table class="table table-striped">
             <thead>
                 <tr>
