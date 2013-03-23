@@ -24,7 +24,7 @@
             <tbody>
                 <tal:build_vehicles_list repeat="vehicle vehicles">
                     <tr>
-                        <td>${vehicle.title}</td>
+                        <td>${vehicle.title} ${vehicle.id}</td>
                         <td class="number">${vehicle.intro_date}</td>
                         <td>${vehicle.capacity_pax} passengers / ${vehicle.capacity_mail} bags mail / ${vehicle.capacity_cargo_holds}t in cargo holds / ${vehicle.capacity_tanks * 1000}l in tanks</td>
                         <td class="number">${int(vehicle.speed)} mph</td>

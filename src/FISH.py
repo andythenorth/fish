@@ -197,11 +197,15 @@ class Ship(object):
         # relies on name being in format "Foo [Bar]" for Name [Type Suffix]
         return self.title.split('[')[0]
 
-    def get_name(self):
+    def get_str_name_suffix(self):
+        # used in vehicle name string only, relies on name in config being in format "Foo [Bar]" for Name [Type Suffix]
         type_suffix = self.title.split('[')[1].split(']')[0]
         type_suffix = type_suffix.upper()
         type_suffix = '_'.join(type_suffix.split(' '))
-        return "string(STR_NAME_" + self.id +", string(STR_NAME_SUFFIX_" + type_suffix + "))"
+        return 'STR_NAME_SUFFIX_' + type_suffix
+
+    def get_name(self):
+        return "string(STR_NAME_" + self.id +", string(" + self.get_str_name_suffix() + "))"
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations

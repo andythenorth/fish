@@ -22,6 +22,12 @@ vehicles = sorted(vehicles, key=lambda vehicle: vehicle.intro_date)
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
+#
+base_lang_strings = utils.parse_base_lang()
+
+for i in vehicles:
+    print base_lang_strings[i.get_str_name_suffix()]
+
 # compile docs (english only at the moment, but i18n translation is possible)
 readme_template = docs_templates['readme.pytxt']
 readme = codecs.open(os.path.join('docs','readme.txt'), 'w','utf8')
@@ -30,5 +36,5 @@ readme.close()
 
 set_overview_template = docs_templates['set_overview.pt']
 set_overview = codecs.open(os.path.join('docs','set_overview.html'), 'w','utf8')
-set_overview.write(set_overview_template(vehicles=vehicles, repo_vars=repo_vars))
+set_overview.write(set_overview_template(vehicles=vehicles, repo_vars=repo_vars, base_lang_strings=base_lang_strings))
 set_overview.close()
