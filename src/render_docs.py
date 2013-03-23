@@ -25,8 +25,11 @@ repo_vars = utils.get_repo_vars(sys)
 # get the strings from base lang file so they can be used in docs
 base_lang_strings = utils.parse_base_lang()
 
-for i in vehicles:
-    print i.get_buy_menu_string()
+metadata = {}
+dates = sorted([i.intro_date for i in vehicles])
+metadata['dates'] = (dates[0], dates[-1])
+metadata['dev_thread_url'] = 'http://www.tt-forums.net/viewtopic.php?f=26&t=44613'
+metadata['repo_url'] = 'http://dev.openttdcoop.org/projects/fish/'
 
 # compile docs (english only at the moment, but i18n translation is possible)
 readme_template = docs_templates['readme.pytxt']
@@ -36,5 +39,5 @@ readme.close()
 
 set_overview_template = docs_templates['set_overview.pt']
 set_overview = codecs.open(os.path.join('docs','set_overview.html'), 'w','utf8')
-set_overview.write(set_overview_template(vehicles=vehicles, repo_vars=repo_vars, base_lang_strings=base_lang_strings))
+set_overview.write(set_overview_template(vehicles=vehicles, repo_vars=repo_vars, base_lang_strings=base_lang_strings, metadata=metadata))
 set_overview.close()

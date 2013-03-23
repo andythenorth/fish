@@ -7,15 +7,25 @@
 </head>
 
 <body>
+    <div class="navbar navbar-inverse navbar-static-top" style="border-bottom:3px solid #64ace0; box-shadow: 0px 1px 2px #333">
+        <div class="navbar-inner">
+            <ul class="nav pull-right">
+                <li><a href="${metadata['repo_url']}"><i class="icon-gift icon-white"></i> Source Repository</a></li>
+                <li><a href="${metadata['dev_thread_url']}"><i class="icon-comment icon-white"></i> Discuss at TT-Forums.net</a></li>
+            </ul>
+        </div>
+    </div>
+    <br />
     <div class="container">
         <h1>Squid Ate FISH</h1>
         <hr />
+        <h3>${len(vehicles)} ships, with intro dates ${metadata['dates'][0]}-${metadata['dates'][1]}</h3>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>Ship Name</th>
                     <th class="number">Intro Date</th>
-                    <th>Info</th>
+                    <th>Extra Info</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,6 +39,7 @@
             </tbody>
         </table>
     </div>
+    <div style="text-align:center; color:#999; padding:5px; background-color:#eee; border-top:solid 1px #ddd; box-shadow: inset 0px 1px 1px #ddd">Fish Ate Squid, with thanks to all who helped</div>
 </body>
 
 </html>
