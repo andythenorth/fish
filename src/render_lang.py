@@ -1,4 +1,4 @@
-print "[RENDER LANG] lang.py"
+print "[RENDER LANG] render_lang.py"
 
 import FISH
 import utils
@@ -13,9 +13,7 @@ import codecs # used for writing files - more unicode friendly than standard ope
 
 from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
-templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang_src'))
-docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
 vehicles = FISH.get_vehicles()
 # get args passed by makefile
