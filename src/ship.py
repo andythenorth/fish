@@ -18,11 +18,15 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
+from ships import registered_ships
+
 import legacy_config_handler
 
 config = legacy_config_handler.config
 vehicles = legacy_config_handler.vehicles
 config_globals = legacy_config_handler.config_globals
+
+
 
 class Ship(object):
     """Base class for all types of ships"""
@@ -77,7 +81,7 @@ class Ship(object):
         ship_file.close()
 
     def register(self):
-        registered_industries.append(self)
+        registered_ships.append(self)
 
     def unpack_pipe_separated_config_item_as_list(self, config_item_id):
         # a squirrely function to unpack some nasty representations of lists of lists from config item, '|' and ' ' separated

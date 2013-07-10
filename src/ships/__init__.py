@@ -1,2 +1,2 @@
-registered_vehicles = []
+registered_ships = []
 
