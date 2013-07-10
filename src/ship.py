@@ -1,12 +1,15 @@
 # get the globals - however for using globals in templates, it's better for the template to use global_template.pt as a macro
 import global_constants # expose all constants for easy passing to templates
 
+from pprint import pprint
 
 import os.path
 currentdir = os.curdir
 
 import sys
 sys.path.append(os.path.join('src')) # add to the module search path
+
+import codecs
 
 import math
 from string import Template # python builtin templater might be used in some utility cases
@@ -63,6 +66,15 @@ class Ship(object):
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
 
+        ship_file = codecs.open(os.path.join('src','ships',(self.id + '.py')),'w','utf8')
+        foo = 'ship = Ship(id = ' + self.id + ',\n'
+        for i in vars(self):
+            if i is not 'id':
+                foo = foo + '            ' + i + ' = ' + repr(vars(self)[i]) + ', \n'
+        foo = foo + ')'
+        ship_file.write(foo)
+        ship_file.close()
+
     def unpack_pipe_separated_config_item_as_list(self, config_item_id):
         # a squirrely function to unpack some nasty representations of lists of lists from config item, '|' and ' ' separated
         result = []
@@ -91,7 +103,6 @@ class Ship(object):
         for date in triggers:
             if date != 9999: # shonky magic special casing for case of no end date - not used in nml, just for convenience in the config file
                 sprite_variation_trigger_dates[date] = [counter for counter, (start, end) in enumerate(dates_per_variation) if date in range(start, end)]
-        print sprite_variation_trigger_dates
         return [dates_per_variation, sprite_variation_trigger_dates]
 
     def get_date_ranges_for_random_variation(self, index):
