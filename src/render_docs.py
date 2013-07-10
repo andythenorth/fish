@@ -1,6 +1,6 @@
 print "[RENDER DOCS] render_docs.py"
 
-import FISH
+import fish
 import utils
 
 import os.path
@@ -15,7 +15,7 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
-vehicles = FISH.get_vehicles()
+vehicles = fish.get_vehicles()
 # default sort for docs is by vehicle intro date
 vehicles = sorted(vehicles, key=lambda vehicle: vehicle.intro_date)
 

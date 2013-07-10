@@ -5,7 +5,7 @@ start = time()
 
 print "[BUILD] build_fish.py"
 
-import FISH
+import fish
 import utils
 
 import os.path

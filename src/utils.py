@@ -19,3 +19,8 @@ def parse_base_lang():
     # this is fragile, playing one line python is silly :)
     strings = dict((line.split(':',1)[0].strip(), line.split(':',1)[1].strip()) for line in text if ':' in line)
     return strings
+
+def echo_message(message):
+    # use to raise messages from templates to standard out (can't print directly from template render)
+    # magically wraps these messages in ANSI colour to make them visible - they are only intended for noticeable messages, not general output
+    print '\033[33m' + message + '\033[0m'

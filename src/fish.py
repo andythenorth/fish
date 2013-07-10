@@ -26,18 +26,16 @@ if len(sys.argv) > 1:
 else: # provide some defaults so templates don't explode when testing python script without command line args
     repo_vars = {'repo_title' : 'FISH - compiled without makefile', 'repo_version' : 1}
 
+import ship
 from ship import Ship
+from ships import registered_ships
+
+from ships import altamira_freighter
 
 config = legacy_config_handler.config
 def get_vehicles():
-    return legacy_config_handler.vehicles
+    return registered_ships
 
 def get_config_globals():
     return legacy_config_handler.config_globals
 
-vehicles = get_vehicles()
-config_globals = get_config_globals()
-
-for i in config.sections():
-    if i not in global_constants.vehicles_turned_off and i != 'config_globals':
-        vehicles.append(Ship(id=i))

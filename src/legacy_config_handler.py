@@ -24,5 +24,3 @@ config.read(os.path.join(currentdir, 'src', 'FISH.cfg'))
 config_globals = {}
 for name, value in config.items('config_globals'):
     config_globals[name] = value
-
-vehicles = []

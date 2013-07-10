@@ -1,6 +1,6 @@
 print "[RENDER NML] render_nml.py"
 
-import FISH
+import fish
 import utils
 
 import os.path
@@ -18,8 +18,8 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
-vehicles = FISH.get_vehicles()
-config_globals = FISH.get_config_globals()
+vehicles = fish.get_vehicles()
+config_globals = fish.get_config_globals()
 
 # compile a single final nml file for the grf
 master_template = templates['fish.pynml']

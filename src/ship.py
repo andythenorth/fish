@@ -23,14 +23,13 @@ from ships import registered_ships
 import legacy_config_handler
 
 config = legacy_config_handler.config
-vehicles = legacy_config_handler.vehicles
 config_globals = legacy_config_handler.config_globals
 
 
 
 class Ship(object):
     """Base class for all types of ships"""
-    def __init__(self, id):
+    def __init__(self, id, **kwargs):
         self.id = id
 
         #setup properties for this vehicle
@@ -141,7 +140,7 @@ class Ship(object):
     def get_adjusted_model_life(self):
         # handles keeping the buy menu tidy, relies on magic from Eddi
         if self.replacement_id != None and self.replacement_id != '-none' and self.replacement_id != '':
-            for i in vehicles:
+            for i in registered_ships:
                 if i.id == self.replacement_id:
                     model_life = i.intro_date - self.intro_date
                     return model_life + self.vehicle_life
