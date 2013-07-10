@@ -1,1 +1,2 @@
+registered_vehicles = []
 

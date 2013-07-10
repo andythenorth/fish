@@ -65,6 +65,7 @@ class Ship(object):
         self.graphic_variations_by_date = self.get_graphic_variations_by_date()
         self.inland_capable = config.getboolean(id, 'inland_capable')
         self.sea_capable = config.getboolean(id, 'sea_capable')
+        self.register()
 
         ship_file = codecs.open(os.path.join('src','ships',(self.id + '.py')),'w','utf8')
         foo = 'ship = Ship(id = ' + self.id + ',\n'
@@ -74,6 +75,9 @@ class Ship(object):
         foo = foo + ')'
         ship_file.write(foo)
         ship_file.close()
+
+    def register(self):
+        registered_industries.append(self)
 
     def unpack_pipe_separated_config_item_as_list(self, config_item_id):
         # a squirrely function to unpack some nasty representations of lists of lists from config item, '|' and ' ' separated
