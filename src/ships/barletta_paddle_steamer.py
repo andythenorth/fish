@@ -1,6 +1,6 @@
 from ship import Ship
 
-ship = Ship(id = 'barletta_paddle_steamer',
+ship = Ship(id = 'barletta_paddle_steamer,
             numeric_id = '20',
             capacity_cargo_holds = 96,
             capacity_tanks = 0,
@@ -8,7 +8,7 @@ ship = Ship(id = 'barletta_paddle_steamer',
             fixed_run_cost_factor = 9.0,
             supertype = 'packet',
             speed = 23.0,
-            speed_unladen = 23.0,
+            speed_factor_unladen = 1.0,
             title = 'Barletta [Paddle Steamer]',
             inland_capable = True,
             offsets = [[-14, -54], [-63, -24], [-50, -29], [-10, -28], [-14, -55], [-58, -27], [-50, -29], [-8, -24]],

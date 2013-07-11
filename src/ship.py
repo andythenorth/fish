@@ -23,7 +23,6 @@ from ships import registered_ships
 import legacy_config_handler
 
 config = legacy_config_handler.config
-config_globals = legacy_config_handler.config_globals
 
 
 
@@ -33,41 +32,38 @@ class Ship(object):
         self.id = id
 
         #setup properties for this vehicle
-        self.title = config.get(id, 'title')
-        self.numeric_id = config.get(id, 'numeric_id')
-        if config.get(id, 'custom_template').strip() != '':
-            self.custom_template = config.get(id, 'custom_template')
-        else:
-            self.custom_template = None
-        self.str_type_info = config.get(id, 'str_type_info').upper()
+        self.title = kwargs.get('title', None)
+        self.numeric_id = kwargs.get('numeric_id', None)
+        self.custom_template = kwargs.get('custom_template', None)
+        self.str_type_info = kwargs.get('str_type_info', None).upper()
         # supertype controls refits etc, so figure it out from the type
         self.supertype = global_constants.type_supertype_mapping[self.str_type_info.lower()]
-        self.graphics_template = config.get(id, 'graphics_template')
-        self.intro_date = config.getint(id, 'intro_date')
-        self.replacement_id = config.get(id, 'replacement_id')
+        self.graphics_template = kwargs.get('graphics_template', None)
+        self.intro_date = kwargs.get('intro_date', None)
+        self.replacement_id = kwargs.get('replacement_id', None)
         #print self.replacement_id
-        self.vehicle_life = config.getint(id, 'vehicle_life')
-        self.speed = config.getfloat(id, 'speed')
-        self.speed_unladen = self.speed * config.getfloat(id, 'speed_factor_unladen')
-        self.buy_cost = config.getint(id, 'buy_cost')
-        self.fixed_run_cost_factor = config.getfloat(id, 'fixed_run_cost')
-        self.fuel_run_cost_factor = config.getfloat(id, 'fuel_run_cost')
-        self.gross_tonnage = config.getint(id, 'gross_tonnage')
-        self.capacity_pax = config.getint(id, 'capacity_pax')
-        self.capacity_mail = config.getint(id, 'capacity_mail')
-        self.capacity_cargo_holds = config.getint(id, 'capacity_cargo_holds')
-        self.capacity_tanks = config.getint(id, 'capacity_tanks')
+        self.vehicle_life = kwargs.get('vehicle_life', None)
+        self.speed = kwargs.get('speed', None)
+        self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
+        self.buy_cost = kwargs.get('buy_cost', None)
+        self.fixed_run_cost_factor = kwargs.get('fixed_run_cost_factor', None)
+        self.fuel_run_cost_factor = kwargs.get('fuel_run_cost_factor', None)
+        self.gross_tonnage = kwargs.get('gross_tonnage', None)
+        self.capacity_pax = kwargs.get('capacity_pax', None)
+        self.capacity_mail = kwargs.get('capacity_mail', None)
+        self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', None)
+        self.capacity_tanks = kwargs.get('capacity_tanks', None)
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
         self.capacity_special = self.unpack_pipe_separated_config_item_as_list('capacity_special')
         self.capacity_freight = self.get_capacity_freight()
-        self.default_cargo = config.get(id, 'default_cargo')
-        self.loading_speed = config.get(id, 'loading_speed')
+        self.default_cargo = kwargs.get('default_cargo', None)
+        self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
-        self.buy_menu_width = config.getint(id, 'buy_menu_width')
+        self.buy_menu_width = kwargs.get('buy_menu_width', None)
         self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
         self.graphic_variations_by_date = self.get_graphic_variations_by_date()
-        self.inland_capable = config.getboolean(id, 'inland_capable')
-        self.sea_capable = config.getboolean(id, 'sea_capable')
+        self.inland_capable = kwargs.get('inland_capable', None)
+        self.sea_capable = kwargs.get('sea_capable', None)
         self.register()
 
         """
@@ -197,7 +193,7 @@ class Ship(object):
         return self.title.split('[')[0]
 
     def get_str_name_suffix(self):
-        # used in vehicle name string only, relies on name in config being in format "Foo [Bar]" for Name [Type Suffix]
+        # used in vehicle name string only, relies on name property value being in format "Foo [Bar]" for Name [Type Suffix]
         type_suffix = self.title.split('[')[1].split(']')[0]
         type_suffix = type_suffix.upper()
         type_suffix = '_'.join(type_suffix.split(' '))
