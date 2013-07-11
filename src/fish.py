@@ -30,6 +30,6 @@ from ships import registered_ships
 
 from ships import altamira_freighter
 
-def get_vehicles():
+def get_ships():
     return registered_ships
 

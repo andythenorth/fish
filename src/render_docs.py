@@ -15,9 +15,9 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
-vehicles = fish.get_vehicles()
+ships = fish.get_ships()
 # default sort for docs is by vehicle intro date
-vehicles = sorted(vehicles, key=lambda vehicle: vehicle.intro_date)
+ships = sorted(ships, key=lambda vehicle: vehicle.intro_date)
 
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
@@ -26,7 +26,7 @@ repo_vars = utils.get_repo_vars(sys)
 base_lang_strings = utils.parse_base_lang()
 
 metadata = {}
-dates = sorted([i.intro_date for i in vehicles])
+dates = sorted([i.intro_date for i in ships])
 metadata['dates'] = (dates[0], dates[-1])
 metadata['dev_thread_url'] = 'http://www.tt-forums.net/viewtopic.php?f=26&t=44613'
 metadata['repo_url'] = 'http://dev.openttdcoop.org/projects/fish/'
@@ -34,10 +34,10 @@ metadata['repo_url'] = 'http://dev.openttdcoop.org/projects/fish/'
 # compile docs (english only at the moment, but i18n translation is possible)
 readme_template = docs_templates['readme.pytxt']
 readme = codecs.open(os.path.join('docs','readme.txt'), 'w','utf8')
-readme.write(readme_template(vehicles=vehicles, repo_vars=repo_vars))
+readme.write(readme_template(ships=ships, repo_vars=repo_vars))
 readme.close()
 
 set_overview_template = docs_templates['set_overview.pt']
 set_overview = codecs.open(os.path.join('docs','set_overview.html'), 'w','utf8')
-set_overview.write(set_overview_template(vehicles=vehicles, repo_vars=repo_vars, base_lang_strings=base_lang_strings, metadata=metadata))
+set_overview.write(set_overview_template(ships=ships, repo_vars=repo_vars, base_lang_strings=base_lang_strings, metadata=metadata))
 set_overview.close()

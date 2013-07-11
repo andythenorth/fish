@@ -75,6 +75,6 @@ STR_UNIT_ITEMS                                                  : items
 
 <!--! don't include any code below here in translated lang files (these are generated code blocks) -->
 <!--! vehicle names -->
-<tal:build_vehicle_names repeat="vehicle vehicles">
+<tal:build_vehicle_names repeat="vehicle ships">
 STR_NAME_${vehicle.id}                                          :${vehicle.get_name_substr()} {STRING}
 </tal:build_vehicle_names>

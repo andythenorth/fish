@@ -15,7 +15,7 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang_src'))
 
-vehicles = fish.get_vehicles()
+ships = fish.get_ships()
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
@@ -27,5 +27,5 @@ for i in translated_languages:
     lang_template = lang_templates[i + '.pylng']
 
     lang = codecs.open(os.path.join('lang', i + '.lng'), 'w','utf8')
-    lang.write(lang_template(vehicles=vehicles, repo_vars=repo_vars))
+    lang.write(lang_template(ships=ships, repo_vars=repo_vars))
     lang.close()

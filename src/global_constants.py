@@ -119,7 +119,7 @@ graphics_path = 'src/graphics/' # this is for nml, don't need to use python path
 FIXED_RUN_COST = 500.0
 FUEL_RUN_COST = 10.0
 
-# provide a private method for turning vehicles off during development without modifying the config file. Bound to go wrong. :P
-vehicles_turned_off = (
+# provide a private method for turning ships off during development without modifying the config file. Bound to go wrong. :P
+ships_turned_off = (
 )
 
