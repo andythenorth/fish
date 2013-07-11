@@ -1,3 +1,5 @@
+<tal:call_global_template define="global_template load: global_template.pt" metal:use-macro="global_template" />
+
 // define the newgrf
 grf {
 	grfid: "\41\4E\02\01";
@@ -47,4 +49,4 @@ if (param_reset_construction_costs) {
 }
 
 // sort order
-sort(FEAT_SHIPS, ${config_globals.get('purchase_list_sort_order')});
+sort(FEAT_SHIPS, ${global_constants.purchase_list_sort_order});
