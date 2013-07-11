@@ -58,7 +58,7 @@ class Ship(object):
         self.capacity_freight = self.get_capacity_freight()
         self.default_cargo = kwargs.get('default_cargo', None)
         self.loading_speed = kwargs.get('loading_speed', None)
-        self.buy_menu_bb_xy = [int(i) for i in config.get(id, 'buy_menu_bb_xy').split(' ')]
+        self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
         self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
         self.graphic_variations_by_date = self.get_graphic_variations_by_date()
