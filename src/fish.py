@@ -15,8 +15,6 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
-import legacy_config_handler
-
 # get the globals - however for using globals in templates, it's better for the template to use global_template.pt as a macro
 import global_constants # expose all constants for easy passing to templates
 
@@ -32,10 +30,6 @@ from ships import registered_ships
 
 from ships import altamira_freighter
 
-config = legacy_config_handler.config
 def get_vehicles():
     return registered_ships
-
-def get_config_globals():
-    return legacy_config_handler.config_globals
 

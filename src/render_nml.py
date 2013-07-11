@@ -19,13 +19,12 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 repo_vars = utils.get_repo_vars(sys)
 
 vehicles = fish.get_vehicles()
-config_globals = fish.get_config_globals()
 
 # compile a single final nml file for the grf
 master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
-templated_nml = master_template(vehicles=vehicles, repo_vars=repo_vars, config_globals = config_globals)
+templated_nml = master_template(vehicles=vehicles, repo_vars=repo_vars)
 # an ugly hack here because chameleon html escapes some characters
 templated_nml = '>'.join(templated_nml.split('&gt;'))
 templated_nml = '&'.join(templated_nml.split('&amp;'))
