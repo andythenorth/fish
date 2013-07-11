@@ -1,82 +1,82 @@
 // handle graphics
 
-template spriteset_template_${vehicle.id}(y) {
+template spriteset_template_${ship.id}(y) {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
-    [20,        y,          28,         89,          ${vehicle.offsets[0][0]}, ${vehicle.offsets[0][1]}]
-    [60,        y,          113,        66,          ${vehicle.offsets[1][0]}, ${vehicle.offsets[1][1]}]
-    [186,       y,          138,        48,          ${vehicle.offsets[2][0]}, ${vehicle.offsets[2][1]}]
-    [328,       y,          113,        66,          ${vehicle.offsets[3][0]}, ${vehicle.offsets[3][1]}]
-    [454,       y,          28,         89,          ${vehicle.offsets[4][0]}, ${vehicle.offsets[4][1]}]
-    [494,       y,          113,        66,          ${vehicle.offsets[5][0]}, ${vehicle.offsets[5][1]}]
-    [620,       y,          138,        48,          ${vehicle.offsets[6][0]}, ${vehicle.offsets[6][1]}]
-    [762,       y,          113,        66,          ${vehicle.offsets[7][0]}, ${vehicle.offsets[7][1]}]
+    [20,        y,          28,         89,          ${ship.offsets[0][0]}, ${ship.offsets[0][1]}]
+    [60,        y,          113,        66,          ${ship.offsets[1][0]}, ${ship.offsets[1][1]}]
+    [186,       y,          138,        48,          ${ship.offsets[2][0]}, ${ship.offsets[2][1]}]
+    [328,       y,          113,        66,          ${ship.offsets[3][0]}, ${ship.offsets[3][1]}]
+    [454,       y,          28,         89,          ${ship.offsets[4][0]}, ${ship.offsets[4][1]}]
+    [494,       y,          113,        66,          ${ship.offsets[5][0]}, ${ship.offsets[5][1]}]
+    [620,       y,          138,        48,          ${ship.offsets[6][0]}, ${ship.offsets[6][1]}]
+    [762,       y,          113,        66,          ${ship.offsets[7][0]}, ${ship.offsets[7][1]}]
 }
 
-spriteset(${vehicle.id}_ss_loaded_0_not_moving, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_${vehicle.id}(10)
+spriteset(${ship.id}_ss_loaded_0_not_moving, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_${ship.id}(10)
 }
-spriteset(${vehicle.id}_ss_loaded_0_moving, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_${vehicle.id}(110)
+spriteset(${ship.id}_ss_loaded_0_moving, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_${ship.id}(110)
 }
-spriteset(${vehicle.id}_ss_loaded_1_not_moving, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_${vehicle.id}(210)
+spriteset(${ship.id}_ss_loaded_1_not_moving, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_${ship.id}(210)
 }
-spriteset(${vehicle.id}_ss_loaded_1_moving, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_${vehicle.id}(310)
+spriteset(${ship.id}_ss_loaded_1_moving, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_${ship.id}(310)
 }
-spriteset(${vehicle.id}_ss_loaded_2_not_moving, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_${vehicle.id}(410)
+spriteset(${ship.id}_ss_loaded_2_not_moving, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_${ship.id}(410)
 }
-spriteset(${vehicle.id}_ss_loaded_2_moving, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_${vehicle.id}(510)
+spriteset(${ship.id}_ss_loaded_2_moving, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_${ship.id}(510)
 }
 
-spritegroup ${vehicle.id}_sg_moving {
+spritegroup ${ship.id}_sg_moving {
     loaded:  [
-        ${vehicle.id}_ss_loaded_0_moving,
-        ${vehicle.id}_ss_loaded_1_moving,
-        ${vehicle.id}_ss_loaded_2_moving,
+        ${ship.id}_ss_loaded_0_moving,
+        ${ship.id}_ss_loaded_1_moving,
+        ${ship.id}_ss_loaded_2_moving,
     ];
     loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
-        ${vehicle.id}_ss_loaded_0_moving,
+        ${ship.id}_ss_loaded_0_moving,
     ];
 }
 
-spritegroup ${vehicle.id}_sg_not_moving {
+spritegroup ${ship.id}_sg_not_moving {
     loaded:  [
-        ${vehicle.id}_ss_loaded_0_not_moving,
-        ${vehicle.id}_ss_loaded_1_not_moving,
-        ${vehicle.id}_ss_loaded_2_not_moving,
+        ${ship.id}_ss_loaded_0_not_moving,
+        ${ship.id}_ss_loaded_1_not_moving,
+        ${ship.id}_ss_loaded_2_not_moving,
     ];
     loading: [
-        ${vehicle.id}_ss_loaded_0_not_moving,
-        ${vehicle.id}_ss_loaded_1_not_moving,
-        ${vehicle.id}_ss_loaded_2_not_moving,
+        ${ship.id}_ss_loaded_0_not_moving,
+        ${ship.id}_ss_loaded_1_not_moving,
+        ${ship.id}_ss_loaded_2_not_moving,
     ];
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, current_speed) {
-    0: return ${vehicle.id}_sg_not_moving;
-    return ${vehicle.id}_sg_moving;
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_graphics, current_speed) {
+    0: return ${ship.id}_sg_not_moving;
+    return ${ship.id}_sg_moving;
 }
 
 // buy menu graphics
 
-template spriteset_template_purchase_${vehicle.id}() {
+template spriteset_template_purchase_${ship.id}() {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
-    [${vehicle.buy_menu_bb_xy[0]}, ${vehicle.buy_menu_bb_xy[1]}, 138, 22, -35, -10]
+    [${ship.buy_menu_bb_xy[0]}, ${ship.buy_menu_bb_xy[1]}, 138, 22, -35, -10]
 }
 
-spriteset(${vehicle.id}_ss_purchase, "src/graphics/${vehicle.id}_0.png") {
-  spriteset_template_purchase_${vehicle.id}()
+spriteset(${ship.id}_ss_purchase, "src/graphics/${ship.id}_0.png") {
+  spriteset_template_purchase_${ship.id}()
 }
 
-spritegroup ${vehicle.id}_sg_purchase {
+spritegroup ${ship.id}_sg_purchase {
     loaded:  [
-        ${vehicle.id}_ss_purchase,
+        ${ship.id}_ss_purchase,
     ];
     loading: [
-        ${vehicle.id}_ss_purchase,
+        ${ship.id}_ss_purchase,
     ];
 }
 

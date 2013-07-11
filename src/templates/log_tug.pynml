@@ -1,13 +1,13 @@
 <tal:call_global_template define="global_template load: global_template.pt" metal:use-macro="global_template" />
 
-// -- begin ${vehicle.title} -- <!--! this adds a comment to aid reading the final nml -->
+// -- begin ${ship.title} -- <!--! this adds a comment to aid reading the final nml -->
 
 // handle graphics
 <tal:build_graphics define="states python:{'not_moving': 0 ,'moving': 600};
                             x_y_crops python:('28, 89', '113, 66', '138, 48', '113, 66')"
                     repeat="state states">
     <tal:build_state define="y_start python:states[state]">
-        spriteset(${vehicle.id}_ss_not_loaded_${state}, "src/graphics/${vehicle.id}_0.png") {
+        spriteset(${ship.id}_ss_not_loaded_${state}, "src/graphics/${ship.id}_0.png") {
             [20,  ${y_start + 10}, ${x_y_crops[0]},  -13,  -6]
             [60,  ${y_start + 10}, ${x_y_crops[1]}, -124,   5]
             [186, ${y_start + 10}, ${x_y_crops[2]}, -124, -28]
@@ -17,7 +17,7 @@
             [620, ${y_start + 10}, ${x_y_crops[2]},  -15, -28]
             [762, ${y_start + 10}, ${x_y_crops[3]},   15,   6]
         }
-        spriteset(${vehicle.id}_ss_load_1_${state}, "src/graphics/${vehicle.id}_0.png") {
+        spriteset(${ship.id}_ss_load_1_${state}, "src/graphics/${ship.id}_0.png") {
             [20,  ${y_start + 110}, ${x_y_crops[0]},  -13, -14]
             [60,  ${y_start + 110}, ${x_y_crops[1]}, -118,   1]
             [186, ${y_start + 110}, ${x_y_crops[2]}, -112, -28]
@@ -27,7 +27,7 @@
             [620, ${y_start + 110}, ${x_y_crops[2]},  -26, -28]
             [762, ${y_start + 110}, ${x_y_crops[3]},    2,   0]
         }
-        spriteset(${vehicle.id}_ss_load_2_${state}, "src/graphics/${vehicle.id}_0.png") {
+        spriteset(${ship.id}_ss_load_2_${state}, "src/graphics/${ship.id}_0.png") {
             [20,  ${y_start + 210}, ${x_y_crops[0]},  -13, -21]
             [60,  ${y_start + 210}, ${x_y_crops[1]}, -107,  -4]
             [186, ${y_start + 210}, ${x_y_crops[2]}, -100, -28]
@@ -37,7 +37,7 @@
             [620, ${y_start + 210}, ${x_y_crops[2]},  -49, -28]
             [762, ${y_start + 210}, ${x_y_crops[3]},   -4,  -4]
         }
-        spriteset(${vehicle.id}_ss_load_3_${state}, "src/graphics/${vehicle.id}_0.png") {
+        spriteset(${ship.id}_ss_load_3_${state}, "src/graphics/${ship.id}_0.png") {
             [20,  ${y_start + 310}, ${x_y_crops[0]},  -13, -29]
             [60,  ${y_start + 310}, ${x_y_crops[1]}, -102,  -8]
             [186, ${y_start + 310}, ${x_y_crops[2]},  -84, -28]
@@ -47,7 +47,7 @@
             [620, ${y_start + 310}, ${x_y_crops[2]},  -50, -28]
             [762, ${y_start + 310}, ${x_y_crops[3]},   -7,  -6]
         }
-        spriteset(${vehicle.id}_ss_load_4_${state}, "src/graphics/${vehicle.id}_0.png") {
+        spriteset(${ship.id}_ss_load_4_${state}, "src/graphics/${ship.id}_0.png") {
             [20,  ${y_start + 410}, ${x_y_crops[0]},  -13, -35]
             [60,  ${y_start + 410}, ${x_y_crops[1]},  -97, -10]
             [186, ${y_start + 410}, ${x_y_crops[2]},  -69, -28]
@@ -57,7 +57,7 @@
             [620, ${y_start + 410}, ${x_y_crops[2]},  -61, -28]
             [762, ${y_start + 410}, ${x_y_crops[3]},  -15, -10]
         }
-        spriteset(${vehicle.id}_ss_load_5_${state}, "src/graphics/${vehicle.id}_0.png") {
+        spriteset(${ship.id}_ss_load_5_${state}, "src/graphics/${ship.id}_0.png") {
             [20,  ${y_start + 510}, ${x_y_crops[0]},  -13, -41]
             [60,  ${y_start + 510}, ${x_y_crops[1]},  -90, -13]
             [186, ${y_start + 510}, ${x_y_crops[2]},  -65, -28]
@@ -70,184 +70,184 @@
     </tal:build_state>
 </tal:build_graphics>
 
-spritegroup ${vehicle.id}_sg_refit_0_moving {
+spritegroup ${ship.id}_sg_refit_0_moving {
     loaded:  [
-        ${vehicle.id}_ss_not_loaded_moving,
-        ${vehicle.id}_ss_load_1_moving,
+        ${ship.id}_ss_not_loaded_moving,
+        ${ship.id}_ss_load_1_moving,
     ];
     loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
-        ${vehicle.id}_ss_not_loaded_moving,
+        ${ship.id}_ss_not_loaded_moving,
     ];
 }
 
-spritegroup ${vehicle.id}_sg_refit_0_not_moving {
+spritegroup ${ship.id}_sg_refit_0_not_moving {
     loaded:  [
-        ${vehicle.id}_ss_not_loaded_not_moving,
-        ${vehicle.id}_ss_load_1_not_moving,
+        ${ship.id}_ss_not_loaded_not_moving,
+        ${ship.id}_ss_load_1_not_moving,
     ];
     loading: [
-        ${vehicle.id}_ss_not_loaded_not_moving,
-        ${vehicle.id}_ss_load_1_not_moving,
+        ${ship.id}_ss_not_loaded_not_moving,
+        ${ship.id}_ss_load_1_not_moving,
     ];
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_0, current_speed) {
-    0: return ${vehicle.id}_sg_refit_0_not_moving;
-    return ${vehicle.id}_sg_refit_0_moving;
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_graphics_refit_0, current_speed) {
+    0: return ${ship.id}_sg_refit_0_not_moving;
+    return ${ship.id}_sg_refit_0_moving;
 }
 
-spritegroup ${vehicle.id}_sg_refit_1_moving {
+spritegroup ${ship.id}_sg_refit_1_moving {
     loaded:  [
-        ${vehicle.id}_ss_not_loaded_moving,
-        ${vehicle.id}_ss_load_1_moving,
-        ${vehicle.id}_ss_load_2_moving,
-        ${vehicle.id}_ss_load_3_moving,
+        ${ship.id}_ss_not_loaded_moving,
+        ${ship.id}_ss_load_1_moving,
+        ${ship.id}_ss_load_2_moving,
+        ${ship.id}_ss_load_3_moving,
     ];
     loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
-        ${vehicle.id}_ss_not_loaded_moving,
+        ${ship.id}_ss_not_loaded_moving,
     ];
 }
 
-spritegroup ${vehicle.id}_sg_refit_1_not_moving {
+spritegroup ${ship.id}_sg_refit_1_not_moving {
     loaded:  [
-        ${vehicle.id}_ss_not_loaded_not_moving,
-        ${vehicle.id}_ss_load_1_not_moving,
-        ${vehicle.id}_ss_load_2_not_moving,
-        ${vehicle.id}_ss_load_3_not_moving,
+        ${ship.id}_ss_not_loaded_not_moving,
+        ${ship.id}_ss_load_1_not_moving,
+        ${ship.id}_ss_load_2_not_moving,
+        ${ship.id}_ss_load_3_not_moving,
     ];
     loading: [
-        ${vehicle.id}_ss_not_loaded_not_moving,
-        ${vehicle.id}_ss_load_1_not_moving,
-        ${vehicle.id}_ss_load_2_not_moving,
-        ${vehicle.id}_ss_load_3_not_moving,
+        ${ship.id}_ss_not_loaded_not_moving,
+        ${ship.id}_ss_load_1_not_moving,
+        ${ship.id}_ss_load_2_not_moving,
+        ${ship.id}_ss_load_3_not_moving,
     ];
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_1, current_speed) {
-    0: return ${vehicle.id}_sg_refit_1_not_moving;
-    return ${vehicle.id}_sg_refit_1_moving;
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_graphics_refit_1, current_speed) {
+    0: return ${ship.id}_sg_refit_1_not_moving;
+    return ${ship.id}_sg_refit_1_moving;
 }
 
-spritegroup ${vehicle.id}_sg_refit_2_moving {
+spritegroup ${ship.id}_sg_refit_2_moving {
     loaded:  [
-        ${vehicle.id}_ss_not_loaded_moving,
-        ${vehicle.id}_ss_load_1_moving,
-        ${vehicle.id}_ss_load_2_moving,
-        ${vehicle.id}_ss_load_3_moving,
-        ${vehicle.id}_ss_load_4_moving,
-        ${vehicle.id}_ss_load_5_moving,
+        ${ship.id}_ss_not_loaded_moving,
+        ${ship.id}_ss_load_1_moving,
+        ${ship.id}_ss_load_2_moving,
+        ${ship.id}_ss_load_3_moving,
+        ${ship.id}_ss_load_4_moving,
+        ${ship.id}_ss_load_5_moving,
     ];
     loading: [ // can't be loading when moving, but we'll overlook that, it's required by nml ;)
-        ${vehicle.id}_ss_not_loaded_moving,
+        ${ship.id}_ss_not_loaded_moving,
     ];
 }
 
-spritegroup ${vehicle.id}_sg_refit_2_not_moving {
+spritegroup ${ship.id}_sg_refit_2_not_moving {
     loaded:  [
-        ${vehicle.id}_ss_not_loaded_not_moving,
-        ${vehicle.id}_ss_load_1_not_moving,
-        ${vehicle.id}_ss_load_2_not_moving,
-        ${vehicle.id}_ss_load_3_not_moving,
-        ${vehicle.id}_ss_load_4_not_moving,
-        ${vehicle.id}_ss_load_5_not_moving,
+        ${ship.id}_ss_not_loaded_not_moving,
+        ${ship.id}_ss_load_1_not_moving,
+        ${ship.id}_ss_load_2_not_moving,
+        ${ship.id}_ss_load_3_not_moving,
+        ${ship.id}_ss_load_4_not_moving,
+        ${ship.id}_ss_load_5_not_moving,
     ];
     loading: [
-        ${vehicle.id}_ss_not_loaded_not_moving,
-        ${vehicle.id}_ss_load_1_not_moving,
-        ${vehicle.id}_ss_load_2_not_moving,
-        ${vehicle.id}_ss_load_3_not_moving,
-        ${vehicle.id}_ss_load_4_not_moving,
-        ${vehicle.id}_ss_load_5_not_moving,
+        ${ship.id}_ss_not_loaded_not_moving,
+        ${ship.id}_ss_load_1_not_moving,
+        ${ship.id}_ss_load_2_not_moving,
+        ${ship.id}_ss_load_3_not_moving,
+        ${ship.id}_ss_load_4_not_moving,
+        ${ship.id}_ss_load_5_not_moving,
     ];
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics_refit_2, current_speed) {
-    0: return ${vehicle.id}_sg_refit_2_not_moving;
-    return ${vehicle.id}_sg_refit_2_moving;
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_graphics_refit_2, current_speed) {
+    0: return ${ship.id}_sg_refit_2_not_moving;
+    return ${ship.id}_sg_refit_2_moving;
 }
 
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_graphics, cargo_subtype) {
-    0: return ${vehicle.id}_switch_graphics_refit_0;
-    1: return ${vehicle.id}_switch_graphics_refit_1;
-    2: return ${vehicle.id}_switch_graphics_refit_2;
-    return ${vehicle.id}_switch_graphics_refit_0;
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_graphics, cargo_subtype) {
+    0: return ${ship.id}_switch_graphics_refit_0;
+    1: return ${ship.id}_switch_graphics_refit_1;
+    2: return ${ship.id}_switch_graphics_refit_2;
+    return ${ship.id}_switch_graphics_refit_0;
 }
 
 
 // -- capacity varies according to subtype refit -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_capacity, cargo_subtype) {
-    0: return ${vehicle.capacity_special[0]};
-    1: return ${vehicle.capacity_special[1]};
-    2: return ${vehicle.capacity_special[2]};
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_subtype) {
+    0: return ${ship.capacity_special[0]};
+    1: return ${ship.capacity_special[1]};
+    2: return ${ship.capacity_special[2]};
     return 0; // should never reach this result, make it show up as a problem
 }
 
 // -- set speed a little higher than rated speed when unladen -- //
 <tal:speed repeat="speed_factor python:range(3)">
-    switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_speed_varies_with_load_amount_${speed_factor}, cargo_count*100/cargo_capacity) {
-        0 : ${vehicle.get_speeds_adjusted_for_load_amount(speed_factor)[0]};
-        1..100 : ${vehicle.get_speeds_adjusted_for_load_amount(speed_factor)[4]}; // log tug is binary: loaded or unloaded; no intermediate fractional speeds
+    switch (FEAT_SHIPS, SELF, ${ship.id}_switch_speed_varies_with_load_amount_${speed_factor}, cargo_count*100/cargo_capacity) {
+        0 : ${ship.get_speeds_adjusted_for_load_amount(speed_factor)[0]};
+        1..100 : ${ship.get_speeds_adjusted_for_load_amount(speed_factor)[4]}; // log tug is binary: loaded or unloaded; no intermediate fractional speeds
         return 0; // should never reach this result, make it show up as a problem
     }
 </tal:speed>
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_speed_varies_with_load_amount, param_adjust_ship_speed) {
-    0: ${vehicle.id}_switch_speed_varies_with_load_amount_0;
-    1: ${vehicle.id}_switch_speed_varies_with_load_amount_1;
-    2: ${vehicle.id}_switch_speed_varies_with_load_amount_2;
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_speed_varies_with_load_amount, param_adjust_ship_speed) {
+    0: ${ship.id}_switch_speed_varies_with_load_amount_0;
+    1: ${ship.id}_switch_speed_varies_with_load_amount_1;
+    2: ${ship.id}_switch_speed_varies_with_load_amount_2;
 }
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_purchase_speed, param_adjust_ship_speed) {
-    0: ${vehicle.get_speeds_adjusted_for_load_amount(0)[4]};
-    1: ${vehicle.get_speeds_adjusted_for_load_amount(1)[4]};
-    2: ${vehicle.get_speeds_adjusted_for_load_amount(2)[4]};
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_speed, param_adjust_ship_speed) {
+    0: ${ship.get_speeds_adjusted_for_load_amount(0)[4]};
+    1: ${ship.get_speeds_adjusted_for_load_amount(1)[4]};
+    2: ${ship.get_speeds_adjusted_for_load_amount(2)[4]};
 }
 
-// -- handle refit subtype strings, used by this vehicle to vary capacity -- //
-switch (FEAT_SHIPS, SELF, ${vehicle.id}_switch_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_GENERIC_REFIT_SUBTYPE, ${vehicle.capacity_special[0]}, ${vehicle.get_cargo_suffix()});
-    1: return string(STR_GENERIC_REFIT_SUBTYPE, ${vehicle.capacity_special[1]}, ${vehicle.get_cargo_suffix()});
-    2: return string(STR_GENERIC_REFIT_SUBTYPE, ${vehicle.capacity_special[2]}, ${vehicle.get_cargo_suffix()});
+// -- handle refit subtype strings, used by this ship to vary capacity -- //
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[0]}, ${ship.get_cargo_suffix()});
+    1: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[1]}, ${ship.get_cargo_suffix()});
+    2: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[2]}, ${ship.get_cargo_suffix()});
     return CB_RESULT_NO_TEXT;
 }
 
-// -- print some of the vehicle non-nml properties to aid debugging -- //
+// -- print some of the ship non-nml properties to aid debugging -- //
 // [no properties printed]
 
-item(FEAT_SHIPS, ${vehicle.id}, ${vehicle.numeric_id}) {
+item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
     property {
-        name:                           ${vehicle.get_name()};
+        name:                           ${ship.get_name()};
         climates_available:             ALL_CLIMATES; // nml constant
-        sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[vehicle.default_cargo=='PASS']};
-        <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${vehicle.smoke_offset}); // nml constant for DIESEL-->
-        introduction_date:              date(${vehicle.intro_date},01,01); // ship just supplies intro year - openttd randomises intro dates a bit anyway
-        cargo_capacity:                 ${vehicle.capacity_special[0]};
+        sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[ship.default_cargo=='PASS']};
+        <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${ship.smoke_offset}); // nml constant for DIESEL-->
+        introduction_date:              date(${ship.intro_date},01,01); // ship just supplies intro year - openttd randomises intro dates a bit anyway
+        cargo_capacity:                 ${ship.capacity_special[0]};
         sprite_id:                      SPRITE_ID_NEW_SHIP; //enable new graphics - nml constant
-        speed:                          ${vehicle.speed}mph;
-        ocean_speed_fraction:           ${vehicle.get_ocean_speed()};
-        canal_speed_fraction:           ${vehicle.get_canal_speed()};
-        cost_factor:                    ${vehicle.buy_cost};
-        running_cost_factor:            ${vehicle.get_running_cost()};
+        speed:                          ${ship.speed}mph;
+        ocean_speed_fraction:           ${ship.get_ocean_speed()};
+        canal_speed_fraction:           ${ship.get_canal_speed()};
+        cost_factor:                    ${ship.buy_cost};
+        running_cost_factor:            ${ship.get_running_cost()};
         refit_cost:                     0;
         is_refittable:                  1;
         refittable_cargo_classes:       bitmask();
         non_refittable_cargo_classes:   bitmask();
         cargo_allow_refit:              [WOOD];
         cargo_disallow_refit:           [];
-        default_cargo_type:             ${vehicle.default_cargo};
-        loading_speed:                  ${vehicle.loading_speed};
+        default_cargo_type:             ${ship.default_cargo};
+        loading_speed:                  ${ship.loading_speed};
         misc_flags:                     bitmask(SHIP_FLAG_2CC); // nml constants
-        model_life:                     ${vehicle.get_adjusted_model_life()};
-        retire_early:                   ${vehicle.vehicle_life - 4}; // magic from Eddi
-        vehicle_life:                   ${vehicle.vehicle_life};
+        model_life:                     ${ship.get_adjusted_model_life()};
+        retire_early:                   ${ship.vehicle_life - 4}; // magic from Eddi
+        vehicle_life:                   ${ship.vehicle_life};
     }
     graphics {
-        speed:                          ${vehicle.id}_switch_speed_varies_with_load_amount;
-        purchase_speed:                 ${vehicle.id}_switch_purchase_speed;
-        cargo_capacity:                 ${vehicle.id}_switch_cargo_capacity;
-        additional_text:                ${vehicle.get_buy_menu_string()};
-        cargo_subtype_text:             ${vehicle.id}_switch_cargo_subtype_text;
-        default:                        ${vehicle.id}_switch_graphics;
-        //purchase:                       ${vehicle.id}_sg_purchase; // buy menu uses standard _ view for this ship
+        speed:                          ${ship.id}_switch_speed_varies_with_load_amount;
+        purchase_speed:                 ${ship.id}_switch_purchase_speed;
+        cargo_capacity:                 ${ship.id}_switch_cargo_capacity;
+        additional_text:                ${ship.get_buy_menu_string()};
+        cargo_subtype_text:             ${ship.id}_switch_cargo_subtype_text;
+        default:                        ${ship.id}_switch_graphics;
+        //purchase:                       ${ship.id}_sg_purchase; // buy menu uses standard _ view for this ship
     }
 }
 
-// -- end ${vehicle.title} -- <!--! another comment to aid reading the final nml  -->
+// -- end ${ship.title} -- <!--! another comment to aid reading the final nml  -->

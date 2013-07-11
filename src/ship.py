@@ -25,7 +25,7 @@ class Ship(object):
     def __init__(self, id, **kwargs):
         self.id = id
 
-        #setup properties for this vehicle
+        #setup properties for this ship
         self.title = kwargs.get('title', None)
         self.numeric_id = kwargs.get('numeric_id', None)
         self.custom_template = kwargs.get('custom_template', None)
@@ -146,7 +146,7 @@ class Ship(object):
         return self.title.split('[')[0]
 
     def get_str_name_suffix(self):
-        # used in vehicle name string only, relies on name property value being in format "Foo [Bar]" for Name [Type Suffix]
+        # used in ship name string only, relies on name property value being in format "Foo [Bar]" for Name [Type Suffix]
         type_suffix = self.title.split('[')[1].split(']')[0]
         type_suffix = type_suffix.upper()
         type_suffix = '_'.join(type_suffix.split(' '))
@@ -193,4 +193,4 @@ class Ship(object):
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
-        return template(vehicle = self)
+        return template(ship = self)

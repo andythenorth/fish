@@ -16,8 +16,8 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
 ships = fish.get_ships()
-# default sort for docs is by vehicle intro date
-ships = sorted(ships, key=lambda vehicle: vehicle.intro_date)
+# default sort for docs is by ship intro date
+ships = sorted(ships, key=lambda ship: ship.intro_date)
 
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)

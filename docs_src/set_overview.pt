@@ -42,11 +42,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tal:build_ships_list repeat="vehicle ships">
+                <tal:build_ships_list repeat="ship ships">
                     <tr>
-                        <td>${vehicle.get_name_substr()} ${base_lang_strings[vehicle.get_str_name_suffix()]}</td>
-                        <td class="number">${vehicle.intro_date}</td>
-                        <td>${base_lang_strings[vehicle.get_str_type_info()]}</td>
+                        <td>${ship.get_name_substr()} ${base_lang_strings[ship.get_str_name_suffix()]}</td>
+                        <td class="number">${ship.intro_date}</td>
+                        <td>${base_lang_strings[ship.get_str_type_info()]}</td>
                     </tr>
                 </tal:build_ships_list>
             </tbody>
