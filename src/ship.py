@@ -20,12 +20,6 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
 from ships import registered_ships
 
-import legacy_config_handler
-
-config = legacy_config_handler.config
-
-
-
 class Ship(object):
     """Base class for all types of ships"""
     def __init__(self, id, **kwargs):
@@ -79,23 +73,6 @@ class Ship(object):
 
     def register(self):
         registered_ships.append(self)
-
-    """
-    def get_graphic_variations_by_date(self, dates_per_variation):
-        # ships have option to show random graphic variations, each variation can be date-limited
-        if len(dates_per_variation) == 0:
-            dates_per_variation = [[0, 9999]] # default  one variation with min / max dates if none provided by config
-
-        # find all the unique dates that will need a switch constructing
-        triggers = reduce(set.union, dates_per_variation, set())
-
-        # put the data in a format that's easy to render as switches
-        sprite_variation_trigger_dates = {}
-        for date in triggers:
-            if date != 9999: # shonky magic special casing for case of no end date - not used in nml, just for convenience in the config file
-                sprite_variation_trigger_dates[date] = [counter for counter, (start, end) in enumerate(dates_per_variation) if date in range(start, end)]
-        return [dates_per_variation, sprite_variation_trigger_dates]
-    """
 
     def get_date_ranges_for_random_variation(self, index):
         years = sorted(self.graphic_variations_by_date[1].keys())
