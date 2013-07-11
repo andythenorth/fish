@@ -1,4 +1,6 @@
-ship = Ship(id = castle_point_steamer,
+from ship import Ship
+
+ship = Ship(id = 'castle_point_steamer',
             numeric_id = '30', 
             capacity_cargo_holds = 250, 
             capacity_tanks = 0, 

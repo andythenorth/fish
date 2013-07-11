@@ -1,4 +1,6 @@
-ship = Ship(id = fastnet_paddle_steamer,
+from ship import Ship
+
+ship = Ship(id = 'fastnet_paddle_steamer',
             numeric_id = '40', 
             capacity_cargo_holds = 250, 
             capacity_tanks = 0, 

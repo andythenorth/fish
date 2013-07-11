@@ -1,4 +1,6 @@
-ship = Ship(id = yokohama_tanker,
+from ship import Ship
+
+ship = Ship(id = 'yokohama_tanker',
             numeric_id = '280', 
             capacity_cargo_holds = 0, 
             capacity_tanks = 1220, 

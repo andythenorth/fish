@@ -1,4 +1,6 @@
-ship = Ship(id = nieuwpoort_container_feeder,
+from ship import Ship
+
+ship = Ship(id = 'nieuwpoort_container_feeder',
             numeric_id = '300', 
             capacity_cargo_holds = 750, 
             capacity_tanks = 0, 

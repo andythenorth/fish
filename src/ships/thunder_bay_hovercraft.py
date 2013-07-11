@@ -1,4 +1,6 @@
-ship = Ship(id = thunder_bay_hovercraft,
+from ship import Ship
+
+ship = Ship(id = 'thunder_bay_hovercraft',
             numeric_id = '150', 
             capacity_cargo_holds = 30, 
             capacity_tanks = 0, 

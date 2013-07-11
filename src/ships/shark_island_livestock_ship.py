@@ -1,4 +1,6 @@
-ship = Ship(id = shark_island_livestock_ship,
+from ship import Ship
+
+ship = Ship(id = 'shark_island_livestock_ship',
             numeric_id = '290', 
             capacity_cargo_holds = 0, 
             capacity_tanks = 0, 

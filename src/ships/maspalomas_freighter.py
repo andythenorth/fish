@@ -1,4 +1,6 @@
-ship = Ship(id = maspalomas_freighter,
+from ship import Ship
+
+ship = Ship(id = 'maspalomas_freighter',
             numeric_id = '240', 
             capacity_cargo_holds = 1140, 
             capacity_tanks = 0, 

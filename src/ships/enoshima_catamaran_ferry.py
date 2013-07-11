@@ -1,4 +1,6 @@
-ship = Ship(id = enoshima_catamaran_ferry,
+from ship import Ship
+
+ship = Ship(id = 'enoshima_catamaran_ferry',
             numeric_id = '90', 
             capacity_cargo_holds = 175, 
             capacity_tanks = 0, 

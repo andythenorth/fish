@@ -1,4 +1,6 @@
-ship = Ship(id = harbour_point_utility_vessel,
+from ship import Ship
+
+ship = Ship(id = 'harbour_point_utility_vessel',
             numeric_id = '110', 
             capacity_cargo_holds = 15, 
             capacity_tanks = 0, 

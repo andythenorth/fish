@@ -1,4 +1,6 @@
-ship = Ship(id = capo_sandalo_vehicle_ferry,
+from ship import Ship
+
+ship = Ship(id = 'capo_sandalo_vehicle_ferry',
             numeric_id = '80', 
             capacity_cargo_holds = 470, 
             capacity_tanks = 0, 

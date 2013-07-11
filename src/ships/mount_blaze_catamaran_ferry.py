@@ -1,4 +1,6 @@
-ship = Ship(id = mount_blaze_catamaran_ferry,
+from ship import Ship
+
+ship = Ship(id = 'mount_blaze_catamaran_ferry',
             numeric_id = '100', 
             capacity_cargo_holds = 450, 
             capacity_tanks = 0, 

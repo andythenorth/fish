@@ -1,4 +1,6 @@
-ship = Ship(id = whitgift_freight_barge,
+from ship import Ship
+
+ship = Ship(id = 'whitgift_freight_barge',
             numeric_id = '160', 
             capacity_cargo_holds = 55, 
             capacity_tanks = 0, 

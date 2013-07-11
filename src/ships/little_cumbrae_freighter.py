@@ -1,4 +1,6 @@
-ship = Ship(id = little_cumbrae_freighter,
+from ship import Ship
+
+ship = Ship(id = 'little_cumbrae_freighter',
             numeric_id = '180', 
             capacity_cargo_holds = 160, 
             capacity_tanks = 0, 

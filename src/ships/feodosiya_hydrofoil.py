@@ -1,4 +1,6 @@
-ship = Ship(id = feodosiya_hydrofoil,
+from ship import Ship
+
+ship = Ship(id = 'feodosiya_hydrofoil',
             numeric_id = '60', 
             capacity_cargo_holds = 0, 
             capacity_tanks = 0, 

@@ -1,4 +1,6 @@
-ship = Ship(id = pine_island_log_tug,
+from ship import Ship
+
+ship = Ship(id = 'pine_island_log_tug',
             numeric_id = '250', 
             capacity_cargo_holds = 0, 
             capacity_tanks = 0, 
