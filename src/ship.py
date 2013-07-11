@@ -60,17 +60,6 @@ class Ship(object):
         self.sea_capable = kwargs.get('sea_capable', None)
         self.register()
 
-        """
-        ship_file = codecs.open(os.path.join('src','ships',(self.id + '.py')),'w','utf8')
-        foo = 'ship = Ship(id = ' + self.id + ',\n'
-        for i in vars(self):
-            if i is not 'id':
-                foo = foo + '            ' + i + ' = ' + repr(vars(self)[i]) + ', \n'
-        foo = foo + ')'
-        ship_file.write(foo)
-        ship_file.close()
-        """
-
     def register(self):
         registered_ships.append(self)
 
