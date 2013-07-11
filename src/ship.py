@@ -54,14 +54,14 @@ class Ship(object):
         self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', None)
         self.capacity_tanks = kwargs.get('capacity_tanks', None)
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
-        self.capacity_special = self.unpack_pipe_separated_config_item_as_list('capacity_special')
+        self.capacity_special = kwargs.get('capacity_special', None)
         self.capacity_freight = self.get_capacity_freight()
         self.default_cargo = kwargs.get('default_cargo', None)
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
-        self.offsets = self.unpack_pipe_separated_config_item_as_list('offsets')
-        self.graphic_variations_by_date = self.get_graphic_variations_by_date()
+        self.offsets = kwargs.get('offsets', None)
+        self.graphic_variations_by_date = kwargs.get('graphic_variations_by_date', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
         self.register()
@@ -80,23 +80,9 @@ class Ship(object):
     def register(self):
         registered_ships.append(self)
 
-    def unpack_pipe_separated_config_item_as_list(self, config_item_id):
-        # a squirrely function to unpack some nasty representations of lists of lists from config item, '|' and ' ' separated
-        result = []
-        config_item = config.get(self.id, config_item_id)
-        if len(config_item) == 0:
-            return result
-
-        for i in config_item.split('|'):
-            if ' ' in i: # it's another list, separated on ' '
-                result.append([int(j) for j in i.split(' ')])
-            else:
-                result.append(int(i))
-        return result
-
-    def get_graphic_variations_by_date(self):
+    """
+    def get_graphic_variations_by_date(self, dates_per_variation):
         # ships have option to show random graphic variations, each variation can be date-limited
-        dates_per_variation = self.unpack_pipe_separated_config_item_as_list('sprite_variation_dates')
         if len(dates_per_variation) == 0:
             dates_per_variation = [[0, 9999]] # default  one variation with min / max dates if none provided by config
 
@@ -109,6 +95,7 @@ class Ship(object):
             if date != 9999: # shonky magic special casing for case of no end date - not used in nml, just for convenience in the config file
                 sprite_variation_trigger_dates[date] = [counter for counter, (start, end) in enumerate(dates_per_variation) if date in range(start, end)]
         return [dates_per_variation, sprite_variation_trigger_dates]
+    """
 
     def get_date_ranges_for_random_variation(self, index):
         years = sorted(self.graphic_variations_by_date[1].keys())
