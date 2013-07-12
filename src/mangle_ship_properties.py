@@ -4,6 +4,9 @@ currentdir = os.curdir
 import sys
 sys.path.append(os.path.join('src')) # add to the module search path
 
+property_to_move = 'buy_cost'
+property_to_insert_after = 'fixed_run_cost_factor'
+
 filenames = ['altamira_freighter.py',
          'barletta_paddle_steamer.py',
          'cape_spear_trawler.py',
@@ -35,19 +38,24 @@ filenames = ['altamira_freighter.py',
          'whitgift_freight_barge.py',
          'yokohama_tanker.py']
 
-for filename in filenames:
+
+def mangle_file(filename):
     file = open(os.path.join('src','ships',filename),'r')
     content = file.readlines()
     clean_content = []
 
     for line in content:
-        if 'buy_cost' in line:
+        if property_to_move in line:
             cut_line = line
     content.remove(cut_line)
     for line in content:
-        if 'fixed_run_cost_factor' in line:
+        if property_to_insert_after in line:
             line_to_insert_after = line
     insert_position = content.index(line_to_insert_after)
     content.insert(insert_position+1, cut_line)
 
     print ''.join(content)
+
+
+for filename in filenames:
+    mangle_file(filename)
