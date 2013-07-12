@@ -29,6 +29,7 @@ from ship import Ship
 from ships import registered_ships
 
 from ships import altamira_freighter
+from ships import little_cumbrae_freighter
 
 def get_ships():
     return registered_ships
