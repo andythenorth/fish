@@ -4,8 +4,8 @@ currentdir = os.curdir
 import sys
 sys.path.append(os.path.join('src')) # add to the module search path
 
-property_to_move = 'buy_cost'
-property_to_insert_after = 'fixed_run_cost_factor'
+property_to_move = 'fixed_run_cost_factor'
+property_to_insert_after = 'buy_cost'
 
 filenames = ['altamira_freighter.py',
          'barletta_paddle_steamer.py',
