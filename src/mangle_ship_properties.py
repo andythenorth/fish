@@ -42,7 +42,6 @@ filenames = ['altamira_freighter.py',
 def mangle_file(filename):
     file = open(os.path.join('src','ships',filename),'r')
     content = file.readlines()
-    clean_content = []
 
     for line in content:
         if property_to_move in line:
@@ -53,8 +52,11 @@ def mangle_file(filename):
             line_to_insert_after = line
     insert_position = content.index(line_to_insert_after)
     content.insert(insert_position+1, cut_line)
+    #print ''.join(content)
 
-    print ''.join(content)
+    file = open(os.path.join('src','ships',filename),'w')
+    file.write(''.join(content))
+    file.close
 
 
 for filename in filenames:
