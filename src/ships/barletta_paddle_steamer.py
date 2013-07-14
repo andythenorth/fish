@@ -1,6 +1,6 @@
 from ship import Ship
 
-ship = Ship(id = 'barletta_paddle_steamer,
+ship = Ship(id = 'barletta_paddle_steamer',
             numeric_id = '20',
             supertype = 'packet',
             title = 'Barletta [Paddle Steamer]',
