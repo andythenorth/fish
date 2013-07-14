@@ -46,7 +46,6 @@ class Ship(object):
         self.capacity_tanks = kwargs.get('capacity_tanks', None)
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
         self.capacity_special = kwargs.get('capacity_special', None)
-        self.capacity_freight = self.get_capacity_freight()
         self.default_cargo = kwargs.get('default_cargo', None)
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
@@ -193,10 +192,7 @@ class GeneralCargoVessel(Ship):
         self.class_refit_groups = ['all_freight']
         self.label_refits_allowed = [] # no specific labels needed, GCV refits all freight
         self.label_refits_disallowed = ['TOUR']
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        return self.capacity_cargo_holds
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
 
 
 class LivestockCarrier(Ship):
@@ -206,10 +202,7 @@ class LivestockCarrier(Ship):
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
         self.label_refits_disallowed = []
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        return self.capacity_cargo_holds
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
 
 
 class LogTug(Ship):
@@ -219,10 +212,7 @@ class LogTug(Ship):
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        return self.capacity_cargo_holds
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
 
 
 class PacketBoat(Ship):
@@ -232,10 +222,7 @@ class PacketBoat(Ship):
         self.class_refit_groups = ['pax_mail','express_freight']
         self.label_refits_allowed = ['BDMT','FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        return self.capacity_cargo_holds
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
 
 
 class PassengerMailFerry(Ship):
@@ -245,10 +232,7 @@ class PassengerMailFerry(Ship):
         self.class_refit_groups = ['pax_mail']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds - but special case for this ship type
-        return 0
+        self.capacity_freight = 0
 
 
 class Trawler(Ship):
@@ -258,10 +242,7 @@ class Trawler(Ship):
         self.class_refit_groups = ['pax_mail','express_freight']
         self.label_refits_allowed = ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = []
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        return self.capacity_cargo_holds
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
 
 
 class Tanker(Ship):
@@ -271,10 +252,7 @@ class Tanker(Ship):
         self.class_refit_groups = ['liquids']
         self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, but special case for this ship type
-        return self.capacity_tanks
+        self.capacity_freight = kwargs.get('capacity_tanks', None)
 
 
 class FastFreighter(Ship):
@@ -284,8 +262,5 @@ class FastFreighter(Ship):
         self.class_refit_groups = ['express_freight','packaged_freight']
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
-
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        return self.capacity_cargo_holds
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
 
