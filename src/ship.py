@@ -103,7 +103,7 @@ class Ship(object):
 
     def get_default_cargo_capacity(self):
         # for ships with subtype refits for capacity, only capacity_special should be used, irrespective of cargo
-        if isinstance(self, LivestockCarrier) or isinstance(self, LogTug):
+        if self.capacity_is_refittable_by_cargo_subtype:
             return self.capacity_special[0]
         # otherwise the default capacity should be determined with respect to the default cargo
         if self.default_cargo == 'PASS':
@@ -159,7 +159,7 @@ class Ship(object):
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
             )
-        elif isinstance(self, LivestockCarrier) or isinstance(self, LogTug):
+        elif self.capacity_is_refittable_by_cargo_subtype:
             cargo_units = global_constants.refittable_types_cargo_strings_buy_menu[self.str_type_info.lower()]
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
