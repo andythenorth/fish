@@ -1,5 +1,4 @@
 # some types have refittable capacity, they have to be known here currently (might change with migration from config file)
-types_with_subtype_refits_for_capacity = ['log_tug', 'livestock_ship']
 refittable_types_cargo_strings_buy_menu = {'log_tug':'STR_QUANTITY_WOOD', 'livestock_ship':'STR_QUANTITY_LIVESTOCK'}
 refittable_types_cargo_strings_refit_menu = {'log_tug':'STR_UNIT_TONNES', 'livestock_ship':'STR_UNIT_ITEMS'}
 

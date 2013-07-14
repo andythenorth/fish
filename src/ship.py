@@ -45,6 +45,7 @@ class Ship(object):
         self.capacity_tanks = kwargs.get('capacity_tanks', None)
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
         self.capacity_special = kwargs.get('capacity_special', None)
+        self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
         self.default_cargo = kwargs.get('default_cargo', None)
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
@@ -102,7 +103,7 @@ class Ship(object):
 
     def get_default_cargo_capacity(self):
         # for ships with subtype refits for capacity, only capacity_special should be used, irrespective of cargo
-        if self.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity:
+        if isinstance(self, LivestockCarrier) or isinstance(self, LogTug):
             return self.capacity_special[0]
         # otherwise the default capacity should be determined with respect to the default cargo
         if self.default_cargo == 'PASS':
@@ -202,6 +203,7 @@ class LivestockCarrier(Ship):
         self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
         self.label_refits_disallowed = []
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.capacity_is_refittable_by_cargo_subtype = True
 
 
 class LogTug(Ship):
@@ -212,6 +214,7 @@ class LogTug(Ship):
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.capacity_is_refittable_by_cargo_subtype = True
 
 
 class PacketBoat(Ship):

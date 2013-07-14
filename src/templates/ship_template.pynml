@@ -8,7 +8,7 @@
 <tal:include condition="ship.graphics_template=='standard_gcv'" define="graphics_standard_gcv load: graphics_standard_gcv.pynml" metal:use-macro="graphics_standard_gcv" />
 <tal:include condition="ship.graphics_template=='tanker'" define="graphics_tanker load: graphics_tanker.pynml" metal:use-macro="graphics_tanker" />
 
-<tal:capacity_no_subtype_refits condition="python:ship.str_type_info.lower() not in global_constants.types_with_subtype_refits_for_capacity">
+<tal:capacity_no_subtype_refits condition="python:ship.capacity_is_refittable_by_cargo_subtype == False">
     // -- capacity determined according to specific labels that might need to be handled, and otherwise cargo class -- //
     switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity_classes, cargo_classes) {
         bitmask(CC_PASSENGERS): return ${ship.capacity_pax};
@@ -26,7 +26,7 @@
     }
 </tal:capacity_no_subtype_refits>
 
-<tal:capacity_subtype_refits condition="python:ship.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity">
+<tal:capacity_subtype_refits condition="python:ship.capacity_is_refittable_by_cargo_subtype == True">
     // -- ships that have subtype refits for capacity rely on the capacity_special prop, do not use capcity from mail / pax / cargo holds / tanks -- //
     <!--! assumes exactly 3 subtype refits, which is a sane amount; convert to repeat if more are ever needed -->
     switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_subtype) {
