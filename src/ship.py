@@ -198,32 +198,59 @@ class Ship(object):
 
 class GeneralCargoVessel(Ship):
     # general purpose freight vessel type, no pax or mail cargos, refits any other cargo including liquids (in barrels or containers)
-    pass
+    def __init__(self, id, **kwargs):
+        super(GeneralCargoVessel, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class LivestockCarrier(Ship):
     # special type for livestock (as you might guess)
-    pass
+    def __init__(self, id, **kwargs):
+        super(LivestockCarrier, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class LogTug(Ship):
     # specialist type for hauling logs only, has some specialist refit + speed behaviours
-    pass
+    def __init__(self, id, **kwargs):
+        super(LogTug, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class PacketBoat(Ship):
     # a relatively fast vessel type for passengers, mail, and express freight
-    pass
+    def __init__(self, id, **kwargs):
+        super(PacketBoat, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class PassengerMailFerry(Ship):
     # fast vessel type for passengers and mail only
-    pass
+    def __init__(self, id, **kwargs):
+        super(PassengerMailFerry, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
-    pass
+    def __init__(self, id, **kwargs):
+        super(Trawler, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class Tanker(Ship):
     # ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising).
-    pass
+    def __init__(self, id, **kwargs):
+        super(Tanker, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
 
 class FastFreighter(Ship):
     # a fast freighter type, refits to limited range of freight cargos
-    pass
+    def __init__(self, id, **kwargs):
+        super(FastFreighter, self).__init__(id, **kwargs)
+        self.class_refit_groups = []
+
+"""
+class_refit_groups_by_supertype = {'gcv': ['all_freight'],
+                                   'tanker': ['liquids'],
+                                   'pax_mail': ['pax_mail'],
+                                   'trawler': ['pax_mail','express_freight'],
+                                   'packet': ['pax_mail','express_freight'],
+                                   'fast_freighter': ['express_freight','packaged_freight'],
+                                   'livestock_ship': ['empty'],
+                                   'log_tug': ['empty']}
+"""
