@@ -32,7 +32,6 @@ class Ship(object):
         self.intro_date = kwargs.get('intro_date', None)
         self.replacement_id = kwargs.get('replacement_id', None)
         #print self.replacement_id
-        self.supertype = kwargs.get('supertype', None)
         self.vehicle_life = kwargs.get('vehicle_life', None)
         self.speed = kwargs.get('speed', None)
         self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
@@ -151,11 +150,11 @@ class Ship(object):
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
         cargo_units = None # only used when needed
-        if self.supertype == 'packet':
+        if isinstance(self, PacketBoat):
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
             )
-        elif self.supertype == 'trawler':
+        elif isinstance(self, Trawler):
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
             )
