@@ -194,3 +194,8 @@ class Ship(object):
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
         return template(ship = self)
+
+
+class GeneralCargoVessel(Ship):
+    def foo(self):
+        print 'foo'
