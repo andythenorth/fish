@@ -131,7 +131,8 @@ class Ship(object):
     def get_refittable_classes(self):
         # work out which classes are refittable based on the ship supertype
         cargo_classes = []
-        for i in global_constants.class_refit_groups_by_supertype[self.supertype]:
+        # maps lists of allowed classes.  No equivalent for disallowed classes, that's overly restrictive and damages the viability of class-based refitting
+        for i in self.class_refit_groups:
             [cargo_classes.append(cargo_class) for cargo_class in global_constants.base_refits_by_class[i]]
         return ','.join(set(cargo_classes)) # use set() here to dedupe
 
@@ -200,57 +201,51 @@ class GeneralCargoVessel(Ship):
     # general purpose freight vessel type, no pax or mail cargos, refits any other cargo including liquids (in barrels or containers)
     def __init__(self, id, **kwargs):
         super(GeneralCargoVessel, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['all_freight']
 
 class LivestockCarrier(Ship):
     # special type for livestock (as you might guess)
     def __init__(self, id, **kwargs):
         super(LivestockCarrier, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['empty']
 
 class LogTug(Ship):
     # specialist type for hauling logs only, has some specialist refit + speed behaviours
     def __init__(self, id, **kwargs):
         super(LogTug, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['empty']
+
 
 class PacketBoat(Ship):
     # a relatively fast vessel type for passengers, mail, and express freight
     def __init__(self, id, **kwargs):
         super(PacketBoat, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['pax_mail','express_freight']
+
 
 class PassengerMailFerry(Ship):
     # fast vessel type for passengers and mail only
     def __init__(self, id, **kwargs):
         super(PassengerMailFerry, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['pax_mail']
+
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
     def __init__(self, id, **kwargs):
         super(Trawler, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['pax_mail','express_freight']
+
 
 class Tanker(Ship):
     # ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising).
     def __init__(self, id, **kwargs):
         super(Tanker, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
+        self.class_refit_groups = ['liquids']
+
 
 class FastFreighter(Ship):
     # a fast freighter type, refits to limited range of freight cargos
     def __init__(self, id, **kwargs):
         super(FastFreighter, self).__init__(id, **kwargs)
-        self.class_refit_groups = []
-
-"""
-class_refit_groups_by_supertype = {'gcv': ['all_freight'],
-                                   'tanker': ['liquids'],
-                                   'pax_mail': ['pax_mail'],
-                                   'trawler': ['pax_mail','express_freight'],
-                                   'packet': ['pax_mail','express_freight'],
-                                   'fast_freighter': ['express_freight','packaged_freight'],
-                                   'livestock_ship': ['empty'],
-                                   'log_tug': ['empty']}
-"""
+        self.class_refit_groups = ['express_freight','packaged_freight']

@@ -35,16 +35,6 @@ base_refits_by_class = {'empty': [],
                         'packaged_freight': ['CC_PIECE_GOODS','CC_ARMOURED','CC_EXPRESS','CC_LIQUID'],
                         'express_freight': ['CC_EXPRESS','CC_ARMOURED']}
 
-# mapping to lists of allowed classes.  No equivalent for disallowed classes, it's overly restrictive and damages the viability of class-based refitting
-class_refit_groups_by_supertype = {'gcv': ['all_freight'],
-                                   'tanker': ['liquids'],
-                                   'pax_mail': ['pax_mail'],
-                                   'trawler': ['pax_mail','express_freight'],
-                                   'packet': ['pax_mail','express_freight'],
-                                   'fast_freighter': ['express_freight','packaged_freight'],
-                                   'livestock_ship': ['empty'],
-                                   'log_tug': ['empty']}
-
 # allowed labels, for fine-grained control in addition to classes
 label_refits_allowed_by_supertype = {'gcv': [],
                                      'tanker': [],
