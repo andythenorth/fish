@@ -2,7 +2,6 @@ from ship import Ship, Trawler
 
 ship = Trawler(id = 'harbour_point_utility_vessel',
             numeric_id = '110',
-            supertype = 'trawler',
             title = 'Harbour Point [Utility Vessel]',
             capacity_pax = 27,
             capacity_freight = 15,

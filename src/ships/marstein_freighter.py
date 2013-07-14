@@ -2,7 +2,6 @@ from ship import Ship, GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'marstein_freighter',
             numeric_id = '200',
-            supertype = 'gcv',
             title = 'Marstein [Freighter]',
             capacity_pax = 0,
             capacity_freight = 240,

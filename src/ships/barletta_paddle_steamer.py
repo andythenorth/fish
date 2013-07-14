@@ -2,7 +2,6 @@ from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'barletta_paddle_steamer',
             numeric_id = '20',
-            supertype = 'packet',
             title = 'Barletta [Paddle Steamer]',
             capacity_pax = 248,
             capacity_freight = 96,

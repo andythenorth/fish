@@ -2,7 +2,6 @@ from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'mount_blaze_catamaran_ferry',
             numeric_id = '100',
-            supertype = 'packet',
             title = 'Mount Blaze [Fast Ferry]',
             capacity_pax = 1600,
             capacity_freight = 450,

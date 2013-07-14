@@ -2,7 +2,6 @@ from ship import Ship, PassengerMailFerry
 
 ship = PassengerMailFerry(id = 'feodosiya_hydrofoil',
             numeric_id = '60',
-            supertype = 'pax_mail',
             title = 'Feodosiya [Hydrofoil]',
             capacity_pax = 106,
             capacity_freight = 0,

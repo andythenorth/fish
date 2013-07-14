@@ -2,7 +2,6 @@ from ship import Ship, FastFreighter
 
 ship = FastFreighter(id = 'thunder_bay_hovercraft',
             numeric_id = '150',
-            supertype = 'fast_freighter',
             title = 'Thunder Bay [Hovercraft]',
             capacity_pax = 0,
             capacity_freight = 30,

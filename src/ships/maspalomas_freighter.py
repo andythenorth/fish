@@ -2,7 +2,6 @@ from ship import Ship, GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'maspalomas_freighter',
             numeric_id = '240',
-            supertype = 'gcv',
             title = 'Maspalomas [Freighter]',
             capacity_pax = 0,
             capacity_freight = 1140,

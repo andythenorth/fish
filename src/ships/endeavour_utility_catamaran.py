@@ -2,7 +2,6 @@ from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'endeavour_utility_catamaran',
             numeric_id = '120',
-            supertype = 'packet',
             title = 'Endeavour [Rig Supply Fast Catamaran]',
             capacity_pax = 65,
             capacity_freight = 70,
