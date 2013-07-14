@@ -5,29 +5,7 @@ refittable_types_cargo_strings_refit_menu = {'log_tug':'STR_UNIT_TONNES', 'lives
 
 purchase_list_sort_order = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 180, 170, 210, 190, 200, 220, 230, 240, 250, 260, 270, 280, 290, 300]
 
-# types control strings and such, supertypes control refittability etc
-type_supertype_mapping = {'hydrofoil_fast_ferry':'pax_mail',
-                          'catamaran_fast_ferry':'packet',
-                          'small_general_purpose_vessel':'trawler', # because it's similar to a packet, but needs to go fishing
-                          'vehicle_ferry':'packet',
-                          'paddle_steamer':'packet',
-                          'fast_packet_steamer':'packet',
-                          'cargo_vessel_inland':'gcv',
-                          'log_tug':'log_tug',
-                          'cargo_hovercraft':'fast_freighter',
-                          'small_freighter_coastal_inland':'gcv',
-                          'coaster':'gcv',
-                          'large_coaster':'gcv',
-                          'small_tanker_coastal_inland':'tanker',
-                          'coastal_tanker':'tanker',
-                          'large_coastal_tanker':'tanker',
-                          'trawler':'trawler',
-                          'livestock_ship':'livestock_ship',
-                          'rig_supply_fast_catamaran':'packet',
-                          'barge_tug':'gcv',
-                          'container_feeder':'fast_freighter'}
-
-# shared lists of allowed classes, may be shared by multiple supertypes
+# shared lists of allowed classes, shared across multiple ship types
 base_refits_by_class = {'empty': [],
                         'all_freight': ['CC_EXPRESS', 'CC_ARMOURED', 'CC_BULK', 'CC_PIECE_GOODS', 'CC_LIQUID', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
                         'pax_mail': ['CC_PASSENGERS','CC_MAIL'],
