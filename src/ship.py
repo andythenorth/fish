@@ -1,8 +1,6 @@
 # get the globals - however for using globals in templates, it's better for the template to use global_template.pt as a macro
 import global_constants # expose all constants for easy passing to templates
 
-from pprint import pprint
-
 import os.path
 currentdir = os.curdir
 
@@ -137,10 +135,12 @@ class Ship(object):
         return ','.join(set(cargo_classes)) # use set() here to dedupe
 
     def get_label_refits_allowed(self):
-        return ','.join(global_constants.label_refits_allowed_by_supertype[self.supertype])
+        # allowed labels, for fine-grained control in addition to classes
+        return ','.join(self.label_refits_allowed)
 
     def get_label_refits_disallowed(self):
-        return ','.join(global_constants.label_refits_disallowed_by_supertype[self.supertype])
+        # disallowed labels, for fine-grained control, knocking out cargos that are allowed by classes, but don't fit for gameplay reasons
+        return ','.join(self.label_refits_disallowed)
 
     def get_name_substr(self):
         # relies on name being in format "Foo [Bar]" for Name [Type Suffix]
@@ -202,18 +202,24 @@ class GeneralCargoVessel(Ship):
     def __init__(self, id, **kwargs):
         super(GeneralCargoVessel, self).__init__(id, **kwargs)
         self.class_refit_groups = ['all_freight']
+        self.label_refits_allowed = [] # no specific labels needed, GCV refits all freight
+        self.label_refits_disallowed = ['TOUR']
 
 class LivestockCarrier(Ship):
     # special type for livestock (as you might guess)
     def __init__(self, id, **kwargs):
         super(LivestockCarrier, self).__init__(id, **kwargs)
         self.class_refit_groups = ['empty']
+        self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
+        self.label_refits_disallowed = []
 
 class LogTug(Ship):
     # specialist type for hauling logs only, has some specialist refit + speed behaviours
     def __init__(self, id, **kwargs):
         super(LogTug, self).__init__(id, **kwargs)
         self.class_refit_groups = ['empty']
+        self.label_refits_allowed = []
+        self.label_refits_disallowed = []
 
 
 class PacketBoat(Ship):
@@ -221,6 +227,8 @@ class PacketBoat(Ship):
     def __init__(self, id, **kwargs):
         super(PacketBoat, self).__init__(id, **kwargs)
         self.class_refit_groups = ['pax_mail','express_freight']
+        self.label_refits_allowed = ['BDMT','FRUT','LVST','VEHI','WATR']
+        self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
 
 
 class PassengerMailFerry(Ship):
@@ -228,6 +236,8 @@ class PassengerMailFerry(Ship):
     def __init__(self, id, **kwargs):
         super(PassengerMailFerry, self).__init__(id, **kwargs)
         self.class_refit_groups = ['pax_mail']
+        self.label_refits_allowed = []
+        self.label_refits_disallowed = []
 
 
 class Trawler(Ship):
@@ -235,6 +245,8 @@ class Trawler(Ship):
     def __init__(self, id, **kwargs):
         super(Trawler, self).__init__(id, **kwargs)
         self.class_refit_groups = ['pax_mail','express_freight']
+        self.label_refits_allowed = ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR']
+        self.label_refits_disallowed = []
 
 
 class Tanker(Ship):
@@ -242,6 +254,8 @@ class Tanker(Ship):
     def __init__(self, id, **kwargs):
         super(Tanker, self).__init__(id, **kwargs)
         self.class_refit_groups = ['liquids']
+        self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
+        self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
 
 
 class FastFreighter(Ship):
@@ -249,3 +263,5 @@ class FastFreighter(Ship):
     def __init__(self, id, **kwargs):
         super(FastFreighter, self).__init__(id, **kwargs)
         self.class_refit_groups = ['express_freight','packaged_freight']
+        self.label_refits_allowed = ['FRUT','WATR']
+        self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']

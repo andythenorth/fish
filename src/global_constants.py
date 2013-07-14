@@ -35,25 +35,6 @@ base_refits_by_class = {'empty': [],
                         'packaged_freight': ['CC_PIECE_GOODS','CC_ARMOURED','CC_EXPRESS','CC_LIQUID'],
                         'express_freight': ['CC_EXPRESS','CC_ARMOURED']}
 
-# allowed labels, for fine-grained control in addition to classes
-label_refits_allowed_by_supertype = {'gcv': [],
-                                     'tanker': [],
-                                     'pax_mail': [],
-                                     'trawler': ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR'], # trawler and packet are broadly similar
-                                     'packet': ['BDMT','FRUT','LVST','VEHI','WATR'],
-                                     'fast_freighter': ['FRUT','WATR'],
-                                     'livestock_ship': ['LVST'], # set to livestock by default, don't need to make it refit
-                                     'log_tug': []} # set to wood by default, don't need to make it refit
-
-# allowed labels, for fine-grained control, knocking out cargos that are allowed by classes, but don't fit for gameplay reasons
-label_refits_disallowed_by_supertype = {'gcv': ['TOUR'],
-                                        'tanker': ['MILK'],
-                                        'pax_mail': [],
-                                        'trawler': [],
-                                        'packet': ['FISH'],
-                                        'fast_freighter': ['FISH','LVST','OIL_','TOUR','WOOD'],
-                                        'livestock_ship': [],
-                                        'log_tug': []}
 
 # ! hangover code from BANDIT; can be used in future to match cargos to specific graphic variations
 # also used to construct the cargo table automatically
