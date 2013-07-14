@@ -68,8 +68,3 @@ graphics_path = 'src/graphics/'
 # cost constants
 FIXED_RUN_COST = 500.0
 FUEL_RUN_COST = 10.0
-
-# provide a private method for turning ships off during development without modifying the config file. Bound to go wrong. :P
-ships_turned_off = (
-)
-
