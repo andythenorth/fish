@@ -28,12 +28,11 @@ class Ship(object):
         self.numeric_id = kwargs.get('numeric_id', None)
         self.custom_template = kwargs.get('custom_template', None)
         self.str_type_info = kwargs.get('str_type_info', None).upper()
-        # supertype controls refits etc, so figure it out from the type
-        self.supertype = global_constants.type_supertype_mapping[self.str_type_info.lower()]
         self.graphics_template = kwargs.get('graphics_template', None)
         self.intro_date = kwargs.get('intro_date', None)
         self.replacement_id = kwargs.get('replacement_id', None)
         #print self.replacement_id
+        self.supertype = kwargs.get('supertype', None)
         self.vehicle_life = kwargs.get('vehicle_life', None)
         self.speed = kwargs.get('speed', None)
         self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
@@ -103,15 +102,6 @@ class Ship(object):
         calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 98) # divide by magic constant to get costs as factor in 0-255 range
         return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
 
-    def get_capacity_freight(self):
-        # freight capacity is usually determined by holds, except for special cases
-        if self.supertype == 'tanker':
-            return self.capacity_tanks
-        elif self.supertype == 'pax_mail':
-            return 0
-        else:
-            return self.capacity_cargo_holds
-
     def get_default_cargo_capacity(self):
         # for ships with subtype refits for capacity, only capacity_special should be used, irrespective of cargo
         if self.str_type_info.lower() in global_constants.types_with_subtype_refits_for_capacity:
@@ -127,7 +117,6 @@ class Ship(object):
             return self.capacity_freight
 
     def get_refittable_classes(self):
-        # work out which classes are refittable based on the ship supertype
         cargo_classes = []
         # maps lists of allowed classes.  No equivalent for disallowed classes, that's overly restrictive and damages the viability of class-based refitting
         for i in self.class_refit_groups:
@@ -205,6 +194,11 @@ class GeneralCargoVessel(Ship):
         self.label_refits_allowed = [] # no specific labels needed, GCV refits all freight
         self.label_refits_disallowed = ['TOUR']
 
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, except for special cases
+        return self.capacity_cargo_holds
+
+
 class LivestockCarrier(Ship):
     # special type for livestock (as you might guess)
     def __init__(self, id, **kwargs):
@@ -213,6 +207,11 @@ class LivestockCarrier(Ship):
         self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
         self.label_refits_disallowed = []
 
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, except for special cases
+        return self.capacity_cargo_holds
+
+
 class LogTug(Ship):
     # specialist type for hauling logs only, has some specialist refit + speed behaviours
     def __init__(self, id, **kwargs):
@@ -220,6 +219,10 @@ class LogTug(Ship):
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
+
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, except for special cases
+        return self.capacity_cargo_holds
 
 
 class PacketBoat(Ship):
@@ -230,6 +233,10 @@ class PacketBoat(Ship):
         self.label_refits_allowed = ['BDMT','FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
 
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, except for special cases
+        return self.capacity_cargo_holds
+
 
 class PassengerMailFerry(Ship):
     # fast vessel type for passengers and mail only
@@ -238,6 +245,10 @@ class PassengerMailFerry(Ship):
         self.class_refit_groups = ['pax_mail']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
+
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds - but special case for this ship type
+        return 0
 
 
 class Trawler(Ship):
@@ -248,6 +259,10 @@ class Trawler(Ship):
         self.label_refits_allowed = ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = []
 
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, except for special cases
+        return self.capacity_cargo_holds
+
 
 class Tanker(Ship):
     # ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising).
@@ -257,6 +272,10 @@ class Tanker(Ship):
         self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
 
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, but special case for this ship type
+        return self.capacity_tanks
+
 
 class FastFreighter(Ship):
     # a fast freighter type, refits to limited range of freight cargos
@@ -265,3 +284,8 @@ class FastFreighter(Ship):
         self.class_refit_groups = ['express_freight','packaged_freight']
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
+
+    def get_capacity_freight(self):
+        # freight capacity is usually determined by holds, except for special cases
+        return self.capacity_cargo_holds
+
