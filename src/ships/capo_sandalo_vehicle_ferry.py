@@ -1,6 +1,6 @@
-from ship import Ship
+from ship import Ship, PacketBoat
 
-ship = Ship(id = 'capo_sandalo_vehicle_ferry',
+ship = PacketBoat(id = 'capo_sandalo_vehicle_ferry',
             numeric_id = '80',
             supertype = 'packet',
             title = 'Capo Sandalo [Ferry]',

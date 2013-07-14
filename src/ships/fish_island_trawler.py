@@ -1,6 +1,6 @@
-from ship import Ship
+from ship import Ship, Trawler
 
-ship = Ship(id = 'fish_island_trawler',
+ship = Trawler(id = 'fish_island_trawler',
             numeric_id = '130',
             supertype = 'trawler',
             title = 'Fish Island [Trawler]',

@@ -1,6 +1,6 @@
-from ship import Ship
+from ship import Ship, PacketBoat
 
-ship = Ship(id = 'endeavour_utility_catamaran',
+ship = PacketBoat(id = 'endeavour_utility_catamaran',
             numeric_id = '120',
             supertype = 'packet',
             title = 'Endeavour [Rig Supply Fast Catamaran]',

@@ -1,6 +1,6 @@
-from ship import Ship
+from ship import Ship, FastFreighter
 
-ship = Ship(id = 'thunder_bay_hovercraft',
+ship = FastFreighter(id = 'thunder_bay_hovercraft',
             numeric_id = '150',
             supertype = 'fast_freighter',
             title = 'Thunder Bay [Hovercraft]',

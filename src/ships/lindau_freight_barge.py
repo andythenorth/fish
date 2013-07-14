@@ -1,6 +1,6 @@
-from ship import Ship
+from ship import Ship, GeneralCargoVessel
 
-ship = Ship(id = 'lindau_freight_barge',
+ship = GeneralCargoVessel(id = 'lindau_freight_barge',
             numeric_id = '210',
             supertype = 'gcv',
             title = 'Lindau [Freight Barge]',

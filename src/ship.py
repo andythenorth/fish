@@ -214,6 +214,8 @@ class LogTug(Ship):
 class LivestockCarrier(Ship):
     pass
 
-class PassengerMailVessel(Ship):
+class PassengerMailFerry(Ship):
     pass
 
+class FastFreighter(Ship):
+    pass

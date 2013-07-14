@@ -1,6 +1,6 @@
-from ship import Ship
+from ship import Ship, LogTug
 
-ship = Ship(id = 'pine_island_log_tug',
+ship = LogTug(id = 'pine_island_log_tug',
             numeric_id = '250',
             supertype = 'log_tug',
             title = 'Pine Island [Log Tug]',
