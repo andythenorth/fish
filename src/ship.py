@@ -197,5 +197,23 @@ class Ship(object):
 
 
 class GeneralCargoVessel(Ship):
-    def foo(self):
-        print 'foo'
+    pass
+
+class PacketBoat(Ship):
+    pass
+
+class Tanker(Ship):
+    pass
+
+class Trawler(Ship):
+    pass
+
+class LogTug(Ship):
+    pass
+
+class LivestockCarrier(Ship):
+    pass
+
+class PassengerMailVessel(Ship):
+    pass
+
