@@ -197,25 +197,33 @@ class Ship(object):
 
 
 class GeneralCargoVessel(Ship):
-    pass
-
-class PacketBoat(Ship):
-    pass
-
-class Tanker(Ship):
-    pass
-
-class Trawler(Ship):
-    pass
-
-class LogTug(Ship):
+    # general purpose freight vessel type, no pax or mail cargos, refits any other cargo including liquids (in barrels or containers)
     pass
 
 class LivestockCarrier(Ship):
+    # special type for livestock (as you might guess)
+    pass
+
+class LogTug(Ship):
+    # specialist type for hauling logs only, has some specialist refit + speed behaviours
+    pass
+
+class PacketBoat(Ship):
+    # a relatively fast vessel type for passengers, mail, and express freight
     pass
 
 class PassengerMailFerry(Ship):
+    # fast vessel type for passengers and mail only
+    pass
+
+class Trawler(Ship):
+    # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
+    pass
+
+class Tanker(Ship):
+    # ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising).
     pass
 
 class FastFreighter(Ship):
+    # a fast freighter type, refits to limited range of freight cargos
     pass
