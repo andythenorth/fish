@@ -98,13 +98,6 @@ class Ship(object):
         calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 98) # divide by magic constant to get costs as factor in 0-255 range
         return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
 
-    def get_default_cargo_capacity(self):
-        # for ships with subtype refits for capacity, only capacity_special should be used, irrespective of cargo
-        if self.capacity_is_refittable_by_cargo_subtype:
-            return self.capacity_special[0]
-        else:
-            return self.default_cargo_capacity
-
     def get_refittable_classes(self):
         cargo_classes = []
         # maps lists of allowed classes.  No equivalent for disallowed classes, that's overly restrictive and damages the viability of class-based refitting
@@ -188,6 +181,7 @@ class LivestockCarrier(Ship):
         self.cargo_units_buy_menu = 'STR_QUANTITY_LIVESTOCK'
         self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
         self.default_cargo = 'LVST'
+        self.default_cargo_capacity = self.capacity_special[0]
 
 
 class LogTug(Ship):
@@ -203,6 +197,7 @@ class LogTug(Ship):
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
         self.default_cargo = 'WOOD'
+        self.default_cargo_capacity = self.capacity_special[0]
         self.template = 'log_tug.pynml' # special template for log tug, handles speed variation
 
 
