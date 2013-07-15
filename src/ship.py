@@ -152,21 +152,17 @@ class Ship(object):
         # set buy menu text, with various variations
         cargo_units = None # only used when needed
         if self.capacity_is_refittable_by_cargo_subtype:
-            cargo_units = self.cargo_units_buy_menu
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
             )
+            return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_special_0=self.capacity_special[0],
+                                            capacity_special_1=self.capacity_special[1], capacity_special_2=self.capacity_special[2],
+                                            cargo_units=self.cargo_units_buy_menu)
         else:
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_EMPTY))"
             )
-        # dirty nasty code to handle case where capacity_special is an empty list
-        capacity_special_0 = self.capacity_special[0] if len(self.capacity_special) > 0 else ''
-        capacity_special_1 = self.capacity_special[1] if len(self.capacity_special) > 1 else ''
-        capacity_special_2 = self.capacity_special[2] if len(self.capacity_special) > 2 else ''
-
-        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_special_0=capacity_special_0,
-                                            capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2, cargo_units=cargo_units)
+            return buy_menu_template.substitute(str_type_info=self.get_str_type_info())
 
     def get_cargo_suffix(self):
         return 'string(' + self.cargo_units_refit_menu + ')'
