@@ -8,16 +8,7 @@ currentdir = os.curdir
 import sys
 sys.path.append(os.path.join('src')) # add to the module search path
 
-import math
-from string import Template # python builtin templater might be used in some utility cases
-
-from chameleon import PageTemplateLoader # chameleon used in most template cases
-# setup the places we look for templates
-templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
-
-# get the globals - however for using globals in templates, it's better for the template to use global_template.pt as a macro
-import global_constants # expose all constants for easy passing to templates
-
+import global_constants
 import utils
 
 # get args passed by makefile
