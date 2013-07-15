@@ -40,7 +40,6 @@ class Ship(object):
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
-        self.capacity_tanks = kwargs.get('capacity_tanks', 0)
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
         self.capacity_special = kwargs.get('capacity_special', None)
         self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
@@ -267,6 +266,7 @@ class Tanker(Ship):
         self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
         self.capacity_freight = kwargs.get('capacity_tanks', None)
+        self.capacity_tanks = kwargs.get('capacity_tanks', None)
         self.default_cargo = 'OIL_'
         self.graphics_template = 'tanker'
 
