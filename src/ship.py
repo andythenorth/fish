@@ -147,7 +147,6 @@ class MixinRefittableCapacity(object):
     capacity_is_refittable_by_cargo_subtype = True
 
     def get_buy_menu_string(self):
-        cargo_units = None # only used when needed
         buy_menu_template = Template(
             "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
         )
