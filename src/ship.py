@@ -42,7 +42,6 @@ class Ship(object):
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0)
 
-        self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
         self.capacity_special = kwargs.get('capacity_special', None)
         self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
@@ -152,15 +151,7 @@ class Ship(object):
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
         cargo_units = None # only used when needed
-        if isinstance(self, PacketBoat):
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
-            )
-        elif isinstance(self, Trawler):
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
-            )
-        elif self.capacity_is_refittable_by_cargo_subtype:
+        if self.capacity_is_refittable_by_cargo_subtype:
             cargo_units = self.cargo_units_buy_menu
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
@@ -174,8 +165,7 @@ class Ship(object):
         capacity_special_1 = self.capacity_special[1] if len(self.capacity_special) > 1 else ''
         capacity_special_2 = self.capacity_special[2] if len(self.capacity_special) > 2 else ''
 
-        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_pax=self.capacity_pax, capacity_mail=self.capacity_mail,
-                                            capacity_cargo_holds=self.capacity_cargo_holds, capacity_special_0=capacity_special_0,
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_special_0=capacity_special_0,
                                             capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2, cargo_units=cargo_units)
 
     def get_cargo_suffix(self):
@@ -236,8 +226,18 @@ class PacketBoat(Ship):
         self.class_refit_groups = ['pax_mail','express_freight']
         self.label_refits_allowed = ['BDMT','FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
-        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
+        self.capacity_freight = self.capacity_cargo_holds
         self.default_cargo = 'PASS'
+
+    def get_buy_menu_string(self):
+        # set buy menu text, with various variations
+        cargo_units = None # only used when needed
+        buy_menu_template = Template(
+            "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
+        )
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_pax=self.capacity_pax,
+                                            capacity_mail=self.capacity_mail, capacity_cargo_holds=self.capacity_cargo_holds)
 
 
 class PassengerMailFerry(Ship):
@@ -256,8 +256,18 @@ class Trawler(Ship):
         self.class_refit_groups = ['pax_mail','express_freight']
         self.label_refits_allowed = ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = []
-        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.capacity_deck_cargo = kwargs.get('capacity_deck_cargo', None)
+        self.capacity_freight = self.capacity_deck_cargo
         self.default_cargo = 'FISH'
+
+    def get_buy_menu_string(self):
+        # set buy menu text, with various variations
+        cargo_units = None # only used when needed
+        buy_menu_template = Template(
+                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_deck_cargo}))"
+        )
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_pax=self.capacity_pax,
+                                            capacity_mail=self.capacity_mail, capacity_deck_cargo=self.capacity_deck_cargo)
 
 
 class Tanker(Ship):
