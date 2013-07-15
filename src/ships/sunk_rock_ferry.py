@@ -1,7 +1,7 @@
 from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'sunk_rock_ferry',
-            numeric_id = '10',
+            numeric_id = 10,
             title = 'Sunk Rock [Ferry]',
             capacity_pax = 100,
             capacity_freight = 25,

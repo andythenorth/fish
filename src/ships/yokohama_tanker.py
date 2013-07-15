@@ -1,7 +1,7 @@
 from ship import Ship, Tanker
 
 ship = Tanker(id = 'yokohama_tanker',
-            numeric_id = '280',
+            numeric_id = 280,
             title = 'Yokohama [Tanker]',
             capacity_pax = 0,
             capacity_freight = 1220,

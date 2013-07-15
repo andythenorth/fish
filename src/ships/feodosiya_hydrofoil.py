@@ -1,7 +1,7 @@
 from ship import Ship, PassengerMailFerry
 
 ship = PassengerMailFerry(id = 'feodosiya_hydrofoil',
-            numeric_id = '60',
+            numeric_id = 60,
             title = 'Feodosiya [Hydrofoil]',
             capacity_pax = 106,
             capacity_freight = 0,

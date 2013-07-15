@@ -18,7 +18,7 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
-ships = fish.get_ships()
+ships = fish.get_ships_in_buy_menu_order()
 
 # compile a single final nml file for the grf
 master_template = templates['fish.pynml']

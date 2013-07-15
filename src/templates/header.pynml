@@ -49,4 +49,4 @@ if (param_reset_construction_costs) {
 }
 
 // sort order
-sort(FEAT_SHIPS, ${global_constants.purchase_list_sort_order});
+sort(FEAT_SHIPS, ${[ship.numeric_id for ship in ships]});

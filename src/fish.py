@@ -18,6 +18,8 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 # get the globals - however for using globals in templates, it's better for the template to use global_template.pt as a macro
 import global_constants # expose all constants for easy passing to templates
 
+import utils
+
 # get args passed by makefile
 if len(sys.argv) > 1:
     repo_vars = {'repo_title' : sys.argv[1], 'repo_version' : sys.argv[2]}
@@ -59,5 +61,16 @@ from ships import thunder_bay_hovercraft
 from ships import whitgift_freight_barge
 from ships import yokohama_tanker
 
-def get_ships():
-    return registered_ships
+
+def get_ships_in_buy_menu_order():
+    sorted_ships = []
+    for id in global_constants.buy_menu_sort_order:
+        found = False
+        for ship in registered_ships:
+            if ship.id == id:
+                sorted_ships.append(ship)
+                found = True
+        if not found:
+            utils.echo_message("Warning: ship " + id + " in buy_menu_sort_order, but not found in registered_ships")
+    return sorted_ships
+

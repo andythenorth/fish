@@ -15,7 +15,7 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 lang_templates = PageTemplateLoader(os.path.join(currentdir, 'lang_src'))
 
-ships = fish.get_ships()
+ships = fish.get_ships_in_buy_menu_order()
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 

@@ -1,7 +1,7 @@
 from ship import Ship, LivestockCarrier
 
 ship = LivestockCarrier(id = 'shark_island_livestock_ship',
-            numeric_id = '290',
+            numeric_id = 290,
             title = 'Shark Island [Livestock Ship]',
             capacity_pax = 0,
             capacity_freight = 0,

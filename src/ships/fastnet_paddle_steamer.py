@@ -1,7 +1,7 @@
 from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'fastnet_paddle_steamer',
-            numeric_id = '40',
+            numeric_id = 40,
             title = 'Fastnet [Paddle Steamer]',
             capacity_pax = 720,
             capacity_freight = 250,

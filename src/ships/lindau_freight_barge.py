@@ -1,7 +1,7 @@
 from ship import Ship, GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'lindau_freight_barge',
-            numeric_id = '210',
+            numeric_id = 210,
             title = 'Lindau [Freight Barge]',
             capacity_pax = 0,
             capacity_freight = 295,

@@ -1,7 +1,7 @@
 from ship import Ship, Tanker
 
 ship = Tanker(id = 'eddystone_tanker',
-            numeric_id = '260',
+            numeric_id = 260,
             title = 'Eddystone [Tanker]',
             capacity_pax = 0,
             capacity_freight = 330,

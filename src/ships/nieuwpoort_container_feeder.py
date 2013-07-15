@@ -1,7 +1,7 @@
 from ship import Ship, FastFreighter
 
 ship = FastFreighter(id = 'nieuwpoort_container_feeder',
-            numeric_id = '300',
+            numeric_id = 300,
             title = 'Nieuwpoort [Container Feeder]',
             capacity_pax = 0,
             capacity_freight = 750,

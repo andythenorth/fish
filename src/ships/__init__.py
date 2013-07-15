@@ -1,2 +1,1 @@
 registered_ships = []
-

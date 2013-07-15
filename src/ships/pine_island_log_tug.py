@@ -1,7 +1,7 @@
 from ship import Ship, LogTug
 
 ship = LogTug(id = 'pine_island_log_tug',
-            numeric_id = '250',
+            numeric_id = 250,
             title = 'Pine Island [Log Tug]',
             capacity_pax = 0,
             capacity_freight = 0,

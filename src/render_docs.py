@@ -15,7 +15,7 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 docs_templates = PageTemplateLoader(os.path.join(currentdir,'docs_src'))
 
-ships = fish.get_ships()
+ships = fish.get_ships_in_buy_menu_order()
 # default sort for docs is by ship intro date
 ships = sorted(ships, key=lambda ship: ship.intro_date)
 
