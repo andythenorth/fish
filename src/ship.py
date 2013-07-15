@@ -29,7 +29,6 @@ class Ship(object):
         self.str_type_info = kwargs.get('str_type_info', None).upper()
         self.intro_date = kwargs.get('intro_date', None)
         self.replacement_id = kwargs.get('replacement_id', None)
-        #print self.replacement_id
         self.vehicle_life = kwargs.get('vehicle_life', None)
         self.speed = kwargs.get('speed', None)
         self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
@@ -37,11 +36,6 @@ class Ship(object):
         self.fixed_run_cost_factor = kwargs.get('fixed_run_cost_factor', None)
         self.fuel_run_cost_factor = kwargs.get('fuel_run_cost_factor', None)
         self.gross_tonnage = kwargs.get('gross_tonnage', None)
-        # declare capacities for pax, mail and freight, as they are needed later for nml switches
-        self.capacity_pax = kwargs.get('capacity_pax', 0)
-        self.capacity_mail = kwargs.get('capacity_mail', 0)
-        self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
-        self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
@@ -51,6 +45,12 @@ class Ship(object):
         self.sea_capable = kwargs.get('sea_capable', None)
         self.graphics_template = kwargs.get('graphics_template', 'default')
         self.template = 'ship_template.pynml'
+        # declare capacities for pax, mail and freight, as they are needed later for nml switches
+        self.capacity_pax = kwargs.get('capacity_pax', 0)
+        self.capacity_mail = kwargs.get('capacity_mail', 0)
+        self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
+        self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
+        # register ship with this module so other modules can use it
         self.register()
 
     def register(self):
@@ -103,7 +103,7 @@ class Ship(object):
         if self.capacity_is_refittable_by_cargo_subtype:
             return self.capacity_special[0]
         # otherwise the default capacity should be determined with respect to the default cargo
-        if self.default_cargo == 'PASS':
+        elif self.default_cargo == 'PASS':
             return self.capacity_pax
         elif self.default_cargo == 'MAIL':
             return self.capacity_mail
