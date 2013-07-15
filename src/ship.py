@@ -37,11 +37,10 @@ class Ship(object):
         self.fixed_run_cost_factor = kwargs.get('fixed_run_cost_factor', None)
         self.fuel_run_cost_factor = kwargs.get('fuel_run_cost_factor', None)
         self.gross_tonnage = kwargs.get('gross_tonnage', None)
-        # declare capacities for pax and mail, as they are needed later for nml switches
+        # declare capacities for pax, mail and freight, as they are needed later for nml switches
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
-        self.capacity_freight = kwargs.get('capacity_freight', 0)
-
+        self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
         self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
