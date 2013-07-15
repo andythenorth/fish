@@ -26,9 +26,7 @@ class Ship(object):
         #setup properties for this ship
         self.title = kwargs.get('title', None)
         self.numeric_id = kwargs.get('numeric_id', None)
-        self.custom_template = kwargs.get('custom_template', None)
         self.str_type_info = kwargs.get('str_type_info', None).upper()
-        self.graphics_template = kwargs.get('graphics_template', None)
         self.intro_date = kwargs.get('intro_date', None)
         self.replacement_id = kwargs.get('replacement_id', None)
         #print self.replacement_id
@@ -53,6 +51,8 @@ class Ship(object):
         self.graphic_variations_by_date = kwargs.get('graphic_variations_by_date', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
+        self.graphics_template = kwargs.get('graphics_template', None)
+        self.template = 'ship_template.pynml'
         self.register()
 
     def register(self):
@@ -180,7 +180,7 @@ class Ship(object):
         return 'string(' + self.cargo_units_refit_menu + ')'
 
     def render(self):
-        template = templates[(self.custom_template or 'ship_template.pynml')]
+        template = templates[(self.template)]
         return template(ship = self)
 
 
@@ -220,8 +220,8 @@ class LogTug(Ship):
         self.capacity_is_refittable_by_cargo_subtype = True
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
-        self.custom_template = 'log_tug.pynml'
         self.default_cargo = 'WOOD'
+        self.template = 'log_tug.pynml' # special template for log tug, handles speed variation
 
 
 class PacketBoat(Ship):
