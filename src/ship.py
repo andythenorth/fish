@@ -51,7 +51,7 @@ class Ship(object):
         self.graphic_variations_by_date = kwargs.get('graphic_variations_by_date', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
-        self.graphics_template = kwargs.get('graphics_template', None)
+        self.graphics_template = kwargs.get('graphics_template', 'default')
         self.template = 'ship_template.pynml'
         self.register()
 
@@ -193,6 +193,7 @@ class GeneralCargoVessel(Ship):
         self.label_refits_disallowed = ['TOUR']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'COAL'
+        self.graphics_template = 'standard_gcv'
 
 
 class LivestockCarrier(Ship):
@@ -265,6 +266,7 @@ class Tanker(Ship):
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
         self.capacity_freight = kwargs.get('capacity_tanks', None)
         self.default_cargo = 'OIL_'
+        self.graphics_template = 'tanker'
 
 
 class FastFreighter(Ship):
