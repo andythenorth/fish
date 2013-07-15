@@ -42,8 +42,6 @@ class Ship(object):
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0)
 
-        # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
-        self.capacity_special = kwargs.get('capacity_special', None)
         self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
@@ -254,6 +252,7 @@ class Trawler(Ship):
         self.label_refits_disallowed = []
         self.capacity_deck_cargo = kwargs.get('capacity_deck_cargo', None)
         self.capacity_freight = self.capacity_deck_cargo
+        self.capacity_special = kwargs.get('capacity_special', None)
         self.default_cargo = 'FISH'
 
     def get_buy_menu_string(self):
