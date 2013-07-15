@@ -27,6 +27,5 @@ ship = LogTug(id = 'pine_island_log_tug',
             graphics_template = 'default',
             str_type_info = 'LOG_TUG',
             vehicle_life = 25,
-            custom_template = 'log_tug.pynml',
             gross_tonnage = 26,
 )

@@ -219,6 +219,7 @@ class LogTug(Ship):
         self.capacity_is_refittable_by_cargo_subtype = True
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
+        self.custom_template = 'log_tug.pynml'
 
 
 class PacketBoat(Ship):
