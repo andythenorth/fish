@@ -250,10 +250,11 @@ class Trawler(Ship):
         # set buy menu text, with various variations
         cargo_units = None # only used when needed
         buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_deck_cargo}))"
+                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_fish_holds},${capacity_deck_cargo}))"
         )
         return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_pax=self.capacity_pax,
-                                            capacity_mail=self.capacity_mail, capacity_deck_cargo=self.capacity_deck_cargo)
+                                            capacity_mail=self.capacity_mail, capacity_deck_cargo=self.capacity_deck_cargo,
+                                            capacity_fish_holds=self.capacity_fish_holds)
 
 
 class Tanker(Ship):

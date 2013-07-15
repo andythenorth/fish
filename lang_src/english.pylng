@@ -38,7 +38,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Utility Tug
 <!--! extra buy menu info -->
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacity when refitted: {GOLD}{COMMA} bags of mail or {COMMA}t of express freight
-STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacity when refitted: {GOLD}{COMMA} passengers, {COMMA} bags of mail or {COMMA}t of express freight as deck cargo
+STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacity when refitted: {GOLD}{COMMA} passengers, {COMMA} bags of mail, {COMMA}t of fish in holds, or {COMMA}t of express freight as deck cargo
 
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general purpose vessel
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
