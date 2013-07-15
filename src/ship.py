@@ -102,15 +102,8 @@ class Ship(object):
         # for ships with subtype refits for capacity, only capacity_special should be used, irrespective of cargo
         if self.capacity_is_refittable_by_cargo_subtype:
             return self.capacity_special[0]
-        # otherwise the default capacity should be determined with respect to the default cargo
-        elif self.default_cargo == 'PASS':
-            return self.capacity_pax
-        elif self.default_cargo == 'MAIL':
-            return self.capacity_mail
-        elif self.default_cargo == 'FISH':
-            return self.capacity_special[0]
         else:
-            return self.capacity_freight
+            return self.default_cargo_capacity
 
     def get_refittable_classes(self):
         cargo_classes = []
@@ -178,6 +171,7 @@ class GeneralCargoVessel(Ship):
         self.label_refits_disallowed = ['TOUR']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'COAL'
+        self.default_cargo_capacity = self.capacity_freight
         self.graphics_template = 'standard_gcv'
 
 
@@ -222,6 +216,8 @@ class PacketBoat(Ship):
         self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
         self.capacity_freight = self.capacity_cargo_holds
         self.default_cargo = 'PASS'
+        self.default_cargo_capacity = self.capacity_pax
+
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
@@ -241,6 +237,7 @@ class PassengerMailFerry(Ship):
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
         self.default_cargo = 'PASS'
+        self.default_cargo_capacity = self.capacity_pax
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
@@ -253,6 +250,7 @@ class Trawler(Ship):
         self.capacity_freight = self.capacity_deck_cargo
         self.capacity_special = kwargs.get('capacity_special', None)
         self.default_cargo = 'FISH'
+        self.default_cargo_capacity = self.capacity_special[0]
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
@@ -275,6 +273,7 @@ class Tanker(Ship):
         self.capacity_freight = self.capacity_tanks
         self.default_cargo = 'OIL_'
         self.graphics_template = 'tanker'
+        self.default_cargo_capacity = self.capacity_freight
 
 
 class FastFreighter(Ship):
@@ -286,4 +285,5 @@ class FastFreighter(Ship):
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'GOOD'
+        self.default_cargo_capacity = self.capacity_freight
 
