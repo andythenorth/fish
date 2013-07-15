@@ -3,7 +3,6 @@ from ship import Ship, GeneralCargoVessel
 ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
             numeric_id = 160,
             title = 'Whitgift [Freight Barge]',
-            capacity_freight = 55,
             capacity_pax = 0,
             capacity_cargo_holds = 55,
             capacity_tanks = 0,
