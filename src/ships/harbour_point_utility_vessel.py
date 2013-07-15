@@ -1,6 +1,6 @@
-from ship import Ship, Trawler
+from ship import Ship, PacketBoat
 
-ship = Trawler(id = 'harbour_point_utility_vessel',
+ship = PacketBoat(id = 'harbour_point_utility_vessel',
             numeric_id = 110,
             title = 'Harbour Point [Utility Vessel]',
             capacity_pax = 27,
@@ -9,7 +9,6 @@ ship = Trawler(id = 'harbour_point_utility_vessel',
             capacity_tanks = 0,
             capacity_mail = 22,
             capacity_special = [],
-            default_cargo = 'PASS',
             replacement_id = '-none',
             buy_cost = 2,
             fixed_run_cost_factor = 1.5,

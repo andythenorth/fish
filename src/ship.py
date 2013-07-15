@@ -46,7 +46,6 @@ class Ship(object):
         # special capacity: ued for hax, e.g. a list of multiple refittable capacities, or a list with single item for fish hold capacity of trawlers
         self.capacity_special = kwargs.get('capacity_special', None)
         self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
-        self.default_cargo = kwargs.get('default_cargo', None)
         self.loading_speed = kwargs.get('loading_speed', None)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
@@ -193,6 +192,7 @@ class GeneralCargoVessel(Ship):
         self.label_refits_allowed = [] # no specific labels needed, GCV refits all freight
         self.label_refits_disallowed = ['TOUR']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.default_cargo = 'COAL'
 
 
 class LivestockCarrier(Ship):
@@ -206,6 +206,7 @@ class LivestockCarrier(Ship):
         self.capacity_is_refittable_by_cargo_subtype = True
         self.cargo_units_buy_menu = 'STR_QUANTITY_LIVESTOCK'
         self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
+        self.default_cargo = 'LVST'
 
 
 class LogTug(Ship):
@@ -220,6 +221,7 @@ class LogTug(Ship):
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
         self.custom_template = 'log_tug.pynml'
+        self.default_cargo = 'WOOD'
 
 
 class PacketBoat(Ship):
@@ -230,6 +232,7 @@ class PacketBoat(Ship):
         self.label_refits_allowed = ['BDMT','FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.default_cargo = 'PASS'
 
 
 class PassengerMailFerry(Ship):
@@ -240,7 +243,7 @@ class PassengerMailFerry(Ship):
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
         self.capacity_freight = 0
-
+        self.default_cargo = 'PASS'
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
@@ -250,6 +253,7 @@ class Trawler(Ship):
         self.label_refits_allowed = ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = []
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.default_cargo = 'FISH'
 
 
 class Tanker(Ship):
@@ -260,6 +264,7 @@ class Tanker(Ship):
         self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
         self.capacity_freight = kwargs.get('capacity_tanks', None)
+        self.default_cargo = 'OIL_'
 
 
 class FastFreighter(Ship):
@@ -270,4 +275,5 @@ class FastFreighter(Ship):
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.default_cargo = 'GOOD'
 
