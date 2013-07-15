@@ -77,7 +77,8 @@ class Ship(object):
         speeds_adjusted_rounded = [int(math.ceil(i * speed_factors[speed_index])) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
         return speeds_adjusted_rounded
 
-    def get_adjusted_model_life(self):
+    @property
+    def adjusted_model_life(self):
         # handles keeping the buy menu tidy, relies on magic from Eddi
         if self.replacement_id != None and self.replacement_id != '-none' and self.replacement_id != '':
             for i in registered_ships:
@@ -87,14 +88,16 @@ class Ship(object):
         else:
             return 'VEHICLE_NEVER_EXPIRES'
 
-    def get_running_cost(self):
+    @property
+    def running_cost(self):
         # calculate a running cost
         fixed_run_cost = self.fixed_run_cost_factor * global_constants.FIXED_RUN_COST
         fuel_run_cost =  self.fuel_run_cost_factor * self.gross_tonnage * global_constants.FUEL_RUN_COST
         calculated_run_cost = int((fixed_run_cost + fuel_run_cost) / 98) # divide by magic constant to get costs as factor in 0-255 range
         return min(calculated_run_cost, 255) # cost factor is a byte, can't exceed 255
 
-    def get_refittable_classes(self):
+    @property
+    def refittable_classes(self):
         cargo_classes = []
         # maps lists of allowed classes.  No equivalent for disallowed classes, that's overly restrictive and damages the viability of class-based refitting
         for i in self.class_refit_groups:

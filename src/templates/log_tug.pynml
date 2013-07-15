@@ -225,7 +225,7 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         ocean_speed_fraction:           ${ship.ocean_speed};
         canal_speed_fraction:           ${ship.canal_speed};
         cost_factor:                    ${ship.buy_cost};
-        running_cost_factor:            ${ship.get_running_cost()};
+        running_cost_factor:            ${ship.running_cost};
         refit_cost:                     0;
         is_refittable:                  1;
         refittable_cargo_classes:       bitmask();
@@ -235,7 +235,7 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         default_cargo_type:             ${ship.default_cargo};
         loading_speed:                  ${ship.loading_speed};
         misc_flags:                     bitmask(SHIP_FLAG_2CC); // nml constants
-        model_life:                     ${ship.get_adjusted_model_life()};
+        model_life:                     ${ship.adjusted_model_life};
         retire_early:                   ${ship.vehicle_life - 4}; // magic from Eddi
         vehicle_life:                   ${ship.vehicle_life};
     }
