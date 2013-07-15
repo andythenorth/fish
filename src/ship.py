@@ -243,9 +243,9 @@ class Trawler(Ship):
         self.label_refits_disallowed = []
         self.capacity_deck_cargo = kwargs.get('capacity_deck_cargo', None)
         self.capacity_freight = self.capacity_deck_cargo
-        self.capacity_special = kwargs.get('capacity_special', None)
+        self.capacity_fish_holds = kwargs.get('capacity_fish_holds', None)
         self.default_cargo = 'FISH'
-        self.default_cargo_capacity = self.capacity_special[0]
+        self.default_cargo_capacity = self.capacity_fish_holds
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
