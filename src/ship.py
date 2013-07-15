@@ -37,6 +37,7 @@ class Ship(object):
         self.fixed_run_cost_factor = kwargs.get('fixed_run_cost_factor', None)
         self.fuel_run_cost_factor = kwargs.get('fuel_run_cost_factor', None)
         self.gross_tonnage = kwargs.get('gross_tonnage', None)
+        # declare capacities for pax and mail, as they are needed later for nml switches
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
