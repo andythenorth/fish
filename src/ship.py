@@ -147,7 +147,7 @@ class Ship(object):
         return 'string(' + self.cargo_units_refit_menu + ')'
 
     def render(self):
-        template = templates[(self.template)]
+        template = templates[self.template]
         return template(ship = self)
 
 
