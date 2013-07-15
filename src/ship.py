@@ -131,20 +131,10 @@ class Ship(object):
         return "string(STR_NAME_" + self.id +", string(" + self.get_str_name_suffix() + "))"
 
     def get_buy_menu_string(self):
-        # set buy menu text, with various variations
-        cargo_units = None # only used when needed
-        if self.capacity_is_refittable_by_cargo_subtype:
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
-            )
-            return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_special_0=self.capacity_special[0],
-                                            capacity_special_1=self.capacity_special[1], capacity_special_2=self.capacity_special[2],
-                                            cargo_units=self.cargo_units_buy_menu)
-        else:
-            buy_menu_template = Template(
-                "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_EMPTY))"
-            )
-            return buy_menu_template.substitute(str_type_info=self.get_str_type_info())
+        buy_menu_template = Template(
+            "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_EMPTY))"
+        )
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info())
 
     def get_cargo_suffix(self):
         return 'string(' + self.cargo_units_refit_menu + ')'
@@ -152,6 +142,19 @@ class Ship(object):
     def render(self):
         template = templates[self.template]
         return template(ship = self)
+
+class MixinRefittableCapacity(object):
+    capacity_is_refittable_by_cargo_subtype = True
+
+    def get_buy_menu_string(self):
+        cargo_units = None # only used when needed
+        buy_menu_template = Template(
+            "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
+        )
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_special_0=self.capacity_special[0],
+                                        capacity_special_1=self.capacity_special[1], capacity_special_2=self.capacity_special[2],
+                                        cargo_units=self.cargo_units_buy_menu)
+
 
 
 class GeneralCargoVessel(Ship):
@@ -167,14 +170,13 @@ class GeneralCargoVessel(Ship):
         self.graphics_template = 'standard_gcv'
 
 
-class LivestockCarrier(Ship):
+class LivestockCarrier(MixinRefittableCapacity, Ship):
     # special type for livestock (as you might guess)
     def __init__(self, id, **kwargs):
         super(LivestockCarrier, self).__init__(id, **kwargs)
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
         self.label_refits_disallowed = []
-        self.capacity_is_refittable_by_cargo_subtype = True
         self.capacity_special = kwargs.get('refittable_capacity', None)
         self.capacity_freight = self.capacity_special[0]
         self.cargo_units_buy_menu = 'STR_QUANTITY_LIVESTOCK'
@@ -183,14 +185,13 @@ class LivestockCarrier(Ship):
         self.default_cargo_capacity = self.capacity_special[0]
 
 
-class LogTug(Ship):
+class LogTug(MixinRefittableCapacity, Ship):
     # specialist type for hauling logs only, has some specialist refit + speed behaviours
     def __init__(self, id, **kwargs):
         super(LogTug, self).__init__(id, **kwargs)
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
-        self.capacity_is_refittable_by_cargo_subtype = True
         self.capacity_special = kwargs.get('refittable_capacity', None)
         self.capacity_freight = self.capacity_special[0]
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
