@@ -160,7 +160,7 @@ class Ship(object):
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_cargo_holds}))"
             )
         elif self.capacity_is_refittable_by_cargo_subtype:
-            cargo_units = global_constants.refittable_types_cargo_strings_buy_menu[self.str_type_info.lower()]
+            cargo_units = self.cargo_units_buy_menu
             buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
             )
@@ -178,7 +178,7 @@ class Ship(object):
                                             capacity_special_1=capacity_special_1, capacity_special_2=capacity_special_2, cargo_units=cargo_units)
 
     def get_cargo_suffix(self):
-        return 'string(' + global_constants.refittable_types_cargo_strings_refit_menu[self.str_type_info.lower()] + ')'
+        return 'string(' + self.cargo_units_refit_menu + ')'
 
     def render(self):
         template = templates[(self.custom_template or 'ship_template.pynml')]
@@ -204,6 +204,8 @@ class LivestockCarrier(Ship):
         self.label_refits_disallowed = []
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.capacity_is_refittable_by_cargo_subtype = True
+        self.cargo_units_buy_menu = 'STR_QUANTITY_LIVESTOCK'
+        self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
 
 
 class LogTug(Ship):
@@ -215,6 +217,8 @@ class LogTug(Ship):
         self.label_refits_disallowed = []
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.capacity_is_refittable_by_cargo_subtype = True
+        self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
+        self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
 
 
 class PacketBoat(Ship):

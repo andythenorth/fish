@@ -1,7 +1,3 @@
-# some types have refittable capacity, they have to be known here currently (might change with migration from config file)
-refittable_types_cargo_strings_buy_menu = {'log_tug':'STR_QUANTITY_WOOD', 'livestock_ship':'STR_QUANTITY_LIVESTOCK'}
-refittable_types_cargo_strings_refit_menu = {'log_tug':'STR_UNIT_TONNES', 'livestock_ship':'STR_UNIT_ITEMS'}
-
 purchase_list_sort_order = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 180, 170, 210, 190, 200, 220, 230, 240, 250, 260, 270, 280, 290, 300]
 
 # shared lists of allowed classes, shared across multiple ship types
