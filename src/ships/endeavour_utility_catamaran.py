@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'endeavour_utility_catamaran',
             graphics_template = 'default',
             str_type_info = 'RIG_SUPPLY_FAST_CATAMARAN',
             vehicle_life = 25,
-            custom_template = None,
             gross_tonnage = 70,
 )

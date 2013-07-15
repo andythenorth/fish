@@ -27,6 +27,5 @@ ship = GeneralCargoVessel(id = 'altamira_freighter',
             graphics_template = 'standard_gcv',
             str_type_info = 'COASTER',
             vehicle_life = 40,
-            custom_template = None,
             gross_tonnage = 360,
 )

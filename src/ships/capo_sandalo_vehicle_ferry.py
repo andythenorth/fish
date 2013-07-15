@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'capo_sandalo_vehicle_ferry',
             graphics_template = 'default',
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 45,
-            custom_template = None,
             gross_tonnage = 1150,
 )

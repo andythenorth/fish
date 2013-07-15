@@ -27,6 +27,5 @@ ship = Trawler(id = 'cape_spear_trawler',
             graphics_template = 'default',
             str_type_info = 'TRAWLER',
             vehicle_life = 40,
-            custom_template = None,
             gross_tonnage = 84,
 )

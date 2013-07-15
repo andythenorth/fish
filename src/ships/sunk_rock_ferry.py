@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'sunk_rock_ferry',
             graphics_template = 'default',
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 40,
-            custom_template = None,
             gross_tonnage = 60,
 )

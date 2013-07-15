@@ -27,6 +27,5 @@ ship = GeneralCargoVessel(id = 'saint_marie_barge_tug',
             graphics_template = 'standard_gcv',
             str_type_info = 'BARGE_TUG',
             vehicle_life = 55,
-            custom_template = None,
             gross_tonnage = 45,
 )

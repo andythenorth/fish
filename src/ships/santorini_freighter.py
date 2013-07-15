@@ -27,6 +27,5 @@ ship = GeneralCargoVessel(id = 'santorini_freighter',
             graphics_template = 'standard_gcv',
             str_type_info = 'LARGE_COASTER',
             vehicle_life = 35,
-            custom_template = None,
             gross_tonnage = 960,
 )

@@ -27,6 +27,5 @@ ship = Tanker(id = 'eddystone_tanker',
             graphics_template = 'tanker',
             str_type_info = 'SMALL_TANKER_COASTAL_INLAND',
             vehicle_life = 35,
-            custom_template = None,
             gross_tonnage = 350,
 )

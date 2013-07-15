@@ -27,6 +27,5 @@ ship = PassengerMailFerry(id = 'feodosiya_hydrofoil',
             graphics_template = 'hydrofoil',
             str_type_info = 'HYDROFOIL_FAST_FERRY',
             vehicle_life = 35,
-            custom_template = None,
             gross_tonnage = 64,
 )

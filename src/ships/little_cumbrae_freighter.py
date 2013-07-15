@@ -27,6 +27,5 @@ ship = GeneralCargoVessel(id = 'little_cumbrae_freighter',
             graphics_template = 'standard_gcv',
             str_type_info = 'SMALL_FREIGHTER_COASTAL_INLAND',
             vehicle_life = 35,
-            custom_template = None,
             gross_tonnage = 100,
 )

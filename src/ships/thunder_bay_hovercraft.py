@@ -27,6 +27,5 @@ ship = FastFreighter(id = 'thunder_bay_hovercraft',
             graphics_template = '2_visible_cargo_states',
             str_type_info = 'CARGO_HOVERCRAFT',
             vehicle_life = 45,
-            custom_template = None,
             gross_tonnage = 30,
 )

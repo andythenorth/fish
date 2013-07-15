@@ -27,6 +27,5 @@ ship = FastFreighter(id = 'nieuwpoort_container_feeder',
             graphics_template = 'standard_gcv',
             str_type_info = 'CONTAINER_FEEDER',
             vehicle_life = 30,
-            custom_template = None,
             gross_tonnage = 800,
 )

@@ -27,6 +27,5 @@ ship = GeneralCargoVessel(id = 'lindau_freight_barge',
             graphics_template = 'standard_gcv',
             str_type_info = 'CARGO_VESSEL_INLAND',
             vehicle_life = 50,
-            custom_template = None,
             gross_tonnage = 300,
 )

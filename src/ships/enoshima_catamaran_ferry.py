@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'enoshima_catamaran_ferry',
             graphics_template = 'default',
             str_type_info = 'CATAMARAN_FAST_FERRY',
             vehicle_life = 25,
-            custom_template = None,
             gross_tonnage = 350,
 )

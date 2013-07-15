@@ -27,6 +27,5 @@ ship = Tanker(id = 'yokohama_tanker',
             graphics_template = 'tanker',
             str_type_info = 'LARGE_COASTAL_TANKER',
             vehicle_life = 45,
-            custom_template = None,
             gross_tonnage = 1290,
 )

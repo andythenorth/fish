@@ -27,6 +27,5 @@ ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
             graphics_template = 'standard_gcv',
             str_type_info = 'SMALL_FREIGHTER_COASTAL_INLAND',
             vehicle_life = 60,
-            custom_template = None,
             gross_tonnage = 60,
 )

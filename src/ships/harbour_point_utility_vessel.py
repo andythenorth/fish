@@ -27,6 +27,5 @@ ship = Trawler(id = 'harbour_point_utility_vessel',
             graphics_template = 'default',
             str_type_info = 'SMALL_GENERAL_PURPOSE_VESSEL',
             vehicle_life = 40,
-            custom_template = None,
             gross_tonnage = 30,
 )

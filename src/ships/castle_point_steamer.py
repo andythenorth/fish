@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'castle_point_steamer',
             graphics_template = 'default',
             str_type_info = 'FAST_PACKET_STEAMER',
             vehicle_life = 25,
-            custom_template = None,
             gross_tonnage = 460,
 )

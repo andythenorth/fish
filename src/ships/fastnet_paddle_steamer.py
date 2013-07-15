@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'fastnet_paddle_steamer',
             graphics_template = 'default',
             str_type_info = 'PADDLE_STEAMER',
             vehicle_life = 40,
-            custom_template = None,
             gross_tonnage = 800,
 )

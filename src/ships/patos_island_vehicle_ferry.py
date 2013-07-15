@@ -27,6 +27,5 @@ ship = PacketBoat(id = 'patos_island_vehicle_ferry',
             graphics_template = 'default',
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 60,
-            custom_template = None,
             gross_tonnage = 500,
 )

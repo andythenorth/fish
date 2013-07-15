@@ -27,6 +27,5 @@ ship = LivestockCarrier(id = 'shark_island_livestock_ship',
             graphics_template = 'standard_gcv',
             str_type_info = 'LIVESTOCK_SHIP',
             vehicle_life = 35,
-            custom_template = None,
             gross_tonnage = 650,
 )

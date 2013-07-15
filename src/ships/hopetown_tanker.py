@@ -27,6 +27,5 @@ ship = Tanker(id = 'hopetown_tanker',
             graphics_template = 'tanker',
             str_type_info = 'COASTAL_TANKER',
             vehicle_life = 45,
-            custom_template = None,
             gross_tonnage = 800,
 )
