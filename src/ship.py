@@ -30,8 +30,6 @@ class Ship(object):
         self.intro_date = kwargs.get('intro_date', None)
         self.replacement_id = kwargs.get('replacement_id', None)
         self.vehicle_life = kwargs.get('vehicle_life', None)
-        self.speed = kwargs.get('speed', None)
-        self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
         self.buy_cost = kwargs.get('buy_cost', None)
         self.fixed_run_cost_factor = kwargs.get('fixed_run_cost_factor', None)
         self.fuel_run_cost_factor = kwargs.get('fuel_run_cost_factor', None)
@@ -43,6 +41,10 @@ class Ship(object):
         self.graphic_variations_by_date = kwargs.get('graphic_variations_by_date', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
+        self.speed = kwargs.get('speed', None)
+        self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
+        self.ocean_speed = (0.8, 1)[self.sea_capable]
+        self.canal_speed = (0.7, 1)[self.inland_capable]
         self.graphics_template = kwargs.get('graphics_template', 'default')
         self.template = 'ship_template.pynml'
         # declare capacities for pax, mail and freight, as they are needed later for nml switches
@@ -61,12 +63,6 @@ class Ship(object):
         intro = years[index]
         expiry = years[index + 1] - 1
         return str(intro) + '..' + str(expiry) + ':' + self.id + '_switch_graphics_random_' + str(intro)
-
-    def get_ocean_speed(self):
-        return (0.8, 1)[self.sea_capable]
-
-    def get_canal_speed(self):
-        return (0.7, 1)[self.inland_capable]
 
     def get_speeds_adjusted_for_load_amount(self, speed_index):
         # ships may travel faster or slower than 'speed' depending on cargo amount
