@@ -4,8 +4,9 @@ syntax: glob
 # The local makefile should be ignored:
 Makefile.local
 
-# And the description file and the grfs which are generated automatically
+# And the description file and the grfs and tars which are generated automatically
 fish*.grf
+fish*.tar
 
 # Ignore intermediate files created by the Makefile:
 fish.nml
