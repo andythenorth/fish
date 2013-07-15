@@ -1,14 +1,11 @@
 # Here also go all build targets specific to this very newgrf
 
-fish.src.dep: fish.nml
+GENERATE_NML := fish-nml
+GENERATE_LNG := fish-nml
 
 GENERATE=src/build_fish.py
 
-fish.nml: src/FISH.cfg $(GENERATE)
-	$(_E) [GENERATE] from FISH.cfg
-	$(_V) python src/build_fish.py '${REPO_TITLE}' '${REPO_REVISION}'
-
-%.lng: %.lng.in src/FISH.cfg $(GENERATE)
+fish-nml: src/FISH.cfg $(GENERATE)
 	$(_E) [GENERATE] from FISH.cfg
 	$(_V) python src/build_fish.py '${REPO_TITLE}' '${REPO_REVISION}'
 
