@@ -88,6 +88,9 @@ cargo_graphics_mappings = dict(AORE = [],
 # this is for nml, don't need to use python path module here
 graphics_path = 'src/graphics/'
 
+# chameleon templating goes faster if a cache dir is used; this specifies which dir is cache dir
+chameleon_cache_dir = 'chameleon_cache'
+
 # cost constants
 FIXED_RUN_COST = 500.0
 FUEL_RUN_COST = 10.0

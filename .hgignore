@@ -8,7 +8,7 @@ Makefile.local
 fish*.grf
 fish*.tar
 
-# Ignore intermediate files created by the Makefile:
+# Ignore files and dirs generated automatically:
 fish.nml
 *.lng
 *.nfo
@@ -20,6 +20,8 @@ docs/set_overview.html
 fish/*
 custom_tags.txt
 .version
+chameleon_cache
+
 
 # Dependency files:
 Makefile.dep
