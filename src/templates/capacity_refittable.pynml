@@ -1,0 +1,16 @@
+// -- ships that have subtype refits for capacity rely on the capacity_special prop, do not use capcity from mail / pax / cargo holds / tanks -- //
+<!--! assumes exactly 3 subtype refits, which is a sane amount; convert to repeat if more are ever needed -->
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_subtype) {
+    0: return ${ship.capacity_special[0]};
+    1: return ${ship.capacity_special[1]};
+    2: return ${ship.capacity_special[2]};
+    return ${ship.capacity_special[0]};
+}
+
+// -- handle subtype strings, used to aid players understand auto-refitting -- //
+switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[0]}, ${ship.get_cargo_suffix()});
+    1: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[1]}, ${ship.get_cargo_suffix()});
+    2: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[2]}, ${ship.get_cargo_suffix()});
+    return CB_RESULT_NO_TEXT;
+}

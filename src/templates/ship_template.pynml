@@ -11,54 +11,9 @@
 // handle autorefit (and associated subtype strings)
 <tal:include define="autorefit_any load: autorefit_any.pynml" metal:use-macro="autorefit_any" />
 
-<tal:capacity_no_subtype_refits condition="python:ship.capacity_is_refittable_by_cargo_subtype == False">
-    // -- capacity determined according to specific labels that might need to be handled, and otherwise cargo class -- //
-    switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity_classes, cargo_classes) {
-        bitmask(CC_PASSENGERS): return ${ship.capacity_pax};
-        bitmask(CC_MAIL): return ${ship.capacity_mail};
-        return ${ship.capacity_freight};
-    }
-    switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_type_in_veh) {
-        <tal:trawlers condition="ship.str_type_info.lower()=='trawler'">FISH: return ${ship.capacity_fish_holds};</tal:trawlers>
-        ${ship.id}_switch_cargo_capacity_classes;
-    }
+${ship.render_cargo_capacity()}
 
-    // -- handle subtype strings, used to aid players understand auto-refitting -- //
-    switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_subtype_text, cargo_subtype) {
-        return CB_RESULT_NO_TEXT;
-    }
-</tal:capacity_no_subtype_refits>
-
-<tal:capacity_subtype_refits condition="python:ship.capacity_is_refittable_by_cargo_subtype == True">
-    // -- ships that have subtype refits for capacity rely on the capacity_special prop, do not use capcity from mail / pax / cargo holds / tanks -- //
-    <!--! assumes exactly 3 subtype refits, which is a sane amount; convert to repeat if more are ever needed -->
-    switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_subtype) {
-        0: return ${ship.capacity_special[0]};
-        1: return ${ship.capacity_special[1]};
-        2: return ${ship.capacity_special[2]};
-        return ${ship.capacity_special[0]};
-    }
-
-    // -- handle subtype strings, used to aid players understand auto-refitting -- //
-    switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_subtype_text, cargo_subtype) {
-        0: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[0]}, ${ship.get_cargo_suffix()});
-        1: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[1]}, ${ship.get_cargo_suffix()});
-        2: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[2]}, ${ship.get_cargo_suffix()});
-        return CB_RESULT_NO_TEXT;
-    }
-</tal:capacity_subtype_refits>
-
-
-// -- dibble about with purchase menu capacity to handle various cargo-specific capacity issues (cargo might be missing etc) -- //
-switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_cargo_capacity, cargo_type_in_veh) {
-    <!--! if FISH cargo is missing, trawlers need to still work -->
-    <tal:trawlers condition="ship.str_type_info.lower()=='trawler'">
-        FISH: return ${ship.capacity_fish_holds};
-        PASS: return ${ship.capacity_pax};
-    </tal:trawlers>
-    return ${ship.default_cargo_capacity};
-}
-
+${ship.render_purchase_cargo_capacity()}
 
 
 // -- set speed a little higher than rated speed when unladen -- //

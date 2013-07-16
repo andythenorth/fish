@@ -186,18 +186,6 @@ spritegroup ${ship.id}_sg_purchase {
 // handle autorefit (and associated subtype strings)
 <tal:include define="autorefit_any load: autorefit_any.pynml" metal:use-macro="autorefit_any" />
 
-// -- capacity varies according to subtype refit -- //
-switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_subtype) {
-    0: return ${ship.capacity_special[0]};
-    1: return ${ship.capacity_special[1]};
-    2: return ${ship.capacity_special[2]};
-    return 0; // should never reach this result, make it show up as a problem
-}
-
-switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_cargo_capacity, cargo_type_in_veh) {
-    return ${ship.default_cargo_capacity};
-}
-
 // -- set speed a little higher than rated speed when unladen -- //
 <tal:speed repeat="speed_factor python:range(3)">
     switch (FEAT_SHIPS, SELF, ${ship.id}_switch_speed_varies_with_load_amount_${speed_factor}, cargo_count*100/cargo_capacity) {
@@ -217,12 +205,9 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_speed, param_adjust_ship_sp
     2: ${ship.get_speeds_adjusted_for_load_amount(2)[4]};
 }
 
-// -- handle refit subtype strings, used by this ship to vary capacity -- //
-switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[0]}, ${ship.get_cargo_suffix()});
-    1: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[1]}, ${ship.get_cargo_suffix()});
-    2: return string(STR_GENERIC_REFIT_SUBTYPE, ${ship.capacity_special[2]}, ${ship.get_cargo_suffix()});
-    return CB_RESULT_NO_TEXT;
-}
+
+${ship.render_cargo_capacity()}
+
+${ship.render_purchase_cargo_capacity()}
 
 ${ship.render_properties()}

@@ -51,7 +51,6 @@ class Ship(object):
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
-        self.capacity_is_refittable_by_cargo_subtype = False # over-ride in subclass as needed
         # register ship with this module so other modules can use it
         self.register()
 
@@ -143,12 +142,24 @@ class Ship(object):
         template = templates["ship_properties.pynml"]
         return template(ship = self)
 
+    def render_cargo_capacity(self):
+        if hasattr(self, 'capacity_is_refittable_by_cargo_subtype'):
+            template = templates["capacity_refittable.pynml"]
+        else:
+            template = templates["capacity_not_refittable.pynml"]
+        return template(ship = self)
+
+    def render_purchase_cargo_capacity(self):
+        template = templates["purchase_cargo_capacity.pynml"]
+        return template(ship = self)
+
     def render(self):
         template = templates[self.template]
         return template(ship = self)
 
 class MixinRefittableCapacity(object):
-    capacity_is_refittable_by_cargo_subtype = True
+    def capacity_is_refittable_by_cargo_subtype(self):
+        return True
 
     def get_buy_menu_string(self):
         buy_menu_template = Template(
