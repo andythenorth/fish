@@ -88,6 +88,3 @@ spritegroup ${ship.id}_sg_purchase {
         ${ship.id}_ss_purchase,
     ];
 }
-
-// handle autorefit (and associated subtype strings)
-<tal:include define="autorefit_any load: autorefit_any.pynml" metal:use-macro="autorefit_any" />

@@ -139,6 +139,10 @@ class Ship(object):
     def get_cargo_suffix(self):
         return 'string(' + self.cargo_units_refit_menu + ')'
 
+    def render_properties(self):
+        template = templates["ship_properties.pynml"]
+        return template(ship = self)
+
     def render(self):
         template = templates[self.template]
         return template(ship = self)
