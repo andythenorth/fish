@@ -6,6 +6,14 @@ def get_repo_vars(sys):
         repo_vars = {'repo_title' : 'FISH - compiled without makefile', 'repo_version' : 1}
     return repo_vars
 
+def unescape_chameleon_output(escaped_nml):
+    # chameleon html-escapes some characters; that's sane and secure for chameleon's intended web use, but not wanted for nml
+    # there is probably a standard module for unescaping html entities, but this will do for now
+    escaped_nml = '>'.join(escaped_nml.split('&gt;'))
+    escaped_nml = '<'.join(escaped_nml.split('&lt;'))
+    escaped_nml = '&'.join(escaped_nml.split('&amp;'))
+    return escaped_nml
+
 def parse_base_lang():
     print "[PARSE BASE LANG] utils.py"
 

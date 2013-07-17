@@ -1,8 +1,5 @@
 print "[RENDER NML] render_nml.py"
 
-import fish
-import utils
-
 import os.path
 currentdir = os.curdir
 
@@ -15,15 +12,27 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
+import fish
+import utils
+import global_constants
+
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
 ships = fish.get_ships_in_buy_menu_order()
 
+
 # compile a single final nml file for the grf
 master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
+header_items = ['cargo_table']
+for header_item in header_items:
+    template = templates[header_item + '.pynml']
+    templated_nml = utils.unescape_chameleon_output(template(ships=ships, global_constants=global_constants, utils=utils, sys=sys))
+    # append the results of templating
+    grf_nml.write(templated_nml)
+
 templated_nml = master_template(ships=ships, repo_vars=repo_vars)
 # an ugly hack here because chameleon html escapes some characters
 templated_nml = '>'.join(templated_nml.split('&gt;'))

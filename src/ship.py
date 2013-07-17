@@ -140,26 +140,26 @@ class Ship(object):
 
     def render_properties(self):
         template = templates["ship_properties.pynml"]
-        return template(ship = self)
+        return template(ship=self)
 
     def render_autorefit(self):
         template = templates["autorefit_any.pynml"]
-        return template(ship = self)
+        return template(ship=self)
 
     def render_cargo_capacity(self):
         if hasattr(self, 'capacity_is_refittable_by_cargo_subtype'):
             template = templates["capacity_refittable.pynml"]
         else:
             template = templates["capacity_not_refittable.pynml"]
-        return template(ship = self)
+        return template(ship=self)
 
     def render_purchase_cargo_capacity(self):
         template = templates["purchase_cargo_capacity.pynml"]
-        return template(ship = self)
+        return template(ship=self)
 
     def render(self):
         template = templates[self.template]
-        return template(ship = self)
+        return template(ship=self, global_constants=global_constants)
 
 class MixinRefittableCapacity(object):
     def capacity_is_refittable_by_cargo_subtype(self):

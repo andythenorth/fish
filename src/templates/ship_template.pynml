@@ -1,5 +1,3 @@
-<tal:call_global_template define="global_template load: global_template.pt" metal:use-macro="global_template" />
-
 // -- begin ${ship.title} -- <!--! this adds a comment to aid reading the final nml -->
 
 <tal:include condition="ship.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />

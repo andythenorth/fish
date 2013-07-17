@@ -1,4 +1,3 @@
-<tal:call_global_template define="global_template load: global_template.pt" metal:use-macro="global_template" />
 /*
  * ********************************************
  * Define cargo translation table and refits
