@@ -33,8 +33,7 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_speed, param_adjust_ship_sp
 }
 
 
-// handle autorefit (and associated subtype strings)
-<tal:include define="autorefit_any load: autorefit_any.pynml" metal:use-macro="autorefit_any" />
+${ship.render_autorefit()}
 
 ${ship.render_cargo_capacity()}
 

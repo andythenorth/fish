@@ -142,6 +142,10 @@ class Ship(object):
         template = templates["ship_properties.pynml"]
         return template(ship = self)
 
+    def render_autorefit(self):
+        template = templates["autorefit_any.pynml"]
+        return template(ship = self)
+
     def render_cargo_capacity(self):
         if hasattr(self, 'capacity_is_refittable_by_cargo_subtype'):
             template = templates["capacity_refittable.pynml"]
