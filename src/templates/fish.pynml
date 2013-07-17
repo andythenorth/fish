@@ -1,7 +1,5 @@
 // List of source files included from main file
 
-<tal:include define="disable_default_ships load: disable_default_ships.nml" metal:use-macro="disable_default_ships" />
-
 <tal:build_ships repeat="ship ships">
   <tal:render replace="python:ship.render()" />
 </tal:build_ships>
