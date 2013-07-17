@@ -204,7 +204,7 @@ class LogTug(MixinRefittableCapacity, Ship):
     def __init__(self, id, **kwargs):
         super(LogTug, self).__init__(id, **kwargs)
         self.class_refit_groups = ['empty']
-        self.label_refits_allowed = []
+        self.label_refits_allowed = ['WOOD']
         self.label_refits_disallowed = []
         self.capacity_special = kwargs.get('refittable_capacity', None)
         self.capacity_freight = self.capacity_special[0]

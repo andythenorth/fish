@@ -183,9 +183,6 @@ spritegroup ${ship.id}_sg_purchase {
 }
 
 
-// handle autorefit (and associated subtype strings)
-<tal:include define="autorefit_any load: autorefit_any.pynml" metal:use-macro="autorefit_any" />
-
 // -- set speed a little higher than rated speed when unladen -- //
 <tal:speed repeat="speed_factor python:range(3)">
     switch (FEAT_SHIPS, SELF, ${ship.id}_switch_speed_varies_with_load_amount_${speed_factor}, cargo_count*100/cargo_capacity) {
@@ -205,6 +202,8 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_speed, param_adjust_ship_sp
     2: ${ship.get_speeds_adjusted_for_load_amount(2)[4]};
 }
 
+// handle autorefit (and associated subtype strings)
+<tal:include define="autorefit_any load: autorefit_any.pynml" metal:use-macro="autorefit_any" />
 
 ${ship.render_cargo_capacity()}
 
