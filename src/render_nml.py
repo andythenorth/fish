@@ -21,10 +21,6 @@ repo_vars = utils.get_repo_vars(sys)
 
 ships = fish.get_ships_in_buy_menu_order()
 
-
-# compile a single final nml file for the grf
-master_template = templates['fish.pynml']
-
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
 header_items = ['header', 'cargo_table', 'disable_default_ships']
 for header_item in header_items:
@@ -33,6 +29,9 @@ for header_item in header_items:
                                                     utils=utils, sys=sys, repo_vars=repo_vars))
     # append the results of templating
     grf_nml.write(templated_nml)
+
+# compile a single final nml file for the grf
+master_template = templates['fish.pynml']
 
 templated_nml = master_template(ships=ships, repo_vars=repo_vars)
 # an ugly hack here because chameleon html escapes some characters
