@@ -26,10 +26,11 @@ ships = fish.get_ships_in_buy_menu_order()
 master_template = templates['fish.pynml']
 
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
-header_items = ['cargo_table']
+header_items = ['header', 'cargo_table']
 for header_item in header_items:
     template = templates[header_item + '.pynml']
-    templated_nml = utils.unescape_chameleon_output(template(ships=ships, global_constants=global_constants, utils=utils, sys=sys))
+    templated_nml = utils.unescape_chameleon_output(template(ships=ships, global_constants=global_constants,
+                                                    utils=utils, sys=sys, repo_vars=repo_vars))
     # append the results of templating
     grf_nml.write(templated_nml)
 
