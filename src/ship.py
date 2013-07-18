@@ -46,7 +46,6 @@ class Ship(object):
         self.ocean_speed = (0.8, 1)[self.sea_capable]
         self.canal_speed = (0.7, 1)[self.inland_capable]
         self.graphics_template = kwargs.get('graphics_template', 'default')
-        self.template = 'ship_template.pynml'
         # declare capacities for pax, mail and freight, as they are needed later for nml switches
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
@@ -200,6 +199,7 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
     # special type for livestock (as you might guess)
     def __init__(self, id, **kwargs):
         super(LivestockCarrier, self).__init__(id, **kwargs)
+        self.template = 'ship.pynml'
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
         self.label_refits_disallowed = []
@@ -215,6 +215,7 @@ class LogTug(MixinRefittableCapacity, Ship):
     # specialist type for hauling logs only, has some specialist refit + speed behaviours
     def __init__(self, id, **kwargs):
         super(LogTug, self).__init__(id, **kwargs)
+        self.template = 'log_tug.pynml'
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = ['WOOD']
         self.label_refits_disallowed = []
@@ -224,13 +225,13 @@ class LogTug(MixinRefittableCapacity, Ship):
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
         self.default_cargo = 'WOOD'
         self.default_cargo_capacity = self.capacity_special[0]
-        self.template = 'log_tug.pynml'
 
 
 class PacketBoat(Ship):
     # a relatively fast vessel type for passengers, mail, and express freight
     def __init__(self, id, **kwargs):
         super(PacketBoat, self).__init__(id, **kwargs)
+        self.template = 'ship.pynml'
         self.class_refit_groups = ['pax_mail','express_freight']
         self.label_refits_allowed = ['BDMT','FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
@@ -254,17 +255,18 @@ class Hydrofoil(Ship):
     # fast vessel type for passengers and mail only
     def __init__(self, id, **kwargs):
         super(Hydrofoil, self).__init__(id, **kwargs)
+        self.template = 'hydrofoil.pynml'
         self.class_refit_groups = ['pax_mail']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
         self.default_cargo = 'PASS'
         self.default_cargo_capacity = self.capacity_pax
-        self.template = 'hydrofoil.pynml'
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
     def __init__(self, id, **kwargs):
         super(Trawler, self).__init__(id, **kwargs)
+        self.template = 'ship.pynml'
         self.class_refit_groups = ['pax_mail','express_freight']
         self.label_refits_allowed = ['BDMT','FISH', 'FRUT','LVST','VEHI','WATR']
         self.label_refits_disallowed = []
@@ -289,6 +291,7 @@ class Tanker(Ship):
     # ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising).
     def __init__(self, id, **kwargs):
         super(Tanker, self).__init__(id, **kwargs)
+        self.template = 'tanker.pynml'
         self.class_refit_groups = ['liquids']
         self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
@@ -296,13 +299,13 @@ class Tanker(Ship):
         self.capacity_freight = self.capacity_tanks
         self.default_cargo = 'OIL_'
         self.default_cargo_capacity = self.capacity_freight
-        self.template = 'tanker.pynml'
 
 
 class FastFreighter(Ship):
     # a fast freighter type, refits to limited range of freight cargos
     def __init__(self, id, **kwargs):
         super(FastFreighter, self).__init__(id, **kwargs)
+        self.template = 'ship.pynml'
         self.class_refit_groups = ['express_freight','packaged_freight']
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
