@@ -1,3 +1,5 @@
+${ship.render_debug_info()}
+
 // handle graphics
 
 template spriteset_template_${ship.id}(y) {
@@ -79,3 +81,13 @@ spritegroup ${ship.id}_sg_purchase {
         ${ship.id}_ss_purchase,
     ];
 }
+
+${ship.render_speed_switches()}
+
+${ship.render_autorefit()}
+
+${ship.render_cargo_capacity()}
+
+${ship.render_purchase_cargo_capacity()}
+
+${ship.render_properties()}

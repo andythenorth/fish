@@ -3,7 +3,6 @@
 ${ship.render_debug_info()}
 
 <tal:include condition="ship.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
-<tal:include condition="ship.graphics_template=='2_visible_cargo_states'" define="graphics_2_visible_cargo_states load: graphics_2_visible_cargo_states.pynml" metal:use-macro="graphics_2_visible_cargo_states" />
 
 ${ship.render_speed_switches()}
 

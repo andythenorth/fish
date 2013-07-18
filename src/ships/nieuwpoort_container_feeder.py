@@ -1,6 +1,6 @@
-from ship import Ship, FastFreighter
+from ship import Ship, ContainerCarrier
 
-ship = FastFreighter(id = 'nieuwpoort_container_feeder',
+ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
             numeric_id = 300,
             title = 'Nieuwpoort [Container Feeder]',
             capacity_cargo_holds = 750,

@@ -254,7 +254,7 @@ class PacketBoat(Ship):
 
 
 class Hydrofoil(Ship):
-    # fast vessel type for passengers and mail only
+    # fast vessel type for passengers and mail only, graphics vary by speed (to show hydrofoil in / out of water)
     def __init__(self, id, **kwargs):
         super(Hydrofoil, self).__init__(id, **kwargs)
         self.template = 'hydrofoil.pynml'
@@ -303,11 +303,11 @@ class Tanker(Ship):
         self.default_cargo_capacity = self.capacity_freight
 
 
-class FastFreighter(Ship):
-    # a fast freighter type, refits to limited range of freight cargos
+class ContainerCarrier(Ship):
+    # refits to limited range of freight cargos, shows container graphics according to load state
     def __init__(self, id, **kwargs):
-        super(FastFreighter, self).__init__(id, **kwargs)
-        self.template = 'ship.pynml'
+        super(ContainerCarrier, self).__init__(id, **kwargs)
+        self.template = 'container_carrier.pynml'
         self.class_refit_groups = ['express_freight','packaged_freight']
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
