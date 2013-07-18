@@ -1,3 +1,5 @@
+<!--! this is the default template for ships that don't supply their own template -->
+
 ${ship.render_debug_info()}
 
 <tal:include condition="ship.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
