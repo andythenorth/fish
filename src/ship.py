@@ -296,6 +296,7 @@ class Tanker(Ship):
         self.capacity_freight = self.capacity_tanks
         self.default_cargo = 'OIL_'
         self.default_cargo_capacity = self.capacity_freight
+        self.template = 'tanker.pynml' # special template for log tug, handles speed variation
 
 
 class FastFreighter(Ship):
