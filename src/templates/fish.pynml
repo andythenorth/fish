@@ -1,5 +1,0 @@
-// List of source files included from main file
-
-<tal:build_ships repeat="ship ships">
-  <tal:render replace="python:ship.render()" />
-</tal:build_ships>

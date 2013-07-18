@@ -30,12 +30,11 @@ for header_item in header_items:
     # append the results of templating
     grf_nml.write(templated_nml)
 
-# compile a single final nml file for the grf
-master_template = templates['fish.pynml']
+for ship in ships:
+    templated_nml = ship.render()
+    # an ugly hack here because chameleon html escapes some characters
+    templated_nml = '>'.join(templated_nml.split('&gt;'))
+    templated_nml = '&'.join(templated_nml.split('&amp;'))
+    grf_nml.write(templated_nml)
 
-templated_nml = master_template(ships=ships, repo_vars=repo_vars)
-# an ugly hack here because chameleon html escapes some characters
-templated_nml = '>'.join(templated_nml.split('&gt;'))
-templated_nml = '&'.join(templated_nml.split('&amp;'))
-grf_nml.write(templated_nml)
 grf_nml.close()
