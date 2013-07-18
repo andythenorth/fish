@@ -224,7 +224,7 @@ class LogTug(MixinRefittableCapacity, Ship):
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
         self.default_cargo = 'WOOD'
         self.default_cargo_capacity = self.capacity_special[0]
-        self.template = 'log_tug.pynml' # special template for log tug, handles speed variation
+        self.template = 'log_tug.pynml'
 
 
 class PacketBoat(Ship):
@@ -259,7 +259,7 @@ class Hydrofoil(Ship):
         self.label_refits_disallowed = []
         self.default_cargo = 'PASS'
         self.default_cargo_capacity = self.capacity_pax
-        self.template = 'hydrofoil.pynml' # special template for log tug, handles speed variation
+        self.template = 'hydrofoil.pynml'
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that
@@ -296,7 +296,7 @@ class Tanker(Ship):
         self.capacity_freight = self.capacity_tanks
         self.default_cargo = 'OIL_'
         self.default_cargo_capacity = self.capacity_freight
-        self.template = 'tanker.pynml' # special template for log tug, handles speed variation
+        self.template = 'tanker.pynml'
 
 
 class FastFreighter(Ship):
