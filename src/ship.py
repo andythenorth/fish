@@ -242,10 +242,10 @@ class PacketBoat(Ship):
                                             capacity_mail=self.capacity_mail, capacity_cargo_holds=self.capacity_cargo_holds)
 
 
-class PassengerMailFerry(Ship):
+class Hydrofoil(Ship):
     # fast vessel type for passengers and mail only
     def __init__(self, id, **kwargs):
-        super(PassengerMailFerry, self).__init__(id, **kwargs)
+        super(Hydrofoil, self).__init__(id, **kwargs)
         self.class_refit_groups = ['pax_mail']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []

@@ -1,6 +1,6 @@
-from ship import Ship, PassengerMailFerry
+from ship import Ship, Hydrofoil
 
-ship = PassengerMailFerry(id = 'matsushima_hydrofoil',
+ship = Hydrofoil(id = 'matsushima_hydrofoil',
             numeric_id = 70,
             title = 'Matsushima [Hydrofoil]',
             capacity_pax = 240,
