@@ -15,8 +15,7 @@ fish.nml
 *.cnfo
 *.cpnfo
 *.md5
-docs/readme.txt
-docs/set_overview.html
+docs/*
 fish/*
 custom_tags.txt
 .version
