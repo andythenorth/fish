@@ -187,13 +187,13 @@ class GeneralCargoVessel(Ship):
     # general purpose freight vessel type, no pax or mail cargos, refits any other cargo including liquids (in barrels or containers)
     def __init__(self, id, **kwargs):
         super(GeneralCargoVessel, self).__init__(id, **kwargs)
+        self.template = 'general_cargo_vessel.pynml'
         self.class_refit_groups = ['all_freight']
         self.label_refits_allowed = [] # no specific labels needed, GCV refits all freight
         self.label_refits_disallowed = ['TOUR']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'COAL'
         self.default_cargo_capacity = self.capacity_freight
-        self.graphics_template = 'standard_gcv'
 
 
 class LivestockCarrier(MixinRefittableCapacity, Ship):
