@@ -142,6 +142,10 @@ class Ship(object):
         template = templates["ship_properties.pynml"]
         return template(ship=self)
 
+    def render_speed_switches(self):
+        template = templates["speed_switches.pynml"]
+        return template(ship=self)
+
     def render_autorefit(self):
         template = templates["autorefit_any.pynml"]
         return template(ship=self)
