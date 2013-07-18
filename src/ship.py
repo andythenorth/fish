@@ -294,7 +294,6 @@ class Tanker(Ship):
         self.capacity_tanks = kwargs.get('capacity_tanks', None)
         self.capacity_freight = self.capacity_tanks
         self.default_cargo = 'OIL_'
-        self.graphics_template = 'tanker'
         self.default_cargo_capacity = self.capacity_freight
 
 
