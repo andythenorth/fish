@@ -45,7 +45,6 @@ class Ship(object):
         self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
         self.ocean_speed = (0.8, 1)[self.sea_capable]
         self.canal_speed = (0.7, 1)[self.inland_capable]
-        self.graphics_template = kwargs.get('graphics_template', 'default')
         # readability: no 'template' property in base class, better to be explicit in subclass (and fail if none declared)
 
         # declare capacities for pax, mail and freight, as they are needed later for nml switches
