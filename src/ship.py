@@ -175,10 +175,10 @@ class MixinRefittableCapacity(object):
 
     def get_buy_menu_string(self):
         buy_menu_template = Template(
-            "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_special_0},${capacity_special_1},${capacity_special_2},string(${cargo_units})))"
+            "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO,${capacity_0},${capacity_1},${capacity_2},string(${cargo_units})))"
         )
-        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_special_0=self.capacity_special[0],
-                                        capacity_special_1=self.capacity_special[1], capacity_special_2=self.capacity_special[2],
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_0=self.capacities_refittable[0],
+                                        capacity_1=self.capacities_refittable[1], capacity_2=self.capacities_refittable[2],
                                         cargo_units=self.cargo_units_buy_menu)
 
 
@@ -204,12 +204,12 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = ['LVST'] # set to livestock by default, don't need to make it refit
         self.label_refits_disallowed = []
-        self.capacity_special = kwargs.get('refittable_capacity', None)
-        self.capacity_freight = self.capacity_special[0]
+        self.capacities_refittable = kwargs.get('capacities_refittable', None)
+        self.capacity_freight = self.capacities_refittable[0]
         self.cargo_units_buy_menu = 'STR_QUANTITY_LIVESTOCK'
         self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
         self.default_cargo = 'LVST'
-        self.default_cargo_capacity = self.capacity_special[0]
+        self.default_cargo_capacity = self.capacities_refittable[0]
 
 
 class LogTug(MixinRefittableCapacity, Ship):
@@ -220,12 +220,12 @@ class LogTug(MixinRefittableCapacity, Ship):
         self.class_refit_groups = ['empty']
         self.label_refits_allowed = ['WOOD']
         self.label_refits_disallowed = []
-        self.capacity_special = kwargs.get('refittable_capacity', None)
-        self.capacity_freight = self.capacity_special[0]
+        self.capacities_refittable = kwargs.get('capacities_refittable', None)
+        self.capacity_freight = self.capacities_refittable[0]
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
         self.default_cargo = 'WOOD'
-        self.default_cargo_capacity = self.capacity_special[0]
+        self.default_cargo_capacity = self.capacities_refittable[0]
 
 
 class PacketBoat(Ship):

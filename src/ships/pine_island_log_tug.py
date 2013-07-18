@@ -3,7 +3,7 @@ from ship import Ship, LogTug
 ship = LogTug(id = 'pine_island_log_tug',
             numeric_id = 250,
             title = 'Pine Island [Log Tug]',
-            refittable_capacity = [80, 240, 400],
+            capacities_refittable = [80, 240, 400],
             replacement_id = '-none',
             buy_cost = 4,
             fixed_run_cost_factor = 2.0,
