@@ -1,4 +1,4 @@
-// -- begin ${ship.title} -- <!--! this adds a comment to aid reading the final nml -->
+${ship.render_debug_info()}
 
 <tal:include condition="ship.graphics_template=='default'" define="graphics_default load: graphics_default.pynml" metal:use-macro="graphics_default" />
 <tal:include condition="ship.graphics_template=='hydrofoil'" define="graphics_hydrofoil load: graphics_hydrofoil.pynml" metal:use-macro="graphics_hydrofoil" />
