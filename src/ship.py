@@ -259,6 +259,7 @@ class Hydrofoil(Ship):
         self.label_refits_disallowed = []
         self.default_cargo = 'PASS'
         self.default_cargo_capacity = self.capacity_pax
+        self.template = 'hydrofoil.pynml' # special template for log tug, handles speed variation
 
 class Trawler(Ship):
     # similar type to a packet boat, but needs to go fishing, so has special fish holds for that

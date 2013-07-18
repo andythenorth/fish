@@ -1,4 +1,6 @@
-// handle graphics
+${ship.render_debug_info()}
+
+// graphics
 
 template spriteset_template_${ship.id}(y, y_offs_adjust) {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
@@ -51,3 +53,13 @@ spritegroup ${ship.id}_sg_purchase {
         ${ship.id}_ss_purchase,
     ];
 }
+
+${ship.render_speed_switches()}
+
+${ship.render_autorefit()}
+
+${ship.render_cargo_capacity()}
+
+${ship.render_purchase_cargo_capacity()}
+
+${ship.render_properties()}
