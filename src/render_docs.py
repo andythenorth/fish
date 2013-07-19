@@ -74,7 +74,7 @@ class DocHelper(object):
                 ships_by_subclass[subclass] = [ship]
         return ships_by_subclass
 
-    def add_prop_to_props_to_print(self, result, prop_name, value):
+    def fetch_prop(self, result, prop_name, value):
         result['ship'][prop_name] = value
         result['subclass_props'].append(prop_name)
         return result
@@ -83,8 +83,19 @@ class DocHelper(object):
         props_to_print = {}
         for ship in self.get_ships_by_subclass()[subclass]:
             result = {'ship':{}, 'subclass_props': []}
-            result = self.add_prop_to_props_to_print(result, 'Ship Name', ship.get_name_substr() + base_lang_strings[ship.get_str_name_suffix()])
-            result = self.add_prop_to_props_to_print(result, 'Extra Info', base_lang_strings[ship.get_str_type_info()])
+
+            result = self.fetch_prop(result, 'Ship Name', ship.get_name_substr() + base_lang_strings[ship.get_str_name_suffix()])
+            result = self.fetch_prop(result, 'Extra Info', base_lang_strings[ship.get_str_type_info()])
+            result = self.fetch_prop(result, 'Speed', int(ship.speed))
+            result = self.fetch_prop(result, 'Canal Speed Fraction', ship.canal_speed)
+            result = self.fetch_prop(result, 'Ocean Speed Fraction', ship.ocean_speed)
+            result = self.fetch_prop(result, 'Vehicle Life', ship.vehicle_life)
+            result = self.fetch_prop(result, 'Replacement ID', ship.replacement_id)
+            result = self.fetch_prop(result, 'Capacity Pax', ship.capacity_pax)
+            result = self.fetch_prop(result, 'Capacity Mail', ship.capacity_mail)
+            result = self.fetch_prop(result, 'Capacity Freight', ship.capacity_freight)
+            result = self.fetch_prop(result, 'Default Cargo', ship.default_cargo)
+
             props_to_print[ship] = result['ship']
             props_to_print[subclass] = result['subclass_props']
 
