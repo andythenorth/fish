@@ -94,7 +94,6 @@ class DocHelper(object):
             result = self.fetch_prop(result, 'Capacity Pax', ship.capacity_pax)
             result = self.fetch_prop(result, 'Capacity Mail', ship.capacity_mail)
             result = self.fetch_prop(result, 'Capacity Freight', ship.capacity_freight)
-            result = self.fetch_prop(result, 'Default Cargo', ship.default_cargo)
 
             props_to_print[ship] = result['ship']
             props_to_print[subclass] = result['subclass_props']
