@@ -64,6 +64,16 @@ metadata['issue_tracker'] = 'http://dev.openttdcoop.org/projects/fish/issues'
 class DocHelper(object):
     # dirty class to help do some doc formatting
 
+    def get_ships_by_subclass(self):
+        ships_by_subclass = {}
+        for ship in ships:
+            subclass = type(ship)
+            if subclass in ships_by_subclass:
+                ships_by_subclass[subclass].append(ship)
+            else:
+                ships_by_subclass[subclass] = [ship]
+        return ships_by_subclass
+
     def get_active_nav(self, doc_name, nav_link):
         return ('','active')[doc_name == nav_link]
 
