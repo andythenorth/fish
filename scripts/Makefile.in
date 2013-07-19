@@ -2,6 +2,7 @@
 
 GENERATE_NML := fish-nml
 GENERATE_LNG := fish-nml
+GENERATE_DOC := fish-nml
 
 GENERATE=src/build_fish.py
 
