@@ -1,33 +1,34 @@
 <tal:main_template define="main_template load: main_template.pt" metal:use-macro="main_template">
 <div metal:fill-slot='body'>
-
     <div class="span12">
         <h2>${len(ships)} ships for OpenTTD</h2>
         <hr />
         <tal:subclasses repeat="subclass doc_helper.get_ships_by_subclass()">
-            <h4>${subclass.__name__} <small>Subclass</small></h4>
-            <table class="table table-striped table-condensed table-bordered small">
-                <thead>
-                    <tr>
-                        <!--!<tal:props repeat="prop doc_helper.get_props_to_print_in_code_reference(subclass)">
-                            <th style="background-color:#eee;">${prop}</th>
-                        </tal:props>-->
-                    </tr>
-                </thead>
-                <tbody>
-                    <tal:ships repeat="ship doc_helper.get_ships_by_subclass()[subclass]">
+            <tal:props_for_subclass define="props_to_print doc_helper.get_props_to_print_in_code_reference(subclass)">
+                <h4>${subclass.__name__} <small>Subclass</small></h4>
+                <table class="table table-striped table-condensed table-bordered small">
+                    <thead>
                         <tr>
-                            <tal:props repeat="prop doc_helper.get_props_to_print_in_code_reference()[ship]">
-                                <td>${prop}</td>
+                           <tal:props repeat="prop props_to_print[subclass]">
+                                <th style="background-color:#eee;">${prop}</th>
                             </tal:props>
-                            <tal:props2 repeat="prop dir(ship)">
-                                <!--!${prop}-->
-                            </tal:props2>
                         </tr>
-                    </tal:ships>
-                </tbody>
-            </table>
-            <br />
+                    </thead>
+                    <tbody>
+                        <tal:ships repeat="ship doc_helper.get_ships_by_subclass()[subclass]">
+                            <tr>
+                                <tal:props repeat="prop_name props_to_print[subclass]">
+                                    <td>${props_to_print[ship][prop_name]}</td>
+                                </tal:props>
+                                <tal:props2 repeat="prop dir(ship)">
+                                    <!--!${prop}-->
+                                </tal:props2>
+                            </tr>
+                        </tal:ships>
+                    </tbody>
+                </table>
+                <br />
+            </tal:props_for_subclass>
         </tal:subclasses>
     </div>
 
