@@ -74,6 +74,15 @@ class DocHelper(object):
                 ships_by_subclass[subclass] = [ship]
         return ships_by_subclass
 
+    def get_props_to_print_in_code_reference(self):
+        props_to_print = {}
+        for ship in ships:
+            props_to_print[ship] = {'Ship Name': ship.get_name_substr() + base_lang_strings[ship.get_str_name_suffix()],
+                                   'Extra Info': base_lang_strings[ship.get_str_type_info()]}
+        return props_to_print
+        #prop_names = props_to_print.keys()
+        #return (props_to_print, prop_names)
+
     def get_active_nav(self, doc_name, nav_link):
         return ('','active')[doc_name == nav_link]
 
