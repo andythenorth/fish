@@ -52,9 +52,6 @@ class Ship(object):
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
         # register ship with this module so other modules can use it
-        self.register()
-
-    def register(self):
         registered_ships.append(self)
 
     def get_date_ranges_for_random_variation(self, index):
