@@ -10,7 +10,7 @@
                     <thead>
                         <tr>
                            <tal:props repeat="prop props_to_print[subclass]">
-                                <th style="background-color:#eee;">${prop}</th>
+                                <th style="background-color:#eee; vertical-align:top">${prop}</th>
                             </tal:props>
                         </tr>
                     </thead>
