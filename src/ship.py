@@ -35,7 +35,7 @@ class Ship(object):
         self.fuel_run_cost_factor = kwargs.get('fuel_run_cost_factor', None)
         self.gross_tonnage = kwargs.get('gross_tonnage', None)
         self.loading_speed = kwargs.get('loading_speed', None)
-        self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy')
+        self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy', None)
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
         self.offsets = kwargs.get('offsets', None)
         self.graphic_variations_by_date = kwargs.get('graphic_variations_by_date', None)
