@@ -4,11 +4,10 @@
         <div class="span3">
             <ul class="nav nav-list well">
                 <li class="nav-header">Get Started</li>
-                <li><a href="#download-firs">Download FIRS</a></li>
-                <li><a href="#setting-up">Setting up a Game with FIRS</a></li>
-                <li><a href="#firs-gameplay">FIRS Gameplay</a></li>
+                <li><a href="#download-fish">Download Squid Ate FISH</a></li>
+                <li><a href="#setting-up">Setting up a Game with Squid Ate FISH</a></li>
                 <li><a href="#what-next">What Next?</a></li>
-                <li><a href="#firs-changes">FIRS Changes</a></li>
+                <li><a href="#fish-changes">Squid Ate FISH Changes</a></li>
             </ul>
         </div>
         <div class="span9">
@@ -25,27 +24,27 @@
                     <li><i class="icon-ok-circle"></i> GPL v2 license</li>
                 </ul>
             </div>
-            <div id="download-firs">
-                <h2>1. Download FIRS</h2>
+            <div id="download-fish">
+                <h2>1. Download Squid Ate FISH</h2>
                 <p class="lead">
-                    FIRS is available from the content service in OpenTTD, as a zip for manual installation,
+                    Squid Ate FISH is available from the content service in OpenTTD, as a zip for manual installation,
                     or as a source checkout for compiling locally (requires mercurial and various python dependencies).
                 </p>
                 <div class="row">
                     <div class="span3">
                         <h3>Download in OpenTTD</h3>
-                        <p><strong>Easiest</strong>: get FIRS from the OpenTTD content service.</p>
+                        <p><strong>Easiest</strong>: get Squid Ate FISH from the OpenTTD content service.</p>
                         <a class="btn btn-primary" href="http://wiki.openttd.org/Content_downloading">Instructions</a>
                     </div>
                     <div class="span3">
                         <h3>Download Zip</h3>
-                        <p>Get the latest FIRS release for <a href="http://wiki.openttd.org/Newgrf#Manual_install">manual install</a>.</p>
-                        <a class="btn btn-info" href="http://bundles.openttdcoop.org/firs/releases/LATEST/">Download FIRS</a>
+                        <p>Get the latest Squid Ate FISH release for <a href="http://wiki.openttd.org/Newgrf#Manual_install">manual install</a>.</p>
+                        <a class="btn btn-info" href="http://bundles.openttdcoop.org/fish/releases/LATEST/">Download Squid Ate FISH</a>
                     </div>
                     <div class="span3">
                         <h3>Download Source</h3>
-                        <p>Checkout source code and <a href="code_reference.html">compile your own FIRS</a>.</p>
-                        <a class="btn" href="${metadata['repo_url']}">FIRS Source Repo</a>
+                        <p>Checkout source code and <a href="code_reference.html">compile your own Squid Ate FISH</a>.</p>
+                        <a class="btn" href="${metadata['repo_url']}">Squid Ate FISH Source Repo</a>
                     </div>
                 </div>
             </div>
@@ -53,73 +52,28 @@
             <hr />
             <br />
             <div id="setting-up">
-                <h2>2. Setting Up a Game with FIRS</h2>
+                <h2>2. Setting Up a Game with Squid Ate FISH</h2>
                 <p class="lead">
-                    A few things to know before setting up a FIRS game...
-                <div class="row">
-                    <div class="span3">
-                        <h3>Conflict Detection</h3>
-                        <p>To avoid conflicts that could break your game, FIRS will disable itself if certain other newgrfs are
-                        detected in the current game.  You'll see a message if this happens.</p>
-                        <p>Conflicting newgrfs include other industry sets, such as ECS and PBI.</p>
-                    </div>
-                    <div class="span3">
-                        <h3>Gameplay Parameters</h3>
-                        <p>FIRS has a number of parameters for gameplay behaviour.
-                        These cover things like economy choice, industry closure and station ratings.
-                        Parameters include help text explaining how they work.</p>
-                        <p><strong>Tip: parameters <a href="http://wiki.openttd.org/Newgrf#Activating_NewGRFs">need to be set</a>
-                         before starting a game.</strong></p>
-                    </div>
-                    <div class="span3">
-                        <h3>Vehicle Support</h3>
-                        <p>Many FIRS cargos are not transportable using the default vehicles.
-                        Fortunately there are lots of great NewGRF vehicle sets with FIRS support.</p>
-                        <p>The in-game content service is a good place to find these.</p>
-                    </div>
-                </div>
-                <p class="muted">FIRS is available in the Temperate, Sub-Arctic and Sub-Tropic climates.  Toyland is a bad idea.</p>
-            </div>
-            <br />
-            <hr />
-            <br />
-            <div id="firs-gameplay">
-                <h2>3. FIRS Gameplay</h2>
-                <p class="lead">You can jump right into FIRS gameplay.</p>
-                <ul>
-                    <li>There are familiar industries and cargos you'll recognise from default OpenTTD.</li>
-                    <li>FIRS also adds lots of exciting new cargos and industries to play with.</li>
-                    <li>Primary industries like mines and farms will always produce some cargo.</li>
-                    <li>Secondary industries like the steel mill and cement plant will always produce some output cargo when an accepted cargo is delivered.</li>
-                </ul>
-                <h5>Gameplay Tips</h5>
-                <ul>
-                    <li>Deliver supplies to primary industries regularly to boost production.</li>
-                    <li>Some secondary industries boost production when more than one accepted cargo is delivered regularly.</li>
-                    <li>Primary industries will never close.</li>
-                    <li>Secondary industry will not close unless the closure parameter is enabled.</li>
-                    <li>Some industries are available from year 0. Some industries (and the cargos
-                        they use) are only available after a certain date.</li>
-                </ul>
+                    A few things to know before setting up a Squid Ate FISH game...
+                </p>
+                UNFINISHED - PARAMETERS ETC
             </div>
             <br />
             <hr />
             <br />
             <div id="what-next">
-                <h2>4. What Next?</h2>
+                <h2>3. What Next?</h2>
 
-                <p class="lead">Find out more about FIRS.  Or try it out in OpenTTD!</p>
-                <a class="btn btn-large btn-primary" href="economies.html">FIRS Economies</a>
-                <a class="btn btn-large btn-primary" href="cargos.html">FIRS Cargos</a>
-                <a class="btn btn-large btn-primary" href="industries.html">FIRS Industries</a>
+                <p class="lead">Find out more about Squid Ate FISH.  Or try it out in OpenTTD!</p>
+                <a class="btn btn-large btn-primary" href="ships.html">List of Ships</a>
                 <a class="btn btn-large" href="code_reference.html">Code Reference</a>
             </div>
             <hr />
             <br />
-            <div id="firs-changes">
-                <h2>5. Changes in FIRS</h2>
-                <p class="lead">FIRS is updated and improved quite often.</p>
-                <p>The <a href="changelog.html"><strong>FIRS changelog</strong></a> keeps track of changes, including new features, bug fixes and updates to translations.</p>
+            <div id="fish-changes">
+                <h2>4. Changes in Squid Ate FISH</h2>
+                <p class="lead">Squid Ate FISH is updated and improved quite often.</p>
+                <p>The <a href="changelog.html"><strong>Squid Ate FISH changelog</strong></a> keeps track of changes, including new features, bug fixes and updates to translations.</p>
             </div>
             <br />
             <br />
