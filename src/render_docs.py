@@ -86,9 +86,11 @@ class DocHelper(object):
 
             result = self.fetch_prop(result, 'Ship Name', ship.get_name_substr() + base_lang_strings[ship.get_str_name_suffix()])
             result = self.fetch_prop(result, 'Extra Info', base_lang_strings[ship.get_str_type_info()])
-            result = self.fetch_prop(result, 'Speed', int(ship.speed))
+            result = self.fetch_prop(result, 'Speed Laden', int(ship.speed))
+            result = self.fetch_prop(result, 'Speed Unladen', int(ship.speed_unladen))
             result = self.fetch_prop(result, 'Canal Speed Fraction', ship.canal_speed)
             result = self.fetch_prop(result, 'Ocean Speed Fraction', ship.ocean_speed)
+            result = self.fetch_prop(result, 'Intro Date', ship.intro_date)
             result = self.fetch_prop(result, 'Vehicle Life', ship.vehicle_life)
             result = self.fetch_prop(result, 'Replacement ID', ship.replacement_id)
             result = self.fetch_prop(result, 'Capacity Pax', ship.capacity_pax)
@@ -98,6 +100,10 @@ class DocHelper(object):
                 result = self.fetch_prop(result, 'Capacity Fish Holds', ship.capacity_fish_holds)
             if isinstance(ship, MixinRefittableCapacity):
                 result = self.fetch_prop(result, 'Capacities Refittable', ', '.join(str(i) for i in ship.capacities_refittable))
+            result = self.fetch_prop(result, 'Gross Tonnage', ship.gross_tonnage)
+            result = self.fetch_prop(result, 'Buy Cost', ship.buy_cost)
+            result = self.fetch_prop(result, 'Running Cost', ship.running_cost)
+            result = self.fetch_prop(result, 'Loading Speed', ship.loading_speed)
 
             props_to_print[ship] = result['ship']
             props_to_print[subclass] = result['subclass_props']
