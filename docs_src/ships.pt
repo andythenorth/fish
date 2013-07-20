@@ -10,6 +10,7 @@
                     <th>Ship Name</th>
                     <th class="number">Intro Date</th>
                     <th>Extra Info</th>
+                    <th>Speed</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,6 +19,7 @@
                         <td>${ship.get_name_substr()} ${base_lang_strings[ship.get_str_name_suffix()]}</td>
                         <td class="number">${ship.intro_date}</td>
                         <td>${base_lang_strings[ship.get_str_type_info()]}</td>
+                        <td>${int(ship.speed)} mph</td>
                     </tr>
                 </tal:build_ships_list>
             </tbody>
