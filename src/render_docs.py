@@ -38,7 +38,6 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 docs_templates = PageTemplateLoader(os.path.join(currentdir, 'docs_src'), format='text')
 
-import global_constants as global_constants
 import utils as utils
 import markdown
 
@@ -49,6 +48,7 @@ repo_vars = utils.get_repo_vars(sys)
 base_lang_strings = utils.parse_base_lang()
 
 import fish
+from ship import Ship, Trawler, MixinRefittableCapacity
 
 ships = fish.get_ships_in_buy_menu_order()
 # default sort for docs is by ship intro date
@@ -94,6 +94,10 @@ class DocHelper(object):
             result = self.fetch_prop(result, 'Capacity Pax', ship.capacity_pax)
             result = self.fetch_prop(result, 'Capacity Mail', ship.capacity_mail)
             result = self.fetch_prop(result, 'Capacity Freight', ship.capacity_freight)
+            if isinstance(ship, Trawler):
+                result = self.fetch_prop(result, 'Capacity Fish Holds', ship.capacity_fish_holds)
+            if isinstance(ship, MixinRefittableCapacity):
+                result = self.fetch_prop(result, 'Capacities Refittable', ', '.join(str(i) for i in ship.capacities_refittable))
 
             props_to_print[ship] = result['ship']
             props_to_print[subclass] = result['subclass_props']
