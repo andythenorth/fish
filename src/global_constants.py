@@ -94,3 +94,6 @@ chameleon_cache_dir = 'chameleon_cache'
 # cost constants
 FIXED_RUN_COST = 500.0
 FUEL_RUN_COST = 10.0
+
+# OpenTTD's max date
+max_game_date = 5000001

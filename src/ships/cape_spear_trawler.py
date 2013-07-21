@@ -1,3 +1,4 @@
+import global_constants
 from ship import Ship, Trawler
 
 ship = Trawler(id = 'cape_spear_trawler',
@@ -20,8 +21,11 @@ ship = Trawler(id = 'cape_spear_trawler',
             loading_speed = 15,
             intro_date = 1870,
             buy_menu_bb_xy = [663, 21],
-            graphic_variations_by_date = [[[0, 9999]], {0: [0]}],
             str_type_info = 'TRAWLER',
             vehicle_life = 40,
             gross_tonnage = 84,
 )
+
+ship.add_model_variant(intro_date=0, 
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=0)

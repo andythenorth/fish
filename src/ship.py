@@ -1,5 +1,5 @@
-# get the globals - however for using globals in templates, it's better for the template to use global_template.pt as a macro
 import global_constants # expose all constants for easy passing to templates
+import utils
 
 import os.path
 currentdir = os.curdir
@@ -18,12 +18,22 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
 from ships import registered_ships
 
+class ModelVariant(object):
+    # simple class to hold model variants
+    # variants are mostly randomised or date-sensitive graphics
+    # must be a minimum of one variant per ship
+    # at least one variant must have intro date 0 (for nml switch defaults to work)
+    def __init__(self, intro_date, end_date, spritesheet_suffix):
+        self.intro_date = intro_date
+        self.end_date = end_date
+        self.spritesheet_suffix = spritesheet_suffix # use digits for these - to match spritesheet filenames
+
 class Ship(object):
     """Base class for all types of ships"""
     def __init__(self, id, **kwargs):
         self.id = id
 
-        #setup properties for this ship
+        # setup properties for this ship
         self.title = kwargs.get('title', None)
         self.numeric_id = kwargs.get('numeric_id', None)
         self.str_type_info = kwargs.get('str_type_info', None).upper()
@@ -38,7 +48,7 @@ class Ship(object):
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy', None)
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
         self.offsets = kwargs.get('offsets', None)
-        self.graphic_variations_by_date = kwargs.get('graphic_variations_by_date', None)
+        self.dates_for_graphic_variations = kwargs.get('dates_for_graphic_variations', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
         self.speed = kwargs.get('speed', None)
@@ -51,14 +61,43 @@ class Ship(object):
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
+        # create a structure to hold model variants
+        self.model_variants = []
         # register ship with this module so other modules can use it
         registered_ships.append(self)
 
-    def get_date_ranges_for_random_variation(self, index):
-        years = sorted(self.graphic_variations_by_date[1].keys())
-        intro = years[index]
-        expiry = years[index + 1] - 1
-        return str(intro) + '..' + str(expiry) + ':' + self.id + '_switch_graphics_random_' + str(intro)
+    def add_model_variant(self, intro_date, end_date, spritesheet_suffix):
+        self.model_variants.append(ModelVariant(intro_date, end_date, spritesheet_suffix))
+
+    def get_reduced_set_of_variant_dates(self):
+        # find all the unique dates that will need a switch constructing
+        years = sorted(reduce(set.union, [(variant.intro_date, variant.end_date) for variant in self.model_variants], set()))
+        # quick integrity check
+        if years[0] != 0:
+            utils.echo_message(self.id + " doesn't have at least one model variant with intro date 0 (required for nml switches to work)")
+        return years
+
+    def get_variants_available_for_specific_year(self, year):
+        # put the data in a format that's easy to render as switches
+        result = []
+        for variant in self.model_variants:
+            if year in range(variant.intro_date, variant.end_date):
+                result.append(variant.spritesheet_suffix)
+        return result # could call set() here, but I didn't bother, shouldn't be needed if model variants set up correctly
+
+    def get_nml_random_switch_fragments_for_model_variants(self):
+        # return fragments of nml for use in switches
+        result = []
+        years = self.get_reduced_set_of_variant_dates()
+        for index, year in enumerate(years):
+            if index < len(years) - 1:
+                from_date = year
+                until_date = years[index + 1] - 1
+                result.append(str(from_date) + '..' + str(until_date) + ':' + self.id + '_switch_graphics_random_' + str(from_date))
+        return result
+
+    def get_num_spritesets(self):
+        return len(set([i.spritesheet_suffix for i in self.model_variants]))
 
     def get_speeds_adjusted_for_load_amount(self, speed_index):
         # ships may travel faster or slower than 'speed' depending on cargo amount

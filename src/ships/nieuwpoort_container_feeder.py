@@ -1,3 +1,4 @@
+import global_constants
 from ship import Ship, ContainerCarrier
 
 ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
@@ -17,8 +18,11 @@ ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
             loading_speed = 35,
             intro_date = 1979,
             buy_menu_bb_xy = [620, 28],
-            graphic_variations_by_date = [[[0, 9999]], {0: [0]}],
             str_type_info = 'CONTAINER_FEEDER',
             vehicle_life = 30,
             gross_tonnage = 800,
 )
+
+ship.add_model_variant(intro_date=0, 
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=0)

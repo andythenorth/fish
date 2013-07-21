@@ -1,3 +1,4 @@
+import global_constants
 from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'enoshima_catamaran_ferry',
@@ -19,8 +20,12 @@ ship = PacketBoat(id = 'enoshima_catamaran_ferry',
             loading_speed = 20,
             intro_date = 1997,
             buy_menu_bb_xy = [624, 28],
-            graphic_variations_by_date = [[[1997, 9999], [1997, 9999]], {1997: [0, 1]}],
+            dates_for_graphic_variations = ((1997, 9999), (1997, 9999)),
             str_type_info = 'CATAMARAN_FAST_FERRY',
             vehicle_life = 25,
             gross_tonnage = 350,
 )
+
+ship.add_model_variant(intro_date=0, 
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=0)

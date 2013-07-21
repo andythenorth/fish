@@ -1,3 +1,4 @@
+import global_constants
 from ship import Ship, GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'frisco_bay_freighter',
@@ -17,8 +18,11 @@ ship = GeneralCargoVessel(id = 'frisco_bay_freighter',
             loading_speed = 20,
             intro_date = 1915,
             buy_menu_bb_xy = [620, 28],
-            graphic_variations_by_date = [[[0, 9999]], {0: [0]}],
             str_type_info = 'LARGE_COASTER',
             vehicle_life = 35,
             gross_tonnage = 820,
 )
+
+ship.add_model_variant(intro_date=0, 
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=0)

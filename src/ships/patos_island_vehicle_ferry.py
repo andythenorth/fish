@@ -1,3 +1,4 @@
+import global_constants
 from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'patos_island_vehicle_ferry',
@@ -19,8 +20,11 @@ ship = PacketBoat(id = 'patos_island_vehicle_ferry',
             loading_speed = 35,
             intro_date = 1953,
             buy_menu_bb_xy = [622, 28],
-            graphic_variations_by_date = [[[0, 9999]], {0: [0]}],
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 60,
             gross_tonnage = 500,
 )
+
+ship.add_model_variant(intro_date=0, 
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=0)
