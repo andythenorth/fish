@@ -39,7 +39,8 @@ base_refits_by_class = {'empty': [],
 
 # used to construct the cargo table automatically
 # stolen from BANDIT code which also offered option to specify random cargo variations - that part is not currently used in FISH
-cargo_graphics_mappings = dict(AORE = [],
+from collections import OrderedDict
+cargo_graphics_mappings = OrderedDict(AORE = [],
                           BDMT = [],
                           BEER = [],
                           CERE = [],
