@@ -19,17 +19,6 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 from ships import registered_ships
 
 
-class ModelVariant(object):
-    # simple class to hold model variants
-    # variants are mostly randomised or date-sensitive graphics
-    # must be a minimum of one variant per ship
-    # at least one variant must have intro date 0 (for nml switch defaults to work)
-    def __init__(self, intro_date, end_date, spritesheet_suffix):
-        self.intro_date = intro_date
-        self.end_date = end_date
-        self.spritesheet_suffix = spritesheet_suffix # use digits for these - to match spritesheet filenames
-
-
 class Ship(object):
     """Base class for all types of ships"""
     def __init__(self, id, **kwargs):
@@ -218,6 +207,17 @@ class MixinRefittableCapacity(object):
         return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_0=self.capacities_refittable[0],
                                         capacity_1=self.capacities_refittable[1], capacity_2=self.capacities_refittable[2],
                                         cargo_units=self.cargo_units_buy_menu)
+
+
+class ModelVariant(object):
+    # simple class to hold model variants
+    # variants are mostly randomised or date-sensitive graphics
+    # must be a minimum of one variant per ship
+    # at least one variant must have intro date 0 (for nml switch defaults to work)
+    def __init__(self, intro_date, end_date, spritesheet_suffix):
+        self.intro_date = intro_date
+        self.end_date = end_date
+        self.spritesheet_suffix = spritesheet_suffix # use digits for these - to match spritesheet filenames
 
 
 class GeneralCargoVessel(Ship):
