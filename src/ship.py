@@ -229,7 +229,7 @@ class GeneralCargoVessel(Ship):
         self.label_refits_allowed = [] # no specific labels needed, GCV refits all freight
         self.label_refits_disallowed = ['TOUR']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
-        self.default_cargos = ['COAL']
+        self.default_cargo = 'COAL'
         self.default_cargo_capacity = self.capacity_freight
 
 
@@ -245,7 +245,7 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
         self.capacity_freight = self.capacities_refittable[0]
         self.cargo_units_buy_menu = 'STR_QUANTITY_LIVESTOCK'
         self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
-        self.default_cargos = ['LVST']
+        self.default_cargo = 'LVST'
         self.default_cargo_capacity = self.capacities_refittable[0]
 
 
@@ -261,7 +261,7 @@ class LogTug(MixinRefittableCapacity, Ship):
         self.capacity_freight = self.capacities_refittable[0]
         self.cargo_units_buy_menu = 'STR_QUANTITY_WOOD'
         self.cargo_units_refit_menu = 'STR_UNIT_TONNES'
-        self.default_cargos = ['WOOD']
+        self.default_cargo = 'WOOD'
         self.default_cargo_capacity = self.capacities_refittable[0]
 
 
@@ -275,7 +275,7 @@ class PacketBoat(Ship):
         self.label_refits_disallowed = ['FISH'] # don't go fishing with packet boats, use a trawler instead :P
         self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
         self.capacity_freight = self.capacity_cargo_holds
-        self.default_cargos = ['PASS']
+        self.default_cargo = 'PASS'
         self.default_cargo_capacity = self.capacity_pax
 
 
@@ -297,7 +297,7 @@ class Hydrofoil(Ship):
         self.class_refit_groups = ['pax_mail']
         self.label_refits_allowed = []
         self.label_refits_disallowed = []
-        self.default_cargos = ['PASS']
+        self.default_cargo = 'PASS'
         self.default_cargo_capacity = self.capacity_pax
 
 class Trawler(Ship):
@@ -311,7 +311,7 @@ class Trawler(Ship):
         self.capacity_deck_cargo = kwargs.get('capacity_deck_cargo', None)
         self.capacity_freight = self.capacity_deck_cargo
         self.capacity_fish_holds = kwargs.get('capacity_fish_holds', None)
-        self.default_cargos = ['FISH']
+        self.default_cargo = 'FISH'
         self.default_cargo_capacity = self.capacity_fish_holds
 
     def get_buy_menu_string(self):
@@ -335,7 +335,7 @@ class Tanker(Ship):
         self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
         self.capacity_tanks = kwargs.get('capacity_tanks', None)
         self.capacity_freight = self.capacity_tanks
-        self.default_cargos = ['OIL_']
+        self.default_cargo = 'OIL_'
         self.default_cargo_capacity = self.capacity_freight
 
 
@@ -348,6 +348,6 @@ class ContainerCarrier(Ship):
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
-        self.default_cargos = ['GOOD']
+        self.default_cargo = 'GOOD'
         self.default_cargo_capacity = self.capacity_freight
 
