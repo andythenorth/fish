@@ -50,7 +50,6 @@ class Ship(object):
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy', None)
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
         self.offsets = kwargs.get('offsets', None)
-        self.dates_for_graphic_variations = kwargs.get('dates_for_graphic_variations', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
         self.speed = kwargs.get('speed', None)
