@@ -221,11 +221,9 @@ class ModelVariant(object):
 
 
 class GeneralCargoVessel(Ship):
-
-    """General purpose freight vessel type.
-
-       No pax or mail cargos, refits any other cargo including liquids (in barrels or containers)."""
-
+    """
+    General purpose freight vessel type. No pax or mail cargos, refits any other cargo including liquids (in barrels or containers).
+    """
     def __init__(self, id, **kwargs):
         super(GeneralCargoVessel, self).__init__(id, **kwargs)
         self.template = 'general_cargo_vessel.pynml'
@@ -238,9 +236,9 @@ class GeneralCargoVessel(Ship):
 
 
 class LivestockCarrier(MixinRefittableCapacity, Ship):
-
-    """Special type for livestock (as you might guess)."""
-
+    """
+    Special type for livestock (as you might guess).
+    """
     def __init__(self, id, **kwargs):
         super(LivestockCarrier, self).__init__(id, **kwargs)
         self.template = 'ship.pynml'
@@ -256,9 +254,9 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
 
 
 class LogTug(MixinRefittableCapacity, Ship):
-
-    """Specialist type for hauling logs only, has some specialist refit and speed behaviours."""
-
+    """
+    Specialist type for hauling logs only, has some specialist refit and speed behaviours.
+    """
     def __init__(self, id, **kwargs):
         super(LogTug, self).__init__(id, **kwargs)
         self.template = 'log_tug.pynml'
@@ -274,9 +272,9 @@ class LogTug(MixinRefittableCapacity, Ship):
 
 
 class PacketBoat(Ship):
-
-    """A relatively fast vessel type for passengers, mail, and express freight."""
-
+    """
+    A relatively fast vessel type for passengers, mail, and express freight.
+    """
     def __init__(self, id, **kwargs):
         super(PacketBoat, self).__init__(id, **kwargs)
         self.template = 'ship.pynml'
@@ -299,9 +297,9 @@ class PacketBoat(Ship):
 
 
 class Hydrofoil(Ship):
-
-    """Fast vessel type for passengers and mail only, graphics vary by speed (to show hydrofoil in / out of water)."""
-
+    """
+    Fast vessel type for passengers and mail only, graphics vary by speed (to show hydrofoil in / out of water).
+    """
     def __init__(self, id, **kwargs):
         super(Hydrofoil, self).__init__(id, **kwargs)
         self.template = 'hydrofoil.pynml'
@@ -313,9 +311,9 @@ class Hydrofoil(Ship):
 
 
 class Trawler(Ship):
-
-    """Similar type to a packet boat, but needs to go fishing, so has special fish holds for that."""
-
+    """
+    Similar type to a packet boat, but needs to go fishing, so has special fish holds for that.
+    """
     def __init__(self, id, **kwargs):
         super(Trawler, self).__init__(id, **kwargs)
         self.template = 'ship.pynml'
@@ -340,9 +338,9 @@ class Trawler(Ship):
 
 
 class Tanker(Ship):
-
-    """Ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising)."""
-
+    """
+    Ronseal ("does what it says on the tin", for those without extensive knowledge of UK advertising).
+    """
     def __init__(self, id, **kwargs):
         super(Tanker, self).__init__(id, **kwargs)
         self.template = 'tanker.pynml'
@@ -356,9 +354,9 @@ class Tanker(Ship):
 
 
 class ContainerCarrier(Ship):
-
-    """Refits to limited range of freight cargos, shows container graphics according to load state."""
-
+    """
+    Refits to limited range of freight cargos, shows container graphics according to load state.
+    """
     def __init__(self, id, **kwargs):
         super(ContainerCarrier, self).__init__(id, **kwargs)
         self.template = 'container_carrier.pynml'
