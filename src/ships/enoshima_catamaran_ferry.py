@@ -23,7 +23,7 @@ ship = PacketBoat(id = 'enoshima_catamaran_ferry',
             str_type_info = 'CATAMARAN_FAST_FERRY',
             vehicle_life = 25,
             gross_tonnage = 350,
-            graphics_status = 'Unstarted',)
+            graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

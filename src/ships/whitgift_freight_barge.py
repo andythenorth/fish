@@ -21,8 +21,8 @@ ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
             str_type_info = 'SMALL_FREIGHTER_COASTAL_INLAND',
             vehicle_life = 60,
             gross_tonnage = 60,
-            graphics_status = 'Unstarted',)
+            graphics_status = 'Done',)
 
-ship.add_model_variant(intro_date=0, 
+ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,
                        spritesheet_suffix=0)

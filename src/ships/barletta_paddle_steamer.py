@@ -23,8 +23,8 @@ ship = PacketBoat(id = 'barletta_paddle_steamer',
             str_type_info = 'PADDLE_STEAMER',
             vehicle_life = 40,
             gross_tonnage = 280,
-            graphics_status = 'Unstarted',)
+            graphics_status = 'Done',)
 
-ship.add_model_variant(intro_date=0, 
+ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,
                        spritesheet_suffix=0)

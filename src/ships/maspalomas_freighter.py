@@ -21,8 +21,8 @@ ship = GeneralCargoVessel(id = 'maspalomas_freighter',
             str_type_info = 'LARGE_COASTER',
             vehicle_life = 35,
             gross_tonnage = 1140,
-            graphics_status = 'Unstarted',)
+            graphics_status = 'Work in Progress - andythenorth',)
 
-ship.add_model_variant(intro_date=0, 
+ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,
                        spritesheet_suffix=0)
