@@ -21,7 +21,7 @@ ship = LivestockCarrier(id = 'shark_island_livestock_ship',
             str_type_info = 'LIVESTOCK_SHIP',
             vehicle_life = 35,
             gross_tonnage = 650,
-)
+            graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0, 
                        end_date=global_constants.max_game_date,

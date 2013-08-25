@@ -23,7 +23,7 @@ ship = PacketBoat(id = 'castle_point_steamer',
             str_type_info = 'FAST_PACKET_STEAMER',
             vehicle_life = 25,
             gross_tonnage = 460,
-)
+            graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0, 
                        end_date=global_constants.max_game_date,

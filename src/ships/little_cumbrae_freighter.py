@@ -21,7 +21,7 @@ ship = GeneralCargoVessel(id = 'little_cumbrae_freighter',
             str_type_info = 'SMALL_FREIGHTER_COASTAL_INLAND',
             vehicle_life = 35,
             gross_tonnage = 100,
-)
+            graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0,
                        end_date=1952,

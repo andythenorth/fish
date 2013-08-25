@@ -21,7 +21,7 @@ ship = GeneralCargoVessel(id = 'altamira_freighter',
             str_type_info = 'COASTER',
             vehicle_life = 40,
             gross_tonnage = 360,
-)
+            graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

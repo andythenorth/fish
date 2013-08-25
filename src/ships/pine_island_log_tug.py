@@ -21,7 +21,7 @@ ship = LogTug(id = 'pine_island_log_tug',
             str_type_info = 'LOG_TUG',
             vehicle_life = 25,
             gross_tonnage = 26,
-)
+            graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0, 
                        end_date=global_constants.max_game_date,

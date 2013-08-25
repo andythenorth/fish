@@ -24,7 +24,7 @@ ship = Trawler(id = 'cape_spear_trawler',
             str_type_info = 'TRAWLER',
             vehicle_life = 40,
             gross_tonnage = 84,
-)
+            graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0, 
                        end_date=global_constants.max_game_date,
