@@ -29,6 +29,14 @@ ship.add_model_variant(intro_date=0,
                        end_date=1945,
                        spritesheet_suffix=0)
 
+ship.add_model_variant(intro_date=0,
+                       end_date=1955,
+                       spritesheet_suffix=1)
+
+ship.add_model_variant(intro_date=0,
+                       end_date=1955,
+                       spritesheet_suffix=2)
+
 ship.add_model_variant(intro_date=1930,
                        end_date=global_constants.max_game_date,
-                       spritesheet_suffix=1)
+                       spritesheet_suffix=3)
