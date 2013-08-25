@@ -221,7 +221,11 @@ class ModelVariant(object):
 
 
 class GeneralCargoVessel(Ship):
-    # general purpose freight vessel type, no pax or mail cargos, refits any other cargo including liquids (in barrels or containers)
+
+    """General purpose freight vessel type.
+
+       No pax or mail cargos, refits any other cargo including liquids (in barrels or containers)."""
+
     def __init__(self, id, **kwargs):
         super(GeneralCargoVessel, self).__init__(id, **kwargs)
         self.template = 'general_cargo_vessel.pynml'
