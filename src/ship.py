@@ -45,14 +45,14 @@ class Ship(object):
         self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
         self.ocean_speed = (0.8, 1)[self.sea_capable]
         self.canal_speed = (0.7, 1)[self.inland_capable]
-        # readability: no 'template' property in base class, better to be explicit in subclass (and fail if none declared)
-
         # declare capacities for pax, mail and freight, as they are needed later for nml switches
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
         # create a structure to hold model variants
         self.model_variants = []
+        # some project management stuff
+        self.graphics_status = kwargs.get('graphics_status', None)
         # register ship with this module so other modules can use it
         registered_ships.append(self)
 
