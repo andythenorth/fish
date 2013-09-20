@@ -1,0 +1,46 @@
+##grflangid 0x1B
+##plural 0
+STR_GRF_NAME                                                    :FISH FISH - compiled without makefile
+STR_GRF_DESCRIPTION                                             :Lisensie: {SILVER}GPL v2{}{BLACK}
+
+
+STR_EMPTY                                                       :
+
+
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde boukoste vir kanale, waterleidings en "locks".
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Verminder konstruksie (en verwydering) koste vir kanale, waterleidings en "locks". Verskaf 'n beter balans tussen water vervoer en ander vervoer tipes.
+
+
+STR_NAME_SUFFIX_FREIGHTER                                       :Verskeper
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Vragsloep
+STR_NAME_SUFFIX_TANKER                                          :Tenkskip
+STR_NAME_SUFFIX_TANKER_BARGE                                    :Sloep Tenkskip
+STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Veeldoelige Boot
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Veeldoelige Sleepboot
+STR_NAME_SUFFIX_LOG_TUG                                         :Stomp Sleepboot
+STR_NAME_SUFFIX_FERRY                                           :Veerboot
+STR_NAME_SUFFIX_HYDROFOIL                                       :Skeerboot
+STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
+STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Spaanstoomboot
+STR_NAME_SUFFIX_HOVERCRAFT                                      :Skeertuig
+
+
+
+STR_BUY_MENU_TEXT                                               :Tipe: {GOLD}{STRING}{}{STRING}
+
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
+STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige seegaande vaartuig
+STR_COASTER                                                     :Kusvaarder
+STR_LARGE_COASTER                                               :Groot Kusvaarder
+STR_COASTAL_TANKER                                              :Kus tenkskip
+STR_LARGE_COASTAL_TANKER                                        :Groot Kus tenkskip
+STR_CARGO_VESSEL_INLAND                                         :Vragskip vir binnelansdse waterweë (riviere, kanale en mere)
+STR_PADDLE_STEAMER                                              :Spaanstoomboot
+STR_CARGO_HOVERCRAFT                                            :Vrag skeertuig
+STR_HYDROFOIL_FAST_FERRY                                        :Vinnige Skeerveerboot
+STR_CATAMARAN_FAST_FERRY                                        :Vinnige Katamaran veerboot
+STR_VEHICLE_FERRY                                               :Voertuig veerboot
+
+
+STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}herboubare hoeveelheid: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t
