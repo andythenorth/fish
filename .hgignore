@@ -21,6 +21,7 @@ fish/*
 custom_tags.txt
 .version
 chameleon_cache
+lang
 
 
 # Dependency files:
