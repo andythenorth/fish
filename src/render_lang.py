@@ -28,8 +28,8 @@ ships = fish.get_ships_in_buy_menu_order()
 # get args passed by makefile
 repo_vars = utils.get_repo_vars(sys)
 
-translated_languages = ('english',)
-for i in translated_languages:
+languages_with_generation = ('english',)
+for i in languages_with_generation:
     #compile strings to single lang file - english
     lang_template = lang_templates[i + '.pylng']
 
