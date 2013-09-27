@@ -1,46 +1,70 @@
-##grflangid nl_NL
+##grflangid 0x1f
 ##plural 0
-STR_GRF_NAME                                                    :FISH FISH - compiled without makefile
 STR_GRF_DESCRIPTION                                             :Licentie: {SILVER}GPL v2{}{BLACK}
 
 
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde bouwkosten voor kanalen, aquaducten en sluizen.
-STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Vermindert bouw- (en sloop-) kosten voor kanalen, aquaducten en sluizen. Dit zorgt voor een betere balans tussen transport over water en andere soorten transport.
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde bouwkosten voor kanalen, aquaducten en sluizen
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduceert bouw- (en verwijder-)kosten voor kanalen, aquaducten en sluizen. Geeft een betere balans tussen watertransport en andere vormen van transport.
+STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Schipssnelheid
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Als kijken naar drogende verf
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Bedriegen
 
 
-STR_NAME_SUFFIX_FREIGHTER                                       :Vrachtschip
-STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Binnenvaartschip
-STR_NAME_SUFFIX_TANKER                                          :Tanker
-STR_NAME_SUFFIX_TANKER_BARGE                                    :Binnenvaarttanker
-STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Dienstvaartuig
-STR_NAME_SUFFIX_UTILITY_TUG                                     :Sleepboot
-STR_NAME_SUFFIX_LOG_TUG                                         :Boomstammen-sleepboot
-STR_NAME_SUFFIX_FERRY                                           :Veerboot
-STR_NAME_SUFFIX_HYDROFOIL                                       :Draagvleugelboot
+STR_NAME_SUFFIX_BARGE_TUG                                       :Bakkensleepboot
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
-STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Raderboot
+STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Containerschip
+STR_NAME_SUFFIX_FERRY                                           :Veerboot
+STR_NAME_SUFFIX_FAST_FERRY                                      :Snelle veerboot
+STR_NAME_SUFFIX_FREIGHTER                                       :Vrachtschip
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
+STR_NAME_SUFFIX_HYDROFOIL                                       :Vleugelboot
+STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Veeschip
+STR_NAME_SUFFIX_LOG_TUG                                         :Houtsleepboot
+STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Raderstoomboot
+STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Snel bevoorradingsschip
+STR_NAME_SUFFIX_STEAMER                                         :Stoomboot
+STR_NAME_SUFFIX_TANKER                                          :Tanker
+STR_NAME_SUFFIX_TRAWLER                                         :Trawler
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Algemene sleepboot
 
 
 STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} zakken post of {COMMA}t expressvracht
+STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} passagiers,  {COMMA} zakken post, {COMMA}t vis in het ruim, of {COMMA}t expressvracht op het dek
 
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein schip voor algemeen gebruik
-STR_GENERAL_PURPOSE_VESSEL                                      :Schip voor algemeen gebruik
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Zeewaardig schip voor algemeen gebruik
-STR_COASTER                                                     :Kustvaarder
-STR_LARGE_COASTER                                               :Grote kustvaarder
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein algemeen schip
+STR_GENERAL_PURPOSE_VESSEL                                      :Algemeen schip
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Snel algemeen schip
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Algemeen zeewaardig schip
+STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Klein vrachtschip voor kust en binnenwateren
+STR_COASTER                                                     :Kustvrachtschip
+STR_LARGE_COASTER                                               :Groot kustvrachtschip
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleine tanker voor kust en binnenwateren
 STR_COASTAL_TANKER                                              :Kusttanker
 STR_LARGE_COASTAL_TANKER                                        :Grote kusttanker
-STR_CARGO_VESSEL_INLAND                                         :Binnenvaartschip (voor rivieren, kanalen en meren)
-STR_PADDLE_STEAMER                                              :Raderboot
-STR_CARGO_HOVERCRAFT                                            :Goederen-hovercraft
-STR_HYDROFOIL_FAST_FERRY                                        :Draagvleugelboot (snelle veerboot)
-STR_CATAMARAN_FAST_FERRY                                        :Catamaran (snelle veerboot)
-STR_VEHICLE_FERRY                                               :Auto-veerboot
-STR_LOG_TUG                                                     :Sleepboot om drijvende boomstammen te slepen
+STR_CARGO_VESSEL_INLAND                                         :Vrachtschip voor binnenwateren
+STR_PADDLE_STEAMER                                              :Raderstoomboot
+STR_FAST_PACKET_STEAMER                                         :Snelle rivierboot
+STR_CARGO_HOVERCRAFT                                            :Vrachthovercraft
+STR_HYDROFOIL_FAST_FERRY                                        :Snelle passagiersvleugelboot
+STR_CATAMARAN_FAST_FERRY                                        :Snelle catamaran veerboot
+STR_VEHICLE_FERRY                                               :Autoveerboot
+STR_JUMBO_VEHICLE_FERRY                                         :Supergrote veerboot
+STR_LOG_TUG                                                     :Sleepboot voor het slepen van drijvende boomstammen
+STR_CONTAINER_FEEDER                                            :Klein container schip
+STR_LIVESTOCK_SHIP                                              :Veeschip
+STR_TRAWLER                                                     :Trawler (met een ruim voor vis)
+STR_BARGE_TUG                                                   :Bakkensleepboot
+STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Snelle catamaran voor het bevoorraden van eilanden en offshore industrie
 
 
-STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Ombouwbaar tot capaciteit: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t
+STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}{STRING})
+STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Capaciteiten na ombouwen: {GOLD}{COMMA}, {COMMA} of {COMMA}{STRING}
+STR_QUANTITY_WOOD                                               :ton hout
+STR_QUANTITY_LIVESTOCK                                          :items vee
+STR_UNIT_TONNES                                                 :tonnen
+STR_UNIT_ITEMS                                                  :items
