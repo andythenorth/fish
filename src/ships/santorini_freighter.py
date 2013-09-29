@@ -23,10 +23,19 @@ ship = GeneralCargoVessel(id = 'santorini_freighter',
             gross_tonnage = 960,
             graphics_status = 'Done',)
 
+# this ship has centre and rear house random variants.  The center house is more probable before 1974
 ship.add_model_variant(intro_date=0,
                        end_date=1974,
                        spritesheet_suffix=0)
 
+ship.add_model_variant(intro_date=0,
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=0)
+
 ship.add_model_variant(intro_date=1953,
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=1)
+
+ship.add_model_variant(intro_date=1974,
                        end_date=global_constants.max_game_date,
                        spritesheet_suffix=1)
