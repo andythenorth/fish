@@ -42,7 +42,6 @@ from ships import fish_island_trawler
 from ships import frisco_bay_freighter
 from ships import harbour_point_utility_vessel
 from ships import hopetown_tanker
-from ships import lindau_freight_barge
 from ships import little_cumbrae_freighter
 from ships import marstein_freighter
 from ships import maspalomas_freighter
