@@ -32,6 +32,26 @@
                 <br />
             </tal:props_for_subclass>
         </tal:subclasses>
+        
+        <hr />
+        <h3>Numeric IDs</h3>
+        <p class="muted">Trailing parts of articulated vehicles are not listed here.</p>
+        <table class="table table-striped table-condensed table-bordered">
+            <thead>
+                <th>Numeric ID</th>
+                <th>ID</th>
+                <th>Title</th>
+            </thead>
+            <tbody>
+                <tal:vehicles repeat="vehicle sorted(ships, key=lambda vehicle: vehicle.numeric_id)">
+                    <tr>
+                        <td>${vehicle.numeric_id}</td>
+                        <td>${vehicle.id}</td>
+                        <td>${vehicle.title}</td>
+                    </tr>
+                </tal:vehicles>
+            </tbody>
+        </table>
     </div>
 
 </div>
