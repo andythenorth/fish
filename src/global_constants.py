@@ -25,6 +25,7 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'eddystone_tanker',
                        'hopetown_tanker',
                        'yokohama_tanker',
+                       'grindavik_reefer',
                        'shark_island_livestock_ship',
                        'nieuwpoort_container_feeder']
 

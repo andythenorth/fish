@@ -40,6 +40,7 @@ from ships import fastnet_paddle_steamer
 from ships import feodosiya_hydrofoil
 from ships import fish_island_trawler
 from ships import frisco_bay_freighter
+from ships import grindavik_reefer
 from ships import harbour_point_utility_vessel
 from ships import hopetown_tanker
 from ships import little_cumbrae_freighter
