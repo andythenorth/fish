@@ -353,6 +353,21 @@ class Tanker(Ship):
         self.default_cargo_capacity = self.capacity_freight
 
 
+class Reefer(Ship):
+    """
+    Refits to limited range of refrigerated cargos, with 'improved' cargo decay rate.
+    """
+    def __init__(self, id, **kwargs):
+        super(Reefer, self).__init__(id, **kwargs)
+        self.template = 'general_cargo_vessel.pynml'
+        self.class_refit_groups = ['refrigerated_freight'] 
+        self.label_refits_allowed = [] # no specific labels needed, refits all cargos that have refrigerated class
+        self.label_refits_disallowed = []
+        self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
+        self.default_cargo = 'GOOD'
+        self.default_cargo_capacity = self.capacity_freight
+
+
 class ContainerCarrier(Ship):
     """
     Refits to limited range of freight cargos, shows container graphics according to load state.

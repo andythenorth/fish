@@ -35,6 +35,7 @@ base_refits_by_class = {'empty': [],
                        'pax_mail': ['CC_PASSENGERS','CC_MAIL'],
                        'liquids': ['CC_LIQUID'],
                        'packaged_freight': ['CC_PIECE_GOODS', 'CC_EXPRESS', 'CC_ARMOURED', 'CC_LIQUID'],
+                       'refrigerated_freight': ['CC_REFRIGERATED'],
                        'express_freight': ['CC_EXPRESS','CC_ARMOURED']}
 
 # used to construct the cargo table automatically
