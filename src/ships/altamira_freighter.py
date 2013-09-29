@@ -24,11 +24,11 @@ ship = GeneralCargoVessel(id = 'altamira_freighter',
             graphics_status = 'Work in Progress - Coxx',)
 
 ship.add_model_variant(intro_date=0,
-                       end_date=1920,
+                       end_date=1910,
                        spritesheet_suffix=0)
 
 ship.add_model_variant(intro_date=1910,
-                       end_date=global_constants.max_game_date,
+                       end_date=1960,
                        spritesheet_suffix=1)
 
 ship.add_model_variant(intro_date=1960,
