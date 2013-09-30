@@ -14,20 +14,21 @@ STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los cost
 
 STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{STRING}{}{STRING}
 
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
-STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
-STR_COASTER                                                     :Barco costero
-STR_LARGE_COASTER                                               :Barco costero grande
-STR_COASTAL_TANKER                                              :Barco cisterna costero
-STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
-STR_CARGO_VESSEL_INLAND                                         :Barco de carga para vías fluviales (ríos, canales y lagos)
-STR_PADDLE_STEAMER                                              :Vapor de ruedas
+
 STR_CARGO_HOVERCRAFT                                            :Hovercraft de carga
-STR_HYDROFOIL_FAST_FERRY                                        :Ferry rápido hydrofoil
+STR_CARGO_VESSEL_INLAND                                         :Barco de carga para vías fluviales (ríos, canales y lagos)
 STR_CATAMARAN_FAST_FERRY                                        :Catamarán rápido
-STR_VEHICLE_FERRY                                               :Ferry de vehículos
+STR_COASTAL_TANKER                                              :Barco cisterna costero
+STR_COASTER                                                     :Barco costero
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
+STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
+STR_HYDROFOIL_FAST_FERRY                                        :Ferry rápido hydrofoil
+STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
+STR_LARGE_COASTER                                               :Barco costero grande
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
+STR_PADDLE_STEAMER                                              :Vapor de ruedas
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
+STR_VEHICLE_FERRY                                               :Ferry de vehículos
 
 
 STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Capacidades de reforma: {GOLD}{COMMA}t, {COMMA}t, {COMMA}t
