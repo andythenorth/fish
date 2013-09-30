@@ -37,30 +37,31 @@ STR_BUY_MENU_TEXT                                               :Typ: {GOLD}{STR
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Postsäcke oder {COMMA}t Eilgut
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Passagiere, {COMMA} Postsäcke, {COMMA}t Fisch im Frachtraum, or {COMMA}t Eilgut als Decksladung
 
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kleines Mehrzweckschiff
-STR_GENERAL_PURPOSE_VESSEL                                      :Mehrzweckschiff
-STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Schnelles Mehrzweck-Schiff
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Hochseetaugliches Mehrzweck-Schiff
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Kleiner Frachter für Binnen- und küstennahe Gewässer
-STR_COASTER                                                     :Küstenfrachter
-STR_LARGE_COASTER                                               :Großer Küstenfrachter
-STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleiner Tanker für küstennahe und Binnengewässer
-STR_COASTAL_TANKER                                              :Küstenschiff (Tanker)
-STR_LARGE_COASTAL_TANKER                                        :Großes Küstenschiff (Tanker)
-STR_CARGO_VESSEL_INLAND                                         :Frachter für Binnengewässer
-STR_PADDLE_STEAMER                                              :Schaufelraddampfer
-STR_FAST_PACKET_STEAMER                                         :Schneller Postdampfer
-STR_CARGO_HOVERCRAFT                                            :Fracht-Luftkissenboot
-STR_HYDROFOIL_FAST_FERRY                                        :Schnelle Tragflächenfähre
-STR_CATAMARAN_FAST_FERRY                                        :Schnelle Katamaran-Fähre
-STR_VEHICLE_FERRY                                               :Fahrzeugfähre
-STR_JUMBO_VEHICLE_FERRY                                         :Jumbo Fahrzeugfähre
-STR_LOG_TUG                                                     :Schlepper um Holzstämme zu ziehen
-STR_CONTAINER_FEEDER                                            :Kleines Containerschiff
-STR_LIVESTOCK_SHIP                                              :Viehtransporter
-STR_TRAWLER                                                     :Trawler (spezieller Frachtraum für Fisch)
+
 STR_BARGE_TUG                                                   :Schleppkahn
+STR_CARGO_HOVERCRAFT                                            :Fracht-Luftkissenboot
+STR_CARGO_VESSEL_INLAND                                         :Frachter für Binnengewässer
+STR_CATAMARAN_FAST_FERRY                                        :Schnelle Katamaran-Fähre
+STR_COASTAL_TANKER                                              :Küstenschiff (Tanker)
+STR_COASTER                                                     :Küstenfrachter
+STR_CONTAINER_FEEDER                                            :Kleines Containerschiff
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Schnelles Mehrzweck-Schiff
+STR_FAST_PACKET_STEAMER                                         :Schneller Postdampfer
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Hochseetaugliches Mehrzweck-Schiff
+STR_GENERAL_PURPOSE_VESSEL                                      :Mehrzweckschiff
+STR_HYDROFOIL_FAST_FERRY                                        :Schnelle Tragflächenfähre
+STR_JUMBO_VEHICLE_FERRY                                         :Jumbo Fahrzeugfähre
+STR_LARGE_COASTAL_TANKER                                        :Großes Küstenschiff (Tanker)
+STR_LARGE_COASTER                                               :Großer Küstenfrachter
+STR_LIVESTOCK_SHIP                                              :Viehtransporter
+STR_LOG_TUG                                                     :Schlepper um Holzstämme zu ziehen
+STR_PADDLE_STEAMER                                              :Schaufelraddampfer
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Schneller Katamaran zur Versorgung von Inseln und küstennahen Industrien
+STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Kleiner Frachter für Binnen- und küstennahe Gewässer
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kleines Mehrzweckschiff
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleiner Tanker für küstennahe und Binnengewässer
+STR_TRAWLER                                                     :Trawler (spezieller Frachtraum für Fisch)
+STR_VEHICLE_FERRY                                               :Fahrzeugfähre
 
 
 STR_GENERIC_REFIT_SUBTYPE                                       :({COMMA}{STRING})

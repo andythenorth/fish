@@ -34,29 +34,30 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Statek warsztat
 
 STR_BUY_MENU_TEXT                                               :Typ: {GOLD}{STRING}{}{STRING}
 
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Mały statek ogólnego przeznaczenia
-STR_GENERAL_PURPOSE_VESSEL                                      :Statek ogólnego przeznaczenia
+
+STR_BARGE_TUG                                                   :Holownik barek
+STR_CARGO_HOVERCRAFT                                            :Frachtowiec - poduszkowiec
+STR_CARGO_VESSEL_INLAND                                         :Frachtowiec do żeglugi śródlądowej
+STR_CATAMARAN_FAST_FERRY                                        :Szybki prom - katamaran
+STR_COASTAL_TANKER                                              :Tankowiec do żeglugi przybrzeżnej
+STR_COASTER                                                     :Frachtowiec do żeglugi przybrzeżnej
+STR_CONTAINER_FEEDER                                            :Mały kontenerowiec
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Szybki statek ogólnego przeznaczenia
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Statek dalekomorski ogólnego przeznaczenia
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Mały frachtowiec do żeglugi przybrzeżnej i śródlądowej
-STR_COASTER                                                     :Frachtowiec do żeglugi przybrzeżnej
-STR_LARGE_COASTER                                               :Duży frachtowiec do żeglugi przybrzeżnej
-STR_SMALL_TANKER_COASTAL_INLAND                                 :Mały tankowiec do żeglugi przybrzeżnej i śródlądowej
-STR_COASTAL_TANKER                                              :Tankowiec do żeglugi przybrzeżnej
-STR_LARGE_COASTAL_TANKER                                        :Duży tankowiec do żeglugi przybrzeżnej
-STR_CARGO_VESSEL_INLAND                                         :Frachtowiec do żeglugi śródlądowej
-STR_PADDLE_STEAMER                                              :Parowiec bocznokołowy
-STR_CARGO_HOVERCRAFT                                            :Frachtowiec - poduszkowiec
+STR_GENERAL_PURPOSE_VESSEL                                      :Statek ogólnego przeznaczenia
 STR_HYDROFOIL_FAST_FERRY                                        :Szybki prom - wodolot
-STR_CATAMARAN_FAST_FERRY                                        :Szybki prom - katamaran
-STR_VEHICLE_FERRY                                               :Prom do przewozu pojazdów
 STR_JUMBO_VEHICLE_FERRY                                         :Olbrzymi prom
-STR_LOG_TUG                                                     :Holownik do holowania pływających bali
-STR_CONTAINER_FEEDER                                            :Mały kontenerowiec
+STR_LARGE_COASTAL_TANKER                                        :Duży tankowiec do żeglugi przybrzeżnej
+STR_LARGE_COASTER                                               :Duży frachtowiec do żeglugi przybrzeżnej
 STR_LIVESTOCK_SHIP                                              :Statek do przewozu żywca
-STR_TRAWLER                                                     :Trawler (ładownie przeznaczone dla ryb)
-STR_BARGE_TUG                                                   :Holownik barek
+STR_LOG_TUG                                                     :Holownik do holowania pływających bali
+STR_PADDLE_STEAMER                                              :Parowiec bocznokołowy
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Szybki katamaran do zaopatrywania wysp i przemysłu morskiego
+STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Mały frachtowiec do żeglugi przybrzeżnej i śródlądowej
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Mały statek ogólnego przeznaczenia
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Mały tankowiec do żeglugi przybrzeżnej i śródlądowej
+STR_TRAWLER                                                     :Trawler (ładownie przeznaczone dla ryb)
+STR_VEHICLE_FERRY                                               :Prom do przewozu pojazdów
 
 
 STR_QUANTITY_WOOD                                               :ton drewna

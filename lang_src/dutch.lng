@@ -36,30 +36,31 @@ STR_BUY_MENU_TEXT                                               :Type: {GOLD}{ST
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} zakken post of {COMMA}t expressvracht
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} passagiers,  {COMMA} zakken post, {COMMA}t vis in het ruim, of {COMMA}t expressvracht op het dek
 
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein algemeen schip
-STR_GENERAL_PURPOSE_VESSEL                                      :Algemeen schip
-STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Snel algemeen schip
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Algemeen zeewaardig schip
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Klein vrachtschip voor kust en binnenwateren
-STR_COASTER                                                     :Kustvrachtschip
-STR_LARGE_COASTER                                               :Groot kustvrachtschip
-STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleine tanker voor kust en binnenwateren
-STR_COASTAL_TANKER                                              :Kusttanker
-STR_LARGE_COASTAL_TANKER                                        :Grote kusttanker
-STR_CARGO_VESSEL_INLAND                                         :Vrachtschip voor binnenwateren
-STR_PADDLE_STEAMER                                              :Raderstoomboot
-STR_FAST_PACKET_STEAMER                                         :Snelle rivierboot
-STR_CARGO_HOVERCRAFT                                            :Vrachthovercraft
-STR_HYDROFOIL_FAST_FERRY                                        :Snelle passagiersvleugelboot
-STR_CATAMARAN_FAST_FERRY                                        :Snelle catamaran veerboot
-STR_VEHICLE_FERRY                                               :Autoveerboot
-STR_JUMBO_VEHICLE_FERRY                                         :Supergrote veerboot
-STR_LOG_TUG                                                     :Sleepboot voor het slepen van drijvende boomstammen
-STR_CONTAINER_FEEDER                                            :Klein container schip
-STR_LIVESTOCK_SHIP                                              :Veeschip
-STR_TRAWLER                                                     :Trawler (met een ruim voor vis)
+
 STR_BARGE_TUG                                                   :Bakkensleepboot
+STR_CARGO_HOVERCRAFT                                            :Vrachthovercraft
+STR_CARGO_VESSEL_INLAND                                         :Vrachtschip voor binnenwateren
+STR_CATAMARAN_FAST_FERRY                                        :Snelle catamaran veerboot
+STR_COASTAL_TANKER                                              :Kusttanker
+STR_COASTER                                                     :Kustvrachtschip
+STR_CONTAINER_FEEDER                                            :Klein container schip
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Snel algemeen schip
+STR_FAST_PACKET_STEAMER                                         :Snelle rivierboot
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Algemeen zeewaardig schip
+STR_GENERAL_PURPOSE_VESSEL                                      :Algemeen schip
+STR_HYDROFOIL_FAST_FERRY                                        :Snelle passagiersvleugelboot
+STR_JUMBO_VEHICLE_FERRY                                         :Supergrote veerboot
+STR_LARGE_COASTAL_TANKER                                        :Grote kusttanker
+STR_LARGE_COASTER                                               :Groot kustvrachtschip
+STR_LIVESTOCK_SHIP                                              :Veeschip
+STR_LOG_TUG                                                     :Sleepboot voor het slepen van drijvende boomstammen
+STR_PADDLE_STEAMER                                              :Raderstoomboot
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Snelle catamaran voor het bevoorraden van eilanden en offshore industrie
+STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Klein vrachtschip voor kust en binnenwateren
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein algemeen schip
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleine tanker voor kust en binnenwateren
+STR_TRAWLER                                                     :Trawler (met een ruim voor vis)
+STR_VEHICLE_FERRY                                               :Autoveerboot
 
 
 STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}{STRING})

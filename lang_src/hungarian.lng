@@ -18,20 +18,21 @@ STR_NAME_SUFFIX_TANKER                                          :Tankhajó
 
 STR_BUY_MENU_TEXT                                               :Típus: {GOLD}{STRING}{}{STRING}
 
-STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Gyors szállítóhajó
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Kisebb teherhajó partmenti és belvizi szállításra.
-STR_COASTER                                                     :Partmenti teherszállító
-STR_LARGE_COASTER                                               :Nagy partmenti teherhajó
-STR_LARGE_COASTAL_TANKER                                        :Nagy partmenti tankhajó
-STR_CARGO_VESSEL_INLAND                                         :Teherhajó belső vizekre
-STR_PADDLE_STEAMER                                              :Gőzhajó
-STR_VEHICLE_FERRY                                               :Autós komp
-STR_LOG_TUG                                                     :Vontatóhajó úszó farönkökhöz
-STR_CONTAINER_FEEDER                                            :Kis konténerszállító hajó
-STR_LIVESTOCK_SHIP                                              :Állatszállító hajó
-STR_TRAWLER                                                     :Halászhajó (csak halszállításra)
+
 STR_BARGE_TUG                                                   :vontatóhajó
+STR_CARGO_VESSEL_INLAND                                         :Teherhajó belső vizekre
+STR_COASTER                                                     :Partmenti teherszállító
+STR_CONTAINER_FEEDER                                            :Kis konténerszállító hajó
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Gyors szállítóhajó
+STR_LARGE_COASTAL_TANKER                                        :Nagy partmenti tankhajó
+STR_LARGE_COASTER                                               :Nagy partmenti teherhajó
+STR_LIVESTOCK_SHIP                                              :Állatszállító hajó
+STR_LOG_TUG                                                     :Vontatóhajó úszó farönkökhöz
+STR_PADDLE_STEAMER                                              :Gőzhajó
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Gyors katamarán a szigetek és a partmenti gyárak ellátásához.
+STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Kisebb teherhajó partmenti és belvizi szállításra.
+STR_TRAWLER                                                     :Halászhajó (csak halszállításra)
+STR_VEHICLE_FERRY                                               :Autós komp
 
 
 STR_QUANTITY_WOOD                                               :tonna fa

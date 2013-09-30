@@ -26,18 +26,19 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Veeldoelige Sle
 
 STR_BUY_MENU_TEXT                                               :Tipe: {GOLD}{STRING}{}{STRING}
 
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
-STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige seegaande vaartuig
-STR_COASTER                                                     :Kusvaarder
-STR_LARGE_COASTER                                               :Groot Kusvaarder
-STR_COASTAL_TANKER                                              :Kus tenkskip
-STR_LARGE_COASTAL_TANKER                                        :Groot Kus tenkskip
-STR_CARGO_VESSEL_INLAND                                         :Vragskip vir binnelansdse waterweë (riviere, kanale en mere)
-STR_PADDLE_STEAMER                                              :Spaanstoomboot
+
 STR_CARGO_HOVERCRAFT                                            :Vrag skeertuig
-STR_HYDROFOIL_FAST_FERRY                                        :Vinnige Skeerveerboot
+STR_CARGO_VESSEL_INLAND                                         :Vragskip vir binnelansdse waterweë (riviere, kanale en mere)
 STR_CATAMARAN_FAST_FERRY                                        :Vinnige Katamaran veerboot
+STR_COASTAL_TANKER                                              :Kus tenkskip
+STR_COASTER                                                     :Kusvaarder
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige seegaande vaartuig
+STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
+STR_HYDROFOIL_FAST_FERRY                                        :Vinnige Skeerveerboot
+STR_LARGE_COASTAL_TANKER                                        :Groot Kus tenkskip
+STR_LARGE_COASTER                                               :Groot Kusvaarder
+STR_PADDLE_STEAMER                                              :Spaanstoomboot
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein veeldoelige vaartuig
 STR_VEHICLE_FERRY                                               :Voertuig veerboot
 
 
