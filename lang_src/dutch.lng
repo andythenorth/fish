@@ -20,15 +20,19 @@ STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Containerschip
 STR_NAME_SUFFIX_FERRY                                           :Veerboot
 STR_NAME_SUFFIX_FAST_FERRY                                      :Snelle veerboot
 STR_NAME_SUFFIX_FREIGHTER                                       :Vrachtschip
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Vrachtsleepboot
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Vleugelboot
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Veeschip
 STR_NAME_SUFFIX_LOG_TUG                                         :Houtsleepboot
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Raderstoomboot
+STR_NAME_SUFFIX_REEFER                                          :Koelschip
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Snel bevoorradingsschip
 STR_NAME_SUFFIX_STEAMER                                         :Stoomboot
 STR_NAME_SUFFIX_TANKER                                          :Tanker
+STR_NAME_SUFFIX_TANKER_BARGE                                    :Tanksleepboot
 STR_NAME_SUFFIX_TRAWLER                                         :Trawler
+STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Utiliteitsschip
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Algemene sleepboot
 
 
@@ -56,6 +60,7 @@ STR_LIVESTOCK_SHIP                                              :Veeschip
 STR_LOG_TUG                                                     :Sleepboot voor het slepen van drijvende boomstammen
 STR_PADDLE_STEAMER                                              :Raderstoomboot
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Snelle catamaran voor het bevoorraden van eilanden en offshore industrie
+STR_REEFER                                                      :Gekoeld schip (hogere vergoeding voor bederfelijke goederen)
 STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Klein vrachtschip voor kust en binnenwateren
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein algemeen schip
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleine tanker voor kust en binnenwateren
