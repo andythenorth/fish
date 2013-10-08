@@ -10,7 +10,10 @@ STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de 
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos y el resto de tipos de transporte
 
 
+STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
+STR_NAME_SUFFIX_FAST_FERRY                                      :Ferry rápido
 STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
+STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 
 
@@ -24,7 +27,7 @@ STR_COASTAL_TANKER                                              :Barco cisterna 
 STR_COASTER                                                     :Barco costero
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
-STR_HYDROFOIL_FAST_FERRY                                        :Ferry rápido hydrofoil
+STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
 STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
 STR_LARGE_COASTER                                               :Barco costero grande
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
@@ -33,4 +36,7 @@ STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco 
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
 
 
+STR_GENERIC_REFIT_SUBTYPE                                       :({COMMA}{STRING})
 STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Capacidades de reforma: {GOLD}{COMMA}, {COMMA} o {COMMA}{STRING}
+STR_UNIT_TONNES                                                 :toneladas
+STR_UNIT_ITEMS                                                  :objetos
