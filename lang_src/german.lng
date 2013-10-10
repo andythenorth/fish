@@ -17,6 +17,7 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Schleppkahn
 STR_NAME_SUFFIX_CATAMARAN                                       :{G=m}Katermaran
+STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Containerschiff
 STR_NAME_SUFFIX_FERRY                                           :Fähre
 STR_NAME_SUFFIX_FAST_FERRY                                      :Schnelle Fähre
 STR_NAME_SUFFIX_FREIGHTER                                       :Frachter
@@ -26,11 +27,14 @@ STR_NAME_SUFFIX_HYDROFOIL                                       :Tragflügelboot
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Viehtransporter
 STR_NAME_SUFFIX_LOG_TUG                                         :Holzschlepper
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Schaufelraddampfer
+STR_NAME_SUFFIX_REEFER                                          :Kühlschiff
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Schnelles Versorgungsschiff
 STR_NAME_SUFFIX_STEAMER                                         :Dampfer
 STR_NAME_SUFFIX_TANKER                                          :Tanker
 STR_NAME_SUFFIX_TANKER_BARGE                                    :Lastkahn (Tanker)
 STR_NAME_SUFFIX_TRAWLER                                         :Fischdampfer
+STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Mehrzweckschiff
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Mehrzweckschlepper
 
 
 STR_BUY_MENU_TEXT                                               :Typ: {GOLD}{STRING}{}{STRING}
@@ -57,6 +61,7 @@ STR_LIVESTOCK_SHIP                                              :Viehtransporter
 STR_LOG_TUG                                                     :Schlepper um Holzstämme zu ziehen
 STR_PADDLE_STEAMER                                              :Schaufelraddampfer
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Schneller Katamaran zur Versorgung von Inseln und küstennahen Industrien
+STR_REEFER                                                      :Kühlschiff (erhöhter Gewinn beim Transport verderblicher Frachten)
 STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Kleiner Frachter für Binnen- und küstennahe Gewässer
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kleines Mehrzweckschiff
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleiner Tanker für küstennahe und Binnengewässer
