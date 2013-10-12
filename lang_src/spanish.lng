@@ -12,8 +12,10 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocidad del b
 
 
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
+STR_NAME_SUFFIX_FERRY                                           :Ferry
 STR_NAME_SUFFIX_FAST_FERRY                                      :Ferry rápido
 STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
+STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 
@@ -26,6 +28,7 @@ STR_CARGO_VESSEL_INLAND                                         :Barco de carga 
 STR_CATAMARAN_FAST_FERRY                                        :Catamarán rápido
 STR_COASTAL_TANKER                                              :Barco cisterna costero
 STR_COASTER                                                     :Barco costero
+STR_CONTAINER_FEEDER                                            :Barco pequeño portacontenedores
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
@@ -39,5 +42,6 @@ STR_VEHICLE_FERRY                                               :Ferry de vehíc
 
 STR_GENERIC_REFIT_SUBTYPE                                       :({COMMA}{STRING})
 STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Capacidades de reforma: {GOLD}{COMMA}, {COMMA} o {COMMA}{STRING}
+STR_QUANTITY_WOOD                                               :toneladas de madera
 STR_UNIT_TONNES                                                 :toneladas
 STR_UNIT_ITEMS                                                  :objetos
