@@ -18,6 +18,7 @@ STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
+STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
 
 
 STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{STRING}{}{STRING}
@@ -37,6 +38,7 @@ STR_LARGE_COASTER                                               :Barco costero g
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
 STR_PADDLE_STEAMER                                              :Vapor de ruedas
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
+STR_TRAWLER                                                     :Barco rastreador (pesquero con redes de arrastre)
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
 
 
