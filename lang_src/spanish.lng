@@ -9,6 +9,9 @@ STR_EMPTY                                                       :
 STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de construcción mejorados para canales, acueductos y dársenas
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos y el resto de tipos de transporte
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocidad del barco
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lento, como ver secarse la pintura
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Perfecto
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Rápido, podríamos decir que es hacer una pequeña trampa
 
 
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
@@ -18,6 +21,7 @@ STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
+STR_NAME_SUFFIX_REEFER                                          :Contenedor refrigerado
 STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
 
 
@@ -33,10 +37,12 @@ STR_CONTAINER_FEEDER                                            :Barco pequeño 
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
+STR_JUMBO_VEHICLE_FERRY                                         :Ferry gigante
 STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
 STR_LARGE_COASTER                                               :Barco costero grande
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
 STR_PADDLE_STEAMER                                              :Vapor de ruedas
+STR_REEFER                                                      :Barco refrigerado (ideal para un estado óptimo de las cargas perecederas así como mejorar su ratio de pagos)
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
 STR_TRAWLER                                                     :Barco rastreador (pesquero con redes de arrastre)
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
@@ -45,5 +51,6 @@ STR_VEHICLE_FERRY                                               :Ferry de vehíc
 STR_GENERIC_REFIT_SUBTYPE                                       :({COMMA}{STRING})
 STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Capacidades de reforma: {GOLD}{COMMA}, {COMMA} o {COMMA}{STRING}
 STR_QUANTITY_WOOD                                               :toneladas de madera
+STR_QUANTITY_LIVESTOCK                                          :cabezas de ganado
 STR_UNIT_TONNES                                                 :toneladas
 STR_UNIT_ITEMS                                                  :objetos
