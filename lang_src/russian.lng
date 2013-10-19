@@ -7,11 +7,32 @@
 STR_EMPTY                                                       :
 
 
+STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Скорость судна
+
+
+STR_NAME_SUFFIX_BARGE_TUG                                       :Буксир
+STR_NAME_SUFFIX_CATAMARAN                                       :Катамаран
+STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Контейнеровоз
+STR_NAME_SUFFIX_FERRY                                           :Паром
+STR_NAME_SUFFIX_FAST_FERRY                                      :Скоростной паром
+STR_NAME_SUFFIX_FREIGHTER                                       :Сухогруз
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Баржа
+STR_NAME_SUFFIX_HOVERCRAFT                                      :Судно на воздушной подушке
+STR_NAME_SUFFIX_HYDROFOIL                                       :Судно на подводных крыльях
+STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Судно-скотовоз
+STR_NAME_SUFFIX_STEAMER                                         :Пароход
 
 
 
 
+STR_BARGE_TUG                                                   :Буксир
+STR_CARGO_HOVERCRAFT                                            :Грузовое суда на воздушной подушке
+STR_CATAMARAN_FAST_FERRY                                        :Двухкорпусный скоростной паром
+STR_COASTAL_TANKER                                              :Танкер класса река-море
+STR_JUMBO_VEHICLE_FERRY                                         :Огромный паром
+STR_LARGE_COASTER                                               :Большой сухогруз класса река-море
+STR_PADDLE_STEAMER                                              :Колесный пароход
+STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Быстрый катамаран для обслуживания островов и морских объектов
 
 
-
-
+STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}{STRING})
