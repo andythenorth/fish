@@ -15,19 +15,19 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideális
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Csalás
 
 
-STR_NAME_SUFFIX_BARGE_TUG                                       :Uszály
-STR_NAME_SUFFIX_CATAMARAN                                       :Katamarán
-STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Konténerszállító hajó
-STR_NAME_SUFFIX_FERRY                                           :Komp
-STR_NAME_SUFFIX_FAST_FERRY                                      :Gyors komp
-STR_NAME_SUFFIX_FREIGHTER                                       :Teherhajó
+STR_NAME_SUFFIX_BARGE_TUG                                       :uszály
+STR_NAME_SUFFIX_CATAMARAN                                       :katamarán
+STR_NAME_SUFFIX_CONTAINER_FEEDER                                :konténerszállító hajó
+STR_NAME_SUFFIX_FERRY                                           :komp
+STR_NAME_SUFFIX_FAST_FERRY                                      :gyors komp
+STR_NAME_SUFFIX_FREIGHTER                                       :teherhajó
 STR_NAME_SUFFIX_FREIGHT_BARGE                                   :uszály
-STR_NAME_SUFFIX_HOVERCRAFT                                      :Légpárnás hajó
+STR_NAME_SUFFIX_HOVERCRAFT                                      :légpárnás hajó
 STR_NAME_SUFFIX_HYDROFOIL                                       :szárnyashajó
-STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Állatszállító hajó
-STR_NAME_SUFFIX_LOG_TUG                                         :Farönk vontatóhajó
+STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :állatszállító hajó
+STR_NAME_SUFFIX_LOG_TUG                                         :farönkvontató hajó
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :gőzhajó
-STR_NAME_SUFFIX_REEFER                                          :Hűtőhajó
+STR_NAME_SUFFIX_REEFER                                          :hűtőhajó
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :gyors katamarán
 STR_NAME_SUFFIX_STEAMER                                         :gőzhajó
 STR_NAME_SUFFIX_TANKER                                          :Tankhajó
@@ -48,7 +48,7 @@ STR_CARGO_VESSEL_INLAND                                         :Teherhajó bels
 STR_CATAMARAN_FAST_FERRY                                        :Gyors katamarán komp
 STR_COASTAL_TANKER                                              :Tengerparti tankhajó
 STR_COASTER                                                     :Partmenti teherszállító
-STR_CONTAINER_FEEDER                                            :Kis konténerszállító hajó
+STR_CONTAINER_FEEDER                                            :Konténerszállító hajó
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Gyors szállítóhajó
 STR_FAST_PACKET_STEAMER                                         :Gyors gőzhajó
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Általános tengerjáró szállítóhajó
@@ -65,7 +65,7 @@ STR_REEFER                                                      :Hűtőkamrás h
 STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Kisebb teherhajó partmenti és belvizi szállításra.
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kis általános célú szállítóhajó
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kis tankhajó partmenti és belvizi szállításra
-STR_TRAWLER                                                     :Halászhajó (csak halszállításra)
+STR_TRAWLER                                                     :Halászhajó (elsősorban halszállításra)
 STR_VEHICLE_FERRY                                               :Autós komp
 
 
