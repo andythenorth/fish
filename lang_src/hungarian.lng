@@ -30,9 +30,9 @@ STR_NAME_SUFFIX_PADDLE_STEAMER                                  :gőzhajó
 STR_NAME_SUFFIX_REEFER                                          :hűtőhajó
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :gyors katamarán
 STR_NAME_SUFFIX_STEAMER                                         :gőzhajó
-STR_NAME_SUFFIX_TANKER                                          :Tankhajó
-STR_NAME_SUFFIX_TANKER_BARGE                                    :Olajszállító uszály
-STR_NAME_SUFFIX_TRAWLER                                         :Halász
+STR_NAME_SUFFIX_TANKER                                          :tankhajó
+STR_NAME_SUFFIX_TANKER_BARGE                                    :olajszállító uszály
+STR_NAME_SUFFIX_TRAWLER                                         :halászhajó
 STR_NAME_SUFFIX_UTILITY_VESSEL                                  :szállítóhajó
 STR_NAME_SUFFIX_UTILITY_TUG                                     :vontatóhajó
 
