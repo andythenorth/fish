@@ -1,0 +1,43 @@
+##grflangid 0x2f
+##plural 0
+##gender masculine feminine neuter
+##case small
+
+
+STR_EMPTY                                                       :
+
+
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Som å se maling tørke
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideell
+STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Juksing
+
+
+STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
+STR_NAME_SUFFIX_FERRY                                           :Ferje
+STR_NAME_SUFFIX_FAST_FERRY                                      :Rask ferje
+STR_NAME_SUFFIX_FREIGHTER                                       :Godsbåt
+STR_NAME_SUFFIX_HOVERCRAFT                                      :Luftputebåt
+STR_NAME_SUFFIX_HYDROFOIL                                       :Hydrofoil
+STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Buskaps-skip
+STR_NAME_SUFFIX_TANKER                                          :Tankskip
+
+
+STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Kapasitet når ombygd: {GOLD}{COMMA} postsekker eller {COMMA}t ekspressgods
+
+
+STR_CARGO_HOVERCRAFT                                            :Lutputebåt for gods
+STR_CATAMARAN_FAST_FERRY                                        :Rask ferjekatamaran
+STR_CONTAINER_FEEDER                                            :Lite kontainerskip
+STR_HYDROFOIL_FAST_FERRY                                        :Rask hydrofoilferje
+STR_LIVESTOCK_SHIP                                              :Buskaps-skip
+STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Rask katamaran for å kjøre til øyer og offshoreindustrier
+STR_REEFER                                                      :Kjøleskip (forbedret betaling for varer som kan bli dårlig)
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Lite tankskip for kyst og innland
+STR_VEHICLE_FERRY                                               :Bilferje
+
+
+STR_GENERIC_REFIT_SUBTYPE                                       :({COMMA}{STRING})
+STR_QUANTITY_WOOD                                               :tonn tømmer
+STR_QUANTITY_LIVESTOCK                                          :buskap
+STR_UNIT_TONNES                                                 :tonn
