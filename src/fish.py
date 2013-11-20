@@ -30,6 +30,7 @@ from ships import registered_ships
 
 from ships import altamira_freighter
 from ships import barletta_paddle_steamer
+from ships import cadiz_freighter
 from ships import cape_spear_trawler
 from ships import capo_sandalo_vehicle_ferry
 from ships import castle_point_steamer
@@ -47,16 +48,17 @@ from ships import little_cumbrae_freighter
 from ships import marstein_freighter
 from ships import maspalomas_freighter
 from ships import matsushima_hydrofoil
+from ships import meteor_freighter
 from ships import mount_blaze_catamaran_ferry
 from ships import nieuwpoort_container_feeder
 from ships import patos_island_vehicle_ferry
 from ships import pine_island_log_tug
-from ships import saint_marie_barge_tug
+#from ships import saint_marie_barge_tug
 from ships import santorini_freighter
 from ships import shark_island_livestock_ship
 from ships import sunk_rock_ferry
 from ships import thunder_bay_hovercraft
-from ships import whitgift_freight_barge
+#from ships import whitgift_freight_barge
 from ships import yokohama_tanker
 
 
