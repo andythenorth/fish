@@ -252,6 +252,8 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
         self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
         self.default_cargo = 'LVST'
         self.default_cargo_capacity = self.capacities_refittable[0]
+         # kludge to adjust canal speed of the one reefer ship.  
+        self.canal_speed = (0.65, 1)[self.inland_capable]
 
 
 class LogTug(MixinRefittableCapacity, Ship):
@@ -368,7 +370,8 @@ class Reefer(Ship):
         self.default_cargo = 'GOOD'
         self.default_cargo_capacity = self.capacity_freight
         self.cargo_age_period = 2 * global_constants.CARGO_AGE_PERIOD # improved decay rate
-
+         # kludge to adjust canal speed of the one reefer ship.  
+        self.canal_speed = (0.6, 1)[self.inland_capable]
 
 class ContainerCarrier(Ship):
     """
@@ -383,4 +386,5 @@ class ContainerCarrier(Ship):
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'GOOD'
         self.default_cargo_capacity = self.capacity_freight
-
+         # kludge to adjust canal speed of the one fast ocean-going container feeder.  
+        self.canal_speed = (0.45, 1)[self.inland_capable]
