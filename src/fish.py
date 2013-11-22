@@ -53,7 +53,7 @@ from ships import mount_blaze_catamaran_ferry
 from ships import nieuwpoort_container_feeder
 from ships import patos_island_vehicle_ferry
 from ships import pine_island_log_tug
-#from ships import saint_marie_barge_tug
+from ships import saint_marie_barge_tug
 from ships import santorini_freighter
 from ships import shark_island_livestock_ship
 from ships import sunk_rock_ferry

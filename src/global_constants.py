@@ -29,8 +29,7 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'shark_island_livestock_ship',
                        'nieuwpoort_container_feeder',
                        'whitgift_freight_barge',
-                       #'saint_marie_barge_tug'
-                       ]
+                       'saint_marie_barge_tug']
 
 # shared lists of allowed classes, shared across multiple ship types
 base_refits_by_class = {'empty': [],
