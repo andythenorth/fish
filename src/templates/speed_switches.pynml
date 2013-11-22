@@ -20,8 +20,3 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_speed, param_adjust_ship_sp
     1: ${ship.get_speeds_adjusted_for_load_amount(1)[4]};
     2: ${ship.get_speeds_adjusted_for_load_amount(2)[4]};
 }
-switch (FEAT_SHIPS, SELF, ${ship.id}_switch_available_ship_type, param_set_available_ship_type) {
-    0: ${1 if 'sea' in ship.vehicle_groups or 'river' in ship.vehicle_groups else 0};
-    1: ${1 if 'sea' in ship.vehicle_groups else 0};
-    2: ${1 if 'river' in ship.vehicle_groups else 0};
-}

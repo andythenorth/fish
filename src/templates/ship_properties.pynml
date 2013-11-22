@@ -43,5 +43,20 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
     }
 }
 
+if (param_set_available_ship_type==1) {
+    item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
+        property {
+            climates_available:             ${'ALL_CLIMATES' if 'sea' in ship.vehicle_groups else 'NO_CLIMATE'};
+        }
+    }
+}
+if (param_set_available_ship_type==2) {
+    item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
+        property {
+            climates_available:             ${'ALL_CLIMATES' if 'river' in ship.vehicle_groups else 'NO_CLIMATE'}; // nml constant
+        }
+    }
+}
+
 // -- end ${ship.title} -- <!--! another comment to aid reading the final nml  -->
 
