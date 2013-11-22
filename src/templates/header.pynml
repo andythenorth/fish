@@ -28,6 +28,20 @@ grf {
             };
         }
     }
+    param 2 {
+        param_set_available_ship_type {
+            type:   int;
+            name:   string(STR_PARAM_SET_AVAILABLE_SHIP_TYPES);
+            min_value: 0;
+            max_value: 2;
+            def_value: 0;
+            names: {
+                0: string(STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0);
+                1: string(STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1);
+                2: string(STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2);
+            };
+        }
+    }
 }
 
 basecost {
