@@ -67,7 +67,7 @@ def get_ships_in_buy_menu_order():
     for id in global_constants.buy_menu_sort_order:
         found = False
         for ship in registered_ships:
-            print ship.vehicle_groups
+            if ship.id == id:
                 sorted_ships.append(ship)
                 found = True
         if not found:
