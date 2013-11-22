@@ -21,6 +21,7 @@ ship = GeneralCargoVessel(id = 'saint_marie_barge_tug',
             str_type_info = 'BARGE_TUG',
             vehicle_life = 55,
             gross_tonnage = 45,
+            vehicle_groups = ['river'], 
             graphics_status = 'Work in Progress - Coxx',)
 
 ship.add_model_variant(intro_date=0,

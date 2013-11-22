@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
-            numeric_id = 160,
+            numeric_id = 310,
             title = 'Whitgift [Freight Barge]',
             capacity_cargo_holds = 55,
             replacement_id = '-none',
@@ -21,6 +21,7 @@ ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
             str_type_info = 'SMALL_FREIGHTER_COASTAL_INLAND',
             vehicle_life = 60,
             gross_tonnage = 60,
+            vehicle_groups = ['river'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

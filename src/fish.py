@@ -58,7 +58,7 @@ from ships import santorini_freighter
 from ships import shark_island_livestock_ship
 from ships import sunk_rock_ferry
 from ships import thunder_bay_hovercraft
-#from ships import whitgift_freight_barge
+from ships import whitgift_freight_barge
 from ships import yokohama_tanker
 
 

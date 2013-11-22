@@ -13,13 +13,11 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'fish_island_trawler',
                        'cape_spear_trawler',
                        'thunder_bay_hovercraft',
-                       #'whitgift_freight_barge',
                        'meteor_freighter',
                        'little_cumbrae_freighter',
                        'marstein_freighter',
                        'altamira_freighter',
                        'cadiz_freighter',
-                       #'saint_marie_barge_tug',
                        'frisco_bay_freighter',
                        'santorini_freighter',
                        'maspalomas_freighter',
@@ -29,7 +27,10 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'yokohama_tanker',
                        'grindavik_reefer',
                        'shark_island_livestock_ship',
-                       'nieuwpoort_container_feeder']
+                       'nieuwpoort_container_feeder',
+                       'whitgift_freight_barge',
+                       #'saint_marie_barge_tug'
+                       ]
 
 # shared lists of allowed classes, shared across multiple ship types
 base_refits_by_class = {'empty': [],
