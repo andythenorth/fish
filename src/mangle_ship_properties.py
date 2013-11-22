@@ -6,7 +6,7 @@ sys.path.append(os.path.join('src')) # add to the module search path
 
 property_to_move = 'sea_capable'
 property_to_insert_after = 'gross_tonnage'
-line_to_insert = "            graphics_status = 'Unstarted',"
+line_to_insert = "            vehicle_groups = ['sea'], \n"
 
 import fish
 
@@ -48,6 +48,6 @@ def insert_property(filename):
 
 
 for filename in filenames:
-    pass
+    #pass
     #move_property(filename)
-    #insert_property(filename)
+    insert_property(filename)
