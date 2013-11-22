@@ -41,6 +41,7 @@
                 <th>Numeric ID</th>
                 <th>ID</th>
                 <th>Title</th>
+                <th>Vehicle Group(s)</th>
             </thead>
             <tbody>
                 <tal:vehicles repeat="vehicle sorted(ships, key=lambda vehicle: vehicle.numeric_id)">
@@ -48,6 +49,7 @@
                         <td>${vehicle.numeric_id}</td>
                         <td>${vehicle.id}</td>
                         <td>${vehicle.title}</td>
+                        <td>${vehicle.vehicle_groups}</td>
                     </tr>
                 </tal:vehicles>
             </tbody>
