@@ -21,6 +21,7 @@ ship = LivestockCarrier(id = 'shark_island_livestock_ship',
             str_type_info = 'LIVESTOCK_SHIP',
             vehicle_life = 35,
             gross_tonnage = 650,
+            vehicle_groups = ['sea'], 
             graphics_status = 'Work in Progress - DanMacK',)
 
 ship.add_model_variant(intro_date=0,

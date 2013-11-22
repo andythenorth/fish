@@ -21,6 +21,7 @@ ship = Reefer(id = 'grindavik_reefer',
             str_type_info = 'REEFER',
             vehicle_life = 35,
             gross_tonnage = 960,
+            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

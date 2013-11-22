@@ -23,6 +23,7 @@ ship = PacketBoat(id = 'endeavour_utility_catamaran',
             str_type_info = 'RIG_SUPPLY_FAST_CATAMARAN',
             vehicle_life = 25,
             gross_tonnage = 70,
+            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,
