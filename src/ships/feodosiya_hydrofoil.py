@@ -23,7 +23,7 @@ ship = Hydrofoil(id = 'feodosiya_hydrofoil',
             str_type_info = 'HYDROFOIL_FAST_FERRY',
             vehicle_life = 35,
             gross_tonnage = 64,
-            vehicle_groups = ['sea'], 
+            vehicle_groups = ['sea', 'river'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

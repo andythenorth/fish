@@ -23,7 +23,7 @@ ship = PacketBoat(id = 'harbour_point_utility_vessel',
             str_type_info = 'SMALL_GENERAL_PURPOSE_VESSEL',
             vehicle_life = 40,
             gross_tonnage = 30,
-            vehicle_groups = ['sea'], 
+            vehicle_groups = ['sea', 'river'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,
