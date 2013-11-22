@@ -12,7 +12,8 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Ship speed
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Like watching paint dry
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Available types of ships
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Available Ships
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Play with all ships available, or limit to sea ships (may travel slowly on rivers and canals), or river boats (may travel slowly at sea).
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :All Ships
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Sea Ships Only
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :River Boats Only
