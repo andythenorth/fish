@@ -50,6 +50,8 @@ class Ship(object):
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
+        # groups used to turn ships on / off via parameter
+        self.vehicle_groups = kwargs.get('vehicle_groups', None)
         # create a structure to hold model variants
         self.model_variants = []
         # some project management stuff
