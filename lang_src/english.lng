@@ -49,6 +49,7 @@ STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capaci
 STR_BARGE_TUG                                                   :Barge tug
 STR_CARGO_HOVERCRAFT                                            :Freight hovercraft
 STR_CARGO_VESSEL_INLAND                                         :Freighter for inland waterways
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Small freighter for inland waterways
 STR_CATAMARAN_FAST_FERRY                                        :Catamaran fast ferry
 STR_COASTAL_TANKER                                              :Coastal tanker
 STR_COASTER                                                     :Coastal freighter
