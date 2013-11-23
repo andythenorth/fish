@@ -31,7 +31,7 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'whitgift_freight_barge',
                        'saint_marie_barge_tug',
                        'constance_freight_barge',
-                       'dieze_container_feeder']
+                       'dieze_container_barge']
 
 # shared lists of allowed classes, shared across multiple ship types
 base_refits_by_class = {'empty': [],
