@@ -69,7 +69,7 @@ STR_LOG_TUG                                                     :Tugboat for tow
 STR_PADDLE_STEAMER                                              :Paddle steamer
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Fast catamaran for supplying islands and offshore industries
 STR_REEFER                                                      :Refrigerated ship (improved payment rate for perishable cargos)
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Small freighter for coastal and inland waterways
+STR_SMALL_FREIGHTER                                             :Small Freighter
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Small general purpose vessel
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Small tanker for coastal and inland waterways
 STR_TRAWLER                                                     :Trawler (dedicated hold for fish)

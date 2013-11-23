@@ -61,7 +61,7 @@ STR_LOG_TUG                                                     :Sleepboot voor 
 STR_PADDLE_STEAMER                                              :Raderstoomboot
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Snelle catamaran voor het bevoorraden van eilanden en offshore industrie
 STR_REEFER                                                      :Gekoeld schip (hogere vergoeding voor bederfelijke goederen)
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Klein vrachtschip voor kust en binnenwateren
+STR_SMALL_FREIGHTER                                      :Klein vrachtschip voor kust en binnenwateren
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein algemeen schip
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleine tanker voor kust en binnenwateren
 STR_TRAWLER                                                     :Trawler (met een ruim voor vis)

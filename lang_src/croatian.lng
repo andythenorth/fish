@@ -63,7 +63,7 @@ STR_LOG_TUG                                                     :Remorker za vu�
 STR_PADDLE_STEAMER                                              :Parobrod s lopaticama
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Brzi katamaran za opskrbu otoka i offshore industrija
 STR_REEFER                                                      :Brod-hladnjača (veći iznosi naplate za kvarljivu robu)
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Mali teretni brod za obalnu plovidbu i unutarnje vode
+STR_SMALL_FREIGHTER                                      :Mali teretni brod za obalnu plovidbu i unutarnje vode
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Mali brod za opći teret
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Mali tanker za obalnu plovidbu i unutarnje vode
 STR_TRAWLER                                                     :Koćarica (sa štivama za ribu)

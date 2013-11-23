@@ -44,7 +44,7 @@ STR_LOG_TUG                                                     :Remolcador de t
 STR_PADDLE_STEAMER                                              :Vapor de ruedas
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamarán rápido para el suministro a las islas e industrias marinas
 STR_REEFER                                                      :Barco refrigerado (ideal para un estado óptimo de las cargas perecederas así como mejorar su ratio de pagos)
-STR_SMALL_FREIGHTER_COASTAL_INLAND                              :Carguero pequeño para la costa y vías fluviales (ríos, canales y lagos)
+STR_SMALL_FREIGHTER                                      :Carguero pequeño para la costa y vías fluviales (ríos, canales y lagos)
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
 STR_TRAWLER                                                     :Barco rastreador (pesquero con redes de arrastre)
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
