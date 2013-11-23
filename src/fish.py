@@ -35,6 +35,7 @@ from ships import cape_spear_trawler
 from ships import capo_sandalo_vehicle_ferry
 from ships import castle_point_steamer
 from ships import constance_freight_barge
+from ships import dieze_container_feeder
 from ships import eddystone_tanker
 from ships import endeavour_utility_catamaran
 from ships import enoshima_catamaran_ferry
