@@ -1,2 +1,38 @@
 Changelog
 =========
+
+-------
+Alpha 2
+-------
+
+**Not savegame compatible with Alpha 1 (ship IDs changed).**
+
+*New Features / Changes*
+
+- create two groups of ships: Sea Ships and River Boats, which can be turned on/off by parameter
+- provide a basic group of river boats (unfinished)
+    - most river boats have reduced performance at sea
+    - added Geneva and Constance (large freight barges) and Dieze Container Carrier (offsets known to be wrong)
+- Saint Marie tug now 200t capacity (offsets known to be wrong)
+- introduce Cadiz and Meteor freighters and shuffle other freighter dates and capacities for gameplay balance
+- reduce canal / river speed of the faster sea freighters for gameplay balance
+- Barletta Paddle Steamer now available from 1870, not 1878
+
+*Fixes*
+
+- Grindavik Reefer
+    - improved sprites (DanMacK) 
+    - spritesheet missing rows
+    - removed flashing pixels
+- remove white pixel from Little Cumbrae Freigher
+
+*Language Updates*
+
+- Hungarian (zaza)
+- Norwegian (Trond)
+
+-------
+Alpha 1
+-------
+
+First release for testing
