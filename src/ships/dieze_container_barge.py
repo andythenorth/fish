@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, ContainerCarrier
 
 ship = ContainerCarrier(id = 'dieze_container_barge',
-            numeric_id = 340,
+            numeric_id = 350,
             title = 'Dieze [Container Barge]',
             capacity_cargo_holds = 350,
             replacement_id = '-none',

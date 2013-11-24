@@ -30,6 +30,7 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'nieuwpoort_container_feeder',
                        'whitgift_freight_barge',
                        'saint_marie_barge_tug',
+                       'geneva_freight_barge',
                        'constance_freight_barge',
                        'dieze_container_barge']
 
