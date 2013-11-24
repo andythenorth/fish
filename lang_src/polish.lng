@@ -63,7 +63,7 @@ STR_LOG_TUG                                                     :Holownik do hol
 STR_PADDLE_STEAMER                                              :Parowiec bocznokołowy
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Szybki katamaran do zaopatrywania wysp i przemysłu morskiego
 STR_REEFER                                                      :Statek - chłodnia (zwiększa dochody dla ładunków psujących się)
-STR_SMALL_FREIGHTER                                      :Mały frachtowiec do żeglugi przybrzeżnej i śródlądowej
+STR_SMALL_FREIGHTER                                             :Mały frachtowiec do żeglugi przybrzeżnej i śródlądowej
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Mały statek ogólnego przeznaczenia
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Mały tankowiec do żeglugi przybrzeżnej i śródlądowej
 STR_TRAWLER                                                     :Trawler (ładownie przeznaczone dla ryb)

@@ -63,7 +63,7 @@ STR_LOG_TUG                                                     :Буксир д
 STR_PADDLE_STEAMER                                              :Колесный пароход
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Быстрый катамаран для обслуживания островов и морских объектов
 STR_REEFER                                                      :Рефрижератор (улучшенная оплата при перевозке скоропортящихся грузов)
-STR_SMALL_FREIGHTER                                      :Малый сухогруз ближнего плавания класса река-море
+STR_SMALL_FREIGHTER                                             :Малый сухогруз ближнего плавания класса река-море
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Малый сухогруз
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Малый танкер ближнего плавания класса река-море
 STR_TRAWLER                                                     :Траулер

@@ -62,7 +62,7 @@ STR_LOG_TUG                                                     :Vontatóhajó �
 STR_PADDLE_STEAMER                                              :Gőzhajó
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Gyors katamarán a szigetek és a partmenti gyárak ellátásához.
 STR_REEFER                                                      :Hűtőkamrás hajó (romlandó áruk szállításakor jobban fizet)
-STR_SMALL_FREIGHTER                                      :Kisebb teherhajó partmenti és belvizi szállításra.
+STR_SMALL_FREIGHTER                                             :Kisebb teherhajó partmenti és belvizi szállításra.
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kis általános célú szállítóhajó
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kis tankhajó partmenti és belvizi szállításra
 STR_TRAWLER                                                     :Halászhajó (elsősorban halszállításra)

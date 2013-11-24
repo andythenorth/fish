@@ -61,7 +61,7 @@ STR_LOG_TUG                                                     :Hinaaja tukkila
 STR_PADDLE_STEAMER                                              :Siipiratasalus
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Nopea katamaraani sisävesien ja rannikkoalueiden teollisuuden käyttöön
 STR_REEFER                                                      :Jäähdytetty alus (parannetut rahtitaksat pilaantuvalle rahdille)
-STR_SMALL_FREIGHTER                                      :Pieni rahtilaiva rannikolle ja sisävesille
+STR_SMALL_FREIGHTER                                             :Pieni rahtilaiva rannikolle ja sisävesille
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pieni yleislaiva
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Pieni säiliöalus rannikolle ja sisävesille
 STR_TRAWLER                                                     :Troolari (kalalle suunniteltu ruuma)
