@@ -14,6 +14,8 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Perfecto
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Rápido, podríamos decir que es hacer una pequeña trampa
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Barcos disponibles
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Todos los barcos
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Solo embarcaciones marinas
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Solo embarcaciones fluviales
 
 
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
