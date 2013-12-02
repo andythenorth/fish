@@ -62,7 +62,7 @@ STR_LOG_TUG                                                     :Schlepper um Ho
 STR_PADDLE_STEAMER                                              :Schaufelraddampfer
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Schneller Katamaran zur Versorgung von Inseln und küstennahen Industrien
 STR_REEFER                                                      :Kühlschiff (erhöhter Gewinn beim Transport verderblicher Frachten)
-STR_SMALL_FREIGHTER                                      :Kleiner Frachter für Binnen- und küstennahe Gewässer
+STR_SMALL_FREIGHTER                                             :Kleiner Frachter für Binnen- und küstennahe Gewässer
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kleines Mehrzweckschiff
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleiner Tanker für küstennahe und Binnengewässer
 STR_TRAWLER                                                     :Trawler (spezieller Frachtraum für Fisch)

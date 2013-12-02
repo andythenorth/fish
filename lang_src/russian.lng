@@ -14,11 +14,17 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Скорост�
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Очень медленная
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Оптимальная
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Слишком просто
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Доступные суда
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Сделать доступными все суда, только морские суда (могут путешествовать медленно на реках и каналах), или только речные суда (могут путешествовать медленно по морю).
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Все суда
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Только морские суда
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Только речные суда
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Буксир
 STR_NAME_SUFFIX_CATAMARAN                                       :Катамаран
 STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Контейнеровоз
+STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Баржа-контейнеровоз
 STR_NAME_SUFFIX_FERRY                                           :Паром
 STR_NAME_SUFFIX_FAST_FERRY                                      :Скоростной паром
 STR_NAME_SUFFIX_FREIGHTER                                       :Сухогруз
@@ -46,10 +52,12 @@ STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Вме
 STR_BARGE_TUG                                                   :Буксир
 STR_CARGO_HOVERCRAFT                                            :Грузовое суда на воздушной подушке
 STR_CARGO_VESSEL_INLAND                                         :Сухогруз речного класса
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Малый сухогруз речного класса
 STR_CATAMARAN_FAST_FERRY                                        :Двухкорпусный скоростной паром
 STR_COASTAL_TANKER                                              :Танкер ближнего плавания
 STR_COASTER                                                     :Сухогруз класса река-море
 STR_CONTAINER_FEEDER                                            :Малый контейнеровоз
+STR_CONTAINER_BARGE                                             :Контейнеровоз речного класса
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Скоростной сухогруз
 STR_FAST_PACKET_STEAMER                                         :Скоростной пароход
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Сухогруз дальнего плаванья
@@ -63,7 +71,7 @@ STR_LOG_TUG                                                     :Буксир д
 STR_PADDLE_STEAMER                                              :Колесный пароход
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Быстрый катамаран для обслуживания островов и морских объектов
 STR_REEFER                                                      :Рефрижератор (улучшенная оплата при перевозке скоропортящихся грузов)
-STR_SMALL_FREIGHTER                                      :Малый сухогруз ближнего плавания класса река-море
+STR_SMALL_FREIGHTER                                             :Малый сухогруз ближнего плавания класса река-море
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Малый сухогруз
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Малый танкер ближнего плавания класса река-море
 STR_TRAWLER                                                     :Траулер

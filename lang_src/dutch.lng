@@ -12,11 +12,17 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Schipssnelheid
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Als kijken naar drogende verf
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Bedriegen
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Beschikbare schepen
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Speel met alle beschikbare schepen, beperk tot zeeschepen (zouden langzamer kunnen varen op rivieren en kanalen), of tot rivierboten (zouden langzamer kunnen varen op zee).
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Alle schepen
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Alleen zeeschepen
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Alleen rivierboten
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Bakkensleepboot
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
 STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Containerschip
+STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Containercarrier
 STR_NAME_SUFFIX_FERRY                                           :Veerboot
 STR_NAME_SUFFIX_FAST_FERRY                                      :Snelle veerboot
 STR_NAME_SUFFIX_FREIGHTER                                       :Vrachtschip
@@ -44,10 +50,12 @@ STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capaci
 STR_BARGE_TUG                                                   :Bakkensleepboot
 STR_CARGO_HOVERCRAFT                                            :Vrachthovercraft
 STR_CARGO_VESSEL_INLAND                                         :Vrachtschip voor binnenwateren
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Klein vrachtschip voor binnenwateren
 STR_CATAMARAN_FAST_FERRY                                        :Snelle catamaran veerboot
 STR_COASTAL_TANKER                                              :Kusttanker
 STR_COASTER                                                     :Kustvrachtschip
 STR_CONTAINER_FEEDER                                            :Klein container schip
+STR_CONTAINER_BARGE                                             :Containercarrier voor de binnenwateren
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Snel algemeen schip
 STR_FAST_PACKET_STEAMER                                         :Snelle rivierboot
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Algemeen zeewaardig schip
@@ -61,7 +69,7 @@ STR_LOG_TUG                                                     :Sleepboot voor 
 STR_PADDLE_STEAMER                                              :Raderstoomboot
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Snelle catamaran voor het bevoorraden van eilanden en offshore industrie
 STR_REEFER                                                      :Gekoeld schip (hogere vergoeding voor bederfelijke goederen)
-STR_SMALL_FREIGHTER                                      :Klein vrachtschip voor kust en binnenwateren
+STR_SMALL_FREIGHTER                                             :Klein vrachtschip voor kust en binnenwateren
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Klein algemeen schip
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kleine tanker voor kust en binnenwateren
 STR_TRAWLER                                                     :Trawler (met een ruim voor vis)

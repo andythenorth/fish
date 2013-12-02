@@ -13,11 +13,17 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Hajó sebesség
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :ahogy a festék szárad
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideális
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Csalás
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Elérhető hajók
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Az összes hajó elérhető, vagy csak a tengerjárók (lassabban közlekedik a folyókon és csatornákon), vagy csak a folyami hajók (lassabban közlekedik a tengeren).
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Összes hajó
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Tengerjáró hajók
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Folyami hajók
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :uszály
 STR_NAME_SUFFIX_CATAMARAN                                       :katamarán
 STR_NAME_SUFFIX_CONTAINER_FEEDER                                :konténerszállító hajó
+STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Konténerszállító uszály
 STR_NAME_SUFFIX_FERRY                                           :komp
 STR_NAME_SUFFIX_FAST_FERRY                                      :gyors komp
 STR_NAME_SUFFIX_FREIGHTER                                       :teherhajó
@@ -45,10 +51,12 @@ STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Átala
 STR_BARGE_TUG                                                   :vontatóhajó
 STR_CARGO_HOVERCRAFT                                            :Teherszállító légpárnás hajó
 STR_CARGO_VESSEL_INLAND                                         :Teherhajó belső vizekre
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Kis teherhajó csatornákra
 STR_CATAMARAN_FAST_FERRY                                        :Gyors katamarán komp
 STR_COASTAL_TANKER                                              :Tengerparti tankhajó
 STR_COASTER                                                     :Partmenti teherszállító
 STR_CONTAINER_FEEDER                                            :Konténerszállító hajó
+STR_CONTAINER_BARGE                                             :Konténerszállító csatornákra
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Gyors szállítóhajó
 STR_FAST_PACKET_STEAMER                                         :Gyors gőzhajó
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Általános tengerjáró szállítóhajó
@@ -62,7 +70,7 @@ STR_LOG_TUG                                                     :Vontatóhajó �
 STR_PADDLE_STEAMER                                              :Gőzhajó
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Gyors katamarán a szigetek és a partmenti gyárak ellátásához.
 STR_REEFER                                                      :Hűtőkamrás hajó (romlandó áruk szállításakor jobban fizet)
-STR_SMALL_FREIGHTER                                      :Kisebb teherhajó partmenti és belvizi szállításra.
+STR_SMALL_FREIGHTER                                             :Kisebb teherhajó partmenti és belvizi szállításra.
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Kis általános célú szállítóhajó
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Kis tankhajó partmenti és belvizi szállításra
 STR_TRAWLER                                                     :Halászhajó (elsősorban halszállításra)

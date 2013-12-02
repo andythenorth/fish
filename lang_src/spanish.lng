@@ -12,6 +12,10 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocidad del b
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lento, como ver secarse la pintura
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Perfecto
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Rápido, podríamos decir que es hacer una pequeña trampa
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Barcos disponibles
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Todos los barcos
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Solo embarcaciones marinas
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Solo embarcaciones fluviales
 
 
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
@@ -20,6 +24,7 @@ STR_NAME_SUFFIX_FAST_FERRY                                      :Ferry rápido
 STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
+STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Barco ganadero
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 STR_NAME_SUFFIX_REEFER                                          :Contenedor refrigerado
 STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
@@ -34,17 +39,19 @@ STR_CATAMARAN_FAST_FERRY                                        :Catamarán ráp
 STR_COASTAL_TANKER                                              :Barco cisterna costero
 STR_COASTER                                                     :Barco costero
 STR_CONTAINER_FEEDER                                            :Barco pequeño portacontenedores
+STR_CONTAINER_BARGE                                             :Carguero (portacontenedores) para vías fluviales (ríos, canales y lagos)
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
 STR_JUMBO_VEHICLE_FERRY                                         :Ferry gigante
 STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
 STR_LARGE_COASTER                                               :Barco costero grande
+STR_LIVESTOCK_SHIP                                              :Barco ganadero
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
 STR_PADDLE_STEAMER                                              :Vapor de ruedas
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamarán rápido para el suministro a las islas e industrias marinas
 STR_REEFER                                                      :Barco refrigerado (ideal para un estado óptimo de las cargas perecederas así como mejorar su ratio de pagos)
-STR_SMALL_FREIGHTER                                      :Carguero pequeño para la costa y vías fluviales (ríos, canales y lagos)
+STR_SMALL_FREIGHTER                                             :Carguero pequeño para la costa y vías fluviales (ríos, canales y lagos)
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
 STR_TRAWLER                                                     :Barco rastreador (pesquero con redes de arrastre)
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
