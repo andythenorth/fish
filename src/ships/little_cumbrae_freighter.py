@@ -25,5 +25,9 @@ ship = GeneralCargoVessel(id = 'little_cumbrae_freighter',
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,
-                       end_date=global_constants.max_game_date,
+                       end_date=1920,
                        spritesheet_suffix=0)
+
+ship.add_model_variant(intro_date=1920,
+                       end_date=global_constants.max_game_date,
+                       spritesheet_suffix=1)
