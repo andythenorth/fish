@@ -7,12 +7,13 @@ STR_EMPTY                                                       :
 
 
 STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de construcción mejorados para canales, acueductos y dársenas
-STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos y el resto de tipos de transporte
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos (y/o fluviales) y el resto de tipos de transporte.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocidad del barco
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lento, como ver secarse la pintura
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Perfecto
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Rápido, podríamos decir que es hacer una pequeña trampa
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Barcos disponibles
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Juega con todos los barcos disponibles, o limítate a los barcos marinos (también pueden viajar por los ríos y canales, pero muy despacio), o los barcos fluviales (también pueden viajar por el mar, pero muy despacio).
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Todos los barcos
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Solo embarcaciones marinas
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Solo embarcaciones fluviales
@@ -27,6 +28,7 @@ STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Barco ganadero
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 STR_NAME_SUFFIX_REEFER                                          :Contenedor refrigerado
+STR_NAME_SUFFIX_STEAMER                                         :Barco a vapor
 STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
 
 
