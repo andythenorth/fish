@@ -44,7 +44,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Судно об
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Буксир обеспечения
 
 
-STR_BUY_MENU_TEXT                                               :Тип: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Переоборудование{}Тип: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Вместимость: {GOLD}{COMMA} мешков почты или {COMMA} тонн грузов
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Вместимость: {GOLD}{COMMA} пассажиров, {COMMA} мешков почты, {COMMA} тонн рыбы, или {COMMA} тонн грузов на верхней палубе
 
