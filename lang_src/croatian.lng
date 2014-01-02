@@ -44,7 +44,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Brod za opskrbu
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Remorker
 
 
-STR_BUY_MENU_TEXT                                               :Tip: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Moguć automatski remont{}Tip: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Kapacitet kod prilagodbe: {GOLD}{COMMA} vreća pošte ili {COMMA}t ekspresnog tereta
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Kapacitet kod prilagodbe: {GOLD}{COMMA} putnika, {COMMA} vreća pošte, {COMMA}t ribe u štivama, ili {COMMA}t ekspresnog tereta na palubi
 
