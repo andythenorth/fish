@@ -32,7 +32,7 @@ STR_NAME_SUFFIX_STEAMER                                         :Barco a vapor
 STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
 
 
-STR_BUY_MENU_TEXT                                               :Tipo: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Ofrece auto-reforma{}Tipo: {GOLD}{STRING}{}{STRING}
 
 
 STR_CARGO_HOVERCRAFT                                            :Hovercraft de carga

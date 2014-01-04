@@ -13,11 +13,17 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Geschwindigkeit
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Mögen der Farbe beim Trocknen zugucken
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Verfügbare Schiffe
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Spiele mit allen Schiffen, beschränke auf Hochseeschiffe (langsam auf Binnengewässern) oder Binnenschiffen (langsam auf hoher See).
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Alle Schiffe
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Nur Hochsee-Schiffe
+STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Nur Binnenschiffe
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Schleppkahn
 STR_NAME_SUFFIX_CATAMARAN                                       :{G=m}Katermaran
 STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Containerschiff
+STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Container-Frachter
 STR_NAME_SUFFIX_FERRY                                           :Fähre
 STR_NAME_SUFFIX_FAST_FERRY                                      :Schnelle Fähre
 STR_NAME_SUFFIX_FREIGHTER                                       :Frachter
@@ -37,7 +43,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Mehrzweckschiff
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Mehrzweckschlepper
 
 
-STR_BUY_MENU_TEXT                                               :Typ: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Automatische Umrüstung{}Typ: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Postsäcke oder {COMMA}t Eilgut
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Passagiere, {COMMA} Postsäcke, {COMMA}t Fisch im Frachtraum, or {COMMA}t Eilgut als Decksladung
 
@@ -45,10 +51,12 @@ STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Umger�
 STR_BARGE_TUG                                                   :Schleppkahn
 STR_CARGO_HOVERCRAFT                                            :Fracht-Luftkissenboot
 STR_CARGO_VESSEL_INLAND                                         :Frachter für Binnengewässer
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Kleiner Frachter für Binnengewässer
 STR_CATAMARAN_FAST_FERRY                                        :Schnelle Katamaran-Fähre
 STR_COASTAL_TANKER                                              :Küstenschiff (Tanker)
 STR_COASTER                                                     :Küstenfrachter
 STR_CONTAINER_FEEDER                                            :Kleines Containerschiff
+STR_CONTAINER_BARGE                                             :Container-Frachter für Binnengewässer
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Schnelles Mehrzweck-Schiff
 STR_FAST_PACKET_STEAMER                                         :Schneller Postdampfer
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Hochseetaugliches Mehrzweck-Schiff
