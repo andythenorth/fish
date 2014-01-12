@@ -254,6 +254,7 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
         self.cargo_units_refit_menu = 'STR_UNIT_ITEMS'
         self.default_cargo = 'LVST'
         self.default_cargo_capacity = self.capacities_refittable[0]
+        self.cargo_age_period = 2 * global_constants.CARGO_AGE_PERIOD # improved decay rate
          # kludge to adjust canal speed of the one reefer ship.  
         self.canal_speed = (0.65, 1)[self.inland_capable]
 
