@@ -2,6 +2,39 @@ Changelog
 =========
 
 -------
+Alpha 5
+-------
+
+*New Features / Changes*
+
+- cargo aging bonus for livestock cargo when using Livestock ship  (50% of normal cargo decay rate)
+
+*Language Updates*
+
+- Croatian (Voyager1)
+- German (Planetmaker)
+- Spanish (SilverSurferZzZ)
+
+-------
+Alpha 4
+-------
+
+*New Features / Changes*
+
+- rebalanced Mount Blaze cat, reducing some stats overkill
+- Enoshima Ferry now river capable
+- Autorefit info in buy menu
+
+*Fixes*
+
+- correct buy menu sprites for Saint Marie Barge Tug
+
+*Language Updates*
+
+- Russian (George)
+- Spanish (SilverSurferZzZ)
+
+-------
 Alpha 3
 -------
 
