@@ -14,7 +14,7 @@
     <div id="status">
         <h3>Current Translation Status</h3>
         <p>See which languages Squid Ate FISH has been translated into, and how complete each translation is.</p>
-        <a class="btn btn-primary btn-large" href="http://bundles.openttdcoop.org/fish/push/LATEST/translations/">Translation Status Report</a>
+        <a class="btn btn-primary btn-large" href="https://translator.openttdcoop.org/project/fish">Translation Status Report</a>
     </div>
     <br />
     <hr />
