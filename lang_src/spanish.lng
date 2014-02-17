@@ -30,6 +30,8 @@ STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 STR_NAME_SUFFIX_REEFER                                          :Contenedor refrigerado
 STR_NAME_SUFFIX_STEAMER                                         :Barco a vapor
 STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
+STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Barco polivalente
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador polivalente
 
 
 STR_BUY_MENU_TEXT                                               :Ofrece auto-reforma{}Tipo: {GOLD}{STRING}{}{STRING}
