@@ -42,7 +42,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Hyötylaiva
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Hyötyhinaaja
 
 
-STR_BUY_MENU_TEXT                                               :Tyyppi: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Tarjoaa automaattisen sovituksen{}Tyyppi: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Tilavuus sovitettuna: {GOLD}{COMMA} säkkiä postia tai {COMMA}t pikarahtia
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Tilavuus sovitettuna: {GOLD}{COMMA} matkustajaa, {COMMA} säkkiä postia, {COMMA}t kalaa ruumassa, tai {COMMA}t pikarahtia kansitavarana
 
