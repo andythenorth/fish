@@ -255,7 +255,7 @@ class LivestockCarrier(MixinRefittableCapacity, Ship):
         self.default_cargo = 'LVST'
         self.default_cargo_capacity = self.capacities_refittable[0]
         self.cargo_age_period = 2 * global_constants.CARGO_AGE_PERIOD # improved decay rate
-         # kludge to adjust canal speed of the one reefer ship.  
+         # kludge to adjust canal speed of the one reefer ship.
         self.canal_speed = (0.65, 1)[self.inland_capable]
 
 
@@ -366,14 +366,14 @@ class Reefer(Ship):
     def __init__(self, id, **kwargs):
         super(Reefer, self).__init__(id, **kwargs)
         self.template = 'general_cargo_vessel.pynml'
-        self.class_refit_groups = ['refrigerated_freight'] 
+        self.class_refit_groups = ['refrigerated_freight']
         self.label_refits_allowed = [] # no specific labels needed, refits all cargos that have refrigerated class
         self.label_refits_disallowed = []
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'GOOD'
         self.default_cargo_capacity = self.capacity_freight
         self.cargo_age_period = 2 * global_constants.CARGO_AGE_PERIOD # improved decay rate
-         # kludge to adjust canal speed of the one reefer ship.  
+         # kludge to adjust canal speed of the one reefer ship.
         self.canal_speed = (0.6, 1)[self.inland_capable]
 
 class ContainerCarrier(Ship):
@@ -383,11 +383,12 @@ class ContainerCarrier(Ship):
     def __init__(self, id, **kwargs):
         super(ContainerCarrier, self).__init__(id, **kwargs)
         self.template = 'container_carrier.pynml'
+        # maintain other sets (e.g. IH etc) when changing container refits
         self.class_refit_groups = ['express_freight','packaged_freight']
         self.label_refits_allowed = ['FRUT','WATR']
         self.label_refits_disallowed = ['FISH','LVST','OIL_','TOUR','WOOD']
         self.capacity_freight = kwargs.get('capacity_cargo_holds', None)
         self.default_cargo = 'GOOD'
         self.default_cargo_capacity = self.capacity_freight
-         # kludge to adjust canal speed of the one fast ocean-going container feeder.  
+         # kludge to adjust canal speed of the one fast ocean-going container feeder.
         self.canal_speed = (0.45, 1)[self.inland_capable]
