@@ -44,6 +44,7 @@ STR_COASTAL_TANKER                                              :Barco cisterna 
 STR_COASTER                                                     :Barco costero
 STR_CONTAINER_FEEDER                                            :Barco pequeño portacontenedores
 STR_CONTAINER_BARGE                                             :Carguero (portacontenedores) para vías fluviales (ríos, canales y lagos)
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Barco rápido de propósito general
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
