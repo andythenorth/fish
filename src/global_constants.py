@@ -34,7 +34,8 @@ buy_menu_sort_order = ['sunk_rock_ferry',
                        'constance_freight_barge',
                        'dieze_container_barge']
 
-# shared lists of allowed classes, shared across multiple ship types
+# shared lists of allowed classes, shared across multiple vehicle types
+# these lists are similar but not identical across Iron Horse, Squid, Road Hog etc
 base_refits_by_class = {'empty': [],
                        'all_freight': ['CC_BULK', 'CC_PIECE_GOODS', 'CC_EXPRESS', 'CC_LIQUID', 'CC_ARMOURED', 'CC_REFRIGERATED', 'CC_COVERED', 'CC_NON_POURABLE'],
                        'pax_mail': ['CC_PASSENGERS','CC_MAIL'],
@@ -107,7 +108,7 @@ FIXED_RUN_COST = 500.0
 FUEL_RUN_COST = 10.0
 
 # cargo aging constant - OTTD default is 185
-CARGO_AGE_PERIOD = 740 
+CARGO_AGE_PERIOD = 740
 
 # OpenTTD's max date
 max_game_date = 5000001
