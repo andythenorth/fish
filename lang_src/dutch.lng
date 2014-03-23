@@ -42,7 +42,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Utiliteitsschip
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Algemene sleepboot
 
 
-STR_BUY_MENU_TEXT                                               :Type: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Auto-ombouwen mogelijk{}Type: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} zakken post of {COMMA}t expressvracht
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} passagiers,  {COMMA} zakken post, {COMMA}t vis in het ruim, of {COMMA}t expressvracht op het dek
 

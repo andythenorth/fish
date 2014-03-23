@@ -58,6 +58,7 @@ STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamarán ráp
 STR_REEFER                                                      :Barco refrigerado (ideal para un estado óptimo de las cargas perecederas así como mejorar su ratio de pagos)
 STR_SMALL_FREIGHTER                                             :Carguero pequeño para la costa y vías fluviales (ríos, canales y lagos)
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Pequeño barco de propósito general
+STR_SMALL_TANKER_COASTAL_INLAND                                 :Barco cisterna pequeño para costas y vías fluviales (ríos, canales y lagos)
 STR_TRAWLER                                                     :Barco rastreador (pesquero con redes de arrastre)
 STR_VEHICLE_FERRY                                               :Ferry de vehículos
 
