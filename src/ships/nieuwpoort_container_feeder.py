@@ -4,7 +4,7 @@ from ship import Ship, ContainerCarrier
 ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
             numeric_id = 300,
             title = 'Nieuwpoort [Container Feeder]',
-            capacity_cargo_holds = 750,
+            capacity_cargo_holds = 744, # matched to RH and IH
             replacement_id = '-none',
             buy_cost = 58,
             fixed_run_cost_factor = 10.0,
@@ -21,7 +21,7 @@ ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
             str_type_info = 'CONTAINER_FEEDER',
             vehicle_life = 30,
             gross_tonnage = 800,
-            vehicle_groups = ['sea'], 
+            vehicle_groups = ['sea'],
             graphics_status = 'Work in Progress - DanMacK',)
 
 ship.add_model_variant(intro_date=0,
