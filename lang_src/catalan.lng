@@ -26,8 +26,8 @@ STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Vaixell Conteni
 STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Barcassa per a Contenidors
 STR_NAME_SUFFIX_FERRY                                           :Ferri
 STR_NAME_SUFFIX_FAST_FERRY                                      :Ferri Ràpid
-STR_NAME_SUFFIX_FREIGHTER                                       :Vaixell de mercaderies
-STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Barcassa de Mercaderies
+STR_NAME_SUFFIX_FREIGHTER                                       :Vaixell de càrrega
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Barcassa de Càrrega
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Aerolliscador
 STR_NAME_SUFFIX_HYDROFOIL                                       :Hidrolliscador
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Vaixell per a Bestiar
@@ -70,7 +70,7 @@ STR_LOG_TUG                                                     :Remolcador per 
 STR_PADDLE_STEAMER                                              :Vaixell de vapor a pales
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamarà ràpid per subministrar illes i indústries costeres
 STR_REEFER                                                      :Vaixell amb bodegues refrigerades (millora el pagament per a càrregues peribles)
-STR_SMALL_FREIGHTER                                             :Vaixell de Mercaderies Petit
+STR_SMALL_FREIGHTER                                             :Vaixell de Càrrega Petit
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Nau petita per a ús general
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Petit vaixell cisterna tant per a alta mar com per a interior
 STR_TRAWLER                                                     :Traïnya (coberta usada per a les captures de pesca)
