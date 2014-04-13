@@ -57,10 +57,10 @@ STR_COASTAL_TANKER                                              :Navire-citerne 
 STR_COASTER                                                     :Navire côtier
 STR_CONTAINER_FEEDER                                            :Petit porte conteneurs
 STR_CONTAINER_BARGE                                             :Porte conteneurs pour voies navigables
-STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Petit navire universel rapide
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Petit navire polyvalent rapide
 STR_FAST_PACKET_STEAMER                                         :Vapeur rapide
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Navire universel de haute mer
-STR_GENERAL_PURPOSE_VESSEL                                      :Navire universel
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Navire polyvalent de haute mer
+STR_GENERAL_PURPOSE_VESSEL                                      :Navire polyvalent
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry rapide (hydroptère)
 STR_JUMBO_VEHICLE_FERRY                                         :Grand ferry pour véhicules
 STR_LARGE_COASTAL_TANKER                                        :Grand navire citerne côtier
@@ -71,7 +71,7 @@ STR_PADDLE_STEAMER                                              :Navire à vapeu
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamaran rapide pour ravitailler îles ou industries au large
 STR_REEFER                                                      :Navire réfrigéré (valeur des marchandises périssables améliorées)
 STR_SMALL_FREIGHTER                                             :Petit cargo
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Petit navire universel
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Petit navire polyvalent
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Petit navire citerne côtier ou pour voies navigables
 STR_TRAWLER                                                     :Chalutier (cale réservée au poisson)
 STR_VEHICLE_FERRY                                               :Ferry pour véhicules
