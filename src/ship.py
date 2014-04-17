@@ -44,7 +44,7 @@ class Ship(object):
         self.sea_capable = kwargs.get('sea_capable', None)
         self.speed = kwargs.get('speed', None)
         self.speed_unladen = self.speed * kwargs.get('speed_factor_unladen', None)
-        self.ocean_speed = (0.8, 1)[self.sea_capable]
+        self.ocean_speed = (1, 1)[self.sea_capable] # currently there is no penalty at sea for river boats
         self.canal_speed = (0.7, 1)[self.inland_capable]
         # declare capacities for pax, mail and freight, as they are needed later for nml switches
         self.capacity_pax = kwargs.get('capacity_pax', 0)
