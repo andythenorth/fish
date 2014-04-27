@@ -23,12 +23,15 @@ STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
 STR_NAME_SUFFIX_FERRY                                           :Ferry
 STR_NAME_SUFFIX_FAST_FERRY                                      :Ferry rápido
 STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
+STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Barcaza de carga
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Barco ganadero
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 STR_NAME_SUFFIX_REEFER                                          :Contenedor refrigerado
 STR_NAME_SUFFIX_STEAMER                                         :Barco a vapor
+STR_NAME_SUFFIX_TANKER                                          :Cisterna
+STR_NAME_SUFFIX_TANKER_BARGE                                    :Barcaza cisterna
 STR_NAME_SUFFIX_TRAWLER                                         :Barco rastreador
 STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Barco polivalente
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador polivalente
