@@ -20,6 +20,7 @@ STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Solo embarcacio
 
 
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
+STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Barcaza portacontenedores
 STR_NAME_SUFFIX_FERRY                                           :Ferry
 STR_NAME_SUFFIX_FAST_FERRY                                      :Ferry rápido
 STR_NAME_SUFFIX_FREIGHTER                                       :Buque carguero
