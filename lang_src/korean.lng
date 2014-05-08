@@ -27,6 +27,7 @@ STR_NAME_SUFFIX_LOG_TUG                                         :나무 예인�
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :외륜선
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :빠른 공급 선박
 STR_NAME_SUFFIX_TANKER_BARGE                                    :유조 바지선
+STR_NAME_SUFFIX_TRAWLER                                         :트롤 어선
 STR_NAME_SUFFIX_UTILITY_VESSEL                                  :다용도 선박
 STR_NAME_SUFFIX_UTILITY_TUG                                     :다용도 예인선
 
@@ -54,4 +55,5 @@ STR_VEHICLE_FERRY                                               :차량 연락�
 
 
 STR_GENERIC_REFIT_SUBTYPE                                       :{COMMA}{STRING}
+STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}확장 가능 수용량: {GOLD}{COMMA}, {COMMA} 또는 {COMMA}{STRING}
 STR_UNIT_ITEMS                                                  :아이템
