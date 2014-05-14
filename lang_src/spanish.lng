@@ -41,8 +41,10 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador poli
 STR_BUY_MENU_TEXT                                               :Ofrece auto-reforma{}Tipo: {GOLD}{STRING}{}{STRING}
 
 
+STR_BARGE_TUG                                                   :Barcaza remolcadora
 STR_CARGO_HOVERCRAFT                                            :Hovercraft de carga
 STR_CARGO_VESSEL_INLAND                                         :Barco de carga para vías fluviales (ríos, canales y lagos)
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Carguero pequeño para vías fluviales (ríos, canales y lagos)
 STR_CATAMARAN_FAST_FERRY                                        :Catamarán rápido
 STR_COASTAL_TANKER                                              :Barco cisterna costero
 STR_COASTER                                                     :Barco costero
