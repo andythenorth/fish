@@ -19,6 +19,7 @@ STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Solo embarcacio
 STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Solo embarcaciones fluviales
 
 
+STR_NAME_SUFFIX_BARGE_TUG                                       :Barcaza remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
 STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Barcaza portacontenedores
 STR_NAME_SUFFIX_FERRY                                           :Ferry
