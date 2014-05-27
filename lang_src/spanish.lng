@@ -21,6 +21,7 @@ STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Solo embarcacio
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcaza remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
+STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Barco portacontenedores
 STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Barcaza portacontenedores
 STR_NAME_SUFFIX_FERRY                                           :Ferry
 STR_NAME_SUFFIX_FAST_FERRY                                      :Ferry rápido
@@ -29,8 +30,10 @@ STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Barcaza de carg
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Hovercraft
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aerodeslizador
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Barco ganadero
+STR_NAME_SUFFIX_LOG_TUG                                         :Remolcador de troncos de madera
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Vapor de ruedas
 STR_NAME_SUFFIX_REEFER                                          :Contenedor refrigerado
+STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Catamarán de suministros rápido
 STR_NAME_SUFFIX_STEAMER                                         :Barco a vapor
 STR_NAME_SUFFIX_TANKER                                          :Cisterna
 STR_NAME_SUFFIX_TANKER_BARGE                                    :Barcaza cisterna
