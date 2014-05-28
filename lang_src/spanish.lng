@@ -43,6 +43,8 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador poli
 
 
 STR_BUY_MENU_TEXT                                               :Ofrece auto-reforma{}Tipo: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} sacos de correo o {COMMA}t de carga express
+STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} pasajeros, {COMMA} sacos de correo, {COMMA}t de pescado en la bodega, o {COMMA}t de carga express en la cubierta
 
 
 STR_BARGE_TUG                                                   :Barcaza remolcadora
@@ -55,6 +57,7 @@ STR_COASTER                                                     :Barco costero
 STR_CONTAINER_FEEDER                                            :Barco pequeño portacontenedores
 STR_CONTAINER_BARGE                                             :Carguero (portacontenedores) para vías fluviales (ríos, canales y lagos)
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Barco rápido de propósito general
+STR_FAST_PACKET_STEAMER                                         :Vapor rápido de carga
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Barco de altura de propósito general
 STR_GENERAL_PURPOSE_VESSEL                                      :Barco de propósito general
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
