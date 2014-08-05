@@ -19,8 +19,8 @@ from ships import maspalomas_freighter
 from ships import nieuwpoort_container_feeder
 from ships import santorini_freighter
 from ships import shark_island_livestock_ship
+from ships import small_hovercraft
 from ships import sunk_rock_ferry
-from ships import thunder_bay_hovercraft
 from ships import whitgift_freight_barge
 from ships import yokohama_tanker
 
@@ -29,10 +29,10 @@ roster = Roster(id = 'brit',
                                        'barletta_paddle_steamer',
                                        'fastnet_paddle_steamer',
                                        'castle_point_steamer',
+                                       'small_hovercraft',
                                        'hovercraft_pax_large',
                                        'fish_island_trawler',
                                        'cape_spear_trawler',
-                                       'thunder_bay_hovercraft',
                                        'whitgift_freight_barge',
                                        'little_cumbrae_freighter',
                                        'marstein_freighter',
