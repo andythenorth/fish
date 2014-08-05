@@ -20,7 +20,7 @@ ship = Hydrofoil(id = 'hovercraft_pax_large',
             loading_speed = 18,
             intro_date = 1968,
             buy_menu_bb_xy = [668, 21],
-            str_type_info = 'HYDROFOIL_FAST_FERRY',
+            str_type_info = 'HOVERCRAFT_FAST_FERRY',
             vehicle_life = 45,
             gross_tonnage = 120,
             graphics_status = 'Done',)

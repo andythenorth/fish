@@ -60,6 +60,7 @@ STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Fast general pu
 STR_FAST_PACKET_STEAMER                                         :Fast Packet steamer
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :General purpose sea-going vessel
 STR_GENERAL_PURPOSE_VESSEL                                      :General purpose vessel
+STR_HOVERCRAFT_FAST_FERRY                                       :Hovercraft fast ferry
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil fast ferry
 STR_JUMBO_VEHICLE_FERRY                                         :Jumbo ship ferry
 STR_LARGE_COASTAL_TANKER                                        :Large coastal tanker
