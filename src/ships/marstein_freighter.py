@@ -21,7 +21,6 @@ ship = GeneralCargoVessel(id = 'marstein_freighter',
             str_type_info = 'SMALL_FREIGHTER',
             vehicle_life = 40,
             gross_tonnage = 270,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0, 

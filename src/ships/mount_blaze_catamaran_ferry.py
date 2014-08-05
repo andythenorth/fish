@@ -23,7 +23,6 @@ ship = PacketBoat(id = 'mount_blaze_catamaran_ferry',
             str_type_info = 'CATAMARAN_FAST_FERRY',
             vehicle_life = 30,
             gross_tonnage = 1600,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Unstarted',)
 
 ship.add_model_variant(intro_date=0, 

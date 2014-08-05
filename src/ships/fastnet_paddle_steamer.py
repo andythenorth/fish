@@ -23,7 +23,6 @@ ship = PacketBoat(id = 'fastnet_paddle_steamer',
             str_type_info = 'PADDLE_STEAMER',
             vehicle_life = 40,
             gross_tonnage = 800,
-            vehicle_groups = ['sea'],
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

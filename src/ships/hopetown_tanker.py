@@ -22,7 +22,6 @@ ship = Tanker(id = 'hopetown_tanker',
             str_type_info = 'COASTAL_TANKER',
             vehicle_life = 45,
             gross_tonnage = 800,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

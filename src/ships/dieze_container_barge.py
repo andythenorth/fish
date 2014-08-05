@@ -21,7 +21,6 @@ ship = ContainerCarrier(id = 'dieze_container_barge',
             str_type_info = 'CONTAINER_FEEDER',
             vehicle_life = 30,
             gross_tonnage = 800,
-            vehicle_groups = ['river'], 
             graphics_status = 'Work in Progress - DanMacK',)
 
 ship.add_model_variant(intro_date=0,

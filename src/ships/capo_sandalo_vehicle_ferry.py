@@ -23,7 +23,6 @@ ship = PacketBoat(id = 'capo_sandalo_vehicle_ferry',
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 45,
             gross_tonnage = 1150,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

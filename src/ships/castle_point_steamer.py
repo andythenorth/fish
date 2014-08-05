@@ -23,7 +23,6 @@ ship = PacketBoat(id = 'castle_point_steamer',
             str_type_info = 'FAST_PACKET_STEAMER',
             vehicle_life = 25,
             gross_tonnage = 460,
-            vehicle_groups = ['sea'],
             graphics_status = 'Work in Progress - Coxx',)
 
 ship.add_model_variant(intro_date=0,

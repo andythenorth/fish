@@ -23,7 +23,6 @@ ship = PacketBoat(id = 'sunk_rock_ferry',
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 40,
             gross_tonnage = 60,
-            vehicle_groups = ['sea', 'river'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

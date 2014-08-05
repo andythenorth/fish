@@ -22,7 +22,6 @@ ship = ContainerCarrier(id = 'thunder_bay_hovercraft',
             str_type_info = 'CARGO_HOVERCRAFT',
             vehicle_life = 45,
             gross_tonnage = 30,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

@@ -21,7 +21,6 @@ ship = GeneralCargoVessel(id = 'altamira_freighter',
             str_type_info = 'COASTER',
             vehicle_life = 40,
             gross_tonnage = 360,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Work in Progress - Coxx',)
 
 ship.add_model_variant(intro_date=0,

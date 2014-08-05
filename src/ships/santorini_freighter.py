@@ -21,7 +21,6 @@ ship = GeneralCargoVessel(id = 'santorini_freighter',
             str_type_info = 'LARGE_COASTER',
             vehicle_life = 35,
             gross_tonnage = 960,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

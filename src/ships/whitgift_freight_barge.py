@@ -21,7 +21,6 @@ ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
             str_type_info = 'SMALL_CARGO_VESSEL_INLAND',
             vehicle_life = 60,
             gross_tonnage = 60,
-            vehicle_groups = ['river'],
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,

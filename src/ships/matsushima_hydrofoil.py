@@ -23,7 +23,6 @@ ship = Hydrofoil(id = 'matsushima_hydrofoil',
             str_type_info = 'HYDROFOIL_FAST_FERRY',
             vehicle_life = 45,
             gross_tonnage = 120,
-            vehicle_groups = ['sea'], 
             graphics_status = 'Done',)
 
 ship.add_model_variant(intro_date=0,
