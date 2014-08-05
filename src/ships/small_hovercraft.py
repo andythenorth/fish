@@ -1,7 +1,7 @@
 import global_constants
-from ship import Ship, ContainerCarrier
+from ship import Ship, PacketBoat
 
-ship = ContainerCarrier(id = 'small_hovercraft',
+ship = PacketBoat(id = 'small_hovercraft',
             numeric_id = 150,
             title = 'Small [Hovercraft]',
             capacity_pax = 70,
