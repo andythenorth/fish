@@ -12,11 +12,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Schipssnelheid
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Als kijken naar drogende verf
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Bedriegen
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Beschikbare schepen
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Speel met alle beschikbare schepen, beperk tot zeeschepen (zouden langzamer kunnen varen op rivieren en kanalen), of tot rivierboten (zouden langzamer kunnen varen op zee).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Alle schepen
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Alleen zeeschepen
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Alleen rivierboten
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Bakkensleepboot

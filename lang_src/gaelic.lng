@@ -14,11 +14,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Luaths luinge
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Cho mall ri seilcheig
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Barrail
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cealgaireachd
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Longan ri làimh
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Cluich leis a h-uile long a tha ri fhaighinn no cuingich gu longan-mara (a dh’fhaodas siubhal gu slaodach air aibhnean ’s canalan) no bàtaichean-aibhne (a dh’fhaodas siubhal gu slaodach air a’ mhuir).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :A h-uile long
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Longan-mara a-mhàin
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Bàtaichean-aibhne a-mhàin
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Tuga bàirc

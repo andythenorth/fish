@@ -13,11 +13,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocitats dels
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Com veure com es seca la pintura
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Excessiva
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Vaixells disponibles
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Jugar amb tots els vaixells disponibles, o bé limitar-ho a només vaixells de mar (poden circular lentament en rius i canals), o bé només embarcacions fluvials (poden circular lentament en la mar).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Totes les embarcacions
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Només Embarcacions Marítimes
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Només Embarcacions Fluvials
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcassa remolcadora

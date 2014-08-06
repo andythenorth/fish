@@ -14,11 +14,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Båtfart
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Som å se maling tørke
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideell
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Juksing
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Tilgjengelige skip
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Spill med alle skip tilgjengelig, eller begrens utvalget til havgående skip (kan kjøre sent i elver og kanaler), eller elvebåter (kan kjøre sent på havet).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Alle skip
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Bare havgående skip
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Kun elvebåter
 
 
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran

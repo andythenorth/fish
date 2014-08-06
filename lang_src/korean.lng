@@ -13,11 +13,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :배의 속력
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :매우 지루하다
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :필수적인
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :치트
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :사용 가능한 선박
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :모든 배를 이용하거나, 바다 전용 선박으로 제한하거나(강/운하에서는 속력이 감소할 수 있음), 강 전용  선박으로 제한할 수 있음(바다에서는 속력이 감소할 수 있음)
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :모든 선박
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :해양 선박 전용
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :강 선박 전용
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :예인 바지선

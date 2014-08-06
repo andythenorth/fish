@@ -12,11 +12,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Laivan nopeus
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Hidas kuin etana
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ihanteellinen
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Huijaava
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Käytettävät laivat
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Käytä kaikkia laivoja, tai rajoita valikoima merialuksiin tai sisävesilaivoihin. Merialukset saattavat kulkea hitaasti sisävesillä ja kanaaleissa, kun taas sisävesilaivat saattavat kulkea hitaasti merellä.
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Kaikki laivat
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Vain merialukset
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Vain sisävesilaivat
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Proomuhinaaja

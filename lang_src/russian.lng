@@ -14,11 +14,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Скорост�
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Очень медленная
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Оптимальная
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Слишком просто
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Доступные суда
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Сделать доступными все суда, только морские суда (могут путешествовать медленно на реках и каналах), или только речные суда (могут путешествовать медленно по морю).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Все суда
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Только морские суда
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Только речные суда
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Буксир

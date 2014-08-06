@@ -14,11 +14,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Brzina broda
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Kao gledanje sušenja boje
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Idealna
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Varanje
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Dostupni brodovi
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Igrajte sa svim dostupnim brodovima ili ograničite samo na brodove za morski prijevoz (mogu putovati sporije po rijekama i kanalima) ili samo na brodove za riječni prijevoz (mogu putovati sporije po moru).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Svi brodovi
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Samo brodovi za morski prijevoz
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Samo brodovi za riječni prijevoz
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Remorker za barže

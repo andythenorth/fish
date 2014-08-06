@@ -12,11 +12,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Skip Spoed
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Baie Stadig
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Verneuk
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Skepe Beskikbaar
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Speel met alle beskikbare skepe, of slegs met see skepe (wat stadig mag wees in riviere en kanale), of slegs met rivier bote (wat stadig mag wees in die see).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Alle Skepe
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :See Skepe Alleenlik
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Rivier Bote Alleenlik
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Skip Sloep

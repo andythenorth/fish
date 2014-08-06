@@ -14,11 +14,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Prędkość sta
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Tempo żółwia
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Idealna
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Podrasowana
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Dostępne statki
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Używaj wszystkich dostępnych statków, albo ogranicz je do oceanicznych (pływają wolniej po rzekach i kanałach) lub do śródlądowych (pływają wolniej po otwartych wodach)
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Wszystkie dostępne statki
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Statki żeglugi oceanicznej
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Statki żeglugi śródlądowej
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Holownik barek

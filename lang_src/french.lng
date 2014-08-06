@@ -13,11 +13,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Vitesse des nav
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lent, comme regarder la peinture sécher
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Idéal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Triche
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Navires disponibles
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Jouer avec tous les bateaux, limiter aux bateaux marins (lents dans les fleuves et canaux), ou limiter bateaux fluviaux (lents en mer).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Tous les bateaux
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Bateaux marins uniquement
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Bateaux fluviaux uniquement
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Remorqueur de barges

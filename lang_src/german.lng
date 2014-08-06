@@ -13,11 +13,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Geschwindigkeit
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Mögen der Farbe beim Trocknen zugucken
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES                              :Verfügbare Schiffe
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_DESC                         :Spiele mit allen Schiffen, beschränke auf Hochseeschiffe (langsam auf Binnengewässern) oder Binnenschiffen (langsam auf hoher See).
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_0                     :Alle Schiffe
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_1                     :Nur Hochsee-Schiffe
-STR_PARAM_SET_AVAILABLE_SHIP_TYPES_OPTION_2                     :Nur Binnenschiffe
 
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Schleppkahn
