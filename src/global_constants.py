@@ -1,3 +1,7 @@
+# changing the order of items in roster list breaks savegames, don't do it.
+rosters = ["brit"]
+
+
 # shared lists of allowed classes, shared across multiple vehicle types
 # these lists are similar but not identical across Iron Horse, Squid, Road Hog etc
 base_refits_by_class = {'empty': [],

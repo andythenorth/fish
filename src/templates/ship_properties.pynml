@@ -4,7 +4,7 @@
 item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
     property {
         name:                           ${ship.get_name()};
-        climates_available:             ALL_CLIMATES; // nml constant
+        climates_available:             NO_CLIMATE; // nml constant
         sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[ship.default_cargo=='PASS']};
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${ship.smoke_offset}); // nml constant for DIESEL-->
         visual_effect:                  visual_effect(VISUAL_EFFECT_STEAM, 0); // nml constant for DIESEL
@@ -41,6 +41,14 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         refit_cost:                     ${ship.id}_switch_refit_cost;
         default:                        ${ship.id}_switch_graphics;
         purchase:                       ${ship.id}_sg_purchase;
+    }
+}
+
+if (${ship.get_expression_for_rosters()}) {
+    item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
+        property {
+            climates_available:             ALL_CLIMATES;
+        }
     }
 }
 

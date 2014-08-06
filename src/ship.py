@@ -18,6 +18,7 @@ templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
 from ships import registered_ships
 
+from rosters import registered_rosters
 
 class Ship(object):
     """Base class for all types of ships"""
@@ -164,6 +165,19 @@ class Ship(object):
 
     def get_cargo_suffix(self):
         return 'string(' + self.cargo_units_refit_menu + ')'
+
+    def get_rosters_for_vehicle(self):
+        result = []
+        for roster in registered_rosters.values():
+            if self.id in roster.buy_menu_sort_order:
+                result.append(roster)
+        return result
+
+    def get_expression_for_rosters(self):
+        result = []
+        for roster in self.get_rosters_for_vehicle():
+            result.append('param_roster=='+str(global_constants.rosters.index(roster.id)))
+        return ' || '.join(result)
 
     def render_debug_info(self):
         template = templates["debug_info.pynml"]
