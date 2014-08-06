@@ -236,6 +236,31 @@ class GeneralCargoVessel(Ship):
         self.default_cargo_capacity = self.capacity_freight
 
 
+class UtilityVessel(Ship):
+    """
+    Refits everything.
+    """
+    def __init__(self, id, **kwargs):
+        super(UtilityVessel, self).__init__(id, **kwargs)
+        self.template = 'ship.pynml'
+        self.class_refit_groups = ['pax_mail','all_freight']
+        self.label_refits_allowed = [] # no specific labels needed, GCV refits all cargo
+        self.label_refits_disallowed = []
+        self.capacity_cargo_holds = kwargs.get('capacity_cargo_holds', 0)
+        self.capacity_freight = self.capacity_cargo_holds
+        self.default_cargo = 'PASS'
+        self.default_cargo_capacity = self.capacity_pax
+
+    def get_buy_menu_string(self):
+        # set buy menu text, with various variations
+        cargo_units = None # only used when needed
+        buy_menu_template = Template(
+            "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_UTILITY,${capacity_mail},${capacity_cargo_holds}))"
+        )
+        return buy_menu_template.substitute(str_type_info=self.get_str_type_info(), capacity_pax=self.capacity_pax,
+                                            capacity_mail=self.capacity_mail, capacity_cargo_holds=self.capacity_cargo_holds)
+
+
 class LivestockCarrier(MixinRefittableCapacity, Ship):
     """
     Special type for livestock (as you might guess).

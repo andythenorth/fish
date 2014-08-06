@@ -11,6 +11,7 @@ from ships import fastnet_paddle_steamer
 from ships import fish_island_trawler
 from ships import frisco_bay_freighter
 from ships import grindavik_reefer
+from ships import harbour_point_utility_vessel
 from ships import hopetown_tanker
 from ships import hovercraft_pax_large
 from ships import little_cumbrae_freighter
@@ -25,7 +26,8 @@ from ships import whitgift_freight_barge
 from ships import yokohama_tanker
 
 roster = Roster(id = 'brit',
-                buy_menu_sort_order = ['sunk_rock_ferry',
+                buy_menu_sort_order = ['harbour_point_utility_vessel',
+                                       'sunk_rock_ferry',
                                        'barletta_paddle_steamer',
                                        'fastnet_paddle_steamer',
                                        'castle_point_steamer',
