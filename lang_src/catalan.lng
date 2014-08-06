@@ -41,6 +41,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador d'Ú
 STR_BUY_MENU_TEXT                                               :Ofereix auto-remodelat{}Tipus: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacitat quan es remodela: {GOLD}{COMMA} bosses de correu o {COMMA}t de mercaderies exprés
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacitat quan es remodela: {GOLD}{COMMA} passatgers, {COMMA} bosses de correu, {COMMA}t de peix a les bodegues, or {COMMA}t de mercaderies exprés com a càrrega de coberta
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capacitat amb remodelació: {GOLD}{COMMA} sacs de correu o {COMMA} t de càrrega
 
 
 STR_BARGE_TUG                                                   :Barcassa remolcadora
@@ -54,8 +55,10 @@ STR_CONTAINER_FEEDER                                            :Vaixell conteni
 STR_CONTAINER_BARGE                                             :Transportador de contenidors per a vies d'aigua d'interior
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Nau ràpida d'ús general
 STR_FAST_PACKET_STEAMER                                         :Vaixell de vapor ràpid per a Paquets
+STR_SMALL_FERRY                                                 :Ferri petit
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Nau d'alta mar per a usos generals
 STR_GENERAL_PURPOSE_VESSEL                                      :Embarcacions d'ús general
+STR_HOVERCRAFT_FAST_FERRY                                       :Ferri aerolliscador ràpid
 STR_HYDROFOIL_FAST_FERRY                                        :Ferri hidrolliscador ràpid
 STR_JUMBO_VEHICLE_FERRY                                         :Ferri gran
 STR_LARGE_COASTAL_TANKER                                        :Vaixell cisterna coster gran
