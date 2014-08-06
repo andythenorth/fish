@@ -21,12 +21,15 @@ repo_vars = utils.get_repo_vars(sys)
 
 ships = fish.get_ships_in_buy_menu_order()
 
+from rosters import registered_rosters
+
 grf_nml = codecs.open(os.path.join('fish.nml'),'w','utf8')
 header_items = ['header', 'cargo_table', 'disable_default_ships']
 for header_item in header_items:
     template = templates[header_item + '.pynml']
     templated_nml = utils.unescape_chameleon_output(template(ships=ships, global_constants=global_constants,
-                                                    utils=utils, sys=sys, repo_vars=repo_vars))
+                                                    registered_rosters=registered_rosters, utils=utils,
+                                                    sys=sys, repo_vars=repo_vars))
     # append the results of templating
     grf_nml.write(templated_nml)
 
