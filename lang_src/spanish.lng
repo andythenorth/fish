@@ -6,13 +6,12 @@ STR_GRF_DESCRIPTION                                             :Licencia: {SILV
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de construcción mejorados para canales, acueductos y dársenas
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costes de construcción mejorados para canales, acueductos y dársenas.
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduce los costes de construcción (y retirada) para canales, acueductos y dársenas. Proporciona un mayor equilibrio entre los transportes marítimos (y/o fluviales) y el resto de tipos de transporte.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocidad del barco
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lento, como ver secarse la pintura
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Perfecto
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Rápido, podríamos decir que es hacer una pequeña trampa
-
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcaza remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
@@ -40,6 +39,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador poli
 STR_BUY_MENU_TEXT                                               :Ofrece auto-reforma{}Tipo: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} sacos de correo o {COMMA}t de carga express
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} pasajeros, {COMMA} sacos de correo, {COMMA}t de pescado en la bodega, o {COMMA}t de carga express en la cubierta
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} sacos de correo o {COMMA}t de carga
 
 
 STR_BARGE_TUG                                                   :Barcaza remolcadora

@@ -7,13 +7,15 @@ STR_GRF_DESCRIPTION                                             :Llicència: {SI
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costos de construcció millorats per a canals, aqüeductes i rescloses
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Usar costos de construcció millorats per a canals, aqüeductes i rescloses.
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Redueix els costos de construcció (i de demolició) de canals, aqüeductes i rescloses. Proporciona un millor equilibri entre el transport amb vaixells i els altres tipus de transport.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocitats dels vaixells
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Com veure com es seca la pintura
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Excessiva
-
+STR_PARAM_ROSTER                                                :Llistat a emprar
+STR_PARAM_ROSTER_DESC                                           :Selecciona quin conjunt de vaixells emprar.
+STR_PARAM_ROSTER_OPTION_0                                       :"Brit"
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcassa remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarà

@@ -14,7 +14,6 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Mögen der Farb
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
 
-
 STR_NAME_SUFFIX_BARGE_TUG                                       :Schleppkahn
 STR_NAME_SUFFIX_CATAMARAN                                       :{G=m}Katermaran
 STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Containerschiff
