@@ -14,7 +14,7 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
 STR_PARAM_ROSTER                                                :Roster
 STR_PARAM_ROSTER_DESC                                           :Choose which set of ships to use.
-STR_PARAM_ROSTER_OPTION_0                                       :"Brit"
+STR_PARAM_ROSTER_OPTION_0                                       :This Sceptred Isle
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barge Tug
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
