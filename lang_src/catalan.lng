@@ -15,7 +15,7 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Excessiva
 STR_PARAM_ROSTER                                                :Llistat a emprar
 STR_PARAM_ROSTER_DESC                                           :Selecciona quin conjunt de vaixells emprar.
-STR_PARAM_ROSTER_OPTION_0                                       :"Brit"
+STR_PARAM_ROSTER_OPTION_0                                       :Gran Bretanya
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcassa remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarà

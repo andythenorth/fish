@@ -12,6 +12,8 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Velocidad del b
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lento, como ver secarse la pintura
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Perfecto
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Rápido, podríamos decir que es hacer una pequeña trampa
+STR_PARAM_ROSTER                                                :Lista a usar
+STR_PARAM_ROSTER_DESC                                           :Selecciona el grupo de barcos que se usarán.
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcaza remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarán
