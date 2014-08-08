@@ -31,11 +31,15 @@ from ships import registered_ships
 from rosters import registered_rosters
 
 from rosters import brit
+from rosters import euro
 
 def get_ships_in_buy_menu_order():
     sorted_ships = []
+    buy_menu_sort_order = []
     # first compose the buy menu order list
-    buy_menu_sort_order = list(registered_rosters['brit'].buy_menu_sort_order) # copy the list to avoid unwanted modifications to it
+    for roster in registered_rosters.values():
+        buy_menu_sort_order.extend(roster.buy_menu_sort_order)
+
     for id in buy_menu_sort_order:
         found = False
         for ship in registered_ships:

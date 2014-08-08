@@ -1,5 +1,5 @@
 # changing the order of items in roster list breaks savegames, don't do it.
-rosters = ["brit"]
+rosters = ["brit", "euro"]
 
 
 # shared lists of allowed classes, shared across multiple vehicle types

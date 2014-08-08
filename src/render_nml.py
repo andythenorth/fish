@@ -33,7 +33,7 @@ for header_item in header_items:
     # append the results of templating
     grf_nml.write(templated_nml)
 
-for ship in ships:
+for ship in set(ships):
     templated_nml = ship.render()
     # an ugly hack here because chameleon html escapes some characters
     templated_nml = '>'.join(templated_nml.split('&gt;'))
