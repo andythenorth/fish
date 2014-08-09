@@ -168,7 +168,7 @@ class Ship(object):
 
     def get_rosters_for_vehicle(self):
         result = []
-        for roster in registered_rosters.values():
+        for roster in registered_rosters:
             if self.id in roster.buy_menu_sort_order:
                 result.append(roster)
         return result
@@ -176,7 +176,7 @@ class Ship(object):
     def get_expression_for_rosters(self):
         result = []
         for roster in self.get_rosters_for_vehicle():
-            result.append('param_roster=='+str(global_constants.rosters.index(roster.id)))
+            result.append('param_roster=='+str(registered_rosters.index(roster)))
         return ' || '.join(result)
 
     def render_debug_info(self):

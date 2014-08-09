@@ -1,6 +1,3 @@
-# changing the order of items in roster list breaks savegames, don't do it.
-rosters = ["brit", "euro"]
-
 
 # shared lists of allowed classes, shared across multiple vehicle types
 # these lists are similar but not identical across Iron Horse, Squid, Road Hog etc
