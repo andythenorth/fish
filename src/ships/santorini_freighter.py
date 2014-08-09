@@ -4,7 +4,7 @@ from ship import Ship, GeneralCargoVessel
 ship = GeneralCargoVessel(id = 'santorini_freighter',
             numeric_id = 230,
             title = 'Santorini [Freighter]',
-            capacity_cargo_holds = 960,
+            capacity_cargo_holds = 1120,
             replacement_id = '-none',
             buy_cost = 85,
             fixed_run_cost_factor = 7.0,
