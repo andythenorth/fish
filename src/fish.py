@@ -33,7 +33,7 @@ from rosters import registered_rosters
 from rosters import brit
 from rosters import euro
 
-def get_ships_in_buy_menu_order():
+def get_ships_in_buy_menu_order(show_warnings=False):
     sorted_ships = []
     buy_menu_sort_order = []
     # first compose the buy menu order list
@@ -48,5 +48,11 @@ def get_ships_in_buy_menu_order():
                 found = True
         if not found:
             utils.echo_message("Warning: ship " + id + " in buy_menu_sort_order, but not found in registered_ships")
+
+    # now guard against any ships missing from buy menu order, as that wastes time asking 'wtf?' when they don't appear in game
+    for ship in registered_ships:
+        id = ship.id
+        if show_warnings and id not in buy_menu_sort_order:
+            utils.echo_message("Warning: ship " + id + " in registered_ships, but not in buy_menu_sort_order - won't show in game")
     return sorted_ships
 
