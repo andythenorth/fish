@@ -16,6 +16,7 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Excessiva
 STR_PARAM_ROSTER                                                :Llistat a emprar
 STR_PARAM_ROSTER_DESC                                           :Selecciona quin conjunt de vaixells emprar.
 STR_PARAM_ROSTER_OPTION_0                                       :Gran Bretanya
+STR_PARAM_ROSTER_OPTION_1                                       :El Danubi Blau
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barcassa remolcadora
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamarà
@@ -64,6 +65,7 @@ STR_HOVERCRAFT_FAST_FERRY                                       :Ferri aerollisc
 STR_HYDROFOIL_FAST_FERRY                                        :Ferri hidrolliscador ràpid
 STR_JUMBO_VEHICLE_FERRY                                         :Ferri gran
 STR_LARGE_COASTAL_TANKER                                        :Vaixell cisterna coster gran
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Vaixell cisterna gran per a costa i interior
 STR_LARGE_COASTER                                               :Vaixell coster gran de càrrega
 STR_LIVESTOCK_SHIP                                              :Vaixell per a bestiar
 STR_LOG_TUG                                                     :Remolcador per arrossegar troncs de fusta
