@@ -5,7 +5,8 @@
         <h2>${len(ships)} ships for OpenTTD</h2>
         <hr />
         <tal:rosters repeat="roster registered_rosters">
-            <h3>${roster.id}</h3>
+            <h3>${doc_helper.get_roster_name(repeat.roster.index)}</h3>
+            <p>${len(roster.buy_menu_sort_order)} Ships</p>
             <table class="table table-striped tablesorter">
                 <thead>
                     <tr>

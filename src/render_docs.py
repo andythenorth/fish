@@ -76,6 +76,9 @@ class DocHelper(object):
                 ships_by_subclass[subclass] = [ship]
         return ships_by_subclass
 
+    def get_roster_name(self, index):
+        return base_lang_strings.get('STR_PARAM_ROSTER_OPTION_' + str(index), '')
+
     def fetch_prop(self, result, prop_name, value):
         result['ship'][prop_name] = value
         result['subclass_props'].append(prop_name)
