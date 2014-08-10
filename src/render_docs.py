@@ -54,6 +54,8 @@ ships = fish.get_ships_in_buy_menu_order()
 # default sort for docs is by ship intro date
 ships = sorted(ships, key=lambda ship: ship.intro_date)
 
+from rosters import registered_rosters
+
 metadata = {}
 dates = sorted([i.intro_date for i in ships])
 metadata['dates'] = (dates[0], dates[-1])
@@ -118,7 +120,7 @@ class DocHelper(object):
 def render_docs(doc_list, file_type, use_markdown=False):
     for doc_name in doc_list:
         template = docs_templates[doc_name + '.pt'] # .pt is the conventional extension for chameleon page templates
-        doc = template(ships=ships, repo_vars=repo_vars, base_lang_strings=base_lang_strings, metadata=metadata,
+        doc = template(ships=ships, registered_rosters=registered_rosters, repo_vars=repo_vars, base_lang_strings=base_lang_strings, metadata=metadata,
                        utils=utils, doc_helper=DocHelper(), doc_name=doc_name)
         if use_markdown:
             # the doc might be in markdown format, if so we need to render markdown to html, and wrap the result in some boilerplate html

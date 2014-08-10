@@ -4,26 +4,31 @@
     <div class="span12">
         <h2>${len(ships)} ships for OpenTTD</h2>
         <hr />
-        <table class="table table-striped tablesorter">
-            <thead>
-                <tr>
-                    <th>Ship Name</th>
-                    <th class="number">Intro Date</th>
-                    <th>Extra Info</th>
-                    <th>Speed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tal:build_ships_list repeat="ship ships">
+        <tal:rosters repeat="roster registered_rosters">
+            <h3>${roster.id}</h3>
+            <table class="table table-striped tablesorter">
+                <thead>
                     <tr>
-                        <td>${ship.get_name_substr()} ${base_lang_strings[ship.get_str_name_suffix()]}</td>
-                        <td class="number">${ship.intro_date}</td>
-                        <td>${base_lang_strings[ship.get_str_type_info()]}</td>
-                        <td>${int(ship.speed)} mph</td>
+                        <th>Ship Name</th>
+                        <th class="number">Intro Date</th>
+                        <th>Extra Info</th>
+                        <th>Speed</th>
                     </tr>
-                </tal:build_ships_list>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <tal:build_ships_list repeat="ship ships">
+                        <tal:ship_in_roster condition="ship.id in roster.buy_menu_sort_order">
+                            <tr>
+                                <td>${ship.get_name_substr()} ${base_lang_strings[ship.get_str_name_suffix()]}</td>
+                                <td class="number">${ship.intro_date}</td>
+                                <td>${base_lang_strings[ship.get_str_type_info()]}</td>
+                                <td>${int(ship.speed)} mph</td>
+                            </tr>
+                        </tal:ship_in_roster>
+                    </tal:build_ships_list>
+                </tbody>
+            </table>
+        </tal:rosters>
     </div>
 
 </div>
