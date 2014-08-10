@@ -64,6 +64,7 @@ STR_HOVERCRAFT_FAST_FERRY                                       :Hovercraft fast
 STR_HYDROFOIL_FAST_FERRY                                        :Hydrofoil fast ferry
 STR_JUMBO_VEHICLE_FERRY                                         :Jumbo ship ferry
 STR_LARGE_COASTAL_TANKER                                        :Large coastal tanker
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Large tanker for coastal and inland waterways
 STR_LARGE_COASTER                                               :Large coastal freighter
 STR_LIVESTOCK_SHIP                                              :Livestock ship
 STR_LOG_TUG                                                     :Tugboat for towing floating logs

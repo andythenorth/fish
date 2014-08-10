@@ -2,9 +2,9 @@ import global_constants
 from ship import Ship, Hydrofoil
 
 ship = Hydrofoil(id = 'feodosiya_hydrofoil',
-            numeric_id = 60,
+            numeric_id = 2040,
             title = 'Feodosiya [Hydrofoil]',
-            capacity_pax = 106,
+            capacity_pax = 100,
             capacity_cargo_holds = 0,
             capacity_mail = 32,
             replacement_id = '-none',

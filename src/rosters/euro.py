@@ -10,6 +10,7 @@ from ships import dieze_container_barge
 #from ships import eddystone_tanker
 #from ships import fish_island_trawler
 #from ships import frisco_bay_freighter
+from ships import feodosiya_hydrofoil
 from ships import geneva_freight_barge
 #from ships import harbour_point_utility_vessel
 #from ships import hopetown_tanker
@@ -20,6 +21,8 @@ from ships import geneva_freight_barge
 from ships import saint_marie_barge_tug
 #from ships import shark_island_livestock_ship
 #from ships import sunk_rock_ferry
+from ships import volgoneft_six_thirty_tanker_barge
+from ships import volgoneft_two_seventy_tanker_barge
 #from ships import whitgift_freight_barge
 #from ships import yokohama_tanker
 
@@ -29,6 +32,7 @@ roster = Roster(id = 'euro',
                                        #'barletta_paddle_steamer',
                                        #'castle_point_steamer',
                                        #'hovercraft_pax_large',
+                                       'feodosiya_hydrofoil',
                                        #'fish_island_trawler',
                                        #'cape_spear_trawler',
                                        #'whitgift_freight_barge',
@@ -44,5 +48,7 @@ roster = Roster(id = 'euro',
                                        #'eddystone_tanker',
                                        #'hopetown_tanker',
                                        #'yokohama_tanker',
+                                       'volgoneft_two_seventy_tanker_barge',
+                                       'volgoneft_six_thirty_tanker_barge',
                                        #'shark_island_livestock_ship',
                                        'dieze_container_barge'])
