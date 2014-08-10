@@ -6,6 +6,8 @@ from roster import Roster
 #from ships import cape_spear_trawler
 #from ships import castle_point_steamer
 from ships import constance_freight_barge
+from ships import danube_small_ferry
+from ships import danube_paddle_steamer
 from ships import dieze_container_barge
 #from ships import eddystone_tanker
 #from ships import fish_island_trawler
@@ -28,8 +30,8 @@ from ships import volgoneft_two_seventy_tanker_barge
 
 roster = Roster(id = 'euro',
                 buy_menu_sort_order = [#'harbour_point_utility_vessel',
-                                       #'sunk_rock_ferry',
-                                       #'barletta_paddle_steamer',
+                                       'danube_small_ferry',
+                                       'danube_paddle_steamer',
                                        #'castle_point_steamer',
                                        #'hovercraft_pax_large',
                                        'feodosiya_hydrofoil',
