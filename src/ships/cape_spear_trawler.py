@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, Trawler
 
 ship = Trawler(id = 'cape_spear_trawler',
-            numeric_id = 140,
+            numeric_id = 1210,
             title = 'Cape Spear [Trawler]',
             capacity_pax = 40,
             capacity_deck_cargo = 44,

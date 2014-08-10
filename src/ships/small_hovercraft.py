@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, PacketBoat
 
 ship = PacketBoat(id = 'small_hovercraft',
-            numeric_id = 150,
+            numeric_id = 1050,
             title = 'Small [Hovercraft]',
             capacity_pax = 70,
             capacity_cargo_holds = 25,

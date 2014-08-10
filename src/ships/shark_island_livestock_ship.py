@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, LivestockCarrier
 
 ship = LivestockCarrier(id = 'shark_island_livestock_ship',
-            numeric_id = 290,
+            numeric_id = 1230,
             title = 'Shark Island [Livestock Ship]',
             capacities_refittable = [200, 400, 600],
             replacement_id = '-none',

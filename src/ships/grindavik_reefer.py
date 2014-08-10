@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, Reefer
 
 ship = Reefer(id = 'grindavik_reefer',
-            numeric_id = 210,
+            numeric_id = 1220,
             title = 'Grindavik [Reefer]',
             capacity_cargo_holds = 750,
             replacement_id = '-none',

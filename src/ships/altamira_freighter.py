@@ -2,7 +2,7 @@ import global_constants
 from ship import Ship, GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'altamira_freighter',
-            numeric_id = 190,
+            numeric_id = 1110,
             title = 'Altamira [Freighter]',
             capacity_cargo_holds = 360,
             replacement_id = 'cadiz_freighter',
