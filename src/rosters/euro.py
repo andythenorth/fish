@@ -7,7 +7,9 @@ from roster import Roster
 #from ships import castle_point_steamer
 from ships import constance_freight_barge
 from ships import danube_large_ferry
+from ships import danube_livestock_barge
 from ships import danube_paddle_steamer
+from ships import danube_reefer
 from ships import danube_small_ferry
 from ships import dieze_container_barge
 #from ships import eddystone_tanker
@@ -52,5 +54,6 @@ roster = Roster(id = 'euro',
                                        #'yokohama_tanker',
                                        'volgoneft_two_seventy_tanker_barge',
                                        'volgoneft_six_thirty_tanker_barge',
-                                       #'shark_island_livestock_ship',
+                                       'danube_reefer',
+                                       'danube_livestock_barge',
                                        'dieze_container_barge'])
