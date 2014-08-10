@@ -42,6 +42,7 @@ def get_ships_in_buy_menu_order(show_warnings=False):
         buy_menu_sort_order.extend(roster.buy_menu_sort_order)
 
     # gotcha: but menu order will be wrong if a ship appears in more than one roster with same numeric ID
+    # there is no other limitation on re-using a ship in multiple rosters, and the buy menu could be fixed if needed (declare buy menu order multiple times, wrapped in param check)
     for id in buy_menu_sort_order:
         found = False
         for ship in registered_ships:
