@@ -64,6 +64,7 @@ STR_HOVERCRAFT_FAST_FERRY                                       :Ferry hovercraf
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry aerodeslizador rápido
 STR_JUMBO_VEHICLE_FERRY                                         :Ferry gigante
 STR_LARGE_COASTAL_TANKER                                        :Barco cisterna costero grande
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Barco cisterna grande para costas y vías fluviales (ríos, canales y lagos)
 STR_LARGE_COASTER                                               :Barco costero grande
 STR_LIVESTOCK_SHIP                                              :Barco ganadero
 STR_LOG_TUG                                                     :Remolcador de troncos de madera
