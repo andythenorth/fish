@@ -1,9 +1,9 @@
 import global_constants
 from ship import Ship, GeneralCargoVessel
 
-ship = GeneralCargoVessel(id = 'constance_freight_barge',
-            numeric_id = 2120,
-            title = 'Constance [Freight Barge]',
+ship = GeneralCargoVessel(id = 'danube_small_diesel_barge',
+            numeric_id = 2130,
+            title = 'DANUBE SMALL DIESEL [Freight Barge]',
             capacity_cargo_holds = 560,
             replacement_id = '-none',
             buy_cost = 4,

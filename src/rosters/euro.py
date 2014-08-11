@@ -8,8 +8,10 @@ from ships import danube_paddle_steamer
 from ships import danube_reefer
 from ships import danube_small_ferry
 from ships import danube_small_freight_barge
+from ships import danube_small_diesel_barge
 from ships import danube_trawler
 from ships import danube_utility_vessel
+from ships import danube_very_large_barge
 from ships import danube_very_large_tanker
 from ships import dieze_container_barge
 from ships import endeavour_utility_catamaran
@@ -29,18 +31,11 @@ roster = Roster(id = 'euro',
                                        'danube_large_trawler',
                                        'endeavour_utility_catamaran',
                                        'danube_small_freight_barge',
-                                       #'marstein_freighter',
-                                       #'altamira_freighter',
                                        'saint_marie_barge_tug',
                                        'constance_freight_barge',
+                                       'danube_small_diesel_barge',
                                        'geneva_freight_barge',
-                                       #'cadiz_freighter',
-                                       #'frisco_bay_freighter',
-                                       #'santorini_freighter',
-                                       #'maspalomas_freighter',
-                                       #'eddystone_tanker',
-                                       #'hopetown_tanker',
-                                       #'yokohama_tanker',
+                                       'danube_very_large_barge',
                                        'volgoneft_two_seventy_tanker_barge',
                                        'volgoneft_six_thirty_tanker_barge',
                                        'danube_very_large_tanker',
