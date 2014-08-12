@@ -8,12 +8,16 @@ STR_GRF_DESCRIPTION                                             :Licenca: {SILVE
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Koristi napredne troškove gradnje za kanale, akvedukte i ustave
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Koristi napredne troškove gradnje za kanale, akvedukte i ustave.
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Smanjuje troškove gradnje (i uklanjanja) za kanale, akvedukte i ustave. Daje bolju balansiranost izmeđe vodenog prijevoza i ostalih vrsta prijevoza.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Brzina broda
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Kao gledanje sušenja boje
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Idealna
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Varanje
+STR_PARAM_ROSTER                                                :Popis
+STR_PARAM_ROSTER_DESC                                           :Odaberite koji set brodova želite koristiti.
+STR_PARAM_ROSTER_OPTION_0                                       :Ovaj otok od žezla
+STR_PARAM_ROSTER_OPTION_1                                       :Plavi Dunav
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Remorker za barže
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
@@ -41,6 +45,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Remorker
 STR_BUY_MENU_TEXT                                               :Moguć automatski remont{}Tip: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Kapacitet kod prilagodbe: {GOLD}{COMMA} vreća pošte ili {COMMA}t ekspresnog tereta
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Kapacitet kod prilagodbe: {GOLD}{COMMA} putnika, {COMMA} vreća pošte, {COMMA}t ribe u štivama, ili {COMMA}t ekspresnog tereta na palubi
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Kapacitet kod prilagodbe: {GOLD}{COMMA} vreća pošte ili {COMMA}t tereta
 
 
 STR_BARGE_TUG                                                   :Remorker za barže
@@ -54,11 +59,14 @@ STR_CONTAINER_FEEDER                                            :Mali brod za ko
 STR_CONTAINER_BARGE                                             :Kontejnerski brod za unutarnje vode
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Brzi brod za opći teret
 STR_FAST_PACKET_STEAMER                                         :Brzi parobrod
+STR_SMALL_FERRY                                                 :Mali feribot
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Brod za opći teret za morski prijevoz
 STR_GENERAL_PURPOSE_VESSEL                                      :Brod za opći teret
+STR_HOVERCRAFT_FAST_FERRY                                       :Brzi feribot hoverkraft
 STR_HYDROFOIL_FAST_FERRY                                        :Feribot hidrokrilac
 STR_JUMBO_VEHICLE_FERRY                                         :Jumbo feribot
 STR_LARGE_COASTAL_TANKER                                        :Veliki tanker za obalnu plovidbu
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Veliki tanker za obalnu plovidbu i unutarnje vode
 STR_LARGE_COASTER                                               :Veliki teretni brod za obalnu plovidbu
 STR_LIVESTOCK_SHIP                                              :Brod za stoku
 STR_LOG_TUG                                                     :Remorker za vuču plutajućih trupaca
