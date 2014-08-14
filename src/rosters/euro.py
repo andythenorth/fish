@@ -9,7 +9,6 @@ from ships import danube_reefer
 from ships import danube_small_ferry
 from ships import danube_small_freight_barge
 from ships import danube_small_diesel_barge
-from ships import danube_trawler
 from ships import danube_utility_vessel
 from ships import danube_very_large_barge
 from ships import danube_very_large_tanker
@@ -27,7 +26,6 @@ roster = Roster(id = 'euro',
                                        'danube_paddle_steamer',
                                        'danube_large_ferry',
                                        'feodosiya_hydrofoil',
-                                       'danube_trawler',
                                        'danube_large_trawler',
                                        'endeavour_utility_catamaran',
                                        'danube_small_freight_barge',
