@@ -1,8 +1,8 @@
 import global_constants
 from ship import Ship, Trawler
 
-ship = Trawler(id = 'danube_large_trawler',
-            numeric_id = 2210,
+ship = Trawler(id = 'danube_trawler',
+            numeric_id = 2200,
             title = 'DANUBE [Trawler]',
             capacity_pax = 40,
             capacity_deck_cargo = 44,

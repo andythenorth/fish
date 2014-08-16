@@ -2,7 +2,7 @@ from roster import Roster
 
 from ships import constance_freight_barge
 from ships import danube_large_ferry
-from ships import danube_large_trawler
+from ships import danube_trawler
 from ships import danube_livestock_barge
 from ships import danube_paddle_steamer
 from ships import danube_reefer
@@ -16,7 +16,7 @@ from ships import dieze_container_barge
 from ships import endeavour_utility_catamaran
 from ships import feodosiya_hydrofoil
 from ships import geneva_freight_barge
-from ships import saint_marie_barge_tug
+from ships import saint_marie_freight_barge
 from ships import volgoneft_six_thirty_tanker_barge
 from ships import volgoneft_two_seventy_tanker_barge
 
@@ -26,10 +26,10 @@ roster = Roster(id = 'euro',
                                        'danube_paddle_steamer',
                                        'danube_large_ferry',
                                        'feodosiya_hydrofoil',
-                                       'danube_large_trawler',
+                                       'danube_trawler',
                                        'endeavour_utility_catamaran',
                                        'danube_small_freight_barge',
-                                       'saint_marie_barge_tug',
+                                       'saint_marie_freight_barge',
                                        'constance_freight_barge',
                                        'danube_small_diesel_barge',
                                        'geneva_freight_barge',
