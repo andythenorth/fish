@@ -1,6 +1,38 @@
 Changelog
 =========
 
+-----------
+0.1 Release
+------------
+
+*New Features / Changes*
+
+- remove parameter for turning Sea / River ships on / off
+- introduce Rosters (work in progress): choose one set of ships from a range of options
+- only one roster available in 0.1: This Sceptred Isle, a British-ish set of ships
+- some ships removed
+- some new ships added
+- river ships no longer have a speed penalty on open sea, for gameplay balance
+- adjust speeds, capacities and intro dates for gameplay balance
+- remove some confusing graphic variations
+- remove smoke from all ships, present in alphas as a test only, may return in future
+
+*Language Updates*
+
+- Afrikaans (telanus)
+- Catalan (juanjo)
+- Croatian (Voyager1)
+- Dutch (foobar)
+- Finnish (Arexander)
+- French (Arikover)
+- Korean KR (kevin, konlee0518)
+- German (Planetmaker)
+- Polish (ciekma)
+- Russian (George)
+- Scots Gaelic (GunChleoc)
+- Spanish (SilverSurferZzZ)
+
+
 -------
 Alpha 5
 -------
@@ -76,7 +108,7 @@ Alpha 2
 *Fixes*
 
 - Grindavik Reefer
-    - improved sprites (DanMacK) 
+    - improved sprites (DanMacK)
     - spritesheet missing rows
     - removed flashing pixels
 - remove white pixel from Little Cumbrae Freigher
