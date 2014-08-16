@@ -12,6 +12,10 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Skip Spoed
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Baie Stadig
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Verneuk
+STR_PARAM_ROSTER                                                :Rooster
+STR_PARAM_ROSTER_DESC                                           :Kies watter stel skepe om te gebruik.
+STR_PARAM_ROSTER_OPTION_0                                       :Die 'Sceptered' Eiland
+STR_PARAM_ROSTER_OPTION_1                                       :Die Blou Danube
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Skip Sloep
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
@@ -39,6 +43,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Veeldoelige Sle
 STR_BUY_MENU_TEXT                                               :Bied auto-verstelling{}Tipe: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Dravermoë wanneer herbou: {GOLD}{COMMA} sakke pos of {COMMA}t snel vrag
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Dravermoë wanneer herbou: {GOLD}{COMMA} passasiers, {COMMA} sakke pos, {COMMA}t of vis in skeepsruim, of {COMMA}t of snel vrag as dek vrag
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Dravermoë wanneer herbou: {GOLD}{COMMA} sakke pos of {COMMA}t vrag
 
 
 STR_BARGE_TUG                                                   :Skip sloep
@@ -52,11 +57,14 @@ STR_CONTAINER_FEEDER                                            :Klein boks boot
 STR_CONTAINER_BARGE                                             :Boks vervoerder vir binnelandse waterweë
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Vinnige Algemeene Veeldoelige Vaartuig
 STR_FAST_PACKET_STEAMER                                         :Vinnige Pakket Stoomboot
+STR_SMALL_FERRY                                                 :Klein Veerboot
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Veeldoelige seegaande vaartuig
 STR_GENERAL_PURPOSE_VESSEL                                      :Veeldoelige vaartuig
+STR_HOVERCRAFT_FAST_FERRY                                       :Vinnige Skeerveerboot
 STR_HYDROFOIL_FAST_FERRY                                        :Vinnige Skeerveerboot
 STR_JUMBO_VEHICLE_FERRY                                         :Jumbo veerboot
 STR_LARGE_COASTAL_TANKER                                        :Groot Kus tenkskip
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Groot tenker vir kus en binnelandse waterweë
 STR_LARGE_COASTER                                               :Groot Kusvaarder
 STR_LIVESTOCK_SHIP                                              :Lewendehawe skip
 STR_LOG_TUG                                                     :Sleepboot wat hout sleep
