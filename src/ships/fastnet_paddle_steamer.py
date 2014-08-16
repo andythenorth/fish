@@ -22,8 +22,7 @@ ship = PacketBoat(id = 'fastnet_paddle_steamer',
             buy_menu_bb_xy = [620, 26],
             str_type_info = 'PADDLE_STEAMER',
             vehicle_life = 40,
-            gross_tonnage = 800,
-            graphics_status = 'Done',)
+            gross_tonnage = 800)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

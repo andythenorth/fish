@@ -23,8 +23,7 @@ ship = Trawler(id = 'cape_spear_trawler',
             buy_menu_bb_xy = [663, 21],
             str_type_info = 'TRAWLER',
             vehicle_life = 40,
-            gross_tonnage = 84,
-            graphics_status = 'Done',)
+            gross_tonnage = 84)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

@@ -22,8 +22,7 @@ ship = Hydrofoil(id = 'matsushima_hydrofoil',
             buy_menu_bb_xy = [624, 28],
             str_type_info = 'HYDROFOIL_FAST_FERRY',
             vehicle_life = 45,
-            gross_tonnage = 120,
-            graphics_status = 'Done',)
+            gross_tonnage = 120)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

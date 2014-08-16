@@ -22,8 +22,7 @@ ship = PacketBoat(id = 'patos_island_vehicle_ferry',
             buy_menu_bb_xy = [622, 28],
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 60,
-            gross_tonnage = 500,
-            graphics_status = 'Done',)
+            gross_tonnage = 500)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

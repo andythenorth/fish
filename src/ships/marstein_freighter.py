@@ -20,8 +20,7 @@ ship = GeneralCargoVessel(id = 'marstein_freighter',
             buy_menu_bb_xy = [649, 21],
             str_type_info = 'SMALL_FREIGHTER',
             vehicle_life = 40,
-            gross_tonnage = 270,
-            graphics_status = 'Unstarted',)
+            gross_tonnage = 270)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

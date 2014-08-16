@@ -20,8 +20,7 @@ ship = Reefer(id = 'danube_reefer',
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'REEFER',
             vehicle_life = 35,
-            gross_tonnage = 700,
-            graphics_status = 'Done',)
+            gross_tonnage = 700)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

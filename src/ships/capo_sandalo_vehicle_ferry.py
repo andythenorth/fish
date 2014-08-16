@@ -22,8 +22,7 @@ ship = PacketBoat(id = 'capo_sandalo_vehicle_ferry',
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'VEHICLE_FERRY',
             vehicle_life = 45,
-            gross_tonnage = 1150,
-            graphics_status = 'Done',)
+            gross_tonnage = 1150)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

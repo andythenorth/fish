@@ -22,8 +22,7 @@ ship = UtilityVessel(id = 'danube_utility_vessel',
             buy_menu_bb_xy = [673, 23],
             str_type_info = 'SMALL_GENERAL_PURPOSE_VESSEL',
             vehicle_life = 40,
-            gross_tonnage = 30,
-            graphics_status = 'Done',)
+            gross_tonnage = 30)
 
 ship.add_model_variant(intro_date=0,
                        end_date=1945,

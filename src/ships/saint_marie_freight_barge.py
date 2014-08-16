@@ -20,8 +20,7 @@ ship = GeneralCargoVessel(id = 'saint_marie_freight_barge',
             buy_menu_bb_xy = [652, 28],
             str_type_info = 'CARGO_VESSEL_INLAND',
             vehicle_life = 55,
-            gross_tonnage = 45,
-            graphics_status = 'Work in Progress - Coxx',)
+            gross_tonnage = 45)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

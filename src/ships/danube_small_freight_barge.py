@@ -20,8 +20,7 @@ ship = GeneralCargoVessel(id = 'danube_small_freight_barge',
             buy_menu_bb_xy = [667, 21],
             str_type_info = 'SMALL_CARGO_VESSEL_INLAND',
             vehicle_life = 60,
-            gross_tonnage = 60,
-            graphics_status = 'Done',)
+            gross_tonnage = 60)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

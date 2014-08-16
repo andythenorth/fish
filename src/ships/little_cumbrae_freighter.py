@@ -20,8 +20,7 @@ ship = GeneralCargoVessel(id = 'little_cumbrae_freighter',
             buy_menu_bb_xy = [649, 21],
             str_type_info = 'SMALL_FREIGHTER',
             vehicle_life = 35,
-            gross_tonnage = 100,
-            graphics_status = 'Done',)
+            gross_tonnage = 100)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

@@ -16,12 +16,11 @@ ship = GeneralCargoVessel(id = 'danube_small_diesel_barge',
             offsets = [[-14, -42], [-61, -28], [-55, -29], [-10, -28], [-14, -54], [-61, -28], [-55, -29], [-9, -28]],
             buy_menu_width = 109,
             loading_speed = 20,
-            intro_date = 1961,
+            intro_date = 1920,
             buy_menu_bb_xy = [624, 21],
             str_type_info = 'CARGO_VESSEL_INLAND',
             vehicle_life = 60,
-            gross_tonnage = 580,
-            graphics_status = 'Done',)
+            gross_tonnage = 580)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

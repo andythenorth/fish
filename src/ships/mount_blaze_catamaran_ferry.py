@@ -22,9 +22,8 @@ ship = PacketBoat(id = 'mount_blaze_catamaran_ferry',
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'CATAMARAN_FAST_FERRY',
             vehicle_life = 30,
-            gross_tonnage = 1600,
-            graphics_status = 'Unstarted',)
+            gross_tonnage = 1600)
 
-ship.add_model_variant(intro_date=0, 
+ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,
                        spritesheet_suffix=0)

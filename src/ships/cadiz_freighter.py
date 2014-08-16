@@ -20,8 +20,7 @@ ship = GeneralCargoVessel(id = 'cadiz_freighter',
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'COASTER',
             vehicle_life = 40,
-            gross_tonnage = 360,
-            graphics_status = 'Work in Progress - Coxx',)
+            gross_tonnage = 360)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,

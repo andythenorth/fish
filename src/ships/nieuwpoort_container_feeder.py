@@ -20,8 +20,7 @@ ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'CONTAINER_FEEDER',
             vehicle_life = 30,
-            gross_tonnage = 800,
-            graphics_status = 'Work in Progress - DanMacK',)
+            gross_tonnage = 800)
 
 ship.add_model_variant(intro_date=0,
                        end_date=global_constants.max_game_date,
