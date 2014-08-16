@@ -1,14 +1,15 @@
 from roster import Roster
 
 from ships import constance_freight_barge
+from ships import danube_better_reefer
 from ships import danube_large_ferry
-from ships import danube_trawler
 from ships import danube_livestock_barge
 from ships import danube_paddle_steamer
 from ships import danube_reefer
 from ships import danube_small_ferry
 from ships import danube_small_freight_barge
 from ships import danube_small_diesel_barge
+from ships import danube_trawler
 from ships import danube_utility_vessel
 from ships import danube_very_large_barge
 from ships import danube_very_large_tanker
@@ -38,5 +39,6 @@ roster = Roster(id = 'euro',
                                        'volgoneft_six_thirty_tanker_barge',
                                        'danube_very_large_tanker',
                                        'danube_reefer',
+                                       'danube_better_reefer',
                                        'danube_livestock_barge',
                                        'dieze_container_barge'])

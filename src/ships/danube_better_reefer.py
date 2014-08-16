@@ -1,9 +1,9 @@
 import global_constants
 from ship import Ship, Reefer
 
-ship = Reefer(id = 'danube_reefer',
-            numeric_id = 2210,
-            title = 'DANUBE [Reefer]',
+ship = Reefer(id = 'danube_better_reefer',
+            numeric_id = 2220,
+            title = 'DANUBE BETTER [Reefer]',
             capacity_cargo_holds = 550,
             replacement_id = '-none',
             buy_cost = 85,
