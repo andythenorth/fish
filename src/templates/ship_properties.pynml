@@ -7,7 +7,7 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         climates_available:             NO_CLIMATE; // nml constant
         sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[ship.default_cargo=='PASS']};
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${ship.smoke_offset}); // nml constant for DIESEL-->
-        visual_effect:                  visual_effect(VISUAL_EFFECT_STEAM, 0); // nml constant for DIESEL
+        visual_effect:                  visual_effect(VISUAL_EFFECT_DISABLE, 0); // nml constant for DIESEL
         introduction_date:              date(${ship.intro_date},01,01); // ship just supplies intro year - openttd randomises intro dates a bit anyway
         cargo_capacity:                 ${ship.default_cargo_capacity};
         sprite_id:                      SPRITE_ID_NEW_SHIP; //enable new graphics - nml constant
