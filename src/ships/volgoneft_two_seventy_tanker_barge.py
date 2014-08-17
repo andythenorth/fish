@@ -1,6 +1,8 @@
 import global_constants
 from ship import Ship, Tanker
 
+# http://en.wikipedia.org/wiki/Vandal_(tanker)
+
 ship = Tanker(id = 'volgoneft_two_seventy_tanker_barge',
             numeric_id = 2250,
             title = 'Volgoneft 270 [Tanker]',
