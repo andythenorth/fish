@@ -8,12 +8,16 @@ STR_GRF_DESCRIPTION                                             :Ceadachas: {SIL
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Cleachd cosgaisean togail leasaichte airson chanalan, ductaichean-uisge ’s locan
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Cleachd cosgaisean togail leasaichte airson chanalan, ductaichean-uisge ’s locan.
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Ìslichidh seo na cosgaisean togail (’s toirt air falbh) airson canalan, ductaichean-uisge ’s locan.  Bheir seo meidh nas fhearr dut eadar giùlan uisge ’s seòrsaichean giùlain eile.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Luaths luinge
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Cho mall ri seilcheig
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Barrail
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cealgaireachd
+STR_PARAM_ROSTER                                                :Clàr nan longan
+STR_PARAM_ROSTER_DESC                                           :Tagh an seata de longan a chleachdas tu.
+STR_PARAM_ROSTER_OPTION_0                                       :A' Bhreatann
+STR_PARAM_ROSTER_OPTION_1                                       :An Danub Ghorm
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Tuga bàirc
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
@@ -41,6 +45,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Tuga ghoireasan
 STR_BUY_MENU_TEXT                                               :Gabhaidh a mhùthadh{}Seòrsa: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Tomhas-lìonaidh às dèidh a’ mùthaidh: {GOLD}{COMMA} {P bhaga bhaga bagaichean baga}-puist no {COMMA}t de luath-fhrachd
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Tomhas-lìonaidh às dèidh a’ mùthaidh: {GOLD}{COMMA} {P taistealach thaistealach taistealaich taistealach}, {COMMA} {P bhaga bhaga bagaichean baga}-puist, {COMMA}t de dh’iasg sa cheàrn no {COMMA}t de luath-fhrachd mar charago uachdair
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Tomhas-lìonaidh às dèidh a’ mùthaidh: {GOLD}{COMMA} {P bhaga bhaga bagaichean baga}-puist no {COMMA}t de fhrachd
 
 
 STR_BARGE_TUG                                                   :Tuga bàirc
@@ -54,11 +59,14 @@ STR_CONTAINER_FEEDER                                            :Long bhogsaiche
 STR_CONTAINER_BARGE                                             :Bàta bhogsaichean-luchd airson slighean-uisge meadhan tìre
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Soitheach coitcheann luath
 STR_FAST_PACKET_STEAMER                                         :Bàta-smùide phacaidean luath
+STR_SMALL_FERRY                                                 :Bàta-aiseig beag
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Soitheach-mara coitcheann
 STR_GENERAL_PURPOSE_VESSEL                                      :Soitheach coitcheann
+STR_HOVERCRAFT_FAST_FERRY                                       :Bàta-falbhain-aiseig luath
 STR_HYDROFOIL_FAST_FERRY                                        :Bàta-aiseig hàidreafoidhl luath
 STR_JUMBO_VEHICLE_FERRY                                         :Long-aiseig mhòr
 STR_LARGE_COASTAL_TANKER                                        :Tancair cladaich mòr
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Tancair mòr airson slighean-uisge meadhan tìre ’s a’ chladaich
 STR_LARGE_COASTER                                               :Long-frachd cladaich mhòr
 STR_LIVESTOCK_SHIP                                              :Long sprèidhe
 STR_LOG_TUG                                                     :Tuga gus stiuc fiodha a thobhadh
