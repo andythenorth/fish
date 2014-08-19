@@ -4,7 +4,7 @@ from ships import constance_freight_barge
 from ships import danube_better_reefer
 from ships import danube_large_ferry
 from ships import danube_livestock_barge
-from ships import danube_paddle_steamer
+from ships import johann_strauss_paddle_steamer
 from ships import danube_reefer
 from ships import danube_small_ferry
 from ships import danube_small_freight_barge
@@ -24,7 +24,7 @@ from ships import volgoneft_two_seventy_tanker_barge
 roster = Roster(id = 'euro',
                 buy_menu_sort_order = ['danube_utility_vessel',
                                        'danube_small_ferry',
-                                       'danube_paddle_steamer',
+                                       'johann_strauss_paddle_steamer',
                                        'danube_large_ferry',
                                        'feodosiya_hydrofoil',
                                        'danube_trawler',

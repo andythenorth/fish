@@ -1,9 +1,9 @@
 import global_constants
 from ship import Ship, PacketBoat
 
-ship = PacketBoat(id = 'danube_paddle_steamer',
+ship = PacketBoat(id = 'johann_strauss_paddle_steamer',
             numeric_id = 2020,
-            title = 'DANUBE [Paddle Steamer]',
+            title = 'Johann Strauss [Paddle Steamer]',
             capacity_pax = 500,
             capacity_cargo_holds = 225,
             capacity_mail = 300,
