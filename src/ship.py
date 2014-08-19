@@ -339,18 +339,14 @@ class PacketBoat(Ship):
                                             capacity_mail=self.capacity_mail, capacity_cargo_holds=self.capacity_cargo_holds)
 
 
-class Hydrofoil(Ship):
+class Hydrofoil(PacketBoat):
     """
     Fast vessel type for passengers and mail only, graphics vary by speed (to show hydrofoil in / out of water).
     """
     def __init__(self, id, **kwargs):
+        # beware - subclasses PacketBoat (more subclassing here than is ideal)
         super(Hydrofoil, self).__init__(id, **kwargs)
         self.template = 'hydrofoil.pynml'
-        self.class_refit_groups = ['pax_mail']
-        self.label_refits_allowed = []
-        self.label_refits_disallowed = []
-        self.default_cargo = 'PASS'
-        self.default_cargo_capacity = self.capacity_pax
 
 
 class Trawler(Ship):
