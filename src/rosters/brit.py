@@ -12,14 +12,14 @@ from ships import frisco_bay_freighter
 from ships import grindavik_reefer
 from ships import harbour_point_utility_vessel
 from ships import hopetown_tanker
-from ships import hovercraft_pax_large
 from ships import little_cumbrae_freighter
 from ships import marstein_freighter
 from ships import maspalomas_freighter
+from ships import nanaimo_70_hovercraft
 from ships import nieuwpoort_container_feeder
+from ships import pegwell_super_4_hovercraft
 from ships import santorini_freighter
 from ships import shark_island_livestock_ship
-from ships import small_hovercraft
 from ships import sunk_rock_ferry
 from ships import whitgift_freight_barge
 from ships import yokohama_tanker
@@ -30,8 +30,8 @@ roster = Roster(id = 'brit',
                                        'barletta_paddle_steamer',
                                        'fastnet_paddle_steamer',
                                        'castle_point_steamer',
-                                       'small_hovercraft',
-                                       'hovercraft_pax_large',
+                                       'nanaimo_70_hovercraft',
+                                       'pegwell_super_4_hovercraft',
                                        'fish_island_trawler',
                                        'cape_spear_trawler',
                                        'whitgift_freight_barge',
