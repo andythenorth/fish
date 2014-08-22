@@ -6,12 +6,13 @@ STR_GRF_DESCRIPTION                                             :Licentie: {SILV
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde bouwkosten voor kanalen, aquaducten en sluizen
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Gebruik verbeterde bouwkosten voor kanalen, aquaducten en sluizen.
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduceert bouw- (en verwijder-)kosten voor kanalen, aquaducten en sluizen. Geeft een betere balans tussen watertransport en andere vormen van transport.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Schipssnelheid
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Als kijken naar drogende verf
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Bedriegen
+STR_PARAM_ROSTER_DESC                                           :Kies welk set schepen gebruikt moet worden.
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Bakkensleepboot
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
@@ -39,6 +40,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Algemene sleepb
 STR_BUY_MENU_TEXT                                               :Auto-ombouwen mogelijk{}Type: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} zakken post of {COMMA}t expressvracht
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} passagiers,  {COMMA} zakken post, {COMMA}t vis in het ruim, of {COMMA}t expressvracht op het dek
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capaciteit na ombouwen:{GOLD}{COMMA} zakken post of {COMMA}t vracht
 
 
 STR_BARGE_TUG                                                   :Bakkensleepboot
@@ -52,11 +54,14 @@ STR_CONTAINER_FEEDER                                            :Klein container
 STR_CONTAINER_BARGE                                             :Containercarrier voor de binnenwateren
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Snel algemeen schip
 STR_FAST_PACKET_STEAMER                                         :Snelle rivierboot
+STR_SMALL_FERRY                                                 :Kleine veerboot
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Algemeen zeewaardig schip
 STR_GENERAL_PURPOSE_VESSEL                                      :Algemeen schip
+STR_HOVERCRAFT_FAST_FERRY                                       :Snelle hovercraft veerboot
 STR_HYDROFOIL_FAST_FERRY                                        :Snelle passagiersvleugelboot
 STR_JUMBO_VEHICLE_FERRY                                         :Supergrote veerboot
 STR_LARGE_COASTAL_TANKER                                        :Grote kusttanker
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Grote tanker voor kust en binnenwateren
 STR_LARGE_COASTER                                               :Groot kustvrachtschip
 STR_LIVESTOCK_SHIP                                              :Veeschip
 STR_LOG_TUG                                                     :Sleepboot voor het slepen van drijvende boomstammen
