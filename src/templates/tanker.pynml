@@ -79,6 +79,4 @@ ${ship.render_autorefit()}
 
 ${ship.render_cargo_capacity()}
 
-${ship.render_purchase_cargo_capacity()}
-
 ${ship.render_properties()}

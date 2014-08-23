@@ -202,10 +202,6 @@ class Ship(object):
             template = templates["capacity_not_refittable.pynml"]
         return template(ship=self)
 
-    def render_purchase_cargo_capacity(self):
-        template = templates["purchase_cargo_capacity.pynml"]
-        return template(ship=self)
-
     def render(self):
         template = templates[self.template]
         return template(ship=self, global_constants=global_constants)
