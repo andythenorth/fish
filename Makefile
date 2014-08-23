@@ -6,6 +6,7 @@
 #
 
 -include Makefile.config
+-include Makefile.local
 
 ##################################################################
 #
