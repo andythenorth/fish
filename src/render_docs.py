@@ -110,7 +110,6 @@ class DocHelper(object):
             result = self.fetch_prop(result, 'Running Cost', ship.running_cost)
             result = self.fetch_prop(result, 'Loading Speed', ship.loading_speed)
             result = self.fetch_prop(result, 'Model Variants', len(ship.model_variants))
-            result = self.fetch_prop(result, 'Graphics Status', ship.graphics_status)
 
             props_to_print[ship] = result['ship']
             props_to_print[subclass] = result['subclass_props']

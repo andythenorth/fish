@@ -53,8 +53,6 @@ class Ship(object):
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
         # create a structure to hold model variants
         self.model_variants = []
-        # some project management stuff
-        self.graphics_status = kwargs.get('graphics_status', None)
         # register ship with this module so other modules can use it
         registered_ships.append(self)
 
