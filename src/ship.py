@@ -51,6 +51,8 @@ class Ship(object):
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
+        # most ships use steam effect_spawn_model so set default, over-ride in ships as needed
+        self.effect_spawn_model = kwargs.get('effect_spawn_model', 'EFFECT_SPAWN_MODEL_STEAM')
         # create a structure to hold model variants
         self.model_variants = []
         # register ship with this module so other modules can use it
