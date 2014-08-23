@@ -1,13 +1,17 @@
 // -- print some of the ship non-nml properties to aid debugging -- //
 // [no properties printed]
 
+switch (FEAT_SHIPS, SELF, ${ship.id}_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_ELECTRIC, 4, 4, 4), 0x100)]) {
+    return 1;
+}
+
 item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
     property {
         name:                           ${ship.get_name()};
         climates_available:             NO_CLIMATE; // nml constant
         sound_effect:                   ${('SOUND_SHIP_HORN','SOUND_FERRY_HORN')[ship.default_cargo=='PASS']};
         <!--! visual_effect:                  visual_effect(VISUAL_EFFECT_DIESEL, ${ship.smoke_offset}); // nml constant for DIESEL-->
-        visual_effect:                  visual_effect(VISUAL_EFFECT_DISABLE, 0); // nml constant for DIESEL
+        effect_spawn_model:             EFFECT_SPAWN_MODEL_STEAM;
         introduction_date:              date(${ship.intro_date},01,01); // ship just supplies intro year - openttd randomises intro dates a bit anyway
         cargo_capacity:                 ${ship.default_cargo_capacity};
         sprite_id:                      SPRITE_ID_NEW_SHIP; //enable new graphics - nml constant
@@ -41,6 +45,7 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         refit_cost:                     ${ship.id}_switch_refit_cost;
         default:                        ${ship.id}_switch_graphics;
         purchase:                       ${ship.id}_sg_purchase;
+        create_effect:                  ${ship.id}_create_visual_effect;
     }
 }
 
