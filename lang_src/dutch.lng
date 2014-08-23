@@ -12,7 +12,10 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Schipssnelheid
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Als kijken naar drogende verf
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideaal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Bedriegen
+STR_PARAM_ROSTER                                                :Keuze van schepen
 STR_PARAM_ROSTER_DESC                                           :Kies welk set schepen gebruikt moet worden.
+STR_PARAM_ROSTER_OPTION_0                                       :This Sceptered Isle (Brits)
+STR_PARAM_ROSTER_OPTION_1                                       :The Blue Danube (West-europees)
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Bakkensleepboot
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
