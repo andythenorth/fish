@@ -21,6 +21,7 @@ ship = PacketBoat(id = 'barletta_paddle_steamer',
             intro_date = 1870,
             buy_menu_bb_xy = [626, 26],
             str_type_info = 'PADDLE_STEAMER',
+            effects = ['EFFECT_SPRITE_STEAM, 0, 0, 24', 'EFFECT_SPRITE_STEAM, 4, 0, 24'],
             vehicle_life = 40,
             gross_tonnage = 280)
 

@@ -53,6 +53,7 @@ class Ship(object):
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
         # most ships use steam effect_spawn_model so set default, over-ride in ships as needed
         self.effect_spawn_model = kwargs.get('effect_spawn_model', 'EFFECT_SPAWN_MODEL_STEAM')
+        self.effects = kwargs.get('effects', [])
         # create a structure to hold model variants
         self.model_variants = []
         # register ship with this module so other modules can use it
@@ -178,6 +179,16 @@ class Ship(object):
         for roster in self.get_rosters_for_vehicle():
             result.append('param_roster=='+str(registered_rosters.index(roster)))
         return ' || '.join(result)
+
+    def get_expression_for_effects(self):
+        # provides part of nml switch for effects (smoke), or none if no effects defined
+        if len(self.effects) > 0:
+            result = []
+            for index, effect in enumerate(self.effects):
+                 result.append('STORE_TEMP(create_effect(' + effect + '), 0x10' + str(index) + ')')
+            return '[' + ','.join(result) + ']'
+        else:
+            return 0
 
     def render_debug_info(self):
         template = templates["debug_info.pynml"]
