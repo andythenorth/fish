@@ -19,6 +19,7 @@ ship = GeneralCargoVessel(id = 'maspalomas_freighter',
             intro_date = 1985,
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'LARGE_COASTER',
+            effects = ['EFFECT_SPRITE_AIRCRAFT_BREAKDOWN_SMOKE, 16, 0, 29'],
             vehicle_life = 35,
             gross_tonnage = 1140)
 
