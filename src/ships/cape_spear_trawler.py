@@ -22,6 +22,7 @@ ship = Trawler(id = 'cape_spear_trawler',
             intro_date = 1948,
             buy_menu_bb_xy = [663, 21],
             str_type_info = 'TRAWLER',
+            effects = ['EFFECT_SPRITE_DIESEL, 0, 0, 16'],
             vehicle_life = 40,
             gross_tonnage = 84)
 
