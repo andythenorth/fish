@@ -21,6 +21,7 @@ ship = PacketBoat(id = 'castle_point_steamer',
             intro_date = 1900,
             buy_menu_bb_xy = [645, 28],
             str_type_info = 'FAST_PACKET_STEAMER',
+            effects = ['EFFECT_SPRITE_DIESEL, 1, 0, 30'],
             vehicle_life = 25,
             gross_tonnage = 460)
 
