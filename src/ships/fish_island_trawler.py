@@ -22,6 +22,8 @@ ship = Trawler(id = 'fish_island_trawler',
             intro_date = 1870,
             buy_menu_bb_xy = [669, 21],
             str_type_info = 'TRAWLER',
+            effect_spawn_model = 'EFFECT_SPAWN_MODEL_DIESEL',
+            effects = ['EFFECT_SPRITE_DIESEL, 0, 0, 14'],
             vehicle_life = 40,
             gross_tonnage = 40)
 
