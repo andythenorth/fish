@@ -19,6 +19,7 @@ ship = GeneralCargoVessel(id = 'marstein_freighter',
             intro_date = 1968,
             buy_menu_bb_xy = [649, 21],
             str_type_info = 'SMALL_FREIGHTER',
+            effects = ['EFFECT_SPRITE_DIESEL, 8, 0, 18'],
             vehicle_life = 40,
             gross_tonnage = 270)
 

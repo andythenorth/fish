@@ -20,6 +20,7 @@ ship = Tanker(id = 'hopetown_tanker',
             intro_date = 1926,
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'COASTAL_TANKER',
+            effects = ['EFFECT_SPRITE_DIESEL, 8, 0, 12'],
             vehicle_life = 45,
             gross_tonnage = 800)
 
