@@ -19,6 +19,7 @@ ship = Reefer(id = 'grindavik_reefer',
             intro_date = 1950,
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'REEFER',
+            effects = ['EFFECT_SPRITE_STEAM, 2, 0, 29'],
             vehicle_life = 35,
             gross_tonnage = 960)
 
