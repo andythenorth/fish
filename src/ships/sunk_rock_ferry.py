@@ -21,6 +21,7 @@ ship = PacketBoat(id = 'sunk_rock_ferry',
             intro_date = 1870,
             buy_menu_bb_xy = [669, 21],
             str_type_info = 'SMALL_FERRY',
+            effects = ['EFFECT_SPRITE_DIESEL, 2, 0, 16'],
             vehicle_life = 40,
             gross_tonnage = 60)
 
