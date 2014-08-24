@@ -19,6 +19,7 @@ ship = GeneralCargoVessel(id = 'frisco_bay_freighter',
             intro_date = 1905,
             buy_menu_bb_xy = [620, 28],
             str_type_info = 'LARGE_COASTER',
+            effects = ['EFFECT_SPRITE_STEAM, 0, 0, 29'],
             vehicle_life = 35,
             gross_tonnage = 820)
 
