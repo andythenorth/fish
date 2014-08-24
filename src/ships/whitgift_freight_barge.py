@@ -19,6 +19,8 @@ ship = GeneralCargoVessel(id = 'whitgift_freight_barge',
             intro_date = 1870,
             buy_menu_bb_xy = [667, 21],
             str_type_info = 'SMALL_CARGO_VESSEL_INLAND',
+            effect_spawn_model = 'EFFECT_SPAWN_MODEL_DIESEL',
+            effects = ['EFFECT_SPRITE_DIESEL, 6, 0, 8'],
             vehicle_life = 60,
             gross_tonnage = 60)
 
