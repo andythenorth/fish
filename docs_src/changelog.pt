@@ -1,6 +1,22 @@
 Changelog
 =========
 
+-------------------
+Release Candidate 4
+-------------------
+
+*Features*
+
+- smoke for most ships, requires OpenTTD nightly version r26747 or newer
+
+*Fixes*
+
+- lighting was wrong on Cadiz Freighter, also fixed offsets
+- offsets for Fastnet Paddle Steamer, Altamira Freighter, Little Cumbrae Freighter, Hopetown Tanker
+
+*Language Updates*
+
+- Dutch (Alberth)
 
 -------------------
 Release Candidate 3
@@ -8,11 +24,11 @@ Release Candidate 3
 
 *Features*
 
-- Correct-sized sprites for Cadiz Freighter
+- correct-sized sprites for Cadiz Freighter
 
 *Fixes*
 
-- Offsets for Frisco Bay Freighter
+- offsets for Frisco Bay Freighter
 
 
 -------------------
