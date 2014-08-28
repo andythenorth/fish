@@ -5,6 +5,14 @@ Changelog
 Release Candidate 4
 -------------------
 
+*Fixes*
+
+- Nanaimo 70 hovercraft speed was too high, causing it to travel too slowly (speed values above 79mph overflow to negative)
+
+-------------------
+Release Candidate 4
+-------------------
+
 *Features*
 
 - smoke for most ships, requires OpenTTD nightly version r26747 or newer
