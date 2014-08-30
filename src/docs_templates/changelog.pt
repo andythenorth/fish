@@ -2,6 +2,15 @@ Changelog
 =========
 
 -------------------
+Release Candidate 7
+-------------------
+
+*Fixes*
+
+- Cap max ship speed to 79mph at compile time (to prevent overflow to negative)
+- Some buy / run costs were wrong
+
+-------------------
 Release Candidate 6
 -------------------
 
