@@ -102,7 +102,7 @@ class Ship(object):
             ((self.speed_unladen * 0 + self.speed * 100) * 32 + 9) / 1000,
         )
         speed_factors = [0.67, 1, 1.33] # there is a speed adjustment parameter, use that to look up a speed factor
-        speeds_adjusted_rounded = [int(math.ceil(i * speed_factors[speed_index])) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
+        speeds_adjusted_rounded = [int(min(math.ceil(i * speed_factors[speed_index]), 79 * 3.2)) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
         return speeds_adjusted_rounded
 
     @property
