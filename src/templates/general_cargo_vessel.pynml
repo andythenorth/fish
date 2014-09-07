@@ -93,10 +93,6 @@ spritegroup ${ship.id}_sg_purchase {
 
 ${ship.render_speed_switches()}
 
-${ship.render_autorefit()}
-
 ${ship.render_cargo_capacity()}
-
-${ship.render_purchase_cargo_capacity()}
 
 ${ship.render_properties()}

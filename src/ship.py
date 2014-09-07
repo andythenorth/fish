@@ -51,10 +51,11 @@ class Ship(object):
         self.capacity_pax = kwargs.get('capacity_pax', 0)
         self.capacity_mail = kwargs.get('capacity_mail', 0)
         self.capacity_freight = kwargs.get('capacity_freight', 0) # over-ride in subclass as needed
+        # most ships use steam effect_spawn_model so set default, over-ride in ships as needed
+        self.effect_spawn_model = kwargs.get('effect_spawn_model', 'EFFECT_SPAWN_MODEL_STEAM')
+        self.effects = kwargs.get('effects', [])
         # create a structure to hold model variants
         self.model_variants = []
-        # some project management stuff
-        self.graphics_status = kwargs.get('graphics_status', None)
         # register ship with this module so other modules can use it
         registered_ships.append(self)
 
@@ -101,7 +102,7 @@ class Ship(object):
             ((self.speed_unladen * 0 + self.speed * 100) * 32 + 9) / 1000,
         )
         speed_factors = [0.67, 1, 1.33] # there is a speed adjustment parameter, use that to look up a speed factor
-        speeds_adjusted_rounded = [int(math.ceil(i * speed_factors[speed_index])) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
+        speeds_adjusted_rounded = [int(min(math.ceil(i * speed_factors[speed_index]), 79 * 3.2)) for i in speeds_adjusted] # allow that integer maths is needed for newgrf cb results; rounding up for safety
         return speeds_adjusted_rounded
 
     @property
@@ -179,6 +180,16 @@ class Ship(object):
             result.append('param_roster=='+str(registered_rosters.index(roster)))
         return ' || '.join(result)
 
+    def get_expression_for_effects(self):
+        # provides part of nml switch for effects (smoke), or none if no effects defined
+        if len(self.effects) > 0:
+            result = []
+            for index, effect in enumerate(self.effects):
+                 result.append('STORE_TEMP(create_effect(' + effect + '), 0x10' + str(index) + ')')
+            return '[' + ','.join(result) + ']'
+        else:
+            return 0
+
     def render_debug_info(self):
         template = templates["debug_info.pynml"]
         return template(ship=self)
@@ -191,19 +202,11 @@ class Ship(object):
         template = templates["speed_switches.pynml"]
         return template(ship=self)
 
-    def render_autorefit(self):
-        template = templates["autorefit_any.pynml"]
-        return template(ship=self)
-
     def render_cargo_capacity(self):
         if hasattr(self, 'capacity_is_refittable_by_cargo_subtype'):
             template = templates["capacity_refittable.pynml"]
         else:
             template = templates["capacity_not_refittable.pynml"]
-        return template(ship=self)
-
-    def render_purchase_cargo_capacity(self):
-        template = templates["purchase_cargo_capacity.pynml"]
         return template(ship=self)
 
     def render(self):

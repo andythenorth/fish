@@ -19,6 +19,7 @@ ship = LivestockCarrier(id = 'shark_island_livestock_ship',
             intro_date = 1960,
             buy_menu_bb_xy = [640, 28],
             str_type_info = 'LIVESTOCK_SHIP',
+            effects = ['EFFECT_SPRITE_STEAM, -2, 0, 28'],
             vehicle_life = 35,
             gross_tonnage = 650)
 

@@ -16,8 +16,8 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 lang_templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'lang_templates'))
 
-lang_src = os.path.join(currentdir, 'lang_src')
-lang_dst = os.path.join(currentdir, 'lang')
+lang_src = os.path.join(currentdir, 'src', 'lang')
+lang_dst = os.path.join(fish.generated_files_path, 'lang')
 
 if os.path.exists(lang_dst):
     shutil.rmtree(lang_dst)

@@ -200,10 +200,6 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_speed, param_adjust_ship_sp
     2: ${ship.get_speeds_adjusted_for_load_amount(2)[4]};
 }
 
-${ship.render_autorefit()}
-
 ${ship.render_cargo_capacity()}
-
-${ship.render_purchase_cargo_capacity()}
 
 ${ship.render_properties()}
