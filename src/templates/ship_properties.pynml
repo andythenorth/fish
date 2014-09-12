@@ -1,4 +1,4 @@
-// -- some switches are common to all ships so included with properties -- //
+// -- some switches are common to all vehicles so included with properties -- //
 
 // -- dibble about with purchase menu capacity to handle various cargo-specific capacity issues (cargo might be missing etc) -- //
 switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_cargo_capacity, cargo_type_in_veh) {
@@ -15,10 +15,6 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_create_visual_effect, ${ship.get_expression
     return ${len(ship.effects)};
 }
 
-// -- all ships are autorefittable -- //
-switch (FEAT_SHIPS, SELF, ${ship.id}_switch_refit_cost, 0) {
-    return 0 + CB_RESULT_AUTOREFIT;
-}
 
 // -- props -- //
 item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
@@ -35,7 +31,7 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         canal_speed_fraction:           ${ship.canal_speed};
         cost_factor:                    ${ship.buy_cost};
         running_cost_factor:            ${ship.running_cost};
-        refit_cost:                     0;
+        refit_cost:                     0; // leave at 0 for refitting without defining cb
         is_refittable:                  1;
         refittable_cargo_classes:       bitmask(${ship.refittable_classes});
         non_refittable_cargo_classes:   bitmask(); // don't set non-refittable classes, increases likelihood of breaking cargo support
@@ -57,7 +53,6 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         purchase_cargo_capacity:        ${ship.id}_switch_purchase_cargo_capacity;
         additional_text:                ${ship.get_buy_menu_string()};
         cargo_subtype_text:             ${ship.id}_switch_cargo_subtype_text;
-        refit_cost:                     ${ship.id}_switch_refit_cost;
         default:                        ${ship.id}_switch_graphics;
         purchase:                       ${ship.id}_sg_purchase;
         create_effect:                  ${ship.id}_create_visual_effect;
