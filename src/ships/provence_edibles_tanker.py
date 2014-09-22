@@ -1,9 +1,9 @@
 import global_constants
 from ship import Ship, EdiblesTanker
 
-ship = EdiblesTanker(id = 'edibles_tanker',
+ship = EdiblesTanker(id = 'provence_edibles_tanker',
             numeric_id = 1280,
-            title = 'Edibles [Tanker]',
+            title = 'Provence Edibles [Tanker]',
             capacity_cargo_holds = 0,
             capacity_tanks = 330,
             replacement_id = '-none',
