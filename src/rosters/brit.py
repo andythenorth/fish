@@ -6,6 +6,7 @@ from ships import cadiz_freighter
 from ships import cape_spear_trawler
 from ships import castle_point_steamer
 from ships import eddystone_tanker
+from ships import edibles_tanker
 from ships import fastnet_paddle_steamer
 from ships import fish_island_trawler
 from ships import frisco_bay_freighter
@@ -45,6 +46,7 @@ roster = Roster(id = 'brit',
                                        'eddystone_tanker',
                                        'hopetown_tanker',
                                        'yokohama_tanker',
-                                       'grindavik_reefer',
                                        'shark_island_livestock_ship',
+                                       'edibles_tanker',
+                                       'grindavik_reefer',
                                        'nieuwpoort_container_feeder'])

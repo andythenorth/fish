@@ -387,11 +387,27 @@ class Tanker(Ship):
         super(Tanker, self).__init__(id, **kwargs)
         self.template = 'tanker.pynml'
         self.class_refit_groups = ['liquids']
-        self.label_refits_allowed = [] # no specific labels needed, tanker refits most cargos that have liquid class
-        self.label_refits_disallowed = ['MILK'] # milk isn't shipped by tanker
+        self.label_refits_allowed = [] # refits most cargos that have liquid class even if they might be edibles
+        self.label_refits_disallowed = global_constants.label_refits_disallowed['edible_liquids'] # don't allow known edible liquids
         self.capacity_tanks = kwargs.get('capacity_tanks', None)
         self.capacity_freight = self.capacity_tanks
         self.default_cargo = 'OIL_'
+        self.default_cargo_capacity = self.capacity_freight
+
+
+class EdiblesTanker(Ship):
+    """
+    Gallons and gallons and gallons of wine, milk or water.  Except in metric systems, where it's litres.
+    """
+    def __init__(self, id, **kwargs):
+        super(EdiblesTanker, self).__init__(id, **kwargs)
+        self.template = 'tanker.pynml'
+        self.class_refit_groups = ['liquids']
+        self.label_refits_allowed = [] # refits most cargos that have liquid class even if they might be inedibles
+        self.label_refits_disallowed = global_constants.label_refits_disallowed['non_edible_liquids'] # don't allow known inedibles
+        self.capacity_tanks = kwargs.get('capacity_tanks', None)
+        self.capacity_freight = self.capacity_tanks
+        self.default_cargo = 'WATR'
         self.default_cargo_capacity = self.capacity_freight
 
 

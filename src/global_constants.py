@@ -9,6 +9,9 @@ base_refits_by_class = {'empty': [],
                        'refrigerated_freight': ['CC_REFRIGERATED'],
                        'express_freight': ['CC_EXPRESS','CC_ARMOURED']}
 
+label_refits_disallowed = {'edible_liquids': ['MILK', 'WATR', 'BEER', 'FOOD'],
+                           'non_edible_liquids': ['RFPR', 'OIL_', 'FMSP', 'PETR']}
+
 # used to construct the cargo table automatically
 # stolen from BANDIT code which also offered option to specify random cargo variations - that part is not currently used in FISH
 # ! order is significant ! - openttd will cascade through default cargos in the order specified by the cargo table
