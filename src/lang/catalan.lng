@@ -41,7 +41,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Embarcació de 
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador d'ús públic
 
 
-STR_BUY_MENU_TEXT                                               :Ofereix auto-remodelat{}Tipus: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :Tipus: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacitat quan es remodela: {GOLD}{COMMA}{NBSP}bosses de correu o {COMMA}{NBSP}t de mercaderies exprés
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacitat quan es remodela: {GOLD}{COMMA}{NBSP}passatgers, {COMMA}{NBSP}bosses de correu, {COMMA}{NBSP}t de peix a les bodegues, or {COMMA}{NBSP}t de mercaderies exprés com a càrrega de coberta
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capacitat amb remodelació: {GOLD}{COMMA}{NBSP}sacs de correu o {COMMA}{NBSP}t de càrrega
