@@ -40,7 +40,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Veeldoelige Vaa
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Veeldoelige Sleepboot
 
 
-STR_BUY_MENU_TEXT                                               :Bied auto-verstelling{}Tipe: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :{}Tipe: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Dravermoë wanneer herbou: {GOLD}{COMMA} sakke pos of {COMMA}t snel vrag
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Dravermoë wanneer herbou: {GOLD}{COMMA} passasiers, {COMMA} sakke pos, {COMMA}t of vis in skeepsruim, of {COMMA}t of snel vrag as dek vrag
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Dravermoë wanneer herbou: {GOLD}{COMMA} sakke pos of {COMMA}t vrag
