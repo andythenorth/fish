@@ -13,6 +13,10 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Vitesse des nav
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Lent, comme regarder la peinture sécher
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Idéal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Triche
+STR_PARAM_ROSTER                                                :Assortiment
+STR_PARAM_ROSTER_DESC                                           :Sélectionner quels navires utiliser.
+STR_PARAM_ROSTER_OPTION_0                                       :L'île de Grande Bretagne
+STR_PARAM_ROSTER_OPTION_1                                       :Le Beau Danube Bleu
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Remorqueur de barges
 STR_NAME_SUFFIX_CATAMARAN                                       :Catamaran
@@ -37,9 +41,10 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Bateau utilitai
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Remorqueur
 
 
-STR_BUY_MENU_TEXT                                               :Réaménagement automatique{}Type : {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :{}Type : {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacité quand réaménagé : {GOLD}{COMMA} sacs de courrier ou {COMMA}t of marchandises express
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacité quand réaménagé : {GOLD}{COMMA} passagers, {COMMA} sacs de courrier, {COMMA}t de poisson dans les cales, ou {COMMA}t de marchandises express sur le pont
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capacité quand réaménagé : {GOLD}{COMMA} sacs de courrier ou {COMMA}{NBSP}t de marchandises
 
 
 STR_BARGE_TUG                                                   :Remorqueur de barges
@@ -53,11 +58,14 @@ STR_CONTAINER_FEEDER                                            :Petit porte con
 STR_CONTAINER_BARGE                                             :Porte conteneurs pour voies navigables
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Petit navire polyvalent rapide
 STR_FAST_PACKET_STEAMER                                         :Vapeur rapide
+STR_SMALL_FERRY                                                 :Petit ferry
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Navire polyvalent de haute mer
 STR_GENERAL_PURPOSE_VESSEL                                      :Navire polyvalent
+STR_HOVERCRAFT_FAST_FERRY                                       :Ferry rapide (aéroglisseur)
 STR_HYDROFOIL_FAST_FERRY                                        :Ferry rapide (hydroptère)
 STR_JUMBO_VEHICLE_FERRY                                         :Grand ferry pour véhicules
 STR_LARGE_COASTAL_TANKER                                        :Grand navire citerne côtier
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Grand navire citerne côtier ou pour voies navigables
 STR_LARGE_COASTER                                               :Grand navire côtier
 STR_LIVESTOCK_SHIP                                              :Navire transporteur de bétail
 STR_LOG_TUG                                                     :Remorqueur pour tracter des bûches
