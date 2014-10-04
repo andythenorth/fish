@@ -40,7 +40,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Barco polivalen
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Remolcador polivalente
 
 
-STR_BUY_MENU_TEXT                                               :Ofrece auto-reforma{}Tipo: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :{}Tipo: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} sacos de correo o {COMMA}t de carga express
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} pasajeros, {COMMA} sacos de correo, {COMMA}t de pescado en la bodega, o {COMMA}t de carga express en la cubierta
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capacidad al ser reformado: {GOLD}{COMMA} sacos de correo o {COMMA}t de carga
