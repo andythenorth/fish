@@ -15,7 +15,8 @@ STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :필수적인
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :치트
 STR_PARAM_ROSTER                                                :등록부
 STR_PARAM_ROSTER_DESC                                           :어떤 종류의 선박 세트를 사용할 것인지 고르십시오.
-STR_PARAM_ROSTER_OPTION_0                                       :
+STR_PARAM_ROSTER_OPTION_0                                       :중심 섬
+STR_PARAM_ROSTER_OPTION_1                                       :푸른 다뉴브 호
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :예인 바지선
 STR_NAME_SUFFIX_CATAMARAN                                       :쌍둥선
@@ -40,7 +41,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :다용도 선�
 STR_NAME_SUFFIX_UTILITY_TUG                                     :다용도 예인선
 
 
-STR_BUY_MENU_TEXT                                               :개조 가능한{} 화물: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :{} 화물: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}수개조되었을 때의 수송량: {GOLD}우편{COMMA}자루 또는 급행 화물{COMMA}톤
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}개조되었을 때의 수송량: 승객{GOLD}{COMMA}명, 우편 {COMMA}자루, 수산물 {COMMA}톤, 또는 갑판 수송 급행 화물 {COMMA}톤
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}개조되었을 떄의 수송량: {GOLD}우편{COMMA}자루 또는 화물 {COMMA}톤
@@ -64,6 +65,7 @@ STR_HOVERCRAFT_FAST_FERRY                                       :속력이 빠�
 STR_HYDROFOIL_FAST_FERRY                                        :고속 수중익선 연락선
 STR_JUMBO_VEHICLE_FERRY                                         :점보 연락선
 STR_LARGE_COASTAL_TANKER                                        :매우 큰 연안 유조선
+STR_LARGE_TANKER_COASTAL_INLAND                                 :근해와 내륙 수로를 위한 큰 유조선
 STR_LARGE_COASTER                                               :큰 연안 화물선
 STR_LIVESTOCK_SHIP                                              :가축 선박
 STR_LOG_TUG                                                     :통나무 운송 예인선
