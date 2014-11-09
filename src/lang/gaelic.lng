@@ -42,7 +42,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Soitheach ghoir
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Tuga ghoireasan
 
 
-STR_BUY_MENU_TEXT                                               :Gabhaidh a mhùthadh{}Seòrsa: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :{}Seòrsa: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Tomhas-lìonaidh às dèidh a’ mùthaidh: {GOLD}{COMMA} {P bhaga bhaga bagaichean baga}-puist no {COMMA}t de luath-fhrachd
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Tomhas-lìonaidh às dèidh a’ mùthaidh: {GOLD}{COMMA} {P taistealach thaistealach taistealaich taistealach}, {COMMA} {P bhaga bhaga bagaichean baga}-puist, {COMMA}t de dh’iasg sa cheàrn no {COMMA}t de luath-fhrachd mar charago uachdair
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Tomhas-lìonaidh às dèidh a’ mùthaidh: {GOLD}{COMMA} {P bhaga bhaga bagaichean baga}-puist no {COMMA}t de fhrachd
