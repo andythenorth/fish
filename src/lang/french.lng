@@ -71,7 +71,7 @@ STR_LIVESTOCK_SHIP                                              :Navire transpor
 STR_LOG_TUG                                                     :Remorqueur pour tracter des bûches
 STR_PADDLE_STEAMER                                              :Navire à vapeur à roues à aubes
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamaran rapide pour ravitailler îles ou industries au large
-STR_REEFER                                                      :Navire réfrigéré (valeur des marchandises périssables améliorées)
+STR_REEFER                                                      :Navire réfrigéré (valeur des marchandises périssables améliorée)
 STR_SMALL_FREIGHTER                                             :Petit cargo
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Petit navire polyvalent
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Petit navire citerne côtier ou pour voies navigables
