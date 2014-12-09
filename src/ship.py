@@ -40,6 +40,7 @@ class Ship(object):
         self.cargo_age_period = kwargs.get('cargo_age_period', global_constants.CARGO_AGE_PERIOD)
         self.buy_menu_bb_xy = kwargs.get('buy_menu_bb_xy', None)
         self.buy_menu_width = kwargs.get('buy_menu_width', None)
+        self.use_legacy_template = kwargs.get('use_legacy_template', True)
         self.offsets = kwargs.get('offsets', None)
         self.inland_capable = kwargs.get('inland_capable', None)
         self.sea_capable = kwargs.get('sea_capable', None)
