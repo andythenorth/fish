@@ -14,6 +14,7 @@ from ships import harbour_point_utility_vessel
 from ships import hopetown_tanker
 from ships import little_cumbrae_freighter
 from ships import marstein_freighter
+from ships import meteor_freighter
 from ships import maspalomas_freighter
 from ships import nanaimo_70_hovercraft
 from ships import nieuwpoort_container_feeder
@@ -36,6 +37,7 @@ roster = Roster(id = 'brit',
                                        'fish_island_trawler',
                                        'cape_spear_trawler',
                                        'whitgift_freight_barge',
+                                       'meteor_freighter',
                                        'little_cumbrae_freighter',
                                        'marstein_freighter',
                                        'altamira_freighter',
