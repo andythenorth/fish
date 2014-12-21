@@ -1,6 +1,20 @@
 Changelog
 =========
 
+-----
+1.0.0
+-----
+
+*Changes / Features*
+
+- it's 1.0.0
+
+*Fixes*
+
+- sorted out spritesheets for hovercraft, now correctly positioned and not clipping
+- fixed a bug with Fish Island trawler being 1px too high when loaded
+
+
 -------------------
 Release Candidate 9
 -------------------
