@@ -14,6 +14,10 @@ STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Prędkość sta
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Tempo żółwia
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Idealna
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Podrasowana
+STR_PARAM_ROSTER                                                :Rejestr
+STR_PARAM_ROSTER_DESC                                           :Wybierz, który rejestr statków użyć.
+STR_PARAM_ROSTER_OPTION_0                                       :Wyspy Zjednoczonego Królestwa
+STR_PARAM_ROSTER_OPTION_1                                       :Die Blaue Donau
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Holownik barek
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
@@ -41,6 +45,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Holownik pomocn
 STR_BUY_MENU_TEXT                                               :Typ: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Pojemność po przebudowie: {GOLD}{COMMA} paczek poczty {COMMA}t drobnicy
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Pojemność po przebudowie: {GOLD}{COMMA} pasażerów, {COMMA} paczek poczty, {COMMA}t ryb w ładowni, lub {COMMA}t drobnicy na pokładzie
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Pojemność po przebudowie: {GOLD}{COMMA} paczek poczty {COMMA}t drobnicy
 
 
 STR_BARGE_TUG                                                   :Holownik barek
@@ -54,11 +59,14 @@ STR_CONTAINER_FEEDER                                            :Mały kontenero
 STR_CONTAINER_BARGE                                             :Kontenerowiec do żeglugi śródlądowej
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Szybki statek ogólnego przeznaczenia
 STR_FAST_PACKET_STEAMER                                         :Szybki parowiec liniowy
+STR_SMALL_FERRY                                                 :Mały prom
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Statek dalekomorski ogólnego przeznaczenia
 STR_GENERAL_PURPOSE_VESSEL                                      :Statek ogólnego przeznaczenia
+STR_HOVERCRAFT_FAST_FERRY                                       :Szybki prom - poduszkowiec
 STR_HYDROFOIL_FAST_FERRY                                        :Szybki prom - wodolot
 STR_JUMBO_VEHICLE_FERRY                                         :Olbrzymi prom
 STR_LARGE_COASTAL_TANKER                                        :Duży tankowiec do żeglugi przybrzeżnej
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Duży tankowiec do żeglugi przybrzeżnej i śródlądowej
 STR_LARGE_COASTER                                               :Duży frachtowiec do żeglugi przybrzeżnej
 STR_LIVESTOCK_SHIP                                              :Statek do przewozu żywca
 STR_LOG_TUG                                                     :Holownik wspomagający spław drewna
