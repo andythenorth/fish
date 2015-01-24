@@ -30,7 +30,7 @@ Makefile.dep
 parsetab.py
 fish.grf.cache
 fish.grf.cacheindex
-
+.nmlcache/*
 
 
 # Ignore directories from bundle creation / install:
