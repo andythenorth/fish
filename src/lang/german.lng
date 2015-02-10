@@ -7,12 +7,13 @@ STR_GRF_DESCRIPTION                                             :Lizenz: {SILVER
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Nutze angepaßte Baukosten für Kanäle, Aquädukte und Schleusen
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Nutze angepasste Baukosten für Kanäle, Aquädukte und Schleusen.
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Vermindert die Konstruktions- und Abrisskosten für Kanäle, Aquädukte und Schleusen. Verbessert die Spielbalance der Wasserwege gegenüber anderen Transportmöglichkeiten.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Geschwindigkeit von Schiffen
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Mögen der Farbe beim Trocknen zugucken
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideal
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Cheating
+STR_PARAM_ROSTER_OPTION_1                                       :Die blaue Donau
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :Schleppkahn
 STR_NAME_SUFFIX_CATAMARAN                                       :{G=m}Katermaran
@@ -40,6 +41,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Mehrzweckschlep
 STR_BUY_MENU_TEXT                                               :Automatische Umrüstung{}Typ: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Postsäcke oder {COMMA}t Eilgut
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Passagiere, {COMMA} Postsäcke, {COMMA}t Fisch im Frachtraum, or {COMMA}t Eilgut als Decksladung
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Postsäcke oder {COMMA}t Fracht
 
 
 STR_BARGE_TUG                                                   :Schleppkahn
@@ -53,11 +55,14 @@ STR_CONTAINER_FEEDER                                            :Kleines Contain
 STR_CONTAINER_BARGE                                             :Container-Frachter für Binnengewässer
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Schnelles Mehrzweck-Schiff
 STR_FAST_PACKET_STEAMER                                         :Schneller Postdampfer
+STR_SMALL_FERRY                                                 :kleine Fähre
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Hochseetaugliches Mehrzweck-Schiff
 STR_GENERAL_PURPOSE_VESSEL                                      :Mehrzweckschiff
+STR_HOVERCRAFT_FAST_FERRY                                       :Schnelle Luftkissenfähre
 STR_HYDROFOIL_FAST_FERRY                                        :Schnelle Tragflächenfähre
 STR_JUMBO_VEHICLE_FERRY                                         :Jumbo Fahrzeugfähre
 STR_LARGE_COASTAL_TANKER                                        :Großes Küstenschiff (Tanker)
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Große Tanker für küstennahe und Binnengewässer
 STR_LARGE_COASTER                                               :Großer Küstenfrachter
 STR_LIVESTOCK_SHIP                                              :Viehtransporter
 STR_LOG_TUG                                                     :Schlepper um Holzstämme zu ziehen
