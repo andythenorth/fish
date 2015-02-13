@@ -38,7 +38,7 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Mehrzweckschiff
 STR_NAME_SUFFIX_UTILITY_TUG                                     :Mehrzweckschlepper
 
 
-STR_BUY_MENU_TEXT                                               :Automatische Umrüstung{}Typ: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_TEXT                                               :{}Typ: {GOLD}{STRING}{}{STRING}
 STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Postsäcke oder {COMMA}t Eilgut
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Passagiere, {COMMA} Postsäcke, {COMMA}t Fisch im Frachtraum, or {COMMA}t Eilgut als Decksladung
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Umgerüstete Kapazität: {GOLD}{COMMA} Postsäcke oder {COMMA}t Fracht
