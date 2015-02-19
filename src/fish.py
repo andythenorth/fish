@@ -27,8 +27,6 @@ if len(sys.argv) > 1:
 else: # provide some defaults so templates don't explode when testing python script without command line args
     repo_vars = {'repo_title' : 'FISH - compiled without makefile', 'repo_version' : 1}
 
-import ship
-from ship import Ship
 from ships import registered_ships
 
 from rosters import registered_rosters

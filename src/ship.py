@@ -7,8 +7,6 @@ currentdir = os.curdir
 import sys
 sys.path.append(os.path.join('src')) # add to the module search path
 
-import codecs
-
 import math
 from string import Template # python builtin templater might be used in some utility cases
 
@@ -271,7 +269,6 @@ class UtilityVessel(Ship):
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
-        cargo_units = None # only used when needed
         buy_menu_template = Template(
             "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_UTILITY,${capacity_mail},${capacity_cargo_holds}))"
         )
@@ -335,7 +332,6 @@ class PacketBoat(Ship):
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
-        cargo_units = None # only used when needed
         buy_menu_template = Template(
             "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_PACKET,${capacity_mail},${capacity_cargo_holds}))"
         )
@@ -371,7 +367,6 @@ class Trawler(Ship):
 
     def get_buy_menu_string(self):
         # set buy menu text, with various variations
-        cargo_units = None # only used when needed
         buy_menu_template = Template(
                 "string(STR_BUY_MENU_TEXT, string(${str_type_info}), string(STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER,${capacity_pax},${capacity_mail},${capacity_fish_holds},${capacity_deck_cargo}))"
         )
