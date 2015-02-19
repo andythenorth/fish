@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-print "[PARSE CONFIG] FISH.py"
+print("[PARSE CONFIG] FISH.py")
 
 import os.path
 currentdir = os.curdir

@@ -1,4 +1,4 @@
-print "[RENDER NML] render_nml.py"
+print("[RENDER NML] render_nml.py")
 
 import os.path
 currentdir = os.curdir

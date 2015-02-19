@@ -3,7 +3,7 @@
 from time import time
 start = time()
 
-print "[BUILD] build_fish.py"
+print("[BUILD] build_fish.py")
 
 import fish
 import utils
@@ -25,4 +25,4 @@ import render_lang
 # render the docs
 import render_docs
 
-print (time() - start)
+print((time() - start))

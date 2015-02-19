@@ -26,7 +26,6 @@ def move_property(filename):
             line_to_insert_after = line
     insert_position = content.index(line_to_insert_after)
     content.insert(insert_position+1, cut_line)
-    #print ''.join(content)
     """
 
     file = open(os.path.join('src','ships',filename),'w')
@@ -42,7 +41,6 @@ def insert_property(filename):
             line_to_insert_after = line
     insert_position = content.index(line_to_insert_after)
     content.insert(insert_position+1, line_to_insert)
-    #print ''.join(content)
 
     file = open(os.path.join('src','ships',filename),'w')
     file.write(''.join(content))
