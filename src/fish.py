@@ -37,28 +37,25 @@ brit.roster.register()
 from rosters import euro
 euro.roster.register()
 
+
 def get_ships_in_buy_menu_order(show_warnings=False):
-    sorted_ships = []
-    buy_menu_sort_order = []
+    ships = []
     # first compose the buy menu order list
+    buy_menu_sort_order = []
+    if repo_vars.get('roster', '*') == '*':
+        active_rosters = [roster.id for roster in registered_rosters]
+    else:
+        active_rosters = [repo_vars['roster']] # make sure it's iterable
     for roster in registered_rosters:
-        buy_menu_sort_order.extend(roster.buy_menu_sort_order)
+        if roster.id in active_rosters:
+            buy_menu_sort_order.extend(roster.buy_menu_sort_order)
+            ships.extend(roster.ships_in_buy_menu_order)
 
-    # gotcha: but menu order will be wrong if a ship appears in more than one roster with same numeric ID
-    # there is no other limitation on re-using a ship in multiple rosters, and the buy menu could be fixed if needed (declare buy menu order multiple times, wrapped in param check)
-    for id in buy_menu_sort_order:
-        found = False
-        for ship in registered_ships:
-            if ship.id == id:
-                sorted_ships.append(ship)
-                found = True
-        if not found:
-            utils.echo_message("Warning: ship " + id + " in buy_menu_sort_order, but not found in registered_ships")
-
-    # now guard against any ships missing from buy menu order, as that wastes time asking 'wtf?' when they don't appear in game
-    for ship in registered_ships:
-        id = ship.id
-        if show_warnings and id not in buy_menu_sort_order:
-            utils.echo_message("Warning: ship " + id + " in registered_ships, but not in buy_menu_sort_order - won't show in game")
-    return sorted_ships
-
+    # now guard against any ships missing from buy menu order or vice versa, as that wastes time asking 'wtf?' when they don't appear in game
+    ship_id_defender = set([ship.id for ship in ships])
+    buy_menu_defender = set(buy_menu_sort_order)
+    for id in buy_menu_defender.difference(ship_id_defender):
+        utils.echo_message("Warning: ship " + id + " in buy_menu_sort_order, but not found in registered_ships")
+    for id in ship_id_defender.difference(buy_menu_defender):
+        utils.echo_message("Warning: ship " + id + " in ships, but not in buy_menu_sort_order - won't show in game")
+    return ships
