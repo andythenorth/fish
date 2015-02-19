@@ -21,7 +21,7 @@ from ships import saint_marie_freight_barge
 from ships import volgoneft_six_thirty_tanker_barge
 from ships import volgoneft_two_seventy_tanker_barge
 
-roster = Roster(id = 'euro',
+roster = Roster(id = 'danube',
                 numeric_id = 2,
                 ships = [danube_utility_vessel,
                          danube_small_ferry,

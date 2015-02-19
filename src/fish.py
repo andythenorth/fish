@@ -22,10 +22,7 @@ if not os.path.exists(generated_files_path):
     os.mkdir(generated_files_path)
 
 # get args passed by makefile
-if len(sys.argv) > 1:
-    repo_vars = {'repo_title' : sys.argv[1], 'repo_version' : sys.argv[2]}
-else: # provide some defaults so templates don't explode when testing python script without command line args
-    repo_vars = {'repo_title' : 'FISH - compiled without makefile', 'repo_version' : 1}
+repo_vars = utils.get_repo_vars(sys)
 
 from rosters import registered_rosters
 
@@ -44,6 +41,7 @@ def get_ships_in_buy_menu_order(show_warnings=False):
         active_rosters = [roster.id for roster in registered_rosters]
     else:
         active_rosters = [repo_vars['roster']] # make sure it's iterable
+    print(active_rosters)
     for roster in registered_rosters:
         if roster.id in active_rosters:
             buy_menu_sort_order.extend(roster.buy_menu_sort_order)

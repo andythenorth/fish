@@ -6,9 +6,14 @@ GENERATE_DOC := fish-nml
 
 GENERATE=src/build_fish.py
 
+ # default num. pool workers for python compile, default is 1 to avoid accidental DoS of people's system
+pw = 1
+ic = False
+roster = *
+
 fish-nml:
 	$(_E) [GENERATE]
-	$(_V) python3 src/build_fish.py '${REPO_TITLE}' '${REPO_REVISION}'
+	$(_V) python3 src/build_fish.py '${REPO_TITLE}' '${REPO_REVISION}' '${ic}' '${pw}' '${roster}'
 
 clean::
 	$(_V)-rm fish.nml
