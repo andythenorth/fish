@@ -31,9 +31,11 @@ from ships import registered_ships
 
 from rosters import registered_rosters
 
-# changing the order of rosters breaks savegames (parameter values change), don't do it.
 from rosters import brit
-#from rosters import euro
+brit.roster.register()
+
+from rosters import euro
+euro.roster.register()
 
 def get_ships_in_buy_menu_order(show_warnings=False):
     sorted_ships = []
