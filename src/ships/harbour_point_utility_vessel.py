@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, UtilityVessel
+from ship import UtilityVessel
 
 ship = UtilityVessel(id = 'harbour_point_utility_vessel',
             numeric_id = 1000,

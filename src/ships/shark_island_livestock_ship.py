@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, LivestockCarrier
+from ship import LivestockCarrier
 
 ship = LivestockCarrier(id = 'shark_island_livestock_ship',
             numeric_id = 1230,

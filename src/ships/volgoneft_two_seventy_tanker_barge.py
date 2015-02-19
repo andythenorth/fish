@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, Tanker
+from ship import Tanker
 
 # http://en.wikipedia.org/wiki/Vandal_(tanker)
 

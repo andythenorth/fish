@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, PacketBoat
+from ship import PacketBoat
 
 ship = PacketBoat(id = 'johann_strauss_paddle_steamer',
             numeric_id = 2020,

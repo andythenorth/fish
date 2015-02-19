@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, Trawler
+from ship import Trawler
 
 ship = Trawler(id = 'fish_island_trawler',
             numeric_id = 1200,

@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, GeneralCargoVessel
+from ship import GeneralCargoVessel
 
 ship = GeneralCargoVessel(id = 'cadiz_freighter',
             numeric_id = 1130,

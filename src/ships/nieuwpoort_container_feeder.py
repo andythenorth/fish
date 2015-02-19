@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, ContainerCarrier
+from ship import ContainerCarrier
 
 ship = ContainerCarrier(id = 'nieuwpoort_container_feeder',
             numeric_id = 1240,

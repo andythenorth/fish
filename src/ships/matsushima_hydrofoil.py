@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, Hydrofoil
+from ship import Hydrofoil
 
 ship = Hydrofoil(id = 'matsushima_hydrofoil',
             numeric_id = 70,

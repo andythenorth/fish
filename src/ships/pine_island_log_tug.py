@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, LogTug
+from ship import LogTug
 
 ship = LogTug(id = 'pine_island_log_tug',
             numeric_id = 250,

@@ -1,5 +1,5 @@
 import global_constants
-from ship import Ship, Tanker
+from ship import Tanker
 
 ship = Tanker(id = 'eddystone_tanker',
             numeric_id = 1250,
