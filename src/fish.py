@@ -27,8 +27,6 @@ if len(sys.argv) > 1:
 else: # provide some defaults so templates don't explode when testing python script without command line args
     repo_vars = {'repo_title' : 'FISH - compiled without makefile', 'repo_version' : 1}
 
-from ships import registered_ships
-
 from rosters import registered_rosters
 
 from rosters import brit
@@ -55,7 +53,7 @@ def get_ships_in_buy_menu_order(show_warnings=False):
     ship_id_defender = set([ship.id for ship in ships])
     buy_menu_defender = set(buy_menu_sort_order)
     for id in buy_menu_defender.difference(ship_id_defender):
-        utils.echo_message("Warning: ship " + id + " in buy_menu_sort_order, but not found in registered_ships")
+        utils.echo_message("Warning: ship " + id + " in buy_menu_sort_order, but not found in registered ships")
     for id in ship_id_defender.difference(buy_menu_defender):
         utils.echo_message("Warning: ship " + id + " in ships, but not in buy_menu_sort_order - won't show in game")
     return ships

@@ -14,8 +14,6 @@ from chameleon import PageTemplateLoader # chameleon used in most template cases
 # setup the places we look for templates
 templates = PageTemplateLoader(os.path.join(currentdir, 'src', 'templates'))
 
-from ships import registered_ships
-
 from rosters import registered_rosters
 
 class Ship(object):
@@ -57,8 +55,6 @@ class Ship(object):
         self.model_variants = []
         # roster is set when the vehicle is registered to a roster, only one roster per vehicle
         self.roster_id = None
-        # register ship with this module so other modules can use it
-        registered_ships.append(self)
 
     def add_model_variant(self, intro_date, end_date, spritesheet_suffix):
         self.model_variants.append(ModelVariant(intro_date, end_date, spritesheet_suffix))
@@ -111,14 +107,7 @@ class Ship(object):
 
     @property
     def adjusted_model_life(self):
-        # handles keeping the buy menu tidy, relies on magic from Eddi
-        if self.replacement_id != None and self.replacement_id != '-none' and self.replacement_id != '':
-            for i in registered_ships:
-                if i.id == self.replacement_id:
-                    model_life = i.intro_date - self.intro_date
-                    return model_life + self.vehicle_life
-        else:
-            return 'VEHICLE_NEVER_EXPIRES'
+        return 'VEHICLE_NEVER_EXPIRES'
 
     @property
     def running_cost(self):
