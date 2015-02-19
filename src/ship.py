@@ -168,7 +168,7 @@ class Ship(object):
     def get_expression_for_rosters(self):
         # the working definition is one and only one roster per vehicle
         roster = self.get_roster(self.roster_id)
-        return 'param[1]==' + str(roster.numeric_id - 1)
+        return 'param[2]==' + str(roster.numeric_id - 1)
 
     def get_expression_for_effects(self):
         # provides part of nml switch for effects (smoke), or none if no effects defined
