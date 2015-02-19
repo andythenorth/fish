@@ -33,7 +33,7 @@ from rosters import euro
 euro.roster.register()
 
 
-def get_ships_in_buy_menu_order(show_warnings=False):
+def get_ships_in_buy_menu_order():
     ships = []
     # first compose the buy menu order list
     buy_menu_sort_order = []
@@ -41,7 +41,6 @@ def get_ships_in_buy_menu_order(show_warnings=False):
         active_rosters = [roster.id for roster in registered_rosters]
     else:
         active_rosters = [repo_vars['roster']] # make sure it's iterable
-    print(active_rosters)
     for roster in registered_rosters:
         if roster.id in active_rosters:
             buy_menu_sort_order.extend(roster.buy_menu_sort_order)
