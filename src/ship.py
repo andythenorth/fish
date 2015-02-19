@@ -160,18 +160,15 @@ class Ship(object):
     def get_cargo_suffix(self):
         return 'string(' + self.cargo_units_refit_menu + ')'
 
-    def get_rosters_for_vehicle(self):
-        result = []
+    def get_roster(self, roster_id):
         for roster in registered_rosters:
-            if self.id in roster.buy_menu_sort_order:
-                result.append(roster)
-        return result
+            if roster_id == roster.id:
+                return roster
 
     def get_expression_for_rosters(self):
-        result = []
-        for roster in self.get_rosters_for_vehicle():
-            result.append('param_roster=='+str(registered_rosters.index(roster)))
-        return ' || '.join(result)
+        # the working definition is one and only one roster per vehicle
+        roster = self.get_roster(self.roster_id)
+        return 'param[1]==' + str(roster.numeric_id - 1)
 
     def get_expression_for_effects(self):
         # provides part of nml switch for effects (smoke), or none if no effects defined

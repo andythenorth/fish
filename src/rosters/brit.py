@@ -27,6 +27,7 @@ from ships import whitgift_freight_barge
 from ships import yokohama_tanker
 
 roster = Roster(id = 'brit',
+                numeric_id = 1,
                 ships = [harbour_point_utility_vessel,
                          sunk_rock_ferry,
                          barletta_paddle_steamer,

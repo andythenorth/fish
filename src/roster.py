@@ -7,6 +7,7 @@ class Roster(object):
     """
     def __init__(self, **kwargs):
         self.id = kwargs.get('id')
+        self.numeric_id = kwargs.get('numeric_id')
         self.ships = []
         for ship in [ship.ship for ship in kwargs.get('ships')]:
             self.ships.append(ship)
