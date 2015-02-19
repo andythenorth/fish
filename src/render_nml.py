@@ -37,11 +37,7 @@ def main():
         grf_nml.write(templated_nml)
 
     for ship in set(ships):
-        templated_nml = ship.render()
-        # an ugly hack here because chameleon html escapes some characters
-        templated_nml = '>'.join(templated_nml.split('&gt;'))
-        templated_nml = '&'.join(templated_nml.split('&amp;'))
-        grf_nml.write(templated_nml)
+        grf_nml.write(utils.unescape_chameleon_output(ship.render()))
 
     grf_nml.close()
 
