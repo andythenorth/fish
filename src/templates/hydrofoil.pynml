@@ -4,14 +4,14 @@ ${ship.render_debug_info()}
 
 template spriteset_template_${ship.id}(y, y_offs_adjust) {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
-    [20,        y,          28,         89,          ${ship.offsets[0][0]}, ${ship.offsets[0][1]} + y_offs_adjust]
-    [60,        y,          113,        66,          ${ship.offsets[1][0]}, ${ship.offsets[1][1]} + y_offs_adjust]
-    [186,       y,          138,        48,          ${ship.offsets[2][0]}, ${ship.offsets[2][1]} + y_offs_adjust]
-    [328,       y,          113,        66,          ${ship.offsets[3][0]}, ${ship.offsets[3][1]} + y_offs_adjust]
-    [454,       y,          28,         89,          ${ship.offsets[4][0]}, ${ship.offsets[4][1]} + y_offs_adjust]
-    [494,       y,          113,        66,          ${ship.offsets[5][0]}, ${ship.offsets[5][1]} + y_offs_adjust]
-    [620,       y,          138,        48,          ${ship.offsets[6][0]}, ${ship.offsets[6][1]} + y_offs_adjust]
-    [762,       y,          113,        66,          ${ship.offsets[7][0]}, ${ship.offsets[7][1]} + y_offs_adjust]
+    [20,        y,          28,         89,          ${ship.offsets[0][0]}, ${ship.offsets[0][1]} + y_offs_adjust, ANIM]
+    [60,        y,          113,        66,          ${ship.offsets[1][0]}, ${ship.offsets[1][1]} + y_offs_adjust, ANIM]
+    [186,       y,          138,        48,          ${ship.offsets[2][0]}, ${ship.offsets[2][1]} + y_offs_adjust, ANIM]
+    [328,       y,          113,        66,          ${ship.offsets[3][0]}, ${ship.offsets[3][1]} + y_offs_adjust, ANIM]
+    [454,       y,          28,         89,          ${ship.offsets[4][0]}, ${ship.offsets[4][1]} + y_offs_adjust, ANIM]
+    [494,       y,          113,        66,          ${ship.offsets[5][0]}, ${ship.offsets[5][1]} + y_offs_adjust, ANIM]
+    [620,       y,          138,        48,          ${ship.offsets[6][0]}, ${ship.offsets[6][1]} + y_offs_adjust, ANIM]
+    [762,       y,          113,        66,          ${ship.offsets[7][0]}, ${ship.offsets[7][1]} + y_offs_adjust, ANIM]
 }
 
 spriteset(${ship.id}_ss_speed_1, "src/graphics/${ship.id}_0.png") {
