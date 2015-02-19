@@ -55,6 +55,8 @@ class Ship(object):
         self.effects = kwargs.get('effects', [])
         # create a structure to hold model variants
         self.model_variants = []
+        # roster is set when the vehicle is registered to a roster, only one roster per vehicle
+        self.roster_id = None
         # register ship with this module so other modules can use it
         registered_ships.append(self)
 
