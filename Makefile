@@ -6,7 +6,6 @@
 #
 
 -include Makefile.config
--include Makefile.local
 
 ##################################################################
 #
@@ -155,7 +154,7 @@ maintainer-clean:: distclean
 ################################################################
 # Include custom targets
 ################################################################
--include $(SCRIPT_DIR)/Makefile.in
+-include Makefile.in
 
 
 # target nml
