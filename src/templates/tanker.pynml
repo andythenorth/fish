@@ -57,7 +57,7 @@ switch (FEAT_SHIPS, SELF, ${ship.id}_switch_graphics, current_speed) {
 
 template spriteset_template_purchase_${ship.id}() {
     //[left_x,  upper_y,    width,      height,     offset_x,      offset_y]
-    [${ship.buy_menu_bb_xy[0]}, ${ship.buy_menu_bb_xy[1]}, ${ship.buy_menu_width}, 22, -${ship.buy_menu_width / 2}, -10]
+    [${ship.buy_menu_bb_xy[0]}, ${ship.buy_menu_bb_xy[1]}, ${ship.buy_menu_width}, 22, -${int(ship.buy_menu_width / 2)}, -10]
 }
 
 spriteset(${ship.id}_ss_purchase, "src/graphics/${ship.id}_0.png") {
