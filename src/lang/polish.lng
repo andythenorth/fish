@@ -32,7 +32,7 @@ STR_NAME_SUFFIX_HYDROFOIL                                       :Wodolot
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Statek do przewozu żywca
 STR_NAME_SUFFIX_LOG_TUG                                         :Holownik tratw
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Parowiec bocznokołowy
-STR_NAME_SUFFIX_REEFER                                          :Statek - chłodnia
+STR_NAME_SUFFIX_REEFER                                          :Chłodnicowiec
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Szybki statek zaopatrzeniowy
 STR_NAME_SUFFIX_STEAMER                                         :Parowiec
 STR_NAME_SUFFIX_TANKER                                          :Tankowiec
@@ -53,8 +53,8 @@ STR_CARGO_HOVERCRAFT                                            :Frachtowiec - p
 STR_CARGO_VESSEL_INLAND                                         :Frachtowiec do żeglugi śródlądowej
 STR_SMALL_CARGO_VESSEL_INLAND                                   :Mały frachtowiec do żeglugi śródlądowej
 STR_CATAMARAN_FAST_FERRY                                        :Szybki prom - katamaran
-STR_COASTAL_TANKER                                              :Tankowiec do żeglugi przybrzeżnej
-STR_COASTER                                                     :Frachtowiec do żeglugi przybrzeżnej
+STR_COASTAL_TANKER                                              :Kabotażowiec zbiornikowy
+STR_COASTER                                                     :Kabotażowiec
 STR_CONTAINER_FEEDER                                            :Mały kontenerowiec
 STR_CONTAINER_BARGE                                             :Kontenerowiec do żeglugi śródlądowej
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Szybki statek ogólnego przeznaczenia
@@ -65,14 +65,14 @@ STR_GENERAL_PURPOSE_VESSEL                                      :Statek ogólneg
 STR_HOVERCRAFT_FAST_FERRY                                       :Szybki prom - poduszkowiec
 STR_HYDROFOIL_FAST_FERRY                                        :Szybki prom - wodolot
 STR_JUMBO_VEHICLE_FERRY                                         :Olbrzymi prom
-STR_LARGE_COASTAL_TANKER                                        :Duży tankowiec do żeglugi przybrzeżnej
+STR_LARGE_COASTAL_TANKER                                        :Duży kabotażowiec zbiornikowy
 STR_LARGE_TANKER_COASTAL_INLAND                                 :Duży tankowiec do żeglugi przybrzeżnej i śródlądowej
-STR_LARGE_COASTER                                               :Duży frachtowiec do żeglugi przybrzeżnej
+STR_LARGE_COASTER                                               :Duży kabotażowiec
 STR_LIVESTOCK_SHIP                                              :Statek do przewozu żywca
 STR_LOG_TUG                                                     :Holownik wspomagający spław drewna
 STR_PADDLE_STEAMER                                              :Parowiec bocznokołowy
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Szybki katamaran do zaopatrywania wysp i przemysłu morskiego
-STR_REEFER                                                      :Statek - chłodnia (ograniczony spadek dochodów w czasie dla ładunków psujących się)
+STR_REEFER                                                      :Chłodnicowiec (ograniczony spadek dochodów w czasie dla ładunków psujących się)
 STR_SMALL_FREIGHTER                                             :Mały frachtowiec do żeglugi przybrzeżnej i śródlądowej
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Mały statek ogólnego przeznaczenia
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Mały tankowiec do żeglugi przybrzeżnej i śródlądowej
