@@ -2,6 +2,22 @@ Changelog
 =========
 
 -----
+2.0.1
+-----
+
+*Language Updates*
+
+- Polish
+- Italian
+- German
+
+*Codechanges*
+
+- compile now uses python 3 not python 2
+- compile now requires nml 0.4.0 or newer
+- refactored compile scripts, keeping pyflakes happy, and not relying on weird magic related to python imports
+
+-----
 2.0.0
 -----
 
