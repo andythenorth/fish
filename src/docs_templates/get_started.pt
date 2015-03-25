@@ -1,27 +1,26 @@
-<tal:main_template define="main_template load: main_template.pt" metal:use-macro="main_template">
-<div metal:fill-slot='body'>
+<tal:main_template metal:use-macro="load:main_template.pt">
+<tal:body_content metal:fill-slot='body'>
     <div class="row">
-        <div class="span3">
-            <ul class="nav nav-list well">
-                <li class="nav-header">Get Started</li>
-                <li><a href="#download-fish">Download Squid Ate FISH</a></li>
-                <li><a href="#setting-up">Setting up a Game with Squid Ate FISH</a></li>
-                <li><a href="#what-next">What Next?</a></li>
-                <li><a href="#fish-changes">Squid Ate FISH Changes</a></li>
+        <div class="col-md-3">
+            <ul class="list-group" style="margin-top:35px;">
+                <li class="list-group-item"><a href="#download-fish">Download Squid Ate FISH</a></li>
+                <li class="list-group-item"><a href="#setting-up">Setting up a Game with Squid Ate FISH</a></li>
+                <li class="list-group-item"><a href="#what-next">What Next?</a></li>
+                <li class="list-group-item"><a href="#fish-changes">Squid Ate FISH Changes</a></li>
             </ul>
         </div>
-        <div class="span9">
+        <div class="col-md-9">
             <div class="page-header">
                 <h2>Get Started</h2>
-                <ul class="inline">
-                    <li><i class="icon-ok-circle"></i> Intro dates ${metadata['dates'][0]}-${metadata['dates'][1]}</li>
-                    <li><i class="icon-ok-circle"></i> Wide range of ship types and capacities</li>
-                    <li><i class="icon-ok-circle"></i> Compatible with all known cargos</li>
-                    <li><i class="icon-ok-circle"></i> Supports 2 company colours</li>
-                    <li><i class="icon-ok-circle"></i> Autorefit support</li>
-                    <li><i class="icon-ok-circle"></i> Parameter for ship speed</li>
-                    <li><i class="icon-ok-circle"></i> Parameter for canal construction costs</li>
-                    <li><i class="icon-ok-circle"></i> GPL v2 license</li>
+                <ul class="list-inline">
+                    <li><i class="fa fa-check-circle"></i> Intro dates ${metadata['dates'][0]}-${metadata['dates'][1]}</li>
+                    <li><i class="fa fa-check-circle"></i> Wide range of ship types and capacities</li>
+                    <li><i class="fa fa-check-circle"></i> Compatible with all known cargos</li>
+                    <li><i class="fa fa-check-circle"></i> Supports 2 company colours</li>
+                    <li><i class="fa fa-check-circle"></i> Autorefit support</li>
+                    <li><i class="fa fa-check-circle"></i> Parameter for ship speed</li>
+                    <li><i class="fa fa-check-circle"></i> Parameter for canal construction costs</li>
+                    <li><i class="fa fa-check-circle"></i> GPL v2 license</li>
                 </ul>
             </div>
             <div id="download-fish">
@@ -31,17 +30,17 @@
                     or as a source checkout for compiling locally (requires mercurial and various python dependencies).
                 </p>
                 <div class="row">
-                    <div class="span3">
+                    <div class="col-md-4">
                         <h3>Download in OpenTTD</h3>
                         <p><strong>Easiest</strong>: get Squid Ate FISH from the OpenTTD content service.</p>
                         <a class="btn btn-primary" href="http://wiki.openttd.org/Content_downloading">Instructions</a>
                     </div>
-                    <div class="span3">
+                    <div class="col-md-4">
                         <h3>Download Zip</h3>
                         <p>Get the latest Squid Ate FISH release for <a href="http://wiki.openttd.org/Newgrf#Manual_install">manual install</a>.</p>
                         <a class="btn btn-info" href="http://bundles.openttdcoop.org/fish/releases/LATEST/">Download Squid Ate FISH</a>
                     </div>
-                    <div class="span3">
+                    <div class="col-md-4">
                         <h3>Download Source</h3>
                         <p>Checkout source code and <a href="code_reference.html">compile your own Squid Ate FISH</a>.</p>
                         <a class="btn" href="${metadata['repo_url']}">Squid Ate FISH Source Repo</a>
@@ -81,8 +80,5 @@
     </div>
     <br />
     <br />
-
-
-
-</div>
+</tal:body_content>
 </tal:main_template>

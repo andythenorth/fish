@@ -11,6 +11,10 @@
     <link type="text/css" href="static/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link type="text/css" href="static/css/style.css" rel="stylesheet">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css" />
+    <!--/Font Awesome-->
+
     <script type="text/javascript" src="static/js/jquery-1.9.1.min.js"></script>
 
     <script type="text/javascript" src="static/js/jquery.metadata.js"></script>
@@ -30,29 +34,27 @@
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-static-top" style="border-bottom:1px solid #000;">
-        <div class="navbar-inner">
-            <div class="container">
-                <ul class="nav pull-left">
-                    <li class="${doc_helper.get_active_nav(doc_name, 'get_started')}">
-                        <a href="get_started.html">Get Started</a>
-                    </li>
-                    <li class="${doc_helper.get_active_nav(doc_name, 'ships')}">
-                        <a href="ships.html">Ships</a>
-                    </li>
-                    <li class="${doc_helper.get_active_nav(doc_name, 'code_reference')}">
-                        <a href="code_reference.html">Code Reference</a>
-                    </li>
-                </ul>
-                <ul class="nav pull-right">
-                    <li class="${doc_helper.get_active_nav(doc_name, 'translations')}">
-                        <a href="translations.html"><i class="icon-globe icon-white"></i> Help Translate FISH</a>
-                    </li>
-                    <li>
-                        <a href="${metadata['dev_thread_url']}"><i class="icon-comment icon-white"></i> Discuss at TT-Forums.net</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="navbar navbar-inverse navbar-static-top" style="margin-bottom:0; border-bottom:1px solid #000;">
+        <div class="container">
+            <ul class="nav navbar-nav pull-left">
+                <li class="${doc_helper.get_active_nav(doc_name, 'get_started')}">
+                    <a href="get_started.html">Get Started</a>
+                </li>
+                <li class="${doc_helper.get_active_nav(doc_name, 'ships')}">
+                    <a href="ships.html">Ships</a>
+                </li>
+                <li class="${doc_helper.get_active_nav(doc_name, 'code_reference')}">
+                    <a href="code_reference.html">Code Reference</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li class="${doc_helper.get_active_nav(doc_name, 'translations')}">
+                    <a href="translations.html"><i class="icon-globe icon-white"></i> Help Translate FISH</a>
+                </li>
+                <li>
+                    <a href="${metadata['dev_thread_url']}"><i class="icon-comment icon-white"></i> Discuss at TT-Forums.net</a>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="hero-unit subhead">
