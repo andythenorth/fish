@@ -43,7 +43,7 @@
                     <div class="col-md-4">
                         <h3>Download Source</h3>
                         <p>Checkout source code and <a href="code_reference.html">compile your own Squid Ate FISH</a>.</p>
-                        <a class="btn" href="${metadata['repo_url']}">Squid Ate FISH Source Repo</a>
+                        <a class="btn btn-default" href="${metadata['repo_url']}">Squid Ate FISH Source Repo</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
 
                 <p class="lead">Find out more about Squid Ate FISH.  Or try it out in OpenTTD!</p>
                 <a class="btn btn-large btn-primary" href="ships.html">List of Ships</a>
-                <a class="btn btn-large" href="code_reference.html">Code Reference</a>
+                <a class="btn btn-large btn-default" href="code_reference.html">Code Reference</a>
             </div>
             <hr />
             <br />
