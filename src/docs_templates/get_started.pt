@@ -30,20 +30,20 @@
                     or as a source checkout for compiling locally (requires mercurial and various python dependencies).
                 </p>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <h3>Download in OpenTTD</h3>
                         <p><strong>Easiest</strong>: get Squid Ate FISH from the OpenTTD content service.</p>
-                        <a class="btn btn-primary" href="http://wiki.openttd.org/Content_downloading">Instructions</a>
+                        <a class="btn btn-primary btn-block" href="http://wiki.openttd.org/Content_downloading">Instructions</a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <h3>Download Zip</h3>
                         <p>Get the latest Squid Ate FISH release for <a href="http://wiki.openttd.org/Newgrf#Manual_install">manual install</a>.</p>
-                        <a class="btn btn-info" href="http://bundles.openttdcoop.org/fish/releases/LATEST/">Download Squid Ate FISH</a>
+                        <a class="btn btn-info btn-block" href="http://bundles.openttdcoop.org/fish/releases/LATEST/">Download Squid Ate FISH</a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <h3>Download Source</h3>
                         <p>Checkout source code and <a href="code_reference.html">compile your own Squid Ate FISH</a>.</p>
-                        <a class="btn btn-default" href="${metadata['repo_url']}">Squid Ate FISH Source Repo</a>
+                        <a class="btn btn-default btn-block" href="${metadata['repo_url']}">Squid Ate FISH Source Repo</a>
                     </div>
                 </div>
             </div>
