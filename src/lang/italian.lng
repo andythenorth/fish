@@ -57,11 +57,11 @@ STR_COASTAL_TANKER                                              :Petroliera cost
 STR_COASTER                                                     :Nave mercantile costiera
 STR_CONTAINER_FEEDER                                            :Nave portacontainer piccola
 STR_CONTAINER_BARGE                                             :Nave portacontainer per acque interne
-STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Nave veloce per uso universale
+STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Imbarcazione veloce per uso universale
 STR_FAST_PACKET_STEAMER                                         :Piroscafo veloce
 STR_SMALL_FERRY                                                 :Nave passeggeri piccola
-STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Nave marittima per uso universale
-STR_GENERAL_PURPOSE_VESSEL                                      :Nave per uso universale
+STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Imbarcazione marittima per uso universale
+STR_GENERAL_PURPOSE_VESSEL                                      :Imbarcazione per uso universale
 STR_HOVERCRAFT_FAST_FERRY                                       :Hovercraft veloce
 STR_HYDROFOIL_FAST_FERRY                                        :Aliscafo veloce
 STR_JUMBO_VEHICLE_FERRY                                         :Nave passeggeri ad alta capacità
@@ -74,7 +74,7 @@ STR_PADDLE_STEAMER                                              :Piroscafo a ruo
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamarano veloce per rifornimento di isole e industrie in mare aperto
 STR_REEFER                                                      :Nave frigorifera (profitti superiori dai carichi deperibili)
 STR_SMALL_FREIGHTER                                             :Nave mercantile piccola
-STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Nave per uso universale piccola
+STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Piccola imbarcazione per uso universale
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Petroliera piccola costiera e per acque interne
 STR_TRAWLER                                                     :Peschereccio da strascico (con stiva per il pesce)
 STR_VEHICLE_FERRY                                               :Traghetto
