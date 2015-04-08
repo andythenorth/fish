@@ -2,6 +2,24 @@ Changelog
 =========
 
 -----
+2.0.2
+-----
+
+*Fixes*
+
+- Little Cumbrae Freighter and Frisco Bay Freighter sometimes hidden due to incorrect setting of replacement_id property
+
+*Language Updates*
+
+- italian
+- translator credits: http://bundles.openttdcoop.org/fish/push/LATEST/credits.txt
+
+*Docs*
+
+- update to Bootstrap 3 framework
+- include Font Awesome for resolution-independent icons
+
+-----
 2.0.1
 -----
 
