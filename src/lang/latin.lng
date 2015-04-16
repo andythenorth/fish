@@ -19,6 +19,8 @@ STR_NAME_SUFFIX_FERRY                                           :Navis Vectoria
 STR_NAME_SUFFIX_FAST_FERRY                                      :Celeris Navis Vectoria
 STR_NAME_SUFFIX_FREIGHTER                                       :Navis Oneraria
 STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Ponto Onerarius
+STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Navis Pecuaria
+STR_NAME_SUFFIX_STEAMER                                         :Navis Vaporaria
 STR_NAME_SUFFIX_TANKER                                          :Navis Cisternina
 STR_NAME_SUFFIX_TANKER_BARGE                                    :Ponto Cisterninus
 STR_NAME_SUFFIX_TRAWLER                                         :Navis Piscatoria
@@ -31,6 +33,7 @@ STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capaci
 
 
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Celere navigium generale
+STR_FAST_PACKET_STEAMER                                         :Velox Tabellaria Vaporaria
 STR_SMALL_FERRY                                                 :Parva Navis Vectoria
 STR_GENERAL_PURPOSE_VESSEL                                      :Navigium generale
 STR_LIVESTOCK_SHIP                                              :Navis Pecuaria
