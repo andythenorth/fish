@@ -26,6 +26,7 @@ STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Ponto Onerarius
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Aeroscapha
 STR_NAME_SUFFIX_HYDROFOIL                                       :Aliscapha
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Navis Pecuaria
+STR_NAME_SUFFIX_REEFER                                          :Frigidaria
 STR_NAME_SUFFIX_STEAMER                                         :Navis Vaporaria
 STR_NAME_SUFFIX_TANKER                                          :Navis Cisternina
 STR_NAME_SUFFIX_TANKER_BARGE                                    :Ponto Cisterninus
@@ -56,12 +57,14 @@ STR_JUMBO_VEHICLE_FERRY                                         :Magna navis veh
 STR_LARGE_COASTAL_TANKER                                        :Magna cisternina oraria
 STR_LARGE_COASTER                                               :Magna navis oraria
 STR_LIVESTOCK_SHIP                                              :Navis pecuaria
+STR_REEFER                                                      :Navis frigidaria (mercedes meliores onerum refrigerandorum)
 STR_SMALL_FREIGHTER                                             :Parva navis oneraria
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Parvum navigium generale
 STR_VEHICLE_FERRY                                               :Navis vehicularia
 
 
 STR_GENERIC_REFIT_SUBTYPE                                       : ({COMMA}{STRING})
+STR_GENERIC_REFIT_SUBTYPE_BUY_MENU_INFO                         :{}{BLACK}Capacitates refectabiles: {GOLD}{COMMA}, {COMMA} vel {COMMA}{STRING}
 STR_QUANTITY_WOOD                                               :tonnae ligni
 STR_QUANTITY_LIVESTOCK                                          :pecora
 STR_UNIT_TONNES                                                 :tonnae
