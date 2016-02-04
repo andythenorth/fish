@@ -29,7 +29,7 @@ STR_NAME_SUFFIX_FREIGHT_BARGE                                   :Péniche
 STR_NAME_SUFFIX_HOVERCRAFT                                      :Aéroglisseur
 STR_NAME_SUFFIX_HYDROFOIL                                       :Hydroptère
 STR_NAME_SUFFIX_LIVESTOCK_SHIP                                  :Navire de bétail
-STR_NAME_SUFFIX_LOG_TUG                                         :Remorqueur de bûches
+STR_NAME_SUFFIX_LOG_TUG                                         :Remorqueur de grumes
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Navire à roues à aubes
 STR_NAME_SUFFIX_REEFER                                          :Navire frigorifique
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Navire de ravitaillement rapide
@@ -42,7 +42,7 @@ STR_NAME_SUFFIX_UTILITY_TUG                                     :Remorqueur
 
 
 STR_BUY_MENU_TEXT                                               :{}Type : {GOLD}{STRING}{}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacité quand réaménagé : {GOLD}{COMMA} sacs de courrier ou {COMMA}t of marchandises express
+STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Capacité quand réaménagé{NBSP}: {GOLD}{COMMA}{NBSP}sac{P 0 "" s} de courrier ou {COMMA}{NBSP}t de marchandises express
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Capacité quand réaménagé : {GOLD}{COMMA} passagers, {COMMA} sacs de courrier, {COMMA}t de poisson dans les cales, ou {COMMA}t de marchandises express sur le pont
 STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Capacité quand réaménagé : {GOLD}{COMMA} sacs de courrier ou {COMMA}{NBSP}t de marchandises
 
@@ -68,7 +68,7 @@ STR_LARGE_COASTAL_TANKER                                        :Grand navire ci
 STR_LARGE_TANKER_COASTAL_INLAND                                 :Grand navire citerne côtier ou pour voies navigables
 STR_LARGE_COASTER                                               :Grand navire côtier
 STR_LIVESTOCK_SHIP                                              :Navire transporteur de bétail
-STR_LOG_TUG                                                     :Remorqueur pour tracter des bûches
+STR_LOG_TUG                                                     :Remorqueur de grumes flottantes
 STR_PADDLE_STEAMER                                              :Navire à vapeur à roues à aubes
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Catamaran rapide pour ravitailler îles ou industries au large
 STR_REEFER                                                      :Navire réfrigéré (valeur des marchandises périssables améliorée)
