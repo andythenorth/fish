@@ -9,7 +9,7 @@ STR_EMPTY                                                       :
 
 
 STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Bruk forbedrede byggekostnader for kanaler, akvedukter og sluser.
-STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduserer konstruksjons kostnader (og fjerningskostander) for kanaler, akvedukter,  og sluser. Gir en bedre balanse mellom vanntransport og andre transport-typer.
+STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Reduserer byggekostnader (og rivningskostander) for kanaler, akvedukter og sluser. Gir bedre balanse mellom vanntransport og andre transportformer.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Båtfart
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :Som å se maling tørke
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideell
@@ -19,10 +19,10 @@ STR_PARAM_ROSTER_DESC                                           :Velg fartøyset
 STR_PARAM_ROSTER_OPTION_0                                       :Albions Ø
 STR_PARAM_ROSTER_OPTION_1                                       :Den blå Donau
 
-STR_NAME_SUFFIX_BARGE_TUG                                       :Taubåt
+STR_NAME_SUFFIX_BARGE_TUG                                       :Slepebåt
 STR_NAME_SUFFIX_CATAMARAN                                       :Katamaran
 STR_NAME_SUFFIX_CONTAINER_FEEDER                                :Kontainerskip
-STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Kontainerskip
+STR_NAME_SUFFIX_CONTAINER_BARGE                                 :Elvebåt for kontainere
 STR_NAME_SUFFIX_FERRY                                           :Ferje
 STR_NAME_SUFFIX_FAST_FERRY                                      :Rask ferje
 STR_NAME_SUFFIX_FREIGHTER                                       :Godsbåt
@@ -34,12 +34,12 @@ STR_NAME_SUFFIX_LOG_TUG                                         :Slepebåt for t
 STR_NAME_SUFFIX_PADDLE_STEAMER                                  :Hjuldamper
 STR_NAME_SUFFIX_REEFER                                          :Skip med kjølerom
 STR_NAME_SUFFIX_RIG_SUPPLY_FAST_CATAMARAN                       :Rask supplybåt
-STR_NAME_SUFFIX_STEAMER                                         :Dampbåt
+STR_NAME_SUFFIX_STEAMER                                         :Dampskip
 STR_NAME_SUFFIX_TANKER                                          :Tankskip
 STR_NAME_SUFFIX_TANKER_BARGE                                    :Tanklekter
 STR_NAME_SUFFIX_TRAWLER                                         :Tråler
 STR_NAME_SUFFIX_UTILITY_VESSEL                                  :Havnebåt
-STR_NAME_SUFFIX_UTILITY_TUG                                     :Havnetaubåt
+STR_NAME_SUFFIX_UTILITY_TUG                                     :Havneslepebåt
 
 
 STR_BUY_MENU_TEXT                                               :{}Type: {GOLD}{STRING}{}{STRING}
@@ -51,7 +51,7 @@ STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Kapasi
 STR_BARGE_TUG                                                   :Lekterbukserbåt
 STR_CARGO_HOVERCRAFT                                            :Lutputebåt for gods
 STR_CARGO_VESSEL_INLAND                                         :Godsbåt for innlandselver
-STR_SMALL_CARGO_VESSEL_INLAND                                   :Liten godsbåt for innlandselver
+STR_SMALL_CARGO_VESSEL_INLAND                                   :Lite godsfartøy for innlandselver
 STR_CATAMARAN_FAST_FERRY                                        :Rask ferjekatamaran
 STR_COASTAL_TANKER                                              :Kyst-tanker
 STR_COASTER                                                     :Kystfrakter
@@ -61,8 +61,8 @@ STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Rask allbruksb�
 STR_FAST_PACKET_STEAMER                                         :Rask pakkedamper
 STR_SMALL_FERRY                                                 :Liten ferje
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Allbruks havgående fartøy
-STR_GENERAL_PURPOSE_VESSEL                                      :Allbruksbåt
-STR_HOVERCRAFT_FAST_FERRY                                       :Hovercraft rask ferje
+STR_GENERAL_PURPOSE_VESSEL                                      :Allbruksfartøy
+STR_HOVERCRAFT_FAST_FERRY                                       :Rask hovercraft-ferje
 STR_HYDROFOIL_FAST_FERRY                                        :Rask hydrofoilferje
 STR_JUMBO_VEHICLE_FERRY                                         :Diger bilferje
 STR_LARGE_COASTAL_TANKER                                        :Stor kyst-tanker
@@ -73,7 +73,7 @@ STR_LOG_TUG                                                     :Slepebåt for f
 STR_PADDLE_STEAMER                                              :Hjuldamper
 STR_RIG_SUPPLY_FAST_CATAMARAN                                   :Rask katamaran for å kjøre til øyer og offshoreindustrier
 STR_REEFER                                                      :Kjøleskip (forbedret betaling for bedervelige varer)
-STR_SMALL_FREIGHTER                                             :Liten godsbåt
+STR_SMALL_FREIGHTER                                             :Lite godsfartøy
 STR_SMALL_GENERAL_PURPOSE_VESSEL                                :Lite allbruksfartøy
 STR_SMALL_TANKER_COASTAL_INLAND                                 :Liten tanker for kyst og innland
 STR_TRAWLER                                                     :Tråler (med dedikert lasterom for fisk)
