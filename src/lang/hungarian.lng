@@ -7,12 +7,16 @@ STR_GRF_DESCRIPTION                                             :Licenc: {SILVER
 STR_EMPTY                                                       :
 
 
-STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Megváltozott csatorna, csatornahíd és zsilip építési költségek
+STR_PARAM_RESET_CONSTRUCTION_COSTS                              :Javított csatorna, csatornahíd és zsilip építési költségek
 STR_PARAM_RESET_CONSTRUCTION_COSTS_DESC                         :Csökkenti a csatornák, csatornahidak és a zsilipek építkezési (és eltávolítási) költségeit. Lehetőséget teremt, hogy jobban kiegyensúlyozd a vízi közlekedést a többivel.
 STR_PARAM_ADJUST_SHIP_SPEEDS                                    :Hajó sebessége
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_0                           :ahogy a festék szárad
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_1                           :Ideális
 STR_PARAM_ADJUST_SHIP_SPEEDS_OPTION_2                           :Csalás
+STR_PARAM_ROSTER                                                :Menetrend
+STR_PARAM_ROSTER_DESC                                           :Válassz egy hajógyüjteményt
+STR_PARAM_ROSTER_OPTION_0                                       :This Sceptred Isle
+STR_PARAM_ROSTER_OPTION_1                                       :A kék Duna
 
 STR_NAME_SUFFIX_BARGE_TUG                                       :uszály
 STR_NAME_SUFFIX_CATAMARAN                                       :katamarán
@@ -37,9 +41,10 @@ STR_NAME_SUFFIX_UTILITY_VESSEL                                  :szállítóhaj�
 STR_NAME_SUFFIX_UTILITY_TUG                                     :vontatóhajó
 
 
-STR_BUY_MENU_TEXT                                               :Típus: {GOLD}{STRING}{}{STRING}
-STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Kapacitás, ha átalakítod: {GOLD}{COMMA} csomag levél vagy {COMMA}t rakomány
+STR_BUY_MENU_TEXT                                               :{}Típus: {GOLD}{STRING}{}{STRING}
+STR_BUY_MENU_REFIT_CAPACITIES_PACKET                            :{}{BLACK}Kapacitás, ha átalakítod: {GOLD}{COMMA} csomag levél vagy {COMMA}t express rakomány
 STR_BUY_MENU_REFIT_CAPACITIES_TRAWLER                           :{}{BLACK}Átalakított kapacitás: {GOLD}{COMMA} utas, {COMMA} csomag levél, {COMMA}t hal, vagy {COMMA}t egyéb rakomány a fedélzeten szállítva.
+STR_BUY_MENU_REFIT_CAPACITIES_UTILITY                           :{}{BLACK}Kapacitás, ha átalakítod: {GOLD}{COMMA} csomag levél vagy {COMMA}t rakomány
 
 
 STR_BARGE_TUG                                                   :vontatóhajó
@@ -53,11 +58,14 @@ STR_CONTAINER_FEEDER                                            :Konténerszáll
 STR_CONTAINER_BARGE                                             :Konténerszállító csatornákra
 STR_FAST_GENERAL_PURPOSE_VESSEL                                 :Gyors szállítóhajó
 STR_FAST_PACKET_STEAMER                                         :Gyors gőzhajó
+STR_SMALL_FERRY                                                 :Kis komp
 STR_GENERAL_PURPOSE_SEA_GOING_VESSEL                            :Általános tengerjáró szállítóhajó
 STR_GENERAL_PURPOSE_VESSEL                                      :Általános célú hajó
+STR_HOVERCRAFT_FAST_FERRY                                       :Gyors légpárnás komp
 STR_HYDROFOIL_FAST_FERRY                                        :Szárnyashajó
 STR_JUMBO_VEHICLE_FERRY                                         :Hatalmas komphajó
 STR_LARGE_COASTAL_TANKER                                        :Nagy partmenti tankhajó
+STR_LARGE_TANKER_COASTAL_INLAND                                 :Nagy tankhajó partmenti és belvizi szállításra
 STR_LARGE_COASTER                                               :Nagy partmenti teherhajó
 STR_LIVESTOCK_SHIP                                              :Állatszállító hajó
 STR_LOG_TUG                                                     :Vontatóhajó úszó farönkökhöz
